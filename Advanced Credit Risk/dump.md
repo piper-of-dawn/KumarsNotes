@@ -72,6 +72,17 @@ RWA stands for Risk-Weighted Assets. It is a measure used in banking to quantify
 $$ \text{Leverage Ratio} = \frac{\text{Tier 1 Capital}}{\text{Total Exposure}} $$
 The leverage ratio measures the amount of capital that a bank holds in relation to its total exposure. Higher it is, more resilient is the bank. 
 
+## Minimum Capital Conservation Ratio (MCCR)
+
+| CET1 Capital   | MCCR |
+|----------------|------|
+| 4.5% - 5.125%  | 100% |
+| 5.125% - 5.75  | 80%  |
+| 5.75% - 6.375% | 60%  |
+| 6.375% - 7%    | 40%  |
+| > 7%           | 0%   |
+
+
 
 
 
