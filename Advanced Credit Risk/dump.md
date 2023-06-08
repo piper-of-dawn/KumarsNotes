@@ -73,7 +73,6 @@ $$ \text{Leverage Ratio} = \frac{\text{Tier 1 Capital}}{\text{Total Exposure}} $
 The leverage ratio measures the amount of capital that a bank holds in relation to its total exposure. Higher it is, more resilient is the bank. 
 
 ## Minimum Capital Conservation Ratio (MCCR)
-
 | CET1 Capital   | MCCR |
 |----------------|------|
 | 4.5% - 5.125%  | 100% |
@@ -82,12 +81,20 @@ The leverage ratio measures the amount of capital that a bank holds in relation 
 | 6.375% - 7%    | 40%  |
 | > 7%           | 0%   |
 
+## Risk Adjusted Performance Assessment (RAPM)
+Most of the banks are not able to capture all the risks associated with giving a loan. 
 
+## RAROC
+Risk Adjusted Return on Capital (RAROC) is a risk-based profitability measurement framework for analysing risk-adjusted financial performance and providing a consistent view of profitability across businesses. The concept of RAROC was developed by Bankers Trust in the late 1970s as a way to allocate capital to business units, and it was widely adopted after the Basel Committee on Banking Supervision (BCBS) endorsed it in 1995. RAROC is used by banks and other financial institutions to evaluate the profitability of their business units and to make capital allocation decisions. It is also used by regulators to assess the overall risk profile of banks and to determine whether they are adequately capitalized.
 
+- Risk Adjusted Income = Income - Expected Loss
+- Risk Adjusted Net Income = Risk Adjusted Income - Cost of Capital
+- Risk Adjusted After Tax Income = Risk Adjusted Net Income - Tax
+- Total Risk Adjusted Net Income = Risk Adjusted After Tax Income × Average Lending Assets
+- Extra Value Added = Total Risk Adjusted Net Income - Capital Charge
 
+- Capital Charge = Capital × Cost of Capital
+- Capital = Risk Weighted Assets × Capital Adequacy Ratio
 
-
-
-
-
+## Enterprise Risk Management (ERM)
 
