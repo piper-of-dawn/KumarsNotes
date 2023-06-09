@@ -73,6 +73,7 @@ $$ \text{Leverage Ratio} = \frac{\text{Tier 1 Capital}}{\text{Total Exposure}} $
 The leverage ratio measures the amount of capital that a bank holds in relation to its total exposure. Higher it is, more resilient is the bank. 
 
 ## Minimum Capital Conservation Ratio (MCCR)
+
 | CET1 Capital   | MCCR |
 |----------------|------|
 | 4.5% - 5.125%  | 100% |
@@ -96,5 +97,11 @@ Risk Adjusted Return on Capital (RAROC) is a risk-based profitability measuremen
 - Capital Charge = Capital × Cost of Capital
 - Capital = Risk Weighted Assets × Capital Adequacy Ratio
 
-## Enterprise Risk Management (ERM)
 
+## Portfolio Management
+
+The portfolio management is a allocation problem.
+  - What assets to choose?
+  - How much to allocate to each asset?
+
+The default rate for a corporate lending is low but banks have a huge exposure to corporate lending. Therefore, banks lose more money in corporate lending than in retail lending.
