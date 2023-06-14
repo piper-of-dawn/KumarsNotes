@@ -241,4 +241,23 @@ Serial, Polish, English, Pronunciation
 239, Chodzę na zakupy, I go shopping, Khodzhe na zakopy
 240, Oglądam telewizję, I watch TV, Oglondam televeezyen
 241, Lubisz słuchać muzyki? , Do you like listening to music?, Lubish swhukhach mooziky
-243, 
+243, Grać w piłkę nożną, To play football, Grach v pionka nozhna
+244, Jestem Zmęczany, I am tired, Yestem zmenchany
+245, Masz wolny czas czy jesteś zajęty? , Do you have free time or are you busy?, Mash volny chas tsi yestesh zayenty
+246, Rozumiem trochę po polsku, I understand a little Polish, Rozoomyem trokhe po polsku
+247, Jutro, Tomorrow, Yootro
+248, Wczoraj, Yesterday, Vchoray
+249, Dziś, Today, Dzish
+250, Przystojnego brata, Handsome brother, Pristoyenego brata
+251, ładną siostrę, Pretty sister, Ladnaun siostraun
+252, Monika lubi kawę, Monika likes coffee, Monika lubi kave
+253, Lubię muzykę klasyczną, I like classical music, Lubie mooziky klasichnay
+254, Ochotę na kawę, I feel like coffee, Okhoty na kave
+255, spółgłoska, consonant, spoolgoshka
+256, Czy coś jeszcze, Anything else, Tsi tsoys yeshche
+257, Lubię polską literaturę, I like Polish literature, Lubie polskaun literatooren
+258, Pada deszcz, It is raining, Pada deshch
+259, Czy cós jeszcze, Anything else, Tsi tsoys yeshche
+260, Piętro, Floor, Pyentro
+
+
