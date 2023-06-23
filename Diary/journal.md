@@ -1,10 +1,42 @@
-# BIG GOALS
+
+# MOONSHOT
+_Create an algorithmic trading application_
+
+# Big Goals
+
 - Learn Algorithmic trading
 - Creation 
 - Develop a React Native app
 - Get abs
 - Learn Rust
 - Learn Polish
+
+##### 22-06-2022: Summer Solstice
+I feel like that I have stagnated. I don't feel healthy. The urge to go to gym isn't the same anymore. I am not cleaning up. I am not dressing up well. I don't feel confident. I don't feel energetic. I want to sleep.
+
+# Habit
+| When            | Where     | What                                |
+| --------------- | --------- | ----------------------------------- |
+| Post wake up    | Outside   | Dress up and take a walk and gym    |
+| Return from gym | At home   | Do housekeeping and shower (1 hour) |
+| After shower    | At home   | Eat the frog (2 hour focus)         |
+| At focus time   | Your wish | Dress up / Break                    |
+
+# Execution
+- Watch → Think → Note for study related stuff
+- 
+# Retrospective 
+- Struggling to build Algorithmic trading
+- Creation is stopped
+- Forgot about the react native app
+- Have stuck with the gym habit
+- Polish learning not going well
+
+# Remediation
+- Create a daily plan
+- Keep buffers / Do not try to control uncertainty
+- Start from Today
+
 
 # BACKLOG
 - Implement Principal Component Analysis in the Code Testing Library
@@ -17,7 +49,7 @@
 - Write code for react native everyday (5)
 - Maintain the gym streak. (5)
 - Maintain the getting up early streak. (5)
-- Start conceptualising the algorithmic trading (5)
+- Start conceptualizing the algorithmic trading (5)
 
 # OUTCOME STACK (Sprint May 31, 2023 to June 7, 2023):
 
@@ -124,5 +156,7 @@ Things have gotten even more messy.
 
 
 # Chapter IV: Aman
-Our paths crossed in the most unexpected way. I was the ambitious, driven and the sincere one - a guy with a plan who always knew where he was going (or atleast he thought he knew). Aman was the opposite. He had no plan. He just lived the flow. He was this happy kid who just lived in the moment. I saw world through the lens of objective logical reality. Aman saw the world as a continuum of subjective and abstract emotions. Trust me! Aman was like one those guys I would never want to hangout with. 
-We have experienced the roller-coaster of life together. The times when we had no money and the times when we had a lot of money. He carried life easily even when life wasn't easy.  
+Our paths crossed in the most unexpected way. I was the ambitious, driven and the sincere one - a guy with a plan who always knew where he was going (or at-least he thought he knew). Aman was the opposite. He had no plan. I saw world through the lens of objective logical reality. Aman saw the world as a continuum of subjective and abstract emotions. Trust me! Aman was like one those guys I would never want to hangout with. 
+
+But there was something intriguing. He just lived the flow. He was this happy kid who just lived in the moment. He laughed hard and laughed with me. He carried on life with a nimble ease, even when life wasn't. We have experienced the roller-coaster of life together. The times when we had no money and the times when we had a lot of money. The times we dreamt of a life together, the time I abruptly left for another country. 
+I sometimes wonder “Where does it all lead? What will become of us? Maybe it leads to each other. We become ourselves.

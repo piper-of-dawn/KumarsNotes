@@ -259,5 +259,7 @@ Serial, Polish, English, Pronunciation
 258, Pada deszcz, It is raining, Pada deshch
 259, Czy cós jeszcze, Anything else, Tsi tsoys yeshche
 260, Piętro, Floor, Pyentro
+261, Opcja, Option, Optsya
+
 
 

@@ -1,5 +1,10 @@
 {
-  "accentColor": "",
+  "accentColor": "#4a685e",
   "interfaceFontFamily": "Helvetica Neue",
-  "textFontFamily": "Roboto Mono"
+  "textFontFamily": "DM Mono,Roboto Mono",
+  "cssTheme": "Obsidianotion",
+  "monospaceFontFamily": "SpaceMono Nerd Font",
+  "theme": "moonstone",
+  "translucency": false,
+  "baseFontSizeAction": false
 }

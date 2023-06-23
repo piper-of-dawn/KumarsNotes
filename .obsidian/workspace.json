@@ -4,22 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "92f24584e020e74c",
+        "id": "2d1120f89603773e",
         "type": "tabs",
         "children": [
           {
-            "id": "9c80dd0e53be5f4a",
+            "id": "6460e9c4c1706d72",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diary/Affirmations.md",
+                "file": "Diary/Journal.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Diary/Affirmations.md",
+                "file": "Diary/Journal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Diary/Affirmations.md",
+                "file": "Diary/Journal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,15 +126,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Diary/Affirmations.md"
+                "file": "Diary/Journal.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -143,11 +145,46 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9c80dd0e53be5f4a",
+  "active": "6460e9c4c1706d72",
   "lastOpenFiles": [
+    "DataTable Library/Cheatsheet.md",
+    "jo'.md",
+    "2023-06-22.md",
+    "Diary/Journal.md",
+    "Automated Trading System/Implementation Plan.md",
+    "().md",
+    "Automated Trading System/Pasted image 20230622112923.png",
+    "Current Framework.md",
+    "Pasted image 20230622112810.png",
+    "[Pasted image 20230622112810.png]().md",
+    "Excalidraw/Drawing 2023-06-20 15.56.58.excalidraw.md",
+    "Automated Trading System/Stratergy.excalidraw.md",
+    "[Pasted image 20230622112810.png.md",
+    "Automated Trading System",
+    "Mathematics for Machine Learning/Projections.md",
+    "Mathematics for Machine Learning/Pasted image 20230621171117.png",
+    "Pasted image 20230621171112.png",
+    "Pasted image 20230621171108.png",
+    "Pasted image 20230621170939.png",
+    "Pasted image 20230621170832.png",
+    "Excalidraw",
+    "Untitled.canvas",
+    "Diary/WEAKNESSES.md",
+    "Diary/Affirmations.md",
+    "Mathematics for Machine Learning/EigenVectorsAndEigenValues.md",
+    "DataTable Library",
+    "Linear Algebra",
+    "Asynchronous Programming and Parallelism/Concurrency, Parallelism and Asynchrony.md",
+    "Asynchronous Programming and Parallelism",
+    "Concurrency",
+    "Blockchain/Blockchain.md",
+    "Blockchain.md",
+    "Blockchain",
     "Advanced Credit Risk/dump.md",
     "Machine Learning/Principal Component Analysis.md",
     "Machine Learning/XGBoost.md"

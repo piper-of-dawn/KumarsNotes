@@ -1,3 +1,4 @@
 - Start before you are ready
+- Do not open the browser
 - When deep into shit, keep your mouth shut
 - In face of ambiguity, refuse the temptation to guess
