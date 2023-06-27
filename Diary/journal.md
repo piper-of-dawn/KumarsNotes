@@ -1,4 +1,3 @@
-
 # MOONSHOT
 _Create an algorithmic trading application_
 
@@ -10,6 +9,25 @@ _Create an algorithmic trading application_
 - Get abs
 - Learn Rust
 - Learn Polish
+
+##### 25-06-2022: 
+##### Sprint 25/06/23 to 02/07/23:
+| Day       | Target                               | Status |
+| --------- | ------------------------------------ | ------ |
+| Sunday    | 1 km in 5 minutes at +1 incline      | DONE   |
+| Monday    | 1.2 km in 6 minutes at +1 incline    |        |
+| Tuesday   | 1.25 km in 6 minutes at +1 incline   |        |
+| Wednesday | 1.5 km in 7.5 minutes at +1 incline  |        | 
+| Thursday  | 1.55 km in 7.5 minutes at +1 incline |        |
+| Friday    | 1.7 km in 8 minutes at +1 incline    |        |
+| Saturday  | 1.75 km in 8.5 minutes at +1 incline |        |
+| Sunday    | 2 km in 10 minutes at +1 incline     |        |
+
+
+
+##### 24-06-2022: First thing in the day
+- Make anything that contributes to the moonshot.
+
 
 ##### 22-06-2022: Summer Solstice
 I feel like that I have stagnated. I don't feel healthy. The urge to go to gym isn't the same anymore. I am not cleaning up. I am not dressing up well. I don't feel confident. I don't feel energetic. I want to sleep.
@@ -24,7 +42,7 @@ I feel like that I have stagnated. I don't feel healthy. The urge to go to gym i
 
 # Execution
 - Watch → Think → Note for study related stuff
-- 
+
 # Retrospective 
 - Struggling to build Algorithmic trading
 - Creation is stopped

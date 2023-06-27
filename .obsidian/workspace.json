@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6460e9c4c1706d72",
+            "id": "f01e93d6d0f39554",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diary/Journal.md",
+                "file": "Artificial Neural Networks.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Diary/Journal.md",
+                "file": "Artificial Neural Networks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Diary/Journal.md",
+                "file": "Artificial Neural Networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Diary/Journal.md"
+                "file": "Artificial Neural Networks.md"
               }
             }
           }
@@ -150,12 +150,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6460e9c4c1706d72",
+  "active": "f01e93d6d0f39554",
   "lastOpenFiles": [
+    "Book Snippets/Generative Deep Learning.md",
+    "Artificial Neural Networks.md",
+    "Untitled",
+    "Polish/rules.md",
+    "Polish/notes.md",
+    "Diary/Siddhartha.md",
+    "Diary/Journal.md",
+    "Mathematics for Machine Learning/Linear Algebra.md",
+    "Excalidraw/Drawing 2023-06-25 09.11.56.excalidraw.md",
+    "Diary/Affirmations.md",
+    "Book Snippets",
     "DataTable Library/Cheatsheet.md",
     "jo'.md",
     "2023-06-22.md",
-    "Diary/Journal.md",
     "Automated Trading System/Implementation Plan.md",
     "().md",
     "Automated Trading System/Pasted image 20230622112923.png",
@@ -166,7 +176,6 @@
     "Automated Trading System/Stratergy.excalidraw.md",
     "[Pasted image 20230622112810.png.md",
     "Automated Trading System",
-    "Mathematics for Machine Learning/Projections.md",
     "Mathematics for Machine Learning/Pasted image 20230621171117.png",
     "Pasted image 20230621171112.png",
     "Pasted image 20230621171108.png",
@@ -175,7 +184,6 @@
     "Excalidraw",
     "Untitled.canvas",
     "Diary/WEAKNESSES.md",
-    "Diary/Affirmations.md",
     "Mathematics for Machine Learning/EigenVectorsAndEigenValues.md",
     "DataTable Library",
     "Linear Algebra",
@@ -185,8 +193,6 @@
     "Blockchain/Blockchain.md",
     "Blockchain.md",
     "Blockchain",
-    "Advanced Credit Risk/dump.md",
-    "Machine Learning/Principal Component Analysis.md",
-    "Machine Learning/XGBoost.md"
+    "Advanced Credit Risk/dump.md"
   ]
 }

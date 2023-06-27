@@ -2,14 +2,24 @@ a is female
 o and e is child
 everything else is male
 
+### How to identify the gender in Polish?
 ł, k, g, h - Rodzaj męski
 a, ę, i, y - Rodzaj żeński
 o, e, m - Rodzaj nijaki
 
-
 Jaki is male
 Jaka is female
 Jakie is child
+
+For human male subjects 
+Use 'tego' for adjectives
+Use 'a' for nouns
+Use 'o' for things
+
+
+For human female subjects
+Use 'ą' for adjectives
+Use 'ę' for nouns
 
 'Wy' - you (plural) - 'Wy jesteście' - you are
 'My' - We (plural) - 'My jesteśmy' - we are
@@ -41,12 +51,4 @@ No I am young - Nie, ja jestem młody
 Polish is easy - Polski jest łatwy
 Polish is difficult - Polski jest trudny
 
-For human male subjects 
-Use 'tego' for adjectives
-Use 'a' for nouns
-Use 'o' for things
 
-
-For human female subjects
-Use 'ą' for adjectives
-Use 'ę' for nouns

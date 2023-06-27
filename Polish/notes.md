@@ -260,6 +260,43 @@ Serial, Polish, English, Pronunciation
 259, Czy cós jeszcze, Anything else, Tsi tsoys yeshche
 260, Piętro, Floor, Pyentro
 261, Opcja, Option, Optsya
+262, Słodkie Czerwony, Sweet Red, Swodkie Chervony
+263, Morela, Apricot, Morela
+264, Brzoskwinia, Peach, Brzoskvinia
+265, Seler, Celery, Seler
+266, Cebula, Onion, Tseboola
+267, Czosnek, Garlic, Chosnek
+268, Czerwona papryka, Red pepper, Chervona paprika
+269, Pomidor, Tomato, Pomidor
+270, Ogórek, Cucumber, Ogorek
+271, Sałata, Lettuce, Salata
+272, Marchewka, Carrot, Markhevka   
+273, Ziemniak, Potato, Zhemnyak
+274, Jabłko, Apple, Yabko
+275, Gruszka, Pear, Grooshka
+276, Banan, Banana, Banan
+277, Cytryna, Lemon, Tsitryna
+278, Pomarańcza, Orange, Pomarancha
+279, Mandarynka, Tangerine, Mandarynka
+280, Grejpfrut, Grapefruit, Greypfroot
+281, Winogrono, Grape, Vinogrono
+282, Malina, Raspberry, Malina
+283, Truskawka, Strawberry, Trooskafka
+284, Wiśnia, Cherry, Veesnya
+285, Kształt, Shape, Kshtawt
+286, Słodki, Sweet, Swodki
+287, Kwaśny, Sour, Kwashny
+288, Gorzki, Bitter, Gorzki
+289, Ostry, Spicy, Ostry
+290, Słony, Salty, Swony
+291, Delikatny, Delicate, Delikatny
+292, Podłuzny, Longitudinal, Podwoozhny
+293, Okrągły, Round, Okrongwy
+294, Kwadratowy, Square, Kwadratowy
+295, Trójkątny, Triangular, Trookontny
+296, Prostokątny, Rectangular, Prostokontny
+297, Pomarańcza jest kwaśna i okrągła, The orange is sour and round, Pomarancha yest kwashna i okrongwa
+
 
 
 
