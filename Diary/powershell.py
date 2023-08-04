@@ -26,3 +26,6 @@ business_date = '31/03/2023'
 num_quarters = 3
 result = shift_quarters(business_date, num_quarters)
 print(result)
+
+
+Get-ChildItem -Path 'C:\path\to\source' -File -Filter '*pattern*' | Copy-Item -Destination 'C:\path\to\destination'
