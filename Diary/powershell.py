@@ -29,3 +29,35 @@ print(result)
 
 
 Get-ChildItem -Path 'C:\path\to\source' -File -Filter '*pattern*' | Copy-Item -Destination 'C:\path\to\destination'
+
+
+import os
+import re
+
+def search_directory(directory, pattern1, pattern2):
+    matched_files = []
+
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            file_path = os.path.join(root, file)
+
+            # Check if the file starts with IST or CRT
+            if re.match(pattern1, file) or re.match(pattern2, file):
+                matched_files.append(file_path)
+
+    return matched_files
+
+# Example usage
+directory_to_search = '/path/to/directory'
+pattern1 = r'^IST'  # Match files that start with 'IST'
+pattern2 = r'^CRT'  # Match files that start with 'CRT'
+
+matched_files = search_directory(directory_to_search, pattern1, pattern2)
+
+if matched_files:
+    print("Matched files:")
+    for file in matched_files:
+        print(file)
+else:
+    print("No files matching the patterns were found.")
+
