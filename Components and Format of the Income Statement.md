@@ -1,0 +1,2 @@
+## Jargons
+1. **Minority Interest**: Despite this customary terminology, note that each company presents additional items below net income: information about how much of that net income is attributable to the company itself and how much of that income is attributable to non-controlling interests, also known as minority interests.

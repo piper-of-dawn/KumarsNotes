@@ -1,0 +1,77 @@
+## CASHFLOW FROM INVESTING
+Suppose I have this information:
+
+|                | Opening | Closing |
+| -------------- | ------- | ------- |
+| Land           | 100     | 90      |
+| P&M Gross      | 500     | 600     |
+| P&M Accum Depn | 300     | 350     |
+
+**Information:**
+- P&M costing 100 was sold during the year for the profit of 30.
+- Depreciation charged to P/L was 130
+- Gain on sale of land was 45
+
+Compute Cashflow from Investing activities
+
+> [!TIP] HAMMER THIS INTO YOUR HEAD
+> **Closing Anything = Opening Anything + Inflow (Purchase) - Outflow (Write Off / Sale)**
+> What remains in closing, is the net of what you added to opening plus what you removed from opening. This will help you solve a lot of questions. You can calculate in variable by re-arranging the equation above
+###### SOLUTION
+First, compute land and P&M purchases/sale:
+Land Purchases = Closing - Opening = 90 - 100 = -10
+P&M Purchases = Closing - Opening + Sale =  600 - 500 + 100 = 200
+
+Second compute Acc Dep for P&M Sold
+Acc Dep for P&M Sold = Opening + Charge - Closing = 300 + 130 - 350 = 80
+
+Third carrying amount of each asset sold
+CA for P&M sold = Purchase Cost - Acc Dep = 100 - 80 = 20
+CA for Land sold = 10
+
+Fourth, Cashflow from P&M Sale = CA + Gain = 20 + 30 = 50 
+Cashflow from P&M Purchase = -200
+**Net Cashflow from P&M = -150**
+Cashflow from land Sale = CA + Gain = 10 + 45 = 55
+Cashflow from land Purchase = 0
+**Net Cashflow from Land = 55**
+CFI = -150 + 55 = -95
+
+### Algorithm for such type of questions
+#### Step 1: Compute Purchases or Sales
+
+**“Cash from Long-Term Assets = Cash from all sales − Cash spent on all purchases.”**  
+
+Everything else is just reconstructing those numbers. For each, write: 
+
+ ==**Opening balance + Purchases - Cost of assets sold = Closing balance**== 
+
+> [!WARNING] Remember
+> **Closing Anything = Opening Anything + Inflow - Write Off / Sale**
+> What remains, is the net of what you added to opening plus what you removed from opening
+
+This always gives you **purchases** if sales cost is known. Or gives you **sale cost** if purchases are known. Do it for all the fixed assets. This gives you cash flow from purchase
+#### Step 2: Calculate Accumulated Depreciation 
+
+==**Closing Acc Dep = Opening Acc Dep + Dep Charged - Acc Dep on Asset Sold**==
+#### **Step 3: Compute Carrying Amount of Assets Sold**
+
+Carrying amount is purchase cost of the asset minus the accumulated depreciation attributed to the asset: 
+
+**==Carrying amount = Cost - Acc Dep of thhe sold
+==**
+#### **Step 4: Use Profit/Loss on Sale to Get Cash Proceeds**
+
+==**Cashflow From Sale = Carrying Amount + Gain**==
+#### Step 5: Combine Everything
+
+==**Cashflow = Cashflow from Sale - Cash flow from Purchase**==
+
+
+> [!WARNING] Remember
+> * **Depreciation NEVER appears directly** in investing cash flow.
+> * **Profit on sale ≠ cash**. It helps you compute cash.
+> * **Closing balances always guide you**; always start from them.
+> * If asset has no depreciation (e.g., land), use:
+  Sale proceeds = Gain + (Opening - Closing)
+  

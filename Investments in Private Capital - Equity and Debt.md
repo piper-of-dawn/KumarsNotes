@@ -1,0 +1,1 @@
+### Can a public company raise money through private equity?
