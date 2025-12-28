@@ -75,3 +75,26 @@ Carrying amount is purchase cost of the asset minus the accumulated depreciation
 > * If asset has no depreciation (e.g., land), use:
   Sale proceeds = Gain + (Opening - Closing)
   
+### RELATIVE VALUATION
+
+Williams Optical is a publicly traded firm. An analyst estimates that the market value of net fixed assets is 120% of book value. Liability and short-term asset market values are assumed to equal their book values. The firm has 2,000 shares outstanding. Using the selected financial results in the table, calculate the value of the firm’s net assets on a per-share basis.
+
+|Item|Amount|
+|---|--:|
+|Cash|10,000|
+|Accounts receivable|20,000|
+|Inventories|50,000|
+|Net fixed assets|120,000|
+|**Total assets**|**200,000**|
+|Accounts payable|5,000|
+|Notes payable|30,000|
+|Term loans|45,000|
+|Common stockholder equity|120,000|
+|**Total liabilities and equity**|**200,000**|
+
+Market Value of Net Fixed Assets = 120 * 1.2 = 144
+Market Value of Liabilities = 200 - 120 = 80
+Market Value of all assets = 144 + 50 + 20 + 10 = 224
+Net Asset Value = 224 - 80 = 144
+Net Asset Value per share =  144 / 2 = 72
+

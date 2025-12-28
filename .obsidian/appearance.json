@@ -1,10 +1,11 @@
 {
   "accentColor": "#4a685e",
   "interfaceFontFamily": "SF UI Display",
-  "textFontFamily": "DM Mono,Roboto Mono",
-  "cssTheme": "Obsidianotion",
+  "textFontFamily": "Berkeley Mono",
+  "cssTheme": "Cupertino",
   "monospaceFontFamily": "SpaceMono Nerd Font",
-  "theme": "moonstone",
+  "theme": "obsidian",
   "translucency": false,
-  "baseFontSizeAction": false
+  "baseFontSizeAction": true,
+  "baseFontSize": 15
 }

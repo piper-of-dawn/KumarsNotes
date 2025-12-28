@@ -1,50 +1,55 @@
 {
   "main": {
-    "id": "c2c957b792849448",
+    "id": "d28c14ee9901808a",
     "type": "split",
     "children": [
       {
-        "id": "2d1120f89603773e",
+        "id": "fec22c0ac9aee98a",
         "type": "tabs",
         "children": [
           {
-            "id": "f01e93d6d0f39554",
+            "id": "98f53c1a92ba291d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artificial Neural Networks.md",
+                "file": "CFA/Revision Notes for CFA.md",
                 "mode": "source",
-                "source": false
-              }
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Revision Notes for CFA"
             }
           }
-        ],
-        "stacked": true
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "c6888bfc0d59fd68",
+    "id": "f353a68a2122a9a3",
     "type": "split",
     "children": [
       {
-        "id": "3867b52540cbcd7f",
+        "id": "8201f8a7ed660a6b",
         "type": "tabs",
         "children": [
           {
-            "id": "bd6be2d6e9c57d4c",
+            "id": "49ac21b4a48864af",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
-            "id": "ed892db73a69f728",
+            "id": "3ac4aac5ddbe5d7a",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -55,38 +60,43 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
-            "id": "feec696d88f50f8b",
+            "id": "4680e35c04748e5f",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 280.5026054382324,
+    "collapsed": true
   },
   "right": {
-    "id": "e07ba6048a564fba",
+    "id": "b63ce4cf9dc6a249",
     "type": "split",
     "children": [
       {
-        "id": "e85ff83099925a0b",
+        "id": "90205bef11a5cd14",
         "type": "tabs",
         "children": [
           {
-            "id": "dfa0b9ed183c8eee",
+            "id": "e169fb6347d25777",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Artificial Neural Networks.md",
+                "file": "Intermediate Probability/Negative Binomial Distribution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,105 +104,136 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "lucide-ghost",
+              "title": "backlink"
             }
           },
           {
-            "id": "dba2a30f88143b01",
+            "id": "584708d7cbc9b68b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Artificial Neural Networks.md",
+                "file": "Intermediate Probability/Negative Binomial Distribution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "lucide-ghost",
+              "title": "outgoing-link"
             }
           },
           {
-            "id": "9f9524feab036412",
+            "id": "405a5c48d0878ad0",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-ghost",
+              "title": "tag"
             }
           },
           {
-            "id": "efb418fbaee8cc0f",
+            "id": "a45f82827e6903cf",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artificial Neural Networks.md"
-              }
+                "file": "Intermediate Probability/Negative Binomial Distribution.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-ghost",
+              "title": "outline"
+            }
+          },
+          {
+            "id": "a2bedbcee3a96ac3",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "switcher:Open quick switcher": false,
+      "command-palette:Open command palette": false,
+      "vim-toggle:Toggle Vim Mode": false
     }
   },
-  "active": "f01e93d6d0f39554",
+  "active": "98f53c1a92ba291d",
   "lastOpenFiles": [
-    "Book Snippets/Generative Deep Learning.md",
-    "Artificial Neural Networks.md",
-    "Untitled",
-    "Polish/rules.md",
-    "Polish/notes.md",
-    "Diary/Siddhartha.md",
-    "Diary/Journal.md",
-    "Mathematics for Machine Learning/Linear Algebra.md",
-    "Excalidraw/Drawing 2023-06-25 09.11.56.excalidraw.md",
-    "Diary/Affirmations.md",
-    "Book Snippets",
-    "DataTable Library/Cheatsheet.md",
-    "jo'.md",
-    "2023-06-22.md",
-    "Automated Trading System/Implementation Plan.md",
-    "().md",
-    "Automated Trading System/Pasted image 20230622112923.png",
-    "Current Framework.md",
-    "Pasted image 20230622112810.png",
-    "[Pasted image 20230622112810.png]().md",
-    "Excalidraw/Drawing 2023-06-20 15.56.58.excalidraw.md",
-    "Automated Trading System/Stratergy.excalidraw.md",
-    "[Pasted image 20230622112810.png.md",
-    "Automated Trading System",
-    "Mathematics for Machine Learning/Pasted image 20230621171117.png",
-    "Pasted image 20230621171112.png",
-    "Pasted image 20230621171108.png",
-    "Pasted image 20230621170939.png",
-    "Pasted image 20230621170832.png",
-    "Excalidraw",
-    "Untitled.canvas",
-    "Diary/WEAKNESSES.md",
-    "Mathematics for Machine Learning/EigenVectorsAndEigenValues.md",
-    "DataTable Library",
+    "Excalidraw/Drawing 2025-12-28 11.28.51.excalidraw.md",
+    "Pasted Image 20251228112906_706.png",
+    "CFA/Revision Notes for CFA.md",
+    "CFA/Numericals to Memorise.md",
+    "Revise before Exam.md",
+    "CFA/Yeild to Maturity.md",
+    "Maturity.md",
+    "Long Term Assets.md",
+    "Liquidity Ratios.md",
+    "Lease Accounting.md",
+    "C++/Lambdas.md",
+    "Investments in Private Capital - Equity and Debt.md",
+    "index.md",
+    "How to measure fear.md",
+    "Gotchas.md",
+    "Free Cash Flow to Firm.md",
+    "Forward Rate.md",
+    "Equity, Fixed Income and Alt Investment Indexes.md",
+    "Equity.md",
+    "EPS.md",
+    "Counterparty Credit Risk at HSBC/Dagster Wiring.md",
+    "Convexity of the Yield Curve.md",
+    "Components and Format of the Income Statement.md",
+    "Common Size Analysis.md",
+    "CashFlow Ratios.md",
+    "Cashflow.md",
+    "dp.png",
+    "Spells",
+    "Rust",
+    "Quant Finance",
+    "Portfolio Management",
+    "Pasted image 20251029114056.png",
+    "Linear Algebra/Pasted image 20250429102423.png",
     "Linear Algebra",
-    "Asynchronous Programming and Parallelism/Concurrency, Parallelism and Asynchrony.md",
-    "Asynchronous Programming and Parallelism",
-    "Concurrency",
-    "Blockchain/Blockchain.md",
-    "Blockchain.md",
-    "Blockchain",
-    "Advanced Credit Risk/dump.md"
+    "Fixed Income",
+    "Dark Arts",
+    "DSA",
+    "Competitive Probability",
+    "CFA",
+    "Mathematics for Machine Learning/Pasted image 20230621171117.png",
+    "Automated Trading System/Pasted image 20230622112923.png",
+    "Pasted image 20251029113921.png",
+    "Pasted image 20251029113517.png",
+    "Pasted image 20251029113205.png",
+    "Pasted image 20251029112212.png"
   ]
 }

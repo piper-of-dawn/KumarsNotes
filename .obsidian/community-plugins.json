@@ -2,5 +2,8 @@
   "table-editor-obsidian",
   "obsidian-prozen",
   "obsidian-editor-shortcuts",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "automatic-table-of-contents",
+  "vim-toggle",
+  "better-export-pdf"
 ]
