@@ -1,3 +1,13 @@
+### MODULE 8.2: TYPES OF HYPOTHESIS TESTS
+
+1. A researcher has gathered data on the daily returns on a portfolio of call options over a recent 250-day period. The mean daily return has been 0.1%, and the sample standard deviation of daily portfolio returns is 0.25%. The researcher believes that the mean daily portfolio return is not equal to zero. Construct a hypothesis test of the researcher’s belief.
+	$H_0$: $\mu = 0$, $H_A$: $\mu \neq 0$
+	$s$ = $0.0025 / \sqrt{250} = 0.00016$ 
+	$t$ = $0.001 / 0.00016 = 6.25$
+	Assume $\alpha = 0.05$ 
+	Since |6.25| > |1.96| then we can reject null. 
+ 
+	 	 
 ## CASHFLOW FROM INVESTING
 Suppose I have this information:
 
@@ -98,3 +108,12 @@ Market Value of all assets = 144 + 50 + 20 + 10 = 224
 Net Asset Value = 224 - 80 = 144
 Net Asset Value per share =  144 / 2 = 72
 
+## MODULE 65.1
+| Mortgage | Interest Rate | Beginning Balance (000 USD) | Current Balance (000 USD) | Original Term (Months) | Months to Maturity |
+| -------- | ------------- | --------------------------- | ------------------------- | ---------------------- | ------------------ |
+| A        | 2.6%          | 100                         | 90                        | 240                    | 210                |
+| B        | 1.0%          | 200                         | 72                        | 300                    | 100                |
+| C        | 5.4%          | 300                         | 247                       | 360                    | 280                |
+Total Outstanding Principal = 90 + 72 + 247 = 409 
+WAM = (90/409 ⨯ 210) + (72/409 ⨯ 100) + (247/409 ⨯ 280) = 35 + 33.33 + 140 = 233
+WAC = (90/409 ⨯ 2.6) + (72/409 ⨯ 1.0) + (247/409 ⨯ 5.4) = 4.0%

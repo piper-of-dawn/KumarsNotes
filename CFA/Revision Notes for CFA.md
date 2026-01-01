@@ -46,7 +46,35 @@ debugInConsole: false # Print debug info in Obsidian console
 10. Suppose a sample contains the past 30 monthly returns for McCreary, Inc. The mean return is 2%, and the sample standard deviation is 20%. Calculate and interpret the standard error of the sample mean. SE($\mu$) = $\sigma / \sqrt{n}$ = 0.2 / $\sqrt{30}$ = 0.036. **As n $\to$ $\infty$, SE($\mu$) $\to$ 0
 11. **Jackknife Method for SE:** From 5 returns {2, 4, 6, 8, 10}, compute 5 means by dropping one observation at a time (7, 6.5, 6, 5.5, 5). The standard deviation of these leave-one-out means estimates the standard error of the mean. **Works when sample size is small**
 12. **Bootstrap Method for SE:** From the same 5 returns {2, 4, 6, 8, 10}, repeatedly draw samples of size 5 **with replacement** (e.g., {2,2,6,8,10}, {4,6,6,8,10}, …) and compute the mean each time.  After 10,000 such resamples, the **standard deviation of these means** is the bootstrap estimate of the standard error (and their percentiles give confidence intervals).
+
+### MODULE 8.1: THE BASICS OF HYPOTHESIS TESTING
+
+1. Null hypothesis is always: **Effect doesn't exist**. Trust this statement like God or Gravity.
+2. Significance level is the maximum type I error you are willing to tolerate. If p value > significance level, your CANNOT or FAIL TO REJECT the null hypothesis. Also trust this double negative statement like God or Gravity.
+
+ > [!TIP] HAMMER THIS INTO YOUR HEAD
+> Suppose null hypothesis is: the person is NOT pregnant. **Null is always no effect exists.** Type I error is a doctor telling a man that he is pregnant (False Positive). A positive outcome that is false. Type II error is a doctor telling a truly pregnant lady that she is not (False Negative). A negative outcome that is false.
+> ![[Pasted image 20251230214023.png]]
+
+
+
+> [!TIP] HAMMER THIS INTO YOUR HEAD
+> - p-value measures, **how extreme is my sample**, given the null hypothesis is true. 
+> - p-value measures how strong the evidence **against** the null hypothesis is, assuming the null is true.
+> - A p-value of 0.01 means strong evidence that the drug is effective (null is no effect), since such results would occur only 1% of the time if the ground truth was no effect.
+
+3. Power of the test is (1 - Type II error), that is probability of correctly rejecting a false null i.e. claiming the effect where it truly exists that is telling a pregnant lady that she is indeed pregnant. Remember it like: a powerful pregnancy kit can ALWAYS correctly identity if someone is indeed pregnant (even though it can give positive results that are false).4
+
+### MODULE 8.2: TYPES OF HYPOTHESIS TESTS
+
+### MODULE 18.1: THE FOREIGN EXCHANGE MARKET
+1. When you buy a forward contract, you agree to BUY an underlying at a agreed price at a future date. If I buy a Euro / Rupee forward from you at 1 EUR = 100 INR, I am obliged to buy 1 EUR @ 100 INR, no matter whatever is the price. I have **hedged** my risk. 
+2. ==Real P/B Exchange Rate = Nominal P/B × (CPI Base / CPI Price)== You multiply nominal by how pricier base is with respect to price currency.
+3. At a base period, the CPIs of the United States and United Kingdom are both 100, and the exchange rate is $1.70/£. Three years later, the exchange rate is $1.60/£, and the CPI has risen to 110 in the United States and 112 in the United Kingdom. What is the real exchange rate at the end of the three-year period. Here Nominal P/B = $1.6/£, CPI Base = 112, CPI Price = 110. Real P/B = 1.6 × (112/110) = 1.632
+4. Suppose in January 1 EUR =  100 INR. In December 1 EUR = 120 INR. INR depreciated by 20%. To calculate EUR appreciation: 1 INR = 0.01 EUR in Jan and 1 INR = 0.0083 EUR in Dec. So EUR appreciated by (0.01-0.0083) / 0.01 = 16.99%
 ## FSA
+### MODULE 35.1: DIFFERENCES BETWEEN ACCOUNTING PROFIT AND TAXABLE INCOME
+1. Suppose you have Operating Profit (EBIT) of USD 100. And   
 ### MODULE 37.2 TURNOVER AND LIQUIDITY RATIOS
 
 > [!WARNING] Remember
@@ -54,7 +82,7 @@ debugInConsole: false # Print debug info in Obsidian console
 
 1. Turnover means how quickly something is replaced or replenished, inventory turnover ratio (ITR) would be COGS / Avg. Inventory, AR turnover (ART) would be Sales / Avg. AR, AP turnover would be COGS / Avg. AP. So think intuitively, for one unit of inventory, I have ITR units of COGS, so my inventory gets replenished ITR times. 
 
-> [!Danger] Warning
+> [!Danger] DO NOT MAKE THIS MISTAKE
 > ITR is COGS / Avg Inventory, APR is COGS / Avg. AP, ART is Sale / Avg AR. 
 
 2. Divide any turnover ratio by 365 and you get Days of that thing. For example, Days of Inventory (DIO) = 365 / ITR, Days of AP (DPO) = 365 / APR, Days Sales Outstanding (DSO) = 365 / ART
@@ -121,14 +149,14 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 ### MODULE 44.2: INDUSTRY STRUCTURE AND COMPETITIVE POSITIONING
 1. Of the five forces described next, if some or all of them are strong, then firms will likely earn zero or close to zero economic profits (return on invested capital minus cost).
 2. **Porter's Five Forces (Internal Analysis of Industry)**
-	> **“Firms Fight, Entry is Expensive, Substitutes Cap Prices, Buyers Beg, Suppliers Rule.”**
+	> Rivalry, new entrants and substitutes increase the bargaining power of buyers and reduces it for suppliers.
 
 	1. **Rivalry:** Rivalry is highest when many similar firms face slow growth and high fixed costs, forcing price cuts to stay at full capacity. Delta, United, American cut fares aggressively because planes, fuel contracts, and crews are fixed costs and demand grows slowly.
 	2. **Barriers to Entry:** Aramco and ExxonMobil face little new competition because oil production needs billions in drilling, refining, and scale.
 	3. **Threat of substitutes**: Substitutes cap pricing by making demand more price-sensitive.Pfizer can charge high prices for patented drugs.
 	4. **Bargaining power of Buyers:** Buyers of addictive goods such as Cigarettes have low bargaining power.
 	5. **Bargaining power of Suppliers:** Microsoft is one of the few suppliers of operating system software and thus has pricing power.
-3. **PESTLE (External Analysis):**
+4. **PESTLE (External Analysis):**
 	1. political, Trump may impose tariffs on your raw materials and you are bankrupt. Eg: Post tariff children toy industry in US. 
 	2. economic, Economic cycles affect your business, an upcoming interest rate hike might wreck your leveraged business.
 	3. social, This is how society reacts to a business, for example, don't try starting a beef factory in India (although its legal, but don't).
@@ -179,8 +207,21 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 9. If I take a loan of $100 against and pledge my asset of $200, my Loan to Value (LTV) is 200/100 = 2. 
 10. A mortgage of USD 300,000 has an annual interest rate of 6%, is to be repaid monthly over 25 years, and the borrower’s annual pretax gross income is $80,000. Calculate DTI. Here, PV=-300,000, FV = 0, N = 25×12 = 300, I/Y = 6/12 = 0.5. This gives PMT = 1932. DTI = (1932 * 12) / 80000 = 0.289 ~ 28.9 %
 11. Prime loans are made to creditworthy people, subprime loans are made to broke people.
-12. 
+12. Residential mortgages are different because you **can’t freely prepay**. If you do, you **pay a penalty**,. They can be **recourse or non-recourse**: in recourse loans, the lender can **come after your other assets**; in non-recourse, they’re **stuck with just the house**.
+ 13. A 30-year US home loan that meets standards gets pooled and guaranteed by **Fannie Mae** or **Freddie Mac**. These **Agency RMBS** are backed either **directly by the government** or by **government-sponsored agencies** (quasi-government companies). Credit risk is basically **off your plate**. Non-agency RMBS: private-issued, no government/GSE backstop → investors eat credit risk. **2008:** subprime RMBS (e.g., Lehman Brothers) blew up; defaults surged, protections failed, MBS holders lost money.
+ 14. Mortgage pass-through = claim on cash flows from a pool of mortgages, net of admin fees. Pool can have any number of mortgages; each is a securitized mortgage.
+ 15. Mortgage A has an outstanding principal of USD 80, a coupon rate of 6%, and a final maturity of 30 years. Mortgage B has an outstanding principal of USD 20, a coupon rate of 4%, and a final maturity of 15 years. Total outstanding principal in the pool is USD 100. Weighted average coupon (WAC) = (80/100 × 6%) + (20/100 × 4%) = 5.6%. Weighted average maturity (WAM) = (80/100 × 30) + (20/100 × 15) = 27 years.
+ 
+> [!DANGER] DO NOT MAKE THIS MISTAKE
+> Outstanding and NOT beginning principal, while calculating weights.
 
+16. A **Collaterized Mortgage Obligation (CMO) is a tranched MBS**. The **underlying cash flows are the same** mortgages. What changes is **how those cash flows are split and ordered**. Senior tranche gets paid first and lowest tranche gets paid the last. Total prepayment risk stays the same; it is redistributed across tranches.
+17. **Z-tranche** = a CMO tranche that gets no cash interest at first.   During this phase, interest is not paid out; it is **added to principal** instead. Suppose Start: principal = USD 100, coupon = 5%. End of year: no cash paid, principal becomes USD 105. You didn’t get money; your claim just got bigger.
+18. So the bond grows silently while other tranches take the cash. After the accrual period, Z-tranche starts receiving normal interest and principal payments. Z-tranche is usually last in line. It sacrifices early cash so other tranches get paid first.     
+19. Principal-only (PO) securities and Interest-only (IO) securities are **interest-rate / prepayment bets**, not boring bonds. - If rates fall, people refinance → **prepayments speed up**.
+20. You get **only interest payments**, no principal. You want loans to **stay alive as long as possible**. If rates rise or stay high → prepayments slow → **more coupon checks**. Used by investors who want to **bet on rising/stable rates and slow prepayments**.
+    
+- Principal comes back **faster**, IRR shoots up.
 ## ETHICS
 
 ### STANDARD I(A) - PROFESSIONALISM - KNOWLEDGE OF THE LAW
@@ -189,7 +230,7 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 
 > **Stricter rule. Active awareness. Mandatory dissociation.**
 
-1. Know the law that governs your role. You need not know every law on earth. Stay updated when laws/regulations change. When law and CFA differ → follow the stricter rule. If no law exists → follow CFA Standards
+1. Know the law that governs your role. **You need not know every law on earth.** Stay updated when laws/regulations change. When law and CFA differ → follow the stricter rule. If no law exists → follow CFA Standards
 2. You must not knowingly participate or assist in violations If violations persist → dissociate (silence + staying = violation)
 3. Legal advice does not override ethics obligation
 

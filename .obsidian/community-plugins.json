@@ -5,5 +5,6 @@
   "obsidian-excalidraw-plugin",
   "automatic-table-of-contents",
   "vim-toggle",
-  "better-export-pdf"
+  "better-export-pdf",
+  "obsidian-git"
 ]

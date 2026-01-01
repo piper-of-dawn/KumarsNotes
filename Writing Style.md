@@ -1,0 +1,4 @@
+- “Life is tragic simply because the earth turns and the sun inexorably rises and sets, and one day, for each of us, the sun will go down for the last, last time.”
+- “His life, an unending battle, was fought for the keys to heaven and hell, which lay locked in his own mind.”
+- “Why is the measure of love loss?”
+- Quiet lyricism, deceptively simple, deeply musical.

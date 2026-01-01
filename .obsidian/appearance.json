@@ -2,10 +2,10 @@
   "accentColor": "#4a685e",
   "interfaceFontFamily": "SF UI Display",
   "textFontFamily": "Berkeley Mono",
-  "cssTheme": "Cupertino",
+  "cssTheme": "Primary",
   "monospaceFontFamily": "SpaceMono Nerd Font",
   "theme": "obsidian",
   "translucency": false,
   "baseFontSizeAction": true,
-  "baseFontSize": 15
+  "baseFontSize": 17
 }
