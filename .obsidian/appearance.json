@@ -1,11 +1,18 @@
 {
-  "accentColor": "#4a685e",
+  "accentColor": "#54739c",
   "interfaceFontFamily": "SF UI Display",
   "textFontFamily": "Berkeley Mono",
-  "cssTheme": "Primary",
+  "cssTheme": "Cupertino",
   "monospaceFontFamily": "SpaceMono Nerd Font",
-  "theme": "obsidian",
+  "theme": "moonstone",
   "translucency": false,
   "baseFontSizeAction": true,
-  "baseFontSize": 17
+  "baseFontSize": 18,
+  "enabledCssSnippets": [
+    "notes",
+    "callout",
+    "code",
+    "math",
+    "cupertino-overrides"
+  ]
 }

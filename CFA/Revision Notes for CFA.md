@@ -72,6 +72,81 @@ debugInConsole: false # Print debug info in Obsidian console
 2. ==Real P/B Exchange Rate = Nominal P/B × (CPI Base / CPI Price)== You multiply nominal by how pricier base is with respect to price currency.
 3. At a base period, the CPIs of the United States and United Kingdom are both 100, and the exchange rate is $1.70/£. Three years later, the exchange rate is $1.60/£, and the CPI has risen to 110 in the United States and 112 in the United Kingdom. What is the real exchange rate at the end of the three-year period. Here Nominal P/B = $1.6/£, CPI Base = 112, CPI Price = 110. Real P/B = 1.6 × (112/110) = 1.632
 4. Suppose in January 1 EUR =  100 INR. In December 1 EUR = 120 INR. INR depreciated by 20%. To calculate EUR appreciation: 1 INR = 0.01 EUR in Jan and 1 INR = 0.0083 EUR in Dec. So EUR appreciated by (0.01-0.0083) / 0.01 = 16.99%
+## CORPORATE ISSUERS
+
+### MODULE 24.1: CAPITAL INVESTMENTS AND PROJECT MEASURES
+###### Expected number of questions: 3
+###### LOS: Describe types of capital investments. Describe the capital allocation process, calculate net present value (NPV), internal rate of return (IRR), and return on invested capital (ROIC), and contrast their use in capital allocation.
+
+#CRITICAL_MODULE
+
+
+> [!ABSTRACT]- MEMORISE THESE FOR EFFICIENCY
+> - Return on Invested Capital (ROIC) = PAT / Capital
+> - Capital Turnover =  Revenue / Capital
+> - After-Tax Margin = PAT / REVENUE
+> - For NPV on TI Calc. Enter **CF**s (using **↓**) then **NPV**. Enter I then ↓ then **CPT**. 
+> - IRR > Reqd Rate of Return → Accept Project
+> - For IRR,  Calculate NPV then press **IRR** then **CPT**
+
+
+1. Imagine an airline that has to replace aircraft engines as they age. This is a **going-concern project** because it is essential for airline survival. **The airline uses match funding approach**, that is, long-term debt or leases aligned with the engine’s life. ==Match funding because: An asset generates benefits over time. Financing has to be repaid over time. If these timelines don’t align, cash-flow risk appears.== 
+
+> [!warning] Remember
+> Maintenance activity that **reduces costs** will be a going concern project
+
+1. If DGCA forces airlines to replace the old engines then that is a **Regulatory/compliance project**. If Indigo invests to buy Airbus A320s for international routes, then that is a **Expansion Project.**
+2. The capital allocation process is identifying and evaluating capital projects (i.e., projects where the cash flows to the firm will be received over a period longer than a year). 
+3. Capital Allocation Process looks like: Ideation → Forecast CF / Analyze → Budgeting → Audit 
+4. A project has a conventional cash flow pattern if the sign on the cash flows changes only once, else it is unconventional.
+5. NPV is the discounted PV of all future cashflows, discounted by Reqd. Rate of Return. IRR is the rate that makes NPV = 0. Accept if NPV > 0 and accept if IRR > Reqd. rate of Return.
+6. NPV and IRR are forward looking approaches because you are talking about cashflows that **will happen in future.**
+
+> [!warning] Remember
+> It is important to understand, how cashflows are **reinvested** in each approach. **Under IRR method, they are reinvested at IRR and under NPV they are reinvested at Reqd. rate of return.**  
+
+7. IRR is the discount rate that makes NPV = 0. If cash flows **change sign more than once** (e.g., − + − or − + − +), the NPV equation becomes a higher-degree polynomial, which can have **multiple real roots**. Each root is an IRR. Cash flows: −100 (today), +230 (year 1), −132 (year 2)  NPV(r) = −100 + 230/(1+r) − 132/(1+r)² = 0  This quadratic has **two solutions** → **two IRRs**.
+
+> [!TIP] HAMMER THIS INTO YOUR HEAD
+> Practice this on TI Calculator. You should be very very comfortable with this
+> Suppose your cashflow stream is -1000, 100 ... (10 times). Required rate of return is 10%. Calculate NPV and IRR. 
+> **CF** ⇢ **CLR WORK** ⇢ C0=-1000 ⇢ **ENTER** **↓** C01=100 ⇢ **ENTER** ⇢ F01=10 ⇢ **ENTER** ⇢ **NPV** ⇢ I=10 ⇢ **CPT**
+> This gives NPV = -385.543
+> Now do **IRR** ⇢ **CPT**
+> This gives IRR = 0.0
+
+8. **Return on Invested Capital (ROIC) = PAT / Average Invested Capital**
+9. Operating Margin After Tax / After Tax Margin (PAT per unit Revenue) = PAT / Sales 
+10. Capital Turnover (Revenue per unit capital) = Sales / Average Invested Capital.
+11. **ROIC = After Tax Margin $\times$ Capital Turnover**
+12. ROIC is backward looking because you are talking about PAT and Capital Investment that has **already happened**
+13. ROIC is aggregated over a firm (Total PAT / Total Capital). So **profitable projects can hide trashy projects**. ROIC is accounting method and tax jurisdiction dependent hence **not comparable** across firms. ROIC can be **volatile** because it backward looking.
+### MODULE 24.2: CAPITAL ALLOCATION PRINCIPLES AND REAL OPTIONS
+###### Expected number of questions: 1
+###### Describe principles of capital allocation and common capital allocation pitfalls
+1. The three important 
+
+### MODULE 25.1: WEIGHTED-AVERAGE COST OF CAPITAL
+
+###### Expected number of questions: 1
+###### Explain factors affecting capital structure and the weighted-average cost of capital
+
+1. In general, the more **stable**, **non-cyclical**, **predictable**, and **recurring** are a company’s revenues and cash flows, the higher proportion of debt it can have in its capital structure. Eg: Walmart (regular cashflows and non-cyclicity), Adani (Huge amount of tangible assets for collateral and non-cyclicity).
+2. Companies with low fixed operating costs can support larger debt. 
+3. For raising additional debt: Interest Coverage Ratio = EBIT / Interest Expense → Higher the better. Debt to Equity Ratio → Lower the better. Debt to EBIT  → Lower the better.  
+4. Capital structure is also dependent on the growth stage, a company is in. During startup stage, debt is very expensive. Company usually raises money through equity or convertible debt. During growth phase the risk is relatively lower and collateralized debt can be raised as capital. During mature stage, company can afford higher debt financing including unsecured debt. ==Remember: Startup companies can raise **Convertible Debt**, Growth ones can raise **Secured Debt** and Mature Ones can afford **Unsecured Debt**==
+5. **Top Down Factors** such as inflation, the real GDP growth rate, monetary policy, and exchange rates impact capital structure. High Inflation scenarios demand greater yeilds.
+
+### MODULE 25.2: CAPITAL STRUCTURE THEORIES
+###### Expected number of questions: 2
+###### LOS: Explain the Modigliani–Miller propositions regarding capital structure.
+
+1. Costs of asymmetric information arise from the fact that managers typically have more information about a company’s prospects and future performance than owners or creditors. Firms with complex products or little transparency in financial statements tend to have higher costs of asymmetric information, which result in higher required returns on both debt and equity capital. Because shareholders and creditors are aware that asymmetric information problems exist, these investors look for management behavior that signals what knowledge or opinions management may have about the firm’s prospects. For example, taking on the commitment to make fixed interest payments through debt financing sends a signal that management is confident in the firm’s ability to make these payments in the future. By contrast, issuing equity is typically viewed as a negative signal that managers believe a firm’s stock is overvalued. The cost of asymmetric information increases with the proportion of equity in the capital structure
+2. Agency costs of equity are related to conflicts of interest between managers and owners. Managers who do not have a stake in the company do not bear the costs associated with excessive compensation or taking on too much (or too little) risk. Because shareholders are aware of this conflict, they take steps to reduce these costs. The result is called the net agency cost of equity.
+3. According to the free cash flow hypothesis, the use of debt forces managers to be disciplined with regard to how they spend cash because they have less free cash flow to use for their own benefit. It follows that greater amounts of financial leverage tend to reduce agency costs.
+4. Pecking order theory, based on asymmetric information, is related to the signals that management sends to investors through its financing choices. According to pecking order theory, managers prefer to make financing choices that are least likely to send negative signals to investors. Financing choices under pecking order theory follow a hierarchy based on visibility to investors. Internally generated capital is most preferred, debt is the next-best choice, and external equity is the least preferred financing option. Pecking order theory implies that the capital structure is a by product of individual financing decisions.
+
+
 ## FSA
 ### MODULE 35.1: DIFFERENCES BETWEEN ACCOUNTING PROFIT AND TAXABLE INCOME
 1. Suppose you have Operating Profit (EBIT) of USD 100. And   
@@ -109,6 +184,15 @@ debugInConsole: false # Print debug info in Obsidian console
 5. GAAP hates R&D—except software. Saleable software = **capitalize (like IFRS)**; internal software = **capitalize only after build starts**.
 
 ## EQUITY
+### SECURITY MARKET INDEXES
+1. **Price return vs total return**: A price return index reflects only changes in constituent prices, while a total return index assumes all dividends and interest are reinvested. The headline **S&P 500** is a price return index, while **Germany’s DAX** is quoted as a total return index, which is why naïve comparisons are misleading. ==At inception PRI = TRI.==
+
+2. **Price return index level**
+$$  V_{PRI}=\frac{\sum_{i=1}^{N} n_i P_i}{D}$$
+  The **divisor (D)** is **defined at inception** to scale the index to a base value. Its **numerical value is later adjusted only to maintain continuity** when mechanical events occur (stock splits, spin-offs, constituent changes), so the index does not show artificial gains or losses. Real-world hook: in the **Dow Jones Industrial Average**, Apple’s stock split changed its price but not its economic value; the adjusted divisor prevented the Dow from falsely jumping.
+3. **Price return (security or index)**: Measures only price change.  $$PR_i=\frac{P_{i1}-P_{i0}}{P_{i0}}$$, and at the index level $PR_I=\sum w_i PR_i$. Dividends/interest are ignored.
+    
+4. **Total return = what investors actually earn**: Adds income to price change.    $$TR_I=\frac{V_{PRI1}-V_{PRI0}+Inc_I}{V_{PRI0}}$$Over time, total return always exceeds price return when dividends exist.
 
 ### MODULE 43.2: REVENUE, PROFITABILITY,AND CAPITAL
 
