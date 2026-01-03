@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5026054382324,
-    "collapsed": true
+    "width": 280.5026054382324
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -206,6 +205,7 @@
   },
   "active": "971cccae7e1de4b6",
   "lastOpenFiles": [
+    "Writing Style.md",
     "CFA/Revision Notes for CFA.md",
     "Affirmations.md",
     "Writing Style.md",
