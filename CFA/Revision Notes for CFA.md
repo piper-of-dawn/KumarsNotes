@@ -67,11 +67,58 @@ debugInConsole: false # Print debug info in Obsidian console
 
 ### MODULE 8.2: TYPES OF HYPOTHESIS TESTS
 
+
+## ECONOMICS
+
 ### MODULE 18.1: THE FOREIGN EXCHANGE MARKET
 1. When you buy a forward contract, you agree to BUY an underlying at a agreed price at a future date. If I buy a Euro / Rupee forward from you at 1 EUR = 100 INR, I am obliged to buy 1 EUR @ 100 INR, no matter whatever is the price. I have **hedged** my risk. 
 2. ==Real P/B Exchange Rate = Nominal P/B × (CPI Base / CPI Price)== You multiply nominal by how pricier base is with respect to price currency.
 3. At a base period, the CPIs of the United States and United Kingdom are both 100, and the exchange rate is $1.70/£. Three years later, the exchange rate is $1.60/£, and the CPI has risen to 110 in the United States and 112 in the United Kingdom. What is the real exchange rate at the end of the three-year period. Here Nominal P/B = $1.6/£, CPI Base = 112, CPI Price = 110. Real P/B = 1.6 × (112/110) = 1.632
 4. Suppose in January 1 EUR =  100 INR. In December 1 EUR = 120 INR. INR depreciated by 20%. To calculate EUR appreciation: 1 INR = 0.01 EUR in Jan and 1 INR = 0.0083 EUR in Dec. So EUR appreciated by (0.01-0.0083) / 0.01 = 16.99%
+
+### MODULE 19.1: FOREIGN EXCHANGE RATES
+
+1. A cross rate is a rate which is quoted using a third currency as a base. This is useful when there is no direct market between currencies in question.
+
+> [!QUESTION] NUMERICAL
+> Suppose INR / USD = 90.01 and PKR / USD = 279.90. INR and PKR do not trade. So to calculate PKR / INR
+> PKR / INR = PKR / USD $\times$ USD / INR = 279.90 $\times$ (1/90.01) = 3.109
+> This PKR / INR cross rate.
+
+
+> [!tip] HAMMER THIS INTO YOUR HEAD
+> **Spot + Cost of Carry - Benefits = Forward**
+> Memorising and deeply understanding this one line will take you far 
+
+2. We have domestic rate as $r_d$, foreign rate as $r_f$. 
+	- Suppose we borrow spot(d/f) and lend to foreign. 
+	- Here, cost of carry of spot = spot(d/f) $\times$ $r_d$
+	- Here, benefits from investing spot into foreign country = forward(d/f) $\times$ $r_f$ . Why forward(d/f)? Because I will take back my money after one time period and will lock in forward rate today itself.
+	- Now using **Spot + Cost of Carry - Benefits = Forward**. This gives spot(d/f) $\times$ $(1+r_d)$ - forward(d/f) $\times$ $r_f$ = forward(d/f)
+	- ==spot(d/f)$(1+r_d)$ = forward(d/f)$(1+r_f)$== is no-arbitrage relationship.
+
+> [!question] NUMERICAL
+> Consider two currencies, the USD and the INR. The spot INR/USD exchange rate is 90.01, the 1-year riskless INR rate is 6.65%, and the 1-year riskless USD rate is 4.2%. What is the 1-year no-arbitrage forward exchange rate?
+> Cost of borrowing INR = 90.01(1+0.065) = 95.86
+> Benefits from lending USD = Forward(INR/USD)(1.042)
+> Therefore no-arbitrage Forward(INR/USD)= 95.86/1.042 = 91.99
+
+3. **How to make free money (arbitrage)?** Suppose Forward(INR/USD) is 92.5 > 91.99. Let us now borrow INR 9.01 Million from HDFC Bank @ 6.65% and convert it to USD. I have 100,000 USD which I lend to JP Morgan at 4.2%. Also I do a Forward(INR/USD) and lock in the price at 92.5. After 1 year:
+		- JP Morgan pays me 100,000 (1.042) = 104,200, and I close the forward by selling 104,200 @ 92.5 which gives me INR 9.638 million. 
+		- I pay back HDFC: 9.01 (1.0665) = USD 9.609 Million
+		- I make free money = 9.638 - 9.601 = INR 0.028 Million ~ INR 28k.
+
+> [!danger] DO NOT MAKE THIS MISTAKE
+> Rates are always quoted annual. 
+
+> [!question] NUMERICAL
+> The spot ABE/DUB exchange rate is 4.5671, the 90-day riskless ABE rate is 5%, and the 90-day riskless DUB rate is 3%. What is the 90-day forward exchange rate that will prevent arbitrage profits?
+> 90-day-rates: ABE = 0.0125, DUB = 0.0075
+> Cost of borrowing DUB = 4.5671 (1.0125) = 4.624
+> Forward(ABE/DUB) = 4.624 / 1.0075 = 4.589
+
+3. **Forward rates are quoted as points, not prices:** points are the difference from spot, measured in the last decimal of the spot quote (e.g., with 4 decimals, 1 point = 0.0001). INR/USD future is trading at 198 bips, which makes forward rate = 90.01 + 1.98 = 91.99.
+4. For INR, Forward > Spot, hence INR is trading at forward premium
 ## CORPORATE ISSUERS
 
 ### MODULE 24.1: CAPITAL INVESTMENTS AND PROJECT MEASURES
@@ -344,7 +391,102 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 19. Principal-only (PO) securities and Interest-only (IO) securities are **interest-rate / prepayment bets**, not boring bonds. - If rates fall, people refinance → **prepayments speed up**.
 20. You get **only interest payments**, no principal. You want loans to **stay alive as long as possible**. If rates rise or stay high → prepayments slow → **more coupon checks**. Used by investors who want to **bet on rising/stable rates and slow prepayments**.
     
-- Principal comes back **faster**, IRR shoots up.
+### MODULE 58.1: YIELD-BASED BOND CONVEXITY AND PORTFOLIO PROPERTIES
+
+###### MODULE 58.1: MODULE 58.1: YIELD-BASED BOND CONVEXITY AND PORTFOLIO PROPERTIES
+
+
+> [!info] MEMORISE THIS FOR EFFICIENCY
+> Effective Duration = $$ \frac{P_h - P_l}{P_o \times \Delta y} $$
+> Effective Convexity = $$ \frac{P_h + P_l - 2P_o}{P_o \times (\Delta y)^2} $$
+
+1. Effective duration assumes a **straight-line** price–yield relationship, meaning the slope is treated as the same no matter where yield is. Effective duration = **% price sensitivity to yield**: how much price changes (in %) when yield moves.    
+2. Use symmetric yield shocks around **Y₀**: Y₁ = Y₀ + ΔY → price **P₁** (down), and Y₂ = Y₀ − ΔY → price **P₂** (up), with base price **P₀**.    
+3. Central-difference idea: average slope of price vs yield near Y₀ ≈ **(P₂ − P₁) / (2ΔY)**.    
+4. Convert slope into **percentage** sensitivity by dividing by P₀:  
+    **Effective Duration = (P₂ − P₁) / (2 × P₀ × ΔY)**
+5. Toy check: P₀=100, ΔY=0.01, P₁=96, P₂=104 ⇒ ED = (104−96)/(2×100×0.01)=8/2=**4** ⇒ ~**4% price move per 1% yield**, opposite direction.    
+6. Use effective duration especially when **cash flows depend on yield** (callable/putable, MBS), where Macaulay/modified duration can mislead.
+7. In reality, the price–yield relationship is **curved (convex)**, so the slope actually changes with yield.
+8. Effective convexity measures the **curvature** of the price–yield relationship, i.e., the second-order effect after duration.    
+9. Start at yield **Y₀** with price **P₀**. Move yield up by **Δy** → price becomes **P₁**. Move yield down by **Δy** → price becomes **P₂**.    
+10. If the price–yield line were straight, the average of **P₁** and **P₂** would equal **P₀**. Any difference comes only from curvature.    
+11. That curvature is captured by **P₂ − 2P₀ + P₁** (up + down − twice the middle).    
+12. Convert this into a percentage measure by dividing by **P₀**, and scale it per unit of yield squared by dividing by **(Δy)²**.    
+13. Final formula to remember:  
+    **Effective Convexity = (P₂ − 2P₀ + P₁) / (P₀ · (Δy)²)**
+14. Because of this, duration **understates the price gain when yields fall**.
+15. And it **overstates the price loss when yields rise**.
+
+> [!TIP] HAMMER THIS INTO YOUR HEAD
+>  **Duration is pessimistic** — it underestimates price rise from a yield fall and exaggerates price decline from yeild rise.
+16. **Convexity adjustment** is added to correct this straight-line error and account for curvature.
+
+### MODULE 60.1: CREDIT RISK
+
+1. **Bottom-up credit analysis = borrower first (the 5 Cs):**
+   Capacity (the borrower’s ability to make their debt payments on time), Capital (Other financing sources available to reduce reliance on debt), Collateral (what can lenders grab on default?), Covenants (legal handcuffs protecting lenders), Character (management integrity and willingness to pay).
+2. Bottom-up logic: even in a bad economy, a borrower with **strong cash flows, low leverage, good assets, tight covenants, and credible management** can survive.
+3. **Top-down credit analysis = environment first:**
+   Conditions (business cycle, rates, inflation), Country (political risk, legal enforcement, geopolitics), Currency (FX risk affecting debt repayment capacity).
+4. Top-down logic: even a good borrower can fail if **macro turns hostile, country risk explodes, or currency collapses**.
+5. **Corporate debt repayment sources:** primary source is **operating cash flows**; secured debt also has **pledged collateral**, unsecured debt relies only on business cash flows plus backups like **asset sales, divestitures, or new debt/equity**.
+6. **Corporate credit risk drivers:** weak economy or markets, stronger competition, low profitability, or **too much leverage**.
+7. **Sovereign debt repayment sources:** **tax revenue, tariffs, fees**; secondary sources are **issuing more debt** or **selling public assets (privatization)**.
+8. **Sovereign credit risk drivers:** poor growth, political instability, **fiscal deficits**, and **high debt relative to GDP**.
+9. **Illiquidity vs insolvency:** illiquid = can’t raise cash right now; insolvent = **assets < liabilities**. An issuer can be illiquid but still solvent and still default.
+10. **Cross-default clause:** If the issuer defaults on **one bond**, all other bonds with a cross-default clause are **immediately treated as defaulted**, even if they were being paid on time.
+11. **Pari passu clause:**- **Pari passu means “equal footing.”** Bonds with a pari passu clause have **no priority among themselves** in default. If two bonds are pari passu, **neither gets paid before the other** just because of issue date, size, or holder.
+12. Default on one unsecured bond → **all unsecured bonds default** → **all unsecured holders line up together** and claim the issuer’s **general assets** (no collateral).
+13. They are paid **first from collateral**. Only if collateral value is **not enough to cover all secured claims** do they start taking losses. Loss happens **only when** collateral value < total pari passu secured debt.
+14. **Probability of default (PD):** the chance that the borrower **fails to pay interest or principal when due**, usually stated on an **annual basis*.   
+15. **Recovery, loss severity, and exposure:** recovery rate is the **fraction of the claim recovered after default**; **loss severity = 1 − recovery rate**; exposure at default is **what you are owed minus the value of collateral available**.    
+16. **Loss given default (LGD):** the loss **if default happens**, stated in money or percent; in percentage terms  
+    **LGD% = expected exposure × (1 − recovery rate)**.
+17. Fair Spread  = PD $\times$ LGD
+
+> [!QUESTION] NUMERICAL
+> A bond issuer has a 3% probability of default, and one of its bond issues has a recovery rate of 75%. The bond has a 4% coupon and is currently trading at par. A government security of similar maturity yields 2.5%. Assess whether the credit spread of the bond issue is adequately compensating investors for credit risk.
+> 
+> Here: Spread  = 4 - 2.5 = 1.5% = 0.015
+> Fair Spread = PD $\times$ LGD = 0.03 $\times$ 0.25 = 0.0075
+> **Bond is trading over-valued at twice its fair spread**
+
+18. An analyst would need to estimate PD and LGD for the counterparty. Solvency ratios like:
+		- Interest Coverage Ratio = EBIT / Interest
+		- Financial Leverage = Average Total Assets / Average Total Equity
+		- Fixed Charge Coverage = (EBIT + Lease Payments) / Interest + Lease Payments. This could be useful for US GAAP based companies with operating leases (where lease expense is shown as operating expense).
+19. AAA (Aaa) is the highest rating. Think **pre-2008 mortgage CDOs**—they wore AAA badges and still blew up. Rating ≠ safety. Investment grade is **Baa3 / BBB− and above**. When **Ford** fell to junk in 2005, many funds were forced sellers overnight. The line matters. Below that (Ba1 / BB+ and lower) is **high-yield / junk**. Example: **Tesla bonds (2014–2018)** paid junk yields despite hype because default risk was real. Defaulted bonds are **D (S&P/Fitch)** or **C (Moody’s)**. Example: **Lehman Brothers 2008**—investment grade to default in days.
+20. Longer-duration bonds usually have longer maturities and carry more uncertainty of future creditworthiness.
+21. Credit migration risk: Investors can lose value without default—price damage comes from worsening credit perception, not missed payments. This is the risk that a borrower’s credit quality changes over time, shown by a rating upgrade or downgrade, even without default. A downgrade increases required yield spreads, reducing bond prices and increasing funding costs for the issuer.
+22. Spreads are a **price of fear**, not just default math. When conditions worsen, investors demand more yield immediately. Credit spread risk = spreads widen → bond prices fall. This is the real risk for **investment-grade**, not sudden default.
+23. Macro driver #1: business cycle. In booms, profits rise, defaults feel far away → spreads compress. In recessions, fear spikes → spreads widen. Classic **2008–09 GFC** pattern. High-yield behaves more violently than IG across the cycle. Dispersion is larger. Some junk names blow out, others survive.
+24. Crisis effect: **flight to quality**. Investors dump risky bonds and pile into safe ones. Liquidity matters: high-yield is less liquid, so bid-ask spreads explode in stress because nobody wants to buy trash.
+25. The limitation for ratings are:
+	- Ratings lag markets. In early 2007, **subprime spreads exploded** while ratings stayed high. Markets smelled smoke first.
+	- Same rating, different yields. Example: two **distressed airline bonds** with equal ratings—one with planes as collateral traded tighter than one with nothing backing it.
+	- Hard-to-model risks get missed. **BP (Deepwater Horizon, 2010)**—environmental disaster nuked credit quality overnight.
+	- Split ratings are common. **Italy’s sovereign debt** often had different ratings across agencies, confusing investors and widening spreads.
+	- Agencies make mistakes. Systemic ones. **2008 GFC** is the canonical failure—AAA paper behaving like lottery tickets.
+	- Fraud kills suddenly. **Enron** was investment grade days before bankruptcy. Ratings couldn’t see cooked books.
+	- Legal and regulatory shocks matter. **PG&E** bonds collapsed after California wildfire liabilities—ratings reacted late.
+
+> [!question] NUMERICAL
+> A 10-year bond has an annual coupon of 5% and a bid–offer spread of 99.5/100.5. The benchmark 10-year yield is 3%. Decompose the yield spread into liquidity spread and credit spread.
+> First calculate midpoint price = (100.5+99.5)/100
+> N =10, FV = 100, PV = -100, so bond is at-par and YTM = Coupon Rate = 5%
+> Now at bid price of 99.5: N =10, PV = -99.5, PMT = 5, FV = 100, I/Y = 5.064 
+> Now at bid price of 100.5: N =10, PV = -100.5, PMT = 5, FV = 100, I/Y = 4.935 
+> Total Spread = 2**
+> **Liquidity Spread = 5.064 - 4.935 = 0.129**
+> **Credit Spread = 2 - 0.129 = 1.871**
+
+
+
+
+
+
+
 ## ETHICS
 
 ### STANDARD I(A) - PROFESSIONALISM - KNOWLEDGE OF THE LAW

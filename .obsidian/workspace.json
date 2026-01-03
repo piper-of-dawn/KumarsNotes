@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA/Revision Notes for CFA.md",
+                "file": "CFA/Legal Terms Related to Bonds.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Revision Notes for CFA"
+              "title": "Legal Terms Related to Bonds"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -89,12 +88,12 @@
               "title": "bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 280.5026054382324
+    "width": 280.5026054382324,
+    "collapsed": true
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -203,19 +202,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "971cccae7e1de4b6",
+  "active": "09073dfbd67c59cb",
   "lastOpenFiles": [
-    "Writing Style.md",
+    "CFA/Legal Terms Related to Bonds.md",
+    "CFA/Numericals to Memorise.md",
     "CFA/Revision Notes for CFA.md",
+    "CFA/Yeild to Maturity.md",
+    "CFA/Annuity Calculation.md",
+    "CFA/CouponStructures.md",
+    "CFA/Contingency Provisions.md",
+    "Writing Style.md",
     "Affirmations.md",
     "Writing Style.md",
     "Untitled.md",
-    "CFA/Numericals to Memorise.md",
     "Pasted image 20251230214023.png",
     "Excalidraw/Drawing 2025-12-28 11.28.51.excalidraw.md",
     "Pasted Image 20251228112906_706.png",
     "Revise before Exam.md",
-    "CFA/Yeild to Maturity.md",
     "Maturity.md",
     "Long Term Assets.md",
     "Liquidity Ratios.md",
@@ -229,11 +232,6 @@
     "Forward Rate.md",
     "Equity, Fixed Income and Alt Investment Indexes.md",
     "Equity.md",
-    "EPS.md",
-    "Counterparty Credit Risk at HSBC/Dagster Wiring.md",
-    "Convexity of the Yield Curve.md",
-    "Components and Format of the Income Statement.md",
-    "Common Size Analysis.md",
     "dp.png",
     "Spells",
     "Rust",
