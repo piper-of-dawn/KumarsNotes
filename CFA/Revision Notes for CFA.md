@@ -727,3 +727,139 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 8. **“Client requested a reference.”** Client initiated and consented; correct logic: allowed.
 9. **“Information was outdated and irrelevant.”** No identification possible; correct logic: not confidential.
 10. **“Disclosure followed firm and law.”** Policies aligned with legal requirements; correct logic: compliant handling.
+---
+
+### STANDARD IV(A) – DUTIES TO EMPLOYERS – LOYALTY
+
+> [!tip] TALISMAN
+> **Your employer comes first while you are employed.**
+> You can plan your exit, but you cannot compete, steal, or sabotage.
+> Loyalty means **no harm, no misuse, no front-running the firm**.
+> Once you leave, skill stays with you—but **property and clients don’t**.
+
+#### Core Concepts
+
+1. Members and Candidates must act with **loyalty to their employer** and not deprive the employer of the benefit of their skills and efforts while employed.
+2. You must not engage in activities that **compete with or harm the employer’s business** during employment.
+3. You may **prepare to leave** your employer (e.g., update résumé, explore opportunities), but you may not solicit clients, steal data, or start a competing business before departure.
+4. **Employer property** includes client lists, trade secrets, models, research, algorithms, and confidential processes—these must not be taken or used.
+5. Investment records and work products created on the job generally **belong to the employer**, even if you helped create them.
+6. After termination, you may use **general skills, experience, and knowledge**, but not confidential information or employer property.
+7. This standard is about **conduct during employment**; post-employment actions are limited by confidentiality and property rights.
+
+#### Exam Traps (Violation)
+
+1. **“I’m leaving anyway.”** Wrong logic: Imminent departure reduces duty; correct logic: loyalty applies until employment ends; tested angle: resignation period.
+2. **“I worked on this model myself.”** Wrong logic: Personal effort means ownership; correct logic: work created for employer belongs to employer; tested angle: intellectual property.
+3. **“I only contacted a few clients.”** Wrong logic: Limited solicitation is okay; correct logic: any client solicitation before leaving violates loyalty; tested angle: pre-departure poaching.
+4. **“I copied files to work at home.”** Wrong logic: Convenience justifies copying; correct logic: removing employer data without permission is misuse; tested angle: data theft.
+5. **“I did it after hours.”** Wrong logic: Off-hours actions are personal; correct logic: duty applies regardless of timing; tested angle: moonlighting.
+6. **“The firm wasn’t harmed.”** Wrong logic: No damage means no violation; correct logic: intent and conduct matter, not outcome; tested angle: attempted harm.
+7. **“Everyone does this before quitting.”** Wrong logic: Common practice excuses conduct; correct logic: ethical duty overrides norms; tested angle: industry culture.
+8. **“I used public info.”** Wrong logic: Public sources remove violation; correct logic: compiled client lists and insights can still be employer property; tested angle: client databases.
+9. **“I helped a friend’s firm.”** Wrong logic: Favor to friend is harmless; correct logic: assisting competitors while employed violates loyalty; tested angle: side consulting.
+10. **“I delayed my work.”** Wrong logic: Poor effort isn’t unethical; correct logic: intentionally withholding effort deprives employer of benefit; tested angle: shirking.
+
+#### Exam Traps (Not a Violation)
+
+1. **“I updated my résumé.”** Job preparation occurred; correct logic: planning to leave is allowed.
+2. **“I interviewed elsewhere.”** Exploring opportunities is permitted; correct logic: no competition yet.
+3. **“I left and then started a firm.”** Competition began post-employment; correct logic: loyalty duty ended.
+4. **“I used general experience.”** Skills and know-how applied; correct logic: general knowledge belongs to you.
+5. **“I returned all files.”** No employer property retained; correct logic: duty respected.
+6. **“Clients contacted me first after I left.”** No pre-solicitation occurred; correct logic: responding is allowed.
+7. **“I followed firm policies.”** Actions complied with internal rules; correct logic: loyalty satisfied.
+8. **“I disclosed conflicts to employer.”** Transparency maintained; correct logic: proper handling.
+9. **“I declined competing work.”** Refusal protected employer interests; correct logic: loyalty upheld.
+10. **“My contract allowed it.”** Explicit permission existed; correct logic: contractual rights respected.
+
+---
+
+### STANDARD IV(B) – DUTIES TO EMPLOYERS – ADDITIONAL COMPENSATION ARRANGEMENTS
+
+> [!tip] TALISMAN
+> **No side money without telling your boss.**
+> If someone else pays you for the same work—or work that overlaps—you must get **written consent from your employer first**.
+> Transparency protects loyalty; secrecy breaks it.
+
+#### Core Concepts
+
+1. Members and Candidates must **not accept compensation, benefits, or consideration** from clients or third parties that could create a conflict with their employer’s interests **unless they obtain written consent** from all parties involved.
+2. Additional compensation includes **cash, gifts, referral fees, equity, profit-sharing, travel, or non-cash benefits**.
+3. Consent must be **prior and in writing**; after-the-fact disclosure is insufficient.
+4. The concern is **conflict of interest**—side payments may bias effort, time allocation, or judgment away from the employer.
+5. This applies whether the compensation is tied to **performance, referrals, marketing, or “consulting”** work related to your role.
+6. Even if the employer is not harmed, **undisclosed compensation is still a violation**.
+7. This standard protects the employer’s right to know **who is paying you and why**.
+
+#### Exam Traps (Violation)
+
+1. **“It didn’t affect my work.”** Wrong logic: No impact means no issue; correct logic: undisclosed compensation itself violates the standard; tested angle: intent vs disclosure.
+2. **“It was just a small gift.”** Wrong logic: Size makes it harmless; correct logic: any compensation requires consent; tested angle: de minimis gifts.
+3. **“I told my manager verbally.”** Wrong logic: Informal disclosure is enough; correct logic: consent must be written; tested angle: verbal approvals.
+4. **“The client insisted.”** Wrong logic: Client request overrides rules; correct logic: employer consent is still required; tested angle: client pressure.
+5. **“It was after hours.”** Wrong logic: Timing removes conflict; correct logic: overlap with professional role triggers the standard; tested angle: moonlighting.
+6. **“It wasn’t cash.”** Wrong logic: Non-cash benefits don’t count; correct logic: all forms of compensation count; tested angle: travel, gifts, perks.
+7. **“Everyone does side consulting.”** Wrong logic: Industry norms excuse conduct; correct logic: disclosure rules still apply; tested angle: cultural normalization.
+8. **“I planned to disclose later.”** Wrong logic: Delayed disclosure is fine; correct logic: consent must be obtained *before* accepting compensation; tested angle: timing.
+9. **“My employer didn’t ask.”** Wrong logic: Silence implies approval; correct logic: affirmative written consent is required; tested angle: passive approval.
+10. **“It helped the firm indirectly.”** Wrong logic: Employer benefit excuses secrecy; correct logic: undisclosed conflicts still violate the standard; tested angle: rationalization.
+
+#### Exam Traps (Not a Violation)
+
+1. **“Written consent was obtained.”** Employer and client approved in advance; correct logic: requirement satisfied.
+2. **“Compensation was disclosed and approved.”** Transparency existed; correct logic: no conflict breach.
+3. **“The activity was unrelated.”** No overlap with professional role; correct logic: standard not triggered.
+4. **“The employer pays bonuses.”** Internal compensation is expected; correct logic: not additional compensation.
+5. **“The gift was returned or refused.”** No acceptance occurred; correct logic: no violation.
+6. **“Contract explicitly allowed it.”** Employment agreement permitted the arrangement; correct logic: consent embedded.
+7. **“The work was pro bono.”** No compensation received; correct logic: standard not triggered.
+8. **“The client reimbursed expenses.”** Legitimate expense reimbursement approved; correct logic: not additional pay.
+9. **“The employer initiated the arrangement.”** Employer-sponsored side work; correct logic: no conflict.
+10. **“Disclosure happened before acceptance.”** Consent preceded compensation; correct logic: compliant behavior.
+
+---
+
+### STANDARD IV(C) – DUTIES TO EMPLOYERS – RESPONSIBILITIES OF SUPERVISORS
+
+> [!tip] TALISMAN
+> **If you supervise, you’re responsible.**
+> Build systems that prevent violations, monitor them, and act when red flags appear.
+> You’re not expected to be perfect—but you must be **reasonable, proactive, and responsive**.
+
+#### Core Concepts
+
+1. Members and Candidates with supervisory authority must **make reasonable efforts** to ensure that anyone they supervise complies with applicable laws, rules, and CFA Standards.
+2. “Supervision” includes **direct and indirect authority** over activities that could result in violations, even if day-to-day tasks are delegated.
+3. Reasonable supervision requires **adequate policies, procedures, training, and monitoring**, tailored to the firm’s size and complexity.
+4. Supervisors must **identify risks**, implement controls, and **respond promptly** to potential violations or red flags.
+5. Delegation does **not** remove responsibility; supervisors must **oversee the delegate** and verify controls work.
+6. When a violation is discovered or suspected, supervisors must **take corrective action** (investigate, escalate, stop activity).
+7. This standard is about **process and oversight**, not guaranteeing zero violations.
+
+#### Exam Traps (Violation)
+
+1. **“Compliance handles this.”** Wrong logic: Compliance alone owns supervision; correct logic: supervisors retain responsibility; tested angle: abdication.
+2. **“I didn’t know.”** Wrong logic: Ignorance excuses failures; correct logic: failure to monitor is itself a violation; tested angle: willful blindness.
+3. **“Policies exist.”** Wrong logic: Written rules are enough; correct logic: policies must be implemented and enforced; tested angle: paper programs.
+4. **“I delegated it.”** Wrong logic: Delegation transfers duty; correct logic: supervisors must oversee delegates; tested angle: delegation without oversight.
+5. **“No one complained.”** Wrong logic: Absence of complaints means compliance; correct logic: supervisors must proactively monitor; tested angle: passive supervision.
+6. **“It was a junior employee.”** Wrong logic: Seniority determines duty; correct logic: all supervised activity requires oversight; tested angle: junior errors.
+7. **“The firm is small.”** Wrong logic: Size excuses controls; correct logic: controls must be reasonable for size, not absent; tested angle: resource constraints.
+8. **“The violation didn’t cause harm.”** Wrong logic: No harm means no issue; correct logic: prevention and response matter regardless of outcome; tested angle: attempted violations.
+9. **“I warned them once.”** Wrong logic: Verbal warning suffices; correct logic: must follow up and ensure compliance; tested angle: ineffective remediation.
+10. **“The system failed.”** Wrong logic: Technology failure removes duty; correct logic: supervisors must review and fix controls; tested angle: system reliance.
+
+#### Exam Traps (Not a Violation)
+
+1. **“Reasonable policies were in place.”** Controls matched firm risks; correct logic: reasonable efforts satisfied.
+2. **“Training was provided.”** Staff received guidance; correct logic: proactive supervision.
+3. **“Monitoring was ongoing.”** Reviews and checks occurred; correct logic: active oversight.
+4. **“Violation was promptly addressed.”** Activity stopped and escalated; correct logic: proper response.
+5. **“The employee circumvented controls.”** Deliberate evasion occurred; correct logic: supervisors aren’t guarantors.
+6. **“Delegation included oversight.”** Reporting lines and checks existed; correct logic: duty maintained.
+7. **“Controls were updated after issues.”** Continuous improvement applied; correct logic: responsive supervision.
+8. **“Firm size was considered.”** Scaled controls implemented; correct logic: proportional supervision.
+9. **“Independent compliance reviewed controls.”** Additional oversight present; correct logic: strengthens reasonableness.
+10. **“No red flags were present.”** Nothing reasonably indicated risk; correct logic: no failure to act
+
