@@ -13,6 +13,20 @@ debugInConsole: false # Print debug info in Obsidian console
 - MODULE 24.2: CAPITAL ALLOCATION PRINCIPLES AND REAL OPTIONS
 
 ## QUANTITATIVE METHODS
+
+### RATES OF RETURN
+1. Interest rate = price of waiting. The required rate of return (discount rate) is the minimum return investors demand to delay consumption.
+2. Nominal = real growth + inflation protection. Money must grow in real terms and also keep up with inflation. Exact relation (Fisher equation):
+$$(1 + r_{nominal}) = (1 + r_{real}) \times (1 + \pi_{expected})$$
+Expected inflation, not current inflation, because interest rates price the future.
+$$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
+3. Every premium exists because uncertainty exists
+	- Maturity Risk Premia: More time → more volatility → maturity premium. In simple words, a lot more could go wrong if money is locked up for long.
+	- Liquidity Risk Premia: Asset might be very hard to sell if I need money quickly.
+	- Default risk premia: The borrower may refuse or declare inability to pay.
+	- Inflation premia: Purchansing power of money is lower in future.
+
+
 ### MODULE 6.1: LOGNORMAL DISTRIBUTIONS AND SIMULATION TECHNIQUES
 
 1. **Log-Normal Distribution**
@@ -195,6 +209,30 @@ debugInConsole: false # Print debug info in Obsidian console
 
 
 ## FSA
+
+### INTRODUCTION TO FINANCIAL STATEMENT ANALYSIS
+
+> [!TIP] HAMMER THIS INTO YOUR HEAD
+> Financial Statement Analysis = decision-making pipeline (ODPARU). Objective & context → Data gathering → Data processing → Analysis → Reporting → Updating. 
+
+1. What each of them means:
+	- Objective & context: valuation vs credit vs governance, time horizon, assumptions, constraints.
+	- Data gathering: financial statements, notes, MD&A, filings, industry data, macro data.
+	- Data processing: accounting adjustments, reclassification, normalization, removing one-offs.
+	- Analysis: ratios, trends, cash flow analysis, segment analysis, peer comparison.
+	- Reporting: conclusions, risks, sensitivities, recommendations.
+	- Updating: revise analysis for new filings, events, or macro/firm changes.
+    
+3. Standard setters vs regulators (do not mix).  
+    [Financial Accounting Standards Board](chatgpt://generic-entity?number=0) and [International Accounting Standards Board](chatgpt://generic-entity?number=1) set accounting standards.  
+    [Securities and Exchange Commission](chatgpt://generic-entity?number=2), [Federal Reserve](chatgpt://generic-entity?number=3), and [Office of the Comptroller of the Currency](chatgpt://generic-entity?number=4) enforce laws and compliance. Rule writers vs enforcers.
+
+> [!TIP] HAMMER THIS INTO YOUR HEAD
+> Key US filings and what they belong to. 10-K: annual financials, notes, risk factors, MD&A.  10-Q: quarterly interim update.  8-K: material event disclosure (M&A, asset sale, management/governance change).
+
+4. Business segment vs operating segment. ==A segment is reportable if it is ≥10% of revenue OR assets OR operating income.== This is about identifying economically meaningful parts of the firm.
+5. Geographic segments add one more filter. Must meet the 10% size test and face a different economic environment (regulation, currency, growth, risk).
+6. MD&A is qualitative but critical. Contains economic conditions, strategy and vision, trends, off-balance-sheet obligations, and forward-looking risks. Numbers show history; MD&A signals future stress or optimism.
 ### MODULE 35.1: DIFFERENCES BETWEEN ACCOUNTING PROFIT AND TAXABLE INCOME
 1. Suppose you have Operating Profit (EBIT) of USD 100. And   
 ### MODULE 37.2 TURNOVER AND LIQUIDITY RATIOS
@@ -231,6 +269,27 @@ debugInConsole: false # Print debug info in Obsidian console
 5. GAAP hates R&D—except software. Saleable software = **capitalize (like IFRS)**; internal software = **capitalize only after build starts**.
 
 ## EQUITY
+
+### MARKET ORGANISATION 
+
+1. **Financial Assets vs. Real Assets**: Financial assets are paper or digital claims on cash flows (stocks, bonds, derivatives), while real assets are tangible physical things that produce value directly (factories, land, gold).
+   *Example: A share of Apple stock is a financial asset (a claim on Apple’s profits); the factory where Apple assembles iPhones is a real asset.*
+2. **Debt Securities**: These are simply IOUs where the borrower promises to repay the principal plus interest. They are legally binding contracts.
+   *Example: You buy a \$1,000 corporate bond that pays 5% interest. The company legally owes you \$50 a year plus your \$1,000 back at the end.*
+3. **Equity Securities**: These represent ownership in a company. Common stock gives you a residual claim (you get what's left after debts are paid) and voting rights. Preferred stock is a hybrid: it pays fixed dividends like a bond but usually has no voting rights.
+   *Example: If a company goes bankrupt, bondholders get paid first. Common stockholders get whatever scraps are left (usually zero). Preferred stockholders sit in the middle.*
+4. **Pooled Investment Vehicles**: These structures pool money from many investors to buy a portfolio of assets. Mutual funds trade once a day at a set price; ETFs trade all day like stocks. Asset-backed securities (ABS) are pools of loans (like car loans) packaged into a tradeable bond.
+   *Example: Instead of buying 50 separate stocks yourself, you buy one share of an S&P 500 ETF (like SPY), which instantly gives you exposure to all 500 companies.*
+5. **Derivatives**: These are contracts whose value is "derived" from an underlying asset (like a stock or oil price). They include forwards, futures, options, and swaps.
+   *Example: An airline buys an oil futures contract. The value of that contract goes up or down based entirely on the price of jet fuel, not because the contract itself produces anything.*
+6. **Forward vs. Futures Contracts**: Both are agreements to buy/sell something later at a set price. Forwards are private, custom deals between two parties (risky if one side defaults). Futures are standardized contracts traded on an exchange (safer because the exchange guarantees the trade).
+   *Example: A farmer agrees privately with a cereal company to sell wheat at \$5/bushel in June (Forward). Or, the farmer sells a standardized "5,000 bushels of wheat" contract on the Chicago Mercantile Exchange (Future).*
+7. **Options**: A "call" option gives you the right to buy an asset at a set price; a "put" option gives you the right to sell it. You pay a premium for this right, but you aren't forced to use it.
+   *Example: You pay \$5 for a call option to buy Apple at \$150. If Apple goes to \$200, you use the option and make a profit. If Apple stays at \$140, you let the option expire and only lose the \$5 premium.*
+8. **Swaps**: Two parties agree to exchange cash flows. An interest rate swap typically involves trading a fixed interest payment for a floating (variable) one. *Example: Company A has a loan with a variable interest rate that scares them. They swap payments with Company B, who agrees to pay the variable rate in exchange for receiving a steady 4% fixed rate from Company A.*
+9. **Brokers vs. Dealers**: Brokers are agents who find a buyer for your sell order (like a real estate agent) and charge a commission. Dealers trade from their own inventory (like a car dealership), buying low and selling high to make a profit.  *Example: A broker connects you to someone selling 100 shares of Tesla. A dealer actually owns the 100 shares and sells them directly to you from their own stash.*
+10. **Markets**: "Primary" markets are where new securities are created and sold (IPOs). "Secondary" markets are where investors trade existing securities with each other (the stock market). "Money markets" are for short-term debt (under 1 year); "Capital markets" are for long-term equity and debt. *Example: When Facebook went public, it sold shares in the primary market to big banks. Now, when you buy Facebook stock on Robinhood, you are trading in the secondary market with another investor, not Facebook itself.*
+
 ### SECURITY MARKET INDEXES
 1. **Price return vs total return**: A price return index reflects only changes in constituent prices, while a total return index assumes all dividends and interest are reinvested. The headline **S&P 500** is a price return index, while **Germany’s DAX** is quoted as a total return index, which is why naïve comparisons are misleading. ==At inception PRI = TRI.==
 
@@ -359,6 +418,48 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 15. Asset-based models struggle when intangibles dominate, so values are usually treated as a floor or liquidation value and work best only for tangible-asset-heavy or liquidation cases. Eg: Google has a brand, talent and data which makes tangible asset valuation meaningless.
 
 ## FIXED INCOME
+
+### FIXED INCOME MARKETS FOR CORPORATE ISSUERS
+1. Weak credit → secured borrowing. Firms with low credit ratings must pledge collateral. Strong credit firms issue commercial paper (CP) — unsecured, typically < 3 months maturity, used for working capital or temporary/bridge funding.
+2. **Factoring** Firm sells receivables to a lender at a discount. Lender takes over credit risk + collection. Example: ₹100 invoice sold for ₹95 today → instant liquidity.
+3. Bridge Financing refers to short-term funding used until permanent financing (bonds, equity) is arranged. A company plans to issue a 10-year bond in 3 months but needs cash now to run operations → it issues 3-month commercial paper today → when the bond is issued, the proceeds are used to repay the CP.
+4. **Rollover** = repaying old short-term debt by issuing new short-term debt instead of using cash. ==The risk that the company would not be able to sell a new commercial paper to repay the old one is known as rollover risk.==
+5. Banks fund short-term mainly through deposits: checking, operational corporate deposits, savings, and certificates of deposit (CDs). For example, fixed deposits in India.
+6.  Asset Backed Commercial Paper: A bank sets up a vehicle that buys car loans, then issues 30-day asset-backed commercial paper to investors, and keeps issuing new 30-day ABCP every month to repay the old ABCP, with the car loans as collateral. Cash to repay ABCP comes from loan EMIs first, new ABCP issuance next, money from sponsoring bank during bad days, and asset sales only as last resort.
+7. Repo = collateralised borrowing where one party sells a security today and agrees to buy it back later at a higher price; that price difference is the repo rate, i.e. the interest on the loan embedded in prices, not quoted separately.
+8. Example (India): An Indian bank needs overnight cash → it sells government bonds to the RBI for ₹100 today and agrees to repurchase them tomorrow for ₹100.02 → the ₹0.02 difference is the repo interest, and the bonds are the collateral.
+9.   Collateral protection: lender demands collateral worth more than the cash lent to protect against price drops.
+10. **Initial margin (haircut)** = gap between collateral market value and loan amount → loan amount is a discount to collateral value. Collateral worth ₹105 is posted, but the lender gives only ₹100 cash → the ₹5 gap is the initial margin (haircut) protecting the lender if collateral prices fall.
+11. During the repo’s life, if collateral value falls, borrower must post extra collateral → this top-up demand is variation margin.
+12. Overnight repo = one-day repo; term repo = repo longer than one day. Repo rates are usually lower than unsecured bank loans because the loan is backed by high-quality collateral (often government bonds).
+13.  Repo rates are usually lower when the collateral liquidity is high and the collateral is physically delivered to the lender. Repo rates are usually higher when the term is high and when interest rates for alternative sources of funds are higher.
+14.  Tri-party repo = repo where a third party (clearing bank/CCP) handles collateral custody, valuation, and margining; example: an Indian bank borrows overnight via repo using G-secs, while CCIL sits in the middle holding the bonds and settling cash.
+15. Reverse repo = the lender’s side of a repo; example: a bank parks excess cash with the RBI, receives G-secs as collateral, and earns the reverse repo rate as interest.
+16.  Tri Party repos protect against the following kinds of risks:
+	- Default risk = the borrower takes cash today and fails to repurchase the collateral later, forcing the lender to sell the collateral to recover money.
+	- Collateral risk = the value of the collateral falls sharply before it can be sold, so even after liquidation it does not fully cover the cash lent.
+	- Margining risk = collateral prices move faster than margin calls, so the lender is exposed during the time gap between a price fall and posting of additional collateral.
+	- Legal risk = in stress or bankruptcy, the repo is not enforced as expected, and courts may freeze or delay access to collateral by treating the repo like a normal loan.
+	- Netting risk = when a counterparty defaults, you cannot offset what you owe against what you are owed, so you must pay all obligations in full while recovering only partially on claims.
+	- Settlement risk = cash and securities do not settle simultaneously, so one party delivers cash while the collateral delivery fails or is delayed.
+
+### FIXED INCOME MARKET FOR GOVERNMENT ISSUERS
+
+1. Sovereign debt = bonds issued by national governments to fund public goods; backed by taxing power, usually the largest issuers in domestic markets, typically highest credit quality locally.
+2. Public-sector accounting focuses on cash flows; analysts should think in balance-sheet terms: implied assets (future taxes) versus liabilities (promised debt payments).
+3. Core divide: developed-market issuers borrow in stable, reserve currencies with deep markets and transparent fiscal policy; emerging-market issuers face higher volatility, weaker institutions, and funding constraints.
+4. Emerging-market debt is often split into domestic debt (local currency, local investors) and external debt (foreign currency, foreign creditors); external debt adds FX risk because repayment currency ≠ tax currency.
+5. If a government earns in INR but owes USD debt, currency depreciation mechanically raises debt burden even if real activity is unchanged.
+6. Governments issue across maturities to balance cost and risk; too much short-term debt lowers rates today but raises rollover risk tomorrow.
+7. Rollover risk = inability to refinance maturing debt; classic crisis trigger when markets suddenly refuse to roll short-term bills.
+8. Debt management policy decides how much, what type, maturity, currency, and indexation (floating, inflation-linked) of debt is issued.
+9. Inflation-linked debt shifts inflation risk to the issuer; nominal fixed-rate debt shifts inflation risk to investors.
+10. Sovereign issuance is done via regular public auctions to signal transparency and price discovery. Competitive bids specify both price and quantity; noncompetitive bids accept the auction price and are guaranteed allocation.
+11. Government auctions ₹1,000 crore of a 10-year bond; competitive bidders submit bids like “₹300 crore at 7.10%,” “₹400 crore at 7.15%,” “₹500 crore at 7.25%.” Because the auction cleared (filled the quota) at the 7.25% tier, 7.25% is the cutoff yield.
+12. In a “single-price” auction (also known as a Dutch auction), everyone pays the same yield—the highest yield accepted to sell the entire offering. If the government needs to sell bonds and the clearing rate is 4.0%, a bidder who aggressively bid 3.8% still gets the bonds at 4.0%, which encourages more aggressive bidding by removing the fear of overpaying. In a “multiple-price” auction, winning bidders pay exactly what they bid; if you bid 3.8% and the clearing rate was 4.0%, you are stuck earning 3.8% while others earn more. This structure can reduce aggressive bidding because investors fear the “winner’s curse”—winning the auction but paying a price worse than the market average.
+13. Issuers wanting to minimize yield volatility often prefer single-price auctions; bidders shade less.
+14. On-the-run bonds = most recently issued securities at a given maturity; most liquid, used as benchmarks for risk-free rates. ==Yield curves in practice are built off on-the-run sovereign bonds, not off older illiquid issues.==
+15. Primary dealers are designated banks obligated to bid in auctions and make secondary markets; they act as transmission channels for monetary policy. Central banks interact with primary dealers as counterparties when conducting open-market operations.
 
 ### MODULE 65.1: MORTGAGE-BACKED SECURITY (MBS) INSTRUMENT AND MARKET FEATURES
 
