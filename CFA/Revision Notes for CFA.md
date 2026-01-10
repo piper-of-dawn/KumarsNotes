@@ -2,7 +2,7 @@
 title: 
 style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
 minLevel: 0 # Include headings from the specified level
-maxLevel: 0 # Include headings up to the specified level
+maxLevel: 3 # Include headings up to the specified level
 include: 
 exclude: 
 includeLinks: true # Make headings clickable
@@ -74,6 +74,27 @@ debugInConsole: false # Print debug info in Obsidian console
 4. Suppose in January 1 EUR =  100 INR. In December 1 EUR = 120 INR. INR depreciated by 20%. To calculate EUR appreciation: 1 INR = 0.01 EUR in Jan and 1 INR = 0.0083 EUR in Dec. So EUR appreciated by (0.01-0.0083) / 0.01 = 16.99%
 ## CORPORATE ISSUERS
 
+### MODULE 23.1: LIQUIDITY MEASURES AND MANAGEMENT
+
+
+> [!abstract] MEMORISE THIS FOR EFFICIENCY
+>  - **CCC = DIO + DSO - DPO**
+>  - Suppliers offer payment terms in the form **a/b net c, which means a percentage discount of a if the invoice is paid within b days, otherwise full payment is due within c days.**
+
+
+1. The cash conversion cycle (CCC) measures the time it takes for a company to convert its investments in inventory and other resources into cash inflows from sales. 
+
+> [!TIP] HAMMER THIS INTO YOUR HEAD
+> CCC = DIO + DSO - DPO
+
+2. Lower CCC is better and can be artificially created
+   -  **Delay paying suppliers** right before quarter-end → payables look high → CCC ↓  
+   -  **Sell receivables to a bank (factoring)** just before reporting → receivables drop → CCC ↓
+   -  **Ship inventory early to distributors** with return rights → inventory disappears on paper → CCC ↓
+   -  **Avoid writing down old inventory** → inventory looks lower than reality → CCC ↓
+   -  **Stop buying inventory** just before reporting → inventory temporarily low → CCC ↓
+2. We can think of accounts payable as an implicit source of credit from suppliers (as opposed to explicit sources such as bank loans). **Suppliers offer payment terms in the form a/b net c, which means a percentage discount of a if the invoice is paid within b days, otherwise full payment is due within c days.** Forgoing the discount for prompt payment amounts to borrowing money from the supplier for (c – b) days.
+
 ### MODULE 24.1: CAPITAL INVESTMENTS AND PROJECT MEASURES
 ###### Expected number of questions: 3
 ###### LOS: Describe types of capital investments. Describe the capital allocation process, calculate net present value (NPV), internal rate of return (IRR), and return on invested capital (ROIC), and contrast their use in capital allocation.
@@ -141,13 +162,59 @@ debugInConsole: false # Print debug info in Obsidian console
 ###### Expected number of questions: 2
 ###### LOS: Explain the Modigliani–Miller propositions regarding capital structure.
 
-1. Costs of asymmetric information arise from the fact that managers typically have more information about a company’s prospects and future performance than owners or creditors. Firms with complex products or little transparency in financial statements tend to have higher costs of asymmetric information, which result in higher required returns on both debt and equity capital. Because shareholders and creditors are aware that asymmetric information problems exist, these investors look for management behavior that signals what knowledge or opinions management may have about the firm’s prospects. For example, taking on the commitment to make fixed interest payments through debt financing sends a signal that management is confident in the firm’s ability to make these payments in the future. By contrast, issuing equity is typically viewed as a negative signal that managers believe a firm’s stock is overvalued. The cost of asymmetric information increases with the proportion of equity in the capital structure
-2. Agency costs of equity are related to conflicts of interest between managers and owners. Managers who do not have a stake in the company do not bear the costs associated with excessive compensation or taking on too much (or too little) risk. Because shareholders are aware of this conflict, they take steps to reduce these costs. The result is called the net agency cost of equity.
-3. According to the free cash flow hypothesis, the use of debt forces managers to be disciplined with regard to how they spend cash because they have less free cash flow to use for their own benefit. It follows that greater amounts of financial leverage tend to reduce agency costs.
-4. Pecking order theory, based on asymmetric information, is related to the signals that management sends to investors through its financing choices. According to pecking order theory, managers prefer to make financing choices that are least likely to send negative signals to investors. Financing choices under pecking order theory follow a hierarchy based on visibility to investors. Internally generated capital is most preferred, debt is the next-best choice, and external equity is the least preferred financing option. Pecking order theory implies that the capital structure is a by product of individual financing decisions.
-
+1. Asymmetric information exists because managers have superior knowledge about future prospects vs shareholders/creditors.    
+2. Higher when business is complex or financial reporting is opaque → investors face more uncertainty. Investors price this uncertainty as higher required returns on both debt and equity.    
+3. Investors infer management’s private information from financing choices (**signaling**). Issuing debt signals confidence: fixed interest obligations imply expected stable cash flows. Issuing equity signals pessimism: markets infer management thinks stock is overvalued. **Therefore, equity financing is penalized more heavily than debt under asymmetric information.**    
+4. Agency costs of equity arise from conflicts between managers and shareholders. Managers without ownership stake don’t fully bear costs of overpaying themselves or mismanaging risk (too safe or too reckless). Shareholders anticipate this conflict and impose controls (monitoring, incentives, governance). Even after controls, some conflict remains → net agency cost of equity.
+5. Agency costs of equity are related to conflicts of interest between managers and owners. Managers who do not have a stake in the company do not bear the costs associated with excessive compensation or taking on too much (or too little) risk. **Because shareholders are aware of this conflict, they take steps to reduce these costs. The result is called the net agency cost of equity.**
+6. **Free cash flow hypothesis: excess cash invites wasteful spending or self-serving projects by managers.**
+7. **Use of Debt forces managers to be disciplined**, because commits cash to interest and principal payments, reducing free cash flow available for misuse.
+8. Pecking order theory is built on asymmetric information between managers and investors. Financing choices act as signals about management’s private view of firm value. - Internal funds are preferred: no external scrutiny, no signal.
 
 ## FSA
+### MODULE 28.4 BASIC EARNINGS PER SHARE
+1. **What is Warrant:** A warrant is essentially an equity call option issued by the company; a warrant holder has the right but not the obligation to purchase newly issued shares at the exercise price. 
+2. **What is Basic EPS:** (Actual earnings - Preferred Dividend) / actual weighted ordinary shares.
+
+> [!DANGER] DO NOT MAKE THIS MISTAKE
+> Preferred Dividend is subtracted while calculating EPS
+
+1. **What are Actual weighted shares:** Weighted average number of shares outstanding during the period. Shares outstanding adjusted for how long they existed during the year. For example:
+
+|                                                        |           |
+| ------------------------------------------------------ | --------- |
+| Shares outstanding on 1 January 2018                   | 1,000,000 |
+| Shares issued on 1 April 2018                          | 200,000   |
+| Shares repurchased (treasury shares) on 1 October 2018 | (100,000) |
+| Shares outstanding on 31 December 2018                 | 1,100,000 |
+The actual weighted shares are calculated as:
+
+|                                                                                              |           |
+| -------------------------------------------------------------------------------------------- | --------- |
+| 1,000,000 × (3 months/12 months) =                                                           | 250,000   |
+| 1,200,000 × (6 months/12 months) =                                                           | 600,000   |
+| 1,100,000 × (3 months/12 months) =                                                           | 275,000   |
+| Weighted average number of shares outstanding = (3/12) * 1 + (6/12) * 1.2 + (3/12) * 1.1<br> | 1,125,000 |
+
+4. **What is Preferred Dividend?** This is the dividend paid to the preferred shareholders. Preferred stock doesn't come under common stock and hence EPS removes it.
+5. **What is Diluted EPS:** “What EPS would be” if all dilutive instruments became common stock. This would be (Actual Earnings - Preferred Dividends) / (Ordinary Shares + New common stock that would have been issued at conversion))
+6. **What is Dilution:** The instruments convertible into ordinary equity can become shares → share count rises → EPS goes down. That’s dilution.
+7. **What is stock split:** Suppose a company with a market capitalization of $100 has 100 shares (each share is priced $1). The company declares 2:1 stock split, which means each share would be split into 2 shares. This means the number of shares will be now: (100 * (2/1)) = 200. Now each share would be priced $0.5.
+8. Complex Capital Structure: 
+Under IFRS, the type of equity for which EPS is presented is referred to as ordinary. Ordinary shares are those equity shares that are subordinate to all other types of equity. 
+
+When a company has issued any financial instruments that are potentially convertible into common stock, it is said to have a complex capital structure. 
+### MODULE 28.5 RATIOS AND COMMON SIZE STATEMENTS
+1. Common-size income statement = divide every line item by **Revenue** and express as %.
+
+> [!tip] HAMMMER THIS INTO YOUR HEAD
+> Margin is always calculated as **Revenue** as denominator. Turnover is always calculated as **Revenue** as numerator. **Revenue is usually the numerator**, **except inventory and A/C payable turnover**, which uses COGS for matching.
+
+> [!danger] DO NOT MAKE THIS MISTAKE
+> Inventory and A/C Payables Turnover use COGS as numerator
+
+
+
 ### MODULE 35.1: DIFFERENCES BETWEEN ACCOUNTING PROFIT AND TAXABLE INCOME
 1. Suppose you have Operating Profit (EBIT) of USD 100. And   
 ### MODULE 37.2 TURNOVER AND LIQUIDITY RATIOS
@@ -306,7 +373,50 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 20. You get **only interest payments**, no principal. You want loans to **stay alive as long as possible**. If rates rise or stay high → prepayments slow → **more coupon checks**. Used by investors who want to **bet on rising/stable rates and slow prepayments**.
     
 - Principal comes back **faster**, IRR shoots up.
+
+### HEDGE FUNDS
+1. **Commingled funds** = multiple clients’ money pooled together and invested as one portfolio; each client owns a proportional share, not specific securities. Eg: Mutual Fund
+2. **SMA** = one client, one portfolio. Not pooled. You directly own the securities. Risk preferences can be tailored. Higher than commingled funds due to customization and admin.
+3. Hedge Fund Strategies: A **convertible bond** = bond floor (interest + principal) + call option on stock. Buy ₹1000 convertible of XYZ paying coupons + right to convert into shares. Short **XYZ stock** in the right ratio (delta-hedge). _Example_: If bond acts like 0.4 shares, short 0.4 XYZ.
+4. Fund-of-funds is a hedge fund invested in multiple hedge funds. **Fee layering** = you pay fees twice in a fund-of-funds: once to the FoF manager, again to the underlying hedge funds.
+5.  Under a **'1 or 30' fee structure**, the manager receives the greater of a 1% management fee or a 30% incentive fee on the fund's alpha.
+6. Kinds of Fees at Hedge Fund
+	- **Management fee**: Fixed annual fee (e.g., 2% of AUM) paid **regardless of performance** → covers salaries, rent, survival.    
+	- **Incentive (performance) fee**: Share of profits (e.g., 20%) paid **only if fund makes money**.	    
+	- **Hurdle rate**: Minimum return (e.g., T-bill or 5%) the fund must beat **before** incentive fees apply → no reward for just market drift.	    
+	- **High-Water Mark (HWM)**: Highest NAV ever reached; incentive fees are paid **only on gains above the previous peak** → manager must first recover losses before earning again.
+7. **Convertible arbitrage fixed income strategy:** “Arbitrage” here is: market price of convertible ≠ price of (bond + call). You buy the convertible bond (which acts like a stock with a safety net). Suppose the bond is selling for 100 and convertible at 95 (safety net). And short the actual stock to cancel out market direction. When prices go up bond gains value faster (convexity) than your short stock loses it. When prices go down, your bond holds value (bond floor protection) while your short stock soar.
+8. **Hedge Fund Index performance is overstated:** 
+	- Because of **survivorship bias**: Most hedge fund don't survive and indexes are constructed only on functioning ones.
+	- Because of **selection bias** because indexes have their own constraints for which fund to include and which one not to include.
+	- **Backfill Bias**: A hedge fund operates privately at first so its early returns are invisible to databases; if those early returns turn out good, the manager chooses to join a data`b`ase and backfills only that strong past performance, while funds with weak early results never join at all—so the recorded history ends up showing only winners and systematically overstates true hedge-fund returns.
+
+## PORTFOLIO MANAGEMENT
+
+### INTRODUCTION TO RISK MANAGEMENT
+
+1. The following are financial risks (CMLI):
+	- **Credit risk** – The other side may not pay. _Example:_ A company sells goods on credit; the buyer goes bankrupt and never pays.
+	- **Market risk** – Prices move against you. _Example:_ Equity prices fall in a recession; bond prices fall when interest rates rise.
+	- **Liquidity risk** – You can’t sell fast without taking a big price hit. _Example:_ You hold a small-cap stock; in a panic market, you sell much lower than its fair value.   
+	- **Interest rate risk**: Risk of prepayments or higher opportunity cost of capital.
+2. The following are non-finacial risks (*SolRegPolLegModTailOper*):	 
+	- **Solvency risk** – The firm runs out of cash and can’t survive. _Example:_ A company can’t pay salaries or debt interest and goes bankrupt.    
+	- **Regulatory risk** – Rules change and hurt the business. _Example:_ A new capital requirement forces banks to raise equity or cut lending.    
+	- **Political / tax risk** – Government actions outside normal regulation hurt profits. _Example:_ Sudden tax hike reduces after-tax earnings of companies.    
+	- **Legal risk** – Future lawsuits or legal action cause losses.   _Example:_ A firm is sued for mis-selling products and pays heavy penalties.    
+	- **Model risk** – Your math or valuation model is wrong. _Example:_ A risk model underestimates losses because it assumes normal distributions.    
+	- **Tail risk** – Rare, extreme events happen more often than expected. _Example:_ A 2008-style crash wipes out strategies built for “normal” markets.    
+	- **Accounting risk** – Financial statements turn out to be wrong.  
+	    - _Example:_ Aggressive revenue recognition leads to restated earnings later.
+	- **Operational risk** – Loss due to people, process, or system failure. _Example:_ A trading desk loses money because of a fat-finger trade or a cyberattack shuts systems.
+3. With a **risk transfer**, another party takes on the risk. Insurance is a type of risk transfer. The risk of fire destroying a warehouse complex is shifted to an insurance company by buying an insurance policy and paying the policy premiums. Insurance companies diversify across many risks so the premiums of some insured parties pay the losses of others.
+4. **Risk shifting** is a way to change the distribution of possible outcomes and is accomplished primarily with derivative contracts. For example, financial firms that do not want to bear currency risk on some foreign currency denominated debt securities can use forward currency contracts, futures contracts, or swaps to reduce or eliminate that risk.
+5. With a **surety bond**, an insurance company has agreed to make a payment if a third party fails to perform under the terms of a contract or agreement with the organization.
+6. Insurers also issue fidelity bonds, which will pay for losses that result from employee theft or misconduct.
 ## ETHICS
+
+### MODULE 
 
 ### STANDARD I(A) - PROFESSIONALISM - KNOWLEDGE OF THE LAW
 
