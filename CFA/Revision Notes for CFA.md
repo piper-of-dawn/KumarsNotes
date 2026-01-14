@@ -354,11 +354,61 @@ Balance Sheet
 > 	| Year | 
 
 
+### MODULE 34.2: DEFERRED COMPENSATION AND DISCLOSURES
 
 
+> [!abstract] MEMORISE THIS FOR EFFICIENCY
+> 
 
 
+1. A pension is delayed salary. **Defined Contribution (DC)** → firm promises _how much it puts in_, employee bears **investment risk**. For example NPS and EPF in India and PPK in Poland. My employer puts in money, it gets invested into the market. If market collapses, everything turns to ashes. 
+2. **Defined Benefit (DB)** → firm promises _how much you’ll get_, employer bears investment + longevity risk. I am promised a pension of PLN 10k per month, no matter if market collapses or booms. For example, ZUS contributions or Military pensions. **Employer bears market risk and employee bears longevity risk.** If I die, the pension vanishes. 
+3. Defined benefit is complicated. ==It is recorded as a **long term liability** on the balance sheet and on part of employers, it involves forecasting market cycles, interest rates, expected lifespan etc.==
+4. Defined Benefit (DB) plans create a **net position** on the balance sheet = what the firm owes − what it has set aside.  **Assets > obligation → asset. Assets < obligation → liability**.  Annual changes flow partly through P&L, partly through OCI.
+5. Funded status = **Fair value of plan assets − Pension obligation** **Overfunded** means I have saved more money (Plan Assets) that what my obligation demands (Pension to be paid), which creates a net asset position. **Underfunded** creates a net liability position.
+6. IFRS = Pay for work + interest in P&L, dump all shocks into OCI GAAP = smooth P&L via amortization.
 
+
+> [!question] QUESTION
+> **Start**: Obligation = 1,000, Assets = 900, Net liability = 100, Discount rate = 10%. 
+> **Year events**, Service cost = 50, Past service cost = 20, Actual asset return = 40, Expected return = 90, Actuarial Loss = 60. Identify what goes into OCI and what goes into P&L. 
+> 
+> #### IFRS
+> **Any admin,  service cost (past or present) goes into P&L.** For example: Service + Past Service = 70
+> **Any interest goes into P&L:** 10% of 1000 = 100
+> **Any return or market shock goes to OCI:** Asset return surprise - Actuarial Loss = (40-90) - 60 = -110
+> 
+> #### US GAAP
+> **PnL:** 
+> 	- Current Service Cost + Interest = - 50 - 100 = -150
+> 	- Expected Return on Assets = 90
+> **OCI:**
+> 	- Past Service Cost = -20
+> 	- Actuarial Loss = -60
+
+7. One of the differences from IFRS pension accounting is that past service costs are recognized in other comprehensive income, rather than in the income statement as part of employee service costs. These costs are amortized over the employees’ service period. **Actuarial gains and losses are typically treated the same way, but U.S. GAAP allows firms to recognize them in the period incurred.**
+
+> [!tip] HAMMER THIS INTO YOUR HEAD
+> 
+> Past service cost for Defined Contribution plans goes into OCI under US GAAP and PnL under IFRS.
+8. ==Pension cost is **not shown as a separate line item** for manufacturing firms. It is **embedded** in expenses based on employee role.== Factory workers → pension cost goes into **inventory → COGS**. Office/admin staff → pension cost goes into **SG&A / salaries**. Income statement hides pension cost inside operating costs. Therefore, analysts **must read the notes** to see total pension expense and assumptions.
+9. Stock options, on the other hand, may cause managers to take on too much risk, because options have asymmetrical payoffs. An option has value if the stock price is above the exercise price, but its value cannot fall below zero if the stock price is below the exercise price.
+10. **Grant-date fair value rule (IFRS = GAAP)**: stock-based compensation is measured at **fair value on grant date** and expensed **over the vesting (service) period**; immediate vesting → full expense on grant date, delayed vesting → straight-line over service period.
+11. These are shares awarded outright, with restrictions (Restricted Stock Units (RSU)) , or contingent on performance (Performance Shares).    
+12. **Stock grants vs performance shares**:    
+    - **Stock grants / RSUs** → FV = **share price at grant**, expense based only on service/vesting.        
+    - **Performance shares** → vesting tied to **non-market metrics** (ROE, EPS, margins); fair value still set at grant but **managerial incentives can distort accounting choices**.        
+13. Compensation expense exists **before shares are received**; if vesting conditions aren’t met, expense is reversed.
+14. **Stock grants (RSUs)**: the share price on the grant date is taken as the cost; this cost is charged to the income statement over the vesting period (or all at once if vesting is immediate); the same amount is added to equity; example: grant value 100 with 2-year vesting → expense 50 each year, equity increases by 50 each year, and at vesting it is moved into share capital and APIC.    
+15. **Stock grants – why equity doesn’t change**: the expense reduces retained earnings, but equity is increased by the same amount through APIC, so total equity stays the same; example: expense 50 → retained earnings −50, APIC +50.
+16. **Stock options**: the option’s value is calculated using an option pricing model at grant and expensed evenly over the vesting period; **until exercise, only APIC increases and no shares are issued;** example: option value 80 over 4 years → expense 20 per year, APIC +20 per year.    
+17. **Stock options – exercise stage**: when employees exercise, the company receives cash equal to the strike price and issues shares; equity increases by the cash received, split between share capital (par) and APIC, and any accumulated reserve is moved into APIC; example: strike 50 → cash +50, share capital +1, APIC +49 plus the reserve.
+
+> [!tip] HAMMER THIS INTO YOUR HEAD
+> - Suppose UBS gave me a stock as salary. The price is 100 CHF. In this case retained earnings will go down by 100 (stock got charged on PnL) and APIC will increase by 100. **No new shares are issued**. If I don't complete 3 years, they will reverse the charge on PnL and APIC will go down.
+> - Suppose UBS gave me a deferred stock (100 CHF) as salary that I can vest at the end of 3 years of service. Each year UBS will show a compensation expense of 33.33 CHF **always calculated on the price @ grant date** and APIC rises by 33.33 CHF every year.
+> - Suppose UBS gave me a call option to exercise at the end of 3 years of service at strike price of 100 CFH. The Black Scholes value is 10 CHF, which is shown in income statement. If I exercise it, then UBS gets the strike price which moves into APIC and issues me shares. **UBS does not issue new shares**
+18. Phantom stock a.k.a fake stock is a **cash bonus plan** that mimics share price performance, where employees receive **cash linked to the company’s stock value without receiving actual shares or ownership**.
 ### MODULE 35.1: DIFFERENCES BETWEEN ACCOUNTING PROFIT AND TAXABLE INCOME
 1. Suppose you have Operating Profit (EBIT) of USD 100. And   
 ### MODULE 37.2 TURNOVER AND LIQUIDITY RATIOS
