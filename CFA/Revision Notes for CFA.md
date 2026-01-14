@@ -3,6 +3,7 @@ title:
 style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
 minLevel: 0 # Include headings from the specified level
 maxLevel: 3 # Include headings up to the specified level
+maxLevel: 3 # Include headings up to the specified level
 include: 
 exclude: 
 includeLinks: true # Make headings clickable
@@ -13,6 +14,20 @@ debugInConsole: false # Print debug info in Obsidian console
 - MODULE 24.2: CAPITAL ALLOCATION PRINCIPLES AND REAL OPTIONS
 
 ## QUANTITATIVE METHODS
+
+### RATES OF RETURN
+1. Interest rate = price of waiting. The required rate of return (discount rate) is the minimum return investors demand to delay consumption.
+2. Nominal = real growth + inflation protection. Money must grow in real terms and also keep up with inflation. Exact relation (Fisher equation):
+$$(1 + r_{nominal}) = (1 + r_{real}) \times (1 + \pi_{expected})$$
+Expected inflation, not current inflation, because interest rates price the future.
+$$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
+3. Every premium exists because uncertainty exists
+	- Maturity Risk Premia: More time → more volatility → maturity premium. In simple words, a lot more could go wrong if money is locked up for long.
+	- Liquidity Risk Premia: Asset might be very hard to sell if I need money quickly.
+	- Default risk premia: The borrower may refuse or declare inability to pay.
+	- Inflation premia: Purchansing power of money is lower in future.
+
+
 ### MODULE 6.1: LOGNORMAL DISTRIBUTIONS AND SIMULATION TECHNIQUES
 
 1. **Log-Normal Distribution**
@@ -67,11 +82,58 @@ debugInConsole: false # Print debug info in Obsidian console
 
 ### MODULE 8.2: TYPES OF HYPOTHESIS TESTS
 
+
+## ECONOMICS
+
 ### MODULE 18.1: THE FOREIGN EXCHANGE MARKET
 1. When you buy a forward contract, you agree to BUY an underlying at a agreed price at a future date. If I buy a Euro / Rupee forward from you at 1 EUR = 100 INR, I am obliged to buy 1 EUR @ 100 INR, no matter whatever is the price. I have **hedged** my risk. 
 2. ==Real P/B Exchange Rate = Nominal P/B × (CPI Base / CPI Price)== You multiply nominal by how pricier base is with respect to price currency.
 3. At a base period, the CPIs of the United States and United Kingdom are both 100, and the exchange rate is $1.70/£. Three years later, the exchange rate is $1.60/£, and the CPI has risen to 110 in the United States and 112 in the United Kingdom. What is the real exchange rate at the end of the three-year period. Here Nominal P/B = $1.6/£, CPI Base = 112, CPI Price = 110. Real P/B = 1.6 × (112/110) = 1.632
 4. Suppose in January 1 EUR =  100 INR. In December 1 EUR = 120 INR. INR depreciated by 20%. To calculate EUR appreciation: 1 INR = 0.01 EUR in Jan and 1 INR = 0.0083 EUR in Dec. So EUR appreciated by (0.01-0.0083) / 0.01 = 16.99%
+
+### MODULE 19.1: FOREIGN EXCHANGE RATES
+
+1. A cross rate is a rate which is quoted using a third currency as a base. This is useful when there is no direct market between currencies in question.
+
+> [!QUESTION] NUMERICAL
+> Suppose INR / USD = 90.01 and PKR / USD = 279.90. INR and PKR do not trade. So to calculate PKR / INR
+> PKR / INR = PKR / USD $\times$ USD / INR = 279.90 $\times$ (1/90.01) = 3.109
+> This PKR / INR cross rate.
+
+
+> [!tip] HAMMER THIS INTO YOUR HEAD
+> **Spot + Cost of Carry - Benefits = Forward**
+> Memorising and deeply understanding this one line will take you far 
+
+2. We have domestic rate as $r_d$, foreign rate as $r_f$. 
+	- Suppose we borrow spot(d/f) and lend to foreign. 
+	- Here, cost of carry of spot = spot(d/f) $\times$ $r_d$
+	- Here, benefits from investing spot into foreign country = forward(d/f) $\times$ $r_f$ . Why forward(d/f)? Because I will take back my money after one time period and will lock in forward rate today itself.
+	- Now using **Spot + Cost of Carry - Benefits = Forward**. This gives spot(d/f) $\times$ $(1+r_d)$ - forward(d/f) $\times$ $r_f$ = forward(d/f)
+	- ==spot(d/f)$(1+r_d)$ = forward(d/f)$(1+r_f)$== is no-arbitrage relationship.
+
+> [!question] NUMERICAL
+> Consider two currencies, the USD and the INR. The spot INR/USD exchange rate is 90.01, the 1-year riskless INR rate is 6.65%, and the 1-year riskless USD rate is 4.2%. What is the 1-year no-arbitrage forward exchange rate?
+> Cost of borrowing INR = 90.01(1+0.065) = 95.86
+> Benefits from lending USD = Forward(INR/USD)(1.042)
+> Therefore no-arbitrage Forward(INR/USD)= 95.86/1.042 = 91.99
+
+3. **How to make free money (arbitrage)?** Suppose Forward(INR/USD) is 92.5 > 91.99. Let us now borrow INR 9.01 Million from HDFC Bank @ 6.65% and convert it to USD. I have 100,000 USD which I lend to JP Morgan at 4.2%. Also I do a Forward(INR/USD) and lock in the price at 92.5. After 1 year:
+		- JP Morgan pays me 100,000 (1.042) = 104,200, and I close the forward by selling 104,200 @ 92.5 which gives me INR 9.638 million. 
+		- I pay back HDFC: 9.01 (1.0665) = USD 9.609 Million
+		- I make free money = 9.638 - 9.601 = INR 0.028 Million ~ INR 28k.
+
+> [!danger] DO NOT MAKE THIS MISTAKE
+> Rates are always quoted annual. 
+
+> [!question] NUMERICAL
+> The spot ABE/DUB exchange rate is 4.5671, the 90-day riskless ABE rate is 5%, and the 90-day riskless DUB rate is 3%. What is the 90-day forward exchange rate that will prevent arbitrage profits?
+> 90-day-rates: ABE = 0.0125, DUB = 0.0075
+> Cost of borrowing DUB = 4.5671 (1.0125) = 4.624
+> Forward(ABE/DUB) = 4.624 / 1.0075 = 4.589
+
+3. **Forward rates are quoted as points, not prices:** points are the difference from spot, measured in the last decimal of the spot quote (e.g., with 4 decimals, 1 point = 0.0001). INR/USD future is trading at 198 bips, which makes forward rate = 90.01 + 1.98 = 91.99.
+4. For INR, Forward > Spot, hence INR is trading at forward premium
 ## CORPORATE ISSUERS
 
 ### MODULE 23.1: LIQUIDITY MEASURES AND MANAGEMENT
@@ -215,6 +277,53 @@ When a company has issued any financial instruments that are potentially convert
 
 
 
+### MODULE 34.1: LEASES
+1. An alternative way to look at a lease is: **taking a loan and buying the asset.**
+2. To be called a lease, a lessee needs to have following characteristics:
+	- Asset must be **Identified** a.k.a it should exist.
+	- Lessee should have exclusive control of asset and must derive all the economic benefits from the asset. 
+3. Under IFRS and U.S. GAAP, in a **financing lease** ownership and risks should be transferred to lessee. You break it and you pay for it.   If either the benefits or the risks of ownership are not substantially transferred, it is an operating lease.
+
+> [!warning] Remember
+> Financing Lease:
+> 	- **Present Value of payments >= Asset Fair Value**
+> 	- You have an option to buy the asset and get rid of the lease.
+4. Accounting treatment would be:
+	- On liabilities side, you would create a lease liability that would be amortized with time.
+	- On asset side, you would create ROU asset that would depreciate with time.
+
+
+> [!question] QUESTION
+> The Affordable Company (Affordable) leases a machine for its own use for four years with annual payments of $10,000. At the end of the lease, which is also the end of the machine’s useful life, Affordable will return the machine to the lessor. The interest rate implicit in the lease is 5%. Assuming that the ROU asset is amortized on a straight-line basis over the term of the lease, calculate the impact of the lease on Affordable’s financial statements for each of the four years.
+> 
+> Fair value of Asset: PMT = -10000, I/Y = 5, FV = 0, CPT -> PV = 35549
+> 
+> Asset Amortisation per year = 35549 / 4 = 8887.25
+> 
+
+
+Balance Sheet 
+| Year | Liability | Asset |
+| ---- | --------- | ----- |
+| 1    | 35560     | 35560 |
+| 2    | 25560     |       |
+|      |           |       |
+| 
+|           |       |
+
+
+
+
+> 
+> Liability Side:
+> 	| Year | 
+
+
+
+
+
+
+
 ### MODULE 35.1: DIFFERENCES BETWEEN ACCOUNTING PROFIT AND TAXABLE INCOME
 1. Suppose you have Operating Profit (EBIT) of USD 100. And   
 ### MODULE 37.2 TURNOVER AND LIQUIDITY RATIOS
@@ -251,6 +360,27 @@ When a company has issued any financial instruments that are potentially convert
 5. GAAP hates R&D—except software. Saleable software = **capitalize (like IFRS)**; internal software = **capitalize only after build starts**.
 
 ## EQUITY
+
+### MARKET ORGANISATION 
+
+1. **Financial Assets vs. Real Assets**: Financial assets are paper or digital claims on cash flows (stocks, bonds, derivatives), while real assets are tangible physical things that produce value directly (factories, land, gold).
+   *Example: A share of Apple stock is a financial asset (a claim on Apple’s profits); the factory where Apple assembles iPhones is a real asset.*
+2. **Debt Securities**: These are simply IOUs where the borrower promises to repay the principal plus interest. They are legally binding contracts.
+   *Example: You buy a \$1,000 corporate bond that pays 5% interest. The company legally owes you \$50 a year plus your \$1,000 back at the end.*
+3. **Equity Securities**: These represent ownership in a company. Common stock gives you a residual claim (you get what's left after debts are paid) and voting rights. Preferred stock is a hybrid: it pays fixed dividends like a bond but usually has no voting rights.
+   *Example: If a company goes bankrupt, bondholders get paid first. Common stockholders get whatever scraps are left (usually zero). Preferred stockholders sit in the middle.*
+4. **Pooled Investment Vehicles**: These structures pool money from many investors to buy a portfolio of assets. Mutual funds trade once a day at a set price; ETFs trade all day like stocks. Asset-backed securities (ABS) are pools of loans (like car loans) packaged into a tradeable bond.
+   *Example: Instead of buying 50 separate stocks yourself, you buy one share of an S&P 500 ETF (like SPY), which instantly gives you exposure to all 500 companies.*
+5. **Derivatives**: These are contracts whose value is "derived" from an underlying asset (like a stock or oil price). They include forwards, futures, options, and swaps.
+   *Example: An airline buys an oil futures contract. The value of that contract goes up or down based entirely on the price of jet fuel, not because the contract itself produces anything.*
+6. **Forward vs. Futures Contracts**: Both are agreements to buy/sell something later at a set price. Forwards are private, custom deals between two parties (risky if one side defaults). Futures are standardized contracts traded on an exchange (safer because the exchange guarantees the trade).
+   *Example: A farmer agrees privately with a cereal company to sell wheat at \$5/bushel in June (Forward). Or, the farmer sells a standardized "5,000 bushels of wheat" contract on the Chicago Mercantile Exchange (Future).*
+7. **Options**: A "call" option gives you the right to buy an asset at a set price; a "put" option gives you the right to sell it. You pay a premium for this right, but you aren't forced to use it.
+   *Example: You pay \$5 for a call option to buy Apple at \$150. If Apple goes to \$200, you use the option and make a profit. If Apple stays at \$140, you let the option expire and only lose the \$5 premium.*
+8. **Swaps**: Two parties agree to exchange cash flows. An interest rate swap typically involves trading a fixed interest payment for a floating (variable) one. *Example: Company A has a loan with a variable interest rate that scares them. They swap payments with Company B, who agrees to pay the variable rate in exchange for receiving a steady 4% fixed rate from Company A.*
+9. **Brokers vs. Dealers**: Brokers are agents who find a buyer for your sell order (like a real estate agent) and charge a commission. Dealers trade from their own inventory (like a car dealership), buying low and selling high to make a profit.  *Example: A broker connects you to someone selling 100 shares of Tesla. A dealer actually owns the 100 shares and sells them directly to you from their own stash.*
+10. **Markets**: "Primary" markets are where new securities are created and sold (IPOs). "Secondary" markets are where investors trade existing securities with each other (the stock market). "Money markets" are for short-term debt (under 1 year); "Capital markets" are for long-term equity and debt. *Example: When Facebook went public, it sold shares in the primary market to big banks. Now, when you buy Facebook stock on Robinhood, you are trading in the secondary market with another investor, not Facebook itself.*
+
 ### SECURITY MARKET INDEXES
 1. **Price return vs total return**: A price return index reflects only changes in constituent prices, while a total return index assumes all dividends and interest are reinvested. The headline **S&P 500** is a price return index, while **Germany’s DAX** is quoted as a total return index, which is why naïve comparisons are misleading. ==At inception PRI = TRI.==
 
@@ -261,9 +391,48 @@ $$  V_{PRI}=\frac{\sum_{i=1}^{N} n_i P_i}{D}$$
     
 4. **Total return = what investors actually earn**: Adds income to price change.    $$TR_I=\frac{V_{PRI1}-V_{PRI0}+Inc_I}{V_{PRI0}}$$Over time, total return always exceeds price return when dividends exist.
 
-### MODULE 43.2: REVENUE, PROFITABILITY,AND CAPITAL
+### MODULE 41.1: MARKET EFFICIENCY
+1. In an efficient market, prices already reflect all available information, so they’re fair estimates of value; the return you earn is just pay for risk, not for being clever — in short, you can’t consistently beat the market.
+2. When markets are efficient, passive investing makes sense because active trading gets eaten up by fees and costs; only when prices are genuinely wrong does active investing have a chance to add value.
+3. Prices move only on surprises, not on expected news: earnings up 45% is good, bad, or irrelevant depending entirely on what the market had already priced in.
+4. Market value is the asset’s current price, while intrinsic (fundamental) value is what a fully informed, rational investor would be willing to pay; in highly efficient markets, the two usually line up, but in less efficient markets active investors try to buy below intrinsic value and sell above it.  
+5. Intrinsic value is based on fundamentals — for a bond, this means coupon, maturity, default risk, liquidity, and other key characteristics. Intrinsic value is constantly changing as new (unexpected) information becomes available.
+6. **Information + attention**: markets are more efficient when lots of participants track them and when information is public, timely, and equally available. Fewer analysts, poor disclosure, or selective leaks → slower price adjustment and mispricing.    
+7. **Ability to trade and correct prices**: arbitrage and short selling pull prices back to fair value, but only if trading is easy. High transaction costs, low liquidity, funding limits, or short-sale constraints let wrong prices survive.   
+8. **Costs decide real efficiency**: markets are efficient if, **after all information, trading, and funding costs**, no positive risk-adjusted returns are left. Beating the market before fees doesn’t count if you lose after fees.
+9. When we talk about market efficiency → We talk about return adjusted for risk. For this you need a model for expected returns such as CAPM. 
+10. **Weak Form Efficiency:**
+	1. Market prices reflect all the information in the historical market data. An investor cannot achieve positive risk-adjusted returns on average by using technical analysis because past price and volume (market) information will have no predictive power. 
+	2. Trading on fundamentals or Trading on private information can still give you an edge.
+11. Semi-Strong-Form Efficiency:
+	1. Current security prices fully reflect all **publicly** available market and non information.
+	2. Trading on private information can still give you an edge. 
+12. Strong-Form Efficiency:
+	1. Security prices fully reflect all information from both public and private sources.
+	2. You just can't beat the market.
+13. Technical analysis seeks to earn positive risk-adjusted returns by using historical price and volume (trading) data. These guys just harvest risk premia. 
+14. Tests indicate that mutual fund performance has been inferior to that of a passive index strategy.
+15. The majority of evidence is that anomalies are not violations of market efficiency but are due to the research methodologies used. 
+16. **Event studies test semi-strong efficiency**: they ask whether you can make abnormal profits after public news. In developed markets, prices adjust almost immediately, so the null holds. *Example*: Apple launches a new iPhone, the stock barely moves on launch day because it’s already priced in. In less efficient markets, even well-known events (like Diwali sales numbers) can lead to slow, multi-day price reactions.
+17. Market Anomalies break market efficiency. Momentum is an anomaly. Small cap outperforming Large cap is an anomaly (Size Effect). Low P/E ratio stocks outperform High P/E ones (Value Effect). Price action die to earning surprises persist for days, IPOs are typically underpriced, NAV of closed end MF is undervalued. 
+18. **Information cascade**: less-informed investors copy early, better-informed traders; if the early movers truly have superior information, this herding can actually help prices move closer to intrinsic value rather than distort them.
 
-1. To calculate margin always divide by Sales. For example:
+
+### MODULE 42.2: FOREIGN EQUITIES AND EQUITY RISK
+1. When capital flows freely across borders, markets are said to be integrated.
+2. Listing on a foreign exchange increases firm transparency because of more disclosures and firm's publicity. 
+3. Direct investing is buying foreign firm's stock on a foreign exchange. The investment and return are denominated in a foreign currency.
+4. A **depository receipt** lets you own a foreign company while trading in your local market and currency; a depository bank holds the actual foreign shares and handles dividends and corporate actions. You buy **Toyota Motor Corporation ADR (TM)** on the NYSE in USD. The real Toyota shares trade in Japan, while **JPMorgan** holds those shares, converts Toyota’s yen dividends into dollars, and pays them to ADR holders.
+5. Sponsored DR: issued with company involvement; investors usually get voting rights and better disclosure. Unsponsored DR: issued without company involvement; voting rights stay with the bank and disclosures are lighter.
+6. Global Depository Receipts are issued **outside both the firm’s home country and the U.S.**, typically trade in **London or Luxembourg**, ==are often **USD-denominated**==, and avoid capital-flow restrictions—making it easier for global investors to invest. Firms list them where investors already recognize the company. **Tata Motors** has GDRs traded in **London**, letting international investors buy exposure to Tata Motors in USD without dealing with Indian market restrictions.
+7. **ADRs** trade in the U.S., in USD, and usually require SEC registration. ==Some are also privately placed (Rule 144A or Regulation S receipts)==. **ADS (American Depository Share)**: the **actual underlying share** of the foreign company that sits in its **home market**.
+8. Level I ADR trade OTC, and cheap to list. Level II ADR trade on Exchanges and are expensive to list. Both these CANNOT raise capital in US.
+9. Level III is listed on exchange and CAN raise capital in US.
+10. If it’s listed publicly, SEC is involved. In all Level I, II and III, SEC registration is required.
+11. Rule 144A allows private listing. It is cheap and SEC is not involved. It can raise capital in US. 
+### **MODULE** 43.2: REVENUE, PROFITABILITY,AND CAPITAL
+
+12. To calculate margin always divide by Sales. For example:
 $$\text{Contribution Margin} = \frac{\text{(P - Var. Cost)} \times \text{Qty}}{\text{Revenue}}$$
 > [!WARNING] Remember
 > Operating Profit is **EBIT** (not EBITDA, not PAT or PBT)
@@ -340,6 +509,48 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 15. Asset-based models struggle when intangibles dominate, so values are usually treated as a floor or liquidation value and work best only for tangible-asset-heavy or liquidation cases. Eg: Google has a brand, talent and data which makes tangible asset valuation meaningless.
 
 ## FIXED INCOME
+
+### FIXED INCOME MARKETS FOR CORPORATE ISSUERS
+1. Weak credit → secured borrowing. Firms with low credit ratings must pledge collateral. Strong credit firms issue commercial paper (CP) — unsecured, typically < 3 months maturity, used for working capital or temporary/bridge funding.
+2. **Factoring** Firm sells receivables to a lender at a discount. Lender takes over credit risk + collection. Example: ₹100 invoice sold for ₹95 today → instant liquidity.
+3. Bridge Financing refers to short-term funding used until permanent financing (bonds, equity) is arranged. A company plans to issue a 10-year bond in 3 months but needs cash now to run operations → it issues 3-month commercial paper today → when the bond is issued, the proceeds are used to repay the CP.
+4. **Rollover** = repaying old short-term debt by issuing new short-term debt instead of using cash. ==The risk that the company would not be able to sell a new commercial paper to repay the old one is known as rollover risk.==
+5. Banks fund short-term mainly through deposits: checking, operational corporate deposits, savings, and certificates of deposit (CDs). For example, fixed deposits in India.
+6.  Asset Backed Commercial Paper: A bank sets up a vehicle that buys car loans, then issues 30-day asset-backed commercial paper to investors, and keeps issuing new 30-day ABCP every month to repay the old ABCP, with the car loans as collateral. Cash to repay ABCP comes from loan EMIs first, new ABCP issuance next, money from sponsoring bank during bad days, and asset sales only as last resort.
+7. Repo = collateralised borrowing where one party sells a security today and agrees to buy it back later at a higher price; that price difference is the repo rate, i.e. the interest on the loan embedded in prices, not quoted separately.
+8. Example (India): An Indian bank needs overnight cash → it sells government bonds to the RBI for ₹100 today and agrees to repurchase them tomorrow for ₹100.02 → the ₹0.02 difference is the repo interest, and the bonds are the collateral.
+9.   Collateral protection: lender demands collateral worth more than the cash lent to protect against price drops.
+10. **Initial margin (haircut)** = gap between collateral market value and loan amount → loan amount is a discount to collateral value. Collateral worth ₹105 is posted, but the lender gives only ₹100 cash → the ₹5 gap is the initial margin (haircut) protecting the lender if collateral prices fall.
+11. During the repo’s life, if collateral value falls, borrower must post extra collateral → this top-up demand is variation margin.
+12. Overnight repo = one-day repo; term repo = repo longer than one day. Repo rates are usually lower than unsecured bank loans because the loan is backed by high-quality collateral (often government bonds).
+13.  Repo rates are usually lower when the collateral liquidity is high and the collateral is physically delivered to the lender. Repo rates are usually higher when the term is high and when interest rates for alternative sources of funds are higher.
+14.  Tri-party repo = repo where a third party (clearing bank/CCP) handles collateral custody, valuation, and margining; example: an Indian bank borrows overnight via repo using G-secs, while CCIL sits in the middle holding the bonds and settling cash.
+15. Reverse repo = the lender’s side of a repo; example: a bank parks excess cash with the RBI, receives G-secs as collateral, and earns the reverse repo rate as interest.
+16.  Tri Party repos protect against the following kinds of risks:
+	- Default risk = the borrower takes cash today and fails to repurchase the collateral later, forcing the lender to sell the collateral to recover money.
+	- Collateral risk = the value of the collateral falls sharply before it can be sold, so even after liquidation it does not fully cover the cash lent.
+	- Margining risk = collateral prices move faster than margin calls, so the lender is exposed during the time gap between a price fall and posting of additional collateral.
+	- Legal risk = in stress or bankruptcy, the repo is not enforced as expected, and courts may freeze or delay access to collateral by treating the repo like a normal loan.
+	- Netting risk = when a counterparty defaults, you cannot offset what you owe against what you are owed, so you must pay all obligations in full while recovering only partially on claims.
+	- Settlement risk = cash and securities do not settle simultaneously, so one party delivers cash while the collateral delivery fails or is delayed.
+
+### FIXED INCOME MARKET FOR GOVERNMENT ISSUERS
+
+1. Sovereign debt = bonds issued by national governments to fund public goods; backed by taxing power, usually the largest issuers in domestic markets, typically highest credit quality locally.
+2. Public-sector accounting focuses on cash flows; analysts should think in balance-sheet terms: implied assets (future taxes) versus liabilities (promised debt payments).
+3. Core divide: developed-market issuers borrow in stable, reserve currencies with deep markets and transparent fiscal policy; emerging-market issuers face higher volatility, weaker institutions, and funding constraints.
+4. Emerging-market debt is often split into domestic debt (local currency, local investors) and external debt (foreign currency, foreign creditors); external debt adds FX risk because repayment currency ≠ tax currency.
+5. If a government earns in INR but owes USD debt, currency depreciation mechanically raises debt burden even if real activity is unchanged.
+6. Governments issue across maturities to balance cost and risk; too much short-term debt lowers rates today but raises rollover risk tomorrow.
+7. Rollover risk = inability to refinance maturing debt; classic crisis trigger when markets suddenly refuse to roll short-term bills.
+8. Debt management policy decides how much, what type, maturity, currency, and indexation (floating, inflation-linked) of debt is issued.
+9. Inflation-linked debt shifts inflation risk to the issuer; nominal fixed-rate debt shifts inflation risk to investors.
+10. Sovereign issuance is done via regular public auctions to signal transparency and price discovery. Competitive bids specify both price and quantity; noncompetitive bids accept the auction price and are guaranteed allocation.
+11. Government auctions ₹1,000 crore of a 10-year bond; competitive bidders submit bids like “₹300 crore at 7.10%,” “₹400 crore at 7.15%,” “₹500 crore at 7.25%.” Because the auction cleared (filled the quota) at the 7.25% tier, 7.25% is the cutoff yield.
+12. In a “single-price” auction (also known as a Dutch auction), everyone pays the same yield—the highest yield accepted to sell the entire offering. If the government needs to sell bonds and the clearing rate is 4.0%, a bidder who aggressively bid 3.8% still gets the bonds at 4.0%, which encourages more aggressive bidding by removing the fear of overpaying. In a “multiple-price” auction, winning bidders pay exactly what they bid; if you bid 3.8% and the clearing rate was 4.0%, you are stuck earning 3.8% while others earn more. This structure can reduce aggressive bidding because investors fear the “winner’s curse”—winning the auction but paying a price worse than the market average.
+13. Issuers wanting to minimize yield volatility often prefer single-price auctions; bidders shade less.
+14. On-the-run bonds = most recently issued securities at a given maturity; most liquid, used as benchmarks for risk-free rates. ==Yield curves in practice are built off on-the-run sovereign bonds, not off older illiquid issues.==
+15. Primary dealers are designated banks obligated to bid in auctions and make secondary markets; they act as transmission channels for monetary policy. Central banks interact with primary dealers as counterparties when conducting open-market operations.
 
 ### MODULE 65.1: MORTGAGE-BACKED SECURITY (MBS) INSTRUMENT AND MARKET FEATURES
 
@@ -440,3 +651,355 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 8. **“I stayed silent.”** Wrong logic: Inaction avoids liability; correct logic: knowing inaction may be participation; key phrase: *failure to dissociate*.
 9. **“There’s no regulation on this.”** Wrong logic: Absence of law means permitted; correct logic: follow CFA Standards; tested angle: regulatory gaps, new products.
 10. **“Compliance handles this.”** Wrong logic: Delegation transfers responsibility; correct logic: duty remains if you know or should know; tested angle: shared accountability.
+### STANDARD III(A) – DUTIES TO CLIENTS – LOYALTY, PRUDENCE, AND CARE
+
+
+> [!tip] TALISMAN
+> **Think like a trustee handling someone else’s money.**  You must put the **client’s interests first**, ahead of your firm and yourself.  Act with **care and prudence**, not bravado or hindsight.  Follow the **mandate and IPS**, manage conflicts in the client’s favor, and remember:  **losses don’t mean violation — bad process does.**
+
+#### Core Concepts
+
+1. Members and Candidates owe a **fiduciary duty** to clients and must act with loyalty, prudence, and care when managing client assets. A fiduciary is someone who manages another person’s money or decisions and must always act in that person’s best interest.
+2. **Client interests come before** the interests of the firm and before personal interests in all investment actions and recommendations.
+3. Acting with **prudence and care** means exercising sound judgment, reasonable diligence, and appropriate risk management—not guaranteeing returns.
+4. The duty applies to **investment decisions, portfolio construction, execution, monitoring, and advice**, not just security selection.
+5. ==Conflicts of interest must be **managed in favour of the client**==; disclosure alone does not justify disadvantaging the client.
+6. When managing pooled or institutional assets, decisions must be made **for the benefit of the client as a whole**, consistent with the mandate.
+7. This standard is about **process and priority**, ==not outcomes==; losses alone do not imply a violation.
+
+#### Exam Traps (Violation)
+
+1. **“The firm benefits too.”** Wrong logic: Firm gain is acceptable; correct logic: client interests must come first; tested angle: proprietary products, fee incentives.
+2. **“I followed the mandate loosely.”** Wrong logic: Flexibility is fine; correct logic: straying from stated objectives violates prudence and care; tested angle: mandate drift.
+3. **“I disclosed the conflict.”** Wrong logic: Disclosure cures harm; correct logic: client must not be disadvantaged even after disclosure; tested angle: conflicts vs loyalty.
+4. **“This trade helps another client.”** Wrong logic: Helping one client justifies harm to another; correct logic: each client’s interests must be protected; tested angle: cross-client favoritism.
+5. **“The risk paid off before.”** Wrong logic: Past success proves prudence; correct logic: risk must be suitable and justified at the time; tested angle: excessive risk-taking.
+6. **“I was trying to recover losses.”** Wrong logic: Chasing losses helps clients; correct logic: reckless behaviour violates prudence; tested angle: loss recovery trades.
+7. **“The client didn’t object.”** Wrong logic: Silence implies consent; correct logic: fiduciary duty is proactive; tested angle: passive client approval.
+8. **“Everyone in the market does this.”** Wrong logic: Industry norms override duty; correct logic: fiduciary duty overrides market practice; tested angle: herding behaviour.
+9. **“It increased firm revenue.”** Wrong logic: Revenue supports firm stability; correct logic: firm benefit is secondary to client interest; tested angle: fee-driven advice.
+10. **“The loss was unavoidable.”** Wrong logic: Any loss excuses conduct; correct logic: poor process still violates the standard; tested angle: outcome vs process.
+
+#### Exam Traps (Not a Violation)
+
+1. **“The portfolio lost money.”** Losses alone occurred; correct logic: losses do not imply violation if decisions were prudent and aligned with objectives.
+2. **“Another strategy performed better.”** Hindsight comparison is tempting; correct logic: fiduciary duty is judged ex ante, not ex post.
+3. **“The client chose the risky option.”** Client-directed risk within mandate; correct logic: honoring informed client choice is allowed.
+4. **“Fees were charged as disclosed.”** Fees were transparent and agreed; correct logic: disclosed, reasonable fees are permitted.
+5. **“The market moved suddenly.”** Unforeseeable events caused loss; correct logic: no duty to predict all market shocks.
+6. **“The decision favored the pooled fund.”** Action benefited the fund per mandate; correct logic: ==duty is to the client entity, not individuals==.
+7. **“The client approved the policy.”** Client consent to strategy existed; correct logic: following agreed policy satisfies duty.
+8. **“The manager followed the IPS.”** Actions aligned with written objectives and constraints; correct logic: compliance with IPS supports prudence.
+9. **“Risk controls were in place.”** Loss occurred despite controls; correct logic: having and using controls meets the care requirement.
+10. **“No conflict existed.”** No competing interests were present; correct logic: loyalty standard is satisfied.
+
+---
+
+### STANDARD III(B) – DUTIES TO CLIENTS – FAIR DEALING
+
+> [!tip] TALISMAN
+> **Everyone gets a fair shot.**  Don’t play favourites, don’t tip a few, and don’t allocate benefits to insiders first.  Treat clients **equitably**, not identically—use fair processes so no group is disadvantaged by timing, access, or allocation.
+
+#### Core Concepts
+
+1. Members and Candidates must deal **fairly and objectively** with all clients when providing investment analysis, recommendations, actions, and changes in recommendations.
+2. **Fair dealing ≠ equal dealing**: clients may receive different outcomes due to size, mandate, or timing, but the **process** must be fair.
+3. New or changed recommendations must be **disseminated broadly and promptly** so no subset of clients gains an unfair advantage.
+4. **Allocation of trades and investment opportunities** must be fair and consistent with written policies.
+5. Personal trades and proprietary accounts must **not be favored** over client accounts.
+6. Differences across clients must be **justified by mandate, suitability, or operational constraints**, not favoritism.
+7. The standard focuses on **process integrity**—how information and opportunities are shared—not on identical results.
+
+#### Exam Traps (Violation)
+
+1. **“I told my best clients first.”** Wrong logic: Loyalty to top clients is fine; correct logic: selective early disclosure violates fair dealing; tested angle: staggered dissemination.
+2. **“Small clients don’t need this update.”** Wrong logic: Materiality varies by client size; correct logic: material changes must be shared fairly with all relevant clients; tested angle: information asymmetry.
+3. **“The trade went to the house account.”** Wrong logic: Firm priority is acceptable; correct logic: client interests must not be subordinated; tested angle: proprietary trading.
+4. **“I allocated fills to whoever asked first.”** Wrong logic: First-come is fair; correct logic: allocation must follow a pre-established, fair policy; tested angle: allocation bias.
+5. **“I tweeted the recommendation.”** Wrong logic: Public posting ensures fairness; correct logic: uncontrolled release may advantage some clients over others; tested angle: social media timing.
+6. **“VIP clients expect better access.”** Wrong logic: Paying more buys priority info; correct logic: unequal access to material recommendations is unfair; tested angle: tiered service misuse.
+7. **“I waited to inform the rest.”** Wrong logic: Delay is harmless; correct logic: delaying dissemination creates unfair advantage; tested angle: timing gaps.
+8. **“I filled the easiest accounts first.”** Wrong logic: Operational convenience is fine; correct logic: convenience cannot override fairness; tested angle: cherry-picking fills.
+9. **“Personal trade executed earlier.”** Wrong logic: Small personal trades don’t matter; correct logic: personal trades must not precede client trades; tested angle: front-running.
+10. **“Policy exists, but I didn’t follow it.”** Wrong logic: Having a policy is enough; correct logic: policies must be followed consistently; tested angle: policy noncompliance.
+
+#### Exam Traps (Not a Violation)
+
+1. **“Different clients got different prices.”** Market timing and liquidity differed; correct logic: unequal outcomes are allowed if the process is fair.
+2. **“Institutional clients received bulk fills.”** Large clients got more shares **because the allocation policy says orders are filled pro-rata by order size**, not because they were favored; size-based outcomes are fine if the **policy is pre-set and applied to everyone**.
+3. **“Model portfolios updated overnight.”** Some clients acted earlier **only because of operational timing**, not selective disclosure; the recommendation was released to **all clients as quickly as reasonably possible**, so fairness is preserved.
+4. **“Some clients declined the trade.”** Client choice drove outcomes; correct logic: honoring preferences is fair.
+5. **“IPS constraints limited participation.”** Suitability restricted access; correct logic: mandate-based differences are allowed.
+6. **“Trade allocation followed written policy.”** Policy applied consistently; correct logic: fair process met.
+7. **“Public announcement used official channels.”** Broad, controlled release occurred; correct logic: no selective disclosure.
+8. **“Block trade prorated.”** A large trade was split **pro-rata across all eligible client accounts**, meaning everyone received the same percentage of what they requested; this is a **textbook fair-allocation method**.
+9. **“Personal trades occurred after clients.”** The manager traded **only after all client orders were executed**, so clients had priority and there was **no front-running or preferential treatment**.
+10. **“Operational errors documented and corrected.”** Isolated error addressed; correct logic: not favoritism, process corrected.
+---
+
+### STANDARD III(C) – DUTIES TO CLIENTS – SUITABILITY
+
+> [!tip] TALISMAN  
+> **Know the client before you know the product.**  
+> Recommend only what **fits the client’s goals, risk tolerance, and constraints**.  
+> Suitability is about **matching**, not maximizing returns.  
+> A good product for the market can still be **wrong for this client**.
+
+#### Core Concepts
+
+1. Members and Candidates must **understand the client**—including objectives, risk tolerance, financial situation, and constraints—**before** making recommendations or taking action.    
+2. Suitability applies to **recommendations, portfolio construction, and ongoing management**, not just one-time advice.    
+3. Recommendations must be **consistent with the client’s IPS**; deviation requires client consent and IPS update.    
+4. For **discretionary accounts**, the member is responsible for ensuring investments remain suitable over time.    
+5. For **non-discretionary accounts**, the member must make suitable recommendations but is not responsible for client-directed unsuitable actions.    
+6. Suitability is judged **at the time of the decision**, not using hindsight.    
+7. This standard focuses on **client fit**, not product quality or market performance.  
+#### Exam Traps (Violation)
+
+1. **“This product has the highest return.”** Wrong logic: High return equals suitability; correct logic: suitability depends on client objectives and risk tolerance; tested angle: yield chasing.    
+2. **“The client didn’t complain.”** Wrong logic: Silence implies suitability; correct logic: suitability is proactive, not reactive; tested angle: passive clients.    
+3. **“It fits most clients.”** Wrong logic: General suitability is enough; correct logic: suitability is client-specific; tested angle: one-size-fits-all advice.    
+4. **“The IPS is old.”** Wrong logic: Outdated IPS can be ignored; correct logic: must update IPS before deviating; tested angle: stale documentation.    
+5. **“The client approved it verbally.”** Wrong logic: Informal consent suffices; correct logic: recommendations must align with documented objectives; tested angle: informal approvals.    
+6. **“This improves diversification.”** Wrong logic: Diversification always means suitability; correct logic: diversification must still fit risk tolerance and constraints; tested angle: portfolio context.    
+7. **“I only recommended, I didn’t execute.”** Wrong logic: Advice has no duty; correct logic: suitability applies to recommendations alone; tested angle: advisory roles.    
+8. **“The market conditions changed.”** Wrong logic: Market change excuses mismatch; correct logic: suitability must be reassessed as conditions and client circumstances change; tested angle: ongoing duty.    
+9. **“The client wanted aggressive growth.”** Wrong logic: Stated desire overrides capacity; correct logic: risk tolerance and capacity both matter; tested angle: willingness vs ability.    
+10. **“Everyone uses this strategy.”** Wrong logic: Industry practice defines suitability; correct logic: client circumstances define suitability; tested angle: herding.
+    
+#### Exam Traps (Not a Violation)
+
+1. **“The client rejected the recommendation.”** Suitable advice was given; correct logic: client choice does not create a violation.    
+2. **“The client insisted on the trade.”** Client-directed action in a non-discretionary account; correct logic: document advice, execution allowed.    
+3. **“The portfolio lost money.”** Loss occurred despite suitability; correct logic: losses do not imply unsuitability if fit existed at decision time.     
+4. **“Risk tolerance changed later.”** Change happened after recommendation; correct logic: suitability judged ex ante. 
+5. **“The client signed the IPS.”** Documented objectives exist; correct logic: acting within IPS supports suitability.    
+6. **“The product underperformed peers.”** Relative performance lagged; correct logic: suitability is not relative performance.    
+7. **“The account is discretionary.”** Manager adjusted holdings within mandate; correct logic: ongoing suitability maintained.    
+8. **“The recommendation was conservative.”** Lower risk than client’s maximum; correct logic: being conservative is allowed if aligned with objectives.    
+9. **“Client constraints limited options.”** Liquidity/tax constraints narrowed choices; correct logic: suitability respects constraints.    
+10. **“Advice was updated after life changes.”** Client circumstances changed and recommendations were revised; correct logic: ongoing suitability duty met.
+---
+
+### STANDARD III(D) – DUTIES TO CLIENTS – PERFORMANCE PRESENTATION
+
+> [!tip] TALISMAN  
+> **Don’t sell dreams—show reality.**  
+> Performance must be **fair, accurate, complete, and comparable**.  
+> No cherry-picking, no smoothing, no hiding bad years.  
+> If a reasonable investor can be misled, you’ve crossed the line.
+
+#### Core Concepts
+
+1. Members and Candidates must present **investment performance information fairly, accurately, and completely** to clients and prospective clients.    
+2. Performance presentation includes **returns, benchmarks, time periods, composites, and marketing materials**, not just formal reports.    
+3. You must **not misrepresent past performance** through cherry-picking, selective periods, or excluding poor results.    
+4. Hypothetical, simulated, or back-tested performance must be **clearly labeled and explained** as such.    
+5. Changes in strategy, benchmarks, or calculation methods must be **clearly disclosed**.    
+6. Performance must be presented in a way that allows **reasonable comparison**, not designed to confuse or exaggerate.    
+7. This standard is about **truthful presentation**, not whether returns were good or bad.
+    
+#### Exam Traps (Violation)
+
+1. **“We only showed our best-performing accounts.”** Wrong logic: Best accounts represent skill; correct logic: excluding poor performers misleads; tested angle: cherry-picking.    
+2. **“The time period makes us look better.”** Wrong logic: Short periods are fine; correct logic: selective time horizons distort reality; tested angle: period manipulation.    
+3. **“The benchmark was changed quietly.”** Wrong logic: Benchmark choice is flexible; correct logic: undisclosed benchmark changes mislead; tested angle: benchmark switching.    
+4. **“Back-tested returns look great.”** Wrong logic: Simulated performance equals real results; correct logic: hypothetical returns must be clearly labeled; tested angle: back-testing abuse.    
+5. **“Everyone smooths returns.”** Wrong logic: Industry norm excuses conduct; correct logic: smoothing hides volatility and misleads; tested angle: return smoothing.    
+6. **“We excluded accounts that left.”** Wrong logic: Former clients are irrelevant; correct logic: excluding terminated accounts inflates results; tested angle: survivorship bias.    
+7. **“The footnote explains it.”** Wrong logic: Any disclosure is enough; correct logic: disclosures must be clear, prominent, and not misleading; tested angle: buried disclosures.    
+8. **“The model did the calculation.”** Wrong logic: Automation removes responsibility; correct logic: members are responsible for what they present; tested angle: outsourced reporting.    
+9. **“This is just marketing.”** Wrong logic: Ads are exempt; correct logic: marketing materials are covered by the standard; tested angle: promotional presentations.    
+10. **“We never claimed it will repeat.”** Wrong logic: No future promise avoids violation; correct logic: misleading past presentation alone violates; tested angle: implication vs guarantee.
+#### Exam Traps (Not a Violation)
+
+1. **“Performance was poor.”** Returns were honestly shown; correct logic: bad performance alone is not a violation.   
+2. **“Different benchmarks were used.”** Benchmarks matched strategies and were disclosed; correct logic: appropriate, disclosed benchmarks are allowed.    
+3. **“Hypothetical returns were labeled.”** Simulated results clearly identified and explained; correct logic: transparency satisfies the standard.    
+4. **“Fees were deducted consistently.”** Net-of-fee presentation applied uniformly; correct logic: consistent methodology supports fairness.    
+5. **“Accounts entered and exited the composite.”** Changes followed written composite rules; correct logic: rule-based inclusion is acceptable.    
+6. **“Marketing simplified the numbers.”** Simplification without distortion; correct logic: clarity without misrepresentation is allowed.    
+7. **“Returns were recalculated after an error.”** Corrections disclosed; correct logic: fixing mistakes transparently is acceptable.    
+8. **“Performance aligned with disclosures.”** What was shown matched what was described; correct logic: no misleading gap exists.    
+9. **“Clients received full reports on request.”** Summary marketing plus full disclosure availability; correct logic: layered disclosure is acceptable.    
+10. **“Standards like GIPS were followed.”** Recognized performance standards applied; correct logic: compliance supports fair presentation.
+---
+
+### STANDARD III(E) – DUTIES TO CLIENTS – PRESERVATION OF CONFIDENTIALITY
+
+> [!tip] TALISMAN
+> **Client information stays locked.**
+> Don’t share, hint, gossip, or reuse client data—inside or outside work.
+> Break confidentiality **only** if the client permits, the law requires it, or illegal activity is involved.
+
+#### Core Concepts
+
+1. Members and Candidates must **keep client information confidential**, including identity, holdings, transactions, and personal details.
+2. Confidentiality applies **during and after** the professional relationship ends.
+3. Information may be disclosed **only** with client consent, when required by law, or to prevent/identify illegal activity.
+4. Using client information for **personal benefit** or for another client is prohibited.
+5. Confidentiality covers **all forms**: verbal, written, electronic, social media, and casual conversations.
+6. This standard protects **trust**, not convenience; silence and discretion are expected.
+7. Firm policies may add restrictions, but **CFA obligations apply regardless** of firm culture.
+
+#### Exam Traps (Violation)
+
+1. **“I didn’t name the client.”** Wrong logic: Anonymity avoids breach; correct logic: identifiable details still disclose confidential info; tested angle: indirect identification.
+2. **“It was after work.”** Wrong logic: Off-duty sharing is fine; correct logic: confidentiality applies at all times; tested angle: social conversations.
+3. **“I shared it internally.”** Wrong logic: Colleagues can know; correct logic: access must be on a need-to-know basis; tested angle: internal leakage.
+4. **“I used it for another client’s benefit.”** Wrong logic: Helping clients justifies sharing; correct logic: client info cannot be reused; tested angle: cross-client misuse.
+5. **“The relationship ended.”** Wrong logic: Duty ends with engagement; correct logic: confidentiality survives termination; tested angle: former clients.
+6. **“Everyone already knows.”** Wrong logic: Market awareness excuses sharing; correct logic: client-specific data remains confidential; tested angle: assumed public knowledge.
+7. **“I hinted without details.”** Wrong logic: Vague hints are harmless; correct logic: hints and signals can still disclose; tested angle: tipping by implication.
+8. **“It helped marketing.”** Wrong logic: Business benefit permits sharing; correct logic: client consent is required; tested angle: testimonials, case studies.
+9. **“I stored it insecurely.”** Wrong logic: No sharing occurred; correct logic: failure to safeguard can breach confidentiality; tested angle: data security.
+10. **“Compliance didn’t stop me.”** Wrong logic: Lack of enforcement excuses conduct; correct logic: personal duty remains; tested angle: policy gaps.
+
+#### Exam Traps (Not a Violation)
+
+1. **“The client approved disclosure.”** Explicit consent was given; correct logic: permitted sharing.
+2. **“Law required reporting.”** Regulatory or court mandate existed; correct logic: legal compulsion allows disclosure.
+3. **“Illegal activity was suspected.”** Reporting to authorities followed law; correct logic: preventing illegality is allowed.
+4. **“Information was aggregated.”** No client could be identified; correct logic: truly non-identifiable data is acceptable.
+5. **“Access was limited internally.”** Need-to-know controls applied; correct logic: proper internal handling.
+6. **“Client used public platform.”** Client voluntarily made info public; correct logic: member didn’t disclose it.
+7. **“Data was encrypted and secured.”** Safeguards in place; correct logic: duty to protect satisfied.
+8. **“Client requested a reference.”** Client initiated and consented; correct logic: allowed.
+9. **“Information was outdated and irrelevant.”** No identification possible; correct logic: not confidential.
+10. **“Disclosure followed firm and law.”** Policies aligned with legal requirements; correct logic: compliant handling.
+---
+
+### STANDARD IV(A) – DUTIES TO EMPLOYERS – LOYALTY
+
+> [!tip] TALISMAN
+> **Your employer comes first while you are employed.**
+> You can plan your exit, but you cannot compete, steal, or sabotage.
+> Loyalty means **no harm, no misuse, no front-running the firm**.
+> Once you leave, skill stays with you—but **property and clients don’t**.
+
+#### Core Concepts
+
+1. Members and Candidates must act with **loyalty to their employer** and not deprive the employer of the benefit of their skills and efforts while employed.
+2. You must not engage in activities that **compete with or harm the employer’s business** during employment.
+3. You may **prepare to leave** your employer (e.g., update résumé, explore opportunities), but you may not solicit clients, steal data, or start a competing business before departure.
+4. **Employer property** includes client lists, trade secrets, models, research, algorithms, and confidential processes—these must not be taken or used.
+5. Investment records and work products created on the job generally **belong to the employer**, even if you helped create them.
+6. After termination, you may use **general skills, experience, and knowledge**, but not confidential information or employer property.
+7. This standard is about **conduct during employment**; post-employment actions are limited by confidentiality and property rights.
+
+#### Exam Traps (Violation)
+
+1. **“I’m leaving anyway.”** Wrong logic: Imminent departure reduces duty; correct logic: loyalty applies until employment ends; tested angle: resignation period.
+2. **“I worked on this model myself.”** Wrong logic: Personal effort means ownership; correct logic: work created for employer belongs to employer; tested angle: intellectual property.
+3. **“I only contacted a few clients.”** Wrong logic: Limited solicitation is okay; correct logic: any client solicitation before leaving violates loyalty; tested angle: pre-departure poaching.
+4. **“I copied files to work at home.”** Wrong logic: Convenience justifies copying; correct logic: removing employer data without permission is misuse; tested angle: data theft.
+5. **“I did it after hours.”** Wrong logic: Off-hours actions are personal; correct logic: duty applies regardless of timing; tested angle: moonlighting.
+6. **“The firm wasn’t harmed.”** Wrong logic: No damage means no violation; correct logic: intent and conduct matter, not outcome; tested angle: attempted harm.
+7. **“Everyone does this before quitting.”** Wrong logic: Common practice excuses conduct; correct logic: ethical duty overrides norms; tested angle: industry culture.
+8. **“I used public info.”** Wrong logic: Public sources remove violation; correct logic: compiled client lists and insights can still be employer property; tested angle: client databases.
+9. **“I helped a friend’s firm.”** Wrong logic: Favor to friend is harmless; correct logic: assisting competitors while employed violates loyalty; tested angle: side consulting.
+10. **“I delayed my work.”** Wrong logic: Poor effort isn’t unethical; correct logic: intentionally withholding effort deprives employer of benefit; tested angle: shirking.
+
+#### Exam Traps (Not a Violation)
+
+1. **“I updated my résumé.”** Job preparation occurred; correct logic: planning to leave is allowed.
+2. **“I interviewed elsewhere.”** Exploring opportunities is permitted; correct logic: no competition yet.
+3. **“I left and then started a firm.”** Competition began post-employment; correct logic: loyalty duty ended.
+4. **“I used general experience.”** Skills and know-how applied; correct logic: general knowledge belongs to you.
+5. **“I returned all files.”** No employer property retained; correct logic: duty respected.
+6. **“Clients contacted me first after I left.”** No pre-solicitation occurred; correct logic: responding is allowed.
+7. **“I followed firm policies.”** Actions complied with internal rules; correct logic: loyalty satisfied.
+8. **“I disclosed conflicts to employer.”** Transparency maintained; correct logic: proper handling.
+9. **“I declined competing work.”** Refusal protected employer interests; correct logic: loyalty upheld.
+10. **“My contract allowed it.”** Explicit permission existed; correct logic: contractual rights respected.
+
+---
+
+### STANDARD IV(B) – DUTIES TO EMPLOYERS – ADDITIONAL COMPENSATION ARRANGEMENTS
+
+> [!tip] TALISMAN
+> **No side money without telling your boss.**
+> If someone else pays you for the same work—or work that overlaps—you must get **written consent from your employer first**.
+> Transparency protects loyalty; secrecy breaks it.
+
+#### Core Concepts
+
+1. Members and Candidates must **not accept compensation, benefits, or consideration** from clients or third parties that could create a conflict with their employer’s interests **unless they obtain written consent** from all parties involved.
+2. Additional compensation includes **cash, gifts, referral fees, equity, profit-sharing, travel, or non-cash benefits**.
+3. Consent must be **prior and in writing**; after-the-fact disclosure is insufficient.
+4. The concern is **conflict of interest**—side payments may bias effort, time allocation, or judgment away from the employer.
+5. This applies whether the compensation is tied to **performance, referrals, marketing, or “consulting”** work related to your role.
+6. Even if the employer is not harmed, **undisclosed compensation is still a violation**.
+7. This standard protects the employer’s right to know **who is paying you and why**.
+
+#### Exam Traps (Violation)
+
+1. **“It didn’t affect my work.”** Wrong logic: No impact means no issue; correct logic: undisclosed compensation itself violates the standard; tested angle: intent vs disclosure.
+2. **“It was just a small gift.”** Wrong logic: Size makes it harmless; correct logic: any compensation requires consent; tested angle: de minimis gifts.
+3. **“I told my manager verbally.”** Wrong logic: Informal disclosure is enough; correct logic: consent must be written; tested angle: verbal approvals.
+4. **“The client insisted.”** Wrong logic: Client request overrides rules; correct logic: employer consent is still required; tested angle: client pressure.
+5. **“It was after hours.”** Wrong logic: Timing removes conflict; correct logic: overlap with professional role triggers the standard; tested angle: moonlighting.
+6. **“It wasn’t cash.”** Wrong logic: Non-cash benefits don’t count; correct logic: all forms of compensation count; tested angle: travel, gifts, perks.
+7. **“Everyone does side consulting.”** Wrong logic: Industry norms excuse conduct; correct logic: disclosure rules still apply; tested angle: cultural normalization.
+8. **“I planned to disclose later.”** Wrong logic: Delayed disclosure is fine; correct logic: consent must be obtained *before* accepting compensation; tested angle: timing.
+9. **“My employer didn’t ask.”** Wrong logic: Silence implies approval; correct logic: affirmative written consent is required; tested angle: passive approval.
+10. **“It helped the firm indirectly.”** Wrong logic: Employer benefit excuses secrecy; correct logic: undisclosed conflicts still violate the standard; tested angle: rationalization.
+
+#### Exam Traps (Not a Violation)
+
+1. **“Written consent was obtained.”** Employer and client approved in advance; correct logic: requirement satisfied.
+2. **“Compensation was disclosed and approved.”** Transparency existed; correct logic: no conflict breach.
+3. **“The activity was unrelated.”** No overlap with professional role; correct logic: standard not triggered.
+4. **“The employer pays bonuses.”** Internal compensation is expected; correct logic: not additional compensation.
+5. **“The gift was returned or refused.”** No acceptance occurred; correct logic: no violation.
+6. **“Contract explicitly allowed it.”** Employment agreement permitted the arrangement; correct logic: consent embedded.
+7. **“The work was pro bono.”** No compensation received; correct logic: standard not triggered.
+8. **“The client reimbursed expenses.”** Legitimate expense reimbursement approved; correct logic: not additional pay.
+9. **“The employer initiated the arrangement.”** Employer-sponsored side work; correct logic: no conflict.
+10. **“Disclosure happened before acceptance.”** Consent preceded compensation; correct logic: compliant behavior.
+
+---
+
+### STANDARD IV(C) – DUTIES TO EMPLOYERS – RESPONSIBILITIES OF SUPERVISORS
+
+> [!tip] TALISMAN
+> **If you supervise, you’re responsible.**
+> Build systems that prevent violations, monitor them, and act when red flags appear.
+> You’re not expected to be perfect—but you must be **reasonable, proactive, and responsive**.
+
+#### Core Concepts
+
+1. Members and Candidates with supervisory authority must **make reasonable efforts** to ensure that anyone they supervise complies with applicable laws, rules, and CFA Standards.
+2. “Supervision” includes **direct and indirect authority** over activities that could result in violations, even if day-to-day tasks are delegated.
+3. Reasonable supervision requires **adequate policies, procedures, training, and monitoring**, tailored to the firm’s size and complexity.
+4. Supervisors must **identify risks**, implement controls, and **respond promptly** to potential violations or red flags.
+5. Delegation does **not** remove responsibility; supervisors must **oversee the delegate** and verify controls work.
+6. When a violation is discovered or suspected, supervisors must **take corrective action** (investigate, escalate, stop activity).
+7. This standard is about **process and oversight**, not guaranteeing zero violations.
+
+#### Exam Traps (Violation)
+
+1. **“Compliance handles this.”** Wrong logic: Compliance alone owns supervision; correct logic: supervisors retain responsibility; tested angle: abdication.
+2. **“I didn’t know.”** Wrong logic: Ignorance excuses failures; correct logic: failure to monitor is itself a violation; tested angle: willful blindness.
+3. **“Policies exist.”** Wrong logic: Written rules are enough; correct logic: policies must be implemented and enforced; tested angle: paper programs.
+4. **“I delegated it.”** Wrong logic: Delegation transfers duty; correct logic: supervisors must oversee delegates; tested angle: delegation without oversight.
+5. **“No one complained.”** Wrong logic: Absence of complaints means compliance; correct logic: supervisors must proactively monitor; tested angle: passive supervision.
+6. **“It was a junior employee.”** Wrong logic: Seniority determines duty; correct logic: all supervised activity requires oversight; tested angle: junior errors.
+7. **“The firm is small.”** Wrong logic: Size excuses controls; correct logic: controls must be reasonable for size, not absent; tested angle: resource constraints.
+8. **“The violation didn’t cause harm.”** Wrong logic: No harm means no issue; correct logic: prevention and response matter regardless of outcome; tested angle: attempted violations.
+9. **“I warned them once.”** Wrong logic: Verbal warning suffices; correct logic: must follow up and ensure compliance; tested angle: ineffective remediation.
+10. **“The system failed.”** Wrong logic: Technology failure removes duty; correct logic: supervisors must review and fix controls; tested angle: system reliance.
+
+#### Exam Traps (Not a Violation)
+
+1. **“Reasonable policies were in place.”** Controls matched firm risks; correct logic: reasonable efforts satisfied.
+2. **“Training was provided.”** Staff received guidance; correct logic: proactive supervision.
+3. **“Monitoring was ongoing.”** Reviews and checks occurred; correct logic: active oversight.
+4. **“Violation was promptly addressed.”** Activity stopped and escalated; correct logic: proper response.
+5. **“The employee circumvented controls.”** Deliberate evasion occurred; correct logic: supervisors aren’t guarantors.
+6. **“Delegation included oversight.”** Reporting lines and checks existed; correct logic: duty maintained.
+7. **“Controls were updated after issues.”** Continuous improvement applied; correct logic: responsive supervision.
+8. **“Firm size was considered.”** Scaled controls implemented; correct logic: proportional supervision.
+9. **“Independent compliance reviewed controls.”** Additional oversight present; correct logic: strengthens reasonableness.
+10. **“No red flags were present.”** Nothing reasonably indicated risk; correct logic: no failure to act
+
