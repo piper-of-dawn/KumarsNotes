@@ -22,20 +22,49 @@
             }
           },
           {
+            "id": "204109404e8ea131",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CFA/Revision Notes for CFA.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Revision Notes for CFA"
+            }
+          },
+          {
+            "id": "f39cd647c89bc976",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
+          },
+          {
             "id": "971cccae7e1de4b6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA/Legal Terms Related to Bonds.md",
+                "file": "EPS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Legal Terms Related to Bonds"
+              "title": "EPS"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,7 +213,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -202,23 +231,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "09073dfbd67c59cb",
+  "active": "204109404e8ea131",
   "lastOpenFiles": [
-    "CFA/Legal Terms Related to Bonds.md",
-    "CFA/Numericals to Memorise.md",
+    "Chapter IV - Aman.md",
+    "Aman.md",
+    "conflict-files-obsidian-git.md",
     "CFA/Revision Notes for CFA.md",
+    "EPS.md",
+    "Inventory Valuation.md",
+    "Revise before Exam.md",
     "CFA/Yeild to Maturity.md",
-    "CFA/Annuity Calculation.md",
-    "CFA/CouponStructures.md",
+    "CFA/Numericals to Memorise.md",
+    "CFA/Legal Terms Related to Bonds.md",
+    "CFA/International and Domestic Bonds.md",
+    "CFA/Full and Flat Price.md",
     "CFA/Contingency Provisions.md",
-    "Writing Style.md",
+    "CFA/Bond Duration.md",
+    "CFA/Annuity Calculation.md",
     "Affirmations.md",
     "Writing Style.md",
     "Untitled.md",
     "Pasted image 20251230214023.png",
     "Excalidraw/Drawing 2025-12-28 11.28.51.excalidraw.md",
     "Pasted Image 20251228112906_706.png",
-    "Revise before Exam.md",
     "Maturity.md",
     "Long Term Assets.md",
     "Liquidity Ratios.md",
@@ -226,12 +261,6 @@
     "C++/Lambdas.md",
     "Investments in Private Capital - Equity and Debt.md",
     "index.md",
-    "How to measure fear.md",
-    "Gotchas.md",
-    "Free Cash Flow to Firm.md",
-    "Forward Rate.md",
-    "Equity, Fixed Income and Alt Investment Indexes.md",
-    "Equity.md",
     "dp.png",
     "Spells",
     "Rust",

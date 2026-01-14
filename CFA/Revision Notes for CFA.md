@@ -3,6 +3,7 @@ title:
 style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
 minLevel: 0 # Include headings from the specified level
 maxLevel: 3 # Include headings up to the specified level
+maxLevel: 3 # Include headings up to the specified level
 include: 
 exclude: 
 includeLinks: true # Make headings clickable
@@ -135,6 +136,27 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 4. For INR, Forward > Spot, hence INR is trading at forward premium
 ## CORPORATE ISSUERS
 
+### MODULE 23.1: LIQUIDITY MEASURES AND MANAGEMENT
+
+
+> [!abstract] MEMORISE THIS FOR EFFICIENCY
+>  - **CCC = DIO + DSO - DPO**
+>  - Suppliers offer payment terms in the form **a/b net c, which means a percentage discount of a if the invoice is paid within b days, otherwise full payment is due within c days.**
+
+
+1. The cash conversion cycle (CCC) measures the time it takes for a company to convert its investments in inventory and other resources into cash inflows from sales. 
+
+> [!TIP] HAMMER THIS INTO YOUR HEAD
+> CCC = DIO + DSO - DPO
+
+2. Lower CCC is better and can be artificially created
+   -  **Delay paying suppliers** right before quarter-end → payables look high → CCC ↓  
+   -  **Sell receivables to a bank (factoring)** just before reporting → receivables drop → CCC ↓
+   -  **Ship inventory early to distributors** with return rights → inventory disappears on paper → CCC ↓
+   -  **Avoid writing down old inventory** → inventory looks lower than reality → CCC ↓
+   -  **Stop buying inventory** just before reporting → inventory temporarily low → CCC ↓
+2. We can think of accounts payable as an implicit source of credit from suppliers (as opposed to explicit sources such as bank loans). **Suppliers offer payment terms in the form a/b net c, which means a percentage discount of a if the invoice is paid within b days, otherwise full payment is due within c days.** Forgoing the discount for prompt payment amounts to borrowing money from the supplier for (c – b) days.
+
 ### MODULE 24.1: CAPITAL INVESTMENTS AND PROJECT MEASURES
 ###### Expected number of questions: 3
 ###### LOS: Describe types of capital investments. Describe the capital allocation process, calculate net present value (NPV), internal rate of return (IRR), and return on invested capital (ROIC), and contrast their use in capital allocation.
@@ -202,40 +224,17 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 ###### Expected number of questions: 2
 ###### LOS: Explain the Modigliani–Miller propositions regarding capital structure.
 
-1. Costs of asymmetric information arise from the fact that managers typically have more information about a company’s prospects and future performance than owners or creditors. Firms with complex products or little transparency in financial statements tend to have higher costs of asymmetric information, which result in higher required returns on both debt and equity capital. Because shareholders and creditors are aware that asymmetric information problems exist, these investors look for management behavior that signals what knowledge or opinions management may have about the firm’s prospects. For example, taking on the commitment to make fixed interest payments through debt financing sends a signal that management is confident in the firm’s ability to make these payments in the future. By contrast, issuing equity is typically viewed as a negative signal that managers believe a firm’s stock is overvalued. The cost of asymmetric information increases with the proportion of equity in the capital structure
-2. Agency costs of equity are related to conflicts of interest between managers and owners. Managers who do not have a stake in the company do not bear the costs associated with excessive compensation or taking on too much (or too little) risk. Because shareholders are aware of this conflict, they take steps to reduce these costs. The result is called the net agency cost of equity.
-3. According to the free cash flow hypothesis, the use of debt forces managers to be disciplined with regard to how they spend cash because they have less free cash flow to use for their own benefit. It follows that greater amounts of financial leverage tend to reduce agency costs.
-4. Pecking order theory, based on asymmetric information, is related to the signals that management sends to investors through its financing choices. According to pecking order theory, managers prefer to make financing choices that are least likely to send negative signals to investors. Financing choices under pecking order theory follow a hierarchy based on visibility to investors. Internally generated capital is most preferred, debt is the next-best choice, and external equity is the least preferred financing option. Pecking order theory implies that the capital structure is a by product of individual financing decisions.
-
+1. Asymmetric information exists because managers have superior knowledge about future prospects vs shareholders/creditors.    
+2. Higher when business is complex or financial reporting is opaque → investors face more uncertainty. Investors price this uncertainty as higher required returns on both debt and equity.    
+3. Investors infer management’s private information from financing choices (**signaling**). Issuing debt signals confidence: fixed interest obligations imply expected stable cash flows. Issuing equity signals pessimism: markets infer management thinks stock is overvalued. **Therefore, equity financing is penalized more heavily than debt under asymmetric information.**    
+4. Agency costs of equity arise from conflicts between managers and shareholders. Managers without ownership stake don’t fully bear costs of overpaying themselves or mismanaging risk (too safe or too reckless). Shareholders anticipate this conflict and impose controls (monitoring, incentives, governance). Even after controls, some conflict remains → net agency cost of equity.
+5. Agency costs of equity are related to conflicts of interest between managers and owners. Managers who do not have a stake in the company do not bear the costs associated with excessive compensation or taking on too much (or too little) risk. **Because shareholders are aware of this conflict, they take steps to reduce these costs. The result is called the net agency cost of equity.**
+6. **Free cash flow hypothesis: excess cash invites wasteful spending or self-serving projects by managers.**
+7. **Use of Debt forces managers to be disciplined**, because commits cash to interest and principal payments, reducing free cash flow available for misuse.
+8. Pecking order theory is built on asymmetric information between managers and investors. Financing choices act as signals about management’s private view of firm value. - Internal funds are preferred: no external scrutiny, no signal.
 
 ## FSA
-
-### INTRODUCTION TO FINANCIAL STATEMENT ANALYSIS
-
-> [!TIP] HAMMER THIS INTO YOUR HEAD
-> Financial Statement Analysis = decision-making pipeline (ODPARU). Objective & context → Data gathering → Data processing → Analysis → Reporting → Updating. 
-
-1. What each of them means:
-	- Objective & context: valuation vs credit vs governance, time horizon, assumptions, constraints.
-	- Data gathering: financial statements, notes, MD&A, filings, industry data, macro data.
-	- Data processing: accounting adjustments, reclassification, normalization, removing one-offs.
-	- Analysis: ratios, trends, cash flow analysis, segment analysis, peer comparison.
-	- Reporting: conclusions, risks, sensitivities, recommendations.
-	- Updating: revise analysis for new filings, events, or macro/firm changes.
-    
-3. Standard setters vs regulators (do not mix).  
-    [Financial Accounting Standards Board](chatgpt://generic-entity?number=0) and [International Accounting Standards Board](chatgpt://generic-entity?number=1) set accounting standards.  
-    [Securities and Exchange Commission](chatgpt://generic-entity?number=2), [Federal Reserve](chatgpt://generic-entity?number=3), and [Office of the Comptroller of the Currency](chatgpt://generic-entity?number=4) enforce laws and compliance. Rule writers vs enforcers.
-
-> [!TIP] HAMMER THIS INTO YOUR HEAD
-> Key US filings and what they belong to. 10-K: annual financials, notes, risk factors, MD&A.  10-Q: quarterly interim update.  8-K: material event disclosure (M&A, asset sale, management/governance change).
-
-4. Business segment vs operating segment. ==A segment is reportable if it is ≥10% of revenue OR assets OR operating income.== This is about identifying economically meaningful parts of the firm.
-5. Geographic segments add one more filter. Must meet the 10% size test and face a different economic environment (regulation, currency, growth, risk).
-6. MD&A is qualitative but critical. Contains economic conditions, strategy and vision, trends, off-balance-sheet obligations, and forward-looking risks. Numbers show history; MD&A signals future stress or optimism.
-
 ### MODULE 29.1: INTANGIBLE ASSETS
-
 
 1. IFRS rule: Under IFRS (set by [International Accounting Standards Board](chatgpt://generic-entity?number=0)), a purchased identifiable intangible (patent, license, trademark) is first recorded at cost and then you can choose cost model or revaluation model, but revaluation is allowed only if there is an active market with observable prices.
 2. Cost model (IFRS and US GAAP): Asset stays at historical cost minus accumulated amortization and impairment; example: a firm buys a patent for ₹100, amortized straight-line over 10 years → carrying value after 3 years = ₹100 − ₹30 = ₹70, regardless of what similar patents trade at today.
@@ -270,8 +269,94 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 
 > [!tip] HAMMER THIS INTO YOUR HEAD
 > - A common size balance sheet expresses each item as percentage of total assets, income statement as percentage of revenue.
+### MODULE 28.4 BASIC EARNINGS PER SHARE
+1. **What is Warrant:** A warrant is essentially an equity call option issued by the company; a warrant holder has the right but not the obligation to purchase newly issued shares at the exercise price. 
+2. **What is Basic EPS:** (Actual earnings - Preferred Dividend) / actual weighted ordinary shares.
 
-### MODULE 30.1: CASHFLOW STATEMENTS
+> [!DANGER] DO NOT MAKE THIS MISTAKE
+> Preferred Dividend is subtracted while calculating EPS
+
+1. **What are Actual weighted shares:** Weighted average number of shares outstanding during the period. Shares outstanding adjusted for how long they existed during the year. For example:
+
+|                                                        |           |
+| ------------------------------------------------------ | --------- |
+| Shares outstanding on 1 January 2018                   | 1,000,000 |
+| Shares issued on 1 April 2018                          | 200,000   |
+| Shares repurchased (treasury shares) on 1 October 2018 | (100,000) |
+| Shares outstanding on 31 December 2018                 | 1,100,000 |
+The actual weighted shares are calculated as:
+
+|                                                                                              |           |
+| -------------------------------------------------------------------------------------------- | --------- |
+| 1,000,000 × (3 months/12 months) =                                                           | 250,000   |
+| 1,200,000 × (6 months/12 months) =                                                           | 600,000   |
+| 1,100,000 × (3 months/12 months) =                                                           | 275,000   |
+| Weighted average number of shares outstanding = (3/12) * 1 + (6/12) * 1.2 + (3/12) * 1.1<br> | 1,125,000 |
+
+4. **What is Preferred Dividend?** This is the dividend paid to the preferred shareholders. Preferred stock doesn't come under common stock and hence EPS removes it.
+5. **What is Diluted EPS:** “What EPS would be” if all dilutive instruments became common stock. This would be (Actual Earnings - Preferred Dividends) / (Ordinary Shares + New common stock that would have been issued at conversion))
+6. **What is Dilution:** The instruments convertible into ordinary equity can become shares → share count rises → EPS goes down. That’s dilution.
+7. **What is stock split:** Suppose a company with a market capitalization of $100 has 100 shares (each share is priced $1). The company declares 2:1 stock split, which means each share would be split into 2 shares. This means the number of shares will be now: (100 * (2/1)) = 200. Now each share would be priced $0.5.
+8. Complex Capital Structure: 
+Under IFRS, the type of equity for which EPS is presented is referred to as ordinary. Ordinary shares are those equity shares that are subordinate to all other types of equity. 
+
+When a company has issued any financial instruments that are potentially convertible into common stock, it is said to have a complex capital structure. 
+### MODULE 28.5 RATIOS AND COMMON SIZE STATEMENTS
+1. Common-size income statement = divide every line item by **Revenue** and express as %.
+
+> [!tip] HAMMMER THIS INTO YOUR HEAD
+> Margin is always calculated as **Revenue** as denominator. Turnover is always calculated as **Revenue** as numerator. **Revenue is usually the numerator**, **except inventory and A/C payable turnover**, which uses COGS for matching.
+
+> [!danger] DO NOT MAKE THIS MISTAKE
+> Inventory and A/C Payables Turnover use COGS as numerator
+
+
+
+### MODULE 34.1: LEASES
+1. An alternative way to look at a lease is: **taking a loan and buying the asset.**
+2. To be called a lease, a lessee needs to have following characteristics:
+	- Asset must be **Identified** a.k.a it should exist.
+	- Lessee should have exclusive control of asset and must derive all the economic benefits from the asset. 
+3. Under IFRS and U.S. GAAP, in a **financing lease** ownership and risks should be transferred to lessee. You break it and you pay for it.   If either the benefits or the risks of ownership are not substantially transferred, it is an operating lease.
+
+> [!warning] Remember
+> Financing Lease:
+> 	- **Present Value of payments >= Asset Fair Value**
+> 	- You have an option to buy the asset and get rid of the lease.
+4. Accounting treatment would be:
+	- On liabilities side, you would create a lease liability that would be amortized with time.
+	- On asset side, you would create ROU asset that would depreciate with time.
+
+
+> [!question] QUESTION
+> The Affordable Company (Affordable) leases a machine for its own use for four years with annual payments of $10,000. At the end of the lease, which is also the end of the machine’s useful life, Affordable will return the machine to the lessor. The interest rate implicit in the lease is 5%. Assuming that the ROU asset is amortized on a straight-line basis over the term of the lease, calculate the impact of the lease on Affordable’s financial statements for each of the four years.
+> 
+> Fair value of Asset: PMT = -10000, I/Y = 5, FV = 0, CPT -> PV = 35549
+> 
+> Asset Amortisation per year = 35549 / 4 = 8887.25
+> 
+
+
+Balance Sheet 
+| Year | Liability | Asset |
+| ---- | --------- | ----- |
+| 1    | 35560     | 35560 |
+| 2    | 25560     |       |
+|      |           |       |
+| 
+|           |       |
+
+
+
+
+> 
+> Liability Side:
+> 	| Year | 
+
+
+
+
+
 
 
 ### MODULE 35.1: DIFFERENCES BETWEEN ACCOUNTING PROFIT AND TAXABLE INCOME
@@ -533,103 +618,51 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 19. Principal-only (PO) securities and Interest-only (IO) securities are **interest-rate / prepayment bets**, not boring bonds. - If rates fall, people refinance → **prepayments speed up**.
 20. You get **only interest payments**, no principal. You want loans to **stay alive as long as possible**. If rates rise or stay high → prepayments slow → **more coupon checks**. Used by investors who want to **bet on rising/stable rates and slow prepayments**.
     
-### MODULE 58.1: YIELD-BASED BOND CONVEXITY AND PORTFOLIO PROPERTIES
+- Principal comes back **faster**, IRR shoots up.
 
-###### MODULE 58.1: MODULE 58.1: YIELD-BASED BOND CONVEXITY AND PORTFOLIO PROPERTIES
+### HEDGE FUNDS
+1. **Commingled funds** = multiple clients’ money pooled together and invested as one portfolio; each client owns a proportional share, not specific securities. Eg: Mutual Fund
+2. **SMA** = one client, one portfolio. Not pooled. You directly own the securities. Risk preferences can be tailored. Higher than commingled funds due to customization and admin.
+3. Hedge Fund Strategies: A **convertible bond** = bond floor (interest + principal) + call option on stock. Buy ₹1000 convertible of XYZ paying coupons + right to convert into shares. Short **XYZ stock** in the right ratio (delta-hedge). _Example_: If bond acts like 0.4 shares, short 0.4 XYZ.
+4. Fund-of-funds is a hedge fund invested in multiple hedge funds. **Fee layering** = you pay fees twice in a fund-of-funds: once to the FoF manager, again to the underlying hedge funds.
+5.  Under a **'1 or 30' fee structure**, the manager receives the greater of a 1% management fee or a 30% incentive fee on the fund's alpha.
+6. Kinds of Fees at Hedge Fund
+	- **Management fee**: Fixed annual fee (e.g., 2% of AUM) paid **regardless of performance** → covers salaries, rent, survival.    
+	- **Incentive (performance) fee**: Share of profits (e.g., 20%) paid **only if fund makes money**.	    
+	- **Hurdle rate**: Minimum return (e.g., T-bill or 5%) the fund must beat **before** incentive fees apply → no reward for just market drift.	    
+	- **High-Water Mark (HWM)**: Highest NAV ever reached; incentive fees are paid **only on gains above the previous peak** → manager must first recover losses before earning again.
+7. **Convertible arbitrage fixed income strategy:** “Arbitrage” here is: market price of convertible ≠ price of (bond + call). You buy the convertible bond (which acts like a stock with a safety net). Suppose the bond is selling for 100 and convertible at 95 (safety net). And short the actual stock to cancel out market direction. When prices go up bond gains value faster (convexity) than your short stock loses it. When prices go down, your bond holds value (bond floor protection) while your short stock soar.
+8. **Hedge Fund Index performance is overstated:** 
+	- Because of **survivorship bias**: Most hedge fund don't survive and indexes are constructed only on functioning ones.
+	- Because of **selection bias** because indexes have their own constraints for which fund to include and which one not to include.
+	- **Backfill Bias**: A hedge fund operates privately at first so its early returns are invisible to databases; if those early returns turn out good, the manager chooses to join a data`b`ase and backfills only that strong past performance, while funds with weak early results never join at all—so the recorded history ends up showing only winners and systematically overstates true hedge-fund returns.
 
+## PORTFOLIO MANAGEMENT
 
-> [!info] MEMORISE THIS FOR EFFICIENCY
-> Effective Duration = $$ \frac{P_h - P_l}{P_o \times \Delta y} $$
-> Effective Convexity = $$ \frac{P_h + P_l - 2P_o}{P_o \times (\Delta y)^2} $$
+### INTRODUCTION TO RISK MANAGEMENT
 
-1. Effective duration assumes a **straight-line** price–yield relationship, meaning the slope is treated as the same no matter where yield is. Effective duration = **% price sensitivity to yield**: how much price changes (in %) when yield moves.    
-2. Use symmetric yield shocks around **Y₀**: Y₁ = Y₀ + ΔY → price **P₁** (down), and Y₂ = Y₀ − ΔY → price **P₂** (up), with base price **P₀**.    
-3. Central-difference idea: average slope of price vs yield near Y₀ ≈ **(P₂ − P₁) / (2ΔY)**.    
-4. Convert slope into **percentage** sensitivity by dividing by P₀:  
-    **Effective Duration = (P₂ − P₁) / (2 × P₀ × ΔY)**
-5. Toy check: P₀=100, ΔY=0.01, P₁=96, P₂=104 ⇒ ED = (104−96)/(2×100×0.01)=8/2=**4** ⇒ ~**4% price move per 1% yield**, opposite direction.    
-6. Use effective duration especially when **cash flows depend on yield** (callable/putable, MBS), where Macaulay/modified duration can mislead.
-7. In reality, the price–yield relationship is **curved (convex)**, so the slope actually changes with yield.
-8. Effective convexity measures the **curvature** of the price–yield relationship, i.e., the second-order effect after duration.    
-9. Start at yield **Y₀** with price **P₀**. Move yield up by **Δy** → price becomes **P₁**. Move yield down by **Δy** → price becomes **P₂**.    
-10. If the price–yield line were straight, the average of **P₁** and **P₂** would equal **P₀**. Any difference comes only from curvature.    
-11. That curvature is captured by **P₂ − 2P₀ + P₁** (up + down − twice the middle).    
-12. Convert this into a percentage measure by dividing by **P₀**, and scale it per unit of yield squared by dividing by **(Δy)²**.    
-13. Final formula to remember:  
-    **Effective Convexity = (P₂ − 2P₀ + P₁) / (P₀ · (Δy)²)**
-14. Because of this, duration **understates the price gain when yields fall**.
-15. And it **overstates the price loss when yields rise**.
-
-> [!TIP] HAMMER THIS INTO YOUR HEAD
->  **Duration is pessimistic** — it underestimates price rise from a yield fall and exaggerates price decline from yeild rise.
-16. **Convexity adjustment** is added to correct this straight-line error and account for curvature.
-
-### MODULE 60.1: CREDIT RISK
-
-1. **Bottom-up credit analysis = borrower first (the 5 Cs):**
-   Capacity (the borrower’s ability to make their debt payments on time), Capital (Other financing sources available to reduce reliance on debt), Collateral (what can lenders grab on default?), Covenants (legal handcuffs protecting lenders), Character (management integrity and willingness to pay).
-2. Bottom-up logic: even in a bad economy, a borrower with **strong cash flows, low leverage, good assets, tight covenants, and credible management** can survive.
-3. **Top-down credit analysis = environment first:**
-   Conditions (business cycle, rates, inflation), Country (political risk, legal enforcement, geopolitics), Currency (FX risk affecting debt repayment capacity).
-4. Top-down logic: even a good borrower can fail if **macro turns hostile, country risk explodes, or currency collapses**.
-5. **Corporate debt repayment sources:** primary source is **operating cash flows**; secured debt also has **pledged collateral**, unsecured debt relies only on business cash flows plus backups like **asset sales, divestitures, or new debt/equity**.
-6. **Corporate credit risk drivers:** weak economy or markets, stronger competition, low profitability, or **too much leverage**.
-7. **Sovereign debt repayment sources:** **tax revenue, tariffs, fees**; secondary sources are **issuing more debt** or **selling public assets (privatization)**.
-8. **Sovereign credit risk drivers:** poor growth, political instability, **fiscal deficits**, and **high debt relative to GDP**.
-9. **Illiquidity vs insolvency:** illiquid = can’t raise cash right now; insolvent = **assets < liabilities**. An issuer can be illiquid but still solvent and still default.
-10. **Cross-default clause:** If the issuer defaults on **one bond**, all other bonds with a cross-default clause are **immediately treated as defaulted**, even if they were being paid on time.
-11. **Pari passu clause:**- **Pari passu means “equal footing.”** Bonds with a pari passu clause have **no priority among themselves** in default. If two bonds are pari passu, **neither gets paid before the other** just because of issue date, size, or holder.
-12. Default on one unsecured bond → **all unsecured bonds default** → **all unsecured holders line up together** and claim the issuer’s **general assets** (no collateral).
-13. They are paid **first from collateral**. Only if collateral value is **not enough to cover all secured claims** do they start taking losses. Loss happens **only when** collateral value < total pari passu secured debt.
-14. **Probability of default (PD):** the chance that the borrower **fails to pay interest or principal when due**, usually stated on an **annual basis*.   
-15. **Recovery, loss severity, and exposure:** recovery rate is the **fraction of the claim recovered after default**; **loss severity = 1 − recovery rate**; exposure at default is **what you are owed minus the value of collateral available**.    
-16. **Loss given default (LGD):** the loss **if default happens**, stated in money or percent; in percentage terms  
-    **LGD% = expected exposure × (1 − recovery rate)**.
-17. Fair Spread  = PD $\times$ LGD
-
-> [!QUESTION] NUMERICAL
-> A bond issuer has a 3% probability of default, and one of its bond issues has a recovery rate of 75%. The bond has a 4% coupon and is currently trading at par. A government security of similar maturity yields 2.5%. Assess whether the credit spread of the bond issue is adequately compensating investors for credit risk.
-> 
-> Here: Spread  = 4 - 2.5 = 1.5% = 0.015
-> Fair Spread = PD $\times$ LGD = 0.03 $\times$ 0.25 = 0.0075
-> **Bond is trading over-valued at twice its fair spread**
-
-18. An analyst would need to estimate PD and LGD for the counterparty. Solvency ratios like:
-		- Interest Coverage Ratio = EBIT / Interest
-		- Financial Leverage = Average Total Assets / Average Total Equity
-		- Fixed Charge Coverage = (EBIT + Lease Payments) / Interest + Lease Payments. This could be useful for US GAAP based companies with operating leases (where lease expense is shown as operating expense).
-19. AAA (Aaa) is the highest rating. Think **pre-2008 mortgage CDOs**—they wore AAA badges and still blew up. Rating ≠ safety. Investment grade is **Baa3 / BBB− and above**. When **Ford** fell to junk in 2005, many funds were forced sellers overnight. The line matters. Below that (Ba1 / BB+ and lower) is **high-yield / junk**. Example: **Tesla bonds (2014–2018)** paid junk yields despite hype because default risk was real. Defaulted bonds are **D (S&P/Fitch)** or **C (Moody’s)**. Example: **Lehman Brothers 2008**—investment grade to default in days.
-20. Longer-duration bonds usually have longer maturities and carry more uncertainty of future creditworthiness.
-21. Credit migration risk: Investors can lose value without default—price damage comes from worsening credit perception, not missed payments. This is the risk that a borrower’s credit quality changes over time, shown by a rating upgrade or downgrade, even without default. A downgrade increases required yield spreads, reducing bond prices and increasing funding costs for the issuer.
-22. Spreads are a **price of fear**, not just default math. When conditions worsen, investors demand more yield immediately. Credit spread risk = spreads widen → bond prices fall. This is the real risk for **investment-grade**, not sudden default.
-23. Macro driver #1: business cycle. In booms, profits rise, defaults feel far away → spreads compress. In recessions, fear spikes → spreads widen. Classic **2008–09 GFC** pattern. High-yield behaves more violently than IG across the cycle. Dispersion is larger. Some junk names blow out, others survive.
-24. Crisis effect: **flight to quality**. Investors dump risky bonds and pile into safe ones. Liquidity matters: high-yield is less liquid, so bid-ask spreads explode in stress because nobody wants to buy trash.
-25. The limitation for ratings are:
-	- Ratings lag markets. In early 2007, **subprime spreads exploded** while ratings stayed high. Markets smelled smoke first.
-	- Same rating, different yields. Example: two **distressed airline bonds** with equal ratings—one with planes as collateral traded tighter than one with nothing backing it.
-	- Hard-to-model risks get missed. **BP (Deepwater Horizon, 2010)**—environmental disaster nuked credit quality overnight.
-	- Split ratings are common. **Italy’s sovereign debt** often had different ratings across agencies, confusing investors and widening spreads.
-	- Agencies make mistakes. Systemic ones. **2008 GFC** is the canonical failure—AAA paper behaving like lottery tickets.
-	- Fraud kills suddenly. **Enron** was investment grade days before bankruptcy. Ratings couldn’t see cooked books.
-	- Legal and regulatory shocks matter. **PG&E** bonds collapsed after California wildfire liabilities—ratings reacted late.
-
-> [!question] NUMERICAL
-> A 10-year bond has an annual coupon of 5% and a bid–offer spread of 99.5/100.5. The benchmark 10-year yield is 3%. Decompose the yield spread into liquidity spread and credit spread.
-> First calculate midpoint price = (100.5+99.5)/100
-> N =10, FV = 100, PV = -100, so bond is at-par and YTM = Coupon Rate = 5%
-> Now at bid price of 99.5: N =10, PV = -99.5, PMT = 5, FV = 100, I/Y = 5.064 
-> Now at bid price of 100.5: N =10, PV = -100.5, PMT = 5, FV = 100, I/Y = 4.935 
-> Total Spread = 2**
-> **Liquidity Spread = 5.064 - 4.935 = 0.129**
-> **Credit Spread = 2 - 0.129 = 1.871**
-
-
-
-
-
-
-
+1. The following are financial risks (CMLI):
+	- **Credit risk** – The other side may not pay. _Example:_ A company sells goods on credit; the buyer goes bankrupt and never pays.
+	- **Market risk** – Prices move against you. _Example:_ Equity prices fall in a recession; bond prices fall when interest rates rise.
+	- **Liquidity risk** – You can’t sell fast without taking a big price hit. _Example:_ You hold a small-cap stock; in a panic market, you sell much lower than its fair value.   
+	- **Interest rate risk**: Risk of prepayments or higher opportunity cost of capital.
+2. The following are non-finacial risks (*SolRegPolLegModTailOper*):	 
+	- **Solvency risk** – The firm runs out of cash and can’t survive. _Example:_ A company can’t pay salaries or debt interest and goes bankrupt.    
+	- **Regulatory risk** – Rules change and hurt the business. _Example:_ A new capital requirement forces banks to raise equity or cut lending.    
+	- **Political / tax risk** – Government actions outside normal regulation hurt profits. _Example:_ Sudden tax hike reduces after-tax earnings of companies.    
+	- **Legal risk** – Future lawsuits or legal action cause losses.   _Example:_ A firm is sued for mis-selling products and pays heavy penalties.    
+	- **Model risk** – Your math or valuation model is wrong. _Example:_ A risk model underestimates losses because it assumes normal distributions.    
+	- **Tail risk** – Rare, extreme events happen more often than expected. _Example:_ A 2008-style crash wipes out strategies built for “normal” markets.    
+	- **Accounting risk** – Financial statements turn out to be wrong.  
+	    - _Example:_ Aggressive revenue recognition leads to restated earnings later.
+	- **Operational risk** – Loss due to people, process, or system failure. _Example:_ A trading desk loses money because of a fat-finger trade or a cyberattack shuts systems.
+3. With a **risk transfer**, another party takes on the risk. Insurance is a type of risk transfer. The risk of fire destroying a warehouse complex is shifted to an insurance company by buying an insurance policy and paying the policy premiums. Insurance companies diversify across many risks so the premiums of some insured parties pay the losses of others.
+4. **Risk shifting** is a way to change the distribution of possible outcomes and is accomplished primarily with derivative contracts. For example, financial firms that do not want to bear currency risk on some foreign currency denominated debt securities can use forward currency contracts, futures contracts, or swaps to reduce or eliminate that risk.
+5. With a **surety bond**, an insurance company has agreed to make a payment if a third party fails to perform under the terms of a contract or agreement with the organization.
+6. Insurers also issue fidelity bonds, which will pay for losses that result from employee theft or misconduct.
 ## ETHICS
+
+### MODULE 
 
 ### STANDARD I(A) - PROFESSIONALISM - KNOWLEDGE OF THE LAW
 

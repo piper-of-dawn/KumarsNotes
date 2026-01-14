@@ -4,12 +4,12 @@
 2. **What is Basic EPS:** (Actual earnings - Preferred Dividend) / actual weighted ordinary shares.
 3. **What are Actual weighted shares:** Weighted average number of shares outstanding during the period. Shares outstanding adjusted for how long they existed during the year. For example:
 
-|   |   |
-|---|---|
-|Shares outstanding on 1 January 2018|1,000,000|
-|Shares issued on 1 April 2018|200,000|
-|Shares repurchased (treasury shares) on 1 October 2018|(100,000)|
-|Shares outstanding on 31 December 2018|1,100,000|
+|                                                        |           |
+| ------------------------------------------------------ | --------- |
+| Shares outstanding on 1 January 2018                   | 1,000,000 |
+| Shares issued on 1 April 2018                          | 200,000   |
+| Shares repurchased (treasury shares) on 1 October 2018 | (100,000) |
+| Shares outstanding on 31 December 2018                 | 1,100,000 |
 The actual weighted shares are calculated as:
 
 |                                                                                              |           |
