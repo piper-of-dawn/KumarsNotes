@@ -115,7 +115,7 @@
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 1
   },
   "right": {
     "id": "a596abc0912df1a5",
@@ -189,13 +189,14 @@
   },
   "active": "b98c1c39d8f035d6",
   "lastOpenFiles": [
+    "/CFA/Revision Notes for CFA.md",
+    "/CFA",
+    "/EPS.md",
     "Chapter IV - Aman.md",
     "Diary/journal.md",
     "Untitled 2.md",
     "Aman.md",
     "Untitled",
-    "CFA/Revision Notes for CFA.md",
-    "/CFA/Revision Notes for CFA.md",
-    "/CFA"
+    "CFA/Revision Notes for CFA.md"
   ]
 }

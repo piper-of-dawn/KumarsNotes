@@ -1,13 +1,13 @@
 {
   "accentColor": "#54739c",
-  "interfaceFontFamily": "SF UI Display",
+  "interfaceFontFamily": "Helvetica Neue,SF UI Display",
   "textFontFamily": "Berkeley Mono",
-  "cssTheme": "Cupertino",
+  "cssTheme": "",
   "monospaceFontFamily": "SpaceMono Nerd Font",
   "theme": "moonstone",
   "translucency": false,
   "baseFontSizeAction": true,
-  "baseFontSize": 16,
+  "baseFontSize": 18,
   "enabledCssSnippets": [
     "code"
   ]
