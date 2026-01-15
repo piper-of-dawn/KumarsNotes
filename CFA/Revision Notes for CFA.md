@@ -157,6 +157,13 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
    -  **Stop buying inventory** just before reporting → inventory temporarily low → CCC ↓
 2. We can think of accounts payable as an implicit source of credit from suppliers (as opposed to explicit sources such as bank loans). **Suppliers offer payment terms in the form a/b net c, which means a percentage discount of a if the invoice is paid within b days, otherwise full payment is due within c days.** Forgoing the discount for prompt payment amounts to borrowing money from the supplier for (c – b) days.
 
+### MODULE 23.2 EXPENSE RECOGNITION
+
+1. **Match costs with revenues:** recognize COGS **and estimated warranty costs** in the **period of sale**, not when paid in reality.
+2. Remember US GAAP loves 'CFO'. Interest Expense go into operating always. IFRS gives you a choice. You can put Interest in 'CFF' or in 'CFO'.
+3. IFRS is cool with splitting R&D. Research (incl. early software work) **expensed**; development (incl. saleable & internal software) **capitalized if criteria met**.
+4. GAAP is strict, BOTH research and development is expensed. No capitalization at all.
+5. GAAP hates R&D—except software. Saleable software = **capitalize (like IFRS)**; internal software = **capitalize only after build starts**.
 ### MODULE 24.1: CAPITAL INVESTMENTS AND PROJECT MEASURES
 ###### Expected number of questions: 3
 ###### LOS: Describe types of capital investments. Describe the capital allocation process, calculate net present value (NPV), internal rate of return (IRR), and return on invested capital (ROIC), and contrast their use in capital allocation.
@@ -241,8 +248,7 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 3. Revaluation model (IFRS only): Asset is periodically marked to fair value using market prices, with increases going to OCI (revaluation surplus) and decreases to P&L if they exceed any existing surplus; example: taxi medallion bought for ₹100, amortized to ₹80, active market price now ₹120 → balance sheet value reset to ₹120 and ₹40 goes to equity via OCI, not income.
 
 > [!warning] REMEMBER
-> under USGAAP, the intangible asset is always recorded at cost value. Re-evaluation is not allowed whatsoever
-> R&D is always expensed under US GAAP.
+> Under US GAAP, the intangible asset is always recorded at cost value. Re-evaluation is not allowed whatsoeverm> R&D is always expensed under US GAAP.
 
 4. Under IFRS firm must explicitly identify research stage and expense it.  Then capitalise the development stage. Under US GAAP, firm must always expense both research and development, no matter what.
 5. The intangible assets with finite life such as patents must be amortised. The lifespan of such assets must be reviewed annually. 
@@ -410,7 +416,59 @@ Balance Sheet
 > - Suppose UBS gave me a call option to exercise at the end of 3 years of service at strike price of 100 CFH. The Black Scholes value is 10 CHF, which is shown in income statement. If I exercise it, then UBS gets the strike price which moves into APIC and issues me shares. **UBS does not issue new shares**
 18. Phantom stock a.k.a fake stock is a **cash bonus plan** that mimics share price performance, where employees receive **cash linked to the company’s stock value without receiving actual shares or ownership**.
 ### MODULE 35.1: DIFFERENCES BETWEEN ACCOUNTING PROFIT AND TAXABLE INCOME
-1. Suppose you have Operating Profit (EBIT) of USD 100. And   
+1. Suppose you have Operating Profit (EBIT) of USD 100. And
+
+### MODULE 36.1: FINANCIAL REPORTING QUALITY 
+
+
+> [!abstract] MEMORISE THIS FOR EFFICIENCY
+> - GAAP allows managerial discretion in Financial Reporting Quality
+> - Relevance and faithful representation
+
+
+1. Financial reporting quality is about how decision-useful the financial statements are, not just whether they comply with GAAP, because ==GAAP allows managerial discretion== in methods, estimates, and classifications that can legally distort economic reality.
+2. **Decision-useful reporting rests on two pillars: relevance and faithful representation;** relevance means the information can actually change user decisions and must be material, while faithful representation requires completeness, neutrality, and freedom from error.
+3. Compliance with accounting rules is necessary but not sufficient; high-quality reporting reflects underlying economics rather than exploiting accounting flexibility to manage appearances.
+4. Sustainable earnings arise from core business improvements like efficiency gains or market share growth, whereas earnings driven by one-off factors such as asset sales or exchange-rate movements are low quality.
+5. **Valuation implication: one dollar of high-quality, sustainable earnings is worth more than one dollar of low-quality earnings because it has a higher probability of persisting and therefore contributes more to the present value of future cash flows.** Temporary earnings shocks, even if reported accurately, have limited valuation impact because they do not materially alter expectations of long-term earnings.
+6. Financial reporting quality and earnings quality together form a spectrum: at the top are GAAP-compliant, decision-useful reports with sustainable earnings reflecting true economic returns on capital; at the bottom are reports that are non-compliant and effectively fictitious, where earnings quality cannot even be meaningfully assessed.
+7. Moving down the spectrum, deterioration happens in layers: 
+	- First earnings become unsustainable despite compliant reporting, Example: In 1990, IBM reported record profits of $6 billion while strictly following GAAP, yet these earnings were unsustainable because they were driven by a dying mainframe business and aggressive cost-cutting that masked a total failure to adapt to the personal computing revolution.​
+	- then reporting choices and estimates become biased, then earnings are actively managed or smoothed, Example: General Electric (GE) used "cookie jar" reserves for decades, over-estimating future liabilities in good years to create a pool of funds that could be released during lean quarters to meet analyst profit targets with uncanny consistency.​
+	- then GAAP is violated while still reflecting real activity Example: Byju's aggressively recognized the full value of multi-year subscriptions immediately upon sale, a practice auditors later forced them to reverse by spreading revenue over the actual contract duration, which slashed their reported income by 40%.​
+	- Finally numbers become outright fraudulent. Example: Satyam Founder Ramalinga Raju fabricated over $1 billion in non-existent cash reserves to inflate the company's stock price, eventually admitting that 94% of the stated cash on the balance sheet was fictitious.​
+8. Conservative vs aggressive accounting describes bias within GAAP: conservative choices depress current earnings (General Electric) and balance-sheet strength but tend to shift earnings into the future, while aggressive choices inflate current earnings and financial position at the cost of lower future earnings (Byjus).
+9. Earnings smoothing is an intertemporal reallocation problem: management uses estimates (e.g., accruals, reserves, depreciation lives) to pull earnings forward or push them back to reduce volatility, even though total lifetime earnings are unchanged.
+10. Valuation implication: analysts must adjust not only for reported earnings levels but also for where the firm sits on the reporting-quality spectrum and whether earnings reflect sustainable economics or accounting timing games.
+11. **Motivation** refers to the economic or personal incentives to misreport, such as meeting analyst forecasts, avoiding covenant violations, or boosting bonuses and stock-based compensation.
+12. **Opportunity** refers to the ability to misreport without being detected, which arises from weak internal controls, poor oversight, complex transactions, or ineffective audits.
+13. **Rationalization** refers to the mental justification managers use to legitimize misconduct, such as believing the misstatement is temporary, harmless, or done in the firm
+
+
+### MODULE 36.2: ACCOUNTING CHOICES AND ESTIMATES
+
+1. **REVENUE:**
+	1. **Free-on-board (FOB) shipping point vs FOB destination** changes when control passes and revenue is booked (at shipment vs at delivery); example: an automaker using FOB shipping point can record quarter-end sales as soon as cars leave the factory, even if dealers receive them next period.
+	2. **Channel stuffing** records sales by pushing excess goods to intermediaries before real end-customer demand exists; example: Bristol-Myers Squibb shipped unusually large drug volumes to wholesalers to hit revenue targets, later reversing sales when inventories did not clear.
+	3. **Bill-and-hold arrangements** book revenue before goods/services are delivered or performance is complete; example: Byju’s recognized the full value of multi-year course subscriptions upfront rather than over the teaching period, so when auditors forced deferral over the contract life, reported income dropped sharply, revealing timing-driven earnings.
+2. **INVENTORY:**
+	1. **FIFO vs weighted-average affects earnings mechanically through COGS timing**: in rising price environments FIFO reports lower COGS and higher profits because older, cheaper inventory flows to the income statement first, a tailwind seen in commodity retailers and refiners during inflationary cycles (e.g., post-2021 energy and metals price spikes).	
+	2. **Balance sheet relevance vs income statement realism trade-off**: Under FIFO, ending inventory consists of the most recent purchases, so its book value reflects near-current replacement cost, making the balance sheet closer to what the firm would actually pay to restock today. FIFO produces inventory values closer to current replacement cost, making the balance sheet more relevant, while weighted-average produces COGS closer to current costs, making gross margin more economically meaningful and less inflated by price-level gains.	
+	3. **Earnings quality implication**: ==FIFO profits embed hidden holding gains (or losses) from price changes rather than operating performance==, so analysts prefer weighted-average margins for performance analysis and FIFO inventory for asset valuation, especially during volatile input-cost regimes.
+
+3. **OTHER WAYS TO GAME THE SYSTEM:**
+	 1. **Stretching payables** inflates operating cash flow by delaying supplier payments across reporting periods, improving CFO today but reversing it later with no impact on earnings; example: retailers and manufacturers under liquidity stress have repeatedly been flagged in earnings calls for rising days payable outstanding used to “support cash flow.”
+	2. **Capitalizing interest expense** shifts cash outflows from CFO to CFI and smooths earnings by spreading costs via depreciation instead of expensing immediately; example: real estate developers and infrastructure firms capitalize borrowing costs during construction to boost reported operating cash flow.
+	3. **Cash flow classification flexibility (IFRS)** allows interest and dividends to be classified across CFO, CFI, or CFF, letting firms cosmetically raise CFO without changing total cash; example: European firms often classify interest paid as financing cash flow to report stronger operating cash generation than US GAAP peers.
+	4. **Show straight-line depreciation** to inflate income.
+	5. **Delay impairment of goodwill** as it is subjective.
+	6. **Do not create VA to reduce DTA**
+
+> [!TIP] HAMMER THIS INTO YOUR HEAD
+> 1. Under **IFRS**, interest paid can be classified as CFO or CFF, interest received as CFO or CFI, dividends paid as CFO or CFF, and dividends received as CFO or CFI, giving management flexibility to boost reported operating cash flow.
+> 2. Under **US GAAP**, interest paid and interest received must be classified as CFO, dividends received as CFO, and dividends paid as CFF, leaving no discretion to reclassify these items to manage CFO.
+
+
 ### MODULE 37.2 TURNOVER AND LIQUIDITY RATIOS
 
 > [!WARNING] Remember
@@ -437,12 +495,7 @@ Balance Sheet
 > [!WARNING] Remember
 > Any kind of margin is always calculated on Revenue
 
-### MODULE 23.2 EXPENSE RECOGNITION
-1. **Match costs with revenues:** recognize COGS **and estimated warranty costs** in the **period of sale**, not when paid in reality.
-2. Remember US GAAP loves 'CFO'. Interest Expense go into operating always. IFRS gives you a choice. You can put Interest in 'CFF' or in 'CFO'.
-3. IFRS is cool with splitting R&D. Research (incl. early software work) **expensed**; development (incl. saleable & internal software) **capitalized if criteria met**.
-4. GAAP is strict, BOTH research and development is expensed. No capitalization at all.
-5. GAAP hates R&D—except software. Saleable software = **capitalize (like IFRS)**; internal software = **capitalize only after build starts**.
+
 
 ## EQUITY
 
@@ -730,10 +783,8 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 10. The market portfolio already holds all risky assets, so all unsystematic risk is averaged away, leaving only systematic risk—the part of return variance driven by common market factors that move many assets together and therefore cannot cancel.
 11. You do not need to hold every stock to eliminate unsystematic risk: **as the number of reasonably uncorrelated stocks increases, portfolio variance converges toward systematic variance, meaning marginal risk reduction from adding more stocks rapidly approaches zero.**
 12. The implications of this conclusion are very important to asset pricing (expected returns).
-13.  Since unsystematic risk can be eliminated by diversification, competitive markets price it at zero premium; in equilibrium, bearing firm-specific volatility does not increase expected return.
-
+13. Since unsystematic risk can be eliminated by diversification, competitive markets price it at zero premium; in equilibrium, bearing firm-specific volatility does not increase expected return.
 14. Only systematic risk survives aggregation across investors, so expected returns load on exposure to common risk factors, summarized in equilibrium by a risk premium proportional to systematic risk (e.g., market beta).
-
 15. Resulting implication for portfolio choice: rational investors diversify away idiosyncratic risk and choose portfolios based on how much systematic risk they want to bear, not on standalone stock volatility.
 ## ETHICS
 
