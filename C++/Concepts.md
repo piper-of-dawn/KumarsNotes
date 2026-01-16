@@ -87,3 +87,62 @@ Every `Coord` points to the same `len_x`. No duplication, no per-object copies.
 Static methods obey the same law. Declared inside the class, defined outside with `ClassName::`. One definition, global, or the linker will scream.
 
 This is not optional. It’s the rule.
+
+### Member Initialiser List
+A member initializer list is where class members are created with values, not assigned later.
+
+It tells C++ how to build each member at object creation time.
+
+```cpp
+class Box {
+    int size;
+public:
+   Box(int s) : size(s) {}
+};
+
+```
+size is created directly with s.
+
+  
+
+  
+
+  
+
+Without initializer list (worse)
+
+class Box {
+
+    int size;
+
+public:
+
+    Box(int s) { size = s; }
+
+};
+
+Member is created first, then overwritten.
+When it’s required
+- const members
+- references
+- members without default constructors  
+
+class Box {
+
+    const int size;
+
+public:
+
+    Box(int s) : size(s) {}
+
+};
+
+  
+
+  
+
+  
+
+
+
+Members are built in the initializer list, not in the constructor body.
