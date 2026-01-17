@@ -1162,5 +1162,89 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 7. **“Controls were updated after issues.”** Continuous improvement applied; correct logic: responsive supervision.
 8. **“Firm size was considered.”** Scaled controls implemented; correct logic: proportional supervision.
 9. **“Independent compliance reviewed controls.”** Additional oversight present; correct logic: strengthens reasonableness.
-10. **“No red flags were present.”** Nothing reasonably indicated risk; correct logic: no failure to act
+10. **“No red flags were present.”** Nothing reasonably indicated risk; correct logic: no failure to ac
+  
+
+### STANDARD VI(A) – CONFLICTS OF INTEREST – DISCLOSURE OF CONFLICTS
+
+
+> [!tip] TALISMAN
+> When in doubt, disclose.
+> If something could bias you—or look like it could—you must tell clients and employers clearly and early. Hidden conflicts destroy trust; disclosed conflicts let others judge your objectivity.
+
+#### Core Concepts
+
+1. Members and Candidates must make full and fair disclosure of all matters that could **reasonably be expected to impair their independence or objectivity.**
+2. Conflicts can be personal, firm-related, financial, or non-financial, and may arise from ownership, compensation, relationships, or outside activities.
+3. Disclosure must be clear, prominent, and specific—not buried in footnotes or vague language.
+4. Disclosure must be made to clients, prospective clients, and employers, depending on who is affected.
+5. Conflicts should be disclosed before taking action or making recommendations, not after the fact.
+6. Disclosure does not automatically cure a conflict; some conflicts must be avoided altogether (overlaps with I(B)).
+7. This standard is about transparency, so others can assess your judgment with full information.
+#### Exam Traps (Violation)
+
+1. “I didn’t think it mattered.” Wrong logic: Judgment decides relevance; correct logic: if it could reasonably affect objectivity, it must be disclosed; tested angle: materiality judgment.
+2. “I disclosed it in the fine print.” Wrong logic: Any disclosure is enough; correct logic: disclosure must be clear and prominent; tested angle: buried disclosures.
+3. “The client already knows.” Wrong logic: Assumed awareness excuses disclosure; correct logic: you must still disclose formally; tested angle: implicit knowledge.
+4. “It’s a firm-level conflict.” Wrong logic: Personal disclosure isn’t needed; correct logic: both firm and personal conflicts must be disclosed; tested angle: shared conflicts.
+5. “I disclosed it after the trade.” Wrong logic: Timing doesn’t matter; correct logic: disclosure must be made before action; tested angle: late disclosure.
+6. “Everyone in the industry does this.” Wrong logic: Industry norms override duty; correct logic: disclosure is required regardless of common practice; tested angle: cultural normalization.
+7. “It didn’t change my recommendation.” Wrong logic: No actual bias means no disclosure; correct logic: potential or perceived bias still requires disclosure; tested angle: appearance of bias.
+8. “The conflict is indirect.” Wrong logic: Indirect conflicts don’t count; correct logic: indirect economic interests must be disclosed; tested angle: related-party benefits.
+9. “My firm disclosed it somewhere else.” Wrong logic: Generic firm disclosure covers all; correct logic: disclosure must be specific to the recommendation or relationship; tested angle: blanket disclosures.
+10. “Disclosure fixes everything.” Wrong logic: Disclosure cures conflicts; correct logic: some conflicts still require avoidance; tested angle: I(B) vs VI(A).
+#### Exam Traps (Not a Violation)
+
+1. “The conflict was disclosed clearly upfront.” Clients were informed before action; correct logic: transparency satisfied.
+2. “Disclosure was repeated regularly.” Ongoing conflicts were reminded; correct logic: continuous disclosure is appropriate.
+3. “The disclosure was specific.” Nature and source of conflict explained; correct logic: fair disclosure met.
+4. “Clients acknowledged the conflict.” Informed consent occurred; correct logic: disclosure effective.
+5. “No conflict existed.” No competing interests present; correct logic: disclosure not required.
+6. “The conflict was avoided entirely.” Activity was declined; correct logic: avoidance exceeds disclosure duty.
+7. “Employer approved the activity.” Internal disclosure and consent obtained; correct logic: employer interests protected.
+8. “Disclosure matched firm policy and CFA rules.” Standards aligned; correct logic: compliant handling.
+9. “The conflict was immaterial.” No reasonable expectation of bias; correct logic: disclosure not triggered.
+10. “Clients had alternative options.” Clients could assess and decide; correct logic: disclosure enabled informed choice.
+
+#### STANDARD VI(B) – CONFLICTS OF INTEREST – PRIORITY OF TRANSACTIONS
+
+> [!tip] TALISMAN
+Clients first in the queue. Always.
+No jumping the line, no front-running, no sneaking personal or firm trades ahead of clients.
+If you know a client trade is coming, your hands are tied.
+
+#### Core Concepts
+
+1. Members and Candidates must give investment transactions for clients priority over transactions for themselves or their firms.
+2. This applies to personal accounts, family accounts, firm proprietary accounts, and any account you influence or control.
+3. You must not front-run client trades—trading ahead of clients based on knowledge of pending transactions is prohibited.
+4. The standard applies to recommendations, research dissemination, and trade execution, not just portfolio management.
+5. Policies such as restricted lists, blackout periods, and pre-clearance are expected controls.
+6. Even small personal trades can violate the standard if they precede client trades.
+7. The focus is on fair sequencing and intent, not trade size or profit.
+#### Exam Traps (Violation)
+
+1. “It was a small personal trade.” Wrong logic: Size doesn’t matter; correct logic: any personal trade ahead of clients violates priority; tested angle: de minimis misconception.
+2. “I traded before the recommendation was public.” Wrong logic: No recommendation yet; correct logic: knowledge of imminent client action triggers restriction; tested angle: pre-recommendation front-running.
+3. “It was the firm’s account.” Wrong logic: Firm comes before clients; correct logic: client trades still have priority; tested angle: proprietary trading.
+4. “The client trade wasn’t executed yet.” Wrong logic: No execution means no violation; correct logic: intent and knowledge of pending trades matter; tested angle: pending orders.
+5. “I traded in a related security.” Wrong logic: Different ticker avoids violation; correct logic: economically related securities count; tested angle: derivatives, substitutes.
+6. “I didn’t make a profit.” Wrong logic: No gain means no harm; correct logic: profit is irrelevant; tested angle: attempted front-running.
+7. “The market moved first.” Wrong logic: Market movement excuses sequencing; correct logic: knowing priority still applies; tested angle: timing excuses.
+8. “It was in my spouse’s account.” Wrong logic: Not my account; correct logic: accounts you influence are covered; tested angle: indirect ownership.
+9. “Everyone had access.” Wrong logic: Broad access removes unfairness; correct logic: clients must still go first; tested angle: internal dissemination.
+10. “Policy wasn’t clear.” Wrong logic: Ambiguity excuses conduct; correct logic: ethical priority applies regardless; tested angle: weak policies.
+
+#### Exam Traps (Not a Violation)
+
+1. “Client trades were executed first.” Proper sequencing occurred; correct logic: priority respected.
+2. “Personal trade occurred after dissemination.” Recommendation was public and clients had time to act; correct logic: no front-running.
+3. “Restricted list was followed.” Controls prevented conflicts; correct logic: compliant process.
+4. “Trade was pre-cleared.” Approval obtained per policy; correct logic: safeguards applied.
+5. “No client interest existed.” No pending or foreseeable client trades; correct logic: priority not triggered.
+6. “Trade was unrelated economically.” No reasonable linkage; correct logic: different security genuinely unrelated.
+7. “Client declined the trade.” Client chose not to act; correct logic: priority obligation met.
+8. “Firm account traded after clients.” Proprietary trades sequenced later; correct logic: client first.
+9. “Blackout period was observed.” Waiting period respected; correct logic: timing controls worked.
+10. “Automated allocation enforced order.” System ensured fair sequencing; correct logic: no manual override.
 
