@@ -648,6 +648,41 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 
 ## FIXED INCOME
 
+### MODULE 52.1: FIXED INCOME BOND VALUATION
+
+1. If 2 year YTM is 4.3% and 5 year YTM is 5.2%, what is the 3 year forward rate. $(1.052^5 / 1.043^2)^{(1/3)} - 1 = 5.81\%$
+2. **Matrix Pricing:** Recipe is to first calculate interpolated YTM using the given info and then compute PV
+	
+> [!question] QUESTION
+> 
+> ##### Price Interpolation
+> 
+> Rob Phelps, CFA, is estimating the value of a nontraded 4% annual-pay, A+ rated bond that has three years remaining until maturity. He has obtained the following yields to maturity on similar corporate bonds: 
+> A+ rated, 2-year annual-pay, YTM = 4.3% 
+> A+ rated, 5-year annual-pay, YTM = 5.1% 
+> A+ rated, 5-year annual-pay, YTM = 5.3% 
+> Estimate the value of the nontraded bond.
+> ---
+> If 2 year YTM is 4.3% and 5 year YTM is 5.2%, what is the 3 year interpolated YTM. $\Delta YTM (\text{3y}) = 5.2-4.3 = 0.9$. YTM increases by 0.9/3 = 0.30 per year. So 3-year straight line approximate YTM: 4.3+0.3 = 4.6% 
+> 
+> Now: I/Y = 4.6, N = 3, FV = 100, PMT = 4, **PV = -98.353**
+> 
+> ##### Using Spreads
+> 
+> Consider the following market yields:
+> 4-year, U.S. Treasury bond, YTM 1.48%
+> 5-year, A rated corporate bond, YTM 2.64%
+> 6-year, U.S. Treasury bond, YTM 2.15%
+> Estimate the required yield spread on a newly issued 6-year, A rated corporate bond
+> 
+> ---
+> 5y YTM of US Treasury = 1.48 + (2.15-1.48)/2 = 1.480 + 0.335 = 1.815%
+> A rated bond spread = 2.640 - 1.815 = 0.825 
+> 6y YTM = 2.150 + 0.825 = 2.975
+> 
+
+
+
 ### FIXED INCOME MARKETS FOR CORPORATE ISSUERS
 1. Weak credit → secured borrowing. Firms with low credit ratings must pledge collateral. Strong credit firms issue commercial paper (CP) — unsecured, typically < 3 months maturity, used for working capital or temporary/bridge funding.
 2. **Factoring** Firm sells receivables to a lender at a discount. Lender takes over credit risk + collection. Example: ₹100 invoice sold for ₹95 today → instant liquidity.
