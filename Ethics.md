@@ -740,36 +740,20 @@ If you know a client trade is coming, your hands are tied.
 > Hidden referral money = hidden bias.
 
 #### Core Concepts
-
 1. Members and Candidates must **disclose to clients and employers** any **compensation, consideration, or benefit** received for referring clients or prospective clients.
-    
 2. Referral fees include **cash, commissions, revenue sharing, gifts, discounts, free services, or non-cash benefits**.
-    
 3. Disclosure must be made **before** the referral or recommendation, not after.
-    
 4. Disclosure must be **clear, prominent, and specific**, describing the **nature and amount** of the fee or how it is calculated.
-    
 5. The standard applies whether the referral is to **another firm, broker, adviser, fund, or service provider**.
-    
 6. Disclosure is required **even if the referral benefits the client** or is common industry practice.
-    
 7. This standard is about **transparency of incentives**, not banning referrals.
-    
-
 #### Exam Traps (Violation)
-
 1. **“The referral helped the client.”** Wrong logic: Good outcome excuses nondisclosure; correct logic: referral fees must always be disclosed; tested angle: outcome rationalization.
-    
 2. **“It was disclosed later.”** Wrong logic: Timing doesn’t matter; correct logic: disclosure must be _before_ the referral; tested angle: late disclosure.
-    
 3. **“It was a small amount.”** Wrong logic: Size makes it immaterial; correct logic: any referral compensation triggers disclosure; tested angle: de minimis myth.
-    
 4. **“It wasn’t cash.”** Wrong logic: Non-cash benefits don’t count; correct logic: all benefits count; tested angle: gifts, free services.
-    
 5. **“The client would assume it.”** Wrong logic: Implied knowledge is enough; correct logic: explicit disclosure required; tested angle: assumed awareness.
-    
 6. **“Only my employer knew.”** Wrong logic: Employer disclosure alone suffices; correct logic: clients must also be informed; tested angle: dual disclosure.
-    
 7. **“Everyone refers business like this.”** Wrong logic: Industry practice overrides ethics; correct logic: disclosure still required; tested angle: normalization.
     
 8. **“The referral wasn’t central.”** Wrong logic: Minor role avoids duty; correct logic: any compensated referral must be disclosed; tested angle: incidental referrals.

@@ -85,6 +85,21 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 
 ## ECONOMICS
 
+### MODULE 17.1: INTERNATIONAL TRADE
+1. **Tariff**: tax on imports; raises domestic price, cuts imports, raises domestic output; producers gain, consumers lose; government gets revenue; foreigners lose. Example: Donald Trump put tariffs on Chinese steel; US steel prices rose, US mills benefited, US buyers paid more, Treasury collected tariff cash, Chinese exporters absorbed losses.    
+2. **Quota**: hard cap on import quantity; raises domestic price and output; producers gain, consumers lose; no automatic government revenue; scarcity creates rents. Example: Trump-era steel quotas would limit tons entering the US; price jumps not from tax but from artificial shortage.    
+3. **Quota with auctioned licenses**: government sells import licenses; outcome ≈ tariff; same higher price and lower imports, but now government captures quota rents instead of tariff revenue. Example: if Trump had auctioned steel import permits, US government not the firms would pocket the scarcity value.  
+4. Quota makes the good scarce in the domestic market, the price there rises above the world price; foreign exporters who hold the free import licenses can sell the limited quantity at this higher domestic price, pay no tax or fee to the government, and keep the entire price gap as extra profit — that gap is the **quota rent**.
+5. In the case of a quota, if the domestic government collects the full value of the import licenses, the result is the same as for a tariff.
+6. Under VER, the importing country pressures exporters to limit supply (think drug dealing by Pablo Escobar); scarcity pushes prices up; consumers lose; domestic producers gain; foreign exporters keep the price markup as profit; government gains nothing.
+7. Because a VER raises domestic prices like a quota **but gives all the quota rents to foreign exporters**, while the importing country gets **no tariff revenue**, no license revenue, and still suffers consumer losses and efficiency distortions.
+8. **Marshall–Lerner condition**: a currency depreciation improves a country’s trade balance **iff** the sum of the absolute price elasticities of demand for exports and imports is **greater than 1**. Why: depreciation makes exports cheaper to foreigners and imports costlier to locals; trade balance improves only if quantities respond strongly enough to offset the price effect.
+9. **Stolper–Samuelson theorem**: in a two-good, two-factor trade model, an increase in the relative price of a good raises the real return of the factor used intensively in producing that good and lowers the real return of the other factor. Why: higher output price raises demand for its intensive factor; factor prices adjust economy-wide, not just in that sector
+10. In a Free Trade Area (FTA), member countries remove trade barriers among themselves but maintain independent trade policies toward non-members.  
+11. A Customs Union extends an FTA by adopting a common external trade policy against non-members.
+12. Under the WTO's 'Most Favored Nation' (MFN) principle, a country must apply the same tariff rates to all WTO members.  
+13. Regional Trading Agreements (RTAs) like the EU or USMCA are permitted exceptions to the MFN principle.
+ 
 ### MODULE 18.1: THE FOREIGN EXCHANGE MARKET
 1. When you buy a forward contract, you agree to BUY an underlying at a agreed price at a future date. If I buy a Euro / Rupee forward from you at 1 EUR = 100 INR, I am obliged to buy 1 EUR @ 100 INR, no matter whatever is the price. I have **hedged** my risk. 
 2. ==Real P/B Exchange Rate = Nominal P/B × (CPI Base / CPI Price)== You multiply nominal by how pricier base is with respect to price currency.
@@ -523,6 +538,39 @@ Balance Sheet
 8. **Swaps**: Two parties agree to exchange cash flows. An interest rate swap typically involves trading a fixed interest payment for a floating (variable) one. *Example: Company A has a loan with a variable interest rate that scares them. They swap payments with Company B, who agrees to pay the variable rate in exchange for receiving a steady 4% fixed rate from Company A.*
 9. **Brokers vs. Dealers**: Brokers are agents who find a buyer for your sell order (like a real estate agent) and charge a commission. Dealers trade from their own inventory (like a car dealership), buying low and selling high to make a profit.  *Example: A broker connects you to someone selling 100 shares of Tesla. A dealer actually owns the 100 shares and sells them directly to you from their own stash.*
 10. **Markets**: "Primary" markets are where new securities are created and sold (IPOs). "Secondary" markets are where investors trade existing securities with each other (the stock market). "Money markets" are for short-term debt (under 1 year); "Capital markets" are for long-term equity and debt. *Example: When Facebook went public, it sold shares in the primary market to big banks. Now, when you buy Facebook stock on Robinhood, you are trading in the secondary market with another investor, not Facebook itself.*
+11. **Best-efforts offering** means the investment bank only tries to sell the securities and does not guarantee the amount raised; unsold shares are returned to the issuer.
+12. **Underwritten offering** means the investment bank guarantees the funds by buying the entire issue from the issuer and then reselling it to investors, taking on the risk of unsold shares.
+13. Money markets exclusively trade debt instruments with maturities of one year or less.
+14. Capital markets trade instruments where the investment duration is longer than one year, including both equities and fixed-income securities.
+15. When an issuer sells additional units of a previously issued security to the public, this transaction is referred to as a: Seasoned Offering.
+
+16. Bid price is the highest price a buyer is willing to pay, and ask price is the lowest price a seller is willing to accept. You sell at bid price and buy at ask price
+17. In order-driven markets, no central dealer exists; instead, traders submit limit orders that rest in the order book, creating a decentralized liquidity pool. The reason explains the functional equivalence: a standing limit buy order is an offer to buy at a specified price, just like a dealer bid; a standing limit sell order is an offer to sell, just like a dealer ask. Both are consumed by marketable orders (market or aggressive limit orders). The key distinction is that in order-driven markets, liquidity provision is distributed across many participants—some may be market-makers, but many are public traders with no special status.
+18. Cumulative preferred shares require the issuer to pay any omitted dividends to preferred shareholders before paying dividends to common shareholders.
+19. **Good-till-canceled (GTC) order** stays active until it is filled or the investor cancels it; example: you place a buy order at $90 for a stock trading at $100 and it remains open for weeks until the price hits $90 or you cancel it.
+20. **Hidden or iceberg order** shows only a small part of a large order to the market to avoid moving prices; example: an institution wants to buy 100,000 shares but displays only 5,000 at a time, with new pieces appearing as each is filled.
+21. Stop orders are conditional: a stop-sell becomes valid after the market trades at or below the stop price; a stop-buy becomes valid at or above the stop price.
+22. This feedback loop creates momentum and often leads to execution away from the stop price, especially in fast-moving or illiquid markets. The key is causality: stop orders mechanically convert price moves into order flow in the same direction, reinforcing trends and degrading execution quality for the stop-order user.
+23. **Execution instruction** specifies *how* an order should be executed in the market, controlling price–speed trade-offs; examples include market orders (immediate execution at best available price) and limit orders (execution only at a specified price or better).
+24. The process where the investment bank lines up subscribers who will buy the security and compiles a 'book' of orders is specifically called **book building**
+25. Initial offering prices in the secondary market often rise immediately following an IPO, but this effect is less pronounced in a seasoned offering primarily because: the conflict of interest for underwriters is less important in a seasoned offering, as secondary market trading helps identify the proper price.
+26. In a shelf registration, a corporation sells shares directly into the secondary market over time rather than in a single large transaction.
+27. The underwriting fee paid by the issuer in an underwritten public offering is the **spread**, which is the difference between the price the underwriters pay the issuer for the shares and the price at which they sell those shares to the public.
+28. ==The underwriting fee is classified as a **reduction of equity**, not an expense; it is netted against additional paid-in capital (or share premium) because it is a direct cost of issuing shares.==
+29. The investment bank has dual roles. As **agents for the issuer**, they should seek a high price to raise the most money. However, as **underwriters**, they have strong incentives to choose a low price. A low price allows them to allocate valuable shares to benefit their clients. A high price exposes them to the direct cost of having to buy overvalued, undersubscribed shares and potentially providing price support in the secondary market. This conflict tends to lower initial offering prices.
+30. **Validity instruction** specifies *how long* an order remains active before it expires if not executed; examples include day orders (expire at market close) and good-till-canceled orders (remain until filled or canceled).
+31. **Clearing instruction** specifies *how and where* the trade will be settled after execution, including settlement method, account, or clearing system, ensuring proper delivery of securities and cash.
+32. A **rights offering** lets existing shareholders buy new shares in proportion to what they already own, usually at a discount; these rights can be traded for cash, and once they separate, the share price falls to the theoretical ex-rights price (TERP) to reflect the new shares being issued.
+33. Immediate-or-Cancel (IOC) allows for partial execution; the unfilled portion is cancelled immediately.
+34. All-or-Nothing (AON) requires full execution but does not mandate immediacy; the order can wait on the book until the full size is available.
+35. **Fill-or-Kill (FOK) combines two constraints: the order must be filled in its **Entirety** (Fill-or-Kill part) and **Immediately** (Implied by Kill).
+36. If you use your rights, your ownership stays the same; if you don’t, your stake gets diluted, but you can sell the rights for cash so you are not worse off in value terms. Market signal: rights offerings are often viewed as weaker than public offerings because they are commonly used when firms want cheap capital quickly or have limited access to external equity markets.
+37. IPO includes - Newly issued shares sold by the company, and potentially shares sold by the company’s founders and early investors.
+38. **Initial margin** is the money you must put in at the start to open a leveraged position; example: if a stock costs $100 and initial margin is 40%, you pay $40 and borrow $60.
+39. **Maintenance margin** is the minimum equity you must keep after the trade is open; example: if maintenance margin is 25%, your equity must always be at least $25 on a $100 stock, or you get a margin call.
+40. **Variation margin** is the daily cash adjustment based on price changes, common in futures; example: if your futures position loses $5 today, you must pay $5 today to restore the margin balance.
+
+
 
 ### SECURITY MARKET INDEXES
 1. **Price return vs total return**: A price return index reflects only changes in constituent prices, while a total return index assumes all dividends and interest are reinvested. The headline **S&P 500** is a price return index, while **Germany’s DAX** is quoted as a total return index, which is why naïve comparisons are misleading. ==At inception PRI = TRI.==
