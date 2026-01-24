@@ -8,31 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ceda4119b09abeae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CFA/Fixed Income.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Fixed Income"
-            }
-          },
-          {
             "id": "622e05ed7eac429c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DERIVATIVES.md",
+                "file": "CFA/Revision Notes for CFA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DERIVATIVES"
+              "title": "Revision Notes for CFA"
+            }
+          },
+          {
+            "id": "f4452cc3b74d74bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ethics.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ethics"
             }
           }
         ],
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5026054382324,
-    "collapsed": true
+    "width": 280.5026054382324
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -203,11 +202,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "622e05ed7eac429c",
+  "active": "f4452cc3b74d74bb",
   "lastOpenFiles": [
     "CFA/Fixed Income.md",
-    "DERIVATIVES.md",
     "CFA/Revision Notes for CFA.md",
+    "Quant Finance/Fixed Income.md",
+    "Ethics.md",
+    "Untitled 1.md",
+    "Tricky Questions in Ethics.md",
+    "CFA/Derivatives.md",
+    "CFA/Full and Flat Price.md",
+    "CFA/International and Domestic Bonds.md",
+    "CFA/Legal Terms Related to Bonds.md",
+    "CFA/Contingency Provisions.md",
+    "CFA/Yeild to Maturity.md",
+    "CFA/Numericals to Memorise.md",
+    "CFA/Annuity Calculation.md",
+    "CFA/Bond Duration.md",
     "Balance Sheet - Assets.md",
     "CashFlow Ratios.md",
     "Cashflow.md",
@@ -219,22 +230,10 @@
     "Accounting Standard for Expense Recognition.md",
     "Writing Style.md",
     "Presentation Notes.md",
-    "Long Term Assets.md",
-    "Maturity.md",
-    "Maturity Risk.md",
     "Pasted Image 20251228112906_706.png",
     "Pasted image 20251029114056.png",
     "Pasted image 20251230214023.png",
-    "Presentation And Disclosure.md",
     "CFA/Revision Notes for CFA.md~",
-    "Videos.md",
-    "Ethics.md",
-    "CFA/Legal Terms Related to Bonds.md",
-    "Chapter IV - Aman.md",
-    "Aman.md",
-    "CFA/Numericals to Memorise.md",
-    "CFA/Yeild to Maturity.md",
-    "CFA/Annuity Calculation.md",
     "dp.png",
     "Spells",
     "Rust",

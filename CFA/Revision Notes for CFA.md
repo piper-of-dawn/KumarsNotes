@@ -273,7 +273,7 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 4. Under IFRS firm must explicitly identify research stage and expense it.  Then capitalise the development stage. Under US GAAP, firm must always expense both research and development, no matter what.
 5. The intangible assets with finite life such as patents must be amortised. The lifespan of such assets must be reviewed annually. 
 6. Any admin overhead, training costs etc must be expensed under both IFRS and US GAAP.
-7. Any internally generated goodwill must be expensed. Goodwill is only created on balance sheet during purchase acquisition. 
+7. Any internally generated goodwill must be expensed. Goodwill is only created on balance sheet during purchase acquisition.w
 
 > [!WARNING] REMEMBER
 > Accounting goodwill should not be confused with economic goodwill. Economic goodwill derives from the future earning potential of the firm whereas accounting video is the result of the past acquisitions.
@@ -336,6 +336,7 @@ When a company has issued any financial instruments that are potentially convert
 > [!danger] DO NOT MAKE THIS MISTAKE
 > Inventory and A/C Payables Turnover use COGS as numerator
 
+## MODULE 32.1: ANALYSIS OF INVENTORIES
 
 
 ### MODULE 34.1: LEASES

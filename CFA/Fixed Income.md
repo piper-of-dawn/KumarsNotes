@@ -188,6 +188,18 @@
 >   
 >  
 
+
+### MODULE 59.1: CURVE-BASED AND EMPIRICAL FIXED-INCOME RISK MEASURES
+1. The yield curve does not always move in a parallel way—short-term rates, medium-term rates, and long-term rates can change by different amounts or even in different directions. At the same time, many bonds do not have fixed cash flows: borrowers may prepay, issuers may call the bond early, or payments may change when interest rates move. 
+2. Macaulay and modified duration assume a **parallel yield curve shift** and **fixed cash flows with no embedded options**.
+3. **Effective Duration:** 
+4. **Macaulay Duration:** Weighted Average of Time where weights are PV of cashflows.
+$$\boxed{\text{Mac. D} = \sum_{i=o}^N \text{PV}_i \times i}$$
+5. **Modified Duration:** Sensitivity of bond price to changes in yield. **It is an approximation (tangent slope) which means that it overestimates the Eprice decline (when yields rise) and underestimates the price increase (when yields fall).** Memory hook: ==Modified Duration is pessimistic.== $$ \text {Mod. D} = \frac{\text{Mac. D}}{{1+y}}$$
+6. **Effective Duration:** Effective duration is basically brute-force. You don’t derive sensitivity from a formula. You reprice the bond twice (yields up, yields down). You observe what actually happens to price and cash flows. Then you compute the slope numerically.
+      - **Numerator $(PV_+−PV_-)$:** This captures how much the bond’s price actually moves when yields are nudged down versus up, with cash flows allowed to change. It’s the observed price response to rate movements.
+      - **Denominator $2\,\Delta y$:** This is the total yield change between those two scenarios (down by Δy, up by Δy). Dividing by it converts the price move into a price change per unit of yield (a slope).
+	    - Divide by $PV_0$: Normalizes the slope by today’s price so the result is a percentage sensitivity.    $$\boxed{\text{Effective Duration}=\dfrac{PV_- - PV_+}{2\,\Delta y\,PV_0}}​​$$
 ### MODULE 65.1: MORTGAGE-BACKED SECURITY (MBS) INSTRUMENT AND MARKET FEATURES
 
 1. **Prepayment Risk:** You own a callable bond (and interest rate falls) → They prepay and buy back their now cheaper bond issued at a high interest rate. Interest Rate falls to 2% and you take a cheaper loan and payback your expensive loan. For the bond investor, high-coupon mortgage cash flows disappear right when they\u2019re most valuable, that is why a **risk**.
