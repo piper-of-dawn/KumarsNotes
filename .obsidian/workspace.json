@@ -8,34 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "09073dfbd67c59cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CFA/Revision Notes for CFA.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Revision Notes for CFA"
-            }
-          },
-          {
             "id": "ceda4119b09abeae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ethics.md",
+                "file": "CFA/Fixed Income.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ethics"
+              "title": "Fixed Income"
+            }
+          },
+          {
+            "id": "622e05ed7eac429c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DERIVATIVES.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DERIVATIVES"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -202,42 +203,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "09073dfbd67c59cb",
+  "active": "622e05ed7eac429c",
   "lastOpenFiles": [
+    "CFA/Fixed Income.md",
+    "DERIVATIVES.md",
+    "CFA/Revision Notes for CFA.md",
+    "Balance Sheet - Assets.md",
+    "CashFlow Ratios.md",
+    "Cashflow.md",
+    "Callable and Puttable Bond.md",
+    "Analysis of Disclosures.md",
+    "Affirmations.md",
+    "Acquisition of Intangible Assets.md",
+    "Accounting Standard for Revenue Recognition.md",
+    "Accounting Standard for Expense Recognition.md",
+    "Writing Style.md",
+    "Presentation Notes.md",
+    "Long Term Assets.md",
+    "Maturity.md",
+    "Maturity Risk.md",
+    "Pasted Image 20251228112906_706.png",
+    "Pasted image 20251029114056.png",
+    "Pasted image 20251230214023.png",
+    "Presentation And Disclosure.md",
     "CFA/Revision Notes for CFA.md~",
     "Videos.md",
-    "Presentation Notes.md",
     "Ethics.md",
-    "CFA/Revision Notes for CFA.md",
     "CFA/Legal Terms Related to Bonds.md",
     "Chapter IV - Aman.md",
     "Aman.md",
     "CFA/Numericals to Memorise.md",
     "CFA/Yeild to Maturity.md",
     "CFA/Annuity Calculation.md",
-    "CFA/CouponStructures.md",
-    "CFA/Contingency Provisions.md",
-    "Writing Style.md",
-    "Affirmations.md",
-    "Writing Style.md",
-    "Pasted image 20251230214023.png",
-    "Excalidraw/Drawing 2025-12-28 11.28.51.excalidraw.md",
-    "Pasted Image 20251228112906_706.png",
-    "Revise before Exam.md",
-    "Maturity.md",
-    "Long Term Assets.md",
-    "Liquidity Ratios.md",
-    "Lease Accounting.md",
-    "C++/Lambdas.md",
-    "Investments in Private Capital - Equity and Debt.md",
-    "index.md",
-    "How to measure fear.md",
     "dp.png",
     "Spells",
     "Rust",
     "Quant Finance",
     "Portfolio Management",
-    "Pasted image 20251029114056.png",
     "Linear Algebra/Pasted image 20250429102423.png",
     "Linear Algebra",
     "Fixed Income",
