@@ -44,20 +44,20 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 3. **Resampling and Bootstrapping:**
 	- Start with n observed data points. Example: 250 daily returns.
 	- For one bootstrap sample, do this: Randomly pick one return at a time from the original 250. Put it back after picking (sampling _with replacement_). Repeat until you have **250 picks**
-	- Result is: Some days appear multiple times. Some days don\u2019t appear at all. Total observations = still 250. Repeat this process many times (e.g., 10,000 bootstrap samples).
+	- Result is: Some days appear multiple times. Some days don't appear at all. Total observations = still 250. Repeat this process many times (e.g., 10,000 bootstrap samples).
 	- From 250 returns, bootstrapping shows the mean return is 8%, but with a wide spread (spread comes from 10k generated samples) ⟶ you see how unreliable that estimate is.
 	- Instead of assuming normal returns, you reuse actual ugly days (crashes, spikes) exactly as they occurred. Even with small data, you can still quantify risk around estimates.
     
 ### MODULE 7.1: SAMPLING TECHNIQUES AND THE CENTRAL LIMIT THEOREM
-1. Probability sampling: \u201cEveryone had a ticket in the lottery.\u201d Randomly selecting 500 firms from 10,000 gives each firm a 5% selection chance, making the sample\u2019s average profitability an unbiased estimate of the population mean. This is probability sampling.
+1. Probability sampling: \u201cEveryone had a ticket in the lottery.\u201d Randomly selecting 500 firms from 10,000 gives each firm a 5% selection chance, making the sample's average profitability an unbiased estimate of the population mean. This is probability sampling.
 2. Non-probability sampling: \u201cI picked whoever was easiest to reach.\u201d Studying only easy-to-access or familiar firms (glossy reporters, followed companies, local firms) skews results because the sample is biased and not representative of the population. One way to form an approximately random sample is **systematic sampling** selecting every nth member from a population.
 3. **Stratified sampling (Probability Sampling Method)** divides a heterogeneous population into homogeneous groups based on key characteristics and randomly samples from each group in proportion to its size. Eg: Estimating national income by first grouping people into income brackets (low, middle, high) and then randomly sampling individuals from each bracket in proportion to their population share.
-4. One of the most important examples is of a bond index is replicated by grouping bonds by maturity and coupon, then randomly selecting bonds from each group in proportion to the group\u2019s weight in the index.
+4. One of the most important examples is of a bond index is replicated by grouping bonds by maturity and coupon, then randomly selecting bonds from each group in proportion to the group's weight in the index.
 5. **Cluster sampling (Probability Sampling Method)** means randomly picking a few groups that are assumed to look like the whole population and then collecting data from those groups instead of everyone. Eg: To estimate average student height in a city, randomly pick a few schools and measure all (or some) students in those schools instead of sampling from every school.
 6. One-stage cluster sampling means randomly selecting a few clusters and including **every observation inside those clusters** in the sample. Eg: To estimate city electricity usage, randomly pick a few apartment buildings and use the electricity data of all households in those buildings.
 7. Two-stage cluster sampling means randomly selecting a few clusters first (stage 1) and then randomly sampling individuals within each selected cluster (stage 2). To estimate city income, randomly pick a few neighborhoods and then randomly survey a sample of households within each selected neighborhood.
 8. Two-stage cluster sampling can be expected to have greater sampling error than one-stage cluster sampling because you have done stuff randomly twice. But it costs less.
-9. The non probability methods are Convenience Sampling and Judgemental Sampling. Convenience sampling refers to selecting sample data based on ease of access, using data that are readily available. Judgemental sampling refers to samples for which each observation is selected from a larger dataset by the researcher, based on one\u2019s experience and judgement.
+9. The non probability methods are Convenience Sampling and Judgemental Sampling. Convenience sampling refers to selecting sample data based on ease of access, using data that are readily available. Judgemental sampling refers to samples for which each observation is selected from a larger dataset by the researcher, based on one's experience and judgement.
 10. Suppose a sample contains the past 30 monthly returns for McCreary, Inc. The mean return is 2%, and the sample standard deviation is 20%. Calculate and interpret the standard error of the sample mean. SE($\mu$) = $\sigma / \sqrt{n}$ = 0.2 / $\sqrt{30}$ = 0.036. **As n $\to$ $\infty$, SE($\mu$) $\to$ 0
 11. **Jackknife Method for SE:** From 5 returns {2, 4, 6, 8, 10}, compute 5 means by dropping one observation at a time (7, 6.5, 6, 5.5, 5). The standard deviation of these leave-one-out means estimates the standard error of the mean. **Works when sample size is small**
 12. **Bootstrap Method for SE:** From the same 5 returns {2, 4, 6, 8, 10}, repeatedly draw samples of size 5 **with replacement** (e.g., {2,2,6,8,10}, {4,6,6,8,10}, \u2026) and compute the mean each time.  After 10,000 such resamples, the **standard deviation of these means** is the bootstrap estimate of the standard error (and their percentiles give confidence intervals).
@@ -93,7 +93,7 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 5. In the case of a quota, if the domestic government collects the full value of the import licenses, the result is the same as for a tariff.
 6. Under VER, the importing country pressures exporters to limit supply (think drug dealing by Pablo Escobar); scarcity pushes prices up; consumers lose; domestic producers gain; foreign exporters keep the price markup as profit; government gains nothing.
 7. Because a VER raises domestic prices like a quota **but gives all the quota rents to foreign exporters**, while the importing country gets **no tariff revenue**, no license revenue, and still suffers consumer losses and efficiency distortions.
-8. **Marshall\u2013Lerner condition**: a currency depreciation improves a country\u2019s trade balance **iff** the sum of the absolute price elasticities of demand for exports and imports is **greater than 1**. Why: depreciation makes exports cheaper to foreigners and imports costlier to locals; trade balance improves only if quantities respond strongly enough to offset the price effect.
+8. **Marshall\u2013Lerner condition**: a currency depreciation improves a country's trade balance **iff** the sum of the absolute price elasticities of demand for exports and imports is **greater than 1**. Why: depreciation makes exports cheaper to foreigners and imports costlier to locals; trade balance improves only if quantities respond strongly enough to offset the price effect.
 9. **Stolper\u2013Samuelson theorem**: in a two-good, two-factor trade model, an increase in the relative price of a good raises the real return of the factor used intensively in producing that good and lowers the real return of the other factor. Why: higher output price raises demand for its intensive factor; factor prices adjust economy-wide, not just in that sector
 10. In a Free Trade Area (FTA), member countries remove trade barriers among themselves but maintain independent trade policies toward non-members.  
 11. A Customs Union extends an FTA by adopting a common external trade policy against non-members.
@@ -200,22 +200,22 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 > - For IRR,  Calculate NPV then press **IRR** then **CPT**
 
 
-1. Imagine an airline that has to replace aircraft engines as they age. This is a **going-concern project** because it is essential for airline survival. **The airline uses match funding approach**, that is, long-term debt or leases aligned with the engine\u2019s life. ==Match funding because: An asset generates benefits over time. Financing has to be repaid over time. If these timelines don\u2019t align, cash-flow risk appears.== 
+1. Imagine an airline that has to replace aircraft engines as they age. This is a **going-concern project** because it is essential for airline survival. **The airline uses match funding approach**, that is, long-term debt or leases aligned with the engine's life. ==Match funding because: An asset generates benefits over time. Financing has to be repaid over time. If these timelines don't align, cash-flow risk appears.== 
 
 > [!warning] Remember
 > Maintenance activity that **reduces costs** will be a going concern project
 
-1. If DGCA forces airlines to replace the old engines then that is a **Regulatory/compliance project**. If Indigo invests to buy Airbus A320s for international routes, then that is a **Expansion Project.**
-2. The capital allocation process is identifying and evaluating capital projects (i.e., projects where the cash flows to the firm will be received over a period longer than a year). 
-3. Capital Allocation Process looks like: Ideation ⟶ Forecast CF / Analyze ⟶ Budgeting ⟶ Audit 
-4. A project has a conventional cash flow pattern if the sign on the cash flows changes only once, else it is unconventional.
-5. NPV is the discounted PV of all future cashflows, discounted by Reqd. Rate of Return. IRR is the rate that makes NPV = 0. Accept if NPV > 0 and accept if IRR > Reqd. rate of Return.
-6. NPV and IRR are forward looking approaches because you are talking about cashflows that **will happen in future.**
+2. If DGCA forces airlines to replace the old engines then that is a **Regulatory/compliance project**. If Indigo invests to buy Airbus A320s for international routes, then that is a **Expansion Project.**
+3. The capital allocation process is identifying and evaluating capital projects (i.e., projects where the cash flows to the firm will be received over a period longer than a year). 
+4. Capital Allocation Process looks like: Ideation ⟶ Forecast CF / Analyze ⟶ Budgeting ⟶ Audit 
+5. A project has a conventional cash flow pattern if the sign on the cash flows changes only once, else it is unconventional.
+6. NPV is the discounted PV of all future cashflows, discounted by Reqd. Rate of Return. IRR is the rate that makes NPV = 0. Accept if NPV > 0 and accept if IRR > Reqd. rate of Return.
+7. NPV and IRR are forward looking approaches because you are talking about cashflows that **will happen in future.**
 
 > [!warning] Remember
 > It is important to understand, how cashflows are **reinvested** in each approach. **Under IRR method, they are reinvested at IRR and under NPV they are reinvested at Reqd. rate of return.**  
 
-7. IRR is the discount rate that makes NPV = 0. If cash flows **change sign more than once** (e.g., \u2212 + \u2212 or \u2212 + \u2212 +), the NPV equation becomes a higher-degree polynomial, which can have **multiple real roots**. Each root is an IRR. Cash flows: \u2212100 (today), +230 (year 1), \u2212132 (year 2)  NPV(r) = \u2212100 + 230/(1+r) \u2212 132/(1+r)� = 0  This quadratic has **two solutions** ⟶ **two IRRs**.
+8. IRR is the discount rate that makes NPV = 0. If cash flows **change sign more than once** (e.g., \u2212 + \u2212 or \u2212 + \u2212 +), the NPV equation becomes a higher-degree polynomial, which can have **multiple real roots**. Each root is an IRR. Cash flows: \u2212100 (today), +230 (year 1), \u2212132 (year 2)  NPV(r) = \u2212100 + 230/(1+r) \u2212 132/(1+r)� = 0  This quadratic has **two solutions** ⟶ **two IRRs**.
 
 > [!TIP] HAMMER THIS INTO YOUR HEAD
 > Practice this on TI Calculator. You should be very very comfortable with this
@@ -225,12 +225,12 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 > Now do **IRR** \u21e2 **CPT**
 > This gives IRR = 0.0
 
-8. **Return on Invested Capital (ROIC) = PAT / Average Invested Capital**
-9. Operating Margin After Tax / After Tax Margin (PAT per unit Revenue) = PAT / Sales 
-10. Capital Turnover (Revenue per unit capital) = Sales / Average Invested Capital.
-11. **ROIC = After Tax Margin $\times$ Capital Turnover**
-12. ROIC is backward looking because you are talking about PAT and Capital Investment that has **already happened**
-13. ROIC is aggregated over a firm (Total PAT / Total Capital). So **profitable projects can hide trashy projects**. ROIC is accounting method and tax jurisdiction dependent hence **not comparable** across firms. ROIC can be **volatile** because it backward looking.
+9. **Return on Invested Capital (ROIC) = PAT / Average Invested Capital**
+10. Operating Margin After Tax / After Tax Margin (PAT per unit Revenue) = PAT / Sales 
+11. Capital Turnover (Revenue per unit capital) = Sales / Average Invested Capital.
+12. **ROIC = After Tax Margin $\times$ Capital Turnover**
+13. ROIC is backward looking because you are talking about PAT and Capital Investment that has **already happened**
+14. ROIC is aggregated over a firm (Total PAT / Total Capital). So **profitable projects can hide trashy projects**. ROIC is accounting method and tax jurisdiction dependent hence **not comparable** across firms. ROIC can be **volatile** because it backward looking.
 ### MODULE 24.2: CAPITAL ALLOCATION PRINCIPLES AND REAL OPTIONS
 ###### Expected number of questions: 1
 ###### Describe principles of capital allocation and common capital allocation pitfalls
@@ -241,7 +241,7 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 ###### Expected number of questions: 1
 ###### Explain factors affecting capital structure and the weighted-average cost of capital
 
-1. In general, the more **stable**, **non-cyclical**, **predictable**, and **recurring** are a company\u2019s revenues and cash flows, the higher proportion of debt it can have in its capital structure. Eg: Walmart (regular cashflows and non-cyclicity), Adani (Huge amount of tangible assets for collateral and non-cyclicity).
+1. In general, the more **stable**, **non-cyclical**, **predictable**, and **recurring** are a company's revenues and cash flows, the higher proportion of debt it can have in its capital structure. Eg: Walmart (regular cashflows and non-cyclicity), Adani (Huge amount of tangible assets for collateral and non-cyclicity).
 2. Companies with low fixed operating costs can support larger debt. 
 3. For raising additional debt: Interest Coverage Ratio = EBIT / Interest Expense ⟶ Higher the better. Debt to Equity Ratio ⟶ Lower the better. Debt to EBIT  ⟶ Lower the better.  
 4. Capital structure is also dependent on the growth stage, a company is in. During startup stage, debt is very expensive. Company usually raises money through equity or convertible debt. During growth phase the risk is relatively lower and collateralized debt can be raised as capital. During mature stage, company can afford higher debt financing including unsecured debt. ==Remember: Startup companies can raise **Convertible Debt**, Growth ones can raise **Secured Debt** and Mature Ones can afford **Unsecured Debt**==
@@ -253,12 +253,12 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 
 1. Asymmetric information exists because managers have superior knowledge about future prospects vs shareholders/creditors.    
 2. Higher when business is complex or financial reporting is opaque ⟶ investors face more uncertainty. Investors price this uncertainty as higher required returns on both debt and equity.    
-3. Investors infer management\u2019s private information from financing choices (**signaling**). Issuing debt signals confidence: fixed interest obligations imply expected stable cash flows. Issuing equity signals pessimism: markets infer management thinks stock is overvalued. **Therefore, equity financing is penalized more heavily than debt under asymmetric information.**    
-4. Agency costs of equity arise from conflicts between managers and shareholders. Managers without ownership stake don\u2019t fully bear costs of overpaying themselves or mismanaging risk (too safe or too reckless). Shareholders anticipate this conflict and impose controls (monitoring, incentives, governance). Even after controls, some conflict remains ⟶ net agency cost of equity.
+3. Investors infer management's private information from financing choices (**signaling**). Issuing debt signals confidence: fixed interest obligations imply expected stable cash flows. Issuing equity signals pessimism: markets infer management thinks stock is overvalued. **Therefore, equity financing is penalized more heavily than debt under asymmetric information.**    
+4. Agency costs of equity arise from conflicts between managers and shareholders. Managers without ownership stake don't fully bear costs of overpaying themselves or mismanaging risk (too safe or too reckless). Shareholders anticipate this conflict and impose controls (monitoring, incentives, governance). Even after controls, some conflict remains ⟶ net agency cost of equity.
 5. Agency costs of equity are related to conflicts of interest between managers and owners. Managers who do not have a stake in the company do not bear the costs associated with excessive compensation or taking on too much (or too little) risk. **Because shareholders are aware of this conflict, they take steps to reduce these costs. The result is called the net agency cost of equity.**
 6. **Free cash flow hypothesis: excess cash invites wasteful spending or self-serving projects by managers.**
 7. **Use of Debt forces managers to be disciplined**, because commits cash to interest and principal payments, reducing free cash flow available for misuse.
-8. Pecking order theory is built on asymmetric information between managers and investors. Financing choices act as signals about management\u2019s private view of firm value. - Internal funds are preferred: no external scrutiny, no signal.
+8. Pecking order theory is built on asymmetric information between managers and investors. Financing choices act as signals about management's private view of firm value. - Internal funds are preferred: no external scrutiny, no signal.
 
 ## FSA
 ### MODULE 29.1: INTANGIBLE ASSETS
@@ -285,7 +285,7 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 
 
 > [!question] QUESTION
-> Triple D Corporation, a U.S. GAAP reporting  firm, purchased a 6% bond, at par, for $1 million at the beginning of the year. Interest rates have recently increased, and the market value of the bond declined $20,000. Determine the bond\u2019s effect on Triple D\u2019s financial statements under each classification of securities.
+> Triple D Corporation, a U.S. GAAP reporting  firm, purchased a 6% bond, at par, for $1 million at the beginning of the year. Interest rates have recently increased, and the market value of the bond declined $20,000. Determine the bond's effect on Triple D's financial statements under each classification of securities.
 > **US GAAP**: It matters if this bond is held to maturity or is held with an intention to sell. 
 >If it is held to maturity then the change in bond price due to interest rate changes are ignored and bond is recorded at its amortised cost of 1 million. The interest of $6k goes to OCI.
 >If it is held as a tradable security then we record it at its fair mark-to-market price. 
@@ -321,7 +321,7 @@ The actual weighted shares are calculated as:
 
 4. **What is Preferred Dividend?** This is the dividend paid to the preferred shareholders. Preferred stock doesn't come under common stock and hence EPS removes it.
 5. **What is Diluted EPS:** \u201cWhat EPS would be\u201d if all dilutive instruments became common stock. This would be (Actual Earnings - Preferred Dividends) / (Ordinary Shares + New common stock that would have been issued at conversion))
-6. **What is Dilution:** The instruments convertible into ordinary equity can become shares ⟶ share count rises ⟶ EPS goes down. That\u2019s dilution.
+6. **What is Dilution:** The instruments convertible into ordinary equity can become shares ⟶ share count rises ⟶ EPS goes down. That's dilution.
 7. **What is stock split:** Suppose a company with a market capitalization of $100 has 100 shares (each share is priced $1). The company declares 2:1 stock split, which means each share would be split into 2 shares. This means the number of shares will be now: (100 * (2/1)) = 200. Now each share would be priced $0.5.
 8. Complex Capital Structure: 
 Under IFRS, the type of equity for which EPS is presented is referred to as ordinary. Ordinary shares are those equity shares that are subordinate to all other types of equity. 
@@ -420,15 +420,13 @@ Taxes paid in cash = 20000 - 5000 - 1000 = 14000
 
 
 
-
-
 ### MODULE 34.1: LEASES
 	
 1. An alternative way to look at a lease is: **taking a loan and buying the asset.**
 2. To be called a lease, a lessee needs to have following characteristics:
 	- Asset must be **Identified** a.k.a it should exist.
 	- Lessee should have exclusive control of asset and must derive all the economic benefits from the asset. 
-3. Under IFRS and U.S. GAAP, in a **financing lease** ownership and risks should be transferred to lessee. You break it and you pay for it.   If either the benefits or the risks of ownership are not substantially transferred, it is an operating lease.
+3. Under IFRS and U.S. GAAP, in a **financing lease** ownership and risks should be transferred to lessee. You break it and you pay for it. If either the benefits or the risks of ownership are not substantially transferred, it is an operating lease.
 
 > [!warning] Remember
 > Financing Lease:
@@ -440,30 +438,47 @@ Taxes paid in cash = 20000 - 5000 - 1000 = 14000
 
 
 > [!question] QUESTION
-> The Affordable Company (Affordable) leases a machine for its own use for four years with annual payments of $10,000. At the end of the lease, which is also the end of the machine\u2019s useful life, Affordable will return the machine to the lessor. The interest rate implicit in the lease is 5%. Assuming that the ROU asset is amortized on a straight-line basis over the term of the lease, calculate the impact of the lease on Affordable\u2019s financial statements for each of the four years.
+> The Affordable Company (Affordable) leases a machine for its own use for four years with annual payments of $10,000. At the end of the lease, which is also the end of the machine's useful life, Affordable will return the machine to the lessor. The interest rate implicit in the lease is 5%. Assuming that the ROU asset is amortized on a straight-line basis over the term of the lease, calculate the impact of the lease on Affordable's financial statements for each of the four years.
 > 
 > Fair value of Asset: PMT = -10000, I/Y = 5, FV = 0, CPT ⟶ PV = 35549
 > 
 > Asset Amortisation per year = 35549 / 4 = 8887.25
 > 
 
+6. From Lessor's POV: **“What asset do I carry?”**
+	- **Finance lease:** you stop carrying the physical asset and carry a **financial asset (lease receivable)** instead.  
+	- **Operating lease:** you keep carrying the **physical asset (PP&E at cost − accumulated depreciation)**.
 
-Balance Sheet 
-| Year | Liability | Asset |
-| ---- | --------- | ----- |
-| 1    | 35560     | 35560 |
-| 2    | 25560     |       |
-|      |           |       |
-| 
-|           |       |
+7. Lease receivable is measured as the **present value of future lease payments**, discounted using the **rate implicit in the lease**.
 
-
-
-
+> [!question] QUESTION
+> Financing Lease: $4,000 at each year-end for 3 years for PP&E worth $11,000. Rate implicit in the lease: 6%. Show the treatment in the accounts of the lessor.
 > 
-> Liability Side:
-> 	| Year | 
+> PV = $10,692. This will be recorded as **Lease Receivable on Assets side of Balance Sheet** and **PP&E worth $11000 would be derecognized**. The asset swap created a spread of $308. The Equity (liability) must increase by $308 to show this gain. 
+> 
+> AMORTISATION SCHEDULE
+> 
+| OB    | PMT  | P    | I   |
+| ----- | ---- | ---- | --- |
+| 10692 | 4000 | 3358 | 642 |
+| 7332  | 4000 | 3560 | 440 |
+| 3772  | 4000 | 3772 | 226 |
+> 
+> INCOME STATEMENT:
+> 
+> Y1:	Income from Lease =  $642
+> 
+> CASHFLOW STATEMENT
+> 
+> $4000 goes in CFO
+> Under **both US GAAP and IFRS (for the lessor)**, the **interest received in a lease is not split out**—the **entire lease cash receipt** (which includes the interest component) is reported in **CFO (operating activities)**.
+> 
+> BALANCE SHEET
+> 
+> Y1: Lease Receivable drops by 3358 (Asset). Cash Balance increases by 4000 (Asset). Equity increases by 642 (Liability) 
+> 
 
+9. IFRS vs US GAAP: lessor balance sheet is basically the same (don’t overthink).
 
 ### MODULE 34.2: DEFERRED COMPENSATION AND DISCLOSURES
 
@@ -473,7 +488,7 @@ Balance Sheet
 
 
 1. A pension is delayed salary. **Defined Contribution (DC)** ⟶ firm promises _how much it puts in_, employee bears **investment risk**. For example NPS and EPF in India and PPK in Poland. My employer puts in money, it gets invested into the market. If market collapses, everything turns to ashes. 
-2. **Defined Benefit (DB)** ⟶ firm promises _how much you\u2019ll get_, employer bears investment + longevity risk. I am promised a pension of PLN 10k per month, no matter if market collapses or booms. For example, ZUS contributions or Military pensions. **Employer bears market risk and employee bears longevity risk.** If I die, the pension vanishes. 
+2. **Defined Benefit (DB)** ⟶ firm promises _how much you'll get_, employer bears investment + longevity risk. I am promised a pension of PLN 10k per month, no matter if market collapses or booms. For example, ZUS contributions or Military pensions. **Employer bears market risk and employee bears longevity risk.** If I die, the pension vanishes. 
 3. Defined benefit is complicated. ==It is recorded as a **long term liability** on the balance sheet and on part of employers, it involves forecasting market cycles, interest rates, expected lifespan etc.==
 4. Defined Benefit (DB) plans create a **net position** on the balance sheet = what the firm owes \u2212 what it has set aside.  **Assets > obligation ⟶ asset. Assets < obligation ⟶ liability**.  Annual changes flow partly through P&L, partly through OCI.
 5. Funded status = **Fair value of plan assets \u2212 Pension obligation** **Overfunded** means I have saved more money (Plan Assets) that what my obligation demands (Pension to be paid), which creates a net asset position. **Underfunded** creates a net liability position.
@@ -497,7 +512,7 @@ Balance Sheet
 > 	- Past Service Cost = -20
 > 	- Actuarial Loss = -60
 
-7. One of the differences from IFRS pension accounting is that past service costs are recognized in other comprehensive income, rather than in the income statement as part of employee service costs. These costs are amortized over the employees\u2019 service period. **Actuarial gains and losses are typically treated the same way, but U.S. GAAP allows firms to recognize them in the period incurred.**
+7. One of the differences from IFRS pension accounting is that past service costs are recognized in other comprehensive income, rather than in the income statement as part of employee service costs. These costs are amortized over the employees' service period. **Actuarial gains and losses are typically treated the same way, but U.S. GAAP allows firms to recognize them in the period incurred.**
 
 > [!tip] HAMMER THIS INTO YOUR HEAD
 > 
@@ -509,17 +524,17 @@ Balance Sheet
 12. **Stock grants vs performance shares**:    
     - **Stock grants / RSUs** ⟶ FV = **share price at grant**, expense based only on service/vesting.        
     - **Performance shares** ⟶ vesting tied to **non-market metrics** (ROE, EPS, margins); fair value still set at grant but **managerial incentives can distort accounting choices**.        
-13. Compensation expense exists **before shares are received**; if vesting conditions aren\u2019t met, expense is reversed.
+13. Compensation expense exists **before shares are received**; if vesting conditions aren't met, expense is reversed.
 14. **Stock grants (RSUs)**: the share price on the grant date is taken as the cost; this cost is charged to the income statement over the vesting period (or all at once if vesting is immediate); the same amount is added to equity; example: grant value 100 with 2-year vesting ⟶ expense 50 each year, equity increases by 50 each year, and at vesting it is moved into share capital and APIC.    
-15. **Stock grants \u2013 why equity doesn\u2019t change**: the expense reduces retained earnings, but equity is increased by the same amount through APIC, so total equity stays the same; example: expense 50 ⟶ retained earnings \u221250, APIC +50.
-16. **Stock options**: the option\u2019s value is calculated using an option pricing model at grant and expensed evenly over the vesting period; **until exercise, only APIC increases and no shares are issued;** example: option value 80 over 4 years ⟶ expense 20 per year, APIC +20 per year.    
+15. **Stock grants \u2013 why equity doesn't change**: the expense reduces retained earnings, but equity is increased by the same amount through APIC, so total equity stays the same; example: expense 50 ⟶ retained earnings \u221250, APIC +50.
+16. **Stock options**: the option's value is calculated using an option pricing model at grant and expensed evenly over the vesting period; **until exercise, only APIC increases and no shares are issued;** example: option value 80 over 4 years ⟶ expense 20 per year, APIC +20 per year.    
 17. **Stock options \u2013 exercise stage**: when employees exercise, the company receives cash equal to the strike price and issues shares; equity increases by the cash received, split between share capital (par) and APIC, and any accumulated reserve is moved into APIC; example: strike 50 ⟶ cash +50, share capital +1, APIC +49 plus the reserve.
 
 > [!tip] HAMMER THIS INTO YOUR HEAD
 > - Suppose UBS gave me a stock as salary. The price is 100 CHF. In this case retained earnings will go down by 100 (stock got charged on PnL) and APIC will increase by 100. **No new shares are issued**. If I don't complete 3 years, they will reverse the charge on PnL and APIC will go down.
 > - Suppose UBS gave me a deferred stock (100 CHF) as salary that I can vest at the end of 3 years of service. Each year UBS will show a compensation expense of 33.33 CHF **always calculated on the price @ grant date** and APIC rises by 33.33 CHF every year.
 > - Suppose UBS gave me a call option to exercise at the end of 3 years of service at strike price of 100 CFH. The Black Scholes value is 10 CHF, which is shown in income statement. If I exercise it, then UBS gets the strike price which moves into APIC and issues me shares. **UBS does not issue new shares**
-18. Phantom stock a.k.a fake stock is a **cash bonus plan** that mimics share price performance, where employees receive **cash linked to the company\u2019s stock value without receiving actual shares or ownership**.
+18. Phantom stock a.k.a fake stock is a **cash bonus plan** that mimics share price performance, where employees receive **cash linked to the company's stock value without receiving actual shares or ownership**.
 ### MODULE 35.1: DIFFERENCES BETWEEN ACCOUNTING PROFIT AND TAXABLE INCOME
 1. Suppose you have Operating Profit (EBIT) of USD 100. And
 
@@ -555,7 +570,7 @@ Balance Sheet
 1. **REVENUE:**
 	1. **Free-on-board (FOB) shipping point vs FOB destination** changes when control passes and revenue is booked (at shipment vs at delivery); example: an automaker using FOB shipping point can record quarter-end sales as soon as cars leave the factory, even if dealers receive them next period.
 	2. **Channel stuffing** records sales by pushing excess goods to intermediaries before real end-customer demand exists; example: Bristol-Myers Squibb shipped unusually large drug volumes to wholesalers to hit revenue targets, later reversing sales when inventories did not clear.
-	3. **Bill-and-hold arrangements** book revenue before goods/services are delivered or performance is complete; example: Byju\u2019s recognized the full value of multi-year course subscriptions upfront rather than over the teaching period, so when auditors forced deferral over the contract life, reported income dropped sharply, revealing timing-driven earnings.
+	3. **Bill-and-hold arrangements** book revenue before goods/services are delivered or performance is complete; example: Byju's recognized the full value of multi-year course subscriptions upfront rather than over the teaching period, so when auditors forced deferral over the contract life, reported income dropped sharply, revealing timing-driven earnings.
 2. **INVENTORY:**
 	1. **FIFO vs weighted-average affects earnings mechanically through COGS timing**: in rising price environments FIFO reports lower COGS and higher profits because older, cheaper inventory flows to the income statement first, a tailwind seen in commodity retailers and refiners during inflationary cycles (e.g., post-2021 energy and metals price spikes).	
 	2. **Balance sheet relevance vs income statement realism trade-off**: Under FIFO, ending inventory consists of the most recent purchases, so its book value reflects near-current replacement cost, making the balance sheet closer to what the firm would actually pay to restock today. FIFO produces inventory values closer to current replacement cost, making the balance sheet more relevant, while weighted-average produces COGS closer to current costs, making gross margin more economically meaningful and less inflated by price-level gains.	
@@ -607,7 +622,7 @@ Balance Sheet
 ### MARKET ORGANISATION 
 
 1. **Financial Assets vs. Real Assets**: Financial assets are paper or digital claims on cash flows (stocks, bonds, derivatives), while real assets are tangible physical things that produce value directly (factories, land, gold).
-   *Example: A share of Apple stock is a financial asset (a claim on Apple\u2019s profits); the factory where Apple assembles iPhones is a real asset.*
+   *Example: A share of Apple stock is a financial asset (a claim on Apple's profits); the factory where Apple assembles iPhones is a real asset.*
 2. **Debt Securities**: These are simply IOUs where the borrower promises to repay the principal plus interest. They are legally binding contracts.
    *Example: You buy a \$1,000 corporate bond that pays 5% interest. The company legally owes you \$50 a year plus your \$1,000 back at the end.*
 3. **Equity Securities**: These represent ownership in a company. Common stock gives you a residual claim (you get what's left after debts are paid) and voting rights. Preferred stock is a hybrid: it pays fixed dividends like a bond but usually has no voting rights.
@@ -649,8 +664,8 @@ Balance Sheet
 33. Immediate-or-Cancel (IOC) allows for partial execution; the unfilled portion is cancelled immediately.
 34. All-or-Nothing (AON) requires full execution but does not mandate immediacy; the order can wait on the book until the full size is available.
 35. **Fill-or-Kill (FOK) combines two constraints: the order must be filled in its **Entirety** (Fill-or-Kill part) and **Immediately** (Implied by Kill).
-36. If you use your rights, your ownership stays the same; if you don\u2019t, your stake gets diluted, but you can sell the rights for cash so you are not worse off in value terms. Market signal: rights offerings are often viewed as weaker than public offerings because they are commonly used when firms want cheap capital quickly or have limited access to external equity markets.
-37. IPO includes - Newly issued shares sold by the company, and potentially shares sold by the company\u2019s founders and early investors.
+36. If you use your rights, your ownership stays the same; if you don't, your stake gets diluted, but you can sell the rights for cash so you are not worse off in value terms. Market signal: rights offerings are often viewed as weaker than public offerings because they are commonly used when firms want cheap capital quickly or have limited access to external equity markets.
+37. IPO includes - Newly issued shares sold by the company, and potentially shares sold by the company's founders and early investors.
 38. **Initial margin** is the money you must put in at the start to open a leveraged position; example: if a stock costs $100 and initial margin is 40%, you pay $40 and borrow $60.
 39. **Maintenance margin** is the minimum equity you must keep after the trade is open; example: if maintenance margin is 25%, your equity must always be at least $25 on a $100 stock, or you get a margin call.
 40. **Variation margin** is the daily cash adjustment based on price changes, common in futures; example: if your futures position loses $5 today, you must pay $5 today to restore the margin balance.
@@ -658,24 +673,24 @@ Balance Sheet
 
 
 ### SECURITY MARKET INDEXES
-1. **Price return vs total return**: A price return index reflects only changes in constituent prices, while a total return index assumes all dividends and interest are reinvested. The headline **S&P 500** is a price return index, while **Germany\u2019s DAX** is quoted as a total return index, which is why na�ve comparisons are misleading. ==At inception PRI = TRI.==
+1. **Price return vs total return**: A price return index reflects only changes in constituent prices, while a total return index assumes all dividends and interest are reinvested. The headline **S&P 500** is a price return index, while **Germany's DAX** is quoted as a total return index, which is why na�ve comparisons are misleading. ==At inception PRI = TRI.==
 
 2. **Price return index level**
 $$  V_{PRI}=\frac{\sum_{i=1}^{N} n_i P_i}{D}$$
-  The **divisor (D)** is **defined at inception** to scale the index to a base value. Its **numerical value is later adjusted only to maintain continuity** when mechanical events occur (stock splits, spin-offs, constituent changes), so the index does not show artificial gains or losses. Real-world hook: in the **Dow Jones Industrial Average**, Apple\u2019s stock split changed its price but not its economic value; the adjusted divisor prevented the Dow from falsely jumping.
+  The **divisor (D)** is **defined at inception** to scale the index to a base value. Its **numerical value is later adjusted only to maintain continuity** when mechanical events occur (stock splits, spin-offs, constituent changes), so the index does not show artificial gains or losses. Real-world hook: in the **Dow Jones Industrial Average**, Apple's stock split changed its price but not its economic value; the adjusted divisor prevented the Dow from falsely jumping.
 3. **Price return (security or index)**: Measures only price change.  $$PR_i=\frac{P_{i1}-P_{i0}}{P_{i0}}$$, and at the index level $PR_I=\sum w_i PR_i$. Dividends/interest are ignored.
     
 4. **Total return = what investors actually earn**: Adds income to price change.    $$TR_I=\frac{V_{PRI1}-V_{PRI0}+Inc_I}{V_{PRI0}}$$Over time, total return always exceeds price return when dividends exist.
 
 ### MODULE 41.1: MARKET EFFICIENCY
-1. In an efficient market, prices already reflect all available information, so they\u2019re fair estimates of value; the return you earn is just pay for risk, not for being clever \u2014 in short, you can\u2019t consistently beat the market.
+1. In an efficient market, prices already reflect all available information, so they're fair estimates of value; the return you earn is just pay for risk, not for being clever \u2014 in short, you can't consistently beat the market.
 2. When markets are efficient, passive investing makes sense because active trading gets eaten up by fees and costs; only when prices are genuinely wrong does active investing have a chance to add value.
 3. Prices move only on surprises, not on expected news: earnings up 45% is good, bad, or irrelevant depending entirely on what the market had already priced in.
-4. Market value is the asset\u2019s current price, while intrinsic (fundamental) value is what a fully informed, rational investor would be willing to pay; in highly efficient markets, the two usually line up, but in less efficient markets active investors try to buy below intrinsic value and sell above it.  
+4. Market value is the asset's current price, while intrinsic (fundamental) value is what a fully informed, rational investor would be willing to pay; in highly efficient markets, the two usually line up, but in less efficient markets active investors try to buy below intrinsic value and sell above it.  
 5. Intrinsic value is based on fundamentals \u2014 for a bond, this means coupon, maturity, default risk, liquidity, and other key characteristics. Intrinsic value is constantly changing as new (unexpected) information becomes available.
 6. **Information + attention**: markets are more efficient when lots of participants track them and when information is public, timely, and equally available. Fewer analysts, poor disclosure, or selective leaks ⟶ slower price adjustment and mispricing.    
 7. **Ability to trade and correct prices**: arbitrage and short selling pull prices back to fair value, but only if trading is easy. High transaction costs, low liquidity, funding limits, or short-sale constraints let wrong prices survive.   
-8. **Costs decide real efficiency**: markets are efficient if, **after all information, trading, and funding costs**, no positive risk-adjusted returns are left. Beating the market before fees doesn\u2019t count if you lose after fees.
+8. **Costs decide real efficiency**: markets are efficient if, **after all information, trading, and funding costs**, no positive risk-adjusted returns are left. Beating the market before fees doesn't count if you lose after fees.
 9. When we talk about market efficiency ⟶ We talk about return adjusted for risk. For this you need a model for expected returns such as CAPM. 
 10. **Weak Form Efficiency:**
 8. **Costs decide real efficiency**: markets are efficient if, **after all information, trading, and funding costs**, no positive risk-adjusted returns are left. Beating the market before fees doesn’t count if you lose after fees.
@@ -692,7 +707,7 @@ $$  V_{PRI}=\frac{\sum_{i=1}^{N} n_i P_i}{D}$$
 	2. You just can't beat the market.
 14. Tests indicate that mutual fund performance has been inferior to that of a passive index strategy.
 15. The majority of evidence is that anomalies are not violations of market efficiency but are due to the research methodologies used. 
-16. **Event studies test semi-strong efficiency**: they ask whether you can make abnormal profits after public news. In developed markets, prices adjust almost immediately, so the null holds. *Example*: Apple launches a new iPhone, the stock barely moves on launch day because it\u2019s already priced in. In less efficient markets, even well-known events (like Diwali sales numbers) can lead to slow, multi-day price reactions.
+16. **Event studies test semi-strong efficiency**: they ask whether you can make abnormal profits after public news. In developed markets, prices adjust almost immediately, so the null holds. *Example*: Apple launches a new iPhone, the stock barely moves on launch day because it's already priced in. In less efficient markets, even well-known events (like Diwali sales numbers) can lead to slow, multi-day price reactions.
 17. Market Anomalies break market efficiency. Momentum is an anomaly. Small cap outperforming Large cap is an anomaly (Size Effect). Low P/E ratio stocks outperform High P/E ones (Value Effect). Price action die to earning surprises persist for days, IPOs are typically underpriced, NAV of closed end MF is undervalued. 
 18. **Information cascade**: less-informed investors copy early, better-informed traders; if the early movers truly have superior information, this herding can actually help prices move closer to intrinsic value rather than distort them.
 
@@ -701,13 +716,13 @@ $$  V_{PRI}=\frac{\sum_{i=1}^{N} n_i P_i}{D}$$
 1. When capital flows freely across borders, markets are said to be integrated.
 2. Listing on a foreign exchange increases firm transparency because of more disclosures and firm's publicity. 
 3. Direct investing is buying foreign firm's stock on a foreign exchange. The investment and return are denominated in a foreign currency.
-4. A **depository receipt** lets you own a foreign company while trading in your local market and currency; a depository bank holds the actual foreign shares and handles dividends and corporate actions. You buy **Toyota Motor Corporation ADR (TM)** on the NYSE in USD. The real Toyota shares trade in Japan, while **JPMorgan** holds those shares, converts Toyota\u2019s yen dividends into dollars, and pays them to ADR holders.
+4. A **depository receipt** lets you own a foreign company while trading in your local market and currency; a depository bank holds the actual foreign shares and handles dividends and corporate actions. You buy **Toyota Motor Corporation ADR (TM)** on the NYSE in USD. The real Toyota shares trade in Japan, while **JPMorgan** holds those shares, converts Toyota's yen dividends into dollars, and pays them to ADR holders.
 5. Sponsored DR: issued with company involvement; investors usually get voting rights and better disclosure. Unsponsored DR: issued without company involvement; voting rights stay with the bank and disclosures are lighter.
-6. Global Depository Receipts are issued **outside both the firm\u2019s home country and the U.S.**, typically trade in **London or Luxembourg**, ==are often **USD-denominated**==, and avoid capital-flow restrictions\u2014making it easier for global investors to invest. Firms list them where investors already recognize the company. **Tata Motors** has GDRs traded in **London**, letting international investors buy exposure to Tata Motors in USD without dealing with Indian market restrictions.
+6. Global Depository Receipts are issued **outside both the firm's home country and the U.S.**, typically trade in **London or Luxembourg**, ==are often **USD-denominated**==, and avoid capital-flow restrictions\u2014making it easier for global investors to invest. Firms list them where investors already recognize the company. **Tata Motors** has GDRs traded in **London**, letting international investors buy exposure to Tata Motors in USD without dealing with Indian market restrictions.
 7. **ADRs** trade in the U.S., in USD, and usually require SEC registration. ==Some are also privately placed (Rule 144A or Regulation S receipts)==. **ADS (American Depository Share)**: the **actual underlying share** of the foreign company that sits in its **home market**.
 8. Level I ADR trade OTC, and cheap to list. Level II ADR trade on Exchanges and are expensive to list. Both these CANNOT raise capital in US.
 9. Level III is listed on exchange and CAN raise capital in US.
-10. If it\u2019s listed publicly, SEC is involved. In all Level I, II and III, SEC registration is required.
+10. If it's listed publicly, SEC is involved. In all Level I, II and III, SEC registration is required.
 11. Rule 144A allows private listing. It is cheap and SEC is not involved. It can raise capital in US. 
 ### **MODULE** 43.2: REVENUE, PROFITABILITY,AND CAPITAL
 
@@ -852,7 +867,7 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 12. Overnight repo = one-day repo; term repo = repo longer than one day. Repo rates are usually lower than unsecured bank loans because the loan is backed by high-quality collateral (often government bonds).
 13.  Repo rates are usually lower when the collateral liquidity is high and the collateral is physically delivered to the lender. Repo rates are usually higher when the term is high and when interest rates for alternative sources of funds are higher.
 14.  Tri-party repo = repo where a third party (clearing bank/CCP) handles collateral custody, valuation, and margining; example: an Indian bank borrows overnight via repo using G-secs, while CCIL sits in the middle holding the bonds and settling cash.
-15. Reverse repo = the lender\u2019s side of a repo; example: a bank parks excess cash with the RBI, receives G-secs as collateral, and earns the reverse repo rate as interest.
+15. Reverse repo = the lender's side of a repo; example: a bank parks excess cash with the RBI, receives G-secs as collateral, and earns the reverse repo rate as interest.
 16.  Tri Party repos protect against the following kinds of risks:
 	- Default risk = the borrower takes cash today and fails to repurchase the collateral later, forcing the lender to sell the collateral to recover money.
 	- Collateral risk = the value of the collateral falls sharply before it can be sold, so even after liquidation it does not fully cover the cash lent.
@@ -878,7 +893,7 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 9. Inflation-linked debt shifts inflation risk to the issuer; nominal fixed-rate debt shifts inflation risk to investors.
 10. Sovereign issuance is done via regular public auctions to signal transparency and price discovery. Competitive bids specify both price and quantity; noncompetitive bids accept the auction price and are guaranteed allocation.
 11. Government auctions INR 1,000 crore of a 10-year bond; competitive bidders submit bids like \u201cINR 300 crore at 7.10%,\u201d \u201cINR 400 crore at 7.15%,\u201d \u201cINR 500 crore at 7.25%.\u201d Because the auction cleared (filled the quota) at the 7.25% tier, 7.25% is the cutoff yield.
-12. In a \u201csingle-price\u201d auction (also known as a Dutch auction), everyone pays the same yield\u2014the highest yield accepted to sell the entire offering. If the government needs to sell bonds and the clearing rate is 4.0%, a bidder who aggressively bid 3.8% still gets the bonds at 4.0%, which encourages more aggressive bidding by removing the fear of overpaying. In a \u201cmultiple-price\u201d auction, winning bidders pay exactly what they bid; if you bid 3.8% and the clearing rate was 4.0%, you are stuck earning 3.8% while others earn more. This structure can reduce aggressive bidding because investors fear the \u201cwinner\u2019s curse\u201d\u2014winning the auction but paying a price worse than the market average.
+12. In a \u201csingle-price\u201d auction (also known as a Dutch auction), everyone pays the same yield\u2014the highest yield accepted to sell the entire offering. If the government needs to sell bonds and the clearing rate is 4.0%, a bidder who aggressively bid 3.8% still gets the bonds at 4.0%, which encourages more aggressive bidding by removing the fear of overpaying. In a \u201cmultiple-price\u201d auction, winning bidders pay exactly what they bid; if you bid 3.8% and the clearing rate was 4.0%, you are stuck earning 3.8% while others earn more. This structure can reduce aggressive bidding because investors fear the \u201cwinner's curse\u201d\u2014winning the auction but paying a price worse than the market average.
 13. Issuers wanting to minimize yield volatility often prefer single-price auctions; bidders shade less.
 14. On-the-run bonds = most recently issued securities at a given maturity; most liquid, used as benchmarks for risk-free rates. ==Yield curves in practice are built off on-the-run sovereign bonds, not off older illiquid issues.==
 15. Primary dealers are designated banks obligated to bid in auctions and make secondary markets; they act as transmission channels for monetary policy. Central banks interact with primary dealers as counterparties when conducting open-market operations.
@@ -890,12 +905,12 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 4. Between resets the bond still trades in the market and its price can move above or below par.
 5. It trades **below par** when the quoted margin is too low for current market conditions or issuer risk; example: an FRN pays SOFR + 150 bps, but new FRNs from similar issuers are coming at SOFR + 200 bps, so investors mark the old bond down to 98 so its yield matches the higher required spread.
 6. **Quoted margin** is the fixed spread added to the reference rate that defines the coupon on a floating-rate note; example: a FRN pays 3-month LIBOR + 150 bps, so if LIBOR is 5%, the coupon rate is 6.5%, and the 150 bps is the quoted margin written into the bond contract.    
-7. **Discount margin** is the spread over the reference rate that makes the present value of all future cash flows equal to the bond\u2019s current market price; example: if the same FRN (LIBOR + 150 bps) trades below par at 98, investors effectively earn LIBOR + 180 bps, and the extra 30 bps over the quoted margin is captured by the discount margin.
+7. **Discount margin** is the spread over the reference rate that makes the present value of all future cash flows equal to the bond's current market price; example: if the same FRN (LIBOR + 150 bps) trades below par at 98, investors effectively earn LIBOR + 180 bps, and the extra 30 bps over the quoted margin is captured by the discount margin.
 8. During issuance, QM = DM. If issuer credit quality deteriorates DM > QM, vice versa.
 
 
 > [!question] NUMERICAL
-> A $100,000 FRN with a semiannual coupon pays a 180-day MRR plus a quoted margin of 120 basis points. On a reset date with five years remaining to maturity, the 180-day MRR is quoted as 3.0% (annualized), and the discount margin (based on the issuer\u2019s current credit rating) is 1.5% (annualized). Estimate the value of the FRN.
+> A $100,000 FRN with a semiannual coupon pays a 180-day MRR plus a quoted margin of 120 basis points. On a reset date with five years remaining to maturity, the 180-day MRR is quoted as 3.0% (annualized), and the discount margin (based on the issuer's current credit rating) is 1.5% (annualized). Estimate the value of the FRN.
 > 
 > ---
 > 
@@ -936,7 +951,7 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 
 ### MODULE 65.1: MORTGAGE-BACKED SECURITY (MBS) INSTRUMENT AND MARKET FEATURES
 
-1. **Prepayment Risk:** You own a callable bond (and interest rate falls) ⟶ They prepay and buy back their now cheaper bond issued at a high interest rate. Interest Rate falls to 2% and you take a cheaper loan and payback your expensive loan. For the bond investor, high-coupon mortgage cash flows disappear right when they\u2019re most valuable, that is why a **risk**.
+1. **Prepayment Risk:** You own a callable bond (and interest rate falls) ⟶ They prepay and buy back their now cheaper bond issued at a high interest rate. Interest Rate falls to 2% and you take a cheaper loan and payback your expensive loan. For the bond investor, high-coupon mortgage cash flows disappear right when they're most valuable, that is why a **risk**.
 2. **Extension Risk:** Interest Rate \u2191, Duration \u2193 and Price \u2193. Bond sellers (borrowers) won't exercise their call option. Expected cash-flows get extended. The market rate is higher but the bond buyer (investor) keeps receiving scraps from mortgages issued at low rates.
 3. **Contraction Risk:** Interest Rate \u2193, Duration \u2191 and Price \u2191. Prepayments speed up.  Bond sellers (borrowers) will exercise their call option. Cash-flows would arrive sooner than expected.
 4. Because the prices of MBS reflect expectations for prepayments in low-rate environments, they will not rise as much in response to decreasing interest rates as other fixed-income instruments that do not have an embedded prepayment option.
@@ -949,9 +964,9 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 7. When **payments speed up**, principal rushes in. Tranch S is unaffected (it was already on the front line to get paid off). The contraction risk gets pushed to back of the line Tranch L. 
 8. When **payments slow down (rates rise)**, prepayments stagnates. Tranch L is unaffected (it was already on the back of the line to get paid off). The extension risk hurts the front of the line.
 9. If I take a loan of $100 against and pledge my asset of $200, my Loan to Value (LTV) is 200/100 = 2. 
-10. A mortgage of USD 300,000 has an annual interest rate of 6%, is to be repaid monthly over 25 years, and the borrower\u2019s annual pretax gross income is $80,000. Calculate DTI. Here, PV=-300,000, FV = 0, N = 25�12 = 300, I/Y = 6/12 = 0.5. This gives PMT = 1932. DTI = (1932 * 12) / 80000 = 0.289 ~ 28.9 %
+10. A mortgage of USD 300,000 has an annual interest rate of 6%, is to be repaid monthly over 25 years, and the borrower's annual pretax gross income is $80,000. Calculate DTI. Here, PV=-300,000, FV = 0, N = 25�12 = 300, I/Y = 6/12 = 0.5. This gives PMT = 1932. DTI = (1932 * 12) / 80000 = 0.289 ~ 28.9 %
 11. Prime loans are made to creditworthy people, subprime loans are made to broke people.
-12. Residential mortgages are different because you **can\u2019t freely prepay**. If you do, you **pay a penalty**,. They can be **recourse or non-recourse**: in recourse loans, the lender can **come after your other assets**; in non-recourse, they\u2019re **stuck with just the house**.
+12. Residential mortgages are different because you **can't freely prepay**. If you do, you **pay a penalty**,. They can be **recourse or non-recourse**: in recourse loans, the lender can **come after your other assets**; in non-recourse, they're **stuck with just the house**.
  13. A 30-year US home loan that meets standards gets pooled and guaranteed by **Fannie Mae** or **Freddie Mac**. These **Agency RMBS** are backed either **directly by the government** or by **government-sponsored agencies** (quasi-government companies). Credit risk is basically **off your plate**. Non-agency RMBS: private-issued, no government/GSE backstop ⟶ investors eat credit risk. **2008:** subprime RMBS (e.g., Lehman Brothers) blew up; defaults surged, protections failed, MBS holders lost money.
  14. Mortgage pass-through = claim on cash flows from a pool of mortgages, net of admin fees. Pool can have any number of mortgages; each is a securitized mortgage.
  15. Mortgage A has an outstanding principal of USD 80, a coupon rate of 6%, and a final maturity of 30 years. Mortgage B has an outstanding principal of USD 20, a coupon rate of 4%, and a final maturity of 15 years. Total outstanding principal in the pool is USD 100. Weighted average coupon (WAC) = (80/100 � 6%) + (20/100 � 4%) = 5.6%. Weighted average maturity (WAM) = (80/100 � 30) + (20/100 � 15) = 27 years.
@@ -960,7 +975,7 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 > Outstanding and NOT beginning principal, while calculating weights.
 
 16. A **Collaterized Mortgage Obligation (CMO) is a tranched MBS**. The **underlying cash flows are the same** mortgages. What changes is **how those cash flows are split and ordered**. Senior tranche gets paid first and lowest tranche gets paid the last. Total prepayment risk stays the same; it is redistributed across tranches.
-17. **Z-tranche** = a CMO tranche that gets no cash interest at first.   During this phase, interest is not paid out; it is **added to principal** instead. Suppose Start: principal = USD 100, coupon = 5%. End of year: no cash paid, principal becomes USD 105. You didn\u2019t get money; your claim just got bigger.
+17. **Z-tranche** = a CMO tranche that gets no cash interest at first.   During this phase, interest is not paid out; it is **added to principal** instead. Suppose Start: principal = USD 100, coupon = 5%. End of year: no cash paid, principal becomes USD 105. You didn't get money; your claim just got bigger.
 18. So the bond grows silently while other tranches take the cash. After the accrual period, Z-tranche starts receiving normal interest and principal payments. Z-tranche is usually last in line. It sacrifices early cash so other tranches get paid first.     
 19. Principal-only (PO) securities and Interest-only (IO) securities are **interest-rate / prepayment bets**, not boring bonds. - If rates fall, people refinance ⟶ **prepayments speed up**.
 20. You get **only interest payments**, no principal. You want loans to **stay alive as long as possible**. If rates rise or stay high ⟶ prepayments slow ⟶ **more coupon checks**. Used by investors who want to **bet on rising/stable rates and slow prepayments**.
@@ -968,7 +983,7 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 - Principal comes back **faster**, IRR shoots up.
 
 ### HEDGE FUNDS
-1. **Commingled funds** = multiple clients\u2019 money pooled together and invested as one portfolio; each client owns a proportional share, not specific securities. Eg: Mutual Fund
+1. **Commingled funds** = multiple clients' money pooled together and invested as one portfolio; each client owns a proportional share, not specific securities. Eg: Mutual Fund
 2. **SMA** = one client, one portfolio. Not pooled. You directly own the securities. Risk preferences can be tailored. Higher than commingled funds due to customization and admin.
 3. Hedge Fund Strategies: A **convertible bond** = bond floor (interest + principal) + call option on stock. Buy INR 1000 convertible of XYZ paying coupons + right to convert into shares. Short **XYZ stock** in the right ratio (delta-hedge). _Example_: If bond acts like 0.4 shares, short 0.4 XYZ.
 4. Fund-of-funds is a hedge fund invested in multiple hedge funds. **Fee layering** = you pay fees twice in a fund-of-funds: once to the FoF manager, again to the underlying hedge funds.
@@ -1001,7 +1016,7 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 	- Capital Deployment Phase: Startup is investing and conquering the market aggressively. **ROI is negative.** 
 	- Capital Distribution Phase: **ROI turns positive.** Investors earn dividends.
 2. The above life-cycle is characterised by J-curve. Start from 0, do gown and then steeply climb upwards.
-3. Given the variability of cash flows over a fund\u2019s life and the importance of management decisions in the timing and magnitude of after-tax cash flows, **an IRR over the life of a fund is the most appropriate measure of after-tax investment performance.**
+3. Given the variability of cash flows over a fund's life and the importance of management decisions in the timing and magnitude of after-tax cash flows, **an IRR over the life of a fund is the most appropriate measure of after-tax investment performance.**
 4. A simpler measure of investment success�**is the multiple of invested capital (or money multiple)**�- the ratio of total capital returned plus the value of any remaining assets, to the total capital paid in over the life of the investment.
 5. Suppose I have $V_0$ and I borrow $V_B$ at rate $r_b$. I make $r$ on my total investment.
 	- My net return: Money I made - Money I owe (b/c I borrowed) = $r \times (V_0 + V_B) - r_b \times V_B$
@@ -1023,7 +1038,7 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 > BJI Funds is a hedge fund with a value of $110 million at initiation. BJI Funds charges a 2% management fee based on assets under management at the beginning of the year and a 20% performance fee with a 5% soft hurdle rate, and uses a high-watermark. Performance fees are calculated on gains net of management fees. The year-end values before fees are as follows: 
 >     **Year 1:** $100.2 million 
 >     **Year 2:** $119.0 million 
-> Calculate the total fees and the investor\u2019s after-fee return for both years.
+> Calculate the total fees and the investor's after-fee return for both years.
 > 
 > ---
 > 
@@ -1033,12 +1048,12 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 
 
 > [!Question] NUMERICAL
-> An investor makes a total investment of $60 million in a fund-of-funds that has a \u201c1 and 10\u201d fee structure, with management and performance fees calculated independently based on year-end values. Of the $60 million investment, $40 million is allocated to the Alpha fund and $20 million is allocated to the Beta fund. One year later, the value of the Alpha fund investment is $45 million, and the value of the Beta fund investment is $28 million, both net of fund fees. Calculate the investor\u2019s return for the year net of fees.
+> An investor makes a total investment of $60 million in a fund-of-funds that has a \u201c1 and 10\u201d fee structure, with management and performance fees calculated independently based on year-end values. Of the $60 million investment, $40 million is allocated to the Alpha fund and $20 million is allocated to the Beta fund. One year later, the value of the Alpha fund investment is $45 million, and the value of the Beta fund investment is $28 million, both net of fund fees. Calculate the investor's return for the year net of fees.
 
 
 > [!question] NUMERICAL
 > A private equity fund invests $100 million in a venture company that is sold for $130 million. The fund also invests $100 million in an LBO that goes poorly and is liquidated for $80 million.
-> If the carried interest performance fee for the GP is 20% and there is no clawback provision, calculate the investor\u2019s return after performance fees, assuming the investment outcomes are realized in the same year under the following:
+> If the carried interest performance fee for the GP is 20% and there is no clawback provision, calculate the investor's return after performance fees, assuming the investment outcomes are realized in the same year under the following:
 a. An American-style (deal-by-deal) waterfall structure
 b. A European-style (whole-of-fund) waterfall structure
 
@@ -1053,10 +1068,10 @@ b. A European-style (whole-of-fund) waterfall structure
 1. The following are financial risks (CMLI):
 	- **Credit risk** \u2013 The other side may not pay. _Example:_ A company sells goods on credit; the buyer goes bankrupt and never pays.
 	- **Market risk** \u2013 Prices move against you. _Example:_ Equity prices fall in a recession; bond prices fall when interest rates rise.
-	- **Liquidity risk** \u2013 You can\u2019t sell fast without taking a big price hit. _Example:_ You hold a small-cap stock; in a panic market, you sell much lower than its fair value.   
+	- **Liquidity risk** \u2013 You can't sell fast without taking a big price hit. _Example:_ You hold a small-cap stock; in a panic market, you sell much lower than its fair value.   
 	- **Interest rate risk**: Risk of prepayments or higher opportunity cost of capital.
 2. The following are non-finacial risks (*SolRegPolLegModTailOper*):	 
-	- **Solvency risk** \u2013 The firm runs out of cash and can\u2019t survive. _Example:_ A company can\u2019t pay salaries or debt interest and goes bankrupt.    
+	- **Solvency risk** \u2013 The firm runs out of cash and can't survive. _Example:_ A company can't pay salaries or debt interest and goes bankrupt.    
 	- **Regulatory risk** \u2013 Rules change and hurt the business. _Example:_ A new capital requirement forces banks to raise equity or cut lending.    
 	- **Political / tax risk** \u2013 Government actions outside normal regulation hurt profits. _Example:_ Sudden tax hike reduces after-tax earnings of companies.    
 	- **Legal risk** \u2013 Future lawsuits or legal action cause losses.   _Example:_ A firm is sued for mis-selling products and pays heavy penalties.    
