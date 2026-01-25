@@ -316,9 +316,94 @@ When a company has issued any financial instruments that are potentially convert
 > [!danger] DO NOT MAKE THIS MISTAKE
 > Inventory and A/C Payables Turnover use COGS as numerator
 
+### MODULE 30.1: MODULE 30.1: CASH FLOW INTRODUCTION AND DIRECT METHOD CFO
+
+```
+Revenue = 104,000
+COGS = 40,000
+Wages = 5000
+Change in Wages Payable = -3500 
+Interest = 1000
+Change in Interest Payable = 500 
+Tax = 20000 
+Change in Tax Payable = 1000 
+Change in DTL = 5000
+Cash Collected from Customers = Revenue + Increase in Unearned Revenue - Increase in AR = 104,000 + 4,000 - 1000 = 107,000
+
+Cash Paid to Suppliers = COGS + Increase in Inventory - Increase in AP = 40,000 - 2000 - 4000 = 34000
+
+Wages paid in cash = 5000 + 3500 = 8500
+Interest paid in cash = 5000 + 3500 = 500
+Taxes paid in cash = 20000 - 5000 - 1000 = 14000
+
+
+
+```
+
+### MODULE 30.2: INDIRECT METHOD CFO
+
+
+> [!abstract] MEMORISE THIS FOR EFFICIENCY
+> Your brain should hear: **Net Income → Remove non-operating → Undo Non Cash → Fix EC timing → CFO.**
+> 				 **==CFO = NI or PAT + NCC - $\Delta$ WC==**
+> Indirect method is NOT preferred by either US GAAP or IFRS 
+> **US GAAP requires disclosure of cash paid for interest and income taxes**, while **IFRS encourages (but does not mandate) similar disclosure**. 
+> 
+
+1. Indirect CFO = “net income (accrual story)” converted into “cash reality” by 
+		 - Removing stuff that isn’t operating, **Gain on sale of equipment / land** is removed from CFO because the cash from sale is shown in investing.
+		 - Undoing expenses/gains/losses that didn’t move cash. Things like depreciation reduce Net Income but don't cost actual cash. We must **add them back**
+		 - Adjust for timing in working capital: 
+			 - Increase in current operating asset → subtract from NI; decrease → add. Current Asset could be A/R or Inventory.
+			 - Increase in current operating liability → add to NI; decrease → subtract. Current liability could be A/P or Wages Payable.
+		 - Fixing timing mismatches created by working capital accruals. Your brain should hear: **Net Income → Remove non-operating → Undo Non Cash (NCC) → Fix WC timing ($\Delta WC$) → CFO.**
+	
+	
+> [!TIP] HAMMER THIS INTO YOUR HEAD
+> **Closing Anything = Opening Anything + Inflow (Purchase) - Outflow (Write Off / Sale)**
+> What remains in closing, is the net of what you added to opening plus what you removed from opening. This will help you solve a lot of questions. You can calculate any variable by re-arranging the equation above
+
+2. Memorize what should be added and subtracted
+	  ==**Subtract the gains and Add the losses**== (We are reversing).
+	  ==**Subtract the Asset Increase and Add the Asset Decrease**== (We are reversing).
+	  ==**Subtract the Liability Decrease and Add the Liability Increase**== (We are reversing).
+
+| **Stuff to be added:**                   | **Stuff to be subtracted:**              |
+| ---------------------------------------- | ---------------------------------------- |
+| Depreciation, Amortization and Depletion | Anything that eats into a liability      |
+| Loss on sale of land, PPE                | Gain on sale of land, PPE                |
+| Asset Impairment, write-down             | Reversal of asset Impairment, write-down |
+| Decrease in DTA<br>                      | Increase in DTA                          |
+| Increase in DTL<br>                      | Decrease in DTL                          |
+| **Losses** on Prepayment of Debt         | **Gains** on Prepayment of Debt          |
+3. Fix timing of working capital (**==Subtract change in working capital==**):
+	- Operating assets move opposite to cash; operating liabilities move with cash.
+	- Working capital (for CFO–indirect) = **current operating assets − current operating liabilities**.
+	- **Inventory up = cash trapped → CFO down,   Inventory down = cash released → CFO up**
+
+> [!QUESTION] Question
+> A company reports net income of 1,000 for the year. Depreciation expense recorded during the year is 200. Accounts receivable increased by 150 over the period. Calculate cash flow from operating activities using the indirect method.
+> NI = 1000, NCC = 200, $\Delta$ WC = 150
+> CFO = 1000 + 200 - 150 = 1050
+> ---
+> A firm shows net income of 2,000. During the year, inventory increased by 300 and accounts payable increased by 180. Using the indirect method, determine cash flow from operating activities.
+> NI = 2000, $\Delta$ WC = 300 - 180 = 120
+> CFO = 2000 - 120 = 1820
+> ---
+> A firm shows Net Income of 39000. Current Depreciation Expense is 7000. Gain on Sale of Land is 10000. Loss on disposal of PP&E is 2000. AR increased by 1000. Inventory decreased by 2000. CL increased by 11,000
+> NI = 39000, NCC = 7000 - 10000 + 2000 = -1000, $\Delta$ WC = 1000 - 2000 - 11000 = -12000.
+> CFO = 39000 - 1000 + 12000 = 50000
+> 
+
+
+
+
+
+
 
 
 ### MODULE 34.1: LEASES
+	
 1. An alternative way to look at a lease is: **taking a loan and buying the asset.**
 2. To be called a lease, a lessee needs to have following characteristics:
 	- Asset must be **Identified** a.k.a it should exist.
@@ -539,16 +624,16 @@ $$  V_{PRI}=\frac{\sum_{i=1}^{N} n_i P_i}{D}$$
 7. **Ability to trade and correct prices**: arbitrage and short selling pull prices back to fair value, but only if trading is easy. High transaction costs, low liquidity, funding limits, or short-sale constraints let wrong prices survive.   
 8. **Costs decide real efficiency**: markets are efficient if, **after all information, trading, and funding costs**, no positive risk-adjusted returns are left. Beating the market before fees doesn’t count if you lose after fees.
 9. When we talk about market efficiency → We talk about return adjusted for risk. For this you need a model for expected returns such as CAPM. 
-10. **Weak Form Efficiency:**
+10. Technical analysis seeks to earn positive risk-adjusted returns by using historical price and volume (trading) data. These guys just harvest risk premia. 
+11. **Weak Form Efficiency:**
 	1. Market prices reflect all the information in the historical market data. An investor cannot achieve positive risk-adjusted returns on average by using technical analysis because past price and volume (market) information will have no predictive power. 
 	2. Trading on fundamentals or Trading on private information can still give you an edge.
-11. Semi-Strong-Form Efficiency:
+12. **Semi-Strong-Form Efficiency**:
 	1. Current security prices fully reflect all **publicly** available market and non information.
 	2. Trading on private information can still give you an edge. 
-12. Strong-Form Efficiency:
+13. **Strong-Form Efficiency**:
 	1. Security prices fully reflect all information from both public and private sources.
 	2. You just can't beat the market.
-13. Technical analysis seeks to earn positive risk-adjusted returns by using historical price and volume (trading) data. These guys just harvest risk premia. 
 14. Tests indicate that mutual fund performance has been inferior to that of a passive index strategy.
 15. The majority of evidence is that anomalies are not violations of market efficiency but are due to the research methodologies used. 
 16. **Event studies test semi-strong efficiency**: they ask whether you can make abnormal profits after public news. In developed markets, prices adjust almost immediately, so the null holds. *Example*: Apple launches a new iPhone, the stock barely moves on launch day because it’s already priced in. In less efficient markets, even well-known events (like Diwali sales numbers) can lead to slow, multi-day price reactions.
