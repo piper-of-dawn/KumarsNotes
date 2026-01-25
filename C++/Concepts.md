@@ -1,3 +1,27 @@
+```table-of-contents
+```
+## Lambdas
+```cpp
+[capture](params) mutable noexcept(spec) -> return_type { body }
+```
+- `capture`: captures the variables from the outer scope.
+- `mutable`: Allows you to change the captured variables. By default, it is const.
+- `noexcept`: Force lambda to never throw an exception. Crashes like SEGFAULT can still occur.
+- `spec`: `noexcept` only fires if a condition is met. `noexcept(true)` will always fire.
+
+In C++, each lambda expression generates a unique closure type based on its full signature (parameters, return type) and body (even if bodies differ semantically). Always assign a lambda expression with an `auto` keyword.
+
+```cpp
+auto l1 = [](int x) { return x + 1; };
+auto l2 = [](int x) { return x + 2; }```table-of-contents
+```;  // Same type as l1 (body ignored for type equality)
+
+using T1 = decltype([](int x) { return x + 1; });  // Body included for exact match
+using T2 = decltype([](int x) { return x + 2; });  // Different type from T1
+static_assert(!std::is_same_v<T1, T2>);  // True: bodies differ
+int y = 10;
+auto f = [y](int x) -> int { return x + y; }
+```
 
 ## Difference between Pointers and References
 
@@ -82,16 +106,13 @@ struct Human {
 std::string Human::species = "Homo Sapien";   // defined once, in global scope
 ```
 
-Every `Coord` points to the same `len_x`. No duplication, no per-object copies.
+Every `Human` points to the same `species`. No duplication, no per-object copies.
 
 Static methods obey the same law. Declared inside the class, defined outside with `ClassName::`. One definition, global, or the linker will scream.
 
-This is not optional. It’s the rule.
+## Member Initializer List
 
-### Member Initialiser List
-A member initializer list is where class members are created with values, not assigned later.
-
-It tells C++ how to build each member at object creation time.
+A member initializer list is where class members are created with values, not assigned later. It tells C++ how to build each member at object creation time.
 
 ```cpp
 class Box {
@@ -102,47 +123,35 @@ public:
 
 ```
 size is created directly with s.
-
-  
-
-  
-
-  
-
 Without initializer list (worse)
 
+```cpp
 class Box {
-
     int size;
-
 public:
-
     Box(int s) { size = s; }
-
 };
+```
 
-Member is created first, then overwritten.
+Member is created first, then overwritten ==(Important Nuance)==.
 When it’s required
 - const members
 - references
 - members without default constructors  
 
-class Box {
-
-    const int size;
-
-public:
-
-    Box(int s) : size(s) {}
-
-};
-
-  
-
-  
-
-  
 
 
+## Reading CLI Args
+##### What is argc and argv?
+* `argc`: number of command-line arguments.
+* `argv`: array of C-strings holding those arguments.
+* `argv[0]` is the program name (the executable's name used to start the program).
+* `argv[1]` to `argv[argc-1]` are the actual command-line arguments.
+  Example: running `./myapp arg1 arg2` sets `argv[0]="./myapp"`, `argv[1]="arg1"`, `argv[2]="arg2"`.
 
-Members are built in the initializer list, not in the constructor body.
+```cpp
+int main (int argc, char* argv[]) {
+    
+}
+```
+`char*` is a pointer to a character or to the first character in a C-string (null-terminated array of chars).

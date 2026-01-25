@@ -83,6 +83,88 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 ### MODULE 8.2: TYPES OF HYPOTHESIS TESTS
 
 
+> [!question] Basics — One-Sample Mean Test  
+> **Problem**  
+> An analyst suspects that, in the most recent year, excess returns on stocks have fallen below **5%**. She wants to test whether excess returns are **less than 5%**. Let the population mean be denoted by $\mu$.
+>
+> **Hypotheses**  
+> $$
+> H_0:\ \mu \ge 0.05
+> \qquad
+> H_A:\ \mu < 0.05
+>$$
+>
+> **Appropriate Test**  
+> One-sample, **left-tailed t-test** (population variance unknown).
+>
+> **Significance and Confidence**  
+> Significance level: $\alpha = 5\%$  
+> Confidence level: $1-\alpha = 95\%$
+>
+> **Test Statistic**  
+> $$
+> t = \frac{\bar X - 0.05}{s / \sqrt{n}}, \quad \text{df} = n-1
+>$$
+>
+> **Decision Rule**  
+> Reject $H_0$ if  
+> $$
+> t < -t_{\alpha,\,n-1}
+>$$
+> (left-tail rejection region).
+
+
+> [!Question] Basics - Difference between Means
+> Sue Smith is investigating whether the abnormal returns for acquiring firms during merger announcement periods differ for horizontal and vertical mergers. She estimates the abnormal returns for a sample of acquiring firms associated with horizontal mergers and a sample of acquiring firms involved in vertical mergers. Smith finds that abnormal returns from horizontal mergers have a **mean of 1.0%** and a **standard deviation of 1.0%**, while abnormal returns from vertical mergers have a **mean of 2.5%** and a **standard deviation of 2.0%**. Smith assumes the samples are independent, the population means are normally distributed, and the population variances are equal. Smith calculates the **t-statistic as −5.474** and the **degrees of freedom as 120**. Using a 5% significance level, should Smith reject or fail to reject the null hypothesis that the abnormal returns to acquiring firms during the announcement period are the same for horizontal and vertical mergers?
+> 
+> **Hypotheses**
+> > $$H_0: \mu_H - \mu_V = 0 \qquad H_A: \mu_H - \mu_V \neq 0$$
+> 
+> **Appropriate Test**
+> t-test for independent population with known variance
+> 
+> **Test Statistic**
+> -5.474
+> 
+> **Decision Rule**
+> Reject if: $$ |t| > t_{0.975,\ 120}$$
+> $t_{0.975,\ 120} = 1.979$
+> 
+> Hence $H_0$ is rejected
+
+
+> [!QUESTION] Basics - Difference between Means
+> Joe Andrews is examining changes in estimated betas for the common stock of companies in the telecommunications industry before and after deregulation. Andrews believes the betas may decline because of deregulation, because companies are no longer subject to the uncertainties of rate regulation—or that they may increase because there is more uncertainty regarding competition in the industry. Andrews calculates a t-statistic of 10.26 for this hypothesis test, based on a sample size of 39. Using a 5% significance level, determine whether there is a change in betas.
+
+
+
+
+> [!question] One-tailed vs Two-tailed Test Selection  
+> A manager tests whether a portfolio’s mean monthly return is **greater than 1%** using a **one-tailed test at the 5% significance level**. After observing that the sample mean is **below 1%**, she decides to **switch to a two-tailed test** at the same significance level and reassess the result.  
+>  
+> Is this procedure statistically valid? State the **correct decision rule** and identify **which hypothesis test must be used**.
+
+> [!question] Pooled vs Unpooled Variance Decision  
+> Two **independent samples** of returns have **unknown variances**. Sample A has $n_1 = 18$, Sample B has $n_2 = 22$. The analyst assumes **equal variances** and applies a **pooled t-test**, even though the sample standard deviations differ materially.  
+>  
+> At the **5% significance level**, test whether the population means differ. Identify **whether the test choice is appropriate** and **what error this assumption introduces**.
+
+> [!question] Chi-square Test Tail Direction  
+> An analyst tests whether a fund’s **variance is less than 4%** using **24 monthly return observations** at the **5% significance level**. The calculated **chi-square test statistic falls in the rejection region**, but the analyst compares it against the **upper-tail critical value** instead of the **lower-tail critical value**.  
+>  
+> Should the null hypothesis be rejected? Identify the **exact procedural mistake**.
+
+> [!question] Significance Level vs Confidence Level  
+> A researcher states that using a **1% significance level** means she is **99% confident that the null hypothesis is false** if it is rejected.  
+>  
+> Is this interpretation correct? Restate the **correct probabilistic meaning** of the significance level and confidence level.
+
+> [!question] Type I vs Type II Error Interpretation  
+> An analyst designs a hypothesis test with a **very low significance level** to avoid false positives. As a result, the test rarely rejects the null hypothesis.  
+>  
+> Identify how this choice affects the **probability of a Type II error** and the **power of the test**.
+
+
 ## ECONOMICS
 
 ### MODULE 17.1: INTERNATIONAL TRADE
@@ -450,11 +532,12 @@ Taxes paid in cash = 20000 - 5000 - 1000 = 14000
 	- **Operating lease:** you keep carrying the **physical asset (PP&E at cost − accumulated depreciation)**.
 
 7. Lease receivable is measured as the **present value of future lease payments**, discounted using the **rate implicit in the lease**.
+8. All lease payments represent operating revenues regardless of lease classification. **The entire lease payment (BOTH principal and interest) goes to CFO**
 
 > [!question] QUESTION
 > Financing Lease: $4,000 at each year-end for 3 years for PP&E worth $11,000. Rate implicit in the lease: 6%. Show the treatment in the accounts of the lessor.
 > 
-> PV = $10,692. This will be recorded as **Lease Receivable on Assets side of Balance Sheet** and **PP&E worth $11000 would be derecognized**. The asset swap created a spread of $308. The Equity (liability) must increase by $308 to show this gain. 
+> PV = $10,692. This will be recorded as **Lease Receivable on Assets side of Balance Sheet** and **PP&E worth $11000 would be derecognized**. ==The asset swap created a spread of $308. The Equity (liability) must decline by $308 to show this loss. This "Loss at Lease inception" is also shown on P/L.==
 > 
 > AMORTISATION SCHEDULE
 > 
@@ -466,7 +549,7 @@ Taxes paid in cash = 20000 - 5000 - 1000 = 14000
 > 
 > INCOME STATEMENT:
 > 
-> Y1:	Income from Lease =  $642
+> Y1:	Income from Lease =  $642. Loss on lease inception = $308
 > 
 > CASHFLOW STATEMENT
 > 
@@ -475,10 +558,17 @@ Taxes paid in cash = 20000 - 5000 - 1000 = 14000
 > 
 > BALANCE SHEET
 > 
-> Y1: Lease Receivable drops by 3358 (Asset). Cash Balance increases by 4000 (Asset). Equity increases by 642 (Liability) 
-> 
+> Y1: 
+> - Assets: Lease Receivable is recorded as $10,692. PP&E is derecognized by $11,000. Liability: Equity is decreased by $308.
+> - Lease Receivable drops by 3358 (Asset). Cash Balance increases by 4000 (Asset). Equity increases by 642 (Liability) 
 
-9. IFRS vs US GAAP: lessor balance sheet is basically the same (don’t overthink).
+
+
+> [!QUESTION] QUESTION
+> A lessor buys equipment for **$50,000** on Jan 1, Year 1. It is leased out under an **operating lease** for **3 years** with **annual rent of $12,000 paid at each year-end**. The equipment is depreciated **straight-line over 5 years** with **$0 residual**. Ignore taxes. Required: how the lessor’s **balance sheet impact** at the end of **Year 1, Year 2, Year 3** (PP&E net, accumulated depreciation, cash change). Also state whether a **lease receivable** is recognized.
+
+
+10. IFRS vs US GAAP: lessor balance sheet is basically the same (don’t overthink).
 
 ### MODULE 34.2: DEFERRED COMPENSATION AND DISCLOSURES
 
