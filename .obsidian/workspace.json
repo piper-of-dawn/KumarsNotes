@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA/Revision Notes for CFA.md",
+                "file": "CFA/CFA Notes/CORPORATE ISSUERS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Revision Notes for CFA"
+              "title": "CORPORATE ISSUERS"
             }
           }
         ]
@@ -180,14 +180,31 @@
       "templates:Insert template": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f4452cc3b74d74bb",
+  "active": "49ac21b4a48864af",
   "lastOpenFiles": [
-    "Ethics.md",
+    "CFA/CFA Notes/AGENT.md",
+    "CFA/CFA Notes/CORPORATE ISSUERS.md",
+    "CFA/CFA Notes/Preamble.md",
+    "CFA/CFA Notes/schweser_qm_econ_ci.txt",
+    "CFA/CFA Notes/FIXED INCOME.md",
+    "CFA/CFA Notes/Untitled",
     "CFA/Fixed Income.md",
+    "CFA/CFA Notes/ALTERNATIVE INVESTMENTS.md",
+    "CFA/CouponStructures.md",
+    "CFA/CFA Notes/EQUITY.md",
+    "CFA/CFA Notes/DERIVATIVES.md",
     "CFA/Revision Notes for CFA.md",
+    "CFA/CFA Notes/PORTFOLIO MANAGEMENT.md",
+    "CFA/CFA Notes/FSA.md",
+    "CFA/CFA Notes/ECONOMICS.md",
+    "CFA/CFA Notes/QUANTITATIVE METHODS.md",
+    "CFA/CFA Notes/Read these again.md",
+    "CFA/CFA Notes",
+    "Ethics.md",
     "Quant Finance/Fixed Income.md",
     "Untitled 1.md",
     "Tricky Questions in Ethics.md",
@@ -198,19 +215,6 @@
     "CFA/Contingency Provisions.md",
     "CFA/Yeild to Maturity.md",
     "CFA/Numericals to Memorise.md",
-    "CFA/Annuity Calculation.md",
-    "CFA/Bond Duration.md",
-    "Balance Sheet - Assets.md",
-    "CashFlow Ratios.md",
-    "Cashflow.md",
-    "Callable and Puttable Bond.md",
-    "Analysis of Disclosures.md",
-    "Affirmations.md",
-    "Acquisition of Intangible Assets.md",
-    "Accounting Standard for Revenue Recognition.md",
-    "Accounting Standard for Expense Recognition.md",
-    "Writing Style.md",
-    "Presentation Notes.md",
     "Pasted Image 20251228112906_706.png",
     "Pasted image 20251029114056.png",
     "Pasted image 20251230214023.png",
@@ -223,9 +227,6 @@
     "Linear Algebra/Pasted image 20250429102423.png",
     "Linear Algebra",
     "Fixed Income",
-    "Dark Arts",
-    "DSA",
-    "Competitive Probability",
     "Mathematics for Machine Learning/Pasted image 20230621171117.png",
     "Automated Trading System/Pasted image 20230622112923.png",
     "Pasted image 20251029113921.png",

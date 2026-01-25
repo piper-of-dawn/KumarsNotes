@@ -333,7 +333,7 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 ###### Expected number of questions: 2
 ###### LOS: Explain the Modigliani\u2013Miller propositions regarding capital structure.
 
-1. Asymmetric information exists because managers have superior knowledge about future prospects vs shareholders/creditors.    
+1. Asymmetric information exists because managers have superior knowledge about future prospects vs shareholders/creditors. 
 2. Higher when business is complex or financial reporting is opaque ⟶ investors face more uncertainty. Investors price this uncertainty as higher required returns on both debt and equity.    
 3. Investors infer management's private information from financing choices (**signaling**). Issuing debt signals confidence: fixed interest obligations imply expected stable cash flows. Issuing equity signals pessimism: markets infer management thinks stock is overvalued. **Therefore, equity financing is penalized more heavily than debt under asymmetric information.**    
 4. Agency costs of equity arise from conflicts between managers and shareholders. Managers without ownership stake don't fully bear costs of overpaying themselves or mismanaging risk (too safe or too reckless). Shareholders anticipate this conflict and impose controls (monitoring, incentives, governance). Even after controls, some conflict remains ⟶ net agency cost of equity.
