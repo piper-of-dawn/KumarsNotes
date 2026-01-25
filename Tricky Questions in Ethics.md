@@ -1,0 +1,4 @@
+Paper was recently terminated as one of a team of five managers of an equity fund. The fund had two value-focused managers and terminated one of them to reduce costs. In a letter sent to prospective employers, Paper presents, with written permission of the firm, the performance history of the fund to demonstrate his past success. Which of the following statements is true? 
+- A. Paper did not violate the Code and Standards.
+- B. Paper violated the Code and Standards by claiming the performance of the entire fund as his own.
+- C. Paper violated the Code and Standards by including the historical results of his prior employer.
