@@ -7,7 +7,7 @@
   "theme": "obsidian",
   "translucency": false,
   "baseFontSizeAction": true,
-  "baseFontSize": 15,
+  "baseFontSize": 18,
   "enabledCssSnippets": [
     "code"
   ]
