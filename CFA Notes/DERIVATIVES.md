@@ -45,6 +45,21 @@ LOS 71.b: Explain why forward and futures prices differ.
 > - Futures vs Forwards Prices: If interest rates are constant or uncorrelated with futures prices → same price. If positively correlated → futures more valuable (for a long). If negatively correlated → futures less valuable.  
 > - Convexity Bias (IR): FRAs/forwards exhibit convexity; longer maturities can show material forward–futures price differences.
 
+1. Unlike a forward that is settled at a future date in totality, the future price difference is settled every day by Exchange. The exchange marks the price of the contract against the current market price. This is known as Mark to market. For example, if I bought a bitcoin future for $100 and the price of bitcoin futures increase to $110. The next day the $10 would be credited to my variation margin account. Daily variation margin cashflows settle the MTM P&L, so the futures contract is reset to ~0 each day.
+
+2. To understand all three kinds of margin, hammer the table below into your head:
+
+|     |                              |                     |                         |                           |                                       |                       |                      |
+| --- | ---------------------------- | ------------------- | ----------------------- | ------------------------- | ------------------------------------- | --------------------- | -------------------- |
+| Day | Futures settlement price (F) | Initial margin (IM) | Maintenance margin (MM) | Variation margin (VM = F) | Margin balance (end of day, pre-call) | Margin call / Top-up  | Balance after top-up |
+| 0   | 100                          | 15                  | 10                      | NA                        | 15                                    | 0                     | 15                   |
+| 1   | 102                          | 15                  | 10                      | +2                        | 17                                    | 0                     | 17                   |
+| 2   | 92                           | 15                  | 10                      | -10                       | 7                                     | +8 (to restore to IM) | 15                   |
+| 3   | 91                           | 15                  | 10                      | -1                        | 14                                    | 0                     | 14                   |
+| 4   | 96                           | 15                  | 10                      | +5                        | 19                                    | 0                     | 19                   |
+| 5   | 94                           | 15                  | 10                      | -2                        | 17                                    | 0                     | 17                   |
+3. 
+
 Notation in simple language
 - MRR: Market reference (annualized) interest rate for the period.  
 - $\tau$: Accrual year fraction of the period (e.g., 6 months → 0.5).  
