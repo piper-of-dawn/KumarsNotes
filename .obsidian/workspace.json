@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/FIXED INCOME.md",
+                "file": "CFA Notes/DERIVATIVES.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FIXED INCOME"
+              "title": "DERIVATIVES"
             }
           }
         ]
@@ -186,6 +186,10 @@
   },
   "active": "8d5422f46e58076d",
   "lastOpenFiles": [
+    "CFA Notes/EQUITY.md",
+    "CFA Notes/FIXED INCOME.md",
+    "CFA Notes/CORPORATE ISSUERS.md",
+    "CFA/Legal Terms Related to Bonds.md",
     "CFA Notes/Ethics.md",
     "Diary/Chapter IV - Aman.md",
     "WIP/How to measure fear.md",
@@ -195,16 +199,13 @@
     "CFA Notes/schweser_fsa.txt",
     "CFA Notes/FSA.md",
     "CFA Notes/fsa.txt",
-    "CFA Notes/CORPORATE ISSUERS.md",
     "CFA Notes/AGENT.md",
     "CFA Notes/Preamble.md",
     "CFA Notes/schweser_qm_econ_ci.txt",
-    "CFA Notes/FIXED INCOME.md",
     "CFA/CFA Notes/Untitled",
     "CFA/Fixed Income.md",
     "CFA Notes/ALTERNATIVE INVESTMENTS.md",
     "CFA/CouponStructures.md",
-    "CFA Notes/EQUITY.md",
     "CFA Notes/DERIVATIVES.md",
     "CFA/Revision Notes for CFA.md",
     "CFA Notes/PORTFOLIO MANAGEMENT.md",
@@ -216,7 +217,6 @@
     "Quant Finance/Fixed Income.md",
     "Untitled 1.md",
     "Tricky Questions in Ethics.md",
-    "CFA/Derivatives.md",
     "Pasted Image 20251228112906_706.png",
     "Pasted image 20251029114056.png",
     "Pasted image 20251230214023.png",
