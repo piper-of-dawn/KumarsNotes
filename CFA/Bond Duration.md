@@ -19,3 +19,6 @@ $$ D = \sum_{t=1}^6 \frac {10t}{(1+0.1)^{t}}  $$
 
 > The intuitive equivalence is that if all of the bond's cashflows are collapsed into a single lumpsum payment, then at what time that payment would occur. 
 
+### ANALYTICAL AND EMPIRICAL DURATION
+1. Key rate duration is a partial duration statistic that gauges sensitivity to non-parallel benchmark yield curve changes.
+2. The sum of a bond’s key rate durations across the specified key maturities equals the bond’s effective duration.

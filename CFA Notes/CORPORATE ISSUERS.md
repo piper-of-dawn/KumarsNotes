@@ -158,7 +158,12 @@ Weighted average number of shares outstanding:
 | 1,200,000 × (6 months/12 months) =                                                           | 600,000   |
 | 1,100,000 × (3 months/12 months) =                                                           | 275,000   |
 | Weighted average number of shares outstanding = (3/12) * 1 + (6/12) * 1.2 + (3/12) * 1.1<br> | 1,125,000 |
+### Module 21.1: Stakeholders and ESG Factors
 
+
+1. ROE = PAT / Average Equity
+2. ESG factors are non-financial environmental, social, and governance issues that can materially affect a company’s operations, risk, and future cash flows; things that are purely financial or macro without an E, S, or G link are not ESG factors.
+3. ESG factor materiality: ESG factors are material when they can have a substantial impact on a company’s operations, business model, financial results, or future cash flows, including through loss of customer goodwill, regulatory fines and judgments, stranded assets, litigation, cleanup costs, or governance failures that allow managers to exploit shareholders.
 ### MODULE 23.1: LIQUIDITY MEASURES AND MANAGEMENT
 
 
@@ -501,13 +506,19 @@ Weighted average number of shares outstanding:
 6. **Free cash flow hypothesis: excess cash invites wasteful spending or self-serving projects by managers.**
 7. **Use of Debt forces managers to be disciplined**, because commits cash to interest and principal payments, reducing free cash flow available for misuse.
 8. Pecking order theory is built on asymmetric information between managers and investors. Financing choices act as signals about management's private view of firm value. - Internal funds are preferred: no external scrutiny, no signal.
+9. An extraordinary general meeting (EGM) would most likely be called to address matters such as mergers, approvals, any amendments to corporate bylaws. 
+10. According to best practices, an audit committee should be composed of Solely independent directors and one of them should be an expert in finance and accounting. 
+11. Direct and indirect agency cost of management is an important topic to understand. If there is a fees paid directly in cash to ensure accountability, then it is direct. If this statement rings of opportunity cost such as gone opportunity because of risk aversion, then it is indirect.
+12. The principal agent conflict in corporate governance happens because agent who has been hired to perform certain tasks usually has more information about the task, than the principal.
+13. A **poison pill** works as follows: control requires >50% ownership; a hostile bidder accumulates shares; once a ~10–20% threshold is crossed, trigger alarm sounds and all other shareholders can buy discounted shares; the share count explodes, the bidder’s ownership % collapses, and the takeover becomes prohibitively expensive unless the board agrees.
+14. Entrenchment means managers use their power to protect their jobs, not shareholder value.
 
 > [!ABSTRACT]- MM core results (quick recall)
 > - MM I (no taxes): Capital structure is irrelevant to firm value under idealized assumptions (no taxes/transaction/bankruptcy costs; homogeneous expectations; risk‑free borrowing/lending; no agency costs; investment policy independent of financing).
 > - MM II (no taxes): As D/E rises, cost of equity increases linearly; WACC stays constant.
 > - With taxes: Interest tax shield lowers WACC as leverage increases; without distress costs, value is maximized at very high (theoretical 100%) debt.
 
-9. MM Proposition I — No Taxes (Capital structure irrelevance)
+15. MM Proposition I — No Taxes (Capital structure irrelevance)
    - “Pie” intuition: operating earnings determine total pie; slicing between debt and equity does not change the total value when assumptions hold.
 
 10. MM Proposition II — No Taxes (Cost of equity vs leverage)

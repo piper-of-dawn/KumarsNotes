@@ -1,16 +1,10 @@
 ```table-of-contents
 ```
-
 ### MODULE 47.1: FIXED-INCOME INSTRUMENT FEATURES
 
 #### Callable Bond
 1. Issuer has the right to buy back (redeem) the bond at a specified call price.
 2. Example timeline: sell a bond for $1,000 at t; issuer may call at $1,050 at t+1.
-
-    1000        1050 
-    |-------------|
-    t            t+1
-
 At t+1:
 - If market price is 1,100, issuer calls (investor’s upside is capped at the call price).
 - If market price is 1,000, issuer will not call.
@@ -147,7 +141,7 @@ Key idea: FRNs trade near par at reset; deviations reflect margin differences re
 #### Maturity Effect — Volatility Across Horizons
 
 - Short-term rates/yields are typically more volatile than long-term rates because they reflect immediate policy and liquidity conditions, while long-term rates embed an average of expected short rates plus a term premium.
-- Term premium compensates for uncertainty over long horizons; as maturity increases, instantaneous shocks are averaged across many expected future short rates, dampening volatility relative to short maturities.
+- **Term premium** compensates for uncertainty over long horizons; as maturity increases, instantaneous shocks are averaged across many expected future short rates, dampening volatility relative to short maturities.
 
 Note: Premium bonds often have effective durations below time-to-maturity, as larger near-term coupons bring cash flows forward, reducing sensitivity to rate changes.
 
@@ -155,11 +149,12 @@ Note: Premium bonds often have effective durations below time-to-maturity, as la
 
 #### Maturity Risk — First Principles and Duration Link
 
-- Present value mechanics: each cash flow PV_t = CF_t / (1 + r)^t. Sensitivity to r grows with t:
-  ∂PV_t/∂r = − t · CF_t / (1 + r)^{t+1} → farther cash flows (larger t) lose more value for the same ∆r.
+- Present value mechanics: each cash flow $PV_t = CF_t / (1 + r)^t$. Sensitivity to r grows with t:
+  $∂PV_t/∂r = − t · CF_t / (1 + r)^{t+1}$ → farther cash flows (larger t) lose more value for the same ∆r.
 - Long-maturity bonds have more far-dated cash flows, so for a given yield change, percentage price moves are larger than for short bonds (higher interest rate risk).
-- Macaulay duration D = Σ[t · PV(CF_t)] / Price is a weighted-average time; longer maturities and lower coupons increase D and thus modified duration (price sensitivity):
-  ∆P / P ≈ − D_mod · ∆y, where D_mod = D / (1 + y).
+- Macaulay duration $$D = Σ[t · PV(CF_t)] $$Price is a weighted-average time; longer maturities and lower coupons increase D and thus modified duration (price sensitivity):
+  $$∆P / P ≈ − D_{mod} \times \delta Y$$ where 
+$$D_{mod} = D / (1 + y).$$
 
 Reinvestment dimension: longer horizons imply more coupon reinvestments at uncertain future rates, increasing reinvestment risk alongside price risk.
 
