@@ -129,6 +129,36 @@
 > [!warning] Exam tip
 > When comparing forms, focus on liability, taxation, continuity, and capital access. When comparing public vs private, hit access to capital, disclosure/liquidity, ownership/control, and cost of capital. Tie ESG/governance back to risk and financing costs.
 
+### EPS AND SHARE STRUCTURE
+
+#### Jargons and Core Definitions
+
+1. What is Warrant: A warrant is an equity call option issued by the company; it gives the holder the right (not obligation) to purchase newly issued shares at the exercise price.
+2. Basic EPS: (Net income − preferred dividends) ÷ weighted average ordinary shares.
+3. Preferred dividend: Dividends to preferred shareholders are subtracted from net income when computing EPS because EPS is for common shareholders.
+4. Diluted EPS: “EPS if all dilutive instruments became common stock.” Conceptually, Net income for common ÷ (actual shares + new shares that would be issued upon conversion/exercise, if dilutive).
+5. Dilution: Instruments convertible into common can increase share count → EPS falls. EPS accretion/dilution alone is not value creation.
+6. Stock split: A 2-for-1 split doubles the number of shares and halves the price; market cap unchanged (ignoring frictions).
+7. Complex capital structure: Company has instruments potentially convertible into common stock (options, convertibles, etc.).
+
+#### Weighted Average Shares Example
+
+|                                                        |           |
+| ------------------------------------------------------ | --------- |
+| Shares outstanding on 1 January 2018                   | 1,000,000 |
+| Shares issued on 1 April 2018                          | 200,000   |
+| Shares repurchased (treasury shares) on 1 October 2018 | (100,000) |
+| Shares outstanding on 31 December 2018                 | 1,100,000 |
+
+Weighted average number of shares outstanding:
+
+|                                                                                              |           |
+| -------------------------------------------------------------------------------------------- | --------- |
+| 1,000,000 × (3 months/12 months) =                                                           | 250,000   |
+| 1,200,000 × (6 months/12 months) =                                                           | 600,000   |
+| 1,100,000 × (3 months/12 months) =                                                           | 275,000   |
+| Weighted average number of shares outstanding = (3/12) * 1 + (6/12) * 1.2 + (3/12) * 1.1<br> | 1,125,000 |
+
 ### MODULE 23.1: LIQUIDITY MEASURES AND MANAGEMENT
 
 

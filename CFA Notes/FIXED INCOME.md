@@ -1,5 +1,27 @@
 ```table-of-contents
 ```
+
+### MODULE 47.1: FIXED-INCOME INSTRUMENT FEATURES
+
+#### Callable Bond
+1. Issuer has the right to buy back (redeem) the bond at a specified call price.
+2. Example timeline: sell a bond for $1,000 at t; issuer may call at $1,050 at t+1.
+
+    1000        1050 
+    |-------------|
+    t            t+1
+
+At t+1:
+- If market price is 1,100, issuer calls (investor’s upside is capped at the call price).
+- If market price is 1,000, issuer will not call.
+
+- Negative convexity: as yields fall and prices rise, upside is capped by the call feature; price rises less than for an option‑free bond.
+- Value vs option‑free: callable bond value is lower than an identical non‑callable bond because the investor is short the call option.
+
+#### Puttable Bond
+1. Investor (bondholder) has the right to sell the bond back to the issuer at a specified put price.
+2. Puts provide downside protection when rates rise (prices fall), generally increasing the bond’s value relative to an option‑free bond and improving effective convexity on the downside.
+
 ### YIELD AND YIELD SPREAD MEASURES FOR FIXED-RATE BONDS
 1. **Annual Yield:**
 2. **Adjusting Yields for Periodicity:**
@@ -94,6 +116,80 @@
 
 > [!QUESTION] Title
 > A 10-year, 8% annual coupon bond is purchased at a premium price of 115.00 (Yield = 6.00%). Assuming the yield remains constant at 6.00%, what is the expected price of the bond 1 year later (9 years to maturity)?
+
+### MODULE 54.1: Yield and Yield Spread Measures for Floating-Rate Instruments
+
+#### Floating-Rate Note (FRN) Valuation — Margin Widening
+
+> [!question] Question
+> A floating-rate note (FRN) has a face value of $10 million, total maturity 6 years, and pays coupons = reference rate + 2.5% margin. After 2.5 years, the issuer’s credit quality worsens and the market now demands a 3.5% margin (100 bps wider). The current flat spot curve is 4.1%, with semiannual payments. Compute the fair value of the FRN today.
+
+> [!tip] TL;DR
+> FRN price at reset ≈ par, but if its margin < market-required margin, Price = Par − PV(missing margin cash flows).
+
+1. Shortfall per year = required margin − bond margin = 3.5% − 2.5% = 1.0% → per semiannual period = 0.5% (= 0.5 per 100 par).
+2. Remaining time = 3.5 years = 7 semiannual periods → missing cash flows: 0.5 each period (per 100 par).
+3. Discount at semiannual rate 2.05% (flat 4.1%/2). PV of shortfall ≈ 3.23 per 100.
+4. Price per 100 = 100 − 3.23 = 96.77. For $10 million notional → ≈ $9,677,000 (rounding may give ≈ $9,697,600).
+
+Key idea: FRNs trade near par at reset; deviations reflect margin differences relative to current market.
+
+### MODULE 55.1: The Term Structure of Interest Rates — Spot, Par, and Forward Curves
+
+#### Forward Rates — Intuition and No-Arbitrage
+
+- Why “forward”: It is the implied rate for a future period, inferred today from longer-dated spot yields.
+- No-arbitrage relation (annual compounding example):
+  (1 + S2)^2 = (1 + S1) × (1 + 1y1yF)
+  → 1y1y forward = (1 + S2)^2 / (1 + S1) − 1.
+- Interpretation: Being indifferent between buying a 2-year zero today vs. rolling 1-year zero for two years implies this equality; otherwise, arbitrage exists.
+
+#### Maturity Effect — Volatility Across Horizons
+
+- Short-term rates/yields are typically more volatile than long-term rates because they reflect immediate policy and liquidity conditions, while long-term rates embed an average of expected short rates plus a term premium.
+- Term premium compensates for uncertainty over long horizons; as maturity increases, instantaneous shocks are averaged across many expected future short rates, dampening volatility relative to short maturities.
+
+Note: Premium bonds often have effective durations below time-to-maturity, as larger near-term coupons bring cash flows forward, reducing sensitivity to rate changes.
+
+### MODULE 57.1: Yield-Based Bond Duration Measures and Properties
+
+#### Maturity Risk — First Principles and Duration Link
+
+- Present value mechanics: each cash flow PV_t = CF_t / (1 + r)^t. Sensitivity to r grows with t:
+  ∂PV_t/∂r = − t · CF_t / (1 + r)^{t+1} → farther cash flows (larger t) lose more value for the same ∆r.
+- Long-maturity bonds have more far-dated cash flows, so for a given yield change, percentage price moves are larger than for short bonds (higher interest rate risk).
+- Macaulay duration D = Σ[t · PV(CF_t)] / Price is a weighted-average time; longer maturities and lower coupons increase D and thus modified duration (price sensitivity):
+  ∆P / P ≈ − D_mod · ∆y, where D_mod = D / (1 + y).
+
+Reinvestment dimension: longer horizons imply more coupon reinvestments at uncertain future rates, increasing reinvestment risk alongside price risk.
+
+Convexity note: As a bond approaches maturity, both duration and convexity decline; the price–yield curve flattens toward par at maturity (convexity → 0).
+
+### MODULE 58.1: Yield-Based Bond Convexity and Portfolio Properties
+
+#### Convexity of the Yield Curve
+
+##### What is a convex function?
+If $f(x)$ is twice differentiable then $f''(x) > 0$.
+
+##### What does it mean?
+In terms of rate of change, convexity means the rate of change itself is increasing; that is, acceleration is positive.
+
+##### Convexity of the Yield Curve
+Suppose we have a 1-period zero coupon bond.
+$$ P  = FV (1+r)^{-t} $$
+$$ \frac{dP}{dr} = -t(1+r)^{-t-1}\cdot FV < 0 $$
+$$ \frac{d^2P}{dr^2} = t(t+1)(1+r)^{-t-2}\cdot FV > 0 $$
+We see that the first derivative is negative and the second derivative is positive. Therefore, the function decreases at a decreasing rate. The positive second derivative implies that the slope is approaching zero, so the function is decelerating.
+
+##### What does this mean intuitively?
+At higher levels of yield, a small decline in yield causes a larger increase in bond price; at lower yields, the same decline will cause a smaller increase.
+
+##### What is its implication?
+In a high-yield environment, long-duration bonds (e.g., TLT) will gain sharply as yields fall.
+
+##### Question
+A non-callable, fixed-coupon bond has a price of 106.0625 and a YTM of 2.8%. If the YTM were to increase instantaneously by 80 bps, the price of the bond would decrease by 11%. If the YTM were to decrease instantaneously by 80 bps, the price of the bond would increase by:
 
 ### FIXED INCOME MARKETS FOR CORPORATE ISSUERS
 1. Weak credit → secured borrowing. Firms with low credit ratings must pledge collateral. Strong credit firms issue commercial paper (CP) → unsecured, typically < 3 months maturity, used for working capital or temporary/bridge funding.

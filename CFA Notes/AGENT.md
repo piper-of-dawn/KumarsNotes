@@ -60,6 +60,7 @@ Notes Style Conventions (KumarsNotes)
   - Do not remove the user’s original points.
   - Add missing information as independent bullets under the same section.
   - Keep the same callout/typography “spirit”.
+  - Pointers formatting: Use numbered lists (1., 2., 3.) for module pointers instead of dash bullets, unless the user explicitly requests otherwise.
 
 Topic-Agnostic Pattern (Use Across All Sections)
 
@@ -108,6 +109,7 @@ Communication Style
 - Preambles: 8–12 words, grouped by intent. Example: “Next, I’ll patch WACC formulas and add numericals.”
 - Progress updates: short, momentum-building; use `update_plan` for multi-step work.
 - Final messages: concise bullets; note files changed and offer next steps (e.g., run tests, add examples, commit?)
+- Jargon rule: If you introduce jargon or an abbreviation, define it the first time in plain language, with a brief example when helpful.
 
 Do / Don’t Summary
 

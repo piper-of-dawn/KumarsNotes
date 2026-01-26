@@ -1,4 +1,36 @@
 ## FSA
+
+### MODULE 28.1: REVENUE RECOGNITION
+
+1. Five-step process for revenue recognition (IFRS 15 / ASC 606):
+   - Step 1: Identify the contract — establish a valid agreement exists. Example: A SaaS company signs a one-year software subscription for $12,000.
+   - Step 2: Identify performance obligations — break down distinct deliverables. Example: Software access and monthly support are separate obligations.
+   - Step 3: Determine the transaction price — total consideration expected, including discounts/variable fees.
+   - Step 4: Allocate the transaction price — allocate based on standalone selling prices. Example: $10,000 to software, $2,000 to support.
+   - Step 5: Recognize revenue — when/as each obligation is satisfied. Example: Recognize $1,000/month for software and $167/month for support.
+
+2. Convergence notes: IASB and FASB issued converged guidance in 2014; terminology differs for “probable” (IFRS: more-likely-than-not; U.S. GAAP: likely), which can lead to differences in otherwise similar contracts.
+
+3. Principal vs Agent presentation:
+   - Principal: bears inventory/primary performance risk; reports gross revenue (e.g., Amazon Retail).
+   - Agent: arranges for goods/services; reports net commission as revenue (e.g., marketplace platforms). Lower revenue, often higher margins.
+
+4. Franchising/Licensing economics:
+   - Company-owned stores: report full sales.
+   - Franchise model: recognize royalties (e.g., ~5.5% of franchisee sales); upfront fees are deferred and amortized over contract life; ancillary sales (equipment/supplies) recognized per delivery.
+
+5. Software: license vs service (SaaS):
+   - Perpetual license: recognize upfront when control transfers.
+   - Subscriptions/support: recognize ratably over service term (e.g., Office 365, Netflix).
+
+6. Long-term construction/production contracts:
+   - Recognize revenue over time based on progress toward completion, often via cost-to-complete measure (e.g., Boeing recognizes proportion of total revenue equal to % complete).
+
+7. Bill-and-hold arrangements:
+   - Recognize revenue when control transfers and goods are ready for the customer, even if physical delivery is delayed at customer request.
+
+8. Jargon: SG&A = Selling, General and Administrative expense.
+
 ### MODULE 29.1: INTANGIBLE ASSETS
 
 1. IFRS rule: Under IFRS (set by [International Accounting Standards Board](chatgpt://generic-entity?number=0)), a purchased identifiable intangible (patent, license, trademark) is first recorded at cost and then you can choose cost model or revaluation model, but revaluation is allowed only if there is an active market with observable prices.
@@ -98,6 +130,15 @@ Taxes paid in cash = 20000 - 5000 - 1000 = 14000
 
 ```
 
+#### Cash flow classifications (US GAAP vs IFRS)
+
+- US GAAP: Interest paid = CFO; interest received = CFO; dividends received = CFO; dividends paid = CFF; taxes = CFO (with limited exceptions).
+- IFRS: Interest paid = CFO or CFF; interest received = CFO or CFI; dividends received = CFO or CFI; dividends paid = CFO or CFF; taxes allocated by nature when specifically identifiable, otherwise CFO.
+- Bank overdrafts: US GAAP = financing liability; IFRS = may be included in cash and cash equivalents if repayable on demand and integral to cash management.
+- CFO examples: cash from customers; cash paid to suppliers/employees; trading securities cash flows (if operating by policy); taxes and interest (per standard).
+- CFI examples: purchase/sale of PP&E and intangibles; business acquisitions/disposals; lending and collections (if not classified as operating under policy); long-term investment securities.
+- CFF examples: issuing/repaying debt (principal); issuing/repurchasing equity; dividends paid (US GAAP) or per policy (IFRS).
+
 ### MODULE 30.2: INDIRECT METHOD CFO
 
 
@@ -155,10 +196,204 @@ Taxes paid in cash = 20000 - 5000 - 1000 = 14000
 
 
 
+### MODULE 31.1: CASH FLOW ANALYSIS AND RATIOS
+
+> [!TL;DR] Before using ratios
+> Under IFRS, interest and dividends may be classified in CFO/CFI/CFF. Rebuild CFO consistently (see classifications above) before computing cash‑flow ratios to compare firms.
+
+#### Performance ratios (cash productivity)
+- Cash flow to revenue: `CFO ÷ Net revenue` — cash collected per unit of sales.
+- Cash return on assets (CROA): `CFO ÷ Avg total assets` — cash yield on asset base.
+- Cash return on equity (CROE): `CFO ÷ Avg equity` — cash return on owners’ capital.
+- Cash to income: `CFO ÷ Operating income (EBIT)` — earnings’ conversion to cash.
+- Cash flow per share: `(CFO − preferred dividends) ÷ weighted avg common shares` — cash available per share. IFRS note: if total dividends were included in CFO, add back first, then subtract preferred dividends.
+
+#### Coverage ratios (ability to fund obligations)
+- Debt coverage: `CFO ÷ Total debt` — years of CFO to retire total debt.
+- Interest coverage (cash‑based, US GAAP): `(CFO + interest paid + taxes paid) ÷ interest paid` — operating cash ability to service interest. IFRS note: if interest paid is in financing, do not add it back.
+- Reinvestment ratio: `CFO ÷ Cash paid for long‑term assets (CapEx)` — ability to fund growth internally.
+- Debt payment ratio: `CFO ÷ Cash paid for long‑term debt repayment` — capacity to retire principal from operations.
+- Dividend payment ratio: `CFO ÷ Dividends paid` — sustainability of distributions.
+- Investing + financing coverage: `CFO ÷ (Investing outflows + Financing outflows)` — can operations cover strategic cash needs?
+
+#### IFRS adjustment reminders
+- IFRS allows: interest paid (CFO/CFF), interest received (CFO/CFI), dividends received (CFO/CFI), dividends paid (CFO/CFF). Normalize classifications across firms before ratio analysis.
+
+### MODULE 31.2: FREE CASH FLOW MEASURES
+
+#### Free Cash Flow to the Firm (FCFF)
+
+- Definition: cash available to all capital providers (debt and equity) after running and maintaining the business.
+- Practical formula (from cash flow statement):
+  FCFF = CFO + Interest × (1 − tax rate) − Capex
+- Intuition:
+  - Start at CFO (cash from operations).
+  - Add back after‑tax interest because CFO reflects cash after paying lenders; FCFF should be pre‑financing for all providers.
+  - Subtract capital expenditures needed to maintain/grow productive capacity.
+
+Analyst note: Using CFO as the base captures non‑cash adjustments and working‑capital timing already; ensure interest classification is normalized (per IFRS vs U.S. GAAP) before applying the formula.
+
+> [!question] Question (CFI reconstruction)
+> Opening/Closing balances (Land, PP&E gross and accumulated depreciation) and notes:
+> - Land: 100 → 90; gain on sale = 45; no depreciation on land.
+> - PP&E gross: 500 → 600; an asset costing 100 was sold; depreciation expense = 130.
+> - Accumulated depreciation: 300 → 350.
+> Compute cash flow from investing (CFI).
+> —
+> Land sold: carrying change = −10; with gain 45 → cash inflow = 55.
+> PP&E purchases: expected gross after sale = 400; closing is 600 → purchases = 200.
+> Accumulated depreciation roll: 300 + 130 − x = 350 → x (AD on asset sold) = 80 → carrying amount sold = 100 − 80 = 20; cash proceeds = carrying 20 + gain 30 = 50.
+> Net CFI = +55 (land) − 200 (purchases) + 50 (PP&E sale) = −95.
+
+> [!question] Question (Dividends paid from RE)
+> Retained earnings: 1,200 → 1,450; dividend payable: 100 → 120; net income = 560. Calculate dividends paid.
+> —
+> Dividends declared = 1,200 + 560 − 1,450 = 310. If none paid, dividend payable would be 100 + 310 = 410; actual closing is 120 → dividends paid = 410 − 120 = 290.
+
+> [!question] Question (Cash collected from customers)
+> Accounts receivable: 66 → 55; quarterly revenue = 72. How much cash collected from customers?
+> —
+> If none collected: AR would be 66 + 72 = 138. Actual AR is 55 → cash collected = 138 − 55 = 83.
+
+> [!question] Question (Revenue vs AR change)
+> Revenue = 100; expenses = 80; net income = 20; accounts receivable increased by 10. How much cash received from customers?
+> —
+> Cash received = revenue − increase in AR = 100 − 10 = 90.
+
+### MODULE 32.1: INVENTORY MEASUREMENT
+
+1. **Cost:** What you paid to get inventory ready for sale (purchase price + freight-in/shipping + import duties − discounts). Example: buy a jacket for $100, pay $8 shipping, get a $3 discount → cost = $105.
+2. **Net realizable value (NRV):** Expected selling price minus costs to complete and sell. Example: expect to sell for $110, and it will cost $4 to finish/pack and $3 selling commission → NRV = $103.
+3. **Market (Replacement Cost):** If you sold everything today at cost, what will you get.
+4. **Lower-of-cost-or-NRV rule:** Carry inventory at the lower number. With cost $105 and NRV $103, carry at $103 and record a $2 write-down in income.
+5. IFRS: Inventory at the lower of cost or net realizable value (NRV). NRV = expected sales price − selling and completion costs. Write-downs hit income (separate line or COGS). **Subsequent write-ups allowed, but only up to the prior write-down (cannot exceed original cost)**.
+6. U.S. GAAP: If not using LIFO/retail, measure at lower of cost or NRV. If using LIFO or the retail method, measure at lower of cost or market (LCM) where market = replacement cost, bounded by ceiling = NRV and floor = NRV − normal profit margin. **No write-ups permitted under U.S. GAAP (applies to both LCNRV and LCM users).**
+   
+> [!warning] REMEMBER
+> 1. LCNRV (lower of cost or net realizable value): **Compare cost vs NRV;** carry the lower; write down the difference to income.
+>    Example: cost = $105, NRV = $103 → carry $103; write-down = $2. **If NRV exceeds cost, carry the cost**
+> 2. LCM (lower of cost or market): **“Market” = replacement cost, capped by NRV (ceiling) and floored by NRV − normal profit (floor).** Carry lower of cost or market.
+>    Example: cost = \$210; NRV = \$203; normal profit = \$12 
+> 			 → ceiling = NRV = \$203; 
+> 			 → floor = NRV - PM = \$191; 
+> 			 → replacement cost = \$197 → market = \$197 
+> 			 → carry \$197 because \$197 $\in$ \[191, 203\]; 
+> 			 → write-down = Cost - Carry = \$13.
+> 3. Retail method (inventory estimation): Compute cost-to-retail ratio = goods available at cost ÷ at retail; multiply by ending inventory at retail to estimate ending inventory at cost.
+>    Example: goods available: cost $600, retail $1,000 → ratio = 60%. Sales = $800 → ending at retail = $200 → ending at cost = $200 × 60% = $120.
+
+> [!tip] HAMMER THIS INTO YOUR HEAD
+> - LCM = lower of cost or market; “market” is replacement cost, capped by NRV (ceiling) and floored by NRV − normal profit (floor).
+> - IFRS and US GAAP have same aim: don’t overstate inventory; losses hit income.
+> - IFRS (LCNRV): compare to NRV; write-ups allowed up to prior write-downs.
+> - U.S. GAAP: LIFO/retail use LCM with ceiling/floor around replacement cost; no write-ups. Non-LIFO/retail uses LCNRV (same NRV test).
+> - Memory hook: IFRS can “reverse”, upto previous write-down; GAAP “locks” the loss.
+7. Notes: With inflation, LIFO ending inventory reflects older/cheaper costs, so LIFO firms are less likely to trigger write-downs than FIFO/average cost users. Certain commodity inventories (e.g., agricultural, mineral, precious metals) may be reported at NRV with unrealized gains/losses recognized in income when active markets exist.
+
+8. Disclosures — inventory (IFRS vs U.S. GAAP)
+	   - Both: accounting policy and cost formula (e.g., FIFO/LIFO/average); carrying amounts by category (raw materials, WIP, finished goods/merchandise); amount recognized as expense (COGS); inventory write-downs recognized; inventories pledged as collateral.
+   - **IFRS only: reversals of write-downs and the circumstances; carrying amount of any inventories measured at fair value less costs to sell**.
+   - **U.S. GAAP only: LIFO reserve disclosure for LIFO users; no reversals permitted (so no reversal disclosure).**
+
+> [!question] QUESTION — Inventory write-down
+> A company sells digital cameras. Per-unit information: original cost = $210; expected sales price = $225; selling costs = $22; normal profit margin = $12; replacement cost = $197. What are the per-unit carrying values using (1) lower of cost or NRV and (2) lower of cost or market?
+> 
+> ---
+> - Compute NRV: $225 − $22 = $203.
+>   Lower of cost or NRV (IFRS, and U.S. GAAP when applicable): compare cost $210 vs NRV $203 → carrying value = $203; write-down = $210 − $203 = $7 (recorded in income via COGS or a separate line).
+> - Compute Market = Replacement Cost = 197
+>   Make sure, ceiling NRV = $203 and floor NRV - Margin = $191 is respected.
+>   FINAL MARKET = \$197
+>   Write down = \$210 - \$197 = \$13 
+
+> [!question] QUESTION 2 — Inventory write-up after prior write-down
+> In the year after the write-down above, NRV and replacement cost each increase by $10. What is the impact under IFRS and under U.S. GAAP?
+> 
+> ---
+> 
+> - New NRV = $203 + $10 = $213; 
+>   new replacement cost = $197 + $10 = $207.
+> - IFRS: write-up permitted but limited to reversing prior write-down. Prior write-down was $7; carrying value increases from $203 to $210 (cannot exceed original cost $210). Recognise a $7 gain (separate line or reducing COGS).
+> - U.S. GAAP: no write-up allowed; carrying value remains at $197. The benefit appears later as higher profit when inventory is sold (lower COGS).
+
+8. When inventory is written down:
+	- Inventory is lower. Current assets are lower. Assets are lower.
+	- Current Ratio: CA / CL goes down.
+	- Inventory Turnover: COGS / Avg. Inventory rises. Days of Inventory: 365 / ITR falls. 
+	- Cash Conversion Cycle: DIO + DSO - DPO falls.
+	- Total Asset turnover: Sales / Avg. Assets rises. Debt to Assets rises. **Debt to Equity rises as equity falls, write-down losses hit equity**.
+	- Gross Margin: GP / Sales falls (COGS ↑). Operating Margin: EBIT / Sales falls (COGS ↑). Net Margin: PAT/ Sales (COGS ↑) falls. 
 
 
+
+### MODULE 33.1: INTANGIBLE LONG-LIVED ASSETS
+
+> [!TLDR] TL;DR
+> - Revaluation allowed only under IFRS; U.S. GAAP prohibits it.
+> - Research is always expensed under both standards.
+> - Development can be capitalized only under IFRS when six strict criteria are met.
+> - U.S. GAAP expenses both research and development (software exception after technological feasibility).
+> - Only capitalize costs that add future economic benefit; expense the rest.
+
+#### 1) Measurement of Long‑Lived Assets
+
+##### A. Cost Model (IFRS and U.S. GAAP)
+- Record at historical cost minus accumulated depreciation and any impairment losses.
+- Required under U.S. GAAP; permitted under IFRS.
+- Example: Business car cost ₹1,000,000; accumulated depreciation ₹300,000; impairment ₹50,000 → carrying value ₹650,000.
+
+Rules summary:
+- U.S. GAAP: must use cost model (no revaluation).
+- IFRS: may use cost model or revaluation model.
+
+##### B. Revaluation Model (IFRS only)
+- Periodically remeasure to fair value; then depreciate from revalued amount.
+- Upward revaluation → OCI (revaluation surplus). Downward → P&L (unless reversing prior surplus).
+- U.S. GAAP prohibits revaluation for PP&E and intangible assets (other than certain specialized cases not in scope here).
+
+#### 2) Research and Development Treatment
+
+##### A. IFRS
+- Research phase: always expensed (no reliably measurable future benefit).
+- Development phase: capitalize only if all six are met:
+  1) Technical feasibility; 2) Intention to complete; 3) Ability to use/sell; 4) Future economic benefits; 5) Adequate resources; 6) Reliable measurement of cost.
+- Capitalizable examples: direct materials/labor; testing/prototypes; engineering and design tied to the asset.
+- Always expensed: admin and general overhead, training, wasted materials/inefficiencies, advertising/promotional.
+
+##### B. U.S. GAAP
+- General rule: expense both research and development.
+- Software development exception:
+  - Before technological feasibility → expense.
+  - After technological feasibility → capitalize; maintenance/bug fixes → expense.
+
+#### 3) General Capitalization Rule (Both IFRS and U.S. GAAP)
+- Capitalize only costs that clearly add future economic benefit; expense costs that do not.
+- Common “always expense” items: general/admin overhead, selling/marketing, staff training, startup losses, research phase costs, repairs that only maintain (not improve) the asset.
+
+#### 4) IFRS vs U.S. GAAP — Snapshot
+- PP&E measurement: IFRS = cost or revaluation; U.S. GAAP = cost only.
+- Research: expensed under both.
+- Development: IFRS may capitalize if criteria met; U.S. GAAP expensed (except software after technological feasibility).
+- Software development: IFRS capitalize only when development criteria met; U.S. GAAP capitalize only after technological feasibility.
 
 ### MODULE 34.1: LEASES
+
+#### Lessee accounting summary (IFRS 16 vs U.S. GAAP ASC 842)
+
+- Balance sheet (both): recognize Right‑of‑Use (ROU) asset and Lease liability for substantially all leases (short‑term/low‑value exceptions under IFRS policy).
+- Lease liability (both): effective interest rate method (EIRM): interest = opening liability × rate; principal = cash payment − interest; closing liability = opening + interest − payment.
+
+IFRS 16 (single model):
+- P&L shows separate depreciation of ROU asset (typically straight‑line) and interest expense on the liability → front‑loaded total expense.
+- ROU asset falls linearly; liability falls non‑linearly (slow early, faster later) → often a net lease liability position over time.
+
+U.S. GAAP ASC 842:
+- Finance lease: same economics/presentation as IFRS (separate interest + amortization).
+- Operating lease: still recognize ROU + liability and EIRM for liability, but present a single straight‑line lease expense; compute period amortization as a plug so that interest + amortization equals straight‑line lease cost.
+
+Memory hooks:
+- “If you lease it, you show it.” (ROU + liability on balance sheet.)
+- “GAAP: one balance sheet; two income‑statement shapes.”
 	
 1. An alternative way to look at a lease is: **taking a loan and buying the asset.**
 2. To be called a lease, a lessee needs to have following characteristics:

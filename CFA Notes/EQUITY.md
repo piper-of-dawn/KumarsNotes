@@ -63,6 +63,28 @@ $$  V_{PRI}=\frac{\sum_{i=1}^{N} n_i P_i}{D}$$
     
 4. **Total return = what investors actually earn**: Adds income to price change.    $$TR_I=\frac{V_{PRI1}-V_{PRI0}+Inc_I}{V_{PRI0}}$$Over time, total return always exceeds price return when dividends exist.
 
+#### Exam Traps — Quick Hits
+- Commodity index return ≠ spot price change: roll yield from futures rolling drives differences.
+- Hedge fund indexes overstate performance: survivorship/self‑reporting biases.
+- Bond index turnover is high: constituents mature and exit; turnover ≠ trading.
+- Style indexes have highest turnover: stocks migrate between value/growth and cap buckets.
+- Many bond prices in indexes are estimated via matrix pricing, not trades.
+- Commodity weighting is arbitrary (no market‑cap analog).
+- Wilshire 5000 is not literally 5,000; it targets essentially all investable US equities.
+- GDP‑weighting can curb market‑cap bubbles in multi‑country indexes (e.g., historic Japan overweight in MSCI EAFE).
+- Broad bond indexes cannot be fully replicated; managers use sampling.
+- Sector indexes help separate stock selection from sector‑allocation effects.
+
+#### Equity Index Families
+- Broad market indexes (e.g., Wilshire 5000, Russell 3000, SSE Composite): capture ≥90% of market cap; designed as “market in a mirror.”
+- Multi‑market (global/regional) indexes: MSCI families by development stage (developed, emerging, frontier) and geography; GDP vs market‑cap weighting trade‑offs for concentration risk.
+- Sector indexes: slice by industry; useful for attribution of sector vs selection effects across the cycle.
+- Style indexes: value vs growth and size (large/mid/small); high turnover due to category migration.
+
+#### Fixed‑Income and Commodity Index Notes
+- Fixed income: massive universes, dealer pricing, and constant maturities create replication challenges; many constituents priced by matrix; sampling is common.
+- Commodity: constructed from futures; returns reflect spot, collateral, and roll yield; constituent weights are rules‑based and not market‑cap driven.
+
 ### MODULE 41.1: MARKET EFFICIENCY
 1. In an efficient market, prices already reflect all available information, so they're fair estimates of value; the return you earn is just pay for risk, not for being clever — in short, you can't consistently beat the market.
 2. When markets are efficient, passive investing makes sense because active trading gets eaten up by fees and costs; only when prices are genuinely wrong does active investing have a chance to add value.
