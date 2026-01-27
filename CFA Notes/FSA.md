@@ -221,17 +221,62 @@ Taxes paid in cash = 20000 - 5000 - 1000 = 14000
 
 ### MODULE 31.2: FREE CASH FLOW MEASURES
 
+#CRITICAL_MODULE 
 #### Free Cash Flow to the Firm (FCFF)
 
-- Definition: cash available to all capital providers (debt and equity) after running and maintaining the business.
+- ==Definition: cash available to all capital providers (debt and equity) after running and maintaining the business.==
 - Practical formula (from cash flow statement):
-  FCFF = CFO + Interest × (1 − tax rate) − Capex
+  FCFF = CFO + ==Interest × (1 − tax rate)== − Capex
 - Intuition:
   - Start at CFO (cash from operations).
   - Add back after‑tax interest because CFO reflects cash after paying lenders; FCFF should be pre‑financing for all providers.
   - Subtract capital expenditures needed to maintain/grow productive capacity.
 
+
+
+> [!warning] REMEMBER
+> it is important to understand the intuition why we add after tax interest. The interest is tax-deductible. Suppose you paid hundred dollars and interest and statutory tax rates are 10%. This means that $10 can be deducted from the allowance for income tax. The net interest paid by the firm is $90. 
+
 Analyst note: Using CFO as the base captures non‑cash adjustments and working‑capital timing already; ensure interest classification is normalized (per IFRS vs U.S. GAAP) before applying the formula.
+
+## Free Cashflow to Equity 
+
+This is the cash that is available only to the equity shareholders. From equity, we specifically refer to common equity **that does not include preference shares.**
+
+  Anything paid to preferred reduces what is available to common. You already see this logic in the curriculum’s “cash flow per share” ratio: it uses (CFO − preferred dividends) to get a common per-share cash flow figure.
+
+FCFE = CFO - Capex + Net Borrowing
+
+From the formula above, you can easily figure out the relationship between FCFE and FCFF. 
+
+The free cash flow to firm subtract after tax, interest, and free cash flow to equity adds net borrowing.
+
+Write both equations again:
+
+FCFF = CFO + Interest (1-tax) - Capex
+FCFE = CFO + Net Borrowing - Capex
+
+Subtract the second equation from the first equation
+
+FCFF - FCFE = Interest(1-tax) - Net Borrowing
+
+FCFE = FCFF  + Net Borrowing - Interest (1-tax)
+
+The free cash flow to equity must contain net borrowing because the cash received from borrowing is legally owned by owners of the firm. It must subtract after tax interest because interest payments is gone cash and cannot flow to equity. 
+
+> [! Question] NUMERICAL
+> Acme Corporation reports CFO = USD 2,606. Interest paid = USD 258 and the income tax rate = 34%. During the year, Acme had cash paid for fixed capital = USD 1,300 and cash received from sale of fixed capital = USD 762. Acme also has debt repayment = USD 500
+> —-
+> FCFF = CFO + Interest (1-t) - Capex = 2606 + 258 (0.66) + 1300 - 762 =3 314,28
+> FCFE = FCFF + Net Borrowing  - Interest (1-t) =  3314.28 + 500 - 258(0.66) = 
+
+
+
+
+
+
+
+
 
 > [!question] Question (CFI reconstruction)
 > Opening/Closing balances (Land, PP&E gross and accumulated depreciation) and notes:
