@@ -42,6 +42,7 @@ Tooling Preferences
 - Search: prefer `rg` (ripgrep). Example: `rg -n "^### MODULE" file.md`.
 - File views: `sed -n 'a,bp' file`, `nl -ba file | sed -n 'a,bp'` for numbered context.
 - PDF text: use `pdftotext -layout -nopgbrk` to a workspace file, then search with `rg`.
+- Local PDFs: All Schweser PDFs are located at `/home/piperofthedawn/Insync/kumarshan25@gmail.com/Google Drive/CFA/Schweser`.
 - Patching: use `apply_patch` with Add/Update semantics. Don’t re-open unchanged files repeatedly.
 
 Notes Style Conventions (KumarsNotes)
@@ -61,6 +62,22 @@ Notes Style Conventions (KumarsNotes)
   - Add missing information as independent bullets under the same section.
   - Keep the same callout/typography “spirit”.
   - Pointers formatting: Use numbered lists (1., 2., 3.) for module pointers instead of dash bullets, unless the user explicitly requests otherwise.
+
+Kumar’s Style Refinements (observed from DERIVATIVES.md, Module 71.1)
+
+- Numbered pointers first: Start module sections with a short, numbered list of key points in the user’s voice (direct, imperative, concise) before deeper callouts or examples.
+- Callout casing: Match the file’s existing casing for callouts. If the file uses `[!QUESTION]` (uppercase) in that section, keep using uppercase there; otherwise use `[!question]`.
+- Mixed math style: Reserve display LaTeX for core formulas/definitions. For simple identities (e.g., futures price = 100 − 100×MRR), prefer bold inline plain text in the numbered list. Keep LaTeX for BPV and any multi-step equations.
+- One-line takeaways: After numericals, add a bold or plainly stated one-line conclusion (e.g., “Rate decline harms long more than equal rise helps”). Use the user’s terse phrasing.
+- Tables for mechanics: When explaining margin mechanics (IM/MM/VM), include a compact Markdown table showing day-by-day flows and balances. Favor columns: Day, Settlement Price, IM, MM, VM, Balance, Margin Call, Balance After Top-up.
+- Quick checks/tips: Keep a `[!tip] Quick checks` callout with 2–4 bullets of sanity checks tailored to the module’s numericals.
+- Emphasis: Obsidian highlight `==…==` is allowed for high-salience lines within lists. Use sparingly to mirror the user’s pattern.
+- Problem blocks: Use `[!question]`/`[!QUESTION]` with the simple structure the user favors:
+  - Title line in caps when appropriate (e.g., “CONVEXITY ISSUE”).
+  - “Problem:” line, a short `---` separator, then minimal steps/answer lines.
+  - Keep currency/units simple and consistent with the surrounding file.
+- Jargon and symbols: Prefer plain-language terms first (e.g., “market reference rate (MRR)”) and reuse short symbols only after defining them once in the section.
+- Keep tone: Use the user’s assertive cues (e.g., “hammer this into your head”) where they already appear in that file; otherwise, keep the default concise tone.
 
 Topic-Agnostic Pattern (Use Across All Sections)
 

@@ -1,5 +1,13 @@
-
 ```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 3 # Include headings up to the specified level
+include: 
+exclude: 
+includeLinks: true # Make headings clickable
+hideWhenEmpty: false # Hide TOC if no headings are found
+debugInConsole: false # Print debug info in Obsidian console
 ```
 ### STANDARD I(A) - PROFESSIONALISM - KNOWLEDGE OF THE LAW
 
@@ -140,13 +148,14 @@
 #### Core Concepts
 
 1. Members and Candidates owe a **fiduciary duty** to clients and must act with loyalty, prudence, and care when managing client assets. A fiduciary is someone who manages another person’s money or decisions and must always act in that person’s best interest.
-2. **Client interests come before** the interests of the firm and before personal interests in all investment actions and recommendations.
-3. Acting with **prudence and care** means exercising sound judgment, reasonable diligence, and appropriate risk management—not guaranteeing returns.
-4. The duty applies to **investment decisions, portfolio construction, execution, monitoring, and advice**, not just security selection.
-5. ==Conflicts of interest must be **managed in favour of the client**==; disclosure alone does not justify disadvantaging the client.
-6. When managing pooled or institutional assets, decisions must be made **for the benefit of the client as a whole**, consistent with the mandate.
-7. This standard is about **process and priority**, ==not outcomes==; losses alone do not imply a violation.
-8. Brokerage commissions **belong to the client**, not to you or your firm. You must use client commissions **only in the client’s best interest**, not to benefit the firm or yourself.
+2. **CLIENT OWNS THE BROKERAGE.** The brokerage must benefit only and only the clients. 
+3. **Client interests come before** the interests of the firm and before personal interests in all investment actions and recommendations.
+4. Acting with **prudence and care** means exercising sound judgment, reasonable diligence, and appropriate risk management—not guaranteeing returns.
+5. The duty applies to **investment decisions, portfolio construction, execution, monitoring, and advice**, not just security selection.
+6. ==Conflicts of interest must be **managed in favour of the client**==; disclosure alone does not justify disadvantaging the client.
+7. When managing pooled or institutional assets, decisions must be made **for the benefit of the client as a whole**, consistent with the mandate.
+8. This standard is about **process and priority**, ==not outcomes==; losses alone do not imply a violation.
+9. Brokerage commissions **belong to the client**, not to you or your firm. You must use client commissions **only in the client’s best interest**, not to benefit the firm or yourself.
 
 #### Exam Traps (Violation)
 
@@ -270,6 +279,12 @@
 > Performance must be **fair, accurate, complete, and comparable**.  
 > No cherry-picking, no smoothing, no hiding bad years.  
 > If a reasonable investor can be misled, you’ve crossed the line.
+> 
+> **Is non-adherence to GIPS a violation?**
+> - **Not by itself.** If your firm does **not** follow GIPS, you can still comply with **III(D)** by making performance **fair, accurate, complete** with appropriate composites/disclosures/recordkeeping, etc
+>   
+>   
+> **Unaudited performance can be included**, but under **Standard III(D) Performance Presentation** you must present it **fairly** and **clearly disclose that it is unaudited** (and not imply it has been verified). If the presentation could mislead clients into thinking it was audited/verified, it’s a violation.
 
 #### Core Concepts
 
@@ -356,6 +371,14 @@
 > **While employed: your employer gets your loyalty, time, and your work product.**
 > You can plan your exit, but you can’t compete, solicit, steal, or use employer resources.
 > After leaving: you may compete, but you still can’t take confidential info or employer property.
+> 
+> **If you were fired from your last job, be upfront about it to your next employer**
+
+
+> [!DANGER] YOU MAKE THESE MISTAKES
+> Just informing in written is not enough, a written **CONSENT** from the employer must be received to continue outside activities.
+
+
 
 #### Core Concepts
 
@@ -727,6 +750,10 @@ If you know a client trade is coming, your hands are tied.
 > **If you’re paid to recommend, say it clearly before you recommend.**  
 > Any benefit tied to sending a client somewhere else must be **fully disclosed upfront**.  
 > Hidden referral money = hidden bias.
+
+
+> [!DANGER] MISTAKES YOU WILL DO
+> - If for any reason, the referral fee was not disclosed. IT SHOULD NOT BE TAKEN afterwards. You can't disclose something afterwards.
 
 #### Core Concepts
 1. Members and Candidates must **disclose to clients and employers** any **compensation, consideration, or benefit** received for referring clients or prospective clients.

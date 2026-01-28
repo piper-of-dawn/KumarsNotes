@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4945263de3daafc7",
+        "id": "d9d4c7517b8bd021",
         "type": "tabs",
         "children": [
           {
-            "id": "8d5422f46e58076d",
+            "id": "ab61447ddfebe320",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/DERIVATIVES.md",
+                "file": "CFA Notes/FSA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DERIVATIVES"
+              "title": "FSA"
             }
           }
         ]
@@ -89,25 +89,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e169fb6347d25777",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "CFA/Revision Notes for CFA.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Revision Notes for CFA"
-            }
-          },
-          {
             "id": "584708d7cbc9b68b",
             "type": "leaf",
             "state": {
@@ -164,8 +145,29 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
+          },
+          {
+            "id": "7615d75705135279",
+            "type": "leaf",
+            "state": {
+              "type": "Saved Queries View",
+              "state": {},
+              "icon": "feather-mouse-pointer",
+              "title": "Saved Queries"
+            }
+          },
+          {
+            "id": "0f7fd50e23fcff8c",
+            "type": "leaf",
+            "state": {
+              "type": "github-copilot-chat-view",
+              "state": {},
+              "icon": "bot-message-square",
+              "title": "Copilot Chat"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -184,48 +186,47 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8d5422f46e58076d",
+  "active": "ab61447ddfebe320",
   "lastOpenFiles": [
+    "CFA Notes/FSA.md",
     "CFA Notes/EQUITY.md",
+    "CFA Notes/ETHICS.md",
+    "CFA Notes/fsa_b2_b.txt",
+    "CFA Notes/fsa_b2_a.txt",
+    "CFA Notes/quick.txt",
+    "CFA Notes/b3.txt",
+    "CFA Notes/b4.txt",
+    "CFA Notes/schweser_qm_econ_ci_full.txt",
+    "Book Snippets/Generative Deep Learning.md",
+    "Blockchain/Blockchain.md",
+    "Automated Trading System/Implementation Plan.md",
+    "Asynchronous Programming and Parallelism/Concurrency, Parallelism and Asynchrony.md",
+    "Advanced Credit Risk/dump.md",
+    "CFA Notes/ALTERNATIVE INVESTMENTS.md",
     "CFA Notes/FIXED INCOME.md",
+    "CFA Notes/DERIVATIVES.md",
     "CFA Notes/CORPORATE ISSUERS.md",
     "CFA/Legal Terms Related to Bonds.md",
-    "CFA Notes/Ethics.md",
     "Diary/Chapter IV - Aman.md",
     "WIP/How to measure fear.md",
     "Diary/Aman.md",
     "Diary/Writing Style.md",
     "Diary/Videos.md",
     "CFA Notes/schweser_fsa.txt",
-    "CFA Notes/FSA.md",
     "CFA Notes/fsa.txt",
     "CFA Notes/AGENT.md",
     "CFA Notes/Preamble.md",
     "CFA Notes/schweser_qm_econ_ci.txt",
     "CFA/CFA Notes/Untitled",
     "CFA/Fixed Income.md",
-    "CFA Notes/ALTERNATIVE INVESTMENTS.md",
     "CFA/CouponStructures.md",
-    "CFA Notes/DERIVATIVES.md",
     "CFA/Revision Notes for CFA.md",
     "CFA Notes/PORTFOLIO MANAGEMENT.md",
     "CFA Notes/ECONOMICS.md",
-    "CFA Notes/QUANTITATIVE METHODS.md",
-    "CFA Notes/Read these again.md",
-    "CFA Notes",
-    "Ethics.md",
-    "Quant Finance/Fixed Income.md",
-    "Untitled 1.md",
-    "Tricky Questions in Ethics.md",
     "Pasted Image 20251228112906_706.png",
     "Pasted image 20251029114056.png",
     "Pasted image 20251230214023.png",
-    "CFA/Revision Notes for CFA.md~",
     "dp.png",
-    "Spells",
-    "Rust",
-    "Quant Finance",
-    "Portfolio Management",
     "Linear Algebra/Pasted image 20250429102423.png",
     "Mathematics for Machine Learning/Pasted image 20230621171117.png",
     "Automated Trading System/Pasted image 20230622112923.png",

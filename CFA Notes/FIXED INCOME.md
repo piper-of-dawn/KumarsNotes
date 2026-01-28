@@ -291,6 +291,53 @@ $$\boxed{\text{Mac. D} = \sum_{i=o}^N \text{PV}_i \times i}$$
       - **Numerator $(PV_+−PV_-)$:** This captures how much the bond’s price actually moves when yields are nudged down versus up, with cash flows allowed to change. It’s the observed price response to rate movements.
       - **Denominator $2\,\Delta y$:** This is the total yield change between those two scenarios (down by Δy, up by Δy). Dividing by it converts the price move into a price change per unit of yield (a slope).
 	    - Divide by $PV_0$: Normalizes the slope by today’s price so the result is a percentage sensitivity.    $$\boxed{\text{Effective Duration}=\dfrac{PV_- - PV_+}{2\,\Delta y\,PV_0}}​​$$
+7. Callable vs putable convexity (plain English):  
+   - Callable: when yields fall a lot, the issuer will likely call. Your upside is capped. Price rises slow down → this is “negative convexity.”  
+   - Putable: when yields rise a lot, you can sell back (put). Your downside is cushioned. Price falls slow down → convexity stays positive.
+8. Option‑free bonds: Modified Duration (Mod. D) and Effective Duration (Eff. D) are usually close for small moves. They can differ when the curve isn’t flat. Keep it simple: for plain bonds use Mod. D; if options/prepayments can change cash flows, use Eff. D.
+9. Effective Convexity (Eff. Conv.): Same idea as Eff. D. Reprice the bond with the curve shifted slightly down and up. Use those two prices to measure curvature. Use Eff. Conv. when the bond has options or path‑dependent cash flows.
+10. Price change with effective measures (Δ in decimals):  
+    $$\Delta P/P \approx -\text{Eff. D}\,\Delta\text{Curve} + \tfrac{1}{2}\,\text{Eff. Conv}\,(\Delta\text{Curve})^2$$  
+    Read it as: duration gives the main move; convexity adds a small correction.
+
+> [!QUESTION] PRICE CHANGE USING EFF. D AND EFF. CONV.
+> Problem: Eff. D = 10.5, Eff. Conv. = 97.3. Curve falls by 200 bps. What is % price change?  
+> ---  
+> Step 1 (duration): −10.5 × (−0.02) = +0.2100 → +21.00%  
+> Step 2 (convexity): 0.5 × 97.3 × (0.02)^2 = 0.0195 → +1.95%  
+> Answer: ≈ +22.95%  
+> Takeaway: Use decimals for bps (200 bps = 0.02). Add convexity for big moves.
+
+11. Key Rate Duration (KRD): Sensitivity to a move at one maturity (e.g., “5‑year point”), holding other maturities fixed.  
+    - KRDs across maturities add up to Eff. D.  
+    - Use KRDs to handle non‑parallel curve moves (steeper, flatter, or curved shapes).  
+    - Portfolio KRD = sum of position KRDs (weighted by market value).
+
+> [!QUESTION] KRD WITH A NON‑PARALLEL MOVE
+> Problem: 50% in a 5‑year zero at 5% and 50% in a 10‑year zero at 6% (annual).  
+> 5‑year yield +50 bps; 10‑year yield −25 bps. Estimate portfolio % change.  
+> ---  
+> 5y: Mod. D = 5/1.05 = 4.762 → KRD5 = 4.762 × 0.5 = 2.381 → Impact = −2.381 × 0.0050 = −1.19%  
+> 10y: Mod. D = 10/1.06 = 9.434 → KRD10 = 9.434 × 0.5 = 4.717 → Impact = −4.717 × (−0.0025) = +1.18%  
+> Net: ≈ −0.01% (roughly flat).  
+> Takeaway: KRDs let you see which maturity points drive P&L.
+
+12. Analytical vs empirical duration (keep it practical):  
+    - Analytical (Macaulay, Mod. D, Eff. D): model‑based; assumes spreads don’t change when you shift the benchmark curve.  
+    - Empirical: uses history; captures how credit spreads and yields actually move together.  
+    - Example: “Flight to quality” → gov’t yields drop but credit spreads widen; corporate bond prices may rise less or even fall → empirical duration is lower than analytical for credit‑heavy portfolios.
+
+> [!TIP] QUICK CHECKS
+> - Options or prepayments? Use Effective (not Modified).  
+> - Convert bps to decimals (50 bps = 0.005).  
+> - KRDs add up to Eff. D.  
+> - Callable at low yields → negative convexity; putable stays positive.
+
+> [!DANGER] DO NOT DO THIS
+> - Don’t use Mod. D for callable/putable/MBS.  
+> - Don’t assume all curve moves are parallel; use KRDs for shape changes.  
+> - Don’t mix spread moves into “effective” shocks unless your model changes spreads too.
+
 ### MODULE 65.1: MORTGAGE-BACKED SECURITY (MBS) INSTRUMENT AND MARKET FEATURES
 
 1. **Prepayment Risk:** You own a callable bond (and interest rate falls) → They prepay and buy back their now cheaper bond issued at a high interest rate. Interest Rate falls to 2% and you take a cheaper loan and payback your expensive loan. For the bond investor, high-coupon mortgage cash flows disappear right when they\u2019re most valuable, that is why a **risk**.

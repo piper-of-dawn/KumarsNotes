@@ -45,7 +45,7 @@ LOS 71.b: Explain why forward and futures prices differ.
 > - Futures vs Forwards Prices: If interest rates are constant or uncorrelated with futures prices → same price. If positively correlated → futures more valuable (for a long). If negatively correlated → futures less valuable.  
 > - Convexity Bias (IR): FRAs/forwards exhibit convexity; longer maturities can show material forward–futures price differences.
 
-1. Unlike a forward that is settled at a future date in totality, the future price difference is settled every day by Exchange. The exchange marks the price of the contract against the current market price. This is known as Mark to market. For example, if I bought a bitcoin future for $100 and the price of bitcoin futures increase to $110. The next day the $10 would be credited to my variation margin account. Daily variation margin cashflows settle the MTM P&L, so the futures contract is reset to ~0 each day.
+1. Unlike a forward that is settled at a future date in totality, the future price difference is settled every day by Exchange. The exchange marks the price of the contract against the current market price. This is known as Mark to market. For example, if I bought a bitcoin future for $100 and the price of bitcoin futures increase to $110. The next day the $10 would be credited to my variation margin account. **Daily variation margin cashflows settle the MTM P&L, so the futures contract is reset to ~0 each day.**
 
 2. To understand all three kinds of margin, hammer the table below into your head:
 
@@ -58,47 +58,50 @@ LOS 71.b: Explain why forward and futures prices differ.
 | 3   | 91                           | 15                  | 10                      | -1                        | 14                                    | 0                     | 14                   |
 | 4   | 96                           | 15                  | 10                      | +5                        | 19                                    | 0                     | 19                   |
 | 5   | 94                           | 15                  | 10                      | -2                        | 17                                    | 0                     | 17                   |
-3. 
+3. Interest rate futures are quoted as a “price,” not a rate. They convert a market reference rate (MRR) into a price via:
+				**Futures price=100−(100×MRR)**
+	So higher rates ⇒ lower futures prices. 
 
-Notation in simple language
-- MRR: Market reference (annualized) interest rate for the period.  
-- $\tau$: Accrual year fraction of the period (e.g., 6 months → 0.5).  
-- BPV: Change in contract value for a 1 bp change in MRR.  
-- MTM: Daily settlement of gains/losses on futures.
+> [!QUESTION] FUTURES PRICE
+> Suppose an interest rate futures contract is for a **6-month rate starting 6 months from now**, and the quoted futures price is **97**.
+> 
+> ---
+> 
+> 100−(100×MRR) = 97, implies, MRR = 0.03
 
-> [!warning] Common mistakes to avoid
-> - Confusing futures price with the interest rate: 97 price is 3% MRR, not 97%.  
-> - Forgetting that futures value resets to zero each day after MTM.  
-> - Using 1 instead of the period fraction in BPV: always multiply by $\tau$.  
-> - Assuming futures = forwards regardless of rate dynamics; correlation matters.  
-> - For interest rate forwards (e.g., FRAs), settlement is PV’d at the realized rate for the period, not at the forward rate.
-
-Key relationships (display)
-$$\text{IR Futures Price} = 100 - 100\,\text{MRR}_{A,\,B-A}$$
-$$\text{BPV} = N \times \tau \times 0.0001$$
-
-When forwards equal futures (pricing equality)  
-- If interest rates are constant or uncorrelated with futures prices, the pricing is effectively the same.  
-- With positive correlation (long futures): MTM cash arrives when rates are high → earns more interest → futures more attractive than forwards. With negative correlation → less attractive.
+4. How much does my futures value change if my MRR moves by 1bp. That is BPV which is notional times time in years times 0.0001. $$\text{BPV} = \text{Notional} \times \tau \times 0.0001$$  
+5. **==If interest rates are constant or uncorrelated with futures prices, the pricing is effectively the same.==**  
+6. When interest rates are high, futures are more attractive than forwards because I receive cash daily, and hence futures are expensive than forwards. This makes interest rate and futures price positively correlated.
+7. With negative correlation → futures are less attractive.
 
 > [!tip] Quick checks
 > - After each futures MTM, contract value → 0; price moves to settlement price.  
 > - For a 6-month contract on $1,000,000,\ BPV = 1{,}000{,}000 \times 0.5 \times 0.0001 = 50.$  
 > - A 1 bp move → $\pm$BPV in futures value; for forwards, discount the payoff at the realized rate for the same $\tau$.
 
-Numericals
+
+> [!question] CONVEXITY ISSUE
+> Consider a $1 million interest rate future on a 6-month MRR priced at 97.50 (an MRR of 2.5%) that settles six months from now. If the realised 6-month MRR at settlement is (i) 2.51% and (ii) 2.49%, compute the PV of the settlement at the beginning of the period. 
+> 
+> ---
+> 
+> BPV = 1 Million $\times$ 0.0001 $\times$ 0.5 = $50
+> - If the MRR at settlement is 2.51%, the long receives 50/(1 + 0.0251/2) = $49.3803.
+> - If the MRR at settlement is 2.49%, the long must pay 50/(1 + 0.0249/2) = $49.3852.
+>   
+>Rate decline harms long more than Rate rise of same amount benefits him.
+
 
 > [!question] Price vs Value with Daily MTM (Gold futures)
-> Problem: A futures on 100 oz gold is initiated at $1{,}870$/oz. Day 1 settlement price rises to $1{,}880$/oz. What happens to price and value?  
-> Solution: Price increases by $10 to $1{,}880$. The long receives MTM: $10 \times 100 = $1{,}000, and the contract value resets to 0 after settlement.  
-> Explanation: Futures price changes and daily cash is exchanged; post-MTM, position value is reset to zero each day.
+> 
+> Problem: A futures on 100 oz gold is initiated at $1870$/oz. Day 1 settlement price rises to $1880$/oz. What happens to price and value?  
+> 
+> ---
+> 
+> MTM Value = 10 $\times$ 100 = 1000. 
+> Deposit $1000 in VM and reset Future contract price to 0 
 
-> [!question] BPV and Futures Payoff (IR futures)
-> Problem: A 6-month MRR future settles in 6 months, notional $\$1{,}000{,}000$. Quoted futures price is 97.50 (implied MRR 2.50%). Compute BPV and the value change for a 1 bp increase in the MRR at settlement.  
-> Solution:  
-> $$\text{BPV} = 1{,}000{,}000 \times 0.5 \times 0.0001 = 50$$  
-> A 1 bp increase in MRR → futures value increases by $\$50 for the long (price falls by 0.01, but contract value change is +$50 by convention).  
-> Explanation: IR futures are quoted on a price basis (100 – rate). The contract value change per 1 bp move is governed by BPV.
+
 
 > [!question] Forward vs Futures (convexity/discounting effect)
 > Problem: Consider an otherwise equivalent 6-month FRA with notional $\$1{,}000{,}000$ struck at 2.50%. If the realized 6-month MRR at settlement is (i) 2.51% and (ii) 2.49%, compute the PV of the settlement at the beginning of the period. Compare to the $\pm$BPV from the futures.  

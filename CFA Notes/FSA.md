@@ -66,37 +66,134 @@
 > [!tip] HAMMER THIS INTO YOUR HEAD
 > - A common size balance sheet expresses each item as percentage of total assets, income statement as percentage of revenue.
 ### MODULE 28.4 BASIC EARNINGS PER SHARE
-1. **What is Warrant:** A warrant is essentially an equity call option issued by the company; a warrant holder has the right but not the obligation to purchase newly issued shares at the exercise price. 
-2. **What is Basic EPS:** (Actual earnings - Preferred Dividend) / actual weighted ordinary shares.
+
+
+> [!abstract] MEMORISE
+> 
+> BASIC EPS = (PAT - Pref. Dividend) / Weighted Avg. of Ordinary Equity
+> 
+> Whenever a stock split happens do not mess with weighted number of shares calculations. Just take the final weighted number of and split it.
+> 
+> In case of convertible bonds, always add after-tax interest to the numerator 
+> 
+> In case of options and warrants, first figure out if exercise is economic, if yes:
+>    Shares are issued  
+  >  Cash comes in 
+   > Cash buys back some shares @ market price
+   > **Only the leftover shares increase the denominator**
+	>That leftover is the **true dilution**.
+
+
+- **What is Warrant:** A warrant is essentially an equity call option issued by the company; a warrant holder has the right but not the obligation to purchase newly issued shares at the exercise price. 
+1. **What is Basic EPS:** (Actual earnings - Preferred Dividend) / actual weighted ordinary shares.
 
 > [!DANGER] DO NOT MAKE THIS MISTAKE
 > Preferred Dividend is subtracted while calculating EPS
 
-1. **What are Actual weighted shares:** Weighted average number of shares outstanding during the period. Shares outstanding adjusted for how long they existed during the year. For example:
+2. **What are Actual weighted shares:** Weighted average number of shares outstanding during the period. Shares outstanding adjusted for how long they existed during the year. For example:
 
-|                                                        |           |
+
+> [!question] WEIGHTED AVERAGE OF SHARES
+> |                                                        |           |
 | ------------------------------------------------------ | --------- |
 | Shares outstanding on 1 January 2018                   | 1,000,000 |
 | Shares issued on 1 April 2018                          | 200,000   |
 | Shares repurchased (treasury shares) on 1 October 2018 | (100,000) |
 | Shares outstanding on 31 December 2018                 | 1,100,000 |
 The actual weighted shares are calculated as:
+> 
+> 
 
-|                                                                                              |           |
-| -------------------------------------------------------------------------------------------- | --------- |
-| 1,000,000 � (3 months/12 months) =                                                           | 250,000   |
-| 1,200,000 � (6 months/12 months) =                                                           | 600,000   |
-| 1,100,000 � (3 months/12 months) =                                                           | 275,000   |
-| Weighted average number of shares outstanding = (3/12) * 1 + (6/12) * 1.2 + (3/12) * 1.1<br> | 1,125,000 |
+|                                                                                                 |           |
+| ----------------------------------------------------------------------------------------------- | --------- |
+| 1,000,000 * (3 months/12 months) =                                                              | 250,000   |
+| 1,200,000 * (6 months/12 months) =                                                              | 600,000   |
+| 1,100,000 * (3 months/12 months) =                                                              | 275,000   |
+| Weighted average number of shares outstanding = (3/12) \* 1 + (6/12) \* 1.2 + (3/12) \* 1.1<br> | 1,125,000 |
 
-4. **What is Preferred Dividend?** This is the dividend paid to the preferred shareholders. Preferred stock doesn't come under common stock and hence EPS removes it.
+> [!question] STOCK SPLIT
+> On 1 December 2018, a previously declared 2-for-1 stock split took effect. For the year ended 31 December 2018, Angler Products had net income of USD2,500,000. The company declared and paid USD200,000 of dividends on preferred stock. Calculate its basic EPS.
+> 
+> ---
+> 
+> **Whenever a stock split happens do not mess with weighted number of shares calculations. Just take the final weighted number of and split it.** 
+> 
+> It is 2 for 1 split. So 1.125 Million shares turn into 2.25 million shares.
+> 
+> BASIC EPS = (2.5 million - 0.2 million) / 2.25 million = USD 1.022
+
+
+4. **What is Preferred Dividend?** This is the dividend paid to the preferred shareholders. **Preferred stock doesn't come under common stock and hence EPS removes it.**
 5. **What is Diluted EPS:** “What EPS would be” if all dilutive instruments became common stock. This would be (Actual Earnings - Preferred Dividends) / (Ordinary Shares + New common stock that would have been issued at conversion))
 6. **What is Dilution:** The instruments convertible into ordinary equity can become shares ⟶ share count rises ⟶ EPS goes down. That's dilution.
 7. **What is stock split:** Suppose a company with a market capitalization of $100 has 100 shares (each share is priced $1). The company declares 2:1 stock split, which means each share would be split into 2 shares. This means the number of shares will be now: (100 * (2/1)) = 200. Now each share would be priced $0.5.
-8. Complex Capital Structure: 
-Under IFRS, the type of equity for which EPS is presented is referred to as ordinary. Ordinary shares are those equity shares that are subordinate to all other types of equity. 
+8. Complex Capital Structure: Under IFRS, the type of equity for which EPS is presented is referred to as ordinary. Ordinary shares are those equity shares that are subordinate to all other types of equity. When a company has issued any financial instruments that are potentially convertible into common stock, it is said to have a complex capital structure. 
 
-When a company has issued any financial instruments that are potentially convertible into common stock, it is said to have a complex capital structure. 
+
+
+> [!question] BASIC EPS
+> 1. For the year ended 31 December 2018, Shopalot Company had net income of USD1,950,000. The company had 1,500,000 shares of common stock outstanding, no preferred stock, and no convertible financial instruments. What is Shopalot’s basic EPS?
+>    
+>    ---
+>    
+>    Basic EPS = 1.95 / 1.5 = USD 1.30
+
+###### DILUTED EPS
+
+9. **What-if**, if everything that can be converted into common stock is converted into common stock. This increases the number of shares and reduces EPS. This is diluted EPS.
+10. **What-if bonds are converted**, When company converts bonds into common stock, in the numerator, you add **after-tax interest.** In the denominator, you add the new shares issued on conversion.
+
+> [!danger] ALWAYS ADD AFTER-TAX INTEREST
+> **Why?** Because the interest is tax-deductible and hence on conversion you lose the tax shield benefit of interest. So you add back after-tax interest to numerator.
+
+11. **What-if preferred stock is converted**, In this case, you add preferred dividends to numerator and add new shares issued on conversion to denominator.
+
+
+> [!question] DILUTED EPS (ALWAYS ADD AFTER TAX INTEREST)
+> Oppnox Company (fictitious) reported net income of USD750,000 for the year ended 31 December 2018. The company had a weighted average of 690,000 shares of common stock outstanding. In addition, the company has only one potentially dilutive security: USD50,000 of 6 percent convertible bonds, convertible into a total of 10,000 shares. Assuming a tax rate of 30 percent, calculate Oppnox’s basic and diluted EPS.
+> 
+> ---
+> 
+> Numerator = PAT + After tax Interest = 750 + 50(0.06)(0.7) - 750 + 2.1 = 752.1
+> Denominator = 690 + 10 = 700
+> Diluted EPS = 752.1 / 700 = USD 1.0744
+
+###### TREASURY STOCK METHOD
+
+12. If exercise is uneconomic → no exercise → no new shares → **not dilutive**. If exercise is economic:
+    - Shares are issued  
+    - Cash comes in 
+    - Cash buys back some shares @ market price
+    - **Only the leftover shares increase the denominator**
+	- That leftover is the **true dilution**.
+
+
+
+
+> [!question] OPTIONS AND WARRANTS
+>During 20X6, XXX Corp. reported earnings available to common shareholders of $1.2 million and had 500,000 shares of common stock outstanding for the entire year, for basic EPS of $2.40. XXX has 100,000 stock options (or warrants) outstanding the entire year. Each option allows its holder to purchase one share of common stock at $15 per share. The average market price of XXX’s common stock during 20X6 is $20 per share. Calculate diluted EPS.
+>
+>---
+>
+>First think, is exercise economic. Yes, because market price $20 > exercise price $15.
+>
+>Cash Inflow from exercise = 100,000 * $15 = $1,500,000
+>
+>New shares issued = 100,000
+>
+>Cash used to buy back shares = 1,500,000 / 20 = 75,000
+>
+>Net new shares = 100,000 - 75,000 = 25,000
+>
+>Numerator = 1,200,000
+>Denominator = 500,000 + 25,000 = 525,000
+>
+>Diluted EPS = 1,200,000 / 525,000 = $2.2857
+>
+ 
+
+
+
 ### MODULE 28.5 RATIOS AND COMMON SIZE STATEMENTS
 1. Common-size income statement = divide every line item by **Revenue** and express as %.
 

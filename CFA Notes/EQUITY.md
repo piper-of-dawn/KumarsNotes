@@ -1,5 +1,14 @@
-## EQUITY
-
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 3 # Include headings up to the specified level
+include: 
+exclude: 
+includeLinks: true # Make headings clickable
+hideWhenEmpty: false # Hide TOC if no headings are found
+debugInConsole: false # Print debug info in Obsidian console
+```
 ### MARKET ORGANISATION 
 
 1. **Financial Assets vs. Real Assets**: Financial assets are paper or digital claims on cash flows (stocks, bonds, derivatives), while real assets are tangible physical things that produce value directly (factories, land, gold).
@@ -51,39 +60,134 @@
 39. **Maintenance margin** is the minimum equity you must keep after the trade is open; example: if maintenance margin is 25%, your equity must always be at least $25 on a $100 stock, or you get a margin call.
 40. **Variation margin** is the daily cash adjustment based on price changes, common in futures; example: if your futures position loses $5 today, you must pay $5 today to restore the margin balance.
 
+### MODULE 40.1: INDEX WEIGHTING METHODS
 
-
-### SECURITY MARKET INDEXES
-1. **Price return vs total return**: A price return index reflects only changes in constituent prices, while a total return index assumes all dividends and interest are reinvested. The headline **S&P 500** is a price return index, while **Germany's DAX** is quoted as a total return index, which is why na�ve comparisons are misleading. ==At inception PRI = TRI.==
+1. **Price return vs total return**: A price return index reflects only changes in constituent prices, while a total return index assumes all dividends and interest are reinvested. The headline **S&P 500** is a price return index, while **Germany's DAX** is quoted as a total return index, which is why naive comparisons are misleading. ==At inception PRI = TRI.==
 
 2. **Price return index level**
 $$  V_{PRI}=\frac{\sum_{i=1}^{N} n_i P_i}{D}$$
   The **divisor (D)** is **defined at inception** to scale the index to a base value. Its **numerical value is later adjusted only to maintain continuity** when mechanical events occur (stock splits, spin-offs, constituent changes), so the index does not show artificial gains or losses. Real-world hook: in the **Dow Jones Industrial Average**, Apple's stock split changed its price but not its economic value; the adjusted divisor prevented the Dow from falsely jumping.
-3. **Price return (security or index)**: Measures only price change.  $$PR_i=\frac{P_{i1}-P_{i0}}{P_{i0}}$$, and at the index level $PR_I=\sum w_i PR_i$. Dividends/interest are ignored.
+3. **Price return (security or index)**: Measures only price change.
+
+$$PR_i=\frac{P_{i1}-P_{i0}}{P_{i0}}$$
+
+At the index level:
+
+$$PR_I=\sum w_i\,PR_i$$
+Dividends/interest are ignored.
     
-4. **Total return = what investors actually earn**: Adds income to price change.    $$TR_I=\frac{V_{PRI1}-V_{PRI0}+Inc_I}{V_{PRI0}}$$Over time, total return always exceeds price return when dividends exist.
+4. **Total return = what investors actually earn**: Adds income to price change.
 
-#### Exam Traps — Quick Hits
-- Commodity index return ≠ spot price change: roll yield from futures rolling drives differences.
-- Hedge fund indexes overstate performance: survivorship/self‑reporting biases.
-- Bond index turnover is high: constituents mature and exit; turnover ≠ trading.
-- Style indexes have highest turnover: stocks migrate between value/growth and cap buckets.
-- Many bond prices in indexes are estimated via matrix pricing, not trades.
-- Commodity weighting is arbitrary (no market‑cap analog).
-- Wilshire 5000 is not literally 5,000; it targets essentially all investable US equities.
-- GDP‑weighting can curb market‑cap bubbles in multi‑country indexes (e.g., historic Japan overweight in MSCI EAFE).
-- Broad bond indexes cannot be fully replicated; managers use sampling.
-- Sector indexes help separate stock selection from sector‑allocation effects.
+$$TR_I=\frac{V_{PRI1}-V_{PRI0}+Inc_I}{V_{PRI0}}$$
 
-#### Equity Index Families
-- Broad market indexes (e.g., Wilshire 5000, Russell 3000, SSE Composite): capture ≥90% of market cap; designed as “market in a mirror.”
-- Multi‑market (global/regional) indexes: MSCI families by development stage (developed, emerging, frontier) and geography; GDP vs market‑cap weighting trade‑offs for concentration risk.
-- Sector indexes: slice by industry; useful for attribution of sector vs selection effects across the cycle.
-- Style indexes: value vs growth and size (large/mid/small); high turnover due to category migration.
+Over time, total return always exceeds price return when dividends exist.
 
-#### Fixed‑Income and Commodity Index Notes
-- Fixed income: massive universes, dealer pricing, and constant maturities create replication challenges; many constituents priced by matrix; sampling is common.
-- Commodity: constructed from futures; returns reflect spot, collateral, and roll yield; constituent weights are rules‑based and not market‑cap driven.
+5. **Price-weighted index (PWI)**: Each stock’s weight is proportional to its price. High-priced stocks dominate; stock splits mechanically reduce their weight unless the divisor is adjusted. Simple to compute but economically arbitrary. Equivalent replication: hold one share of each constituent. Examples: DJIA, Nikkei.
+6. **Equal-weighted index (EWI)**: Each stock has the same weight. Implicitly rebalances back to equal weights; leads to higher turnover and a small-cap/Value tilt. Return ≈ arithmetic average of constituent returns. Matching requires frequent rebalancing to equal dollar amounts → higher transaction costs.
+7. **Market-cap-weighted (value-weighted) index (MCWI)**: Weights are proportional to market capitalization. Buy-and-hold friendly; low turnover. Replicable by buy-and-hold of constituents at initial cap weights (aside from corporate actions). Momentum/large-cap tilt and tends to overweight overvalued names and underweight undervalued ones.
+8. **Float-adjusted market-cap-weighted**: Same as MCWI but uses free-float shares (excludes closely held/government stakes) to better reflect investable, tradable supply.
+9. **Fundamental-weighted index**: Weights based on fundamentals (book value, earnings, cash flow, dividends, sales). Intentionally value-tilted; higher turnover from periodic reconstitution.
+10. **Rebalancing vs. reconstitution**: **Rebalancing restores target weights (e.g., equal weight each quarter). Reconstitution updates membership (adds/drops).** Both create transaction costs and potential index effects.
+
+> [!abstract] MEMORISE
+> - Core methods: **Price-weighted**, **Equal-weighted**, **(Float-adjusted) Market-cap-weighted**, **Fundamental-weighted**.
+> - Biases: PWI → high-price bias; EWI → small-cap/value tilt + turnover; MCWI → large-cap/momentum tilt; Fundamental → value tilt.
+> - Divisor: adjust D to maintain index continuity after splits/spin-offs/changes; no economic gain/loss from mechanical events.
+
+
+> [!question] INDEX WEIGHTING NUMERICAL
+> 
+> Problem: Three stocks A, B, C. At t0: prices (A=50, B=20, C=10); shares (A=1, B=2, C=5). At t1: prices (A=55, B=18, C=12). No dividends. Compute t0→t1 returns for: Price-weighted, Equal-weighted, and Market-cap-weighted indices. Assume PWI divisor at t0 is D0=1 (base index), no corporate actions.
+> 
+> ---
+> 
+> Solution:
+> - Individual returns: RA = 10%, RB = −10%, RC = 20%.
+>
+> Price-weighted (PWI) levels and return:
+>
+> $$I_0=\frac{50+20+10}{1}=80\qquad I_1=\frac{55+18+12}{1}=85$$
+>
+> $$R^{\mathrm{PWI}}=\frac{85-80}{80}=6.25\%$$
+>
+> Equal-weighted (EWI) return:
+>
+> $$R^{\mathrm{EWI}}=\frac{1}{3}\big(10\% - 10\% + 20\%\big)=6.67\%$$
+>
+> Market-cap-weighted (MCWI) weights and return:
+>
+> $$w_A=\frac{50}{140}=0.3571\quad w_B=\frac{40}{140}=0.2857\quad w_C=\frac{50}{140}=0.3571$$
+>
+> $$R^{\mathrm{MCWI}}=0.3571\cdot 10\%+0.2857\cdot(-10\%)+0.3571\cdot 20\%=8.93\%$$
+
+> [!question] PRICE-WEIGHTED DIVISOR ADJUSTMENT (SPLIT)
+> 
+> Problem: Three stocks A, B, C. End of Day 1 prices: \$10, \$20, \$90. The price-weighted index uses divisor $D_1=3$, so index level is 40. On Day 2, C executes a 2-for-1 split (no other price changes). What divisor $D_2$ keeps the index level unchanged at the split instant?
+> 
+> ---
+> 
+> Solution:
+> - Post-split C price = 90/2 = 45.
+>
+> $$\frac{10 + 20 + 45}{D_2} = 40\quad \Rightarrow\quad D_2 = \frac{75}{40} = 1.875$$
+> 
+> Explanation:
+> - Adjust the divisor so mechanical events (splits) do not change the index. Economic value unchanged; only the share count/price split changes.
+> 
+
+
+
+### MODULE 40.2: USES AND TYPES OF INDEXES
+
+1. **Rebalancing vs Reconstitution**: Rebalancing resets weights back to targets (usually quarterly). It matters most for equal-weighted indexes; price- and cap-weighted adjust via prices. Reconstitution adds/drops constituents when they no longer meet criteria (bankruptcy, delisting); committee judgment applies. Additions tend to push prices up; deletions down.
+2. **Uses of indexes**:
+   - Reflection of market sentiment: provide representative market returns (DJIA is popular but only 30 stocks, not broad).
+   - Benchmark of manager performance: benchmark must match manager’s approach/style (e.g., value vs growth; small vs large).
+   - Measure of market return and risk: asset-class expected return and standard deviation are estimated from index histories.
+   - Measure of beta and risk-adjusted return: use an index as market proxy to estimate beta (CAPM) and expected return; compare to actuals.
+   - Model portfolio for index funds: mutual funds, ETFs, and private portfolios replicate index returns.
+3. **Equity index types**:
+   - Broad market: captures >90% of market value; e.g., Wilshire 5000 (>6,000 stocks).
+   - Multi-market: combines countries by region (e.g., Latin America), development (emerging), or global (e.g., MSCI World).
+   - Multi-market with fundamental weighting: country sub-indexes cap-weighted; countries weighted by a fundamental (e.g., GDP) to avoid overweighting past winners.
+   - Sector: industry groups (health care, financials, consumer goods); used for cyclical analysis, PM evaluation, and index products.
+   - Style: by market cap and value/growth. Definitions vary (absolute thresholds or relative ranks). Classification often via P/E or dividend yield. Stocks migrate across styles → higher turnover than broad market.
+4. **Fixed-income indexes**:
+   - Many dimensions: issuer/collateral, coupon, maturity, credit risk (investment grade vs high yield), inflation protection; across sectors/regions/development levels.
+   - Issues: very large universe; dealer markets and infrequent trading mean providers rely on dealer quotes; bonds mature → high turnover. Replication is difficult and expensive; constituent counts vary widely.
+5. **Alternative investment indexes**:
+   - Commodities: based on futures (not spot) for grains/livestock/metals/energy. Weighting differs (equal, production value, or fixed) → very different exposures and risk/return. Examples: Thomson Reuters/CoreCommodity CRB, S&P GSCI.
+   - Real estate: appraisal-based indexes, repeat-sales indexes, and REIT indexes.
+   - Hedge funds: managers report voluntarily → indexes vary substantially and have an upward bias.
+6. **Global index characteristics**: Most widely used global security indexes are market capitalization-weighted with float adjustments; number of constituents varies.
+
+> [!ABSTRACT] MEMORISE
+> - Rebalancing: resets weights; key for equal-weighted. Reconstitution: changes membership; index effects on added/dropped names.
+> - Uses: sentiment, benchmarking (match style), market return/risk, CAPM beta and expected return, model portfolios (index funds/ETFs).
+> - Types: broad market, multi-market (incl. GDP-weighted by country), sector, style (higher turnover due to migration).
+> - Fixed income: huge, illiquid, dealer-priced, high turnover → hard/expensive to replicate.
+> - Alternatives: commodity indexes use futures and vary by weighting; real estate (appraisal/repeat-sales/REIT); hedge funds (voluntary reporting, upward bias).
+
+> [!tip] Quick checks
+> - Equal-weighted: Needs frequent rebalancing to match index returns; price/cap-weighted typically don’t.
+> - Style indexes: Expect higher constituent turnover due to migration across size/value-growth buckets.
+> - Commodities: Futures-based; weights differ widely → different risk/return; don’t equate with spot.
+> - Fixed income: Dealer quotes + illiquidity → replication is non-trivial and costly.
+> - Most global indexes: cap-weighted with float adjustment.
+> 
+
+> [!question] rebalance or reconstitute?
+> 
+> problem: an index committee removes 3 soon-to-mature bonds and 1 defaulted bond, and inserts 4 actively traded bonds. what happened?
+> 
+> ---
+> 
+> solution: reconstitution (membership change), not rebalancing (weight reset).
+
+> [!warning] COMMODITY INDEXES ≠ SPOT PRICES
+> - Commodity indexes are built from futures prices, not spot commodity prices.
+> - Index providers use different weighting schemes (equal, production value, fixed), so exposures vary a lot across indexes.
+> - Consequence: A commodity index’s return can differ materially from the change in spot commodity prices over the same period.
 
 ### MODULE 41.1: MARKET EFFICIENCY
 1. In an efficient market, prices already reflect all available information, so they're fair estimates of value; the return you earn is just pay for risk, not for being clever — in short, you can't consistently beat the market.
@@ -127,7 +231,9 @@ $$  V_{PRI}=\frac{\sum_{i=1}^{N} n_i P_i}{D}$$
 9. Level III is listed on exchange and CAN raise capital in US.
 10. If it's listed publicly, SEC is involved. In all Level I, II and III, SEC registration is required.
 11. Rule 144A allows private listing. It is cheap and SEC is not involved. It can raise capital in US. 
-### **MODULE** 43.2: REVENUE, PROFITABILITY,AND CAPITAL
+12. Cumulative preferred: the missed amounts accrue and must be paid before any common dividends. Missed because board does not want to pay the dividend today and wants to postpone it. 
+13. Non-cumulative preferred: Missed dividends are forfeited (but common still can’t be paid unless preferred is paid for the current period).  
+### MODULE 43.2: REVENUE, PROFITABILITY,AND CAPITAL
 
 12. To calculate margin always divide by Sales. For example:
 $$\text{Contribution Margin} = \frac{\text{(P - Var. Cost)} \times \text{Qty}}{\text{Revenue}}$$
@@ -181,26 +287,144 @@ $$ \text{TL} = \frac{\Delta \% \text{PAT}} {\Delta\% \text{Revenue}} $$
 	5. legal,
 	6. environmental
 
+### MODULE 46.2: DIVIDEND DISCOUNT MODELS
+
+1. What I’m actually valuing is cash to me. DDM = PV of all future dividends. If dividends are messy, I use FCFE as “what could be paid.”
+2. For short holds, I discount dividends I’ll get and the sale price. For long holds, I push to a point where growth is steady and drop in a terminal value.
+3. Gordon (constant) growth is the workhorse. ==V0 = D1/(r − g)==. Only if (Required Rate) r > g (Dividend Growth) and the business is in “stable mode.” **==Common exam trap: plugging D₀ directly.==** Growth rate is strictly less than the required rate of return. 
+4. Gordon Growth Model is appropriate for valuing company that has stable growth. 
+
+> [!question] MULTI STAGE GROWTH
+> A stock's current dividend is $5.00. Dividends are expected to grow at 10% for three years, then 5% thereafter. With a required return of 15%, the intrinsic value?
+> 
+> D1 = 5.5, D2 = 6.05, D3 = 6.655 = 13.73
+> 
+> Perpetual value = 6.655(1.05) / 0.15 - 0.05 = 6.98 / 0.10 = 69.8
+> 
+> Intrinsic Value = 69.8 / (1.15)
+
+> [!question] VALUATION OF PREFERRED STOCK 
+> A preferred stock has a par value of $100, pays a 5% annual dividend, and matures in exactly 4 years. The required rate of return is 6%. What is its value?
+> 
+> ---
+> 
+> Preferred stock will pay 5% or $5 for 4 years. Value it like a bond: N = 4, I/Y = 6, PMT = 5, FV = 100 → PV = 96.53
+
+
+5. Preferred Dividend is just a level perpetuity: V0 = D/r. 
+6. Sustainable growth:  $g = (1-\text{payout})\times ROE$. Growth comes only from **retained earnings earning ROE** → **g = b × ROE**
+
+7. Multistage logic: add PV of high-growth dividends + PV of the terminal value set one period before constant growth starts.
+8. If there’s no dividend yet, I anchor the first dividend, compute terminal value at t = (first dividend − 1), and discount back.
+
+> [!ABSTRACT] MEMORISE
+> - Finite horizon (sell at N):
+>   $$V_0 = \sum_{t=1}^{N} \frac{D_t}{(1+k_e)^t} + \frac{P_N}{(1+k_e)^N}$$
+> - Constant growth (Gordon):
+>   $$V_0 = \frac{D_1}{k_e - g},\; k_e>g$$
+> - Preferred (g = 0):
+>   $$V_0 = \frac{D}{k_p}$$
+> - Sustainable growth:  $g = (1-\text{payout})\times ROE$
+> Growth comes only from **retained earnings earning ROE** → **g = b × ROE**
+> Notation I use
+> - D0 = just paid; D1 = next dividend. P_t = price at end of Year t. V0 = value today.
+> - ke = required return on common; kp = required return on preferred; g = dividend growth.
+> - b = retention = 1 − payout; ROE = return on equity.
+> 
+
+[!tip] Quick checks (exam mindset)
+- “just paid/recently paid” → D0. “will pay/expected to pay” → D1. Gordon always uses D1.
+- Check ke > g. If they’re too close, ==tiny tweaks blow up the value==.
+- Terminal value sits one period before the first constant-growth dividend.
+- If dividends are unreliable, cross-check with FCFE or a justified multiple.
+
+[!question] MULTI-PERIOD DDM
+Problem:
+— D0 = 1.50, g = 8%, ke = 12%, P3 = 51.00. Find V0.
+Solution:
+— D1 = 1.62, D2 = 1.75, D3 = 1.89. PV(divs) ≈ 4.19. PV(P3) = 36.30. V0 ≈ 40.49.
+Explanation:
+— Add PV of the near dividends and the sale price. Don’t overthink it.
+
+[!question] GORDON GROWTH VALUE
+Problem:
+— D0 = 1.50, g = 8%, ke = 12%. Find V0 and how much comes from growth.
+Solution:
+— D1 = 1.62. V0 = 1.62/0.04 = 40.50.
+— Zero-growth value = 1.50/0.12 = 12.50 → value from growth ≈ 28.00.
+Explanation:
+— The ke − g spread drives everything. ==Narrow spread → big value.==
+
+[!question] NO CURRENT DIVIDEND → FIRST DIV AT t=4
+Problem:
+— First dividend at Year 4; E4 = 1.64; payout = 50%; g = 5%; ke = 10%. Find V0.
+Solution:
+— D4 = 0.82. V3 = 0.82/0.05 = 16.40. V0 = 16.40/1.10^3 = 12.33.
+Explanation:
+— Set terminal at t=3 (one period before first dividend), then discount.
+
+[!question] TWO-STAGE (SUPER-NORMAL → STABLE)
+Problem:
+— D0 = 1.00; g* = 15% for two years, then gc = 5% forever; ke = 11%. Find V0.
+Solution:
+— D1 = 1.15; D2 = 1.3225; D3 = 1.3886.
+— P2 = 1.3886/0.06 = 23.144.
+— V0 ≈ 1.15/1.11 + 1.3225/1.11^2 + 23.144/1.11^2 ≈ 20.90.
+Explanation:
+— Cash flows in the crazy years get discounted directly; everything after that is the Gordon block at t=2.
+
+> [!warning] Remember
+> - Don’t force Gordon on negative or supernormal growth forever. Use a finite high-growth window, then stabilize g.
+> - Preferred → use kp and level D. Common → ke and D1.
+
+---
+
 ### MODULE 46.3 - RELATIVE VALUATION MEASURES
 
-1. Common valuation multiples include **P/E, P/CF, P/S, and P/B**. You can invent others (e.g., price per user), but the logic is unchanged.    
-2. Multiples are per-share comparisons. The **denominator must be per share**.
-3. **Justified P/E** = what P/E _should be_ given fundamentals. **Market (non-justified) P/E** = what P/E _is_. Undervalued/overvalued comes from **comparing the two**.
-4. Given reqd. discount $k$, dividend growth $g$, dividend $D$ and price $P$	$$ P_0 = \frac{D_1}{k-g} $$
-5. Divide both sides by expected EPS $E_1$	$$ \frac{P_0}{E_1} = \frac{D_1/E_1}{k-g}$$
-6. At LHS, it is Justified P/E which is always **leading**. The denominator is expected earnings $E_1$.
-7. Raising the **dividend payout** increases current cash to shareholders but **reduces sustainable growth** by cutting reinvestment. Higher dividends push value up; lower growth pulls value down. The effects **offset**. This trade-off is called **dividend displacement of earnings**.
-8. It is very important to understand the relationship of PE ratio to each of its parameters:
+1. The economic principle underlying the method of comparables (using price multiples) is: **Law of One Price**
+2. Common valuation multiples include **P/E, P/CF, P/S, and P/B**. You can invent others (e.g., price per user), but the logic is unchanged.    
+3. Multiples are per-share comparisons. The **denominator must be per share**.
+4. **Justified P/E** = what P/E _should be_ given fundamentals. **Market (non-justified) P/E** = what P/E _is_. Undervalued/overvalued comes from **comparing the two**.
+5. Given reqd. discount $k$, dividend growth $g$, dividend $D$ and price $P$	$$ P_0 = \frac{D_1}{k-g} $$
+6. Divide both sides by expected EPS $E_1$	$$ \frac{P_0}{E_1} = \frac{D_1/E_1}{k-g}$$
+7. At LHS, it is Justified P/E which is always **leading**. The denominator is expected earnings $E_1$.
+8. Raising the **dividend payout** increases current cash to shareholders but **reduces sustainable growth** by cutting reinvestment. Higher dividends push value up; lower growth pulls value down. The effects **offset**. This trade-off is called **dividend displacement of earnings**.
+9. It is very important to understand the relationship of PE ratio to each of its parameters:
 	- Payout Ratio ↑ PE multiple ↑
 	- k ↑ PE Multiple ↓. High DE Ratio, or anything that signals higher risk would crank up required rate of return
 	- g ↑ PE multiple ↑. Anything that signals higher future earnings would crank up g. For example, higher sales growth, bullish outlook etc.
-9. The disadvantages of multiples based approach is:
+10. The disadvantages of multiples based approach is:
 	- **Comparable vs fundamental conflict**: Tesla can look _overvalued_ on peer P/E versus automakers, yet _fair_ or undervalued on a DCF assuming high growth.
 	- **Accounting differences**: SAP (IFRS) vs Oracle (US GAAP) can show different P/E or P/B purely due to R&D and revenue-recognition rules.
 	- **Cyclicality distortion**: Delta Air Lines may show a very low P/E at peak earnings (looks cheap) and a very high P/E in a downturn (looks expensive), driven by the cycle, not mispricing.
-10. Enterprise value represents the total takeover cost: equity plus debt minus cash, because the acquirer assumes debt but also receives the cash.
-11. EV is preferred when comparing firms with different capital structures; market cap alone can mislead.
-12. EV must be matched with earnings available to both debt and equity holders, which is why EV/EBITDA is used; when net income is negative, P/E breaks but EV/EBITDA still works. Firm A has EV = 1,000, EBITDA = 100 ⟶ EV/EBITDA = 10. Net income = −10, so P/E is meaningless, but valuation via EV still works.
-13. EBITDA can mislead because it ignores capital expenditures and can overstate cash flow. Eg: Vodafone Group often reports strong EBITDA, but heavy recurring capex on spectrum licenses and network upgrades absorbs most of the cash, so free cash flow remains weak despite attractive EV/EBITDA.
-14. Asset-based valuation starts from the balance sheet and estimates equity as fair value of assets minus liabilities, adjusting book values using depreciated cost, inflation-adjusted cost, or replacement cost because book ≠ market.
-15. Asset-based models struggle when intangibles dominate, so values are usually treated as a floor or liquidation value and work best only for tangible-asset-heavy or liquidation cases. Eg: Google has a brand, talent and data which makes tangible asset valuation meaningless.
+11. Enterprise value represents the total takeover cost: equity plus debt minus cash, because the acquirer assumes debt but also receives the cash.
+
+> [!NOTE] WHAT IS EV?
+> A company is financed by:
+> 
+> Equity: owners’ money (shareholders).
+> 
+> Debt: borrowed money (lenders).
+> 
+> Preferred stock: a hybrid claim (often like “equity with fixed-like payments”).
+> 
+> If someone buys the whole company, they effectively take over all these claims.
+> 
+> 2) Cash on the company’s balance sheet
+> 
+> Cash and short-term investments are money the buyer “gets” on day 1 after buying.
+> 
+> So cash reduces the net amount the buyer must effectively pay.
+> 
+> 3) EV (Enterprise Value)
+> 
+> **EV = equity value + preferred stock + debt − cash & short-term investments.**
+> 
+
+12. **EV is preferred when comparing firms with different capital structures; market cap alone can mislead.**
+13. EV must be matched with earnings available to both debt and equity holders, which is why EV/EBITDA is used; when net income is negative, P/E breaks but EV/EBITDA still works. Firm A has EV = 1,000, EBITDA = 100 ⟶ EV/EBITDA = 10. Net income = −10, so P/E is meaningless, but valuation via EV still works.
+14. **EBITDA can mislead because it ignores capital expenditures and can overstate cash flow. Eg: Vodafone Group often reports strong EBITDA, but heavy recurring capex on spectrum licenses and network upgrades absorbs most of the cash, so free cash flow remains weak despite attractive EV/EBITDA.**
+15. Asset-based valuation starts from the balance sheet and estimates equity as fair value of assets minus liabilities, adjusting book values using depreciated cost, inflation-adjusted cost, or replacement cost because book ≠ market.
+
+16. Asset-based models struggle when intangibles dominate, so values are usually treated as a floor or liquidation value and work best only for tangible-asset-heavy or liquidation cases. Eg: Google has a brand, talent and data which makes tangible asset valuation meaningless.
+17. P/B fails when book value is not reliable.
