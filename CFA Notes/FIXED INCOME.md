@@ -184,22 +184,33 @@ At t+1:
 > G‑spread = 6.82 − 4.33 = \textbf{2.49% (249 bp)}.
 > Explanation: Use nearest on‑the‑run government yields and linear interpolation for the missing maturity.
 
-### MODULE 54.1: Yield and Yield Spread Measures for Floating-Rate Instruments
+### MODULE 54.1: YIELD AND YIELD SPREAD MEASURES FOR FLOATING-RATE INSTRUMENTS
 
-#### Floating-Rate Note (FRN) Valuation — Margin Widening
 
 > [!question] Question
 > A floating-rate note (FRN) has a face value of $10 million, total maturity 6 years, and pays coupons = reference rate + 2.5% margin. After 2.5 years, the issuer’s credit quality worsens and the market now demands a 3.5% margin (100 bps wider). The current flat spot curve is 4.1%, with semiannual payments. Compute the fair value of the FRN today.
+> 
+> ---
+> 
+> After 2.5 years, 7 coupons remain, hence N = 7
+> PV, if nothing changed = 100
+> Margin widened by 1% (0.5 per 100 per coupon period)
+> PV of 7 payments of 0.5 @ 2.05% = 3.23
+> So bond value should decline by 3.23 per 100 and bond should be priced at 96.77 per 100
+> For $10 million notional, price = $9,677,000 (rounding may give $9,697,600) 
+> 
 
-> [!tip] TL;DR
-> FRN price at reset ≈ par, but if its margin < market-required margin, Price = Par − PV(missing margin cash flows).
+1. Add-on yield = _“Interest divided by principal, scaled to a year.”_
+	Holding-period return on principal:
+		$$\frac{I}{P}$$​Annualise it:
 
-1. Shortfall per year = required margin − bond margin = 3.5% − 2.5% = 1.0% → per semiannual period = 0.5% (= 0.5 per 100 par).
-2. Remaining time = 3.5 years = 7 semiannual periods → missing cash flows: 0.5 each period (per 100 par).
-3. Discount at semiannual rate 2.05% (flat 4.1%/2). PV of shortfall ≈ 3.23 per 100.
-4. Price per 100 = 100 − 3.23 = 96.77. For $10 million notional → ≈ $9,677,000 (rounding may give ≈ $9,697,600).
+Add-On Yield =
+$$ \frac{I}{P} \times \frac{365}{D} $$​​
+2. Bond Equivalent Yield (BEY) = _“Interest divided by price paid, scaled to a year.”_
+    Holding-period return on price paid:
+        $$\frac{I}{\text{Price}}$$​Annualise it:
+    $$ \text{BEY} = \frac{I}{\text{Price}} \times \frac{365}{D} $$​​
 
-Key idea: FRNs trade near par at reset; deviations reflect margin differences relative to current market.
 
 ### MODULE 55.1: The Term Structure of Interest Rates — Spot, Par, and Forward Curves
 

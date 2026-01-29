@@ -56,6 +56,28 @@
 a. An American-style (deal-by-deal) waterfall structure
 b. A European-style (whole-of-fund) waterfall structure
 
+### MODULE 79.1: REAL ESTATE
 
+1. Real estate investing is just **two questions**:
+	1. **Am I lending money or owning the building?** → _Debt vs Equity_    
+	2. **Is it privately negotiated or market-traded?** → _Private vs Public_
+2. **PRIVATE + DEBT** → You lend directly to property projects:
+	- Mortgage debt – senior loan on finished property
+	- Construction loans – fund the build phase
+	- Mezzanine debt – sits between debt & equity (high risk, high coupon)
+3. **PRIVATE + EQUITY**
+	- **Sole ownership**: You alone own the property, take all risk, get all cash flows.
+	- **Joint ventures**: Multiple parties pool capital/skills to own a property and split returns by contract.
+	- **Limited partnerships**: Passive investors fund the deal; a general partner runs it and takes performance fees.
+	- **Private real estate funds**: Pooled private capital managed by a fund manager to buy/sell properties across deals.
+	- **Private REITs**: Non-listed REITs that own income-producing real estate but trade privately, not on exchanges.
+4. **PUBLIC + DEBT**
+	- **Covered bonds**: Bank bonds backed by mortgages that stay on the bank’s balance sheet as collateral.
+	- **Mortgage REITs**:  Companies that borrow cheaply and invest in mortgage securities to earn the spread.
+	- **Mortgage ETFs**: Exchange-traded funds that simply hold baskets of mortgage bonds or mortgage REITs.
+5. REITs that pursue core real estate strategies invest in high-quality commercial and residential properties that deliver stable returns.
+6. **Core-plus real estate strategies**, which accept a bit more risk than core strategies by undertaking modest development and redevelopment.
+7. **Value-add real estate strategies**, which undertake development and redevelopment on a somewhat larger scale than core-plus strategies.
+8. **Opportunistic real estate strategies**, which pursue large-scale redevelopment and repurposing of assets, invest in distressed properties, or speculate on upturns in real estate markets.
 ### PRIVATE EQUITY
 1. Each private equity fund has a vintage year, which is the year the fund made its first investment. The performance of a fund is greatly influenced by its vintage year and the phase of the business cycle in that year. Funds that begin investing during a business cycle expansion are likely to earn higher rates of return if they specialize in early-stage companies. Funds that begin investing during business cycle contractions are likely to earn higher rates of return if they specialize in distressed companies. Investors in private capital should diversify across vintage years.
