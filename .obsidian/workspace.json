@@ -13,12 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/FSA.md",
+                "file": "CFA Notes/FIXED INCOME.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "FSA"
+              "title": "FIXED INCOME"
             }
           }
         ]
@@ -150,10 +151,10 @@
             "id": "7615d75705135279",
             "type": "leaf",
             "state": {
-              "type": "Saved Queries View",
+              "type": "empty",
               "state": {},
-              "icon": "feather-mouse-pointer",
-              "title": "Saved Queries"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           },
           {
@@ -165,9 +166,19 @@
               "icon": "bot-message-square",
               "title": "Copilot Chat"
             }
+          },
+          {
+            "id": "13e211105be7c57f",
+            "type": "leaf",
+            "state": {
+              "type": "Saved Queries View",
+              "state": {},
+              "icon": "feather-mouse-pointer",
+              "title": "Saved Queries"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -177,10 +188,7 @@
   "left-ribbon": {
     "hiddenItems": {
       "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false
@@ -188,6 +196,8 @@
   },
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
+    "CFA Notes/Module 53.1 - Yield and Yield Spread Measures for Fixed-Rate Bonds.md",
+    "CFA Notes/_fixed_income.txt",
     "CFA Notes/FSA.md",
     "CFA Notes/EQUITY.md",
     "CFA Notes/ETHICS.md",
@@ -217,7 +227,6 @@
     "CFA Notes/AGENT.md",
     "CFA Notes/Preamble.md",
     "CFA Notes/schweser_qm_econ_ci.txt",
-    "CFA/CFA Notes/Untitled",
     "CFA/Fixed Income.md",
     "CFA/CouponStructures.md",
     "CFA/Revision Notes for CFA.md",
