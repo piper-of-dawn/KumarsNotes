@@ -199,7 +199,8 @@ debugInConsole: false # Print debug info in Obsidian console
 5. **Allocation of trades and investment opportunities** must be fair and consistent with written policies.
 6. Personal trades and proprietary accounts must **not be favored** over client accounts.
 7. Differences across clients must be **justified by mandate, suitability, or operational constraints**, not favoritism.
-8. The standard focuses on **process integrity**—how information and opportunities are shared—not on identical results.
+8. The governing principle is that all clients must have fair opportunity to act on the _recommendation_ itself. The boundary condition: once the information is public/shared, the manager can provide value-added services (like detailed discussions) to premium clients, provided this service level is disclosed and available to anyone willing to pay. There is no violation because the 'alpha' (the new idea) was not withheld from the standard clients.
+9. The standard focuses on **process integrity**—how information and opportunities are shared—not on identical results.
 
 #### Exam Traps (Violation)
 

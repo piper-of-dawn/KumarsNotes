@@ -139,8 +139,23 @@ Over time, total return always exceeds price return when dividends exist.
 
 ### MODULE 40.2: USES AND TYPES OF INDEXES
 
-1. **Rebalancing vs Reconstitution**: Rebalancing resets weights back to targets (usually quarterly). It matters most for equal-weighted indexes; price- and cap-weighted adjust via prices. Reconstitution adds/drops constituents when they no longer meet criteria (bankruptcy, delisting); committee judgment applies. Additions tend to push prices up; deletions down.
-2. **Uses of indexes**:
+1. For commodities, 'quantity outstanding' is ambiguous (total reserves? annual production? stored inventory?). Because there is no universally accepted market cap equivalent for a physical good's futures contract, index providers must invent weighting rules. Common methods include equal weighting, global production values (e.g., S&P GSCI), or perceived importance determined by a committee. This leads to significant heterogeneity across different commodity indexes.
+2. Large-cap, mid-cap, and small-cap definitions vary across different index providers because there is no universally agreed definition
+3. In contrast to the capitalization weighting common in equity indexes, hedge fund indexes typically use: **Equal Weighting**
+4. A commodity index will generate a positive roll yield when the futures market is in Backwardation.
+
+> [!NOTE] ROLL YIELD
+> 
+You hold a futures contract. Time passes.
+> - Futures must converge to spot at expiry.
+> - If today’s futures price is above spot, it will drift down.
+> - If today’s futures price is below spot, it will drift up.
+**That drift, holding spot constant, is roll yield.**
+5. The total return of a commodity index is calculated as the sum of the collateral yield, the spot price return, and the Roll Yield.
+6. REIT valuations are driven by market-to-book ratios and earnings multiples, not a 'securitization premium.' REITs often trade below appraised values, not above.
+
+7. **Rebalancing vs Reconstitution**: Rebalancing resets weights back to targets (usually quarterly). It matters most for equal-weighted indexes; price- and cap-weighted adjust via prices. Reconstitution adds/drops constituents when they no longer meet criteria (bankruptcy, delisting); committee judgment applies. Additions tend to push prices up; deletions down.
+8. **Uses of indexes**:
    - Reflection of market sentiment: provide representative market returns (DJIA is popular but only 30 stocks, not broad).
    - Benchmark of manager performance: benchmark must match manager’s approach/style (e.g., value vs growth; small vs large).
    - Measure of market return and risk: asset-class expected return and standard deviation are estimated from index histories.
