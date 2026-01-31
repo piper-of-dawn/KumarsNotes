@@ -116,3 +116,58 @@ LOS 71.b: Explain why forward and futures prices differ.
 > - Don’t PV the futures BPV change; PV at the realized rate applies to forward/FRA settlement.  
 > - Positive correlation (rates with futures price) favors futures for longs; negative correlation favors forwards.  
 > - Always convert quoted futures price to a rate correctly: rate = $(100 - \text{price})/100$.
+
+### MODULE 75.1: BINOMIAL MODEL FOR OPTION VALUES
+
+1. The “risk-neutral probability” is simply the weight that makes the stock’s **average outcome** equal to what you’d earn risk-free.
+
+2. In a 1-step binomial world, **no-arbitrage** means “a stock can’t have a free lunch relative to the risk-free asset.” So we choose a fake probability $\pi_U$ (the **risk-neutral** one) such that the **expected gross return of the stock equals the risk-free gross return**:  
+$$  
+\pi_U R^u + (1-\pi_U)R^d = 1+R_f  
+$$  
+Solve for $\pi_U$ and you get:  
+$$  
+\pi_U=\frac{1+R_f-R^d}{R^u-R^d},\qquad \pi_D=1-\pi_U  
+$$
+3. Consider a call option with strike $K$:
+	- $S_u > K > S_d$ 
+	- Upside $S_u$ with probability $\pi_u$. Call Payoff $(C_u)$ = $S_u - K$
+	- Downside $S_d$ with probability $\pi_d$. Call Payoff $(C_d)$ = 0
+	
+	Price of call option at t0:
+	$$ \boxed{C_0 = \frac{\pi_u C_u + \pi_d C_d}{1+R_f}} $$
+
+
+> [!QUESTION]
+> Given up-move factor = 1.15, down-move factor 0.87, K = 30, S = 30, Rf = 7%. Calculate the price of call option
+
+
+> [!QUESTION]
+> Given up-move factor = 1.15, down-move factor 0.87, K = 30, S = 30, Rf = 7%. Calculate the price of call option
+
+> [!QUESTION]
+> A stock’s price is currently ¥8,000. At the end of one month when its options expire, the stock price is either up by 5% or down by 15%. If the risk-free rate is –0.20% for the period, what is the value of a put option with a strike price of ¥7,950?
+
+
+> [!QUESTION]
+> Kleinert’s analyst estimates a 50-50 chance that the price of SparCoin will either increase by 12% or decline by 10% at the put option’s expiration date. Which of the following statements best describes the no-arbitrage option price implied by this assumption? 
+> Exercise price is €100. SparCoin’s spot price (S0) is €105.25, and it pays no dividends. The risk-free rate is 0.37%.
+
+
+> [!QUESTION]
+> If Kleinert’s clients observe that the one-year put option with a €100 exercise price is trading at €2.50, which of the following statements best describes how Kleinert’s clients could take advantage of this to earn a risk-free return greater than 0.37% over the year.
+
+
+###### HEDGE RATIO
+
+4. Hedge ratio (h) is the **shares that cancels the option’s up/down risk** in a 1-step world. You pick (h) so the portfolio “long (h) shares, short 1 call” has **the same payoff in both states**. That forces:  
+$$  
+h=\frac{C_u-C_d}{S_u-S_d}  
+$$
+ - **Stock states:** $S_u, S_d$
+ - **Call payoffs:** $C_u=\max(S_u-K,0)$, $C_d=\max(S_d-K,0)$
+ - **Hedged portfolio:** long $h$ shares, short 1 call
+ - Value in up: $V_u=hS_u-C_u$ and Value in down: $V_d=hS_d-C_d$    
+ - **Riskless condition:** set $V_u=V_d$
+ - Solve $V_u = V_d$ for $h$
+

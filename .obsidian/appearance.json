@@ -7,7 +7,7 @@
   "theme": "moonstone",
   "translucency": false,
   "baseFontSizeAction": true,
-  "baseFontSize": 18,
+  "baseFontSize": 19,
   "enabledCssSnippets": [
     "code"
   ]
