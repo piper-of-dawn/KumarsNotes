@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/FIXED INCOME.md",
+                "file": "CFA Notes/FSA.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "FIXED INCOME"
+              "title": "FSA"
             }
           }
         ]
@@ -181,6 +181,26 @@
             "id": "d77a4b5f76973b56",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "9dda9b95f6ea002c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "a0113f88477781f8",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -188,7 +208,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
@@ -204,12 +224,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "49ac21b4a48864af",
+  "active": "ab61447ddfebe320",
   "lastOpenFiles": [
+    "CFA Notes/ECONOMICS.md",
+    "CFA Notes/FIXED INCOME.md",
     "CFA Notes/ALTERNATIVE INVESTMENTS.md",
     "CFA Notes/ETHICS.md",
     "CFA Notes/Module 53.1 - Yield and Yield Spread Measures for Fixed-Rate Bonds.md",
-    "CFA Notes/FIXED INCOME.md",
     "Diary/Daily Habit.md",
     "CFA Notes/_fixed_income.txt",
     "CFA Notes/FSA.md",
@@ -241,7 +262,6 @@
     "CFA/Fixed Income.md",
     "CFA/CouponStructures.md",
     "CFA/Revision Notes for CFA.md",
-    "CFA Notes/PORTFOLIO MANAGEMENT.md",
     "Pasted Image 20251228112906_706.png",
     "Pasted image 20251029114056.png",
     "Pasted image 20251230214023.png",
