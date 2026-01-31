@@ -79,5 +79,47 @@ b. A European-style (whole-of-fund) waterfall structure
 6. **Core-plus real estate strategies**, which accept a bit more risk than core strategies by undertaking modest development and redevelopment.
 7. **Value-add real estate strategies**, which undertake development and redevelopment on a somewhat larger scale than core-plus strategies.
 8. **Opportunistic real estate strategies**, which pursue large-scale redevelopment and repurposing of assets, invest in distressed properties, or speculate on upturns in real estate markets.
-### PRIVATE EQUITY
-1. Each private equity fund has a vintage year, which is the year the fund made its first investment. The performance of a fund is greatly influenced by its vintage year and the phase of the business cycle in that year. Funds that begin investing during a business cycle expansion are likely to earn higher rates of return if they specialize in early-stage companies. Funds that begin investing during business cycle contractions are likely to earn higher rates of return if they specialize in distressed companies. Investors in private capital should diversify across vintage years.
+### MODULE 78.1: PRIVATE CAPITAL
+
+
+> [!NOTE] MEMORISE THIS FOR EFFICIENCY
+> **Vintage Year:** Funds that begin investing during a business cycle expansion are likely to earn higher rates of return if they specialize in early-stage companies. Funds that begin investing during business cycle contractions are likely to earn higher rates of return if they specialize in distressed companies.
+
+
+1. Private equity = you buy ownership in **non-public** (or take-private) companies, then you **actively push changes** (ops + strategy + leverage) and get paid mainly when you **exit** years later; the “characteristics” are basically: **control + illiquidity + staged cash flows + discrete exits + vintage timing risk**.
+2. Going private means: **public equity is substantially no longer publicly traded after acquisition**.
+3. Each private equity fund has a vintage year, which is the year the fund made its first investment. The performance of a fund is greatly influenced by its vintage year and the phase of the business cycle in that year. **Funds that begin investing during a business cycle expansion are likely to earn higher rates of return if they specialize in early-stage companies. Funds that begin investing during business cycle contractions are likely to earn higher rates of return if they specialize in distressed companies**. Investors in private capital should diversify across vintage years.
+4. **Leveraged Buyouts:**
+	- **Structure**: PE fund buys company using lots of debt → debt is secured by target assets → debt is pushed into target capital structure.    
+	- **Execution logic**: target cash flows must cover debt service, while PE changes operations/strategy to grow cash flows and value.
+	- **Payoff logic**: because equity is the “thin slice” under heavy debt, **small improvements in enterprise value can translate into big equity gains**—but the same leverage also makes failure painful (debt must still be serviced). This is why deal volume depends on credit conditions
+
+
+> [!NOTE] MBI vs MBO
+> Management Buy In (MBI) means existing management is fired. 
+> Management Buy Out (MBO) means existing management still runs the company.
+> 
+
+5. **Venture Capital:** VC exists because early-stage firms have **big upside but weak evidence/cash flow**, so investors demand **high expected returns**, structure deals with **equity + convertibles**, stay **active** to influence outcomes, then monetize via **IPO/sale**; later-stage rounds shift toward **bridge-to-exit** financing and sometimes **control transfer**.
+6. **Mezzanine-stage financing** refers to capital provided to prepare the firm for an initial public offering (IPO). The term mezzanine stage is used to indicate the timing of the financing rather than the method. A similar term, mezzanine financing, refers to hybrids of equity and debt, such as convertible securities. Mezzanine-stage financing can use these, but more often, it consists of equity or short-term debt
+7. Preferred stock can be deployed as late into a company’s maturity as later-stage venture capital, when preferred stock can offer more protection to venture investors as a company transitions toward an IPO.
+8. Investments in private capital funds can add a moderate diversification benefit to a portfolio of publicly traded stocks and bonds. Correlations with public market indexes vary from 0.63 to 0.83. 
+9. **PIPEs (Private Investment in Public Equity)**: Even **public companies** can raise “private equity capital” via PIPEs (private placement into a public company). PIPE is **private offering to select investors** with **fewer disclosures** and **lower transaction costs**, enabling faster capital raising than more regulated routes; securities can be newly issued shares and/or existing shareholder shares, sold at a fixed price via a purchase agreement; sometimes used in work-out/rescue contexts; can include **convertible debt or convertible preferred** (special case).
+
+###### EXIT STRATEGIES
+ 
+10. **Public listing with Underwriting:** In an **IPO**, the **portfolio company** goes for a **public listing** by selling shares to **public investors**. This is typically executed via **underwriting**, meaning **financial intermediaries** (investment banks) manage the offering process. 
+11. **Public listing without Underwriting:** Equity is floated directly on public markets **without underwriters**, reducing complexity and cost; described as less commonly used.
+12. **Trade Sale:** Find a buyer more interested than you are and sell your stake to him. 
+13. **Secondary Sale:** PE firm sells its stake to another PE firm. 
+14. **Write-off / Liquidation:** The company was a bad idea, money is lost forever. Write off, salvage remaining assets, drink and forget.
+
+###### PRIVATE DEBT
+
+15. Investors in private debt could realize higher returns from the illiquidity premium, which is the excess return investors require to compensate for lack of liquidity. 
+16. The interest rate of private debt is often expressed relative to a reference rate—for example, the Secured Overnight Financing Rate (SOFR) + 375 bps. As a result, the coupon varies in line with changes to the reference rate brought about by changes to the interest rate environment.
+17. **Direct Lending:** Directly lend to a non-publically traded company. Usually interest rate
+18. **Venture Debt:** Debt by VC to a young firm. Preferred by manager of the firm as he retains ownership.
+19. **Mezzanine Debt:** Between senior and subordinated debt. Usually convertible.
+20. **Distressed Debt:** Some distressed debt investors specialize in identifying otherwise good companies with temporary cash flow problems, anticipating that the value of the company and its debt will recover. Others focus on turnaround situations, acquiring a company’s debt with an intent to be active in managing and restructuring the company.
+21. **Unitranche Debt:** Combines different classes of debt (secured and unsecured) into a single loan with an interest rate that reflects the blend of debt classes. The resulting debt typically ranks between senior and subordinated debt.
