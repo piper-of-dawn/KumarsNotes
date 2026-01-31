@@ -283,22 +283,89 @@ At t+1:
 > G‑spread = 6.82 − 4.33 = \textbf{2.49% (249 bp)}.
 > Explanation: Use nearest on‑the‑run government yields and linear interpolation for the missing maturity.
 
-### MODULE 54.1: Yield and Yield Spread Measures for Floating-Rate Instruments
+### MODULE 54.1: YIELD AND YIELD SPREAD MEASURES FOR FLOATING-RATE INSTRUMENTS
+1. The **quoted margin is the specified spread**, that is mentioned on the TnC of the bonds, whereas the **required margin (discount margin) is market-determined** and can change with factors such as credit risk.
+2. Floaters with longer reset periods may be more exposed to interest rate and price volatility. The longer the reset period, the more a floater will behave similarly to a short-dated fixed-rate security.
+3.  The quoted margin is the spread required by investors for the instrument to be priced at par on a reset date, and it is required margin.
 
-#### Floating-Rate Note (FRN) Valuation — Margin Widening
+> [!tip] HAMMER THIS INTO YOUR HEAD
+> - When a floater is quoted, investors ALWAYS quote the QUOTED MARGIN over the reference rate.
+> - The REQUIRED MARGIN (or DISCOUNT MARGIN) is the margin that investors actually require to hold the bond in the market. This is what market dictates.
+> - At inception, the REQUIRED MARGIN = QUOTED MARGIN, so the bond is priced at par.
+> - If credit quality worsens, investors demand a HIGHER REQUIRED MARGIN OR DISCOUNT MARGIN, so the bond price falls below par.
+> - **Quoted margin pins the coupon.**
+> - **Required margin pins the price.**
+> 
+
+
 
 > [!question] Question
 > A floating-rate note (FRN) has a face value of $10 million, total maturity 6 years, and pays coupons = reference rate + 2.5% margin. After 2.5 years, the issuer’s credit quality worsens and the market now demands a 3.5% margin (100 bps wider). The current flat spot curve is 4.1%, with semiannual payments. Compute the fair value of the FRN today.
+> 
+> ---
+> 
+> After 2.5 years, 7 coupons remain, hence N = 7
+> PV, if nothing changed = 100
+> Margin widened by 1% (0.5 per 100 per coupon period)
+> PV of 7 payments of 0.5 @ 2.05% = 3.23
+> So bond value should decline by 3.23 per 100 and bond should be priced at 96.77 per 100
+> For $10 million notional, price = $9,677,000 (rounding may give $9,697,600) 
+> 
 
-> [!tip] TL;DR
-> FRN price at reset ≈ par, but if its margin < market-required margin, Price = Par − PV(missing margin cash flows).
+4. Discount rate means **interest is added on top of principal**, not discounted. **Price = Face Value − Interest for the period**.
+5. Add-on rate means **interest is calculated on the principal and added to it**. **Price = Face Value / (1 + Effective Yield)**.
 
-1. Shortfall per year = required margin − bond margin = 3.5% − 2.5% = 1.0% → per semiannual period = 0.5% (= 0.5 per 100 par).
-2. Remaining time = 3.5 years = 7 semiannual periods → missing cash flows: 0.5 each period (per 100 par).
-3. Discount at semiannual rate 2.05% (flat 4.1%/2). PV of shortfall ≈ 3.23 per 100.
-4. Price per 100 = 100 − 3.23 = 96.77. For $10 million notional → ≈ $9,677,000 (rounding may give ≈ $9,697,600).
+   
+> [!danger] DO NOT MAKE THIS MISTAKE
+> 
+> ==Look very very carefully if question gives you add-on rate or discount rate==
+> 
+> PV when Add-on rate is given:
+> 
+> $$ \text{Price} = \frac{\text{Face Value}}{1 + \text{Effective Yield}} $$
+> 
+> PV when Discount rate is given:
+> 
+> $$ \text{Price} = \text{Face Value} - \text{Interest} $$
 
-Key idea: FRNs trade near par at reset; deviations reflect margin differences relative to current market.
+
+> [!question] ADD ON YIELD
+> Calculate the price of a 180-day money market instrument with a face value of 10,000,000 quoted at an add-on rate of 3.65% based on a 365-day year.
+> 
+> ---
+> 
+> Holding Period = 180/365 = N
+> Effective Yield = 3.65% × 180/365 = 1.825%
+> Price = 10 / (1.01825) = USD 9,823,183
+
+
+> [!question] DISCOUNT YIELD
+> A 90-day T-bill is quoted at a discount rate of 3.20% based on a 360-day year. The face value is 1,000,000. What is the purchase price of the T-bill?
+> 
+> ---
+> 
+> Holding Period = 90/360 = 0.25
+> Effective Rate = 0.25 × 3.20% = 0.80%
+> Interest = 1,000,000 × 0.008 = 8,000
+> Price = FV - Interest = 1,000,000 - 8,000 = 992,000t
+
+
+
+> [!question] ADD ON RATE VS DISCOUNT YIELD
+> A 90-day Bankers' Acceptance is quoted at a discount rate of 5.00% (360-day year). A 90-day CD is quoted at an add-on rate of 5.10% (365-day year). Which instrument offers the higher yield to the investor?
+> 
+> ---
+> 
+> PV of Bankers Acceptance:
+> HP = 90/360 = 0.25
+> HPY = 0.25 × 5.00% = 1.25%
+> PV  = 100(1-0.0125) = 98.75
+> 
+> PV of CD:
+> HP = 90/365 = 0.2466
+> HPY = 0.2466 × 5.10% = 1.258%
+> PV = 100 / (1 + 0.01258) = 98.76 
+
 
 ### MODULE 55.1: The Term Structure of Interest Rates — Spot, Par, and Forward Curves
 
