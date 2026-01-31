@@ -119,11 +119,110 @@ At t+1:
 ### MODULE 53.1: YIELD AND YIELD SPREAD MEASURES FOR FIXED-RATE BONDS
 
 1. Yield to maturity (YTM): the single rate that makes the present value of all coupon and principal payments equal to today’s price. For semiannual coupons, the quoted YTM is 2 × (half‑year rate).
-2. Periodicity and effective annual yield (EAY): more coupon periods per year means more compounding. Always compare bonds on EAY if payment frequency differs.
-3. Street vs true yield: street uses stated coupon dates; true shifts payments that land on weekends/holidays to the next business day, making true yield slightly lower.
-4. Income measures: current yield = annual coupon ÷ flat price. Simple yield adjusts current yield for straight‑line amortization of discount/premium.
-5. Calls and “worst” yield: compute a yield to call (YTC) for each call date/price. Yield to worst (YTW) is the lowest of YTM and all YTCs.
-6. Spreads to benchmarks: G‑spread = bond yield minus government yield (same or interpolated maturity). I‑spread = bond yield minus swap rate (same tenor).
+
+
+> [!QUESTION]
+> An Atlas Corporation bond is quoted with a YTM of 4% on a semiannual bond basis. What yields should be used to compare it with a quarterly-pay bond and an annual pay bond?
+> 
+> ---
+> 
+> EAY = $(1+ 0.04/2)^2 - 1 = 4.04\%$ 
+> 
+> It is extremely critical to know how to do second part.
+> 	- You have an annual bond that pays 4.04%. What rate justifies quarterly frequency.
+> 	  
+> 	 $$
+> 	  \begin{aligned}
+> 	  (1+ \frac{x}{2})^2 - 1 &= 0.0404\% \\[10pt]
+> 	  x &= 0.0398  
+> 	  \end{aligned}
+> 	  $$
+
+> [!tip] HAMMER THIS INTO YOU HEAD
+> Whenever you need to downgrade the compounding frequency. Always first calculate the EAY. Suppose there are $n$ periods annually. To calculate effective {n} Yield is $x$, solve below to find $x$
+> 
+> $$(1+ \frac{x}{n})^2 - 1 = \mathrm{EAY}$$
+
+2. **Street vs true yield:** Street uses stated coupon dates; true shifts payments that land on weekends/holidays to the next business day, making true yield slightly lower.
+
+> [!warn] WHY TRUE YIELDS ARE LOWER THAN STREET YIELDS 
+> Because, coupon is never paid on a weekend and it is delayed which increases $n$ and hence reduces $I/Y$  
+
+3. Income measures: **current yield = annual coupon ÷ flat price**. **Simple yield** adjusts current yield for straight‑line amortization of discount/premium.
+
+> [!QUESTION]
+> Consider a 20-year, $1,000 par value, 6% semiannual-pay bond that is currently trading at a flat price of $802.07. Calculate the current yield.
+> 
+> ---
+> 
+> Coupon = \$60 
+> Current Yeild = 60 / 802 = 7.48\%
+
+
+> [!QUESTION]
+> A 3-year, 8% coupon, semiannual-pay bond is priced at 90.165. Calculate the simple yield.
+> 
+> ---
+> 
+> Coupon = 8
+> N = 6
+> Discount = 100 - 90.165 = 9.835
+> Straight-line Amortized Discount = $1/3 \times 9.835$ = 3.278
+> 
+> SY = (8+3.278)/90.195 = 12.5\%
+
+4. Calls and “worst” yield: compute a yield to call (YTC) for each call date/price. Yield to worst (YTW) is the lowest of YTM and all YTCs.
+
+
+> [!QUESTION]
+> Consider a 5-year, semiannual-pay 6% bond trading at 102 on January 1, 20X4. The bond is callable according to the following schedule:
+> - Callable at 102 on or after January 1, 20X7
+> - Callable at 101 on or after January 1, 20X8
+> Calculate the bond’s YTM, yield to first call, yield to second call, and yield to worst.
+> 
+> 
+> ---
+> 
+> (YTM): N=10, PV=-102, PMT=3, FV=100, I/Y = 2.768\%
+> Annualized Yield = 5.54\%
+> 
+> (YTC ON JAN 1, 2017)
+> N=6, PMT=3, PV=-102, FV=102, I/Y = 2.941\%
+> Annualized Yield = 5.882%
+> 
+>  (YTC ON JAN 1, 2018)
+> N=8, PMT=3, PV=-102, FV=101, I/Y = 2.83\%
+> Annualized Yield = 5.66%
+> 
+> (YTW)
+> Worst yield =  5.54\%
+> 
+
+5. Spreads to benchmarks: G‑spread = bond yield minus government yield (same or interpolated maturity). I‑spread = bond yield minus swap rate (same tenor).
+
+> [!QUESTION]
+> A 3-year, 8% coupon, semiannual-pay bond is priced at 103.165, and 1-year and 4- year U.S. Treasury yields are 3% and 5%, respectively. Calculate the G-spread of the bond. 
+> 
+> Interpolate 3-year yield of Treasury:
+> Difference in Maturity = 3
+> Difference in Yield = 2
+> Means, yield rises by 0.67 per year of maturity
+> 3-year yield = 5-0.67 = 4.33\%
+> 
+> (YTM of bond):
+>  N=6, PV=-103.165, PMT=4, FV=100, I/Y (Annual) = 3.417 $\times$ 2 = 6.815\%
+>  
+>  G-Spread = 6.815 - 4.33 = 2.485\%
+ 
+
+6. **I-Spread:** I-spread tells you: _how much extra yield this bond offers over what banks pay to borrow_, not over what governments happen to yield. An interest rate swap is: Fixed rate exchanged for floating **MRR**. It represents interest rate expectation when policy rate changes are averaged out.
+7. To calculate I-Spread:
+   - Take the bond’s yield. 
+   - Find the swap fixed rate in the same currency and maturity (or interpolate).
+   - Subtract swap rate from bond yield.    
+
+6. A callable bond can be viewed like a mortgage with prepayment rights: the issuer can buy back the bond when rates fall. This exposes the investor to prepayment risk (a form of interest-rate risk), so investors demand a higher yield. Structurally, **a callable bond equals a straight bond minus an embedded call option held by the issuer.** Because the call option has value, the callable bond’s price is lower and its yield is higher than that of an equivalent option-free bond.
+
 7. Reading spread moves: if the bond yield changes but its spread does not, the benchmark moved (economy‑wide). If the spread changes, the issuer/issue changed (credit, liquidity, tax).
 8. Curve‑aware spreads: Z‑spread is the constant number of basis points added to every point on the benchmark spot curve so discounted cash flows equal price. For embedded options, option‑adjusted spread (OAS) removes the option’s effect. For callables: OAS < Z‑spread.
 
