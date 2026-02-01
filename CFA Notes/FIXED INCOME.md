@@ -498,7 +498,21 @@ Compared to ordinary bank bonds, covered bonds are safer because your repayment 
 
 There is no tranching in covered bonds and the collateral pool cannot contain non performing assets.
 
+  
 
+2. Issuer misses Year 2 coupon (fails to pay 4)  
+    
+
+- Under hard bullet, this is immediate default.
+
+4.   
+    
+5. Acceleration happens immediately  
+    
+
+- The bondholders’ claim becomes: “pay me everything outstanding now.”
+
+Soft-bullet: if the issuer can’t pay at maturity, default/acceleration is delayed by extending the maturity (e.g., up to a year) to give time to pay, and only if still unpaid after the extension does default kick in. Conditional pass-through: if anything is still unpaid at maturity, the bond switches to pass-through, meaning investors get paid only as cash is later collected from the cover pool (e.g., 60 now, then 25, then 15), with repayment timing driven by recoveries rather than a fixed date.
 ### MODULE 65.1: MORTGAGE-BACKED SECURITY (MBS) INSTRUMENT AND MARKET FEATURES
 
 1. **Prepayment Risk:** You own a callable bond (and interest rate falls) → They prepay and buy back their now cheaper bond issued at a high interest rate. Interest Rate falls to 2% and you take a cheaper loan and payback your expensive loan. For the bond investor, high-coupon mortgage cash flows disappear right when they\u2019re most valuable, that is why a **risk**.
