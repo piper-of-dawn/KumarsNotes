@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/ECONOMICS.md",
+                "file": "CFA Notes/FSA.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "ECONOMICS"
+              "title": "FSA"
             }
           }
         ]
@@ -201,26 +201,6 @@
             "id": "a0113f88477781f8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "4e4f803a50bb3d51",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "eb7428804f0f9ffb",
-            "type": "leaf",
-            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -228,7 +208,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
@@ -246,50 +226,51 @@
   },
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
-    "templates/question-callout.md.md",
-    "templates/hammer.md",
-    "templates",
-    "Pasted image 20260131190442.png",
-    "Excalidraw/Scripts/Downloaded/Split Ellipse.svg",
-    "Excalidraw/Scripts/Downloaded/Split Ellipse.md",
-    "Excalidraw/Scripts/Downloaded/Slideshow.svg",
-    "Excalidraw/Scripts/Downloaded/Set Grid.svg",
-    "Excalidraw/Scripts/Downloaded/Slideshow.md",
-    "Excalidraw/Scripts/Downloaded/Set Grid.md",
-    "Excalidraw/Scripts/Downloaded",
-    "Excalidraw/Scripts",
-    "CFA Notes/STUPID MISTAKES.md",
-    "Fixed Income/Bond Pricing.md",
-    "Fixed Income",
-    "Fixed Income Derivative Pricing/notebook.ipynb",
-    "Fixed Income Derivative Pricing",
-    "Excalidraw/Callable Bond.md",
-    "DataTable Library/Cheatsheet.md",
-    "DataTable Library",
-    "CFA/Yeild to Maturity.md",
-    "CFA/Revision Notes for CFA.md",
-    "CFA/Numericals to Memorise.md",
-    "CFA/Legal Terms Related to Bonds.md",
-    "CFA/International and Domestic Bonds.md",
-    "CFA/Full and Flat Price.md",
-    "CFA/Fixed Income.md",
-    "CFA/Derivatives.md",
-    "CFA/CouponStructures.md",
-    "CFA/Contingency Provisions.md",
-    "CFA/Bond Duration.md",
-    "CFA/Annuity Calculation.md",
-    "CFA",
-    "CFA Notes/DERIVATIVES.md",
-    "CFA Notes/ETHICS.md",
-    "CFA Notes/FSA.md",
     "CFA Notes/ECONOMICS.md",
+    "CFA Notes/FIXED INCOME.md",
+    "CFA Notes/ALTERNATIVE INVESTMENTS.md",
+    "CFA Notes/ETHICS.md",
+    "CFA Notes/Module 53.1 - Yield and Yield Spread Measures for Fixed-Rate Bonds.md",
+    "Diary/Daily Habit.md",
     "CFA Notes/_fixed_income.txt",
+    "CFA Notes/FSA.md",
+    "CFA Notes/EQUITY.md",
     "CFA Notes/fsa_b2_b.txt",
+    "CFA Notes/fsa_b2_a.txt",
+    "CFA Notes/quick.txt",
+    "CFA Notes/b3.txt",
+    "CFA Notes/b4.txt",
+    "CFA Notes/schweser_qm_econ_ci_full.txt",
+    "Book Snippets/Generative Deep Learning.md",
+    "Blockchain/Blockchain.md",
+    "Automated Trading System/Implementation Plan.md",
+    "Asynchronous Programming and Parallelism/Concurrency, Parallelism and Asynchrony.md",
+    "Advanced Credit Risk/dump.md",
+    "CFA Notes/DERIVATIVES.md",
+    "CFA Notes/CORPORATE ISSUERS.md",
+    "CFA/Legal Terms Related to Bonds.md",
+    "Diary/Chapter IV - Aman.md",
+    "WIP/How to measure fear.md",
+    "Diary/Aman.md",
+    "Diary/Writing Style.md",
+    "Diary/Videos.md",
+    "CFA Notes/schweser_fsa.txt",
+    "CFA Notes/fsa.txt",
+    "CFA Notes/AGENT.md",
+    "CFA Notes/Preamble.md",
+    "CFA Notes/schweser_qm_econ_ci.txt",
+    "CFA/Fixed Income.md",
+    "CFA/CouponStructures.md",
+    "CFA/Revision Notes for CFA.md",
     "Pasted Image 20251228112906_706.png",
     "Pasted image 20251029114056.png",
     "Pasted image 20251230214023.png",
     "dp.png",
     "Linear Algebra/Pasted image 20250429102423.png",
-    "Mathematics for Machine Learning/Pasted image 20230621171117.png"
+    "Mathematics for Machine Learning/Pasted image 20230621171117.png",
+    "Automated Trading System/Pasted image 20230622112923.png",
+    "Pasted image 20251029113921.png",
+    "Pasted image 20251029113517.png",
+    "Pasted image 20251029113205.png"
   ]
 }

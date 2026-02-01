@@ -9,7 +9,6 @@ includeLinks: true # Make headings clickable
 hideWhenEmpty: false # Hide TOC if no headings are found
 debugInConsole: false # Print debug info in Obsidian console
 ```
-## PROFESSIONALISM
 ### STANDARD I(A) - PROFESSIONALISM - KNOWLEDGE OF THE LAW
 
 #### Core Concepts
@@ -102,127 +101,6 @@ debugInConsole: false # Print debug info in Obsidian console
     
 10. **“Opinion was unchanged despite pressure.”** Pressure existed but didn’t succeed; correct logic: resisting pressure satisfies the standard.
 
-### STANDARD I(C) – PROFESSIONALISM – MISREPRESENTATION
-
-> [!tip] TALISMAN  
-> **CFA doesn’t just punish lies; it punishes “true-but-misleading.”** If your wording, omissions, or attribution makes a reasonable reader infer the wrong thing, you’re cooked.
-
-#### Core Concepts
-1. **Omission = misrepresentation**: leaving out a key negative outcome/risk range (especially in models) can be misleading even if every included number is “correct.”    
-2. **Model outputs are not facts**: projections/expected results must be framed as conditional on inputs, not as certainty.    
-3. **Third-party info becomes “your problem” once you use it**: if you incorporate it, you own the accuracy and must not pass it off as your work.    
-4. **Issuer-paid / conflicted “research” must scream the relationship**: “independent analyst” vibe + paid by issuer = classic misrep + conflicts.    
-5. **Benchmark games are misrepresentation**: cherry-picked or incomparable benchmarks, or “cash+” reference indices without reasons, can mislead clients about skill.
-6. **You can misrepresent by being stale**: old performance/claims left online = misrepresentation even if it used to be true.
-7. **Plagiarism includes “light edits”**: tweaking wording/model a bit doesn’t erase the need to credit the original idea/source.
-8. **Repackaging is allowed, pretending authorship is not**: you can curate and distribute outsourced research only if you don’t imply you wrote it.
-    
-
-#### Exam Traps (Violation)
-
-1. **“It’s issuer-paid but my analysis is solid.”** Wrong logic: validity cures disclosure; correct logic: hiding issuer-paid relationship is misrepresentation; tested angle: promo websites/chatrooms.
-    
-2. **“Firm brochure says I’m a CFA charterholder; not my fault.”** Wrong logic: marketing owns it; correct logic: using/letting it circulate after you should know = your misrep too.
-    
-3. **“I only removed extreme downside cases; clients don’t need scary tails.”** Wrong logic: simplify = okay; correct logic: knowingly omitting material downside/risks misrepresents economics.
-    
-4. **“Backtest looks great; I’ll present the output as expected return.”** Wrong logic: model result = fact; correct logic: must label it as model-dependent estimate with limits.
-    
-5. **“I paraphrased another analyst’s report so it’s mine now.”** Wrong logic: paraphrase avoids plagiarism; correct logic: substantial use without attribution = plagiarism.
-    
-6. **“I tweaked someone’s model and called it ‘my new model.’”** Wrong logic: small edits = new idea; correct logic: credit original source of the concept.
-    
-7. **“We distribute a big-firm report under our logo.”** Wrong logic: white-label = authorship; correct logic: implying you authored outsourced research is misrepresentation.
-    
-8. **“Our composite excludes underperformers but returns are accurate for what’s included.”** Wrong logic: accuracy on subset = okay; correct logic: cherry-picking accounts misrepresents track record.
-    
-9. **“Website shows 5-year performance; I didn’t update after recent bad period.”** Wrong logic: past data was true; correct logic: leaving material info outdated misleads prospects.
-    
-10. **“Fund claims ESG engagement/proxy voting but doesn’t do it.”** Wrong logic: marketing language is flexible; correct logic: claiming a practice you don’t actually do is misrepresentation.
-    
-
-#### Exam Traps (Not a Violation)
-
-1. **“No benchmark shown.”** Correct logic: allowed if strategy is too complex/diverse for a meaningful benchmark (but don’t fake a convenient one).
-    
-2. **“We use a ‘cash+’ reference index.”** Correct logic: allowed if you clearly explain why it’s used and what it does/doesn’t represent.
-    
-3. **“Short ‘buy/sell’ note to clients.”** Correct logic: fine if it doesn’t imply deeper work than done and supporting analysis is available when asked.
-    
-4. **“Curated third-party research to clients.”** Correct logic: allowed if you clearly disclose it’s third-party and you don’t claim authorship.
-    
-5. **“Corrected an unintentional error promptly and notified users.”** Correct logic: making a correction + pushing it to recipients is the compliant fix.
-    
-6. **“Used the word ‘guaranteed’ for insured deposits.”** Correct logic: can be okay if you explain the limits/conditions (e.g., insured up to a cap) so it’s not misleading.
-    
-7. **“Quoted tables/stats with citation.”** Correct logic: direct quotes/data are fine if properly attributed.
-    
-8. **“Used public info but rebuilt your own analysis.”** Correct logic: no plagiarism if you didn’t copy someone’s expression/structure and you aren’t implying access to nonpublic info.
-### STANDARD I(D) – PROFESSIONALISM – MISCONDUCT
-
-> [!tip] TALISMAN  
-> **CFA nails character risk.** If your behavior makes you untrustworthy as a finance professional, it can violate I(D) even if it’s “off the clock.” But CFA does _not_ police ordinary personal drama.
-
-#### Core Concepts 
-
-1. **Nexus test**: misconduct must reflect on professional integrity/competence or the reputation of the profession—CFA isn’t judging private morality for fun.
-    
-2. **Illegal ≠ automatically I(D)**: the illegal act must involve dishonesty, fraud, deceit, or other conduct that calls your fitness into question.
-    
-3. **Employment-related abuse counts**: harassment, retaliation, bullying, falsifying internal records, expense fraud, time-sheet fraud—often tested as “not securities-related but still I(D).”
-    
-4. **Regulator/firm investigations are a trap**: lying to compliance/regulators or obstructing an investigation is often worse than the underlying act.
-    
-5. **Professional capacity matters**: conduct while acting as an analyst/PM/rep is held to a higher bar than purely personal acts.
-    
-6. **Repeat pattern matters**: repeated “small” dishonest acts can trigger I(D) even if one isolated lapse might not be tested as such.
-    
-7. **Client trust lens**: if a client heard it, would they reasonably question your honesty with their money?
-    
-
-#### Exam Traps (Violation)
-
-1. **“It happened in my personal life.”** Wrong logic: personal = irrelevant; correct logic: fraud/dishonesty anywhere can violate I(D); tested angle: tax fraud, identity theft.
-    
-2. **“No client was harmed.”** Wrong logic: harm is required; correct logic: the act itself (fraud/deceit) is enough; tested angle: falsified credentials/records.
-    
-3. **“It wasn’t securities-related.”** Wrong logic: only market crimes count; correct logic: workplace fraud/harassment/retaliation can violate; tested angle: expense report fraud.
-    
-4. **“I didn’t get caught.”** Wrong logic: enforcement defines ethics; correct logic: undiscovered misconduct is still misconduct; tested angle: hidden kickbacks.
-    
-5. **“I lied to protect the firm.”** Wrong logic: noble motive excuses deceit; correct logic: dishonesty/obstruction violates; tested angle: misleading compliance/regulators.
-    
-6. **“It was just a ‘small’ reimbursement.”** Wrong logic: immaterial amount; correct logic: theft/fraud is theft/fraud; tested angle: petty expense padding.
-    
-7. **“I used client data for convenience.”** Wrong logic: no intent to harm; correct logic: misuse of confidential info can be misconduct; tested angle: unauthorized data access.
-    
-8. **“I retaliated because they were incompetent.”** Wrong logic: management prerogative; correct logic: harassment/retaliation breaches professional conduct; tested angle: abusive supervision.
-    
-9. **“I threatened a colleague to keep quiet.”** Wrong logic: internal matter; correct logic: intimidation is misconduct; tested angle: whistleblower suppression.
-    
-10. **“I forged a signature to speed things up.”** Wrong logic: efficiency; correct logic: forgery = fraud; tested angle: paperwork shortcuts.
-    
-
-#### Exam Traps (Not a Violation)
-
-1. **“I got a speeding ticket.”** Correct logic: minor offenses unrelated to honesty/fitness usually aren’t I(D); tested angle: ordinary traffic violations.
-    
-2. **“Messy divorce / personal relationship issues.”** Correct logic: personal disputes without fraud/dishonesty typically not I(D); tested angle: morality bait.
-    
-3. **“I argued with a coworker once.”** Correct logic: isolated interpersonal conflict isn’t necessarily misconduct unless it becomes harassment or threats.
-    
-4. **“I made a bad investment personally.”** Correct logic: poor judgment alone isn’t misconduct; tested angle: loss ≠ unethical.
-    
-5. **“I was fired for performance.”** Correct logic: incompetence/performance issues alone aren’t I(D) unless paired with dishonesty.
-    
-6. **“I reported a violation internally.”** Correct logic: whistleblowing through proper channels isn’t misconduct; tested angle: reporting duty confusion.
-    
-7. **“I used strong language in private (no threats, no discrimination).”** Correct logic: unprofessional tone may be HR issue but not automatically I(D).
-    
-8. **“I refused an unethical instruction and documented it.”** Correct logic: resisting wrongdoing is compliant even if it creates conflict.
-    
-
-If you want, I can also give you a **one-line elimination rule** for I(D) that kills 80% of answer choices.
 ### STANDARD II(A) – INTEGRITY OF CAPITAL MARKETS – MATERIAL NONPUBLIC INFORMATION
 
 #### Core Concepts
@@ -262,12 +140,6 @@ If you want, I can also give you a **one-line elimination rule** for I(D) that k
 11. **“We have Chinese walls.”** Wrong logic: Policies alone prevent violations; correct logic: personal responsibility remains even with information barriers; tested angle: compliance structure reliance.
 
 ### STANDARD III(A) – DUTIES TO CLIENTS – LOYALTY, PRUDENCE, AND CARE
-
-
-> [!danger] MISTAKES
-> 1. Client owns the brokerage commissions, not the advisor or the firm. Commissions must be used only in the client’s best interest.
-> 2. Conflicts may arise when an investment manager uses client brokerage to purchase research services, a practice commonly called 'soft dollars' or 'soft commissions.' This is a violation of loyalty
-
 
 
 > [!tip] TALISMAN
@@ -316,7 +188,7 @@ If you want, I can also give you a **one-line elimination rule** for I(D) that k
 ### STANDARD III(B) – DUTIES TO CLIENTS – FAIR DEALING
 
 > [!tip] TALISMAN
-> **Everyone gets a fair shot.**  Don’t play favourites, don’t tip a few, and don’t allocate benefits to insiders first.  Treat clients **fairly and impartially and not equally**—use fair processes so no group is disadvantaged by timing, access, or allocation.
+> **Everyone gets a fair shot (including pros3z.**  Don’t play favourites, don’t tip a few, and don’t allocate benefits to insiders first.  Treat clients **equitably**, not identically—use fair processes so no group is disadvantaged by timing, access, or allocation.
 
 #### Core Concepts
 
@@ -493,9 +365,7 @@ If you want, I can also give you a **one-line elimination rule** for I(D) that k
 8. **“Client requested a reference.”** Client initiated and consented; correct logic: allowed.
 9. **“Information was outdated and irrelevant.”** No identification possible; correct logic: not confidential.
 10. **“Disclosure followed firm and law.”** Policies aligned with legal requirements; correct logic: compliant handling.
-
-
-## DUTIES TO EMPLOYERS
+---
 ### STANDARD IV(A) – DUTIES TO EMPLOYERS – LOYALTY
 
 > [!tip] TALISMAN
@@ -503,13 +373,11 @@ If you want, I can also give you a **one-line elimination rule** for I(D) that k
 > You can plan your exit, but you can’t compete, solicit, steal, or use employer resources.
 > After leaving: you may compete, but you still can’t take confidential info or employer property.
 > 
-> 
+> **If you were fired from your last job, be upfront about it to your next employer**
 
 
 > [!DANGER] YOU MAKE THESE MISTAKES
-> - Just informing in written is not enough, a written **CONSENT** from the employer must be received to continue outside activities.
-> - If you were fired from your last job, be upfront about it to your next employer.
-> - A member claims a professional designation she has not earned, this is also violation of loyalty. And also misconduct.
+> Just informing in written is not enough, a written **CONSENT** from the employer must be received to continue outside activities.
 
 
 
@@ -560,58 +428,10 @@ If you want, I can also give you a **one-line elimination rule** for I(D) that k
 9. **“I kept working diligently during notice period.”** Loyalty continues until termination; doing your job meets the duty.
 10. **“I used publicly available info that I independently gathered.”** If it’s truly independent and not an employer database, it can be okay.
 
-### STANDARD IV(C) – DUTIES TO EMPLOYERS – RESPONSIBILITIES OF SUPERVISORS
+If you want, I can also produce:
 
-
-> [!danger] MISTAKES
-> **If you can’t realistically supervise, don’t accept the role:** decline/avoid supervisory responsibility until the firm adopts reasonable procedures that let you supervise adequately.
-
-
-> [!tip] TALISMAN  
-> **If the work flows through your team, the ethics risk is on your desk.** You don’t need perfection; you need a **reasonable system + active monitoring + fast action on red flags**.
-
-#### Core Concepts
-
-1. **“Supervisor” is functional, not title-based**: if you have authority over the activity (even indirectly), you’re on the hook.    
-2. **Delegation ≠ discharge**: you can delegate tasks, not responsibility; you must supervise the delegate.
-3. **Reasonableness is firm-size adjusted**: small firm ≠ no controls; large firm ≠ checkbox controls.
-4. **Red-flag duty**: once you see warning signs, “I didn’t know” dies; you must investigate and stop/limit harm.
-5. **Controls must be usable**: policies that exist but aren’t enforced/trained/monitored are treated like they don’t exist.
-6. **Supervision includes prevention + detection + response**: having only one of the three is a trap.
-7. **Tech reliance is not a defense**: systems can support supervision; they don’t replace it.
-    
-
-#### Exam Traps (Violation)
-
-1. **“Compliance owns it.”** Wrong logic: compliance is the supervisor; correct logic: supervisory duty stays with the supervisor; tested angle: abdication.    
-2. **“I delegated trading oversight to a senior analyst.”** Wrong logic: delegation transfers accountability; correct logic: you must monitor the delegate’s monitoring; tested angle: two-layer delegation.    
-3. **“We have a policy manual.”** Wrong logic: written policy = reasonable efforts; correct logic: must train/enforce/monitor; tested angle: paper program.    
-4. **“No one complained.”** Wrong logic: silence means no violations; correct logic: supervision must be proactive; tested angle: passive oversight.    
-5. **“It was a junior’s mistake.”** Wrong logic: junior errors don’t implicate supervisor; correct logic: weak supervision is the supervisor’s issue; tested angle: analyst copy-paste errors. 
-6. **“The system flagged nothing.”** Wrong logic: software proves compliance; correct logic: you must review system limits and red flags; tested angle: surveillance complacency.
-7. **“I saw unusual trades but assumed it was fine.”** Wrong logic: benefit of doubt; correct logic: red flags require inquiry; tested angle: insider trading patterns.
-8. **“We fixed it later.”** Wrong logic: eventual fix cures failure; correct logic: delayed response after warning signs is a violation; tested angle: slow escalation.    
-9. **“Our controls match industry norms.”** Wrong logic: norms define reasonableness; correct logic: controls must match your firm’s risks; tested angle: complex products.    
-10. **“I wasn’t the direct manager.”** Wrong logic: only direct line managers supervise; correct logic: functional authority triggers duty; tested angle: matrix orgs.
-    
-
-#### Exam Traps (Not a Violation)
-
-1. **“Employee circumvented controls deliberately.”** Correct logic: supervisors aren’t guarantors if they had reasonable systems and monitoring.
-    
-2. **“We had training + preclearance + monitoring.”** Correct logic: layered controls support reasonable efforts; tested angle: multiple defenses.
-    
-3. **“I spotted a red flag and immediately froze activity.”** Correct logic: prompt action is the compliant response.
-    
-4. **“We escalated to compliance and documented steps.”** Correct logic: escalation + documentation supports reasonableness.
-    
-5. **“Small firm used simple but effective controls.”** Correct logic: proportional controls can be reasonable.
-    
-6. **“Policies were updated after a new product launch.”** Correct logic: adapting controls to new risks shows supervision.
-    
-7. **“Random audits caught issues early.”** Correct logic: detection controls count, not just prevention.
-    
-8. **“Supervisor reviewed exceptions regularly.”** Correct logic: exception review is active monitoring.
+* a **IV(A) vs IV(B)** “conflict vs loyalty” contrast sheet (high-yield), or
+* a compact checklist: **safe exit plan** vs **violation exit plan**.
 
 ### STANDARD IV(B) – DUTIES TO EMPLOYERS – ADDITIONAL COMPENSATION ARRANGEMENTS
 
@@ -660,162 +480,143 @@ If you want, I can also give you a **one-line elimination rule** for I(D) that k
 
 ### STANDARD V(A) – INVESTMENT ANALYSIS, RECOMMENDATIONS, AND ACTIONS – DILIGENCE AND REASONABLE BASIS
 
-
-> [!danger] MISTAKES
-> 1. Standards do not require that results be audited or verified unless claiming compliance with GIPS.
-
-
 > [!tip] TALISMAN  
-> - All components of the model should be independently verified and also how they interact with each other.
-> - All the other alternatives should be evaluated
-> - The material new information must be incorporated into the analysis.
-> - Presenting gross-of-fee returns is permitted under the Standards as long as there is prominent disclosure (like the footnote described) that fees must be deducted to determine the actual return to the client.
+> **Don’t guess. Don’t copy blindly.**  
+> Every recommendation must rest on **thorough analysis and reliable data**.  
+> You can be wrong on outcomes, but you can’t be lazy on process.  
+> No reasonable basis = no recommendation.
 
 #### Core Concepts
 
-1. Members and Candidates must have a **reasonable and adequate basis**, supported by **appropriate research and investigation**, before making investment recommendations or taking action.    
-2. The depth of diligence depends on the **nature of the investment** (complex, illiquid, leveraged = more work required).    
-3. You must **understand the assumptions, risks, and limitations** of your analysis and models—not just the outputs.    
-4. Reliance on **third-party research** is allowed only if the source is credible and the work is reviewed for reasonableness.    
-5. Quantitative models and AI tools do **not replace judgement**; inputs, methodology, and relevance must be evaluated.    
-6. Ongoing diligence is required—**new information can invalidate old conclusions**.    
+1. Members and Candidates must have a **reasonable and adequate basis**, supported by **appropriate research and investigation**, before making investment recommendations or taking action.
+    
+2. The depth of diligence depends on the **nature of the investment** (complex, illiquid, leveraged = more work required).
+    
+3. You must **understand the assumptions, risks, and limitations** of your analysis and models—not just the outputs.
+    
+4. Reliance on **third-party research** is allowed only if the source is credible and the work is reviewed for reasonableness.
+    
+5. Quantitative models and AI tools do **not replace judgment**; inputs, methodology, and relevance must be evaluated.
+    
+6. Ongoing diligence is required—**new information can invalidate old conclusions**.
+    
 7. This standard is about **process quality**, not prediction accuracy.
-8. Presenting gross-of-fee returns is permitted under the Standards as long as there is prominent disclosure (like the footnote described) that fees must be deducted to determine the actual return to the client.
     
 
 #### Exam Traps (Violation)
 
-1. **"The performance with re-invested dividends was benchmarked against S&P 500"** Wrong logic: S&P 500 shows pure price return; correct logic: total return (price + dividends) benchmark needed; tested angle: inappropriate benchmark.
-2. **“The model said buy.”** Wrong logic: Model output alone is enough; correct logic: must understand inputs, assumptions, and limits; tested angle: blind model reliance.    
-3. **“A senior analyst wrote it.”** Wrong logic: Seniority guarantees reliability; correct logic: you must assess reasonableness yourself; tested angle: authority bias.    
-4. **“Everyone uses this report.”** Wrong logic: Popularity equals diligence; correct logic: independent evaluation still required; tested angle: herding.    
-5. **“Time was short.”** Wrong logic: Urgency excuses shallow analysis; correct logic: no adequate basis → no recommendation; tested angle: deadline pressure.    
-6. **“Past performance supports it.”** Wrong logic: History replaces analysis; correct logic: forward-looking assessment still required; tested angle: extrapolation error.    
-7. **“I relied on a third-party rating.”** Wrong logic: Ratings substitute for diligence; correct logic: ratings must be evaluated, not adopted blindly; tested angle: ratings misuse. 
-8. **“The client wanted it.”** Wrong logic: Client demand creates basis; correct logic: suitability and diligence are separate duties; tested angle: client pressure.
-9. **“The recommendation worked before.”** Wrong logic: Prior success proves basis; correct logic: each recommendation needs current support; tested angle: outcome bias.
+1. **“The model said buy.”** Wrong logic: Model output alone is enough; correct logic: must understand inputs, assumptions, and limits; tested angle: blind model reliance.
+    
+2. **“A senior analyst wrote it.”** Wrong logic: Seniority guarantees reliability; correct logic: you must assess reasonableness yourself; tested angle: authority bias.
+    
+3. **“Everyone uses this report.”** Wrong logic: Popularity equals diligence; correct logic: independent evaluation still required; tested angle: herding.
+    
+4. **“The data came from the company.”** Wrong logic: Issuer data is automatically reliable; correct logic: must assess credibility and bias; tested angle: issuer-provided info.
+    
+5. **“Time was short.”** Wrong logic: Urgency excuses shallow analysis; correct logic: no adequate basis → no recommendation; tested angle: deadline pressure.
+    
+6. **“Past performance supports it.”** Wrong logic: History replaces analysis; correct logic: forward-looking assessment still required; tested angle: extrapolation error.
+    
+7. **“I relied on a third-party rating.”** Wrong logic: Ratings substitute for diligence; correct logic: ratings must be evaluated, not adopted blindly; tested angle: ratings misuse.
+    
+8. **“The product is simple.”** Wrong logic: Simplicity eliminates need for diligence; correct logic: all investments require analysis; tested angle: plain-vanilla complacency.
+    
+9. **“The client wanted it.”** Wrong logic: Client demand creates basis; correct logic: suitability and diligence are separate duties; tested angle: client pressure.
+    
+10. **“The recommendation worked before.”** Wrong logic: Prior success proves basis; correct logic: each recommendation needs current support; tested angle: outcome bias.
     
 
 #### Exam Traps (Not a Violation)
 
-1. **“The investment lost money.”** Loss occurred despite thorough analysis; correct logic: outcomes don’t define diligence.    
-2. **“Third-party research was reviewed.”** Source was credible and assumptions evaluated; correct logic: reasonable reliance allowed.    
-3. **“The model was stress-tested.”** Limitations understood and documented; correct logic: diligence satisfied.    
-4. **“Assumptions were disclosed.”** Risks and caveats communicated; correct logic: reasonable basis shown.    
-5. **“The analyst declined to recommend.”** Insufficient data existed; correct logic: refusing to act is compliant.    
+1. **“The investment lost money.”** Loss occurred despite thorough analysis; correct logic: outcomes don’t define diligence.
+    
+2. **“Third-party research was reviewed.”** Source was credible and assumptions evaluated; correct logic: reasonable reliance allowed.
+    
+3. **“The model was stress-tested.”** Limitations understood and documented; correct logic: diligence satisfied.
+    
+4. **“Assumptions were disclosed.”** Risks and caveats communicated; correct logic: reasonable basis shown.
+    
+5. **“The analyst declined to recommend.”** Insufficient data existed; correct logic: refusing to act is compliant.
+    
 6. **“New data changed the view.”** Recommendation updated promptly; correct logic: ongoing diligence met.
-7. **“Different conclusions were possible.”** Judgement applied among reasonable views; correct logic: CFA allows disagreement.    
-8. **“Peer review occurred.”** Analysis vetted internally; correct logic: strengthens reasonable basis.    
-9. **“The scope matched the product.”** Depth of research fit complexity; correct logic: proportional diligence.    
+    
+7. **“Different conclusions were possible.”** Judgment applied among reasonable views; correct logic: CFA allows disagreement.
+    
+8. **“Peer review occurred.”** Analysis vetted internally; correct logic: strengthens reasonable basis.
+    
+9. **“The scope matched the product.”** Depth of research fit complexity; correct logic: proportional diligence.
+    
 10. **“Client understood risks.”** Risks explained alongside recommendation; correct logic: diligence plus transparency.
 
 ---
 
 ### STANDARD V(B) – INVESTMENT ANALYSIS, RECOMMENDATIONS, AND ACTIONS – COMMUNICATION WITH CLIENTS AND PROSPECTIVE CLIENTS
 
-
-> [!danger] MISTAKES
-> Distinguish facts from opinions always
-
-
-> [!tip] TALISMAN
-> **“Say what you do, what it costs, how you do it, what can break it, what really drives the call, and what’s fact vs your guess.”**
-
- 
-#### Core Concepts  
-
-1. **Costs disclosure is wider than your invoice**: include client-paid costs from affiliates/related entities/third parties used in delivering the product/service.
-2. **“Clients are sophisticated” is not a shield**: you can tailor depth, but you still must disclose what the standard requires.
-3. **Ongoing duty**: if services/costs/process change, you must update affected clients promptly (not “only at onboarding”).
-4. **Process disclosure includes outsourcing**: if external advisers run slices of the portfolio, clients must be told (it’s part of “how you do it”).
-5. **Risk/limits disclosure is about “significant” stuff**: leverage is a big one; also liquidity/capacity limits when they matter to the decision.
-6. **Facts vs opinions**: forecasts/model outputs are opinions/estimates; don’t sell statistical projections as certainty; disclose known model limits.
-7. **Short-form recommendations still require a trail**: “buy/sell list” is fine only if you tell clients more analysis is available from the producer.  
-
-#### Exam Traps (Violation) 
-
-1. **“They’re PE fund investors; they know the fee stack.”** Wrong logic: sophistication implies disclosure; correct logic: undisclosed compensation/fees tied to the product/service = violation.
-2. **“We disclosed our advisory fee; the underlying product fees don’t count.”** Wrong logic: only direct relationship costs matter; correct logic: disclose all client-paid costs tied to delivering the service (affiliates/third parties too).
-
-3. **“We changed the billing basis quietly; it’s still ‘a % of AUM.’”** Wrong logic: small mechanics don’t matter; correct logic: fee calculation methodology changes must be communicated to clients.
-
-4. **“We tweaked the investment process/model; no need to tell clients unless performance changes.”** Wrong logic: only outcomes matter; correct logic: promptly disclose process changes that might materially affect the process/portfolio decisions.
-
-5. **“We use outside sub-advisers, but that’s internal plumbing.”** Wrong logic: only you matter; correct logic: using external advisers is part of the process and must be disclosed.
-
-6. **“Leverage/illiquidity is obvious—no need to highlight.”** Wrong logic: obvious = optional; correct logic: significant risks (including leverage) and material limitations (liquidity/capacity) must be disclosed.
-
-7. **“The model says ‘will’—it’s math, not opinion.”** Wrong logic: quantitative output = fact; correct logic: projections are estimates; you must separate fact from conjecture and state known limitations.
-
-8. **“I posted the rec update on a platform some clients don’t use; good enough.”** Wrong logic: any broadcast counts; correct logic: take reasonable steps so digital delivery treats clients fairly (availability/access issues matter).
-
-9. **“My report omits key negatives because they’re ‘not my focus’ (unstated).”** Wrong logic: analyst discretion = silence; correct logic: you can omit, but you must clearly state scope limits so readers aren’t misled.
-
-10. **“Firm’s disclosure template is weak; I used it anyway.”** Wrong logic: firm policy shifts liability; correct logic: you must flag insufficiency and, when possible, supplement disclosures to meet the standard.
-
-  
-
-#### Exam Traps (Not a Violation)
-
-  
-
-1. **“I can’t give exact dollar fees upfront.”** Correct logic: you must disclose cost structure with reasonable detail, but you’re not required to state exact dollar amounts in advance.
-
-2. **“I gave gross-of-fees performance.”** Correct logic: can be fine if fees/cost impact is also disclosed clearly and comparably (uniform presentation).
-
-3. **“One-word recommendation (‘buy’) with a stock list.”** Correct logic: acceptable if you notify clients that supporting analysis is available from the producer.
-
-4. **“I tailored depth of explanation for a retail client vs an institution.”** Correct logic: allowed to tailor detail to client sophistication as long as required disclosures are still made.
-
-5. **“A risk later blew up; we honestly didn’t know it at the time.”** Correct logic: not necessarily a V(B) breach if the risk wasn’t known then (but it can expose weak diligence under V(A)).
-
-6. **“My report emphasizes some drivers and skips others.”** Correct logic: fine if you clearly state the limits/scope so the reader can judge what was (and wasn’t) analyzed.
-
-7. **“I rely on firm-produced disclosures.”** Correct logic: allowed if they meet the standard—and you escalate/supplement when they don’t.
-
-### STANDARD V(C) – RECORD RETENTION
-
 > [!tip] TALISMAN  
-> **If you can’t show your work, CFA treats it like you didn’t do the work.** Keep the “why + inputs + what you told clients,” even if it was just a _review_ and you changed nothing.
+> **Say what you did, why you did it, and what can go wrong.**  
+> Be clear, complete, and understandable—no hiding assumptions or risks.  
+> Distinguish Opinions from facts - ALWAYS
 
 #### Core Concepts
+1. Members and Candidates must **disclose the basic format and general principles** of the investment process used to analyze investments, select securities, and construct portfolios.gg    
+2. All **significant limitations and risks** of an investment, strategy, or model must be disclosed.
+    
+3. **Changes in the investment process** must be communicated **promptly and clearly**.
+    
+4. Communications must be **fair, accurate, and complete**, avoiding exaggeration, ambiguity, or selective emphasis.
+    
+5. You must distinguish **facts from opinions** and clearly label forecasts, estimates, and assumptions.
+    
+6. Disclosures should be **appropriate to the audience**—sophisticated jargon that misleads retail clients is unacceptable.
+    
+7. This standard is about **clarity and honesty**, not persuasion.
+    
 
-1. **Retention applies even when you _don’t trade_**: you must keep records for reviews that do not lead to a change in position (CFA loves this trap).    
-2. **Your required records depend on your role** in the decision chain (analyst vs PM vs supervisor ≠ same file burden).    
-3. **Digital ≠ exempt**: emails/texts/blog/social posts used in analysis or sent to clients must be retained (format doesn’t matter).    
-4. **Records are firm property**: you can’t take originals/copies to a new employer without express consent (even if “I created it”).    
-5. **No “old report reuse” without backup**: you must not use past recommendations/reports if the supporting documentation is unavailable; you must recreate support at the new firm (without using old-firm sources unless permitted).    
-6. **Follow firm/regulator rules; if silent, CFA’s default is ~7 years** (this gets tested as a fallback rule).    
-7. **Even if firm “owns retention,” you should still archive your notes** to support current client communications when firm systems lag new comms (texts/social).
-    
 #### Exam Traps (Violation)
-1. **“No trade happened.”** Wrong logic: nothing to retain; correct logic: reviews with no position change still require records; tested angle: periodic coverage refresh.    
-2. **“It was just a quick text/DM.”** Wrong logic: informal comms don’t count; correct logic: texts/social/blog posts used/communicated must be retained; tested angle: WhatsApp/Slack/LinkedIn messages.    
-3. **“I relied on another analyst’s report so I don’t need to keep it.”** Wrong logic: third-party research isn’t my file; correct logic: must keep copies of _all_ info used, including outside research; tested angle: “I only summarized it.”    
-4. **“I left the firm, but I took my model documentation because it’s my work.”** Wrong logic: creator owns it; correct logic: employer owns records created on the job; taking copies without permission violates; tested angle: analysts moving firms with models.    
-5. **“I’ll keep the old pitchbook/report and reuse it at the new firm.”** Wrong logic: it’s just ‘history’; correct logic: cannot use historical recs without supporting documentation; must recreate support at new firm; tested angle: portability of work product.
+
+1. **“The model is proprietary.”** Wrong logic: Secrecy excuses explanation; correct logic: must explain process and key drivers without revealing trade secrets; tested angle: black-box models.
     
-6. **“Firm policy doesn’t mention TikTok/Telegram, so I’m fine.”** Wrong logic: policy silence = safe; correct logic: new comm methods increase individual responsibility to retain relevant records; tested angle: tech outruns compliance rules.
+2. **“Risks are obvious.”** Wrong logic: Clients can infer risks; correct logic: significant risks must be explicitly disclosed; tested angle: risk omission.
     
-7. **“I deleted inputs because the final model output is saved.”** Wrong logic: output alone proves basis; correct logic: retain inputs/assumptions/reasons (scope + why), not just final number; tested angle: black-box defense.
+3. **“We updated the process quietly.”** Wrong logic: Minor changes don’t matter; correct logic: material changes must be communicated promptly; tested angle: undisclosed process changes.
     
-8. **“I have no duty; compliance stores everything.”** Wrong logic: responsibility is fully delegated; correct logic: you still must ensure records supporting your actions/communications exist, especially for your current client communications.
+4. **“The forecast is basically a fact.”** Wrong logic: Confidence turns opinion into fact; correct logic: forecasts must be labeled as estimates; tested angle: opinion vs fact.
+    
+5. **“Details confuse clients.”** Wrong logic: Simplification justifies omission; correct logic: clarity cannot come at the cost of completeness; tested angle: selective disclosure.
+    
+6. **“Marketing wrote this.”** Wrong logic: Responsibility shifts to marketing; correct logic: members are responsible for communications they approve; tested angle: delegation.
+    
+7. **“Everyone uses this language.”** Wrong logic: Industry jargon excuses ambiguity; correct logic: communication must be understandable to the audience; tested angle: obfuscation.
+    
+8. **“Only upside was highlighted.”** Wrong logic: Sales framing is acceptable; correct logic: balanced presentation required; tested angle: asymmetric disclosure.
+    
+9. **“Assumptions are in the appendix.”** Wrong logic: Location doesn’t matter; correct logic: key assumptions must be clearly disclosed, not buried; tested angle: fine-print assumptions.
+    
+10. **“Clients didn’t ask.”** Wrong logic: Silence waives disclosure; correct logic: duty to disclose is proactive; tested angle: passive clients.
     
 
 #### Exam Traps (Not a Violation)
 
-1. **“Firm has a retention policy; I followed it.”** Correct logic: meeting firm/regulator retention requirements satisfies V(C).
+1. **“The process was explained at a high level.”** Key principles disclosed without revealing IP; correct logic: compliant explanation.
     
-2. **“I don’t know the exact time requirement, but I retained for 7+ years when no rule existed.”** Correct logic: CFA’s recommended fallback when no guidance exists; tested angle: candidate chooses a defensible default.
+2. **“Risks were clearly listed.”** Material risks identified; correct logic: adequate disclosure.
     
-3. **“I used a one-line ‘buy list,’ but I can provide full backup on request.”** Correct logic: format can be short, but records must exist to substantiate scope and reasons; tested angle: minimal communication vs full file.
+3. **“Forecasts were labeled as estimates.”** Opinions distinguished from facts; correct logic: compliant communication.
     
-4. **“I recreated the support at the new firm from independent/public sources.”** Correct logic: allowed if you don’t use old-firm sources and you rebuild the file properly; tested angle: portability done cleanly.
+4. **“Process changes were communicated.”** Clients informed promptly; correct logic: duty met.
     
-5. **“Client complained about benchmark exposure; I produced IPS + benchmark composition history.”** Correct logic: retaining IPS/process evidence supports decisions and is compliant (CFA likes this as ‘defensive file’ logic).
+5. **“Language matched the audience.”** Complexity appropriate for client sophistication; correct logic: clear communication.
     
+6. **“Balanced presentation was used.”** Upside and downside discussed; correct logic: fairness satisfied.
+    
+7. **“Assumptions were summarized clearly.”** Key drivers disclosed; correct logic: transparency met.
+    
+8. **“Written and verbal disclosures aligned.”** No contradictions; correct logic: consistency.
+    
+9. **“Clients acknowledged understanding.”** Informed consent supported; correct logic: effective communication.
+    
+10. **“Materials were updated after changes.”** Current information provided; correct logic: ongoing duty satisfied.
 
-If you want, I can compress this into a 12-line “V(C) kill sheet” (only traps, no core concepts).
 ### STANDARD IV(C) – DUTIES TO EMPLOYERS – RESPONSIBILITIES OF SUPERVISORS
 
 > [!tip] TALISMAN
@@ -942,17 +743,18 @@ If you know a client trade is coming, your hands are tied.
 9. “Blackout period was observed.” Waiting period respected; correct logic: timing controls worked.
 10. “Automated allocation enforced order.” System ensured fair sequencing; correct logic: no manual override.
 
+---
 
 ### STANDARD VI(C) – CONFLICTS OF INTEREST – REFERRAL FEES
-
-> [!DANGER] MISTAKES
-> - If for any reason, the referral fee was not disclosed. IT SHOULD NOT BE TAKEN afterwards. You can't disclose something afterwards.
-> - Disclosure must be made BOTH to clients and to the employer.
 
 > [!tip] TALISMAN  
 > **If you’re paid to recommend, say it clearly before you recommend.**  
 > Any benefit tied to sending a client somewhere else must be **fully disclosed upfront**.  
 > Hidden referral money = hidden bias.
+
+
+> [!DANGER] MISTAKES YOU WILL DO
+> - If for any reason, the referral fee was not disclosed. IT SHOULD NOT BE TAKEN afterwards. You can't disclose something afterwards.
 
 #### Core Concepts
 1. Members and Candidates must **disclose to clients and employers** any **compensation, consideration, or benefit** received for referring clients or prospective clients.
@@ -1014,13 +816,13 @@ If you know a client trade is coming, your hands are tied.
 #### Core Concepts
 
 1. Members and Candidates must **not misrepresent or exaggerate** the meaning or implications of holding the CFA designation or participating in the CFA Program.
-2. Members and candidates are free to disagree and express their disagreement with CFA Institute on its public policies, its procedures, or any advocacy positions taken by the organisation.
-3. The CFA designation must be used **exactly as prescribed**—“CFA charterholder” is correct; “CFA certified” or “CFA degree” is not.
-4. Candidates may state their **current status truthfully** (e.g., “Level II candidate”), but must not imply partial completion equals expertise.
-5. You must not imply that the CFA designation **guarantees performance, competence, or superior returns**.
-6. The CFA Institute name and marks must not be used to **endorse products, services, or firms**.
-7. This standard applies to **résumés, business cards, LinkedIn profiles, marketing materials, and interviews**.
-8. The focus is on **accuracy and restraint**, not promotion.
+    
+2. The CFA designation must be used **exactly as prescribed**—“CFA charterholder” is correct; “CFA certified” or “CFA degree” is not.
+3. Candidates may state their **current status truthfully** (e.g., “Level II candidate”), but must not imply partial completion equals expertise.
+4. You must not imply that the CFA designation **guarantees performance, competence, or superior returns**.
+5. The CFA Institute name and marks must not be used to **endorse products, services, or firms**.
+6. This standard applies to **résumés, business cards, LinkedIn profiles, marketing materials, and interviews**.
+7. The focus is on **accuracy and restraint**, not promotion.
 #### Exam Traps (Violation)
 1. **“CFA-certified portfolio manager.”** Wrong logic: Certification language is fine; correct logic: CFA is a designation, not a certification; tested angle: terminology misuse.
 2. **“Passed CFA Level II, expert in finance.”** Wrong logic: Exam progress proves expertise; correct logic: candidacy ≠ competence; tested angle: implied skill.

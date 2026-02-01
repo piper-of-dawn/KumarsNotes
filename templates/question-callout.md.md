@@ -1,2 +1,0 @@
-> [!QUESTION]
-> <Question stem>
