@@ -13,16 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/ECONOMICS.md",
+                "file": "CFA Notes/ETHICS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "ECONOMICS"
+              "title": "ETHICS"
+            }
+          },
+          {
+            "id": "343b0e20300e610d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CFA Notes/FIXED INCOME.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "FIXED INCOME"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -221,6 +237,26 @@
             "id": "eb7428804f0f9ffb",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "37ab6b395bb4d15b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "42968aeeeb5bd833",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -228,7 +264,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 13
       }
     ],
     "direction": "horizontal",
@@ -244,8 +280,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ab61447ddfebe320",
+  "active": "343b0e20300e610d",
   "lastOpenFiles": [
+    "Quant Finance/Fixed Income.md",
+    "CFA Notes/ETHICS.md",
+    "CFA Notes/FSA.md",
+    "CFA Notes/EQUITY.md",
+    "CFA Notes/QUANTITATIVE METHODS.md",
+    "CFA Notes/ECONOMICS.md",
     "templates/question-callout.md.md",
     "templates/hammer.md",
     "templates",
@@ -277,12 +319,7 @@
     "CFA/CouponStructures.md",
     "CFA/Contingency Provisions.md",
     "CFA/Bond Duration.md",
-    "CFA/Annuity Calculation.md",
     "CFA",
-    "CFA Notes/DERIVATIVES.md",
-    "CFA Notes/ETHICS.md",
-    "CFA Notes/FSA.md",
-    "CFA Notes/ECONOMICS.md",
     "CFA Notes/_fixed_income.txt",
     "CFA Notes/fsa_b2_b.txt",
     "Pasted Image 20251228112906_706.png",

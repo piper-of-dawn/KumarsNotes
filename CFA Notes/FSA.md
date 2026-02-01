@@ -1,3 +1,14 @@
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 3 # Include headings up to the specified level
+include: 
+exclude: 
+includeLinks: true # Make headings clickable
+hideWhenEmpty: false # Hide TOC if no headings are found
+debugInConsole: false # Print debug info in Obsidian console
+```
 ## FSA
 
 ### MODULE 28.1: REVENUE RECOGNITION
@@ -396,7 +407,7 @@ Taxes paid in cash = 20000 - 5000 - 1000 = 14000
 
 Analyst note: Using CFO as the base captures non‑cash adjustments and working‑capital timing already; ensure interest classification is normalized (per IFRS vs U.S. GAAP) before applying the formula.
 
-## Free Cashflow to Equity 
+##### Free Cashflow to Equity 
 
 This is the cash that is available only to the equity shareholders. From equity, we specifically refer to common equity **that does not include preference shares.**
 
@@ -777,16 +788,46 @@ Memory hooks:
 > [!WARNING] Remember
 > To memorise all the ratios and **most importantly their implications**
 
+
+
+> [!NOTE] MEMORISE THIS FOR EFFICIENCY
+> 
+> **TURNOVER RATIOS**
+> 
+> INVENTORY TURNOVER = REVENUE / AVERAGE INVENTORY
+> AR TURNOVER = REVENUE / AVERAGE AR
+> AP TURNOVER = COGS / AVERAGE AP
+> DOI = 365 / INVENTORY TURNOVER
+> DSO = 365 / AR TURNOVER
+> DPO = 365 / AP TURNOVER
+> CCC = DIO + DSO - DPO
+> 
+> **LIQUIDITY RATIOS**
+> CR = CA / CL
+> CASH RATIO = (CASH + MARKETABLE SECURITIES) / CL
+> QUICK RATIO = (CASH + AR + MARKETABLE SECURITIES) / CL
+> DEFENSIVE INTERVAL RATIO = (CASH + AR + MARKETABLE SECURITIES) / DAILY OPERATING EXPENSES
+
 1. Turnover means how quickly something is replaced or replenished, inventory turnover ratio (ITR) would be COGS / Avg. Inventory, AR turnover (ART) would be Sales / Avg. AR, AP turnover would be COGS / Avg. AP. So think intuitively, for one unit of inventory, I have ITR units of COGS, so my inventory gets replenished ITR times. 
 
 > [!Danger] DO NOT MAKE THIS MISTAKE
 > ITR is COGS / Avg Inventory, APR is COGS / Avg. AP, ART is Sale / Avg AR. 
 
 2. Divide any turnover ratio by 365 and you get Days of that thing. For example, Days of Inventory (DIO) = 365 / ITR, Days of AP (DPO) = 365 / APR, Days Sales Outstanding (DSO) = 365 / ART
-3. Current Ratio =  Current Assets / Current Liabilities. In liquidity ratios, the denominator will usually be CL. 
+3. JIT maufacturing makes ITR go very high often unusable especially for software companies.
+4. Current Ratio =  Current Assets / Current Liabilities. In liquidity ratios, the denominator will usually be CL. 
+
+###### HOW TO GAME CURRENT RATIO?
+- Have aggressive sales on credit (AR goes up, CA goes up)
+- Do not pay creditors (AP goes down, CL goes down)
+- Sell a fixed asset. (Cash goes up, CA goes up)
+- Take a long term loan (Cash goes up, CA goes up; Long term debt goes up, CL does not change)
+- Issue shares (Cash goes up, CA goes up; Equity goes up, CL does not change)
+
 4. Cash Ratio =  (Cash + Marketable Securities) / Current Liabilities. Marketable Securities are anything that you can quickly sell and generate cash. 
 5. Quick Ratio =  (Cash + Marketable Securities + AR) / Current Liabilities. 
 6. Cash Conversion Cycle (CCC) = DSO + DIO - DPO. Assets are plus (Inventory and AR), Liability (AP) is minus. It measures how quickly inventory turns into cash. You can crank this up by aggressively demanding payments, not paying your suppliers. If it is negative then you require short term financing to cover the period. If it is positive, then you are sitting on cash that can be used in other parts of business. You can afford (CA < CL).
+7. The quick ratio reflects the fact that certain current assets—such as prepaid expenses, some taxes, and employee-related prepayments—represent costs of the current period that have been paid in advance and cannot usually be converted back into cash.
 ### MODULE 37.3 SOLVENCY AND PROFITABILITY RATIOS
 1. Debt to Equity ratio = Total Debt / Total Shareholder Equity. All interest bearing instruments **except leases** are part of total debt. If question is silent, treat Preference shares as Total Shareholder Equity.
 2. Debt to Capital Ratio = Total Debt / (Total Debt + Total Shareholder Equity)
@@ -795,5 +836,50 @@ Memory hooks:
 5. Financial Leverage = Avg Total Assets / Avg Total Equity. *How much of shareholder equity has been used to finance the assets*
 6. Interest Coverage = EBIT / Interest Payments **(Always EBIT, not EBITDA,  not PBT, and not PAT)**. Suppose I earn (EBIT) 100 and I have to pay 10 as interest, I can cover interest 10 times. 
 
+> [!danger] DEBT ALWAYS MEANS TOTAL DEBT
+> 
+> Debt to Equity Ratio = (Long Term Debt + Short Term Debt) / Total Shareholder Equity
+> 
+> Total Shareholder Equity = Common Stock + Preference Shares (if question states that)
+
+
+> [!danger] RETURN ON ASSETS
+> 
+> ALWAYS ADD BACK INTEREST AFTER TAX TO NET INCOME TO CALCULATE ROA
+> 
+> ROA = Net Income + Interest Expense (1-Tax) / Avg Total Assets
+> 
+> Interest is tax deductible. So we add back interest after adjusting for tax.
+> 
+> 
+
+
 > [!WARNING] Remember
 > Any kind of margin is always calculated on Revenue
+
+##### DUPONT ANALYSIS
+
+7. Dupont Analysis breaks ROE into its drivers.
+
+> [!NOTE] MEMORISE THIS FOR EFFICIENCY
+> #memorise *||=={cyan}NiMarAssTurnFinLever==||*
+> ROE = PAT Margin × Asset Turnover × Financial Leverage
+> ROE = ROA × Financial Leverage
+> ROA = PAT / Avg Total Assets
+> Asset Turnover = Revenue / Avg Total Assets
+> PAT Margin = PAT / Revenue
+> 
+> Financial Leverage = Avg Total Assets / Avg Total Equity
+
+
+NET INCOME MARGIN = EAT / REVENUE
+Tax Burden = EBT / EAT
+Interest Burden = EBT / EBIT 
+EBIT Margin = EBIT / Sales 
+
+$$ \boxed {\mathrm{ROE} = \frac{\text{EAT}}{\text{EBT}} \times \frac{\text{EBT}}{\text{EBIT}} \times \frac{\text{EBIT}}{\text{Sales}} \times \frac{\text{Sales}}{\text{Avg. Assets}} \times \frac{\text{Avg. Assets}}{\text{Avg. Equity}}} $$
+
+##### INDUSTRY SPECIFIC RATIOS
+8. Net income per employee and sales per employee are used in the analysis and valuation of service and consulting companies and software companies which usually have intangible assets such as employee skills. Steam has a $3.5 million to over $10 million in profit per employee.
+9. For Walmart, average revenue per square foot is the metric.
+10. For Spotify, average revenue per user is the metric.

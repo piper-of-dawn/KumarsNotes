@@ -13,6 +13,95 @@ $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
 	- Inflation premia: Purchansing power of money is lower in future.
 
 
+### MODULE 1.2: TIME-WEIGHTED AND MONEY-WEIGHTED RETURNS
+
+
+
+> [!warn] REMEMBER 
+> - If funds are contributed to an investment portfolio just before a period of relatively poor portfolio performance, the money-weighted rate of return will tend to be lower than the time-weighted rate of return. On the other hand, if funds are contributed to a portfolio at a favorable time (just before a period of relatively high returns), the money- weighted rate of return will be higher than the time-weighted rate of return. 
+> - The use of the time-weighted return removes these distortions, and thus provides a better measure of a manager’s ability to select investments over the period. 
+> - If the manager has complete control over money flows into and out of an account, the money-weighted rate of return would be the more appropriate performance measure.
+
+1. **TWROR is designed to _not_ be impacted by the timing or size of external cash flows**. It isolates “portfolio growth rate per unit time” by breaking the timeline at each cash flow and compounding the sub-period returns.
+   
+> [!question] TWROR
+> Assume an investor buys a share of stock for $100 at t = 0, and at the end of the year (t = 1), she buys an additional share for $120. At the end of Year 2, the investor sells both shares for $130 each. At the end of each year in the holding period, the stock paid a $2 per share dividend. What is the money-weighted rate of return and time-weighted rate of return?
+> 
+> ---
+> 
+> | Time | Cash Flow | Amount |
+> |------|-----------|--------|
+> |0 | -100 | -100 |
+> | 1 | -120+2 | -118 |
+> | 2 | 130+130+2+2 | 264 |
+> 
+> MWROR = IRR(-100, -118, 264) = -13.86\% 
+> 
+> **t=0**
+> Beginning NAV = 100
+> Income = 2
+> Price Appreciation = 20
+> Ending NAV = 122
+> HPR = 122/100 - 1 = 22\%
+> 
+> **t=1**
+> Another share bought for 120
+> Beginning NAV = 242 (Assuming dividend was re-invested)
+> Income = 4
+> Price Appreciation = 0
+> Ending NAV = 264
+> HPR = 264/242 - 1 = 9.09\%
+> 
+> TWROR = \[(1 + 0.22)(1 + 0.0909)\]^2 - 1 = 15.36\%
+> 
+
+
+> [!quesion] NUMERICAL
+> An investor buys a share of stock for $40 at time t = 0, buys another share of the same stock for $50 at t = 1, and sells both shares for $60 each at t = 2. The stock paid a dividend of $1 per share at t = 1 and at t = 2. The periodic money-weighted rate of return on the investment is closest to:
+> 
+> MWROR = IRR(-40, -50+1, 60+60+2) = 23.82\%
+> 
+> **t = 0** 
+> Beginning NAV = 40
+> Income = 1
+> Price Appreciation = 10
+> Ending NAV = 51
+> HPR = 51/40 - 1 = 27.5\%
+> 
+> **t=1**
+> Another share bought for 50
+> Beginning NAV = 50 + 50 = 100 (Dividend not re-invested)
+> Income = 1+1 = 2
+> Price Appreciation = 10 $\times$ 2 =  20
+> Ending NAV = 122
+> HPR = 122/100 - 1 = 22\%
+> 
+> TWROR = \[(1 + 0.275)(1 + 0.22)\]^2 - 1 = 24.7\%
+> 
+> 
+
+
+> [!danger] ANNUALISED RETURN
+> While calculating annualised return, always assume 365 day year.
+
+> [!question] ANNUALISED RETURN
+> A saver deposits $100 into a bank account. After 90 days, the account balance is $100.75. What is the saver’s annualized rate of return?
+> 
+> ---
+> 
+> Interest = 100.75 - 100 = 0.75 or 0.75\%
+> Annualized return = (1 + 0.0075)^(365/90) - 1 = 3.06\%
+> 
+
+
+> [!question] ANNUALISED RETURN
+> An investor buys a 500-day government bill for $970 and redeems it at maturity for $1,000. What is the investor’s annualized return?
+> 
+> ---
+> 
+> 500-Day Return = (1000 - 970) / 970 = 0.039
+> Annualized return = (1 + 0.03)^(365/500) - 1 = 2.25\%
+
 ### MODULE 6.1: LOGNORMAL DISTRIBUTIONS AND SIMULATION TECHNIQUES
 
 1. **Log-Normal Distribution**

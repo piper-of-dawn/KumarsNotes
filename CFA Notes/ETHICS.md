@@ -261,6 +261,7 @@ If you want, I can also give you a **one-line elimination rule** for I(D) that k
     
 11. **“We have Chinese walls.”** Wrong logic: Policies alone prevent violations; correct logic: personal responsibility remains even with information barriers; tested angle: compliance structure reliance.
 
+## DUTIES TO CLIENTS
 ### STANDARD III(A) – DUTIES TO CLIENTS – LOYALTY, PRUDENCE, AND CARE
 
 
@@ -453,6 +454,11 @@ If you want, I can also give you a **one-line elimination rule** for I(D) that k
 
 ### STANDARD III(E) – DUTIES TO CLIENTS – PRESERVATION OF CONFIDENTIALITY
 
+
+> [!danger] MISTAKES
+> Whistleblowing, even if it involves disclosing confidential information to a regulator to prove misconduct, is generally permitted (unless specifically prohibited by local law, which the exam assumes is not the case unless stated).
+
+
 > [!tip] TALISMAN
 > **Client information stays locked.**
 > Don’t share, hint, gossip, or reuse client data—inside or outside work.
@@ -559,60 +565,6 @@ If you want, I can also give you a **one-line elimination rule** for I(D) that k
 8. **“I did pro bono community work unrelated to employer business.”** No compensation and no competition; typically fine.
 9. **“I kept working diligently during notice period.”** Loyalty continues until termination; doing your job meets the duty.
 10. **“I used publicly available info that I independently gathered.”** If it’s truly independent and not an employer database, it can be okay.
-
-### STANDARD IV(C) – DUTIES TO EMPLOYERS – RESPONSIBILITIES OF SUPERVISORS
-
-
-> [!danger] MISTAKES
-> **If you can’t realistically supervise, don’t accept the role:** decline/avoid supervisory responsibility until the firm adopts reasonable procedures that let you supervise adequately.
-
-
-> [!tip] TALISMAN  
-> **If the work flows through your team, the ethics risk is on your desk.** You don’t need perfection; you need a **reasonable system + active monitoring + fast action on red flags**.
-
-#### Core Concepts
-
-1. **“Supervisor” is functional, not title-based**: if you have authority over the activity (even indirectly), you’re on the hook.    
-2. **Delegation ≠ discharge**: you can delegate tasks, not responsibility; you must supervise the delegate.
-3. **Reasonableness is firm-size adjusted**: small firm ≠ no controls; large firm ≠ checkbox controls.
-4. **Red-flag duty**: once you see warning signs, “I didn’t know” dies; you must investigate and stop/limit harm.
-5. **Controls must be usable**: policies that exist but aren’t enforced/trained/monitored are treated like they don’t exist.
-6. **Supervision includes prevention + detection + response**: having only one of the three is a trap.
-7. **Tech reliance is not a defense**: systems can support supervision; they don’t replace it.
-    
-
-#### Exam Traps (Violation)
-
-1. **“Compliance owns it.”** Wrong logic: compliance is the supervisor; correct logic: supervisory duty stays with the supervisor; tested angle: abdication.    
-2. **“I delegated trading oversight to a senior analyst.”** Wrong logic: delegation transfers accountability; correct logic: you must monitor the delegate’s monitoring; tested angle: two-layer delegation.    
-3. **“We have a policy manual.”** Wrong logic: written policy = reasonable efforts; correct logic: must train/enforce/monitor; tested angle: paper program.    
-4. **“No one complained.”** Wrong logic: silence means no violations; correct logic: supervision must be proactive; tested angle: passive oversight.    
-5. **“It was a junior’s mistake.”** Wrong logic: junior errors don’t implicate supervisor; correct logic: weak supervision is the supervisor’s issue; tested angle: analyst copy-paste errors. 
-6. **“The system flagged nothing.”** Wrong logic: software proves compliance; correct logic: you must review system limits and red flags; tested angle: surveillance complacency.
-7. **“I saw unusual trades but assumed it was fine.”** Wrong logic: benefit of doubt; correct logic: red flags require inquiry; tested angle: insider trading patterns.
-8. **“We fixed it later.”** Wrong logic: eventual fix cures failure; correct logic: delayed response after warning signs is a violation; tested angle: slow escalation.    
-9. **“Our controls match industry norms.”** Wrong logic: norms define reasonableness; correct logic: controls must match your firm’s risks; tested angle: complex products.    
-10. **“I wasn’t the direct manager.”** Wrong logic: only direct line managers supervise; correct logic: functional authority triggers duty; tested angle: matrix orgs.
-    
-
-#### Exam Traps (Not a Violation)
-
-1. **“Employee circumvented controls deliberately.”** Correct logic: supervisors aren’t guarantors if they had reasonable systems and monitoring.
-    
-2. **“We had training + preclearance + monitoring.”** Correct logic: layered controls support reasonable efforts; tested angle: multiple defenses.
-    
-3. **“I spotted a red flag and immediately froze activity.”** Correct logic: prompt action is the compliant response.
-    
-4. **“We escalated to compliance and documented steps.”** Correct logic: escalation + documentation supports reasonableness.
-    
-5. **“Small firm used simple but effective controls.”** Correct logic: proportional controls can be reasonable.
-    
-6. **“Policies were updated after a new product launch.”** Correct logic: adapting controls to new risks shows supervision.
-    
-7. **“Random audits caught issues early.”** Correct logic: detection controls count, not just prevention.
-    
-8. **“Supervisor reviewed exceptions regularly.”** Correct logic: exception review is active monitoring.
-
 ### STANDARD IV(B) – DUTIES TO EMPLOYERS – ADDITIONAL COMPENSATION ARRANGEMENTS
 
 > [!tip] TALISMAN
@@ -656,7 +608,52 @@ If you want, I can also give you a **one-line elimination rule** for I(D) that k
 9. **“The employer initiated the arrangement.”** Employer-sponsored side work; correct logic: no conflict.
 10. **“Disclosure happened before acceptance.”** Consent preceded compensation; correct logic: compliant behavior.
 
----
+### STANDARD IV(C) – DUTIES TO EMPLOYERS – RESPONSIBILITIES OF SUPERVISORS
+
+
+> [!danger] MISTAKES
+> **If you can’t realistically supervise, don’t accept the role:** decline/avoid supervisory responsibility until the firm adopts reasonable procedures that let you supervise adequately.
+
+
+> [!tip] TALISMAN  
+> **If the work flows through your team, the ethics risk is on your desk.** You don’t need perfection; you need a **reasonable system + active monitoring + fast action on red flags**.
+
+#### Core Concepts
+
+1. **“Supervisor” is functional, not title-based**: if you have authority over the activity (even indirectly), you’re on the hook.    
+2. **Delegation ≠ discharge**: you can delegate tasks, not responsibility; you must supervise the delegate.
+3. **Reasonableness is firm-size adjusted**: small firm ≠ no controls; large firm ≠ checkbox controls.
+4. **Red-flag duty**: once you see warning signs, “I didn’t know” dies; you must investigate and stop/limit harm.
+5. **Controls must be usable**: policies that exist but aren’t enforced/trained/monitored are treated like they don’t exist.
+6. **Supervision includes prevention + detection + response**: having only one of the three is a trap.
+7. **Tech reliance is not a defense**: systems can support supervision; they don’t replace it.   
+
+#### Exam Traps (Violation)
+1. **“Compliance owns it.”** Wrong logic: compliance is the supervisor; correct logic: supervisory duty stays with the supervisor; tested angle: abdication.    
+2. **“I delegated trading oversight to a senior analyst.”** Wrong logic: delegation transfers accountability; correct logic: you must monitor the delegate’s monitoring; tested angle: two-layer delegation.    
+3. **“We have a policy manual.”** Wrong logic: written policy = reasonable efforts; correct logic: must train/enforce/monitor; tested angle: paper program.    
+4. **“No one complained.”** Wrong logic: silence means no violations; correct logic: supervision must be proactive; tested angle: passive oversight.    
+5. **“It was a junior’s mistake.”** Wrong logic: junior errors don’t implicate supervisor; correct logic: weak supervision is the supervisor’s issue; tested angle: analyst copy-paste errors. 
+6. **“The system flagged nothing.”** Wrong logic: software proves compliance; correct logic: you must review system limits and red flags; tested angle: surveillance complacency.
+7. **“I saw unusual trades but assumed it was fine.”** Wrong logic: benefit of doubt; correct logic: red flags require inquiry; tested angle: insider trading patterns.
+8. **“We fixed it later.”** Wrong logic: eventual fix cures failure; correct logic: delayed response after warning signs is a violation; tested angle: slow escalation.    
+9. **“Our controls match industry norms.”** Wrong logic: norms define reasonableness; correct logic: controls must match your firm’s risks; tested angle: complex products.    
+10. **“I wasn’t the direct manager.”** Wrong logic: only direct line managers supervise; correct logic: functional authority triggers duty; tested angle: matrix orgs.
+    
+
+#### Exam Traps (Not a Violation)
+
+1. **“Employee circumvented controls deliberately.”** Correct logic: supervisors aren’t guarantors if they had reasonable systems and monitoring.    
+2. **“We had training + preclearance + monitoring.”** Correct logic: layered controls support reasonable efforts; tested angle: multiple defenses.    
+3. **“I spotted a red flag and immediately froze activity.”** Correct logic: prompt action is the compliant response.    
+4. **“We escalated to compliance and documented steps.”** Correct logic: escalation + documentation supports reasonableness.    
+5. **“Small firm used simple but effective controls.”** Correct logic: proportional controls can be reasonable.    
+6. **“Policies were updated after a new product launch.”** Correct logic: adapting controls to new risks shows supervision.   
+7. **“Random audits caught issues early.”** Correct logic: detection controls count, not just prevention.    
+8. **“Supervisor reviewed exceptions regularly.”** Correct logic: exception review is active monitoring.
+
+
+## INVESTMENT ANALYSIS
 
 ### STANDARD V(A) – INVESTMENT ANALYSIS, RECOMMENDATIONS, AND ACTIONS – DILIGENCE AND REASONABLE BASIS
 
@@ -719,7 +716,7 @@ If you want, I can also give you a **one-line elimination rule** for I(D) that k
 
 
 > [!tip] TALISMAN
-> **“Say what you do, what it costs, how you do it, what can break it, what really drives the call, and what’s fact vs your guess.”**
+> **“Say what you do, what it costs, how you do it, what can break it, what really drives the call, and most importantly ==what’s fact vs your opinion==.”**
 
  
 #### Core Concepts  
@@ -736,41 +733,23 @@ If you want, I can also give you a **one-line elimination rule** for I(D) that k
 
 1. **“They’re PE fund investors; they know the fee stack.”** Wrong logic: sophistication implies disclosure; correct logic: undisclosed compensation/fees tied to the product/service = violation.
 2. **“We disclosed our advisory fee; the underlying product fees don’t count.”** Wrong logic: only direct relationship costs matter; correct logic: disclose all client-paid costs tied to delivering the service (affiliates/third parties too).
-
 3. **“We changed the billing basis quietly; it’s still ‘a % of AUM.’”** Wrong logic: small mechanics don’t matter; correct logic: fee calculation methodology changes must be communicated to clients.
-
 4. **“We tweaked the investment process/model; no need to tell clients unless performance changes.”** Wrong logic: only outcomes matter; correct logic: promptly disclose process changes that might materially affect the process/portfolio decisions.
-
 5. **“We use outside sub-advisers, but that’s internal plumbing.”** Wrong logic: only you matter; correct logic: using external advisers is part of the process and must be disclosed.
-
 6. **“Leverage/illiquidity is obvious—no need to highlight.”** Wrong logic: obvious = optional; correct logic: significant risks (including leverage) and material limitations (liquidity/capacity) must be disclosed.
-
 7. **“The model says ‘will’—it’s math, not opinion.”** Wrong logic: quantitative output = fact; correct logic: projections are estimates; you must separate fact from conjecture and state known limitations.
-
 8. **“I posted the rec update on a platform some clients don’t use; good enough.”** Wrong logic: any broadcast counts; correct logic: take reasonable steps so digital delivery treats clients fairly (availability/access issues matter).
-
 9. **“My report omits key negatives because they’re ‘not my focus’ (unstated).”** Wrong logic: analyst discretion = silence; correct logic: you can omit, but you must clearly state scope limits so readers aren’t misled.
-
 10. **“Firm’s disclosure template is weak; I used it anyway.”** Wrong logic: firm policy shifts liability; correct logic: you must flag insufficiency and, when possible, supplement disclosures to meet the standard.
 
-  
-
-#### Exam Traps (Not a Violation)
-
-  
+#### Exam Traps (Not a Violation)  
 
 1. **“I can’t give exact dollar fees upfront.”** Correct logic: you must disclose cost structure with reasonable detail, but you’re not required to state exact dollar amounts in advance.
-
 2. **“I gave gross-of-fees performance.”** Correct logic: can be fine if fees/cost impact is also disclosed clearly and comparably (uniform presentation).
-
 3. **“One-word recommendation (‘buy’) with a stock list.”** Correct logic: acceptable if you notify clients that supporting analysis is available from the producer.
-
 4. **“I tailored depth of explanation for a retail client vs an institution.”** Correct logic: allowed to tailor detail to client sophistication as long as required disclosures are still made.
-
 5. **“A risk later blew up; we honestly didn’t know it at the time.”** Correct logic: not necessarily a V(B) breach if the risk wasn’t known then (but it can expose weak diligence under V(A)).
-
 6. **“My report emphasizes some drivers and skips others.”** Correct logic: fine if you clearly state the limits/scope so the reader can judge what was (and wasn’t) analyzed.
-
 7. **“I rely on firm-produced disclosures.”** Correct logic: allowed if they meet the standard—and you escalate/supplement when they don’t.
 
 ### STANDARD V(C) – RECORD RETENTION
