@@ -53,8 +53,28 @@ $$ \mathrm{Fiscal\ Multiplier} = \frac{\Delta Y}{\Delta G} = \frac{1}{1 - MPC} $
 13. Regional Trading Agreements (RTAs) like the EU or USMCA are permitted exceptions to the MFN principle.
  
 ### MODULE 18.1: THE FOREIGN EXCHANGE MARKET
+
+
+> [!NOTE] MEMORISE
+> 1. Real P/B Exchange Rate = Nominal P/B $\times$ (CPI Base / CPI Price). **You multiply nominal by how pricier base is with respect to price currency.**
+> 2. Real Currency appreciation means the base currency can buy more of another currency. Depreciation means it buys less.
+
 1. When you buy a forward contract, you agree to BUY an underlying at a agreed price at a future date. If I buy a Euro / Rupee forward from you at 1 EUR = 100 INR, I am obliged to buy 1 EUR @ 100 INR, no matter whatever is the price. I have **hedged** my risk. 
-2. ==Real P/B Exchange Rate = Nominal P/B � (CPI Base / CPI Price)== You multiply nominal by how pricier base is with respect to price currency.
+2. ==Real P/B Exchange Rate = Nominal P/B $\times$ (CPI Base / CPI Price)== You multiply nominal by how pricier base is with respect to price currency.
+
+
+> [!question] REAL EXCHANGE RATES
+> An analyst based in the Eurozone (domestic currency EUR) observes the USD/EUR exchange rate change from 1.1500 to 1.2000. Over the same period, the Eurozone price level rises by 2% and the US price level rises by 5%. The change in the relative purchasing power of a Eurozone consumer buying US goods is closest to:
+> 
+> ---
+> 
+> - Initial Nominal P/B = 1.15 USD/EUR
+> - Price in base = 1.02
+> - Price in price currency = 1.05
+> - Final Real P/B = 1.2 $\times$ (1.02/1.05) = 1.1657 USD/EUR
+> - Real appreciation = (1.1657 - 1.15) / 1.15 = 1.35\%
+
+
 3. At a base period, the CPIs of the United States and United Kingdom are both 100, and the exchange rate is $1.70/�. Three years later, the exchange rate is $1.60/�, and the CPI has risen to 110 in the United States and 112 in the United Kingdom. What is the real exchange rate at the end of the three-year period. Here Nominal P/B = $1.6/�, CPI Base = 112, CPI Price = 110. Real P/B = 1.6 � (112/110) = 1.632
 4. Suppose in January 1 EUR =  100 INR. In December 1 EUR = 120 INR. INR depreciated by 20%. To calculate EUR appreciation: 1 INR = 0.01 EUR in Jan and 1 INR = 0.0083 EUR in Dec. So EUR appreciated by (0.01-0.0083) / 0.01 = 16.99%
 
@@ -78,6 +98,18 @@ $$ \mathrm{Fiscal\ Multiplier} = \frac{\Delta Y}{\Delta G} = \frac{1}{1 - MPC} $
 	- Here, benefits from investing spot into foreign country = forward(d/f) $\times$ $r_f$ . Why forward(d/f)? Because I will take back my money after one time period and will lock in forward rate today itself.
 	- Now using **Spot + Cost of Carry - Benefits = Forward**. This gives spot(d/f) $\times$ $(1+r_d)$ - forward(d/f) $\times$ $r_f$ = forward(d/f)
 	- ==spot(d/f)$(1+r_d)$ = forward(d/f)$(1+r_f)$== is no-arbitrage relationship.
+
+
+> [!question] NUMERICAL
+> The spot rate is 1.2500 USD/EUR. The 180-day risk-free rate in the Eurozone is 3.50% and in the United States is 5.00% (both quoted as annual rates). A forward contract is quoted at 1.2410 USD/EUR for 180-day settlement. An arbitrageur has access to USD 10,000,000. What is the arbitrage profit in USD from exploiting the mispricing?
+> 
+> ---
+> 
+> First calculate implied forward rate = 
+> $$ F(D/F) = \frac{S(D/F) (1+r_D)}{(1+r_f)} = 1.25(1.025)/(1.05) = 1.2598$$
+> Here forward = 1.24, so buy the forward 
+> 
+
 
 > [!question] NUMERICAL
 > Consider two currencies, the USD and the INR. The spot INR/USD exchange rate is 90.01, the 1-year riskless INR rate is 6.65%, and the 1-year riskless USD rate is 4.2%. What is the 1-year no-arbitrage forward exchange rate?

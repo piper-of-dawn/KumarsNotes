@@ -31,6 +31,42 @@
 
 8. Jargon: SG&A = Selling, General and Administrative expense.
 
+
+### MODULE 28.3: NONRECURRING ITEMS
+
+1. Nonrecurring items are unusual or infrequent gains/losses outside normal operations. Examples: restructuring charges, asset impairments, gains/losses on disposals of assets, litigation settlements.
+2. Unusual or infrequent items are included in income from continuing operations and are reported before tax.
+3. **Modified Retroactive Application**: Adoption date arrives → compute cumulative difference between “old vs new” accounting up to that date → post that difference into **opening retained earnings** (and other affected balance-sheet accounts) → **leave prior reported years untouched**.
+4. Discontinued operations are reported net of taxes, at the bottom of the income statement before net income.
+5. The change in policy is also shown via **note disclosure**—notes **describe the change and justify it**, and the footnotes **disclose the impact** of adopting the new standard.
+6. Prior-period adjustments usually involve errors or new accounting standards and do not typically affect cash flow.
+7. Hammer the following income statement in your head:
+
+|                                                             | **20X2 Reported** | **20X1 Previously reported** | **Policy change adj.** | **20X1 Restated** |
+| ----------------------------------------------------------- | ----------------: | ---------------------------: | ---------------------: | ----------------: |
+| Revenue (recurring)                                         |             1,000 |                          900 |                     +0 |               900 |
+| **Non-recurring revenue (one-off gain)**                    |           **+40** |                           +0 |                     +0 |                 0 |
+| **Total revenue**                                           |         **1,040** |                      **900** |                 **+0** |           **900** |
+| COGS                                                        |             (620) |                        (540) |                     +0 |             (540) |
+| Gross profit                                                |               420 |                          360 |                     +0 |               360 |
+| SG&A (recurring)                                            |             (180) |                        (170) |                     +0 |             (170) |
+| **Non-recurring cost (restructuring)**                      |          **(50)** |                          (0) |                     +0 |                 0 |
+| Depreciation & amortization *(includes change in estimate)* |              (40) |                         (35) |                     +0 |              (35) |
+| **Effect of change in accounting estimate (disclosed)**     |          **(10)** |                            — |                      — |                 — |
+| Operating profit                                            |               150 |                          155 |                     +0 |               155 |
+| Interest expense                                            |              (20) |                         (18) |                     +0 |              (18) |
+| **Income before tax**                                       |           **130** |                      **137** |                 **+0** |           **137** |
+| Income tax expense                                          |              (30) |                         (32) |                     +0 |              (32) |
+| **Income from continuing operations**                       |           **100** |                      **105** |                 **+0** |           **105** |
+| **Income from discontinued operations (net of tax)**        |           **+15** |                          +12 |                     +0 |                12 |
+| **Net income**                                              |           **115** |                      **117** |                 **+0** |           **117** |
+
+
+> [!tip] HAMMER THIS INTO YOUR HEAD
+> Change in policy is reported RETROSPECTIVELY. 
+> Change in estimate is reported PROSPECTIVELY.
+
+
 ### MODULE 29.1: INTANGIBLE ASSETS
 
 

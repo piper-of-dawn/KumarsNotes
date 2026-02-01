@@ -4,53 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "d728ac3d81ed5b49",
+        "id": "d9d4c7517b8bd021",
         "type": "tabs",
         "children": [
           {
-            "id": "b990cb145558cb00",
+            "id": "ab61447ddfebe320",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/FIXED INCOME.md",
+                "file": "CFA Notes/ECONOMICS.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "FIXED INCOME"
-            }
-          },
-          {
-            "id": "c99982b3678c6be0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CFA Notes/DERIVATIVES.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DERIVATIVES"
-            }
-          },
-          {
-            "id": "61d1e731acb3b947",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CFA Notes/PORTFOLIO MANAGEMENT.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PORTFOLIO MANAGEMENT"
+              "title": "ECONOMICS"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,25 +90,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e169fb6347d25777",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "CFA/Revision Notes for CFA.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Revision Notes for CFA"
-            }
-          },
-          {
             "id": "584708d7cbc9b68b",
             "type": "leaf",
             "state": {
@@ -193,76 +146,149 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
+          },
+          {
+            "id": "7615d75705135279",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "0f7fd50e23fcff8c",
+            "type": "leaf",
+            "state": {
+              "type": "github-copilot-chat-view",
+              "state": {},
+              "icon": "bot-message-square",
+              "title": "Copilot Chat"
+            }
+          },
+          {
+            "id": "13e211105be7c57f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "d77a4b5f76973b56",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "9dda9b95f6ea002c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "a0113f88477781f8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "4e4f803a50bb3d51",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "eb7428804f0f9ffb",
+            "type": "leaf",
+            "state": {
+              "type": "Saved Queries View",
+              "state": {},
+              "icon": "feather-mouse-pointer",
+              "title": "Saved Queries"
+            }
           }
-        ]
+        ],
+        "currentTab": 11
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "bases:Create new base": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
-      "vim-toggle:Toggle Vim Mode": false,
-      "obsidian-git:Open Git source control": false,
-      "math-indicator-changer:Change math indicator": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c99982b3678c6be0",
+  "active": "ab61447ddfebe320",
   "lastOpenFiles": [
-    "CFA Notes/PORTFOLIO MANAGEMENT.md",
-    "Untitled.md",
-    "CFA Notes/DERIVATIVES.md",
-    "Untitled 1 1.md",
-    "Untitled 1.md",
-    "CFA Notes/ALTERNATIVE INVESTMENTS.md",
-    "DSA/Trie.md",
-    "DSA/Graphs.md",
-    "CFA Notes/STUPID MISTAKES.md",
+    "templates/question-callout.md.md",
+    "templates/hammer.md",
+    "templates",
     "Pasted image 20260131190442.png",
-    "Excalidraw/Drawing 2026-01-31 18.49.01.excalidraw.md",
-    "Excalidraw/Scripts/Downloaded/Slideshow.svg",
-    "Excalidraw/Scripts/Downloaded/Slideshow.md",
     "Excalidraw/Scripts/Downloaded/Split Ellipse.svg",
     "Excalidraw/Scripts/Downloaded/Split Ellipse.md",
+    "Excalidraw/Scripts/Downloaded/Slideshow.svg",
     "Excalidraw/Scripts/Downloaded/Set Grid.svg",
+    "Excalidraw/Scripts/Downloaded/Slideshow.md",
     "Excalidraw/Scripts/Downloaded/Set Grid.md",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
-    "CFA Notes/FIXED INCOME.md",
-    "Excalidraw/Callable Bond.md",
+    "CFA Notes/STUPID MISTAKES.md",
     "Fixed Income/Bond Pricing.md",
-    "templates/hammer.md",
-    "templates/question-callout.md.md",
-    "templates",
-    "Diary/journal.md",
+    "Fixed Income",
+    "Fixed Income Derivative Pricing/notebook.ipynb",
+    "Fixed Income Derivative Pricing",
+    "Excalidraw/Callable Bond.md",
+    "DataTable Library/Cheatsheet.md",
+    "DataTable Library",
+    "CFA/Yeild to Maturity.md",
     "CFA/Revision Notes for CFA.md",
-    "CFA Notes/_fixed_income.txt",
-    "CFA Notes/schweser_qm_econ_ci_full.txt",
-    "CFA Notes/schweser_qm_econ_ci.txt",
-    "CFA Notes/schweser_fsa.txt",
-    "CFA Notes/schweser_fixed_income.txt",
-    "CFA Notes/Read these again.md",
-    "CFA Notes/quick.txt",
-    "CFA Notes/QUANTITATIVE METHODS.md",
-    "CFA Notes/Preamble.md",
-    "CFA Notes/Module 53.1 - Yield and Yield Spread Measures for Fixed-Rate Bonds.md",
-    "CFA Notes/fsa_b2_b.txt",
+    "CFA/Numericals to Memorise.md",
+    "CFA/Legal Terms Related to Bonds.md",
+    "CFA/International and Domestic Bonds.md",
+    "CFA/Full and Flat Price.md",
+    "CFA/Fixed Income.md",
+    "CFA/Derivatives.md",
+    "CFA/CouponStructures.md",
+    "CFA/Contingency Provisions.md",
+    "CFA/Bond Duration.md",
+    "CFA/Annuity Calculation.md",
+    "CFA",
+    "CFA Notes/DERIVATIVES.md",
     "CFA Notes/ETHICS.md",
     "CFA Notes/FSA.md",
-    "Pasted image 20251230214023.png",
+    "CFA Notes/ECONOMICS.md",
+    "CFA Notes/_fixed_income.txt",
+    "CFA Notes/fsa_b2_b.txt",
     "Pasted Image 20251228112906_706.png",
-    "dp.png",
     "Pasted image 20251029114056.png",
+    "Pasted image 20251230214023.png",
+    "dp.png",
     "Linear Algebra/Pasted image 20250429102423.png",
     "Mathematics for Machine Learning/Pasted image 20230621171117.png"
   ]
