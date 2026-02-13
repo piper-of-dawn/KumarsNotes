@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/DERIVATIVES.md",
+                "file": "CFA Notes/QUANTITATIVE METHODS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DERIVATIVES"
+              "title": "QUANTITATIVE METHODS"
             }
           },
           {
@@ -219,9 +219,12 @@
   },
   "active": "c99982b3678c6be0",
   "lastOpenFiles": [
+    "CFA Notes/FIXED INCOME.md",
+    "Diary/journal.md",
+    "C++/Concepts.md",
+    "CFA Notes/DERIVATIVES.md",
     "CFA Notes/PORTFOLIO MANAGEMENT.md",
     "Untitled.md",
-    "CFA Notes/DERIVATIVES.md",
     "Untitled 1 1.md",
     "Untitled 1.md",
     "CFA Notes/ALTERNATIVE INVESTMENTS.md",
@@ -238,13 +241,11 @@
     "Excalidraw/Scripts/Downloaded/Set Grid.md",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
-    "CFA Notes/FIXED INCOME.md",
     "Excalidraw/Callable Bond.md",
     "Fixed Income/Bond Pricing.md",
     "templates/hammer.md",
     "templates/question-callout.md.md",
     "templates",
-    "Diary/journal.md",
     "CFA/Revision Notes for CFA.md",
     "CFA Notes/_fixed_income.txt",
     "CFA Notes/schweser_qm_econ_ci_full.txt",
@@ -258,7 +259,6 @@
     "CFA Notes/Module 53.1 - Yield and Yield Spread Measures for Fixed-Rate Bonds.md",
     "CFA Notes/fsa_b2_b.txt",
     "CFA Notes/ETHICS.md",
-    "CFA Notes/FSA.md",
     "Pasted image 20251230214023.png",
     "Pasted Image 20251228112906_706.png",
     "dp.png",

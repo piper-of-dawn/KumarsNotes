@@ -1,6 +1,15 @@
 # MOONSHOT
 _Create an algorithmic trading application_
 
+
+# Thank you Kumar!
+
+Your order number is **486787**
+
+We have emailed your order confirmation. You will receive a second email with more details about your order.
+
+If you have any questions about your order, please don't hesitate to [contact us](https://help.cfainstitute.org/).
+
 # Big Goals
 
 - Learn Algorithmic trading
