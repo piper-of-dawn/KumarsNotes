@@ -4,11 +4,9 @@
   "textFontFamily": "Berkeley Mono,JetBrainsMono Nerd Font",
   "cssTheme": "Primary",
   "monospaceFontFamily": "SpaceMono Nerd Font",
-  "theme": "moonstone",
+  "theme": "obsidian",
   "translucency": false,
   "baseFontSizeAction": true,
   "baseFontSize": 16,
-  "enabledCssSnippets": [
-    "code"
-  ]
+  "enabledCssSnippets": ["code"]
 }

@@ -1,30 +1,9 @@
 ```table-of-contents
-title: 
-style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
-minLevel: 0 # Include headings from the specified level
-maxLevel: 3 # Include headings up to the specified level
-include: 
-exclude: 
-includeLinks: true # Make headings clickable
-hideWhenEmpty: false # Hide TOC if no headings are found
-debugInConsole: false # Print debug info in Obsidian console
 ```
-### MODULE 47.1: FIXED-INCOME INSTRUMENT FEATURES
-
-#### Callable Bond
-1. Issuer has the right to buy back (redeem) the bond at a specified call price.
-2. Example timeline: sell a bond for $1,000 at t; issuer may call at $1,050 at t+1.
-At t+1:
-- If market price is 1,100, issuer calls (investor’s upside is capped at the call price).
-- If market price is 1,000, issuer will not call.
-
-- Negative convexity: as yields fall and prices rise, upside is capped by the call feature; price rises less than for an option‑free bond.
-- Value vs option‑free: callable bond value is lower than an identical non‑callable bond because the investor is short the call option.
-
-#### Puttable Bond
-1. Investor (bondholder) has the right to sell the bond back to the issuer at a specified put price.
-2. Puts provide downside protection when rates rise (prices fall), generally increasing the bond’s value relative to an option‑free bond and improving effective convexity on the downside.
-
+### YIELD AND YIELD SPREAD MEASURES FOR FIXED-RATE BONDS
+1. **Annual Yield:**
+2. **Adjusting Yields for Periodicity:**
+3. **Current Yields**
 
 ### MODULE 52.1: FIXED INCOME BOND VALUATION
 
@@ -65,7 +44,7 @@ At t+1:
 6. Generally, for the same change in market discount rates, a longer-term bond will experience a greater percentage price change than a shorter-term bond because the longer maturity bond has more cashflows that suffer the wrath of discounting.
 7. ==A lower-coupon bond will typically have a higher percentage price change than a lower-coupon bond when market discount rates change by the same amount.== Lower coupon bond has *higher* interest rate risk (greater percentage price change) because a larger proportion of its value comes from the final principal payment, which is more sensitive to discounting. A higher coupon bond returns cash sooner, reducing duration.
 8. **Convexity is optimistic.** The convexity effect implies that for the same absolute change in yield, the percentage price increase when yields fall is greater than the percentage price decrease when yields rise. 
-9. The Actual/Actual method counts *actual* calendar days, which includes weekends, holidays, and leap days; it does not exclude them. Government bonds typically use Actual/Actual to be precise. #memorise
+9. he Actual/Actual method counts *actual* calendar days, which includes weekends, holidays, and leap days; it does not exclude them. Government bonds typically use Actual/Actual to be precise. #memorise
 10. The 30/360 day count convention assumes each month has 30 days and the year has 360 days, and is often used for corporate bonds. #memorise
 11. The flat price (or clean price) is the quoted price. It excludes accrued interest so that the price does not appear to drop significantly solely because a coupon payment was made.
 12. The full price, also known as the invoice price, is equal to the flat price plus accrued interest. The full price includes accrued interest, which accumulates linearly between coupon dates and drops to zero immediately after a coupon payment.
@@ -115,228 +94,6 @@ At t+1:
 
 > [!QUESTION] Title
 > A 10-year, 8% annual coupon bond is purchased at a premium price of 115.00 (Yield = 6.00%). Assuming the yield remains constant at 6.00%, what is the expected price of the bond 1 year later (9 years to maturity)?
-
-### MODULE 53.1: YIELD AND YIELD SPREAD MEASURES FOR FIXED-RATE BONDS
-
-1. Yield to maturity (YTM): the single rate that makes the present value of all coupon and principal payments equal to today’s price. For semiannual coupons, the quoted YTM is 2 × (half‑year rate).
-2. Periodicity and effective annual yield (EAY): more coupon periods per year means more compounding. Always compare bonds on EAY if payment frequency differs.
-3. Street vs true yield: street uses stated coupon dates; true shifts payments that land on weekends/holidays to the next business day, making true yield slightly lower.
-4. Income measures: current yield = annual coupon ÷ flat price. Simple yield adjusts current yield for straight‑line amortization of discount/premium.
-5. Calls and “worst” yield: compute a yield to call (YTC) for each call date/price. Yield to worst (YTW) is the lowest of YTM and all YTCs.
-6. Spreads to benchmarks: G‑spread = bond yield minus government yield (same or interpolated maturity). I‑spread = bond yield minus swap rate (same tenor).
-7. Reading spread moves: if the bond yield changes but its spread does not, the benchmark moved (economy‑wide). If the spread changes, the issuer/issue changed (credit, liquidity, tax).
-8. Curve‑aware spreads: Z‑spread is the constant number of basis points added to every point on the benchmark spot curve so discounted cash flows equal price. For embedded options, option‑adjusted spread (OAS) removes the option’s effect. For callables: OAS < Z‑spread.
-
-> [!ABSTRACT] MEMORISE
-> Effective annual yield (periodicity n):
->
-> $$\mathrm{EAY} = \left(1 + \frac{y}{n}\right)^{n} - 1$$
->
-> Current and simple yield:
->
-> $$\text{Current} = \frac{\text{Annual coupon}}{\text{Flat price}},\quad \text{Simple} \approx \frac{\text{Annual coupon} \pm \text{Annual amortization}}{\text{Flat price}}$$
->
-> Government spread (G‑spread):
->
- > G SPREAD =  Bond Yield − Government Yield (same maturity)
- > 
- > 
- > Zero Volatility Spread (Z-Spread) 
-> 
-> Z‑spread over spot curve (solve for Z so price matches):
->
-> $$\sum_{t=1}^{T} \frac{CF_t}{\big(1 + s_t + Z\big)^{t}} = \text{Price}$$
->
-> Callable bonds — option‑adjusted spread:
->
-> OAS = Z‑spread − Option cost
->
-> Yield to worst:
->
-> $$\text{YTW} = \min\big(\,\text{YTM},\ \{\text{YTC}_i\}\,\big)$$
->
-> Notation in simple language: y = quoted YTM; n = coupons/year; s_t = benchmark spot rate at time t; Z = Z‑spread (in decimal); bp = basis points (1 bp = 0.01%).
-
-> [!tip] Quick checks
-> - Hold EAY fixed: higher periodicity → lower quoted YTM.
-> - “Yield moved, spread didn’t” → benchmark moved (economy‑wide).
-> - “Spread moved” → issuer/issue changed (credit/liquidity/tax).
-> - Callable: YTW is the smallest among YTM and all YTCs.
-> - Interpolate the benchmark yield when exact maturity is missing.
-
-> [!question] ZERO‑COUPON: QUOTED YTM (SEMIANNUAL BASIS)
-> 
-> Problem A 15‑year zero with $1,000 par trades at $331.40. Find the quoted YTM on a semiannual bond basis.
-> 
-> ---
-> 
-> Solution:
-> $$N=30,\ PMT=0,\ FV=1000,\ PV=-331.40 \Rightarrow I/Y_{\tfrac{1}{2}\,yr}=3.750\%$$
-> Quoted YTM = 2 × 3.750% = \textbf{7.500%}.
-> Explanation: The calculator’s I/Y is per half‑year; bond‑basis quotes double it.
-
-> [!question] G‑SPREAD WITH INTERPOLATED BENCHMARK
-> Problem: A 3‑year, 8% semiannual‑pay bond is priced at 103.165. Treasury 1y = 3.0%, 4y = 5.0%. Compute the G‑spread.
->
----
-
-> Solution:
-> Bond YTM: $N=6,\ PMT=4,\ FV=100,\ PV=-103.165 \Rightarrow$ I/Y (per half‑year) = 3.408% → quoted = \textbf{6.82%}.
-> Interpolated 3y Treasury: $3.0 + \tfrac{(3-1)}{(4-1)} (5.0-3.0) = \textbf{4.33\%}.$
-> G‑spread = 6.82 − 4.33 = \textbf{2.49% (249 bp)}.
-> Explanation: Use nearest on‑the‑run government yields and linear interpolation for the missing maturity.
-
-### MODULE 54.1: YIELD AND YIELD SPREAD MEASURES FOR FLOATING-RATE INSTRUMENTS
-
-
-> [!tip] HAMMER THIS INTO YOUR HEAD
-> When we do valuation of a floater we create cashflow coupons using quoted margin and discount them using discount margin or the required margin.
-
-Remember this shortcut, whenever coupon rate exceeds discount rate, the bond trades at premium otherwise it trades at discount. 
-
-If your quoted margin is less than discount margin the bond trades at discount and vice versa
-
-1. The **quoted margin is the specified spread**, that is mentioned on the TnC of the bond, whereas the **required margin (discount margin) is market-determined** and can change with factors such as credit risk.
-2. Floaters with longer reset periods may be more exposed to interest rate and price volatility. The longer the reset period, the more a floater will behave similarly to a short-dated fixed-rate security.
-3.  The quoted margin is the spread required by investors for the instrument to be priced at par on a reset date, and it is required margin.
-
-> [!tip] HAMMER THIS INTO YOUR HEAD
-> - When a floater is quoted, investors ALWAYS quote the QUOTED MARGIN over the reference rate.
-> - The REQUIRED MARGIN (or DISCOUNT MARGIN) is the margin that investors actually require to hold the bond in the market. This is what market dictates.
-> - At inception, the REQUIRED MARGIN = QUOTED MARGIN, so the bond is priced at par.
-> - If credit quality worsens, investors demand a HIGHER REQUIRED MARGIN OR DISCOUNT MARGIN, so the bond price falls below par.
-> - **Quoted margin pins the coupon.**
-> - **Required margin pins the price.**
-> 
-
-
-
-> [!question] Question
-> A floating-rate note (FRN) has a face value of $10 million, total maturity 6 years, and pays coupons = reference rate + 2.5% margin. After 2.5 years, the issuer’s credit quality worsens and the market now demands a 3.5% margin (100 bps wider). The current flat spot curve is 4.1%, with semiannual payments. Compute the fair value of the FRN today.
-> 
-> ---
-> 
-> After 2.5 years, 7 coupons remain, hence N = 7
-> PV, if nothing changed = 100
-> Margin widened by 1% (0.5 per 100 per coupon period)
-> PV of 7 payments of 0.5 @ 2.05% = 3.23
-> So bond value should decline by 3.23 per 100 and bond should be priced at 96.77 per 100
-> For $10 million notional, price = $9,677,000 (rounding may give $9,697,600) 
-> 
-
-4. Discount rate means **interest is added on top of principal**, not discounted. **Price = Face Value − Interest for the period**.
-5. Add-on rate means **interest is calculated on the principal and added to it**. **Price = Face Value / (1 + Effective Yield)**.
-
-   
-> [!danger] DO NOT MAKE THIS MISTAKE
-> 
-> ==Look very very carefully if question gives you add-on rate or discount rate==
-> 
-> PV when Add-on rate is given:
-> 
-> $$ \text{Price} = \frac{\text{Face Value}}{1 + \text{Effective Yield}} $$
-> 
-> PV when Discount rate is given:
-> 
-> $$ \text{Price} = \text{Face Value} - \text{Interest} $$
-
-
-> [!question] ADD ON YIELD
-> Calculate the price of a 180-day money market instrument with a face value of 10,000,000 quoted at an add-on rate of 3.65% based on a 365-day year.
-> 
-> ---
-> 
-> Holding Period = 180/365 = N
-> Effective Yield = 3.65% × 180/365 = 1.825%
-> Price = 10 / (1.01825) = USD 9,823,183
-
-
-> [!question] DISCOUNT YIELD
-> A 90-day T-bill is quoted at a discount rate of 3.20% based on a 360-day year. The face value is 1,000,000. What is the purchase price of the T-bill?
-> 
-> ---
-> 
-> Holding Period = 90/360 = 0.25
-> Effective Rate = 0.25 × 3.20% = 0.80%
-> Interest = 1,000,000 × 0.008 = 8,000
-> Price = FV - Interest = 1,000,000 - 8,000 = 992,000t
-
-
-
-> [!question] ADD ON RATE VS DISCOUNT YIELD
-> A 90-day Bankers' Acceptance is quoted at a discount rate of 5.00% (360-day year). A 90-day CD is quoted at an add-on rate of 5.10% (365-day year). Which instrument offers the higher yield to the investor?
-> 
-> ---
-> 
-> PV of Bankers Acceptance:
-> HP = 90/360 = 0.25
-> HPY = 0.25 × 5.00% = 1.25%
-> PV  = 100(1-0.0125) = 98.75
-> 
-> PV of CD:
-> HP = 90/365 = 0.2466
-> HPY = 0.2466 × 5.10% = 1.258%
-> PV = 100 / (1 + 0.01258) = 98.76 
-
-
-### MODULE 55.1: The Term Structure of Interest Rates — Spot, Par, and Forward Curves
-
-#### Forward Rates — Intuition and No-Arbitrage
-
-- Why “forward”: It is the implied rate for a future period, inferred today from longer-dated spot yields.
-- No-arbitrage relation (annual compounding example):
-  (1 + S2)^2 = (1 + S1) × (1 + 1y1yF)
-  → 1y1y forward = (1 + S2)^2 / (1 + S1) − 1.
-- Interpretation: Being indifferent between buying a 2-year zero today vs. rolling 1-year zero for two years implies this equality; otherwise, arbitrage exists.
-
-Par rate:  The yield-to-maturity for a given maturity that makes the present value of the bond’s cash flows equal to par (100% of face value).
-#### Maturity Effect — Volatility Across Horizons
-
-- Short-term rates/yields are typically more volatile than long-term rates because they reflect immediate policy and liquidity conditions, while long-term rates embed an average of expected short rates plus a term premium.
-- **Term premium** compensates for uncertainty over long horizons; as maturity increases, instantaneous shocks are averaged across many expected future short rates, dampening volatility relative to short maturities.
-
-Note: Premium bonds often have effective durations below time-to-maturity, as larger near-term coupons bring cash flows forward, reducing sensitivity to rate changes.
-
-### MODULE 57.1: Yield-Based Bond Duration Measures and Properties
-
-#### Maturity Risk — First Principles and Duration Link
-
-- Present value mechanics: each cash flow $PV_t = CF_t / (1 + r)^t$. Sensitivity to r grows with t:
-  $∂PV_t/∂r = − t · CF_t / (1 + r)^{t+1}$ → farther cash flows (larger t) lose more value for the same ∆r.
-- Long-maturity bonds have more far-dated cash flows, so for a given yield change, percentage price moves are larger than for short bonds (higher interest rate risk).
-- Macaulay duration $$D = Σ[t · PV(CF_t)] $$Price is a weighted-average time; longer maturities and lower coupons increase D and thus modified duration (price sensitivity):
-  $$∆P / P ≈ − D_{mod} \times \delta Y$$ where 
-$$D_{mod} = D / (1 + y).$$
-
-Reinvestment dimension: longer horizons imply more coupon reinvestments at uncertain future rates, increasing reinvestment risk alongside price risk.
-
-Convexity note: As a bond approaches maturity, both duration and convexity decline; the price–yield curve flattens toward par at maturity (convexity → 0).
-
-### MODULE 58.1: Yield-Based Bond Convexity and Portfolio Properties
-
-#### Convexity of the Yield Curve
-
-##### What is a convex function?
-If $f(x)$ is twice differentiable then $f''(x) > 0$.
-
-##### What does it mean?
-In terms of rate of change, convexity means the rate of change itself is increasing; that is, acceleration is positive.
-
-##### Convexity of the Yield Curve
-Suppose we have a 1-period zero coupon bond.
-$$ P  = FV (1+r)^{-t} $$
-$$ \frac{dP}{dr} = -t(1+r)^{-t-1}\cdot FV < 0 $$
-$$ \frac{d^2P}{dr^2} = t(t+1)(1+r)^{-t-2}\cdot FV > 0 $$
-We see that the first derivative is negative and the second derivative is positive. Therefore, the function decreases at a decreasing rate. The positive second derivative implies that the slope is approaching zero, so the function is decelerating.
-
-##### What does this mean intuitively?
-At higher levels of yield, a small decline in yield causes a larger increase in bond price; at lower yields, the same decline will cause a smaller increase.
-
-##### What is its implication?
-In a high-yield environment, long-duration bonds (e.g., TLT) will gain sharply as yields fall.
-
-##### Question
-A non-callable, fixed-coupon bond has a price of 106.0625 and a YTM of 2.8%. If the YTM were to increase instantaneously by 80 bps, the price of the bond would decrease by 11%. If the YTM were to decrease instantaneously by 80 bps, the price of the bond would increase by:
 
 ### FIXED INCOME MARKETS FOR CORPORATE ISSUERS
 1. Weak credit → secured borrowing. Firms with low credit ratings must pledge collateral. Strong credit firms issue commercial paper (CP) → unsecured, typically < 3 months maturity, used for working capital or temporary/bridge funding.
@@ -443,83 +200,13 @@ $$\boxed{\text{Mac. D} = \sum_{i=o}^N \text{PV}_i \times i}$$
       - **Numerator $(PV_+−PV_-)$:** This captures how much the bond’s price actually moves when yields are nudged down versus up, with cash flows allowed to change. It’s the observed price response to rate movements.
       - **Denominator $2\,\Delta y$:** This is the total yield change between those two scenarios (down by Δy, up by Δy). Dividing by it converts the price move into a price change per unit of yield (a slope).
 	    - Divide by $PV_0$: Normalizes the slope by today’s price so the result is a percentage sensitivity.    $$\boxed{\text{Effective Duration}=\dfrac{PV_- - PV_+}{2\,\Delta y\,PV_0}}​​$$
-7. Callable vs putable convexity (plain English):  
-   - Callable: when yields fall a lot, the issuer will likely call. Your upside is capped. Price rises slow down → this is “negative convexity.”  
-   - Putable: when yields rise a lot, you can sell back (put). Your downside is cushioned. Price falls slow down → convexity stays positive.
-8. Option‑free bonds: Modified Duration (Mod. D) and Effective Duration (Eff. D) are usually close for small moves. They can differ when the curve isn’t flat. Keep it simple: for plain bonds use Mod. D; if options/prepayments can change cash flows, use Eff. D.
-9. Effective Convexity (Eff. Conv.): Same idea as Eff. D. Reprice the bond with the curve shifted slightly down and up. Use those two prices to measure curvature. Use Eff. Conv. when the bond has options or path‑dependent cash flows.
-10. Price change with effective measures (Δ in decimals):  
-    $$\Delta P/P \approx -\text{Eff. D}\,\Delta\text{Curve} + \tfrac{1}{2}\,\text{Eff. Conv}\,(\Delta\text{Curve})^2$$  
-    Read it as: duration gives the main move; convexity adds a small correction.
-
-> [!QUESTION] PRICE CHANGE USING EFF. D AND EFF. CONV.
-> Problem: Eff. D = 10.5, Eff. Conv. = 97.3. Curve falls by 200 bps. What is % price change?  
-> ---  
-> Step 1 (duration): −10.5 × (−0.02) = +0.2100 → +21.00%  
-> Step 2 (convexity): 0.5 × 97.3 × (0.02)^2 = 0.0195 → +1.95%  
-> Answer: ≈ +22.95%  
-> Takeaway: Use decimals for bps (200 bps = 0.02). Add convexity for big moves.
-
-11. Key Rate Duration (KRD): Sensitivity to a move at one maturity (e.g., “5‑year point”), holding other maturities fixed.  
-    - KRDs across maturities add up to Eff. D.  
-    - Use KRDs to handle non‑parallel curve moves (steeper, flatter, or curved shapes).  
-    - Portfolio KRD = sum of position KRDs (weighted by market value).
-
-> [!QUESTION] KRD WITH A NON‑PARALLEL MOVE
-> Problem: 50% in a 5‑year zero at 5% and 50% in a 10‑year zero at 6% (annual).  
-> 5‑year yield +50 bps; 10‑year yield −25 bps. Estimate portfolio % change.  
-> ---  
-> 5y: Mod. D = 5/1.05 = 4.762 → KRD5 = 4.762 × 0.5 = 2.381 → Impact = −2.381 × 0.0050 = −1.19%  
-> 10y: Mod. D = 10/1.06 = 9.434 → KRD10 = 9.434 × 0.5 = 4.717 → Impact = −4.717 × (−0.0025) = +1.18%  
-> Net: ≈ −0.01% (roughly flat).  
-> Takeaway: KRDs let you see which maturity points drive P&L.
-
-12. Analytical vs empirical duration (keep it practical):  
-    - Analytical (Macaulay, Mod. D, Eff. D): model‑based; assumes spreads don’t change when you shift the benchmark curve.  
-    - Empirical: uses history; captures how credit spreads and yields actually move together.  
-    - Example: “Flight to quality” → gov’t yields drop but credit spreads widen; corporate bond prices may rise less or even fall → empirical duration is lower than analytical for credit‑heavy portfolios.
-
-> [!TIP] QUICK CHECKS
-> - Options or prepayments? Use Effective (not Modified).  
-> - Convert bps to decimals (50 bps = 0.005).  
-> - KRDs add up to Eff. D.  
-> - Callable at low yields → negative convexity; putable stays positive.
-
-> [!DANGER] DO NOT DO THIS
-> - Don’t use Mod. D for callable/putable/MBS.  
-> - Don’t assume all curve moves are parallel; use KRDs for shape changes.  
-> - Don’t mix spread moves into “effective” shocks unless your model changes spreads too.
-
-ASSET BACKED SECURITIES
-
-Compared to ordinary bank bonds, covered bonds are safer because your repayment isn’t riding on just “the bank stays healthy.” You also have a legally protected pile of assets sitting behind the bond as a backup.
-
- In a covered bond, the bank still owns the loans (they stay on its balance sheet), so regulators still treat them as the bank’s assets/risk. So the bank must still hold the same capital buffer against them—unlike securitization, where selling/isolating the loans can reduce required capital.
-
-There is no tranching in covered bonds and the collateral pool cannot contain non performing assets.
-
-  
-
-2. Issuer misses Year 2 coupon (fails to pay 4)  
-    
-
-- Under hard bullet, this is immediate default.
-
-4.   
-    
-5. Acceleration happens immediately  
-    
-
-- The bondholders’ claim becomes: “pay me everything outstanding now.”
-
-Soft-bullet: if the issuer can’t pay at maturity, default/acceleration is delayed by extending the maturity (e.g., up to a year) to give time to pay, and only if still unpaid after the extension does default kick in. Conditional pass-through: if anything is still unpaid at maturity, the bond switches to pass-through, meaning investors get paid only as cash is later collected from the cover pool (e.g., 60 now, then 25, then 15), with repayment timing driven by recoveries rather than a fixed date.
 ### MODULE 65.1: MORTGAGE-BACKED SECURITY (MBS) INSTRUMENT AND MARKET FEATURES
 
 1. **Prepayment Risk:** You own a callable bond (and interest rate falls) → They prepay and buy back their now cheaper bond issued at a high interest rate. Interest Rate falls to 2% and you take a cheaper loan and payback your expensive loan. For the bond investor, high-coupon mortgage cash flows disappear right when they\u2019re most valuable, that is why a **risk**.
-2. **Extension Risk:** Interest Rate rises, Duration falls and Price falls. Bond sellers (borrowers) won't exercise their call option. Expected cash-flows get extended. The market rate is higher but the bond buyer (investor) keeps receiving scraps from mortgages issued at low rates.
-3. **Contraction Risk:** Interest Rate falls, Duration rises and Price rises. Prepayments speed up.  Bond sellers (borrowers) will exercise their call option. Cash-flows would arrive sooner than expected.
+2. **Extension Risk:** Interest Rate \u2191, Duration \u2193 and Price \u2193. Bond sellers (borrowers) won't exercise their call option. Expected cash-flows get extended. The market rate is higher but the bond buyer (investor) keeps receiving scraps from mortgages issued at low rates.
+3. **Contraction Risk:** Interest Rate \u2193, Duration \u2191 and Price \u2191. Prepayments speed up.  Bond sellers (borrowers) will exercise their call option. Cash-flows would arrive sooner than expected.
 4. Because the prices of MBS reflect expectations for prepayments in low-rate environments, they will not rise as much in response to decreasing interest rates as other fixed-income instruments that do not have an embedded prepayment option.
-5. ==Convexity is acceleration of prices with falling rates. Prepayments are friction. When rates fall, you lose the deals you earlier did (bought high coupon mortgages), so price of your MBS doesn't rise proportionally. So traditional FI instruments have +ve convexity and MBS **have a -ve convexity**==
+5. Convexity is acceleration of prices with falling rates. Prepayments are friction. When rates fall, you lose the deals you earlier did (bought high coupon mortgages), so price of your MBS doesn't rise proportionally. So traditional FI instruments have +ve convexity and MBS **have a -ve convexity**
 
 > [!TIP] HAMMER THIS INTO YOUR HEAD
 > Long tranches absorb contraction risk. Short tranches absorb extension risk. People at the front of the queue hate delays (so they have to absorb extension), people at the back don't care because they were anyway waiting. 
@@ -528,7 +215,7 @@ Soft-bullet: if the issuer can’t pay at maturity, default/acceleration is dela
 7. When **payments speed up**, principal rushes in. Tranch S is unaffected (it was already on the front line to get paid off). The contraction risk gets pushed to back of the line Tranch L. 
 8. When **payments slow down (rates rise)**, prepayments stagnates. Tranch L is unaffected (it was already on the back of the line to get paid off). The extension risk hurts the front of the line.
 9. If I take a loan of $100 against and pledge my asset of $200, my Loan to Value (LTV) is 200/100 = 2. 
-10. A mortgage of USD 300,000 has an annual interest rate of 6%, is to be repaid monthly over 25 years, and the borrower’s annual pretax gross income is $80,000. Calculate DTI. Here, PV=-300,000, FV = 0, N = 25�12 = 300, I/Y = 6/12 = 0.5. This gives PMT = 1932. DTI = (1932 * 12) / 80000 = 0.289 ~ 28.9 %
+10. A mortgage of USD 300,000 has an annual interest rate of 6%, is to be repaid monthly over 25 years, and the borrower\u2019s annual pretax gross income is $80,000. Calculate DTI. Here, PV=-300,000, FV = 0, N = 25�12 = 300, I/Y = 6/12 = 0.5. This gives PMT = 1932. DTI = (1932 * 12) / 80000 = 0.289 ~ 28.9 %
 11. Prime loans are made to creditworthy people, subprime loans are made to broke people.
 12. Residential mortgages are different because you **can\u2019t freely prepay**. If you do, you **pay a penalty**,. They can be **recourse or non-recourse**: in recourse loans, the lender can **come after your other assets**; in non-recourse, they\u2019re **stuck with just the house**.
  13. A 30-year US home loan that meets standards gets pooled and guaranteed by **Fannie Mae** or **Freddie Mac**. These **Agency RMBS** are backed either **directly by the government** or by **government-sponsored agencies** (quasi-government companies). Credit risk is basically **off your plate**. Non-agency RMBS: private-issued, no government/GSE backstop → investors eat credit risk. **2008:** subprime RMBS (e.g., Lehman Brothers) blew up; defaults surged, protections failed, MBS holders lost money.
@@ -540,7 +227,7 @@ Soft-bullet: if the issuer can’t pay at maturity, default/acceleration is dela
 
 16. A **Collaterized Mortgage Obligation (CMO) is a tranched MBS**. The **underlying cash flows are the same** mortgages. What changes is **how those cash flows are split and ordered**. Senior tranche gets paid first and lowest tranche gets paid the last. Total prepayment risk stays the same; it is redistributed across tranches.
 17. **Z-tranche** = a CMO tranche that gets no cash interest at first.   During this phase, interest is not paid out; it is **added to principal** instead. Suppose Start: principal = USD 100, coupon = 5%. End of year: no cash paid, principal becomes USD 105. You didn\u2019t get money; your claim just got bigger.
-18. So the bond grows silently while other tranches take the cash. After the accrual period, Z-tranche starts receiving normal interest and principal payments. Z-tranche is usually last in line. It sacrifices early cash so other tranches get paid first.  
+18. So the bond grows silently while other tranches take the cash. After the accrual period, Z-tranche starts receiving normal interest and principal payments. Z-tranche is usually last in line. It sacrifices early cash so other tranches get paid first.     
 19. Principal-only (PO) securities and Interest-only (IO) securities are **interest-rate / prepayment bets**, not boring bonds. - If rates fall, people refinance → **prepayments speed up**.
 20. You get **only interest payments**, no principal. You want loans to **stay alive as long as possible**. If rates rise or stay high → prepayments slow → **more coupon checks**. Used by investors who want to **bet on rising/stable rates and slow prepayments**.
     

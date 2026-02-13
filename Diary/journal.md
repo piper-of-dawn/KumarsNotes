@@ -19,27 +19,18 @@ If you have any questions about your order, please don't hesitate to [contact u
 - Learn Rust
 - Learn Polish
 
-###### 29-01-2026
-
-10:00 - 10:25: 
-	- Mutate Protobuf
-	- Save Mutated Protobuf
-	- Replicate Pricing Response 
-
-13:30 - 13:55
-	- Module 53.1
 ##### 25-06-2022: 
 ##### Sprint 25/06/23 to 02/07/23:
-| Day       | Target                               | Status |     |
-| --------- | ------------------------------------ | ------ | --- |
-| Sunday    | 1 km in 5 minutes at +1 incline      | DONE   |     |
-| Monday    | 1.2 km in 6 minutes at +1 incline    |        |     |
-| Tuesday   | 1.25 km in 6 minutes at +1 incline   |        |     |
-| Wednesday | 1.5 km in 7.5 minutes at +1 incline  |        |     |
-| Thursday  | 1.55 km in 7.5 minutes at +1 incline |        |     |
-| Friday    | 1.7 km in 8 minutes at +1 incline    |        |     |
-| Saturday  | 1.75 km in 8.5 minutes at +1 incline |        |     |
-| Sunday    | 2 km in 10 minutes at +1 incline     |        |     |
+| Day       | Target                               | Status |
+| --------- | ------------------------------------ | ------ |
+| Sunday    | 1 km in 5 minutes at +1 incline      | DONE   |
+| Monday    | 1.2 km in 6 minutes at +1 incline    |        |
+| Tuesday   | 1.25 km in 6 minutes at +1 incline   |        |
+| Wednesday | 1.5 km in 7.5 minutes at +1 incline  |        | 
+| Thursday  | 1.55 km in 7.5 minutes at +1 incline |        |
+| Friday    | 1.7 km in 8 minutes at +1 incline    |        |
+| Saturday  | 1.75 km in 8.5 minutes at +1 incline |        |
+| Sunday    | 2 km in 10 minutes at +1 incline     |        |
 
 
 
