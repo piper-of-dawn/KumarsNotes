@@ -233,6 +233,26 @@ You hold a futures contract. Time passes.
 17. Market Anomalies break market efficiency. Momentum is an anomaly. Small cap outperforming Large cap is an anomaly (Size Effect). Low P/E ratio stocks outperform High P/E ones (Value Effect). Price action die to earning surprises persist for days, IPOs are typically underpriced, NAV of closed end MF is undervalued. 
 18. **Information cascade**: less-informed investors copy early, better-informed traders; if the early movers truly have superior information, this herding can actually help prices move closer to intrinsic value rather than distort them.
 
+### MODULE 42.1: TYPES OF EQUITY INVESTMENTS
+
+###### VOTING
+1. Suppose I have 30% equity (30 shares) in a company and 9 directors are to be elected. Under **Statutory Voting**, I cast all of my 30 votes to one director. However, under **cumulative voting**, I can spread out 10 votes to 3 directors or all 30 votes to one director. Cumulative voting helps minority shareholders get representation on the boards.
+2. **Class A shares (GOOGL)** - 1 vote per share.  
+   **Class B shares (GOOG)** - 10 votes per share.  
+   **Class C shares (GOOCV)** - No voting rights.  
+   This dual-class structure allows founders to retain control with fewer shares.
+
+###### PREFERENCE SHARES 
+
+> [!danger] MISTAKE
+> Preference shares do NOT have voting rights. Only common shares have voting rights.
+> Participating preference shares mean they participate in extra profits beyond fixed dividend. NOT voting rights.
+
+
+1. **Participating Preference Shares**: Fixed dividend plus extra dividends if profits exceed a threshold. **Non-Participating Preference Shares**: Fixed dividend only. **No sharing in excess profits**. Liquidation claim limited to **par value**. 
+2. **Convertible Preference Shares**: Can be converted into common stock at a pre-set conversion ratio.
+3. **Cumulative Preference Shares** If dividends are skipped, they **accumulate**. Arrears must be paid before common dividends. Strong investor protection.
+4. Dividends are paid **only if declared by the board**.  No declaration → no dividend → no legal breach. In cumulative preference shares they accumulate and would be paid later, in non-cumulative they are lost forever.
 
 ### MODULE 42.2: FOREIGN EQUITIES AND EQUITY RISK
 1. When capital flows freely across borders, markets are said to be integrated.
@@ -240,9 +260,24 @@ You hold a futures contract. Time passes.
 3. Direct investing is buying foreign firm's stock on a foreign exchange. The investment and return are denominated in a foreign currency.
 4. A **depository receipt** lets you own a foreign company while trading in your local market and currency; a depository bank holds the actual foreign shares and handles dividends and corporate actions. You buy **Toyota Motor Corporation ADR (TM)** on the NYSE in USD. The real Toyota shares trade in Japan, while **JPMorgan** holds those shares, converts Toyota's yen dividends into dollars, and pays them to ADR holders.
 5. Sponsored DR: issued with company involvement; investors usually get voting rights and better disclosure. Unsponsored DR: issued without company involvement; voting rights stay with the bank and disclosures are lighter.
-6. Global Depository Receipts are issued **outside both the firm's home country and the U.S.**, typically trade in **London or Luxembourg**, ==are often **USD-denominated**==, and avoid capital-flow restrictions—making it easier for global investors to invest. Firms list them where investors already recognize the company. **Tata Motors** has GDRs traded in **London**, letting international investors buy exposure to Tata Motors in USD without dealing with Indian market restrictions.
-7. **ADRs** trade in the U.S., in USD, and usually require SEC registration. ==Some are also privately placed (Rule 144A or Regulation S receipts)==. **ADS (American Depository Share)**: the **actual underlying share** of the foreign company that sits in its **home market**.
+
+
+> [!warn] Remember
+> With sponsored DR, the foreign investor gets voting rights. With unsponsored DR, the foreign investor does NOT get voting rights. 
+
+6. Global Depository Receipts are issued **outside both the firm's home country and the U.S.**, typically trade in **London or Luxembourg**, ==are often USD-denominated==, and avoid capital-flow restrictions—making it easier for global investors to invest. Firms list them where investors already recognize the company. **Tata Motors** has GDRs traded in **London**, letting international investors buy exposure to Tata Motors in USD without dealing with Indian market restrictions.
+
+> [!warn] Remember
+> GDRs are USD denominated. Less restrictions. Investors do not care about local currency.
+
+7. **ADRs** trade in the U.S., in USD, and usually require SEC registration. ==**Some are also privately placed (Rule 144A or Regulation S receipts)**==. **ADS (American Depository Share)**: the **actual underlying share** of the foreign company that sits in its **home market**.
 8. Level I ADR trade OTC, and cheap to list. Level II ADR trade on Exchanges and are expensive to list. Both these CANNOT raise capital in US.
+
+
+> [!warning] LEVEL I and LEVEL II ADRs
+> They cannot raise capital in US. Level 2 is expensive and requires more disclosures than Level 1
+
+
 9. Level III is listed on exchange and CAN raise capital in US.
 10. If it's listed publicly, SEC is involved. In all Level I, II and III, SEC registration is required.
 11. Rule 144A allows private listing. It is cheap and SEC is not involved. It can raise capital in US. 
@@ -392,27 +427,25 @@ Explanation:
 > - Don’t force Gordon on negative or supernormal growth forever. Use a finite high-growth window, then stabilize g.
 > - Preferred → use kp and level D. Common → ke and D1.
 
----
-
 ### MODULE 46.3 - RELATIVE VALUATION MEASURES
-
 1. The economic principle underlying the method of comparables (using price multiples) is: **Law of One Price**
 2. Common valuation multiples include **P/E, P/CF, P/S, and P/B**. You can invent others (e.g., price per user), but the logic is unchanged.    
-3. Multiples are per-share comparisons. The **denominator must be per share**.
-4. **Justified P/E** = what P/E _should be_ given fundamentals. **Market (non-justified) P/E** = what P/E _is_. Undervalued/overvalued comes from **comparing the two**.
-5. Given reqd. discount $k$, dividend growth $g$, dividend $D$ and price $P$	$$ P_0 = \frac{D_1}{k-g} $$
-6. Divide both sides by expected EPS $E_1$	$$ \frac{P_0}{E_1} = \frac{D_1/E_1}{k-g}$$
-7. At LHS, it is Justified P/E which is always **leading**. The denominator is expected earnings $E_1$.
-8. Raising the **dividend payout** increases current cash to shareholders but **reduces sustainable growth** by cutting reinvestment. Higher dividends push value up; lower growth pulls value down. The effects **offset**. This trade-off is called **dividend displacement of earnings**.
-9. It is very important to understand the relationship of PE ratio to each of its parameters:
+3. Book Value = Total Assets − Total Liabilities - **Preferred Stock**
+4. Multiples are per-share comparisons. The **denominator must be per share**.
+5. **Justified P/E** = what P/E _should be_ given fundamentals. **Market (non-justified) P/E** = what P/E _is_. Undervalued/overvalued comes from **comparing the two**.
+6. Given reqd. discount $k$, dividend growth $g$, dividend $D$ and price $P$	$$ P_0 = \frac{D_1}{k-g} $$
+7. Divide both sides by expected EPS $E_1$	$$ \frac{P_0}{E_1} = \frac{D_1/E_1}{k-g}$$
+8. At LHS, it is Justified P/E which is always **leading**. The denominator is expected earnings $E_1$.
+9. Raising the **dividend payout** increases current cash to shareholders but **reduces sustainable growth** by cutting reinvestment. Higher dividends push value up; lower growth pulls value down. The effects **offset**. This trade-off is called **dividend displacement of earnings**.
+10. It is very important to understand the relationship of PE ratio to each of its parameters:
 	- Payout Ratio ↑ PE multiple ↑
 	- k ↑ PE Multiple ↓. High DE Ratio, or anything that signals higher risk would crank up required rate of return
 	- g ↑ PE multiple ↑. Anything that signals higher future earnings would crank up g. For example, higher sales growth, bullish outlook etc.
-10. The disadvantages of multiples based approach is:
+11. The disadvantages of multiples based approach is:
 	- **Comparable vs fundamental conflict**: Tesla can look _overvalued_ on peer P/E versus automakers, yet _fair_ or undervalued on a DCF assuming high growth.
 	- **Accounting differences**: SAP (IFRS) vs Oracle (US GAAP) can show different P/E or P/B purely due to R&D and revenue-recognition rules.
 	- **Cyclicality distortion**: Delta Air Lines may show a very low P/E at peak earnings (looks cheap) and a very high P/E in a downturn (looks expensive), driven by the cycle, not mispricing.
-11. Enterprise value represents the total takeover cost: equity plus debt minus cash, because the acquirer assumes debt but also receives the cash.
+12. Enterprise value represents the total takeover cost: equity plus debt minus cash, because the acquirer assumes debt but also receives the cash.
 
 > [!NOTE] WHAT IS EV?
 > A company is financed by:
@@ -436,10 +469,13 @@ Explanation:
 > **EV = equity value + preferred stock + debt − cash & short-term investments.**
 > 
 
-12. **EV is preferred when comparing firms with different capital structures; market cap alone can mislead.**
-13. EV must be matched with earnings available to both debt and equity holders, which is why EV/EBITDA is used; when net income is negative, P/E breaks but EV/EBITDA still works. Firm A has EV = 1,000, EBITDA = 100 ⟶ EV/EBITDA = 10. Net income = −10, so P/E is meaningless, but valuation via EV still works.
-14. **EBITDA can mislead because it ignores capital expenditures and can overstate cash flow. Eg: Vodafone Group often reports strong EBITDA, but heavy recurring capex on spectrum licenses and network upgrades absorbs most of the cash, so free cash flow remains weak despite attractive EV/EBITDA.**
-15. Asset-based valuation starts from the balance sheet and estimates equity as fair value of assets minus liabilities, adjusting book values using depreciated cost, inflation-adjusted cost, or replacement cost because book ≠ market.
+13. **EV is preferred when comparing firms with different capital structures; market cap alone can mislead.**
+14. EV must be matched with earnings available to both debt and equity holders, which is why EV/EBITDA is used; when net income is negative, P/E breaks but EV/EBITDA still works. Firm A has EV = 1,000, EBITDA = 100 ⟶ EV/EBITDA = 10. Net income = −10, so P/E is meaningless, but valuation via EV still works.
+15. **EBITDA can mislead because it ignores capital expenditures and can overstate cash flow. Eg: Vodafone Group often reports strong EBITDA, but heavy recurring capex on spectrum licenses and network upgrades absorbs most of the cash, so free cash flow remains weak despite attractive EV/EBITDA.**
+
+
+> [!NOTE] ASSET BASED VALUATION MODELS
+>  Asset-based valuation starts from the balance sheet and estimates equity as fair value of assets minus liabilities, adjusting book values using depreciated cost, inflation-adjusted cost, or replacement cost because book ≠ market.
 
 16. Asset-based models struggle when intangibles dominate, so values are usually treated as a floor or liquidation value and work best only for tangible-asset-heavy or liquidation cases. Eg: Google has a brand, talent and data which makes tangible asset valuation meaningless.
 17. P/B fails when book value is not reliable.

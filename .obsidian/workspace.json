@@ -13,21 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/ETHICS.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "ETHICS"
-            }
-          },
-          {
-            "id": "343b0e20300e610d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "CFA Notes/FIXED INCOME.md",
                 "mode": "source",
                 "source": false,
@@ -38,22 +23,33 @@
             }
           },
           {
-            "id": "9ccd40f91033df85",
+            "id": "3fb1366ca8165d42",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.7"
+            }
+          },
+          {
+            "id": "f3db214b960cf90c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "CFA Notes/PORTFOLIO MANAGEMENT.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "PORTFOLIO MANAGEMENT"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -194,8 +190,8 @@
             "state": {
               "type": "github-copilot-chat-view",
               "state": {},
-              "icon": "bot-message-square",
-              "title": "Copilot Chat"
+              "icon": "lucide-ghost",
+              "title": "github-copilot-chat-view"
             }
           },
           {
@@ -272,14 +268,164 @@
             "id": "42968aeeeb5bd833",
             "type": "leaf",
             "state": {
-              "type": "Saved Queries View",
+              "type": "empty",
               "state": {},
-              "icon": "feather-mouse-pointer",
-              "title": "Saved Queries"
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "dcff43c64bfa0f51",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "fbad1a7028571444",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "2e73052e43071710",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "747cec951eedf73d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "9abcd8aa0a075981",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "14b26ef7a514cab1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "b1e611952966b32b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "b2a845b5a11f2f92",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "ff2a957cabf9de26",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "bab1ac1eacfa4a37",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "bd2d30775c427d52",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "5301d21bd55d2d22",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "496be6a40e25642c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "ba3042b9cecfb846",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "caa39699e4e3232b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 28
       }
     ],
     "direction": "horizontal",
@@ -292,12 +438,25 @@
       "templates:Insert template": false,
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "math-indicator-changer:Change math indicator": false
     }
   },
-  "active": "9ccd40f91033df85",
+  "active": "ab61447ddfebe320",
   "lastOpenFiles": [
+    "CFA Notes/FSA.md",
+    "CFA Notes/ALTERNATIVE INVESTMENTS.md",
+    "CFA Notes/AGENT.md",
+    "CFA Notes/Read these again.md",
+    "C++/Concepts.md",
+    "CFA Notes/PORTFOLIO MANAGEMENT.md",
+    "Diary/journal.md",
+    "CFA Notes/EQUITY.md",
+    "Pasted image 20260221122433.png",
+    "Dymanic Betas Using Kalman Filter.md",
+    "CFA Notes/DERIVATIVES.md",
     "CFA Notes/FIXED INCOME.md",
+    "CFA Notes/ETHICS.md",
     "conflict-files-obsidian-git.md",
     "Fixed Income/Bond Pricing.md",
     "Fixed Income",
@@ -316,21 +475,10 @@
     "CFA/Derivatives.md",
     "CFA/CouponStructures.md",
     "CFA/Contingency Provisions.md",
-    "CFA/Bond Duration.md",
-    "CFA/Annuity Calculation.md",
     "CFA",
-    "Quant Finance/Fixed Income.md",
-    "CFA Notes/ETHICS.md",
-    "CFA Notes/FSA.md",
-    "CFA Notes/EQUITY.md",
-    "CFA Notes/QUANTITATIVE METHODS.md",
-    "CFA Notes/ECONOMICS.md",
-    "templates/question-callout.md.md",
-    "templates/hammer.md",
     "templates",
     "Pasted image 20260131190442.png",
     "Excalidraw/Scripts/Downloaded/Split Ellipse.svg",
-    "Excalidraw/Scripts/Downloaded/Split Ellipse.md",
     "Excalidraw/Scripts/Downloaded/Slideshow.svg",
     "Excalidraw/Scripts/Downloaded/Set Grid.svg",
     "Excalidraw/Scripts/Downloaded",
@@ -341,7 +489,6 @@
     "Pasted image 20251029114056.png",
     "Pasted image 20251230214023.png",
     "dp.png",
-    "Linear Algebra/Pasted image 20250429102423.png",
-    "Mathematics for Machine Learning/Pasted image 20230621171117.png"
+    "Linear Algebra/Pasted image 20250429102423.png"
   ]
 }

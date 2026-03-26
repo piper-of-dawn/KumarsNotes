@@ -431,6 +431,52 @@ A non-callable, fixed-coupon bond has a price of 106.0625 and a YTM of 2.8%. If 
 >   
 >  
 
+### MODULE 58.1: YIELD BASED BOND CONVEXITY AND PORTFOLIO PROPERTIES
+
+
+1. Bond price moves with yield for two reasons:  **slope** (duration) and **curvature** (convexity).  Small yield changes → duration dominates.  Larger yield changes → convexity matters.
+
+###### EACH KEY PIECE
+
+2. **Yield Change** $\Delta y$  Small parallel shift in yield. Always convert to decimal form (e.g., 50 bps = 0.005).
+
+3. **Effective Duration (ED)**: First-order sensitivity (slope). Captures **linear** price response. 
+$$  
+ED = \frac{P_H - P_L}{2 \ \Delta y \  P_0}  
+$$
+
+- $P_H$: price if yield ↓    
+- $P_L$: price if yield ↑    
+- $P_0$: initial price
+    
+4. **Effective Convexity (EC)**: Second-order sensitivity (curvature). Captures **nonlinear** price response. 
+$$  
+EC = \frac{P_H + P_L - 2P_0}{(\Delta y)^2 P_0}  
+$$
+
+
+5. **Price Change Approximation** 
+- First term → duration effect = $-ED \cdot \Delta y$    
+- Second term → convexity correction = $\frac{1}{2} , EC \cdot (\Delta y)^2$
+Total price change:
+$$  
+\Delta P = -ED \cdot \Delta y + \frac{1}{2} \cdot EC \cdot (\Delta y)^2  
+$$
+6. **New Price**
+
+$$  
+P_{\text{new}} = P_0 \cdot (1 + \Delta P)  
+$$
+Bond price is a smooth function of yield. Taylor expansion around current yield:    
+    - 1st derivative → duration       
+    - 2nd derivative → convexity
+Finite-difference formulas estimate those derivatives using $(P_H, P_L, P_0)$
+    
+7. **Duration** tells you _direction and speed_ of price change. **Convexity** tells you the acceleration. Price rise accelerates when yields fall. Price drop decelerates when yields rise.
+
+
+> [!question] CONVEXITY
+> Consider our 5-year, 11% annual coupon bond priced at 86.59138 to yield 15% to maturity. If its YTM increases by 50 basis points, its price will decrease to 85.09217.If its YTM decreases by 50 basis points, its price will increase to 88.12721. Calculate the approximate convexity of the bond.
 
 ### MODULE 59.1: CURVE-BASED AND EMPIRICAL FIXED-INCOME RISK MEASURES
 1. The yield curve does not always move in a parallel way—short-term rates, medium-term rates, and long-term rates can change by different amounts or even in different directions. At the same time, many bonds do not have fixed cash flows: borrowers may prepay, issuers may call the bond early, or payments may change when interest rates move. 
@@ -490,29 +536,79 @@ $$\boxed{\text{Mac. D} = \sum_{i=o}^N \text{PV}_i \times i}$$
 > - Don’t assume all curve moves are parallel; use KRDs for shape changes.  
 > - Don’t mix spread moves into “effective” shocks unless your model changes spreads too.
 
-ASSET BACKED SECURITIES
+### MODULE 60.1: CREDIT RISK
 
-Compared to ordinary bank bonds, covered bonds are safer because your repayment isn’t riding on just “the bank stays healthy.” You also have a legally protected pile of assets sitting behind the bond as a backup.
 
- In a covered bond, the bank still owns the loans (they stay on its balance sheet), so regulators still treat them as the bank’s assets/risk. So the bank must still hold the same capital buffer against them—unlike securitization, where selling/isolating the loans can reduce required capital.
+> [!abstract] MEMORISE THIS FOR EFFICIENCY
+> Loss Rate (LR) = PD $\times$ LGD 
+> Spread should equal Loss Rate
+> If Loss Rate > Spread $\to$ Investor is under-compensated
+> Expected Loss = LR $\times$ EAD
 
-There is no tranching in covered bonds and the collateral pool cannot contain non performing assets.
+1. Burn this cutoff: BBB− (S&P) = Baa3 (Moody's) is the last investment grade notch, one step down to BB+ = Ba1 and you're in junk. Yields spike and pension/insurance funds are legally out
+2. Full credit rating ladder in one breath: AAA → AA → A → BBB is safe, BB → B is speculative, CCC → CC → C is distress, D (S&P) or C (Moody's) is already defaulted
+3. Notation is cosmetic: Moody's uses letters + numbers (Aa1/Aa2/Aa3), S&P/Fitch use letters + symbols (AA+/AA/AA−), they map 1-to-1 within each tier, and Fitch quietly drops the +/− at CCC.
+4. **Ratings lag reality:** market reprices risk instantly → ratings update slow → same rating bonds can trade very different yields because market cares about timing of default + recovery, ratings just average expected loss
+5. **Ratings miss hidden/complex risks:** litigation, disasters, leverage events (buybacks, acquisitions) are hard to predict → agencies disagree → same bond can get split ratings → uncertainty not fully captured.    
+6. **Agencies can be wrong:** incentives + model limits → misratings (e.g., pre-2008 MBS) → high-rated names can still collapse → takeaway = don’t outsource thinking, front-run rating changes > reacting to them
+7. Two spreads, don't confuse them: yield spread = extra return over risk-free benchmark (credit risk proxy), bid-offer spread = dealer buy/sell gap (liquidity risk proxy) — exam questions will test whether you know which one is being referenced
+8. Bid-offer spread is your liquidity risk meter: wider gap → higher transaction cost → higher liquidity risk, and the drivers are simple — less debt outstanding + lower credit quality + less trading activity → wider spreads
+9. Stress causes contagion: junk illiquidity spikes in crisis → risk aversion spreads → IG bid-offer spreads widen too even though the credit quality hasn't changed, liquidity fear is contagious
+10. **You can decompose yield spread into credit vs liquidity: calculate yield at bid and at offer → difference is the liquidity component → strip it out to isolate pure credit risk premium**
+### MODULE 64.1: ASSET BACKED SECURITIES
 
-  
+1. Compared to ordinary bank bonds, covered bonds are safer because your repayment isn’t riding on just “the bank stays healthy.” You also have a legally protected pile of assets sitting behind the bond. If assets fail to pay, you can lay claim on the assets of the originator. **The covered bonds have a recourse to the originator.** 
+2. In a covered bond, the bank still owns the loans (they stay on its balance sheet), so regulators still treat them as the bank’s assets/risk. So the bank must still hold the same capital buffer against them—unlike securitization, where selling/isolating the loans can reduce required capital.
+3. There is no tranching in covered bonds and the collateral pool cannot contain non performing assets.
+4. **Hard Bullet** Suppose issuer misses Year 2 coupon Under hard bullet, this is immediate default. Acceleration happens immediately. The bondholders’ claim becomes: “pay me everything outstanding now."
+5. **Soft-bullet**: if the issuer can’t pay at maturity, default/acceleration is delayed by extending the maturity (e.g., up to a year) to give time to pay, and only if still unpaid after the extension does default kick in. 
+6. **Conditional pass-through**: if anything is still unpaid at maturity, the bond switches to pass-through, meaning investors get paid only as cash is later collected from the cover pool (e.g., 60 now, then 25, then 15), with repayment timing driven by recoveries rather than a fixed date.
+###### WATERFALL STRUCTURE IN ABS
 
-2. Issuer misses Year 2 coupon (fails to pay 4)  
-    
+```text
 
-- Under hard bullet, this is immediate default.
+ORIGINATOR (BANK)
+   |
+   | Sells loans to. 
+   | This is a true sale including 
+   | claim on collateral
+   v
+SPECIAL PURPOSE VEHICLE (SPV)
+	|
+    | Issues ABS to investors 
+    v
+    Flow of Funds works like this:
+    --------
+    SENIOR TRANCHE (AAA)
+    FV = 300
+    MRR + 0.5%
+    --------
+    MEZZANINE TRANCHE (BBB)
+    FV = 80
+    MRR + 1.5%
+    --------
+    JUNIOR TRANCHE (BB)
+    FV = 30
+    Variable
+```
 
-4.   
-    
-5. Acceleration happens immediately  
-    
+7. The senior tranche has the first claim on cash flows from the underlying assets, so it has the lowest risk and lowest yield. **It can have a higher credit rating than originator"
+8. Suppose I have 10 of Mezzanine tranche and MRR is 4%. In no default case; I get 10 * 0.055 = 0.55. 
+9. Suppose there is a default in the pool that amounts to 50, then the Junior tranche will be wiped off (30). I have to pay for remaining 20 from Mezzanine tranche. So I get 80 - 20 = 60. My return is 60/80 = 75% of 0.55 = 0.4125.
+10. Credit card ABS has two phases because credit cards don’t have a fixed “repay schedule” like a mortgage. So the deal first runs a **revolving/lockout period** where principal coming in is **re-lent** (investors get only interest/fees), then switches to an **amortization period** where principal is **returned to investors**. (Very similar to a Z-Tranche)
+###### COLLATERALISED DEBT OBLIGATION
+11. A CDO is an **SPE-issued box** that owns a **portfolio of debt** and then **slices the cashflows into tranches** (senior/mezz/equity). What makes many CDOs different from plain ABS is that the portfolio is often **actively managed**: a **collateral manager** can **buy/sell/reinvest** the collateral to keep the deal generating enough cash to pay investors.
 
-- The bondholders’ claim becomes: “pay me everything outstanding now.”
 
-Soft-bullet: if the issuer can’t pay at maturity, default/acceleration is delayed by extending the maturity (e.g., up to a year) to give time to pay, and only if still unpaid after the extension does default kick in. Conditional pass-through: if anything is still unpaid at maturity, the bond switches to pass-through, meaning investors get paid only as cash is later collected from the cover pool (e.g., 60 now, then 25, then 15), with repayment timing driven by recoveries rather than a fixed date.
+> [!note] HOW CDO's WORK?
+> - Collateral (loans/bonds) generates **interest + principal**.    
+> - Cash goes through a **waterfall**: expenses/fees → senior interest/principal → mezz → equity (residual).    
+> - If defaults happen, **losses eat through subordination** bottom-up.
+> - Because a manager can trade/reinvest, future cashflows depend on:    
+>     - **credit outcomes** of holdings, and        
+>     - **manager’s ability** to maintain portfolio quality + comply with deal test
+> 
+
 ### MODULE 65.1: MORTGAGE-BACKED SECURITY (MBS) INSTRUMENT AND MARKET FEATURES
 
 1. **Prepayment Risk:** You own a callable bond (and interest rate falls) → They prepay and buy back their now cheaper bond issued at a high interest rate. Interest Rate falls to 2% and you take a cheaper loan and payback your expensive loan. For the bond investor, high-coupon mortgage cash flows disappear right when they\u2019re most valuable, that is why a **risk**.

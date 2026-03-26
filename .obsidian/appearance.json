@@ -1,13 +1,13 @@
 {
-  "accentColor": "#9c9054",
+  "accentColor": "",
   "interfaceFontFamily": "Supreme,JetBrainsMono Nerd Font Propo",
-  "textFontFamily": "Berkeley Mono,JetBrainsMono Nerd Font",
+  "textFontFamily": "Berkeley Mono,Times New Roman,JetBrainsMono Nerd Font",
   "cssTheme": "Primary",
   "monospaceFontFamily": "SpaceMono Nerd Font",
   "theme": "obsidian",
   "translucency": false,
   "baseFontSizeAction": true,
-  "baseFontSize": 18,
+  "baseFontSize": 17,
   "enabledCssSnippets": [
     "code"
   ]

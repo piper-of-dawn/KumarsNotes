@@ -9,38 +9,36 @@ includeLinks: true # Make headings clickable
 hideWhenEmpty: false # Hide TOC if no headings are found
 debugInConsole: false # Print debug info in Obsidian console
 ```
-## FSA
+
 
 ### MODULE 28.1: REVENUE RECOGNITION
 
 1. Five-step process for revenue recognition (IFRS 15 / ASC 606):
    - Step 1: Identify the contract — establish a valid agreement exists. Example: A SaaS company signs a one-year software subscription for $12,000.
-   - Step 2: Identify performance obligations — break down distinct deliverables. Example: Software access and monthly support are separate obligations.
+   - Step 2: Identify performance obligations — break down distinct deliverables. **Example: Software access and monthly support are separate obligations.**
    - Step 3: Determine the transaction price — total consideration expected, including discounts/variable fees.
    - Step 4: Allocate the transaction price — allocate based on standalone selling prices. Example: $10,000 to software, $2,000 to support.
    - Step 5: Recognize revenue — when/as each obligation is satisfied. Example: Recognize $1,000/month for software and $167/month for support.
-
 2. Convergence notes: IASB and FASB issued converged guidance in 2014; terminology differs for “probable” (IFRS: more-likely-than-not; U.S. GAAP: likely), which can lead to differences in otherwise similar contracts.
-
-3. Principal vs Agent presentation:
+3. ==Under the converged accounting standards, the incremental costs of obtaining a contract and certain costs incurred to fulfil a contract must be capitalized.== If a company expensed these incremental costs in the years prior to adopting the converged standards, all else being equal, its profitability will appear higher under the converged standards.
+4. Principal vs Agent presentation:
    - Principal: bears inventory/primary performance risk; reports gross revenue (e.g., Amazon Retail).
    - Agent: arranges for goods/services; reports net commission as revenue (e.g., marketplace platforms). Lower revenue, often higher margins.
-
-4. Franchising/Licensing economics:
+5. Franchising/Licensing economics:
    - Company-owned stores: report full sales.
    - Franchise model: recognize royalties (e.g., ~5.5% of franchisee sales); upfront fees are deferred and amortized over contract life; ancillary sales (equipment/supplies) recognized per delivery.
-
-5. Software: license vs service (SaaS):
-   - Perpetual license: recognize upfront when control transfers.
+6. Software: license vs service (SaaS):
+   - Perpetual license: recognize upfront when control transfers. (e.g. )
    - Subscriptions/support: recognize ratably over service term (e.g., Office 365, Netflix).
-
-6. Long-term construction/production contracts:
+7. Long-term construction/production contracts:
    - Recognize revenue over time based on progress toward completion, often via cost-to-complete measure (e.g., Boeing recognizes proportion of total revenue equal to % complete).
-
-7. Bill-and-hold arrangements:
+8. Bill-and-hold arrangements:
    - Recognize revenue when control transfers and goods are ready for the customer, even if physical delivery is delayed at customer request.
+9. Jargon: SG&A = Selling, General and Administrative expense.
 
-8. Jargon: SG&A = Selling, General and Administrative expense.
+### MODULE 28.2: EXPENSE RECOGNITION
+
+You look more profitable **as long as you’re piling up assets faster than you’re wearing them out**. Once growth slows or assets mature, the bill arrives via depreciation.
 
 ### MODULE 29.1: INTANGIBLE ASSETS
 
@@ -439,12 +437,47 @@ The free cash flow to equity must contain net borrowing because the cash receive
 
 ### MODULE 32.1: INVENTORY MEASUREMENT
 
-1. **Cost:** What you paid to get inventory ready for sale (purchase price + freight-in/shipping + import duties − discounts). Example: buy a jacket for $100, pay $8 shipping, get a $3 discount → cost = $105.
-2. **Net realizable value (NRV):** Expected selling price minus costs to complete and sell. Example: expect to sell for $110, and it will cost $4 to finish/pack and $3 selling commission → NRV = $103.
-3. **Market (Replacement Cost):** If you sold everything today at cost, what will you get.
-4. **Lower-of-cost-or-NRV rule:** Carry inventory at the lower number. With cost $105 and NRV $103, carry at $103 and record a $2 write-down in income.
-5. IFRS: Inventory at the lower of cost or net realizable value (NRV). NRV = expected sales price − selling and completion costs. Write-downs hit income (separate line or COGS). **Subsequent write-ups allowed, but only up to the prior write-down (cannot exceed original cost)**.
-6. U.S. GAAP: If not using LIFO/retail, measure at lower of cost or NRV. If using LIFO or the retail method, measure at lower of cost or market (LCM) where market = replacement cost, bounded by ceiling = NRV and floor = NRV − normal profit margin. **No write-ups permitted under U.S. GAAP (applies to both LCNRV and LCM users).**
+> [!DANGER] MISTAKES YOU WILL MAKE
+> - Storage costs for finished products are EXCLUDED (not included) in inventory. 
+> - LIFO is only allowed in US GAAP
+
+1. Manufacturers can report either separate inventory categories or one total on the balance sheet; if they report only one total, **they must disclose raw materials, work in progress, and finished goods separately in the footnotes.**
+2. **Cost:** What you paid to get inventory ready for sale (purchase price + freight-in/shipping + import duties − discounts). Example: buy a jacket for $100, pay $8 shipping, get a $3 discount → cost = $105. 
+3. Inventory (Both IFRS and US GAAP) = **only costs needed to make the product ready for sale**. Anything inefficient, unnecessary, or not part of production → expense immediately.  If you wrongly include them → profit looks higher now, but it’s fake (just delayed costs).
+
+> [!tip] HAMMER THIS INTO YOUR HEAD
+> **“Did this cost help create the product?”**  
+>   → Yes → inventory 
+>   → No → expense
+
+###### INVENTORY VALUATION 
+
+4. **Methods allowed**    
+    - IFRS → Specific ID, FIFO, WAC        
+    - US GAAP → Specific ID, FIFO, WAC + LIFO  
+        → _Only difference = LIFO allowed in US GAAP_     
+5. **Core idea (what method does)**    
+    - It decides **which cost is assigned to goods sold**        
+    - Physical flow ≠ accounting flow        
+6. **Flow (how cost moves)**    
+    - Purchase/produce → goes to **Inventory (Balance Sheet)**      
+    - Sell → moves to **COGS (Income Statement)**        
+    - Method decides → _which layer of cost leaves first_
+7. Choice of inventory is irrelevant if prices remain the same. 
+8. **Specific identification** → track exact cost per item; sold item carries its own cost  
+    _Example:_ buy 3 cars at 10k, 12k, 15k → sell the 15k car → cost of sales = 15k    
+9. **First-in, first-out** → oldest cost leaves first, newest stays  
+    _Example:_ buy 100 units at 10, then 100 at 12 → sell 100 → cost of sales = 100×10, inventory = 100×12    
+10. **Weighted average cost** → average all costs, same cost for all units  
+    _Example:_ buy 100 at 10 and 100 at 12 → average = 11 → sell 100 → cost of sales = 100×11, inventory = 100×11    
+11. **Last-in, first-out (US GAAP only)** → newest cost leaves first, oldest stays  
+    _Example:_ buy 100 at 10, then 100 at 12 → sell 100 → cost of sales = 100×12, inventory = 100×10**
+12. **Net realizable value (NRV):** Expected selling price minus costs to complete and sell. Example: expect to sell for $110, and it will cost $4 to finish/pack and $3 selling commission → NRV = $103.
+13. **Market (Replacement Cost):** If you sold everything today at cost, what will you get.
+14. **Lower-of-cost-or-NRV rule:** Carry inventory at the lower number. With cost $105 and NRV $103, carry at $103 and record a $2 write-down in income.
+15. IFRS: Inventory at the lower of cost or net realizable value (NRV). NRV = expected sales price − selling and completion costs. Write-downs hit income (separate line or COGS). **Subsequent write-ups allowed, but only up to the prior write-down (cannot exceed original cost)**.
+16. U.S. GAAP: If not using LIFO/retail, measure at lower of cost or NRV. If using LIFO or the retail method, measure at lower of cost or market (LCM) where market = replacement cost, bounded by ceiling = NRV and floor = NRV − normal profit margin. **No write-ups permitted under U.S. GAAP (applies to both LCNRV and LCM users).**
+17. **Periodic** = calculate inventory and cost of sales **at the end***. *Perpetual** = update inventory and cost of sales **every transaction**. Always know inventory in real time. 
    
 > [!warning] REMEMBER
 > 1. LCNRV (lower of cost or net realizable value): **Compare cost vs NRV;** carry the lower; write down the difference to income.
@@ -465,9 +498,9 @@ The free cash flow to equity must contain net borrowing because the cash receive
 > - IFRS (LCNRV): compare to NRV; write-ups allowed up to prior write-downs.
 > - U.S. GAAP: LIFO/retail use LCM with ceiling/floor around replacement cost; no write-ups. Non-LIFO/retail uses LCNRV (same NRV test).
 > - Memory hook: IFRS can “reverse”, upto previous write-down; GAAP “locks” the loss.
-7. Notes: With inflation, LIFO ending inventory reflects older/cheaper costs, so LIFO firms are less likely to trigger write-downs than FIFO/average cost users. Certain commodity inventories (e.g., agricultural, mineral, precious metals) may be reported at NRV with unrealized gains/losses recognized in income when active markets exist.
+18. Notes: With inflation, LIFO ending inventory reflects older/cheaper costs, so LIFO firms are less likely to trigger write-downs than FIFO/average cost users. Certain commodity inventories (e.g., agricultural, mineral, precious metals) may be reported at NRV with unrealized gains/losses recognized in income when active markets exist.
 
-8. Disclosures — inventory (IFRS vs U.S. GAAP)
+19. Disclosures — inventory (IFRS vs U.S. GAAP)
 	   - Both: accounting policy and cost formula (e.g., FIFO/LIFO/average); carrying amounts by category (raw materials, WIP, finished goods/merchandise); amount recognized as expense (COGS); inventory write-downs recognized; inventories pledged as collateral.
    - **IFRS only: reversals of write-downs and the circumstances; carrying amount of any inventories measured at fair value less costs to sell**.
    - **U.S. GAAP only: LIFO reserve disclosure for LIFO users; no reversals permitted (so no reversal disclosure).**
