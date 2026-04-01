@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/PORTFOLIO MANAGEMENT.md",
+                "file": "CFA Notes/FIXED INCOME.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "PORTFOLIO MANAGEMENT"
+              "title": "FIXED INCOME"
             }
           }
         ],
@@ -412,9 +412,29 @@
               "icon": "lucide-file",
               "title": "New tab"
             }
+          },
+          {
+            "id": "78a3f797c1bed567",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "07cb0efec403530c",
+            "type": "leaf",
+            "state": {
+              "type": "Saved Queries View",
+              "state": {},
+              "icon": "feather-mouse-pointer",
+              "title": "Saved Queries"
+            }
           }
         ],
-        "currentTab": 28
+        "currentTab": 30
       }
     ],
     "direction": "horizontal",
@@ -431,8 +451,9 @@
       "math-indicator-changer:Change math indicator": false
     }
   },
-  "active": "f3db214b960cf90c",
+  "active": "07cb0efec403530c",
   "lastOpenFiles": [
+    "CFA Notes/PORTFOLIO MANAGEMENT.md",
     "conflict-files-obsidian-git.md",
     "CFA Notes/FIXED INCOME.md",
     "CFA Notes/FSA.md",
@@ -440,7 +461,6 @@
     "CFA Notes/AGENT.md",
     "CFA Notes/Read these again.md",
     "C++/Concepts.md",
-    "CFA Notes/PORTFOLIO MANAGEMENT.md",
     "Diary/journal.md",
     "CFA Notes/EQUITY.md",
     "Pasted image 20260221122433.png",

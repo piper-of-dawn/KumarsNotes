@@ -1,22 +1,3 @@
 {
-  "accentColor": "",
-  "interfaceFontFamily": "Supreme,JetBrainsMono Nerd Font Propo",
-  "textFontFamily": "Berkeley Mono,Times New Roman,JetBrainsMono Nerd Font",
-  "cssTheme": "Primary",
-  "monospaceFontFamily": "SpaceMono Nerd Font",
-  "theme": "obsidian",
-  "translucency": false,
-  "baseFontSizeAction": true,
-  "baseFontSize": 17,
-  "enabledCssSnippets": ["code"]
-
-  
-  # Thank you Kumar!
-  
-  Your order number is **486787**
-  
-  We have emailed your order confirmation. You will receive a second email with more details about your order.
-  
-  If you have any questions about your order, please don't hesitate to [contact us](https://help.cfainstitute.org/).
-  
+  "textFontFamily": "Georgia Pro,Noto Serif,Geist,Google Sans Flex"
 }
