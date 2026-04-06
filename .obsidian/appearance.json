@@ -1,3 +1,6 @@
 {
-  "textFontFamily": "Georgia Pro,Noto Serif,Geist,Google Sans Flex"
+  "textFontFamily": "Berkeley Mono,Inter,Georgia Pro,Adwaita Sans,B&H LucidaBright,Courier",
+  "cssTheme": "Cupertino",
+  "accentColor": "#c2ba61",
+  "baseFontSize": 15
 }

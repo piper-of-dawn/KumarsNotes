@@ -21,25 +21,83 @@ At t+1:
 - Negative convexity: as yields fall and prices rise, upside is capped by the call feature; price rises less than for an option‑free bond.
 - Value vs option‑free: callable bond value is lower than an identical non‑callable bond because the investor is short the call option.
 
-#### Puttable Bond
-1. Investor (bondholder) has the right to sell the bond back to the issuer at a specified put price.
-2. Puts provide downside protection when rates rise (prices fall), generally increasing the bond’s value relative to an option‑free bond and improving effective convexity on the downside.
+### MODULE 48.1: FIXED-INCOME CASH FLOWS AND TYPES]
+
+
+> [!tip] HAMMER THIS INTO YOUR HEAD
+> - This module has multiple kinds of cashflow structures, but they all boil down to how the principal is repaid over time, and are usually exposed to two main risks: reinvestment risk (getting your money back early and having to find a new place to put it) and credit risk (getting your money back late and trusting the issuer to still be around). Every bond structure is just choosing where on this spectrum you sit.
+
+1. **Bullet structure = principal repaid only at maturity** → you receive fixed coupons (interest-only payments) each period and get the full par value back at the end → this front-loads interest risk onto the issuer (if rates crash the issuer re-invests the coupons for peanuts) and back-loads credit risk onto you, because your entire principal is exposed until the final day (if issuer runs away i.e default you get nothing).
+2. Amortizing = you pay interest + some principal each period, but there's still a lump sum (balloon) left at maturity; fully amortizing = same blended payments but sized so the balance hits exactly zero on the last payment - no balloon, no surprise, you're done.
+3. This reduces your credit exposure over time but means earlier payments are interest-heavy while later payments are principal-heavy, so the cash-flow profile is the mirror image of a bullet bond.
+4. **Constant payment formula ties these pieces together:**
+$$PMT = PV \times \frac{r}{1 - (1 + r)^{-N}}$$
+	where $PV$ = loan principal, $r$ = periodic interest rate, $N$ = number of periods. Notice the numerator is just the first period's interest charge; the denominator fraction adjusts it upward so each flat payment also chips away at principal until the balance is exactly zero.
+5. **Sinking fund literally means the fund is sinking or eroding. That is forced partial principal repayment over the bond's life**. The best example is suppose you are 70 years old with million dollars in savings. You want to spend this money before you die so you would make your savings sink. This means less principal outstanding at maturity → lower credit risk for you → you get your money back early and might redeploy at lower interest rate thereby increasing re-investment risk.
+6. **Waterfall = priority queue for principal in ABSs and MBSs** → pool sliced into tranches by seniority → senior gets all principal first → junior gets zero principal until senior is fully repaid → but both get interest throughout.    
+7. **Junior tranche absorbs losses first and receives principal last** → this concentrates credit risk in the junior slice → which lets the senior tranche price like near-risk-free debt → investors in junior demand higher yield to compensate → that yield spread is the entire reason structured products exist.   
+8. **Floating-Rate Note (FRN) = your coupon floats with the market** - think of it as a salary that adjusts for inflation: you get the Market Reference Rate (MRR - the going rate in the market) + a fixed credit spread (your premium for lending to this borrower, measured in basis points where 100 bps = 1%) → this kills reinvestment risk because your coupon resets each period, but it means you never lock in a high rate when rates are rising - you're always one reset behind.
+9. **Step-up coupon = coupon rises on a preset schedule** → compensates you for holding longer-dated risk → think of it as a loyalty raise - the issuer pays you more the longer you stay.
+10. **Leveraged loan / credit-linked note = coupon rises when the issuer's credit deteriorates** → e.g. debt/EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) crosses 3× and your spread jumps from MRR + 2.5% to MRR + 3% → it's an automatic insurance adjustment - the riskier the borrower gets, the more they pay you.
+11. **Payment-in-Kind (PIK) = issuer pays your interest with more bonds, not cash** → think of a friend who owes you money and "pays" you by writing a bigger IOU → the firm does this because it can't generate enough cash to service debt → you get higher yields but your entire return depends on the issuer eventually being good for it - if they default, all those extra bonds are worthless too.
+12. **Green bonds = coupon penalizes the issuer for missing environmental targets** → e.g. miss your CO₂ reduction goal and your coupon steps up → it's a put-your-money-where-your-mouth-is mechanism that aligns bondholder returns with sustainability outcomes.
+13. **Inflation-linked bonds come in two flavors:** interest-indexed (coupon adjusts for inflation but principal stays fixed - you're protected on income but your $1,000 par erodes in real terms) vs capital-indexed like Treasury Inflation-Protected Securities (TIPS) (coupon rate stays fixed but principal adjusts - so if inflation is 3%, your $1,000 becomes $1,030 and the fixed coupon applies to the bigger base, protecting both income and principal).
+14. **Callable Bond:** Think of your mortgage - when rates drop, you refinance and the bank loses a high-interest borrower. A callable bond is the same thing from the issuer's side. Rates fall from 6% to 4%, issuer calls your bond at $1,020, reissues at 4%, saves $19.20/year → you lose a 6% coupon and reinvest at 4%. This is call risk - your upside is capped at the call price (bond can't trade much above $1,020 even if rates collapse) but your downside is uncapped. Call protection period = the years before they can do this to you → you demand higher yield to accept this asymmetry.
+15. **Putable Bond:** Think of a job with a guaranteed severance - if things go bad, you can walk away and still get paid. A putable bond gives you the right to sell it back to the issuer at par. Rates spike from 4% to 7%, your bond's market value drops to $850, but you put it back at $1,000 and redeploy at 7% → you're protected on the downside. Real-world: in 2008, many corporate bonds crashed 20-30% in value - if you held a putable bond, you could force the issuer to buy it back at par while everyone else was stuck selling at $700-$800. You pay for this protection through a lower yield.
+16. **Convertible = your right to swap the bond for the issuer's stock** → you get bond safety (fixed coupons, principal protection) plus equity upside → issuer pays a lower coupon because you accepted stock optionality instead. Three numbers to know: conversion price ($40/share), conversion ratio ($1,000 ÷ $40 = 25 shares), conversion value (25 × current share price).
+17. **Who holds the option determines who adjusts the price:** callable bond sells cheaper than a straight bond (issuer has the option, you demand more yield) → putable bond sells richer (you have the option, you accept less yield) → convertible sells richer still (you have equity upside, issuer pays less coupon). The price gap between the option-embedded bond and the straight bond always equals the option's value.
+18. **CoCo = emergency parachute for banks** → bank starts losing money and equity drops below the regulatory minimum, your bond automatically becomes stock → debt shrinks, equity fattens, regulators happy. You went to sleep holding a bond and woke up holding stock in a struggling bank - worst possible moment to become a shareholder.
+19. **Where a bond is issued, traded, and what currency it's in = three separate things that determine which laws apply and what yield you get.**
+	- **Domestic** = issued and traded in issuer's home country
+	- **Foreign** = issuer sells in another country's market (UK firm issuing USD bonds in the US)
+	- **Eurobond** = issued outside any single country's jurisdiction, any currency (Chinese firm issuing yen bonds outside Japan) → less regulation, which is the whole point
+	- **Global bond** = trades both domestically and in the Eurobond market
+	- **Currency matters most** — a USD bond's yield is driven by US rates regardless of who issued it or where
+	- **Bearer bond** = whoever holds the paper owns it (old style); **Registered** = ownership recorded (modern standard)
+	- **Sukuk** = Islamic-compliant bond where payments are structured as rent on assets, not interest, to satisfy Sharia law
 
 ### FIXED INCOME MARKETS FOR CORPORATE ISSUERS
-1. Uncommitted line = no legal obligation on the bank → holds zero capital → costs you nothing upfront but bank can say no anytime. _e.g. a small retailer uses this to cover a 30-day inventory gap — works fine in calm markets, bank pulls it the moment the economy wobbles._ 
-2. "Anytime" means exactly when markets are stressed and you need it most → can't build a funding plan around it → you need something the bank is contractually stuck with. _e.g. 2008 — firms relying on uncommitted lines found them gone overnight, forced into panic asset sales._  
-3. Committed line = bank signs a legal promise → must hold capital against it → charges you ~0.50% commitment fee to recover that cost, drawn or not. _e.g. a mid-size manufacturer keeps a $50M committed line as a liquidity buffer — pays $250K/year just to have it available._    
-4. Large borrowers make the capital burden on one bank too big → banks syndicate, each taking a fixed slice → spreads burden without reducing your access. _e.g. a $2B committed facility for a multinational split across 10 banks, each holding $200M — no single bank breaks a sweat._
-5. Revolver = committed line made multiyear + covenants added → lender locks in control before things go wrong → you give up flexibility but finally have funding you can budget around. _e.g. Apple's $10B revolver sits undrawn as a backstop — the covenant structure means lenders get early warning, Apple gets certainty._
+1. Uncommitted line = no legal obligation on the bank → holds zero capital → costs you nothing upfront but bank can say no anytime. _e.g. a small retailer uses this to cover a 30-day inventory gap - works fine in calm markets, bank pulls it the moment the economy wobbles._ 
+2. "Anytime" means exactly when markets are stressed and you need it most → can't build a funding plan around it → you need something the bank is contractually stuck with. _e.g. 2008 - firms relying on uncommitted lines found them gone overnight, forced into panic asset sales._  
+3. Committed line = bank signs a legal promise → must hold capital against it → charges you ~0.50% commitment fee to recover that cost, drawn or not. _e.g. a mid-size manufacturer keeps a $50M committed line as a liquidity buffer - pays $250K/year just to have it available._    
+4. Large borrowers make the capital burden on one bank too big → banks syndicate, each taking a fixed slice → spreads burden without reducing your access. _e.g. a $2B committed facility for a multinational split across 10 banks, each holding $200M - no single bank breaks a sweat._
+5. Revolver = committed line made multiyear + covenants added → lender locks in control before things go wrong → you give up flexibility but finally have funding you can budget around. _e.g. Apple's $10B revolver sits undrawn as a backstop - the covenant structure means lenders get early warning, Apple gets certainty._
 6. Unsecured credit requires credit quality you might not have → secured loans solve this by pledging assets (receivables, inventory, fixed assets) → lender files a lien → you get the loan but your balance sheet now advertises the pledge to every future creditor.
 7. Receivables can either be _assigned_ (you keep collecting, asset is just collateral) or _sold to a factor_ (factor takes over collections at a discount) → factoring is faster cash but costlier → discount size depends on receivable quality and collection difficulty. _e.g. a mid-size supplier factors $10M in invoices at 5% discount → gets $9.5M today instead of waiting 90 days._
-8. Strong companies skip bank loans entirely → issue commercial paper (CP) in public markets → matures in <3 months → cheaper than bank debt but creates rollover risk (can't always reissue at maturity). _e.g. GE Capital rolled CP continuously pre-2008 — when markets froze, it couldn't roll → needed emergency Fed support._
-9. Rollover risk on CP → investors demand a committed backup line as a condition → now you're paying bank commitment fees _and_ CP issuance costs → the backup line is the safety net that makes CP viable. _e.g. Apple issues CP backed by its revolver — if markets seize up, it draws the revolver to repay maturing paper instead._
+8. Strong companies skip bank loans entirely → issue commercial paper (CP) in public markets → matures in <3 months → cheaper than bank debt but creates rollover risk (can't always reissue at maturity). _e.g. GE Capital rolled CP continuously pre-2008 - when markets froze, it couldn't roll → needed emergency Fed support._
+9. Rollover risk on CP → investors demand a committed backup line as a condition → now you're paying bank commitment fees _and_ CP issuance costs → the backup line is the safety net that makes CP viable. _e.g. Apple issues CP backed by its revolver - if markets seize up, it draws the revolver to repay maturing paper instead._
 10. Demand deposits = withdrawable anytime (meaning the bank could lose the funding any given day) → but fee rebates and credit lines keep commercial clients sticky → so banks treat this as reliable base funding despite the theoretical daily withdrawal risk.
 11. Certificates of deposit (CDs) solve the stability problem formally → fixed maturity + fixed rate locks the depositor in → non-negotiable CD penalizes early exit → negotiable CD trades in open market so the depositor can exit without breaking the contract → large-denomination CDs become wholesale funding from institutional investors, same role as commercial paper (CP) but in deposit form.
-12. The interbank market fills daily reserve gaps (banks are legally required to hold minimum reserves at the central bank — some have too much, some too little) → surplus banks lend to deficit banks at the central bank funds rate → if a bank can't borrow even here, it goes to the central bank's discount window, which costs more, requires collateral, and invites regulatory scrutiny.
-13. Banks also fund themselves using asset-backed commercial paper (ABCP — short-term notes backed by a pool of loans, not the bank's own creditworthiness) → the bank sells its loans to a special purpose entity (SPE — a legally separate shell company created just to hold those loans) → the SPE issues ABCP to investors and repays them from loan cash flows → the bank gets cash today without the loans sitting on its balance sheet.
+12. The interbank market fills daily reserve gaps (banks are legally required to hold minimum reserves at the central bank - some have too much, some too little) → surplus banks lend to deficit banks at the central bank funds rate → if a bank can't borrow even here, it goes to the central bank's discount window, which costs more, requires collateral, and invites regulatory scrutiny.
+13. Banks also fund themselves using asset-backed commercial paper (ABCP - short-term notes backed by a pool of loans, not the bank's own creditworthiness) → the bank sells its loans to a special purpose entity (SPE - a legally separate shell company created just to hold those loans) → the SPE issues ABCP to investors and repays them from loan cash flows → the bank gets cash today without the loans sitting on its balance sheet.
 14. _Example. a bank holds $500M in car loans → sells them to an SPE → SPE issues ABCP to money market funds → money market funds get short-term paper backed by car loan repayments → bank gets $500M cash immediately → if the car loan pool performs badly or investors stop buying ABCP at maturity, the SPE can't roll the paper → bank's backup liquidity line gets drawn → the risk the bank thought it had moved off its books comes straight back._
+###### REPURCHASE AGREEMENTS
+
+1. Repo = you sell a security today and contractually agree to buy it back tomorrow at a higher price → the price difference is the interest → the security itself is the collateral → it's just a collateralized short-term loan dressed in sale language.
+2. Repo rate = annualized interest implied by the gap between sell price and buyback price → lower than unsecured borrowing rates because the lender holds your security as protection.
+3. Repo has two legs → opening leg: lender sends cash, borrower sends securities → closing leg: borrower sends back more cash than received and gets securities back → the extra cash paid at closing is the interest.    
+4. Lender doesn't lend the full market value of the security → divides by initial margin (>1) to create a buffer: $$\text{Purchase Price} = \frac{\text{Market Value}}{\text{Initial Margin}}$$ $$= \frac{$1{,}000{,}000}{1.03} = $970{,}874$$ _Initial margin > 1 means you always get less cash than your collateral is worth - the lender keeps a cushion._
+    
+5. Haircut = the percentage chunk the lender shaves off your collateral value: $$\text{Haircut} = 1 - \frac{1}{\text{Initial Margin}} = 1 - \frac{1}{1.03} = 2.91 $$_Haircut and initial margin say the same thing - haircut is the loss percentage, margin is the ratio form of it._
+    
+6. Repurchase price = loan amount grown at the repo rate, scaled down for the actual number of days: $$\text{Repurchase Price} = \text{Purchase Price} \times \left[1 + \text{Repo Rate} \times \frac{\text{Days}}{360}\right]$$ $$= $970{,}874 \times \left[1 + 0.02 \times \frac{90}{360}\right] = $975{,}728$$ _Same as simple interest on a loan - rate times time, no compounding._
+    
+7. If collateral market value drops during the repo term → the cushion the lender built in via initial margin starts eroding → lender issues a variation margin call (a demand for additional collateral to restore the original buffer) → failure to post means the lender can seize and sell the collateral immediately.
+8. _e.g. you repo a bond worth $1,000,000 at 103% initial margin → lender gives you $970,874 → bond price falls to $950,000 → required loan value is now $\frac{$950{,}000}{1.03} = $922{,}330$ → your outstanding loan of $970,874 now exceeds this → lender demands $970,874 − $922,330 = $48,544 in additional collateral immediately.
+9. Repo serves three players differently → banks and financial institutions use it to borrow cash against securities they already hold → institutional investors (mutual funds, pension funds) use it to earn the repo rate on idle cash → central banks use it to control money supply (buying securities injects cash, selling pulls it back).    
+10. Hedge funds use repo in reverse → they lend cash to borrow a specific security (called a "special trade") → immediately sell that security in the open market → buy it back cheaper later → return it to the repo counterparty at maturity → profit = price drop on the security minus the repo rate they paid; if the security is very hard to borrow, the hedge fund may accept a negative repo rate just to get their hands on it._
+11. Repo rate moves with four levers → higher when money market rates rise (repo competes with alternatives) → higher when repo term is longer → lower when collateral is high quality or in short supply (lender wants that security) → higher when collateral is not actually delivered to the lender (undercollateralized = more risk = more compensation demanded).
+
+
+> [!tip] HAMMER THIS INTO YOUR HEAD
+> 
+> WHEN REPO RATES ARE HIGHER?
+> 
+> One question covers everything: what's my risk, what are my alternatives, and how badly do I want that collateral?
+> 
+> Imagine yourself as the lender, you're handing over cash and holding a security as protection. If market rates are high, you have better places to put that cash, so you demand more to stay. If the term is long, more can go wrong, so again you charge more. If the borrower keeps the security at their end without delivering it to you, you can't sell it if they default means higher rate. The one exception: if the collateral is a scarce, in-demand security, you actually _want_ it on your books temporarily, so you're willing to accept less. 
+
+12. Tri-party repo solves the operational risks but not credit risk → a third party custodian (usually a large bank or clearinghouse) sits between the two sides → handles collateral valuation, margining, and settlement → reduces margining and netting risk → bilateral repo (no third party) is cheaper but leaves both sides managing all of this themselves.
 ### MODULE 52.1: FIXED INCOME BOND VALUATION
 
 1. If 2 year YTM is 4.3% and 5 year YTM is 5.2%, what is the 3 year forward rate. $(1.052^5 / 1.043^2)^{(1/3)} - 1 = 5.81\%$
@@ -161,7 +219,7 @@ At t+1:
 >
 > $$\sum_{t=1}^{T} \frac{CF_t}{\big(1 + s_t + Z\big)^{t}} = \text{Price}$$
 >
-> Callable bonds — option‑adjusted spread:
+> Callable bonds - option‑adjusted spread:
 >
 > OAS = Z‑spread − Option cost
 >
@@ -293,9 +351,9 @@ If your quoted margin is less than discount margin the bond trades at discount a
 > PV = 100 / (1 + 0.01258) = 98.76 
 
 
-### MODULE 55.1: The Term Structure of Interest Rates — Spot, Par, and Forward Curves
+### MODULE 55.1: The Term Structure of Interest Rates - Spot, Par, and Forward Curves
 
-#### Forward Rates — Intuition and No-Arbitrage
+#### Forward Rates - Intuition and No-Arbitrage
 
 - Why “forward”: It is the implied rate for a future period, inferred today from longer-dated spot yields.
 - No-arbitrage relation (annual compounding example):
@@ -304,7 +362,7 @@ If your quoted margin is less than discount margin the bond trades at discount a
 - Interpretation: Being indifferent between buying a 2-year zero today vs. rolling 1-year zero for two years implies this equality; otherwise, arbitrage exists.
 
 Par rate:  The yield-to-maturity for a given maturity that makes the present value of the bond’s cash flows equal to par (100% of face value).
-#### Maturity Effect — Volatility Across Horizons
+#### Maturity Effect - Volatility Across Horizons
 
 - Short-term rates/yields are typically more volatile than long-term rates because they reflect immediate policy and liquidity conditions, while long-term rates embed an average of expected short rates plus a term premium.
 - **Term premium** compensates for uncertainty over long horizons; as maturity increases, instantaneous shocks are averaged across many expected future short rates, dampening volatility relative to short maturities.
@@ -313,7 +371,7 @@ Note: Premium bonds often have effective durations below time-to-maturity, as la
 
 ### MODULE 57.1: Yield-Based Bond Duration Measures and Properties
 
-#### Maturity Risk — First Principles and Duration Link
+#### Maturity Risk - First Principles and Duration Link
 
 - Present value mechanics: each cash flow $PV_t = CF_t / (1 + r)^t$. Sensitivity to r grows with t:
   $∂PV_t/∂r = − t · CF_t / (1 + r)^{t+1}$ → farther cash flows (larger t) lose more value for the same ∆r.
@@ -493,7 +551,7 @@ Finite-difference formulas estimate those derivatives using $(P_H, P_L, P_0)$
 > Consider our 5-year, 11% annual coupon bond priced at 86.59138 to yield 15% to maturity. If its YTM increases by 50 basis points, its price will decrease to 85.09217.If its YTM decreases by 50 basis points, its price will increase to 88.12721. Calculate the approximate convexity of the bond.
 
 ### MODULE 59.1: CURVE-BASED AND EMPIRICAL FIXED-INCOME RISK MEASURES
-1. The yield curve does not always move in a parallel way—short-term rates, medium-term rates, and long-term rates can change by different amounts or even in different directions. At the same time, many bonds do not have fixed cash flows: borrowers may prepay, issuers may call the bond early, or payments may change when interest rates move. 
+1. The yield curve does not always move in a parallel way-short-term rates, medium-term rates, and long-term rates can change by different amounts or even in different directions. At the same time, many bonds do not have fixed cash flows: borrowers may prepay, issuers may call the bond early, or payments may change when interest rates move. 
 2. Macaulay and modified duration assume a **parallel yield curve shift** and **fixed cash flows with no embedded options**.
 3. **Effective Duration:** 
 4. **Macaulay Duration:** Weighted Average of Time where weights are PV of cashflows.
@@ -565,14 +623,14 @@ $$\boxed{\text{Mac. D} = \sum_{i=o}^N \text{PV}_i \times i}$$
 4. **Ratings lag reality:** market reprices risk instantly → ratings update slow → same rating bonds can trade very different yields because market cares about timing of default + recovery, ratings just average expected loss
 5. **Ratings miss hidden/complex risks:** litigation, disasters, leverage events (buybacks, acquisitions) are hard to predict → agencies disagree → same bond can get split ratings → uncertainty not fully captured.    
 6. **Agencies can be wrong:** incentives + model limits → misratings (e.g., pre-2008 MBS) → high-rated names can still collapse → takeaway = don’t outsource thinking, front-run rating changes > reacting to them
-7. Two spreads, don't confuse them: yield spread = extra return over risk-free benchmark (credit risk proxy), bid-offer spread = dealer buy/sell gap (liquidity risk proxy) — exam questions will test whether you know which one is being referenced
-8. Bid-offer spread is your liquidity risk meter: wider gap → higher transaction cost → higher liquidity risk, and the drivers are simple — less debt outstanding + lower credit quality + less trading activity → wider spreads
+7. Two spreads, don't confuse them: yield spread = extra return over risk-free benchmark (credit risk proxy), bid-offer spread = dealer buy/sell gap (liquidity risk proxy) - exam questions will test whether you know which one is being referenced
+8. Bid-offer spread is your liquidity risk meter: wider gap → higher transaction cost → higher liquidity risk, and the drivers are simple - less debt outstanding + lower credit quality + less trading activity → wider spreads
 9. Stress causes contagion: junk illiquidity spikes in crisis → risk aversion spreads → IG bid-offer spreads widen too even though the credit quality hasn't changed, liquidity fear is contagious
 10. **You can decompose yield spread into credit vs liquidity: calculate yield at bid and at offer → difference is the liquidity component → strip it out to isolate pure credit risk premium**
 ### MODULE 64.1: ASSET BACKED SECURITIES
 
 1. Compared to ordinary bank bonds, covered bonds are safer because your repayment isn’t riding on just “the bank stays healthy.” You also have a legally protected pile of assets sitting behind the bond. If assets fail to pay, you can lay claim on the assets of the originator. **The covered bonds have a recourse to the originator.** 
-2. In a covered bond, the bank still owns the loans (they stay on its balance sheet), so regulators still treat them as the bank’s assets/risk. So the bank must still hold the same capital buffer against them—unlike securitization, where selling/isolating the loans can reduce required capital.
+2. In a covered bond, the bank still owns the loans (they stay on its balance sheet), so regulators still treat them as the bank’s assets/risk. So the bank must still hold the same capital buffer against them-unlike securitization, where selling/isolating the loans can reduce required capital.
 3. There is no tranching in covered bonds and the collateral pool cannot contain non performing assets.
 4. **Hard Bullet** Suppose issuer misses Year 2 coupon Under hard bullet, this is immediate default. Acceleration happens immediately. The bondholders’ claim becomes: “pay me everything outstanding now."
 5. **Soft-bullet**: if the issuer can’t pay at maturity, default/acceleration is delayed by extending the maturity (e.g., up to a year) to give time to pay, and only if still unpaid after the extension does default kick in. 

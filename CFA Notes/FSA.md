@@ -9,10 +9,7 @@ includeLinks: true # Make headings clickable
 hideWhenEmpty: false # Hide TOC if no headings are found
 debugInConsole: false # Print debug info in Obsidian console
 ```
-
-
 ### MODULE 28.1: REVENUE RECOGNITION
-
 1. Five-step process for revenue recognition (IFRS 15 / ASC 606):
    - Step 1: Identify the contract — establish a valid agreement exists. Example: A SaaS company signs a one-year software subscription for $12,000.
    - Step 2: Identify performance obligations — break down distinct deliverables. **Example: Software access and monthly support are separate obligations.**
@@ -236,30 +233,40 @@ The actual weighted shares are calculated as:
 > [!danger] DO NOT MAKE THIS MISTAKE
 > Inventory and A/C Payables Turnover use COGS as numerator
 
-### MODULE 30.1: MODULE 30.1: CASH FLOW INTRODUCTION AND DIRECT METHOD CFO
-
-```
-Revenue = 104,000
-COGS = 40,000
-Wages = 5000
-Change in Wages Payable = -3500 
-Interest = 1000
-Change in Interest Payable = 500 
-Tax = 20000 
-Change in Tax Payable = 1000 
-Change in DTL = 5000
-Cash Collected from Customers = Revenue + Increase in Unearned Revenue - Increase in AR = 104,000 + 4,000 - 1000 = 107,000
-
-Cash Paid to Suppliers = COGS + Increase in Inventory - Increase in AP = 40,000 - 2000 - 4000 = 34000
-
-Wages paid in cash = 5000 + 3500 = 8500
-Interest paid in cash = 5000 + 3500 = 500
-Taxes paid in cash = 20000 - 5000 - 1000 = 14000
+### MODULE 30.1: CASH FLOW INTRODUCTION AND DIRECT METHOD CFO
+1. Balance sheet = snapshot (assets, how they're funded) at one date → income statement, cash flow statement, and equity statement are all "flow" bridges that explain _how_ you got from last snapshot to this one → so every line-item change on the balance sheet must trace through at least one flow statement, and if it doesn't, something's wrong.
+2. Income statement runs on accrual accounting (recognize revenue when earned, not when cash lands) → cash flow statement corrects for this by tracking only actual cash movement → the gap between the two creates or destroys current assets/liabilities on the balance sheet: e.g., revenue recognized but cash not yet collected = accounts receivable goes up; cash received before you deliver = deferred revenue (a liability) goes up until you perform.
+3. That gap gives you a built-in diagnostic: Beginning A/R + Revenue − Cash Collected = Ending A/R → if ending A/R is ballooning while cash collected flatlines, the company may be booking fake revenue (sales recognized on paper with no real expectation of collection) → same logic applies in reverse to payables and deferred revenue, so cross-checking flow statements against balance sheet movements is your primary fraud-detection tool.
+4. Cash flow statement splits into operating (core business cash), investing (buying/selling long-term assets), and financing (debt/equity raises and repayments) → a transaction hits the income statement and the cash flow statement at _different times_ — depreciation hits income as an expense over years but the full cash outflow hit investing on purchase day; interest accrues on the income statement over the loan's life but cash leaves only on payment date → understanding which bucket and which timing applies is the whole game of reading these statements together.
+5. Real example: ABC buys $100 inventory on credit Jan 1 
+	- Balance sheet: inventory ↑$100, A/P ↑$100, no cash move yet. 
+	- Pays supplier Jan 30 — cash ↓$100, A/P ↓$100, operating cash flow ↓$100. 
+	- Sells for $150 on credit Feb 1 — A/R ↑$150, inventory ↓$100, income statement: revenue $150, COGS $100, profit $50, still no cash. 
+	- Customer pays Feb 15 — cash ↑$150, A/R ↓$150, operating cash flow ↑$150. Net result: $50 profit on income statement, $50 net cash inflow on cash flow statement, but they arrived at completely different dates.
 
 
+> [!info] MEMORISE THIS 
+> How to use direct method? - Pick a P&L line (revenue, COGS, salary expense, whatever)
+> - Find its B/S partner (A/R for revenue, A/P for purchases, wages payable for salary, etc.)
+> - Check: did that B/S account go up or down?
+> - Asset up = you got less cash than the P&L says. Liability up = you paid less cash than the P&L says. Reverse for decreases.
+> - P&L number ± that B/S change = actual cash. Done.
 
-```
+> [!TIP] HAMMER THIS INTO YOUR HEAD
+> Memorise these two lines:
+> **BEGINNING + WHAT GOES IN − WHAT GOES OUT = ENDING**
+> **CASH PAID = EXPENSE + INCREASE IN ASSET - INCREASE IN LIABILITY**
 
+6. **Cash from customers — one step:**
+	Beginning A/R + Revenue − Cash Collected = Ending A/R
+You know beginning A/R, revenue, ending A/R → solve for cash collected. Done.
+
+7. **Cash to suppliers — two steps, same rule twice:**
+	- Step 1 — _how much did you buy?_ **Beginning Inventory + Purchases − COGS = Ending Inventory** You know everything except purchases → solve for purchases.
+	- Step 2 — _how much did you actually pay?_ **Beginning A/P + Purchases − Cash Paid = Ending A/P** You now know purchases from step 1 → solve for cash paid.
+8. Same logic extends to every operating line: 
+	- **Opening Wages Payable + Salary Expense - Cash Wage Payments = Ending Wages Payable**. Solve for Cash Wage Payments.
+	- **Opening Interest Payable + Interest Expense - Cash Interest Payments = Ending Interest Payable**. Solve for Cash Interest Payments.
 #### Cash flow classifications (US GAAP vs IFRS)
 
 - US GAAP: Interest paid = CFO; interest received = CFO; dividends received = CFO; dividends paid = CFF; taxes = CFO (with limited exceptions).

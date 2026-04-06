@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/FIXED INCOME.md",
+                "file": "CFA Notes/FSA.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "FIXED INCOME"
+              "title": "FSA"
             }
           }
         ],
@@ -427,6 +427,96 @@
             "id": "07cb0efec403530c",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "e318776710dff70f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "3247e4de643baaa7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "391e7de8d9a6cbbb",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "af60fc6cb910ed48",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "7a0e36adc3a47604",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "796d0e2fca687f32",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "218352f4ea5ec104",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "d308fef050359759",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "725735a12fb21ed8",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -434,7 +524,7 @@
             }
           }
         ],
-        "currentTab": 30
+        "currentTab": 39
       }
     ],
     "direction": "horizontal",
@@ -451,12 +541,15 @@
       "math-indicator-changer:Change math indicator": false
     }
   },
-  "active": "07cb0efec403530c",
+  "active": "725735a12fb21ed8",
   "lastOpenFiles": [
-    "CFA Notes/PORTFOLIO MANAGEMENT.md",
-    "conflict-files-obsidian-git.md",
+    "DUMBPROOF_GUIDE_TO_WAYDEEPER.md",
     "CFA Notes/FIXED INCOME.md",
     "CFA Notes/FSA.md",
+    "Untitled.md",
+    "CFA Notes/ETHICS.md",
+    "CFA Notes/PORTFOLIO MANAGEMENT.md",
+    "conflict-files-obsidian-git.md",
     "CFA Notes/ALTERNATIVE INVESTMENTS.md",
     "CFA Notes/AGENT.md",
     "CFA Notes/Read these again.md",
@@ -466,7 +559,6 @@
     "Pasted image 20260221122433.png",
     "Dymanic Betas Using Kalman Filter.md",
     "CFA Notes/DERIVATIVES.md",
-    "CFA Notes/ETHICS.md",
     "Fixed Income/Bond Pricing.md",
     "Fixed Income",
     "Fixed Income Derivative Pricing/notebook.ipynb",
@@ -482,8 +574,6 @@
     "CFA/Full and Flat Price.md",
     "CFA/Fixed Income.md",
     "CFA/Derivatives.md",
-    "CFA/CouponStructures.md",
-    "CFA/Contingency Provisions.md",
     "CFA",
     "templates",
     "Pasted image 20260131190442.png",
