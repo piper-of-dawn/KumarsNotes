@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/FSA.md",
+                "file": "Affirmations.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "FSA"
+              "title": "Affirmations"
             }
           }
         ],
@@ -517,6 +517,36 @@
             "id": "725735a12fb21ed8",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "21e354bd615ba3b0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "226d368e72500d92",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "b95348209eba4a45",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -524,7 +554,7 @@
             }
           }
         ],
-        "currentTab": 39
+        "currentTab": 42
       }
     ],
     "direction": "horizontal",
@@ -541,12 +571,17 @@
       "math-indicator-changer:Change math indicator": false
     }
   },
-  "active": "725735a12fb21ed8",
+  "active": "f3db214b960cf90c",
   "lastOpenFiles": [
+    "Dymanic Betas Using Kalman Filter.md",
+    "index.md",
+    "Pasted image 20260221122433.png",
+    "Pasted image 20251230214023.png",
+    "CFA Notes/QUANTITATIVE METHODS.md",
+    "Untitled.md",
+    "CFA Notes/FSA.md",
     "DUMBPROOF_GUIDE_TO_WAYDEEPER.md",
     "CFA Notes/FIXED INCOME.md",
-    "CFA Notes/FSA.md",
-    "Untitled.md",
     "CFA Notes/ETHICS.md",
     "CFA Notes/PORTFOLIO MANAGEMENT.md",
     "conflict-files-obsidian-git.md",
@@ -556,8 +591,6 @@
     "C++/Concepts.md",
     "Diary/journal.md",
     "CFA Notes/EQUITY.md",
-    "Pasted image 20260221122433.png",
-    "Dymanic Betas Using Kalman Filter.md",
     "CFA Notes/DERIVATIVES.md",
     "Fixed Income/Bond Pricing.md",
     "Fixed Income",
@@ -572,8 +605,6 @@
     "CFA/Legal Terms Related to Bonds.md",
     "CFA/International and Domestic Bonds.md",
     "CFA/Full and Flat Price.md",
-    "CFA/Fixed Income.md",
-    "CFA/Derivatives.md",
     "CFA",
     "templates",
     "Pasted image 20260131190442.png",
@@ -586,7 +617,6 @@
     "CFA Notes/fsa_b2_b.txt",
     "Pasted Image 20251228112906_706.png",
     "Pasted image 20251029114056.png",
-    "Pasted image 20251230214023.png",
     "dp.png",
     "Linear Algebra/Pasted image 20250429102423.png"
   ]

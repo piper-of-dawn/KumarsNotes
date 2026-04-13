@@ -17,7 +17,7 @@ debugInConsole: false # Print debug info in Obsidian console
    - Step 4: Allocate the transaction price — allocate based on standalone selling prices. Example: $10,000 to software, $2,000 to support.
    - Step 5: Recognize revenue — when/as each obligation is satisfied. Example: Recognize $1,000/month for software and $167/month for support.
 2. Convergence notes: IASB and FASB issued converged guidance in 2014; terminology differs for “probable” (IFRS: more-likely-than-not; U.S. GAAP: likely), which can lead to differences in otherwise similar contracts.
-3. ==Under the converged accounting standards, the incremental costs of obtaining a contract and certain costs incurred to fulfil a contract must be capitalized.== If a company expensed these incremental costs in the years prior to adopting the converged standards, all else being equal, its profitability will appear higher under the converged standards.
+3. ==Under the converged accounting standards, the incremental costs of obtaining a contract and certain costs incurred to fulfil a contract must be capitalized.== If a company expensed these incremental costs in the years prior to adopting the converged standards, all elzse being equal, its profitability will appear higher under the converged standards.
 4. Principal vs Agent presentation:
    - Principal: bears inventory/primary performance risk; reports gross revenue (e.g., Amazon Retail).
    - Agent: arranges for goods/services; reports net commission as revenue (e.g., marketplace platforms). Lower revenue, often higher margins.
@@ -280,7 +280,7 @@ You know beginning A/R, revenue, ending A/R → solve for cash collected. Done.
 
 
 > [!abstract] MEMORISE THIS FOR EFFICIENCY
-> Your brain should hear: **Net Income → Remove non-operating → Undo Non Cash → Fix EC timing → CFO.**
+> Your brain should hear: **Net Income → Remove non-operating → Undo Non Cash → Fix WC timing → CFO.**
 > 				 **==CFO = NI or PAT + NCC - $\Delta$ WC==**
 > Indirect method is NOT preferred by either US GAAP or IFRS 
 > **US GAAP requires disclosure of cash paid for interest and income taxes**, while **IFRS encourages (but does not mandate) similar disclosure**. 

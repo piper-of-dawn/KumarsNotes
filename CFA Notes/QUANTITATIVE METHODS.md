@@ -1,8 +1,10 @@
+```table-of-contents
+```
 ## QUANTITATIVE METHODS
 
 ### RATES OF RETURN
 1. Interest rate = price of waiting. The required rate of return (discount rate) is the minimum return investors demand to delay consumption.
-2. Nominal = real growth + inflation protection. Money must grow in real terms and also keep up with inflation. Exact relation (Fisher equation):
+2. Nominal = real growth + inflation protection. Money must grow in real terms and also keep up with inflation. Exact relation (Fisher equation)
 $$(1 + r_{nominal}) = (1 + r_{real}) \times (1 + \pi_{expected})$$
 Expected inflation, not current inflation, because interest rates price the future.
 $$ r_{nominal} \approx r_{real} + \pi$$Expected inflation, always
