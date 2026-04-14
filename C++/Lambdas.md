@@ -18,5 +18,4 @@ using T2 = decltype([](int x) { return x + 2; });  // Different type from T1
 static_assert(!std::is_same_v<T1, T2>);  // True: bodies differ
 int y = 10;
 auto f = [y](int x) -> int { return x + y; }
-
-
+```

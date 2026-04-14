@@ -887,3 +887,179 @@ $$ \boxed {\mathrm{ROE} = \frac{\text{EAT}}{\text{EBT}} \times \frac{\text{EBT}}
 8. Net income per employee and sales per employee are used in the analysis and valuation of service and consulting companies and software companies which usually have intangible assets such as employee skills. Steam has a $3.5 million to over $10 million in profit per employee.
 9. For Walmart, average revenue per square foot is the metric.
 10. For Spotify, average revenue per user is the metric.
+
+### MODULE 27.1: FINANCIAL STATEMENT ROLES
+
+*Placeholder*
+
+### MODULE 28.3: NONRECURRING ITEMS
+
+> [!abstract] MEMORISE
+> - Unusual or infrequent items are still part of **income from continuing operations**.
+> - They are reported **before tax**.
+> - Discontinued operations are shown **separately, net of tax, after continuing operations**.
+> - Expected loss on disposal can be recognized at the measurement date.
+> - Expected gain on disposal **cannot** be recognized until sale is completed.
+
+> [!tip] HAMMER THIS INTO YOUR HEAD
+> Unusual or infrequent items stay inside income from continuing operations and are reported before tax.
+
+1. Nonrecurring items are material events that are unusual in nature or infrequent in occurrence. Examples from the PDF: gains or losses from sale of assets or part of a business, impairments, write-offs, write-downs, and restructuring costs.
+
+2. Do not blindly remove these items from analysis. Some firms have “unusual” losses every year or every few years. If it keeps happening, it is not helping you understand recurring earnings to pretend it does not exist.
+
+3. A discontinued operation is different. Management has decided to dispose of a business that is physically and operationally distinct from the rest of the firm in assets, operations, and investing and financing activities.
+
+> [!abstract] MEMORISE
+> Discontinued operations:
+> - Must be physically and operationally distinct.
+> - Are shown net of tax.
+> - Sit after income from continuing operations.
+> - Expected losses can be accrued at the measurement date.
+> - Expected gains cannot be recognized until sale is completed.
+
+4. Once an operation qualifies as discontinued, its income or loss is reported separately in the income statement, net of tax, after income from continuing operations. Any prior income statements presented must be restated to separate discontinued operations from continuing operations.
+
+5. On the measurement date, the firm accrues any estimated loss during the phaseout period and any estimated loss on sale of the business. But expected gain is different: you cannot recognize it until the sale is actually completed.
+
+6. Forecasting rule: analysts should exclude discontinued operations when forecasting future earnings because they do not affect net income from continuing operations. But the disposal itself may still tell you something about future cash flows, strategy, or weakness in the firm.
+
+7. Accounting changes come next. Change in accounting policy usually uses retrospective application, so prior statements are restated. Change in accounting estimate usually uses prospective application, so old statements stay as they are and only future statements change.
+
+> [!warning] EASY TO FORGET
+> Change in accounting policy = usually retrospective.
+> Change in accounting estimate = prospective.
+> If you mix these up, you will misread comparability across periods.
+
+### MODULE 29.2: COMMON-SIZE BALANCE SHEETS
+
+*Placeholder*
+
+### MODULE 30.3: INVESTING AND FINANCING CASH FLOWS AND IFRS/U.S. GAAP
+
+*Placeholder*
+
+### MODULE 32.2: INFLATION IMPACT ON FIFO AND LIFO
+
+*Placeholder*
+
+### MODULE 32.3: PRESENTATION AND DISCLOSURE
+
+*Placeholder*
+
+### MODULE 33.2: IMPAIRMENT AND DERECOGNITION
+
+> [!abstract] MEMORISE
+> - Impairment = unexpected drop in value below carrying value.
+> - Derecognition = asset is removed because it is sold, exchanged, abandoned, or retired.
+> - IFRS: compare carrying value with **recoverable amount**.
+> - U.S. GAAP: test with **undiscounted cash flows**, then measure with **fair value**.
+> - Impairment lowers current income, but can make future ratios look better.
+
+1. Depreciation and amortization are normal spreading of cost over useful life. Impairment is different: value falls unexpectedly below carrying value. Derecognition is the final step when the asset is sold, exchanged, abandoned, or retired.
+
+2. IFRS (International Financial Reporting Standards): the asset is impaired when carrying value exceeds recoverable amount. Recoverable amount is the higher of fair value less selling costs and value in use. Value in use is the present value of future cash flows from continued use and disposal.
+
+> [!tip] HAMMER THIS INTO YOUR HEAD
+> U.S. GAAP impairment for held-for-use assets:
+> - Test with undiscounted cash flows.
+> - Measure loss with fair value.
+> IFRS:
+> - Compare carrying value directly with recoverable amount.
+
+3. U.S. GAAP (Generally Accepted Accounting Principles): first apply the recoverability test. If carrying value is greater than future undiscounted cash flows, the asset is impaired. Then measure the loss using fair value, or discounted future cash flows if fair value is not known.
+
+4. Once impairment is recorded, the asset is written down on the balance sheet and a loss goes through the income statement. Assets fall. Equity falls through retained earnings. In the impairment year, Return on Assets (ROA) and Return on Equity (ROE) usually fall because net income falls.
+
+> [!warning] CFA TRAP
+> After impairment:
+> - Current-period net income usually falls.
+> - Future depreciation or amortization usually falls.
+> - Future ROA, ROE, and asset turnover can rise.
+> This does not mean cash flow improved.
+
+5. In later periods, depreciation or amortization will be lower because the asset now has a lower carrying amount. That can push up future net income, ROA, ROE, and asset turnover. This is an accounting effect, not proof that the business improved. The PDF also says impairment has no cash flow impact when recognized because it is an unrealized loss until disposal.
+
+> [!abstract] MEMORISE
+> Held for sale:
+> - Stop depreciation and amortization.
+> - Compare with fair value less selling costs.
+> - Reversal is capped at the original impairment loss.
+
+6. If the firm intends to sell the asset and the sale is probable, the asset becomes held for sale. Then depreciation or amortization stops. The asset is impaired if carrying value exceeds fair value less selling costs. If value later recovers, loss reversal is allowed for held-for-sale assets under both IFRS and U.S. GAAP, but only up to the original impairment loss.
+
+7. Under IFRS, impairment loss on an identifiable long-lived asset held for use can also be reversed later if value recovers, but only up to the original impairment loss. Under U.S. GAAP, recovery of impairment loss for held-for-use assets is typically not allowed.
+
+8. Derecognition rule: when a long-term asset is sold, remove it from the balance sheet and record gain or loss in the income statement as:
+
+$$
+\text{Gain or Loss on Sale} =
+\text{Sale Proceeds} - \text{Carrying Value}
+$$
+
+You compare what you got in cash with what the asset was still worth on the books.
+
+9. If the cash flow statement uses the indirect method, this gain or loss is removed from net income in cash flow from operations because the sale proceeds belong in investing cash flow, not operating cash flow.
+
+10. Brownfield example from the PDF:
+
+$$
+\text{Carrying Value} = \$900{,}000 - \$100{,}000 = \$800{,}000
+$$
+
+$$
+\text{IFRS Recoverable Amount} =
+\max(\$785{,}000,\$760{,}000) = \$785{,}000
+$$
+
+$$
+\text{IFRS Impairment Loss} =
+\$800{,}000 - \$785{,}000 = \$15{,}000
+$$
+
+$$
+\text{U.S. GAAP Impairment Loss} =
+\$800{,}000 - \$790{,}000 = \$10{,}000
+$$
+
+Same asset, different reported loss, because IFRS compares directly with recoverable amount while U.S. GAAP uses an undiscounted cash flow screen first and fair value second.
+
+### MODULE 33.3: LONG-TERM ASSET DISCLOSURES
+
+*Placeholder*
+
+### MODULE 35.2: DEFERRED TAX ASSETS AND LIABILITIES
+
+*Placeholder*
+
+### MODULE 35.3: TAX RATES AND DISCLOSURES
+
+*Placeholder*
+
+### MODULE 36.3: WARNING SIGNS
+
+*Placeholder*
+
+### MODULE 37.1: INTRODUCTION TO FINANCIAL RATIOS
+
+1. Financial analysis starts with a problem: raw statements are too messy to compare, so you first adjust them for your purpose → that makes the numbers usable → but adjusted numbers still do not explain themselves → so the next step is to pass them through tools like ratios, common-size statements, graphs, and regression analysis (a method that estimates how one variable moves with another).
+
+2. Ratios come first because they compress two numbers into one relationship → that helps you project earnings and cash flow, judge flexibility, assess management, track change, and compare firms → but a ratio by itself is weak because different accounting methods, mixed-industry firms, and shifting business conditions distort the comparison → so a ratio only tells you where to look next, not what the final answer is.
+
+3. Once ratios tell you where the tension is, common-size statements show you exactly where it sits inside the accounts → a vertical balance sheet turns every item into a share of total assets, and a vertical income statement turns every item into a share of sales → but this still has a limit because percentages reveal pattern, not cause → so you use common-size analysis to separate “this changed” from “why it changed,” which pushes you into deeper investigation.
+
+4. If you want the pattern to become even easier to see, you move from percentages to pictures and statistical links → graphs highlight composition shifts over time, and regression analysis (a method that links variables for forecasting) helps estimate outputs like sales from inputs like Gross Domestic Product (GDP) → but neither a graph nor a regression proves the business reason behind the movement → so they work best as early warning systems that tell you which line items deserve real analysis.
+
+5. Put it together with the PDF’s example: net profit margin rose about 5% in 20X6, but cost of goods sold improved only 0.48% and Selling, General, and Administrative expense (SG&A) improved only about 0.5% → that pushes you to the next layer, where common-size analysis shows most of the jump came from lower amortization and lower interest and other debt expense → but lower amortization is non-cash and lower interest may not last → so the correct conclusion is not “profitability is permanently better,” but “you now know exactly which items must be tested before trusting future cash flow.”
+
+### MODULE 37.4: DUPONT ANALYSIS
+
+*Placeholder*
+
+### MODULE 37.5: INDUSTRY-SPECIFIC FINANCIAL RATIOS
+
+*Placeholder*
+
+### MODULE 38.1: FINANCIAL STATEMENT MODELING
+
+*Placeholder*
