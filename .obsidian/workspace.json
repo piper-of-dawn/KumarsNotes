@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/FSA.md",
+                "file": "CFA Notes/DERIVATIVES.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "FSA"
+              "title": "DERIVATIVES"
             }
           }
         ]
@@ -541,6 +541,86 @@
             "id": "47c1a30b809c9d46",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "6e2c230a5aaf9f36",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "195151a5c53a4880",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "d847efe50f007528",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "6ce6a928f163c2a0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "542cff8d2c1819ae",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "425de4ce97ed7a4b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "633c39d8a40d5286",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "cbbf0eed54a96282",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -548,7 +628,7 @@
             }
           }
         ],
-        "currentTab": 43
+        "currentTab": 51
       }
     ],
     "direction": "horizontal",
@@ -565,9 +645,27 @@
       "math-indicator-changer:Change math indicator": false
     }
   },
-  "active": "ab61447ddfebe320",
+  "active": "cbbf0eed54a96282",
   "lastOpenFiles": [
+    "CFA Notes/Read these again.md",
+    "CFA Notes/FSA.md",
+    "CFA Notes/module58_convexity_curve.svg",
+    "CFA Notes/DERIVATIVES.md",
+    "CFA Notes/ECONOMICS.md",
+    "CFA Notes/module58_convexity_feature_map.svg",
     "CFA Notes/FIXED INCOME.md",
+    "CFA Notes/ETHICS.md",
+    "CFA Notes/FSA.md.tmp.683950.1776453510078",
+    "CFA Notes/FSA.md.tmp.683950.1776453503801",
+    "CFA Notes/FSA.md.tmp.683950.1776453497493",
+    "CFA Notes/FSA.md.tmp.683950.1776453348761",
+    "CFA Notes/FSA.md.tmp.683950.1776453336506",
+    "CFA Notes/FSA.md.tmp.683950.1776453325263",
+    "CFA Notes/FSA.md.tmp.683950.1776453144377",
+    "CFA Notes/FSA.md.tmp.683950.1776453121927",
+    "CFA Notes/FSA.md.tmp.683950.1776453100168",
+    "CFA Notes/FSA.md.tmp.683950.1776452929411",
+    "CFA Notes/AGENT.md",
     "ANALYSIS OF VARIANCE.md",
     "Affirmations.md",
     "Dymanic Betas Using Kalman Filter.md",
@@ -575,43 +673,24 @@
     "Pasted image 20260221122433.png",
     "Pasted image 20251230214023.png",
     "CFA Notes/QUANTITATIVE METHODS.md",
-    "CFA Notes/FSA.md",
     "DUMBPROOF_GUIDE_TO_WAYDEEPER.md",
-    "CFA Notes/ETHICS.md",
     "CFA Notes/PORTFOLIO MANAGEMENT.md",
     "conflict-files-obsidian-git.md",
     "CFA Notes/ALTERNATIVE INVESTMENTS.md",
-    "CFA Notes/AGENT.md",
-    "CFA Notes/Read these again.md",
     "C++/Concepts.md",
     "Diary/journal.md",
     "CFA Notes/EQUITY.md",
-    "CFA Notes/DERIVATIVES.md",
     "Fixed Income/Bond Pricing.md",
-    "Fixed Income",
-    "Fixed Income Derivative Pricing/notebook.ipynb",
-    "Fixed Income Derivative Pricing",
     "Excalidraw/Callable Bond.md",
     "DataTable Library/Cheatsheet.md",
-    "DataTable Library",
     "CFA/Yeild to Maturity.md",
     "CFA/Revision Notes for CFA.md",
     "CFA/Numericals to Memorise.md",
-    "CFA/Legal Terms Related to Bonds.md",
-    "CFA/International and Domestic Bonds.md",
-    "CFA",
-    "templates",
     "Pasted image 20260131190442.png",
     "Excalidraw/Scripts/Downloaded/Split Ellipse.svg",
     "Excalidraw/Scripts/Downloaded/Slideshow.svg",
     "Excalidraw/Scripts/Downloaded/Set Grid.svg",
-    "Excalidraw/Scripts/Downloaded",
-    "Excalidraw/Scripts",
-    "CFA Notes/_fixed_income.txt",
-    "CFA Notes/fsa_b2_b.txt",
     "Pasted Image 20251228112906_706.png",
-    "Pasted image 20251029114056.png",
-    "dp.png",
-    "Linear Algebra/Pasted image 20250429102423.png"
+    "Pasted image 20251029114056.png"
   ]
 }

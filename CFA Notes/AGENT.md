@@ -63,6 +63,45 @@ Notes Style Conventions (KumarsNotes)
   - Keep the same callout/typography “spirit”.
   - Pointers formatting: Use numbered lists (1., 2., 3.) for module pointers instead of dash bullets, unless the user explicitly requests otherwise.
 
+Plain-Language Rule (STRICT)
+
+- Never use acronyms, tickers, or abbreviations without spelling them out first time in the same line. "ADR" → "average daily rate (the price per room actually sold)." "RevPAR" → "Revenue per Available Room." "ARPU" → "average revenue per user." No exceptions, even in short hammer-bullets.
+- No cryptic shorthand like "Taj (USD 400 ADR × 70% occ) vs OYO (USD 30 × 95%) — same category, opposite levers." Write it out: "The Taj in Mumbai might charge USD 400 per night and fill 70% of its rooms. A budget hotel like OYO might charge USD 30 and fill 95%."
+- Use full sentences. Do not rely on "≈", "→", or compressed phrases to carry meaning. Arrows and symbols are fine *after* the idea has been stated in words.
+- Examples must be self-explanatory — the reader should not have to know what "Big-4" or "sq ft" means without being told.
+- One-liner hammers still exist, but "one-liner" refers to *one concept per bullet*, not *one physical line of text*. A 2–4 sentence plain-English bullet is fine; a single cryptic sentence full of jargon is not.
+
+How Kumar Wants Examples Written
+
+Every example that is meant to make a concept stick should follow this pattern. This is not a style suggestion — it is how examples must be written in these notes.
+
+1. **Use a real, famous company the reader already knows.** Not "Firm A" or "Company X." Use Apple, Walmart, Starbucks, Steam/Valve, Netflix, Spotify, Jio, the Taj, OYO, Reliance. If it is a bank, name an Indian bank (State Bank of India, HDFC) or give it a plain name like "Janata Bank." Abstract placeholders do not stick; recognisable brands do.
+
+2. **Give two contrasting cases, not one.** A single number has no meaning. "Apple Store earns about USD 5,500 per square foot" is forgettable. "Apple earns USD 5,500 per square foot while Walmart earns about USD 400" is unforgettable, because the contrast shows what the ratio actually *reveals* about a business. Always pair a high case with a low case, a typical case with an extreme case, or one business model against another.
+
+3. **Use concrete, specific numbers — not ranges or vague language.** "USD 5,500 per square foot," "350 employees," "100 million gamers," "USD 12 per month." Not "a lot," "very high," or "substantial." Round to memorable figures, but keep them specific enough that the reader can visualise the shop, the hotel, the user.
+
+4. **State the example in full plain English sentences.** No parenthetical shorthand. Write it the way you would say it out loud to someone at a chai stall. "Valve, the company that runs the Steam gaming store, has only about 350 employees but serves more than 100 million gamers." Not "Valve/Steam ≈ USD 10M/emp, ~350 staff, 100M+ users."
+
+5. **Always end with "so what."** After the two numbers, explain in one sentence *what the ratio told you that the raw revenue number did not*. "That is why analysts watch same-store sales — it tells you whether the business itself is getting stronger, or whether the company is only buying growth by opening new outlets." Without the "so what," the example is trivia; with it, the example teaches the ratio.
+
+6. **Prefer ceiling-vs-floor pairings for productivity ratios.** For revenue-per-employee, pair a software/platform extreme (Steam, WhatsApp pre-acquisition) with a normal service firm (a consulting firm). For sales-per-square-foot, pair Apple with Walmart. The spectrum gives the reader an anchor range to place any new firm inside.
+
+7. **Use real regional examples where they fit.** Jio for ARPU, Taj/OYO for hotels, State Bank of India or HDFC for banks. The reader is Indian and studies for the CFA — Indian examples land faster than generic American ones, but American giants (Apple, Walmart, Netflix) are fine when they are the iconic case.
+
+8. **Never sacrifice clarity for brevity.** If the full explanation needs 3–4 sentences, give 3–4 sentences. A 1-line cryptic example that the reader has to decode is worse than a 4-line plain one that reads itself. The test is: can the reader re-read the bullet a month from now and immediately see the point, without having to look anything up?
+
+Feynman-Style Intuition Blocks (when the concept is counterintuitive)
+
+- When a formula or ratio is counterintuitive, abstract, or commonly mis-interpreted (e.g., CV, interest burden, tax burden, leverage amplification, DuPont terms), add a dedicated intuition block **before or alongside** the formula — not only after.
+- Use a `[!info]` callout with an uppercase title like `WHY X WORKS (intuition first)` or `WHY HIGHER X = MORE Y (intuition first)`.
+- Write it in Feynman style: casual, conversational, address the reader directly, like explaining to a friend at a chai stall. Drop jargon on first pass and reintroduce it only after the intuition lands.
+- Always include a concrete numerical example with real-sounding names/setups (two shops, two companies, utility vs semiconductor, grocer vs luxury brand). Compare two cases side-by-side so the reader *sees* the contrast, not just reads it.
+- Close the block with a one-line "why this is the right definition" — i.e., why the formula is built this way and not some alternative (e.g., "why divide by mean and not total"). This inoculates against the most common exam trap.
+- Keep it append-only: do not replace the crisp MEMORISE/Notation/Formula blocks. The intuition block supplements them; it does not substitute.
+- Length guidance: 6–12 short lines is plenty. If it runs longer than one screen, cut.
+- Triggers to add a Feynman block: a ratio that scales by size (CV, per-employee, per-room), a fraction that is "kept" vs "cost" (tax burden, interest burden), a decomposition with many terms (DuPont), or any place the sign/direction is commonly flipped.
+
 Kumar’s Style Refinements (observed from DERIVATIVES.md, Module 71.1)
 
 - Numbered pointers first: Start module sections with a short, numbered list of key points in the user’s voice (direct, imperative, concise) before deeper callouts or examples.

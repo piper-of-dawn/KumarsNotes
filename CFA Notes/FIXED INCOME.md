@@ -21,7 +21,7 @@ At t+1:
 - Negative convexity: as yields fall and prices rise, upside is capped by the call feature; price rises less than for an option‑free bond.
 - Value vs option‑free: callable bond value is lower than an identical non‑callable bond because the investor is short the call option.
 
-### MODULE 48.1: FIXED-INCOME CASH FLOWS AND TYPES]
+### MODULE 48.1: FIXED-INCOME CASH FLOWS AND TYPES
 
 
 > [!tip] HAMMER THIS INTO YOUR HEAD
@@ -371,18 +371,137 @@ Note: Premium bonds often have effective durations below time-to-maturity, as la
 
 ### MODULE 57.1: Yield-Based Bond Duration Measures and Properties
 
-#### Maturity Risk - First Principles and Duration Link
+> [!abstract] MEMORISE
+> - Duration is the bond’s interest-rate sensitivity meter.
+> - Macaulay duration = weighted-average time to cash flows.
+> - Modified duration = percentage price sensitivity to a change in the bond’s own yield.
+> - Money duration and PVBP translate that sensitivity into actual currency moves.
 
-- Present value mechanics: each cash flow $PV_t = CF_t / (1 + r)^t$. Sensitivity to r grows with t:
-  $∂PV_t/∂r = − t · CF_t / (1 + r)^{t+1}$ → farther cash flows (larger t) lose more value for the same ∆r.
-- Long-maturity bonds have more far-dated cash flows, so for a given yield change, percentage price moves are larger than for short bonds (higher interest rate risk).
-- Macaulay duration $$D = Σ[t · PV(CF_t)] $$Price is a weighted-average time; longer maturities and lower coupons increase D and thus modified duration (price sensitivity):
-  $$∆P / P ≈ − D_{mod} \times \delta Y$$ where 
-$$D_{mod} = D / (1 + y).$$
+1. Duration exists because bond prices and yields move in opposite directions, but not all bonds move by the same amount. A tiny 1-year zero barely flinches. A long 30-year bond can get slapped around.
+2. So duration is just a cleaner answer to one question: **if yield moves, how hard does this bond’s price get hit?**
 
-Reinvestment dimension: longer horizons imply more coupon reinvestments at uncertain future rates, increasing reinvestment risk alongside price risk.
+##### THE DURATION FAMILY
 
-Convexity note: As a bond approaches maturity, both duration and convexity decline; the price–yield curve flattens toward par at maturity (convexity → 0).
+> [!abstract] MEMORISE
+> - Macaulay = time.
+> - Modified = percentage price move.
+> - Money duration = currency move.
+> - PVBP = price move for 1 basis point.
+
+3. Macaulay duration is the **present-value-weighted average time** to receive the bond’s cash flows. It is still a time concept, not directly a price-change concept.
+4. Modified duration is what traders care about more day to day. It converts Macaulay duration into **price sensitivity**:
+$$
+\text{ModDur} = \frac{\text{MacDur}}{1+r}
+$$
+5. Read that in plain English: modified duration tells you the approximate **percentage change in full price** for a change in the bond’s own yield-to-maturity.
+6. The key approximation is:
+$$
+\% \Delta PV_{\text{Full}} \approx - \text{AnnModDur} \times \Delta \text{AnnYield}
+$$
+7. The minus sign is the whole bond market in one symbol: yields up, prices down; yields down, prices up.
+
+> [!info] FOR THE MATH GUYS
+> - Modified duration is the **first derivative** of bond price with respect to yield.
+> - It is the slope of the price-yield curve at today’s yield.
+> - Bigger slope in absolute value = more interest-rate risk.
+> - This is still a linear approximation, not the full curved story.
+
+8. If a bond has modified duration of 5, then a 100 basis point rise in yield means roughly a **5% price drop**. That is the quick-and-dirty mental math.
+9. This is why higher modified duration means higher interest-rate risk. The price-yield line is steeper.
+
+##### APPROXIMATE MODIFIED DURATION
+
+> [!abstract] MEMORISE
+> - Shock yield up a bit, shock yield down a bit, and measure the slope.
+> - This approximation is extremely close for plain bonds.
+> - It also becomes useful later when closed-form duration is messy.
+
+10. You do not always need to compute modified duration through Macaulay duration first. You can estimate it directly from prices:
+$$
+\text{AnnModDur} \approx \frac{PV_- - PV_+}{2 \times \Delta \text{Yield} \times PV_0}
+$$
+11. Meaning:
+   - $PV_0$ = current full price
+   - $PV_+$ = price after a small yield increase
+   - $PV_-$ = price after a small yield decrease
+12. This is just the slope estimate from a tiny bump up and tiny bump down in yield.
+
+> [!question] BRWA MODIFIED DURATION
+> Problem: A 5-year BRWA bond has annualized modified duration of 4.58676. What is the estimated percentage price change if its yield rises by 80 basis points?
+> 
+> $\% \Delta PV_{\text{Full}} \approx -4.58676 \times 0.008 = -0.0367$
+> Estimated price change: about **-3.67%**
+> If yield falls by 80 basis points, the estimate flips to **+3.67%**
+> **Takeaway:** duration gives equal-and-opposite estimates because it is a straight-line approximation.
+
+##### MONEY DURATION AND PVBP
+
+> [!abstract] MEMORISE
+> - Modified duration gives percentage move.
+> - Money duration gives cash move.
+> - PVBP gives the price move for a 1 basis point shift.
+> - Big portfolio + modest duration can still mean ugly money losses.
+
+13. Money duration is just modified duration translated into position size:
+$$
+\text{MoneyDur} = \text{AnnModDur} \times PV_{\text{Full}}
+$$
+14. So instead of saying “the bond may move 4.3%,” you say, “this position may gain or lose EUR 4.3 million per 100 bp move,” depending on the position size.
+15. The price change in currency terms is:
+$$
+\Delta PV_{\text{Full}} \approx - \text{MoneyDur} \times \Delta \text{Yield}
+$$
+16. PVBP, the price value of a basis point, is the estimated price change for a **1 bp** change in yield. It is just a tiny money-duration slice:
+$$
+\text{PVBP} \approx \text{MoneyDur} \times 0.0001
+$$
+
+> [!info] Example
+> A bond can look “safe” because it is high quality, but if the position is huge, money duration can still be savage. That is how apparently boring rate moves turn into tens of millions of portfolio pain.
+
+> [!question] MONEY DURATION
+> Problem: A bond has annualized modified duration of 4, price 95, and yield rises by 50 basis points. Estimate the change in price per 100 of par.
+> 
+> Money duration = $4 \times 95 = 380$
+> Price change $\approx -380 \times 0.005 = -1.90$
+> **Takeaway:** percentage sensitivity becomes real money very quickly.
+
+##### WHAT CHANGES DURATION
+
+> [!abstract] HAMMER THIS
+> - Longer maturity = more duration.
+> - Lower coupon = more duration.
+> - Lower yield = more duration.
+> - Duration falls as the bond rolls toward maturity.
+
+17. All else equal, a bond’s interest-rate risk rises when:
+   - time to maturity is longer
+   - coupon rate is lower
+   - yield-to-maturity is lower
+18. The intuition for **longer maturity** is simple: more of the bond’s value sits far in the future, and distant cash flows get hit harder when discount rates change.
+19. The intuition for **lower coupon** is that less cash comes back early, so more of the value gets pushed into the final principal payment. That makes the bond behave more like a zero-coupon bond, which is more rate-sensitive.
+20. The intuition for **lower yield** is that the discounting is gentler, so future cash flows keep more weight in today’s price. When those future-heavy cash flows dominate, duration rises.
+
+> [!info] Example
+> It was 1994. Bond investors had gotten comfortable. Rates had been calm, carry felt easy, and long bonds looked like safe, sleepy money. Then the Federal Reserve started tightening faster than the market expected. Yields jumped. And suddenly the trap snapped shut. The longest-duration bonds got hit the hardest because their cash flows were sitting far out in the future, where discount-rate changes do the most damage. That is the duration lesson in blood: you do not need default to get wrecked. If duration is huge and yields rise fast, price losses can turn savage very quickly.
+> <img src="https://cdn.substack.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa3730565-4d29-4966-bf59-2236a16478cc_604x772.png" alt="Chart from Adam Tooze article on the 1994 bond market massacre" width="220" style="display:block; margin-top:8px; border-radius:8px;" />
+
+21. Duration is not static. As a bond moves closer to maturity, duration falls. Time itself slowly bleeds interest-rate risk out of the bond.
+22. One subtle exam point: if yield is negative, modified duration can actually be **greater** than Macaulay duration because you are dividing by a number less than 1.
+23. Another exam point: for a zero-coupon bond, Macaulay duration equals maturity, but modified duration is still **less** than maturity when yield is positive.
+
+> [!tip] QUICK CHECKS
+> - Macaulay = time; modified = percentage sensitivity.
+> - Use full price, not flat price, in duration work.
+> - Convert basis points to decimals before multiplying.
+> - Bigger duration means steeper price response.
+> - Long maturity, low coupon, low yield = higher duration.
+
+> [!warning] DO NOT DO THIS
+> - Don’t confuse Macaulay duration with modified duration.
+> - Don’t forget the minus sign in the price-change approximation.
+> - Don’t use flat price when the formula is about full price.
+> - Don’t assume duration stays constant as the bond ages.
 
 ### MODULE 58.1: Yield-Based Bond Convexity and Portfolio Properties
 
@@ -505,108 +624,244 @@ A non-callable, fixed-coupon bond has a price of 106.0625 and a YTM of 2.8%. If 
 
 ### MODULE 58.1: YIELD BASED BOND CONVEXITY AND PORTFOLIO PROPERTIES
 
+> [!abstract] MEMORISE
+> - Duration is the slope. Convexity is the bend.
+> - For an option-free fixed-rate bond, convexity is positive and valuable.
+> - Price accelerates as yields fall.
+> - Longer maturity, lower coupon, and lower yield all increase convexity.
+> - Portfolio convexity from weighted averages is practical, but it quietly assumes a parallel curve shift.
 
-1. Bond price moves with yield for two reasons:  **slope** (duration) and **curvature** (convexity).  Small yield changes → duration dominates.  Larger yield changes → convexity matters.
+1. Duration alone is only half the story. It tells you the **first-order** effect of yield changes on price, which is just the slope of the price-yield relationship.
+2. Convexity is the **second-order** effect. It tells you how that slope itself changes as yield moves. In plain English: duration gives the straight-line estimate, convexity fixes the miss because the real price-yield relationship is curved.
 
-###### EACH KEY PIECE
+> [!info] Example
+> Think of a long government bond when yields fall sharply. Duration says the price should rise by some amount. But the actual bond usually rises **even more** because the price-yield curve bows outward. That extra pop is convexity doing its job.
+> 
+> ![[module58_convexity_curve.svg]]
 
-2. **Yield Change** $\Delta y$  Small parallel shift in yield. Always convert to decimal form (e.g., 50 bps = 0.005).
+3. This is why convexity matters more for **larger** yield changes. For tiny moves, the straight-line duration approximation is fine. For bigger moves, ignoring curvature starts making you look silly.
+4. For an option-free fixed-rate bond, convexity is always positive. That is good news for you as an investor:
+   - when yields fall, price rises **more** than duration alone predicts
+   - when yields rise, price falls **less** than duration alone predicts
+5. That is why convexity is valuable. It makes the bond less nasty on the downside and more generous on the upside. But markets know this, so you usually pay for more convexity through a higher price and lower yield.
 
-3. **Effective Duration (ED)**: First-order sensitivity (slope). Captures **linear** price response. 
-$$  
-ED = \frac{P_H - P_L}{2 \ \Delta y \  P_0}  
+##### THE FORMULA LOGIC
+
+> [!abstract] MEMORISE
+> - Duration term = main move.
+> - Convexity term = always additive for an option-free bond.
+> - Convert basis points to decimals before touching the formula.
+> - Bigger yield move = convexity matters more.
+
+6. The standard approximation is:
+$$
+\% \Delta PV_{\text{Full}} \approx (-\text{AnnModDur} \times \Delta \text{Yield}) + \left(\tfrac{1}{2} \times \text{AnnConvexity} \times (\Delta \text{Yield})^2\right)
+$$
+7. Read it like this:
+   - first term = duration effect
+   - second term = convexity adjustment
+8. The convexity adjustment gets added to the duration estimate. Because convexity is positive for an option-free fixed-rate bond, this term helps you on both sides.
+
+> [!info] FOR THE MATH GUYS
+> - Duration is the **first derivative** of price with respect to yield.
+> - Convexity is the **second derivative**.
+> - This price-change formula is just a **second-order Taylor expansion** around the current yield.
+> - Linear term first, curvature correction second.
+
+> [!question] PRICE CHANGE WITH CONVEXITY
+> Problem: A GBP 50,000,000 position in a 10-year 3.50% bond has annualized modified duration of 8.376 and annualized convexity of 81.701. Yields fall by 100 basis points. Estimate the percentage price change.
+> 
+> Duration effect: $-8.376 \times (-0.01) = +0.08376 = +8.376\%$
+> Convexity adjustment: $\tfrac{1}{2} \times 81.701 \times (0.01)^2 = 0.004085 = +0.4085\%$
+> Estimated total price change: about **+8.78%**
+> **Takeaway:** when the move is large, convexity is not decoration. It adds real money.
+
+9. Money convexity is just convexity translated into currency terms. Instead of saying “the bond has convexity 81.701,” you ask “how many pounds or euros is that worth for this position size?”
+10. The idea is simple:
+$$
+\text{Money Convexity} = \text{Annual Convexity} \times PV_{\text{Full}}
+$$
+11. Then the money convexity adjustment is:
+$$
+\text{Money Convexity Adjustment} \approx \tfrac{1}{2} \times \text{Money Convexity} \times (\Delta \text{Yield})^2
 $$
 
-- $P_H$: price if yield ↓    
-- $P_L$: price if yield ↑    
-- $P_0$: initial price
-    
-4. **Effective Convexity (EC)**: Second-order sensitivity (curvature). Captures **nonlinear** price response. 
-$$  
-EC = \frac{P_H + P_L - 2P_0}{(\Delta y)^2 P_0}  
-$$
+> [!question] MONEY CONVEXITY
+> Problem: Use the same GBP 50,000,000 bond position with annualized convexity 81.701 and a 100 basis point rate decline. What is the money convexity adjustment?
+> 
+> Money convexity: $81.701 \times 50{,}000{,}000 \approx GBP\ 4.085$ billion
+> Money convexity adjustment: $\tfrac{1}{2} \times 4.085$ billion $\times (0.01)^2 \approx GBP\ 204{,}252$
+> **Takeaway:** that “small” convexity term can still mean more than GBP 200k on a big position.
 
+##### WHAT MAKES CONVEXITY BIGGER
 
-5. **Price Change Approximation** 
-- First term → duration effect = $-ED \cdot \Delta y$    
-- Second term → convexity correction = $\frac{1}{2} , EC \cdot (\Delta y)^2$
-Total price change:
-$$  
-\Delta P = -ED \cdot \Delta y + \frac{1}{2} \cdot EC \cdot (\Delta y)^2  
-$$
-6. **New Price**
+> [!abstract] MEMORISE
+> - Longer maturity = more convexity.
+> - Lower coupon = more convexity.
+> - Lower yield-to-maturity = more convexity.
+> - Same story as duration, just even more curved.
 
-$$  
-P_{\text{new}} = P_0 \cdot (1 + \Delta P)  
-$$
-Bond price is a smooth function of yield. Taylor expansion around current yield:    
-    - 1st derivative → duration       
-    - 2nd derivative → convexity
-Finite-difference formulas estimate those derivatives using $(P_H, P_L, P_0)$
-    
-7. **Duration** tells you _direction and speed_ of price change. **Convexity** tells you the acceleration. Price rise accelerates when yields fall. Price drop decelerates when yields rise.
+12. Bond features that increase convexity are the same ones that increase duration:
+   - longer time to maturity
+   - lower coupon rate
+   - lower yield-to-maturity
+   - **Longer time to maturity:** more of the bond’s value sits far out in the future, and distant cash flows react more dramatically when discount rates move. Long bonds live on the bendier part of the curve.
+   - **Lower coupon rate:** less cash comes back early, so more of the bond’s value is pushed into the final principal payment. That makes the bond behave more like a zero-coupon bond, which is highly curved.
+   - **Lower yield-to-maturity:** when discount rates are already low, the price-yield curve becomes steeper and more curved. A small change in yield now moves present values more violently.
+12. There is one extra intuition point: if two bonds have the same duration, the one whose cash flows are spread out more over time has higher convexity.
+13. The numbers make the point very clearly:
+   - Romanian 30-year bond: approximate modified duration about **15.91**, approximate convexity about **369.64**
+   - BRWA 5-year bond: approximate modified duration about **4.59**, approximate convexity about **24.24**
+15. That gap is huge. Same basic asset class, but the long bond is living in a much more curved world.
 
+##### PORTFOLIO PROPERTIES
 
-> [!question] CONVEXITY
-> Consider our 5-year, 11% annual coupon bond priced at 86.59138 to yield 15% to maturity. If its YTM increases by 50 basis points, its price will decrease to 85.09217.If its YTM decreases by 50 basis points, its price will increase to 88.12721. Calculate the approximate convexity of the bond.
+> [!abstract] MEMORISE
+> - Portfolio duration and convexity are usually taken as market-value-weighted averages.
+> - That is practical, not perfectly “theoretical.”
+> - The hidden assumption is a parallel shift in the yield curve.
+> - Real curves rarely move that politely.
+
+16. In practice, portfolio managers usually calculate portfolio duration and convexity by taking the weighted averages of the durations and convexities of the individual bonds. This is easy and useful, which is exactly why everyone does it.
+17. But the curriculum makes an important distinction: the **theoretically correct** method is to calculate duration and convexity from the weighted average time to receipt of the **aggregate cash flows** of the whole portfolio.
+18. The weighted-average-of-bonds method is common because it is practical, but it quietly assumes a **parallel yield curve shift**.
+
+> [!info] Example
+> Silicon Valley Bank is the brutal real-world reminder. It stuffed itself with long-duration Treasury and mortgage-backed securities when yields were low. Then rates ripped higher in 2022–2023, the value of those bonds sank, and the unrealized losses became terrifying once depositors started pulling cash. The main villain here was **duration** because it drove the big price hit. Convexity matters too, but as the second-order amplifier: long bonds live on a more curved part of the price-yield relationship, so big rate moves become even less forgiving.
+> <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/SVB%20stock%20price.webp" alt="SVB stock price collapse" width="480" style="display:block; margin-top:8px; border-radius:8px;" />
+
+> [!question] PORTFOLIO CONVEXITY
+> Problem: A EUR 100 million portfolio holds Bond A at 40% weight with modified duration 2.858 and convexity 9.752, and Bond B at 60% weight with modified duration 8.376 and convexity 81.701. Yields rise by 50 basis points. Estimate the portfolio percentage price change.
+> 
+> Portfolio modified duration: $(0.4 \times 2.858) + (0.6 \times 8.376) = 6.169$
+> Portfolio convexity: $(0.4 \times 9.752) + (0.6 \times 81.701) = 52.921$
+> Estimated price change: $(-6.169 \times 0.005) + \left(\tfrac{1}{2} \times 52.921 \times 0.005^2\right) \approx -3.018\%$
+> **Takeaway:** weighted averages make portfolio risk estimation fast, but they still rest on the parallel-shift assumption.
+
+> [!tip] QUICK CHECKS
+> - Convexity is the curvature correction to duration.
+> - For an option-free fixed-rate bond, convexity is positive.
+> - More convexity helps you in both yield directions.
+> - Longer maturity, lower coupon, lower yield = more convexity.
+> - Portfolio weighted averages are practical but assume parallel shifts.
+
 
 ### MODULE 59.1: CURVE-BASED AND EMPIRICAL FIXED-INCOME RISK MEASURES
-1. The yield curve does not always move in a parallel way-short-term rates, medium-term rates, and long-term rates can change by different amounts or even in different directions. At the same time, many bonds do not have fixed cash flows: borrowers may prepay, issuers may call the bond early, or payments may change when interest rates move. 
-2. Macaulay and modified duration assume a **parallel yield curve shift** and **fixed cash flows with no embedded options**.
-3. **Effective Duration:** 
-4. **Macaulay Duration:** Weighted Average of Time where weights are PV of cashflows.
-$$\boxed{\text{Mac. D} = \sum_{i=o}^N \text{PV}_i \times i}$$
-5. **Modified Duration:** Sensitivity of bond price to changes in yield. **It is an approximation (tangent slope) which means that it overestimates the Eprice decline (when yields rise) and underestimates the price increase (when yields fall).** Memory hook: ==Modified Duration is pessimistic.== $$ \text {Mod. D} = \frac{\text{Mac. D}}{{1+y}}$$
-6. **Effective Duration:** Effective duration is basically brute-force. You don’t derive sensitivity from a formula. You reprice the bond twice (yields up, yields down). You observe what actually happens to price and cash flows. Then you compute the slope numerically.
-      - **Numerator $(PV_+−PV_-)$:** This captures how much the bond’s price actually moves when yields are nudged down versus up, with cash flows allowed to change. It’s the observed price response to rate movements.
-      - **Denominator $2\,\Delta y$:** This is the total yield change between those two scenarios (down by Δy, up by Δy). Dividing by it converts the price move into a price change per unit of yield (a slope).
-	    - Divide by $PV_0$: Normalizes the slope by today’s price so the result is a percentage sensitivity.    $$\boxed{\text{Effective Duration}=\dfrac{PV_- - PV_+}{2\,\Delta y\,PV_0}}​​$$
-7. Callable vs putable convexity (plain English):  
-   - Callable: when yields fall a lot, the issuer will likely call. Your upside is capped. Price rises slow down → this is “negative convexity.”  
-   - Putable: when yields rise a lot, you can sell back (put). Your downside is cushioned. Price falls slow down → convexity stays positive.
-8. Option‑free bonds: Modified Duration (Mod. D) and Effective Duration (Eff. D) are usually close for small moves. They can differ when the curve isn’t flat. Keep it simple: for plain bonds use Mod. D; if options/prepayments can change cash flows, use Eff. D.
-9. Effective Convexity (Eff. Conv.): Same idea as Eff. D. Reprice the bond with the curve shifted slightly down and up. Use those two prices to measure curvature. Use Eff. Conv. when the bond has options or path‑dependent cash flows.
-10. Price change with effective measures (Δ in decimals):  
-    $$\Delta P/P \approx -\text{Eff. D}\,\Delta\text{Curve} + \tfrac{1}{2}\,\text{Eff. Conv}\,(\Delta\text{Curve})^2$$  
-    Read it as: duration gives the main move; convexity adds a small correction.
 
-> [!QUESTION] PRICE CHANGE USING EFF. D AND EFF. CONV.
-> Problem: Eff. D = 10.5, Eff. Conv. = 97.3. Curve falls by 200 bps. What is % price change?  
-> ---  
-> Step 1 (duration): −10.5 × (−0.02) = +0.2100 → +21.00%  
-> Step 2 (convexity): 0.5 × 97.3 × (0.02)^2 = 0.0195 → +1.95%  
-> Answer: ≈ +22.95%  
-> Takeaway: Use decimals for bps (200 bps = 0.02). Add convexity for big moves.
+> [!abstract] MEMORISE
+> - Modified duration is the plain-vanilla tool. Effective duration is the option-bond tool.
+> - Effective duration and convexity come from repricing, not from a clean closed-form shortcut.
+> - Key rate duration is for twist/steepening/flattening moves, not one big parallel shrug.
+> - Empirical duration matters when spreads and government yields dance together in the real world.
 
-11. Key Rate Duration (KRD): Sensitivity to a move at one maturity (e.g., “5‑year point”), holding other maturities fixed.  
-    - KRDs across maturities add up to Eff. D.  
-    - Use KRDs to handle non‑parallel curve moves (steeper, flatter, or curved shapes).  
-    - Portfolio KRD = sum of position KRDs (weighted by market value).
+1. This module exists because the curve does not move in same direction. Short rates, belly rates, and long rates can move by different amounts, and sometimes in opposite directions.
+2. On top of that, many bonds are sneaky. Cash flows are not fixed because borrowers can prepay, issuers can call, or embedded options can change what you actually receive.
+3. That is why Macaulay and modified duration are not enough everywhere. They quietly assume a parallel shift and fixed cash flows.
+##### MODIFIED VS EFFECTIVE
 
-> [!QUESTION] KRD WITH A NON‑PARALLEL MOVE
-> Problem: 50% in a 5‑year zero at 5% and 50% in a 10‑year zero at 6% (annual).  
-> 5‑year yield +50 bps; 10‑year yield −25 bps. Estimate portfolio % change.  
-> ---  
-> 5y: Mod. D = 5/1.05 = 4.762 → KRD5 = 4.762 × 0.5 = 2.381 → Impact = −2.381 × 0.0050 = −1.19%  
-> 10y: Mod. D = 10/1.06 = 9.434 → KRD10 = 9.434 × 0.5 = 4.717 → Impact = −4.717 × (−0.0025) = +1.18%  
-> Net: ≈ −0.01% (roughly flat).  
-> Takeaway: KRDs let you see which maturity points drive P&L.
+> [!abstract] MEMORISE
+> - Option-free bond: modified duration is usually fine.
+> - Bond with embedded option or prepayment risk: use effective duration.
+> - Modified duration is formula-based. Effective duration is reprice-and-see.
+> - Memory hook: **modified duration is pessimistic.**
 
-12. Analytical vs empirical duration (keep it practical):  
-    - Analytical (Macaulay, Mod. D, Eff. D): model‑based; assumes spreads don’t change when you shift the benchmark curve.  
-    - Empirical: uses history; captures how credit spreads and yields actually move together.  
-    - Example: “Flight to quality” → gov’t yields drop but credit spreads widen; corporate bond prices may rise less or even fall → empirical duration is lower than analytical for credit‑heavy portfolios.
+4. Modified duration is your first-order sensitivity for a plain fixed-rate bond. It is the tangent-line estimate of price sensitivity to yield.
+5. ==Modified duration is pessimistic.== It usually overstates the price drop when yields rise and understates the price gain when yields fall because it ignores curvature.
+6. Effective duration is brute-force duration. You shock the benchmark curve down, shock it up, reprice the bond both times, allow cash flows to change, and then measure the slope from those observed prices.
+7. That makes effective duration the right tool for callable bonds, putable bonds, and mortgage-backed securities, because those instruments change behavior when rates move.
+8. Keep the logic clean:
+   - Modified duration asks: “If yield moves a bit, what is the approximate price sensitivity if cash flows stay fixed?”
+   - Effective duration asks: “If the benchmark curve moves, what actually happens to price once the bond’s cash flows are allowed to react?”
 
-> [!TIP] QUICK CHECKS
-> - Options or prepayments? Use Effective (not Modified).  
-> - Convert bps to decimals (50 bps = 0.005).  
-> - KRDs add up to Eff. D.  
-> - Callable at low yields → negative convexity; putable stays positive.
+> [!question] WHY EFFECTIVE DURATION EXISTS
+> 
+> Problem: Why is modified duration not good enough for a callable bond?
+> 
+> Because the callable bond may get called when rates fall, so the cash flows themselves change. Modified duration assumes the cash flows stay fied. Effective duration reprices the bond after the rate move and captures that change directly.
+> **Takeaway:** if the bond can change its own cash-flow path, use effective duration.
 
-> [!DANGER] DO NOT DO THIS
-> - Don’t use Mod. D for callable/putable/MBS.  
-> - Don’t assume all curve moves are parallel; use KRDs for shape changes.  
-> - Don’t mix spread moves into “effective” shocks unless your model changes spreads too.
+9. The effective-duration formula is just a normalized slope:
+$$\boxed{\text{Effective Duration}=\dfrac{PV_- - PV_+}{2\,\Delta \text{Curve}\,PV_0}}$$
+10. Read it like a human:
+   - $PV_-$ = price after the curve shifts down
+   - $PV_+$ = price after the curve shifts up
+   - $\Delta \text{Curve}$ = the size of the benchmark curve shock in decimals
+   - divide by $PV_0$ so the answer becomes percentage sensitivity rather than raw dollars
+
+##### CONVEXITY IN PLAIN ENGLISH
+
+> [!abstract] MEMORISE
+> - Callable bond: upside gets capped when yields fall, so convexity can turn negative.
+> - Putable bond: downside gets cushioned when yields rise, so convexity stays positive.
+> - Duration gives the main move. Convexity gives the correction.
+
+11. Effective convexity is the same concept as effective duration, just one order deeper. You reprice the bond after a small up-shift and down-shift in the benchmark curve and measure the curvature of the price response.
+12. This matters because duration alone is a straight-line approximation. Real price-yield relationships are curved, especially for large moves and especially when options start changing behavior.
+13. Callable bonds are the classic trap. When yields fall a lot, the issuer gets tempted to call. So your upside starts flattening out. That is negative convexity.
+14. Putable bonds are the opposite comfort blanket. When yields rise, the put feature helps protect the downside, so convexity remains positive.
+15. To estimate price change with effective measures, use:
+$$\Delta P/P \approx -\text{Eff. D}\,\Delta\text{Curve} + \tfrac{1}{2}\,\text{Eff. Conv}\,(\Delta\text{Curve})^2$$
+16. Translation: duration gives the big directional move, convexity fine-tunes it.
+
+> [!info] FOR THE MATH GUYS
+> - Duration is basically the **first derivative** of price with respect to yield: the slope.
+> - Convexity is the **second derivative**: how fast that slope itself changes.
+> - The price-change formula is just a **second-order Taylor expansion** around today’s yield.
+> - First term = linear approximation. Second term = curvature correction.
+
+> [!question] PRICE CHANGE USING EFF. D AND EFF. CONV.
+> Problem: Effective duration = 10.5, effective convexity = 97.3, and the curve falls by 200 basis points. Estimate the percentage price change.
+> 
+> Duration effect: $-10.5 \times (-0.02) = +0.2100 = +21.00\%$
+> Convexity effect: $\tfrac{1}{2} \times 97.3 \times (0.02)^2 = 0.0195 = +1.95\%$
+> Estimated price change: about **+22.95%**
+> **Takeaway:** duration does the heavy lifting; convexity adds the extra juice for a large move.
+
+##### KEY RATE DURATION
+
+> [!abstract] MEMORISE
+> - Key rate duration = sensitivity to one maturity point on the curve.
+> - Use it when the curve twists, steepens, or flattens.
+> - The weighted sum of portfolio key rate durations equals portfolio effective duration.
+> - This is the “where on the curve am I exposed?” tool.
+
+17. Key rate duration is just partial duration. Instead of shocking the whole curve, you shock one maturity point, like the 5-year point, and ask how much the bond price cares about that one spot.
+18. If the 2-year rate jumps, the 30-year rate barely moves, and the 10-year point falls, key rate duration lets you map the damage properly.
+19. A portfolio’s key rate durations tell you where the real risk lives across the curve. If your exposure is concentrated in the belly, that is where the pain or gain will come from.
+20. The weighted sum of a bond portfolio’s key rate durations equals the portfolio’s effective duration. So key rate duration is not replacing effective duration; it is breaking it open by maturity bucket.
+
+> [!question] KRD WITH A NON-PARALLEL MOVE
+> Problem: 50% in a 5-year zero at 5% and 50% in a 10-year zero at 6%. The 5-year yield rises by 50 basis points and the 10-year yield falls by 25 basis points. Estimate the portfolio percentage change.
+> 
+> 
+> 5-year impact: modified duration $= 5/1.05 = 4.762$, weighted KRD $= 2.381$, price impact $= -2.381 \times 0.005 = -1.19\%$
+> 10-year impact: modified duration $= 10/1.06 = 9.434$, weighted KRD $= 4.717$, price impact $= -4.717 \times (-0.0025) = +1.18\%$
+> Net portfolio move: roughly **-0.01%**
+> **Takeaway:** one part of the curve can hurt you while another quietly saves you.
+
+##### EMPIRICAL VS ANALYTICAL
+
+> [!abstract] MEMORISE
+> - Analytical duration = formula or model estimate.
+> - Empirical duration = history-based estimate.
+> - For credit-heavy bonds, empirical duration can be lower because spreads often widen when government yields fall in stress.
+> - Flight to quality breaks naive analytical thinking.
+
+21. Analytical duration and convexity are model-based. They come from formulas or repricing frameworks that usually hold spreads constant while the benchmark curve moves.
+22. Empirical duration and convexity are built from historical data. They ask what bond prices actually did when rates and spreads moved together in the wild.
+23. This distinction matters a lot for credit risk. In stress periods, government yields often fall because investors flee to safety, but credit spreads widen at the same time because default fears jump.
+24. So a corporate bond may not rally nearly as much as its analytical duration suggests. Sometimes it may not rally at all. That is why empirical duration can be lower than analytical duration for credit-heavy portfolios.
+
+> [!info] Example
+> March 2020 is the real version. COVID panic sent investors stampeding into US Treasuries, so Treasury yields collapsed. But high-yield corporate spreads exploded because default fear suddenly went through the roof. So a junk-bond fund did not enjoy the full “rates are down, bond prices should rise” party. Spread widening punched back hard. That gap between the neat formula and the actual market outcome is why empirical duration exists.
+
+> [!tip] QUICK CHECKS
+> - Embedded option or prepayment risk? Use effective, not modified.
+> - Convert basis points to decimals before multiplying.
+> - Key rate durations are for non-parallel curve moves.
+> - Portfolio KRDs add up to portfolio effective duration.
+> - Analytical holds the spread story simpler than reality; empirical lets history talk.
+
 
 ### MODULE 60.1: CREDIT RISK
 
@@ -627,6 +882,182 @@ $$\boxed{\text{Mac. D} = \sum_{i=o}^N \text{PV}_i \times i}$$
 8. Bid-offer spread is your liquidity risk meter: wider gap → higher transaction cost → higher liquidity risk, and the drivers are simple - less debt outstanding + lower credit quality + less trading activity → wider spreads
 9. Stress causes contagion: junk illiquidity spikes in crisis → risk aversion spreads → IG bid-offer spreads widen too even though the credit quality hasn't changed, liquidity fear is contagious
 10. **You can decompose yield spread into credit vs liquidity: calculate yield at bid and at offer → difference is the liquidity component → strip it out to isolate pure credit risk premium**
+
+
+### MODULE 61.1: CREDIT ANALYSIS FOR GOVERNMENT ISSUERS
+
+> [!abstract] MEMORISE
+> - Government credit = ability to tax + willingness to pay.
+> - Reserve currency and strong institutions make sovereign debt much safer.
+> - Debt to GDP and interest to revenue are the sovereign versions of leverage and coverage.
+> - Non-sovereign debt splits into government-backed entities, general obligation bonds, and project revenue bonds.
+
+1. A company borrows to make profits. A government borrows to run fiscal policy, provide public goods, and fill budget holes.
+2. The repayment source is different too. A company repays from operating cash flow. A sovereign government mainly repays from taxes, fees, tariffs, and other government revenue. So the core sovereign credit question is: **can this government raise cash from its economy, and will it actually choose to pay you?**
+3. That second part matters because sovereign bondholders usually cannot drag a country into a normal bankruptcy process and liquidate assets the way they might with a company. That is the pain of sovereign immunity.
+
+> [!info] Example
+> Uruguay gave the classic “soft default” story in 2003. The country was squeezed by a banking crisis and currency collapse, then pushed bondholders into a maturity extension with IMF support. It looked polite on paper, but analysts still treated it as default in substance because investors got delayed payment without enough compensation.
+
+4. Sovereigns usually have the lowest credit risk inside their own country because they can tax the whole domestic economy. But “usually” is doing a lot of work there. Emerging and frontier market sovereigns can absolutely default.
+
+##### QUALITATIVE FACTORS
+
+> [!abstract] MEMORISE
+> - Institutions and policy = can the state govern properly?
+> - Fiscal flexibility = can it tax, cut, and manage debt sensibly?
+> - Monetary effectiveness = is the central bank real or just a printing press sidekick?
+> - Economic flexibility + external status = how strong is the economy and how hard is it to get foreign currency?
+
+6. Government institutions and policy come first because if the legal system is weak, corruption is everywhere, data are unreliable, and politics are chaotic, the numbers stop meaning much.
+7. Fiscal flexibility means the government can actually tighten its belt when needed. It can collect taxes, restrain spending, and run debt without behaving like every boom will last forever.
+> [!info] Example
+> Romania got an improved outlook from Moody’s in 2021 partly because it looked serious about fiscal consolidation. The country was trying to drag its deficit below 3% of GDP to stay aligned with European Union expectations. That is the sovereign version of “management finally stopped burning cash like idiots.”
+8. Monetary effectiveness is about whether the central bank can do its job without being bullied by the treasury. More independence means less temptation to print money, juice inflation, and quietly trash bondholders through currency weakness.
+9. Economic flexibility is really tax-base quality. Big, diversified, competitive economies are easier to lend to because the government has more places to collect revenue from. Small, concentrated economies tied to one commodity or one trading partner are much more fragile.
+10. External status is where sovereign analysis becomes brutal. If foreign investors trust your currency, hold your bonds, and treat your currency like a reserve asset, life is much easier. If they do not, every foreign-currency debt payment becomes a stress test.
+> [!info] Example
+> Moldova got hammered after Russia invaded Ukraine in 2022. Inflation rose, exports weakened, energy costs jumped, and the country had to lean on the IMF for immediate external funding. Same idea every time: when you are small, regionally exposed, and short on external buffers, geopolitics hits your credit profile like a truck.
+> <img src="https://www.ifc.org/content/dam/ifc/photos/2024/postcard-inclusion-fdps-ukraine-moldova.jpg" alt="Moldova" width="280" style="display:block; margin-top:8px; border-radius:8px;" />
+11. Reserve currency status is a monster advantage. If the world is happy holding your currency, you can borrow in your own money far more easily and default risk drops sharply.
+12. If the currency is not fully convertible, capital controls exist, and foreign investors do not want your domestic debt, the sovereign gets pushed toward foreign-currency borrowing or IMF-style support. That is a much more dangerous game.
+13. One high-yield sovereign trap: a country can look okay domestically but still crack because it cannot find foreign currency when external debt comes due.
+
+##### QUANTITATIVE FACTORS
+
+> [!abstract] MEMORISE
+> QUANTITATIVE FACTORS: "FEE" → Fiscal, Economic, External
+> - Fiscal strength: debt to GDP, debt to revenue, interest to GDP, interest to revenue.
+> - Economic growth and stability: size, per capita income, growth rate, volatility.
+> - External stability: reserves, external debt burden, and near-term external debt due.
+
+14. Fiscal strength is the sovereign version of leverage plus coverage. Debt burden asks how much debt is piled onto the economy or government revenue. Debt affordability asks how much of the country’s income is being eaten by interest.
+15. Keep the direction straight. Higher debt to GDP is bad. Higher debt to revenue is bad. Higher interest to GDP is bad. Higher interest to revenue is bad.
+16. Fiscal deficits matter because they tell you whether the debt pile is still growing. A country with high debt and recurring deficits is basically pouring petrol on the fire.
+
+> [!info] Example
+> Greece became the poster child in the eurozone crisis. Debt-to-GDP was already ugly, deficits surged after the Global Financial Crisis, and spreads versus Germany exploded. The nasty twist was that euro-area members could not just devalue their own currency to escape the pressure.
+> <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/2010-2011%20Greek%20protests%20collage.png" alt="Greek debt crisis protests" width="280" style="display:block; margin-top:8px; border-radius:8px;" />
+17. Economic growth and stability matter because large, rich, diversified economies can absorb shocks better. Bigger GDP and higher per capita income usually mean a fatter cushion.
+18. Growth volatility matters too. A country growing fast but lurching all over the place is less comforting than one growing a bit slower but steadily.
+
+> [!info] Example
+> Vietnam is a nice reminder that rating agencies do not look only at today’s income level. It had lower ratings than some Southeast Asian peers, but strong and stable growth helped support upgrades over time.
+
+19. External stability is about foreign-currency survival. Can the country generate or hold enough foreign currency to pay external debt and other obligations to outsiders?
+20. Currency reserves are the first shock absorber. More reserves relative to GDP or external debt usually means more breathing room.
+21. But reserves alone can fool you. You also need to look at the structure of exports, remittances, current account behavior, and how dependent the country is on one commodity or one external funding source.
+> [!info] Example
+> Zambia blew up in 2020 after copper weakness, a falling currency, rising inflation, and a huge jump in external debt. Its reserves collapsed versus external debt, and then the Eurobond default arrived. That is the ugly emerging-market recipe: commodity pain + weak currency + rising foreign debt = disaster.
+
+##### NON-SOVEREIGN GOVERNMENT CREDIT
+
+> [!abstract] MEMORISE
+> - Agencies and policy banks often sit near the sovereign because support is explicit or strongly implied.
+> - General obligation bonds are backed by broad tax revenue.
+> - Revenue bonds are backed by one project’s cash flow.
+> - GO usually feels safer than revenue because one project can disappoint badly.
+
+23. Non-sovereign government debt is a broad bucket. It includes agencies, public banks, supranationals, and regional or local governments.
+24. Agencies and policy banks often trade close to sovereign risk because the market assumes the government will step in if things get ugly, especially when support is explicit in law.
+> [!info] Example
+> Germany’s KfW is the clean version of this. It is a development bank backed by an explicit statutory guarantee from Germany, so its bonds sit right up near sovereign quality rather than feeling like ordinary corporate bank debt.
+25. Regional and local governments are different. They can raise taxes and fees, but they do not control national monetary policy and they do not have full sovereign power. So their rating is usually equal to or below the sovereign, not above it.
+26. General obligation bonds are backed by the issuer’s general tax and revenue base. Revenue bonds are backed by one project, like a toll road, airport, or rail line.
+27. That means revenue bonds are naturally riskier because the repayment source is narrower. If the project underperforms, the bond feels the pain directly.
+> [!info] Example
+> Detroit’s 2013 bankruptcy is the unforgettable general-obligation warning. The city’s tax base got crushed after decades of population decline and industrial decay, leaving it unable to handle roughly USD 18 billion of obligations. Even a government-style issuer can crack when the tax base evaporates.
+> <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Detroit%20bankruptcy.svg" alt="Detroit bankruptcy filing" width="280" style="display:block; margin-top:8px; border-radius:8px;" />
+28. A revenue bond is much closer to a project-finance story. You care about usage, pricing power, operating costs, covenants, and debt service coverage ratio, not just broad tax capacity.
+> [!info] Example
+> Lima Metro Line 2 shows the hybrid style. The project was financed with bonds tied to milestone-based government-supported payments. So you are not just analyzing “Peru the sovereign.” You are analyzing project progress, payment mechanics, and the government backstop together.
+
+
+### MODULE 62.1: CREDIT ANALYSIS FOR CORPORATE ISSUERS
+
+> [!abstract] MEMORISE THIS
+> - Higher profitability, higher coverage, and higher liquidity help creditworthiness.
+> - Higher leverage hurts creditworthiness.
+> - Stable cash flows + low business risk + less competitive pressure = more debt capacity.
+> - Secured debt usually has lower loss given default than unsecured debt.
+> - Issue ratings adjust issuer ratings for collateral, seniority, and subordination.
+
+1. Corporate credit analysis is just one question in plain English: **will this company generate enough cash, on time, to pay me interest and principal without drama?** If the answer looks shaky, the bond is risky even if the company looks glamorous on the surface.
+2. Don’t think like an equity investor here. Equity asks, “How much upside can this company create?” Credit asks, “How safely can this company avoid messing up my repayment?” Same company, different lens.
+##### QUALITATIVE AND QUANTITATIVE FACTORS
+
+
+> [!abstract] MEMORISE
+> **QUALITITATIVE FACTORS**
+> Inside → Outside → Battlefield → Command.
+> 1. Business model → _How does this company make money?_ (inside the firm)
+> 2. Industry structure → _What field does it operate in?_ (outside the firm)
+> 3. Competitive position → Where does it stand vs rivals? (zoom into battlefield)
+> 4. Governance → _Who controls it?_ (The command layer)
+>    
+>  **QUANTITATIVE FACTORS**
+>  **"PLLC" → "Please Lend Liquid Cash"**    
+   > Profitability → Leverage → Liquidity → Coverage
+
+
+3. Stable and predictable cash flows make lenders comfortable. If sales bounce around wildly, debt becomes dangerous because coupons do not care that this year was “a bit weak.” They still want to be paid.
+4. Low business risk and weaker competitive pressure support more debt capacity. If the business is in a brutal knife-fight industry with constant disruption, lenders get nervous because future cash flows are harder to trust.
+5. Time horizon matters. Short-dated debt mainly cares about near-term liquidity. Long-dated debt cares much more about whether the whole business model still works years from now.
+6. For qualitative analysis, hammer four things: **business model, industry structure, competitive position, and corporate governance.** If any one of these is rotten, the ratios can look fine right before they stop looking fine.
+7. Business model first: ask yourself where the cash really comes from and whether it is repeatable. A company with boring, repeat customers is usually much easier to lend to than one betting the whole future on a big strategic pivot.
+8. Industry and competition next: high barriers to entry usually help creditors because they reduce competitive chaos. Higher threat of substitutes, stronger buyers, and faster disruption all make repayment less dependable.
+9. Governance matters more in credit than people think. If management loves debt-funded buybacks, debt-funded acquisitions, aggressive accounting, or treating bondholders like they are optional, that is a warning sign.
+10. Accounting red flags are not “equity-only” problems. Opaque reporting, off-balance-sheet financing, capitalizing too much, recognizing revenue too early, or frequently changing auditors can all hide credit weakness until it is too late.
+
+> [!info] Example
+> Wirecard was a German payments company that looked like a superstar: fast growth, huge hype, polished story. Then came the horror twist: auditors could not verify EUR 1.9 billion of supposed cash. Translation: the money was basically a ghost. The stock got wrecked, the bonds collapsed, and the company went insolvent. That is why ugly accounting is a credit bomb, not a side note.
+> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Wirecard_headquarters%2C_Aschheim_%2849556187461%29.jpg/960px-Wirecard_headquarters%2C_Aschheim_%2849556187461%29.jpg" alt="Wirecard headquarters" width="280" style="display:block; margin-top:8px; border-radius:8px;" />
+
+11. Quantitative credit analysis boils down to four buckets: **profitability, leverage, coverage, and liquidity.** Profitability asks whether the engine earns enough. Leverage asks how much debt is sitting on top of that engine. Coverage asks how comfortably earnings can handle fixed charges. Liquidity asks whether the company has cash or committed funding right now.
+12. Profitability helps both shareholders and debtholders. Leverage is different: shareholders often like more leverage because it boosts equity upside, but debtholders prefer lower leverage because they are the ones stuck eating the downside first.
+13. Coverage is your breathing-room ratio. Higher coverage means the company earns far more than it needs for interest and debt service, so one bad year does not immediately become a refinancing panic.
+14. Liquidity can save a solvent company from dying stupidly. A firm may have assets greater than liabilities and still default if it simply runs out of cash before debt comes due.
+15. The core credit ratios here are simple: **EBIT margin** for profitability, **EBIT divided by interest expense** for coverage, **Debt divided by EBITDA** for leverage, and **retained cash flow divided by net debt** as another leverage check. Learn the direction, not just the formula.
+16. Higher EBIT margin = better. Higher EBIT-to-interest = better. Higher Debt-to-EBITDA = worse. Higher retained cash flow-to-net debt = better. If you forget everything else, do not forget the direction.
+17. Credit analysts care about trends, not just one snapshot. Falling margins, weakening coverage, and rising leverage are the classic downgrade recipe.
+18. Compare ratios with peers and with the company’s own past. A Debt-to-EBITDA of 2.5 can be fine in one industry and ugly in another, so context matters.
+19. Secured debt means the lender has a claim on specific pledged assets. Unsecured debt means the lender only has a general claim on the company’s assets and cash flows.
+> [!info] Example
+> Royal Caribbean runs giant cruise ships. Then the pandemic hit and the business got punched in the face: ships stopped sailing, cash stopped flowing, and default risk shot up. But lenders still showed up because they were not lending against a fairy tale. They had ships and intellectual property sitting behind the debt. That is the whole secured-debt idea: if the business stumbles, at least there is something real to grab.
+> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vision_of_The_Seas_cruise_ship_by_Royal_Caribbean_International%2C_in_Alaska.jpg/960px-Vision_of_The_Seas_cruise_ship_by_Royal_Caribbean_International%2C_in_Alaska.jpg" alt="Royal Caribbean ship" width="280" style="display:block; margin-top:8px; border-radius:8px;" />
+20. Hard collateral beats soft promises. Tangible assets like property, equipment, inventory, cash, and marketable securities protect lenders better than goodwill, brand stories, or vague strategic optimism.
+
+##### DEBT SENIORITY
+
+> [!abstract] MEMORISE THIS
+> SECURED TIER (collateral-backed)
+>  1. First lien        ← front of the line, best collateral claim
+>  2. Senior secured    ← second lien
+>  3. Junior secured    ← weakest collateral claim
+> 
+> UNSECURED TIER (no collateral)
+> 
+>  1. Senior unsecured  ← top of the unsecured pile
+>  2. Senior sub        ← "senior among the subs"
+>  3. Subordinated      ← middle sub
+>  4. Junior sub        ← last to get paid, first to lose
+
+21. Seniority decides who eats first in bankruptcy. The rough order is: **first lien or first mortgage, then second lien, then senior unsecured, then subordinated, then junior subordinated, and only after that equity.**
+22. **==This is why two bonds from the same company can have different issue ratings even if the company’s default risk is the same.==** Same company-level probability of default, different likely loss if default happens.
+23. Issuer rating usually lines up with the company’s senior unsecured debt and speaks to overall creditworthiness. Issue rating zooms in on one specific bond and adjusts for things like collateral and subordination.
+24. ==That adjustment is called **notching**.== If a bond is secured, it may get notched above the issuer rating. If it is subordinated, it may get notched below.
+> [!info] Example
+> Royal Caribbean gave a beautiful real example. Moody's rated the company itself at **B1**, its new unsecured notes at **B2**, and its senior secured notes at **Ba2**. Same company, but the secured notes got lifted and the unsecured notes got pushed lower because recovery prospects were different. That rating gap is notching in action.
+25. High-quality issuers often have only small notching differences because default itself is less likely. For lower-rated issuers, notching matters more because if default happens, recovery differences suddenly become a very big deal.
+26. Recovery rate is how much you expect to get back after default. Loss given default is the flip side. One minus recovery rate gives you loss given default.
+27. Expected loss ties the whole thing together: **Expected Loss = Probability of Default × Loss Given Default.** So if default risk is the same, the bond with worse recovery is still the riskier bond.
+28. Equal seniority means equal class in bankruptcy. Two senior unsecured bonds of the same issuer rank **pari passu**, so maturity does not move one ahead of the other in the queue.
+29. One subtle exam point: a secured lender has first claim on the pledged asset, but if the collateral is not enough, the shortfall usually becomes a senior unsecured claim.
+30. Structural subordination is another trap. Debt issued at an operating subsidiary is serviced by that subsidiary’s cash flows before money can be pushed up to the holding company, so holding-company debt can recover less even if both are called “senior unsecured.”
+> [!info] Example
+> Caesars is a cleaner structural-subordination story. Caesars Entertainment Operating Company, the casino operating subsidiary, carried a huge pile of debt and entered restructuring talks with its own first-lien and second-lien creditors. The parent holding company sat above it. So if you lent to the parent, you were one floor higher and one step farther from the casino cash flows and assets. That is structural subordination: same group, but the subsidiary creditors get fed before value can travel upstairs.
+> <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Caesars%20Palace%20Las%20Vegas.jpg" alt="Caesars Palace in Las Vegas" width="280" style="display:block; margin-top:8px; border-radius:8px;" />
+
 ### MODULE 64.1: ASSET BACKED SECURITIES
 
 1. Compared to ordinary bank bonds, covered bonds are safer because your repayment isn’t riding on just “the bank stays healthy.” You also have a legally protected pile of assets sitting behind the bond. If assets fail to pay, you can lay claim on the assets of the originator. **The covered bonds have a recourse to the originator.** 
