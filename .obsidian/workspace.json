@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/DERIVATIVES.md",
+                "file": "CFA Notes/EQUITY.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DERIVATIVES"
+              "title": "EQUITY"
             }
           }
         ]
@@ -621,6 +621,56 @@
             "id": "cbbf0eed54a96282",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "e04f6ba5d2aaadfe",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "018384539f017084",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "ea98b24a8c3103a8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "8e7b454b3e45901b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "04351dba18efc7e2",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -628,7 +678,7 @@
             }
           }
         ],
-        "currentTab": 51
+        "currentTab": 56
       }
     ],
     "direction": "horizontal",
@@ -645,16 +695,18 @@
       "math-indicator-changer:Change math indicator": false
     }
   },
-  "active": "cbbf0eed54a96282",
+  "active": "49ac21b4a48864af",
   "lastOpenFiles": [
-    "CFA Notes/Read these again.md",
-    "CFA Notes/FSA.md",
+    "CFA Notes/ECONOMICS.md",
+    "CFA Notes/EQUITY.md",
+    "CFA Notes/PORTFOLIO MANAGEMENT.md",
+    "CFA Notes/ETHICS.md",
     "CFA Notes/module58_convexity_curve.svg",
     "CFA Notes/DERIVATIVES.md",
-    "CFA Notes/ECONOMICS.md",
+    "CFA Notes/Read these again.md",
+    "CFA Notes/FSA.md",
     "CFA Notes/module58_convexity_feature_map.svg",
     "CFA Notes/FIXED INCOME.md",
-    "CFA Notes/ETHICS.md",
     "CFA Notes/FSA.md.tmp.683950.1776453510078",
     "CFA Notes/FSA.md.tmp.683950.1776453503801",
     "CFA Notes/FSA.md.tmp.683950.1776453497493",
@@ -674,12 +726,10 @@
     "Pasted image 20251230214023.png",
     "CFA Notes/QUANTITATIVE METHODS.md",
     "DUMBPROOF_GUIDE_TO_WAYDEEPER.md",
-    "CFA Notes/PORTFOLIO MANAGEMENT.md",
     "conflict-files-obsidian-git.md",
     "CFA Notes/ALTERNATIVE INVESTMENTS.md",
     "C++/Concepts.md",
     "Diary/journal.md",
-    "CFA Notes/EQUITY.md",
     "Fixed Income/Bond Pricing.md",
     "Excalidraw/Callable Bond.md",
     "DataTable Library/Cheatsheet.md",
