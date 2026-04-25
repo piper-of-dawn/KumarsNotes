@@ -752,10 +752,10 @@ $$
 > - Modified duration is the plain-vanilla tool. Effective duration is the option-bond tool.
 > - Effective duration and convexity come from repricing, not from a clean closed-form shortcut.
 > - Key rate duration is for twist/steepening/flattening moves, not one big parallel shrug.
-> - Empirical duration matters when spreads and government yields dance together in the real world.
+> - Empirical duration matters when spreads and government yields move together in the real world.
 
 1. This module exists because the curve does not move in same direction. Short rates, belly rates, and long rates can move by different amounts, and sometimes in opposite directions.
-2. On top of that, many bonds are sneaky. Cash flows are not fixed because borrowers can prepay, issuers can call, or embedded options can change what you actually receive.
+2. Cash flows are not fixed because borrowers can prepay, issuers can call, or embedded options can change what you actually receive.
 3. That is why Macaulay and modified duration are not enough everywhere. They quietly assume a parallel shift and fixed cash flows.
 ##### MODIFIED VS EFFECTIVE
 
@@ -829,6 +829,125 @@ $$\Delta P/P \approx -\text{Eff. D}\,\Delta\text{Curve} + \tfrac{1}{2}\,\text{Ef
 18. If the 2-year rate jumps, the 30-year rate barely moves, and the 10-year point falls, key rate duration lets you map the damage properly.
 19. A portfolio’s key rate durations tell you where the real risk lives across the curve. If your exposure is concentrated in the belly, that is where the pain or gain will come from.
 20. The weighted sum of a bond portfolio’s key rate durations equals the portfolio’s effective duration. So key rate duration is not replacing effective duration; it is breaking it open by maturity bucket.
+
+> [!tip] HOW EACH DURATION MOVES WHEN BENCHMARK YIELDS MOVE
+>
+> #### Core Idea
+>
+> Duration is the slope between a bond's price and a small yield change.
+>
+> **What is duration:** price sensitivity to yield.
+>
+> **What is yield:** the market's required interest rate.
+>
+> **Relationship:** yield up usually means price down; yield down usually means price up. The hard part is that the slope can change when the bond's cash flows can change.
+>
+> #### What is yield curve?
+>
+> A yield curve is the set of yields for different maturities.
+>
+> **What is yield curve:** interest rates lined up by loan length, such as 2-year, 5-year, 10-year, and 30-year.
+>
+> **What is maturity:** the final repayment date.
+>
+> **How does it become flat:** short and long yields move closer together.
+>
+> **How does it become steep:** long yields move much higher than short yields, or short yields fall much more than long yields.
+>
+> **What is benchmark yield:** the reference market rate used as the base rate.
+>
+> **What is spread:** extra yield above the benchmark for credit or liquidity risk.
+>
+> #### Duration Types
+>
+> ##### Modified Duration
+>
+> This assumes the bond's cash flows are fixed and measures price sensitivity to the bond's own yield-to-maturity.
+>
+> **Why is modified duration used:** to estimate price change for a plain bond when cash flows do not react to rates.
+>
+> **Relationship:** if cash flows are locked, only the discount rate moves, so the duration slope stays clean.
+>
+> **Example:** imagine you took a fixed-rate mortgage and the lender assumes you will pay every month exactly as scheduled; rate changes affect the loan's value, but not the payment dates.
+>
+> ##### Effective Duration: Option-Free Bond
+>
+> This measures price sensitivity to a parallel benchmark-curve shift.
+>
+> **What is option-free bond:** a bond with no call, put, or prepayment feature.
+>
+> **What is parallel shift:** every point on the curve moves by the same amount.
+>
+> **Why is effective duration used:** to measure sensitivity to benchmark-curve movement rather than only the bond's own yield.
+>
+> **Relationship:** for an option-free bond, cash flows still stay fixed, so effective duration and modified duration are usually close; they get closer when the curve is flatter, maturity is shorter, and price is closer to par.
+>
+> **Example:** imagine your mortgage cannot be refinanced early and all market mortgage rates move up by 1%; the loan value falls much like a normal fixed-rate bond.
+>
+> ##### Effective Duration: Callable Bond
+>
+> This falls when benchmark yields fall and the issuer becomes more likely to call the bond.
+>
+> **What is callable bond:** a bond the borrower can repay early.
+>
+> **Why is call used:** the borrower wants to replace expensive old debt with cheaper new debt.
+>
+> **Relationship:** falling yields make refinancing attractive, so the investor loses the long stream of high coupons; expected life shortens, price upside is capped, and effective duration falls.
+>
+> **Example:** imagine you borrowed at 7%, new borrowing rates fall to 5%, and you repay early; your lender no longer receives the old 7% payments for as long as expected.
+>
+> ##### Effective Duration: Putable Bond
+>
+> This falls when benchmark yields rise and the investor becomes more likely to put the bond back to the issuer.
+>
+> **What is putable bond:** a bond the investor can sell back to the borrower before maturity.
+>
+> **Why is put used:** the investor wants protection when market rates rise and the old bond becomes unattractive.
+>
+> **Relationship:** rising yields normally hurt bond price, but the put creates a floor because the investor can exit; price falls less, so effective duration falls while effective convexity remains positive.
+>
+> **Example:** imagine you are the lender and your loan contract lets you force repayment when better market rates appear; you are not trapped earning the old low rate.
+>
+> ##### Effective Duration: MBS
+>
+> This changes because mortgage borrowers can refinance or prepay when rates move.
+>
+> **What is MBS:** a bond backed by a pool of mortgages.
+>
+> **What is prepayment:** borrower pays back principal earlier than scheduled.
+>
+> **Why is refinancing used:** the borrower replaces an expensive mortgage with a cheaper one.
+>
+> **Relationship:** falling rates increase refinancing, so high-rate mortgage cash flows vanish early; the MBS price does not rise as much as a normal bond, and effective duration captures that changed cash-flow path.
+>
+> **Example:** imagine you took a mortgage at 7%, rates fall to 5%, and you refinance; good for you, but the MBS investor loses the attractive 7% payments.
+>
+> ##### Key Rate Duration
+>
+> This measures sensitivity to one maturity point on the benchmark curve.
+>
+> **What is key rate:** one selected maturity point, such as the 2-year, 5-year, 10-year, or 30-year yield.
+>
+> **Why is key rate duration used:** to measure non-parallel curve moves.
+>
+> **Relationship:** if only the 5-year yield moves, a full-curve duration hides the detail; key rate duration shows which maturity point created the gain or loss, and all key-rate buckets sum to effective duration.
+>
+> **Example:** imagine 30-year mortgage rates rise but 2-year car-loan rates do not; your exposure depends on which rate your cash flows are tied to.
+>
+> ##### Empirical Duration
+>
+> This estimates duration from historical price behavior instead of a clean formula.
+>
+> **What is empirical:** based on observed data.
+>
+> **What is analytical:** based on a model or formula.
+>
+> **Why is empirical duration used:** to capture real-world interaction between benchmark yields, spreads, and bond prices.
+>
+> **Relationship:** in stress, government benchmark yields may fall while credit spreads widen; the falling benchmark helps price, but the widening spread hurts price, so empirical duration for risky credit can be lower than analytical duration.
+>
+> **Example:** imagine base mortgage rates fall, but banks become scared of your credit risk and demand a bigger spread; the headline rate move says borrowing should get cheaper, but the spread fights that benefit.
+>
 
 > [!question] KRD WITH A NON-PARALLEL MOVE
 > Problem: 50% in a 5-year zero at 5% and 50% in a 10-year zero at 6%. The 5-year yield rises by 50 basis points and the 10-year yield falls by 25 basis points. Estimate the portfolio percentage change.

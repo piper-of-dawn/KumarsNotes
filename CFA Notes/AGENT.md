@@ -71,6 +71,18 @@ Plain-Language Rule (STRICT)
 - Examples must be self-explanatory — the reader should not have to know what "Big-4" or "sq ft" means without being told.
 - One-liner hammers still exist, but "one-liner" refers to *one concept per bullet*, not *one physical line of text*. A 2–4 sentence plain-English bullet is fine; a single cryptic sentence full of jargon is not.
 
+Core Definition Breakdown Rule (STRICT)
+
+- When writing a sentence that contains the core definition of a concept, immediately follow that sentence by unpacking every jargon term used in it.
+- Use the exact format: "What is X:" followed by a one-line primitive meaning.
+- If the term describes a process, function, or role, use the exact format: "Why is X used:" followed by a one-line causal purpose.
+- Do not create a separate component section for this breakdown. Put the breakdown directly after the core definition sentence.
+- Do not recurse definitions beyond one level. Define the terms inside the definition once, then move on.
+- Do not repeat terms that have already been unpacked in that breakdown.
+- After the breakdown, explain the concept in very casual Feynman style, speaking directly to the reader.
+- Use real-world examples, scandals, interesting events, and anecdotes where they make the idea stick. Prefer concrete stories over sterile textbook examples.
+- Focus on each learning outcome. This is sacrosanct: every explanation must serve the learning outcome being covered, not drift into trivia.
+
 How Kumar Wants Examples Written
 
 Every example that is meant to make a concept stick should follow this pattern. This is not a style suggestion — it is how examples must be written in these notes.

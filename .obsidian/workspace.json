@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/EQUITY.md",
+                "file": "CFA Notes/FSA/10-financial-reporting-quality.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "EQUITY"
+              "title": "10-financial-reporting-quality"
             }
           }
         ]
@@ -79,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5026054382324
+    "width": 407.51103591918945
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -671,6 +671,66 @@
             "id": "04351dba18efc7e2",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "0b5eb63230bc0c58",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "e6faa48ec7bd3e2c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "99a36d3528097133",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "fb2105b5ee043834",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "7ba4470d280315da",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "48833ddfae9f331d",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -678,7 +738,7 @@
             }
           }
         ],
-        "currentTab": 56
+        "currentTab": 62
       }
     ],
     "direction": "horizontal",
@@ -695,47 +755,48 @@
       "math-indicator-changer:Change math indicator": false
     }
   },
-  "active": "49ac21b4a48864af",
+  "active": "ab61447ddfebe320",
   "lastOpenFiles": [
-    "CFA Notes/ECONOMICS.md",
-    "CFA Notes/EQUITY.md",
-    "CFA Notes/PORTFOLIO MANAGEMENT.md",
-    "CFA Notes/ETHICS.md",
-    "CFA Notes/module58_convexity_curve.svg",
-    "CFA Notes/DERIVATIVES.md",
-    "CFA Notes/Read these again.md",
-    "CFA Notes/FSA.md",
-    "CFA Notes/module58_convexity_feature_map.svg",
+    "CFA Notes/FIXED INCOME/03 - Fixed Income Issuance and Trading.md",
+    "CFA Notes/FIXED INCOME/02 - Fixed-Income Cash Flows and Types.md",
+    "CFA Notes/FIXED INCOME/01 - Fixed-Income Instrument Features.md",
+    "CFA Notes/FIXED INCOME/04-fixed-income-markets-for-corporate-issuers.md",
+    "CFA Notes/FSA/2 - Analysing Income Statements.md",
+    "CFA Notes/FSA/01-introduction-to-financial-statement-analysis.md",
+    "CFA Notes/FIXED INCOME/19-mortgage-backed-security-mbs-instrument-and-market-features.md",
+    "CFA Notes/FIXED INCOME/18-asset-backed-security-abs-instrument-and-market-features.md",
+    "CFA Notes/FIXED INCOME/17-fixed-income-securitization.md",
+    "CFA Notes/FIXED INCOME/16-credit-analysis-for-corporate-issuers.md",
+    "CFA Notes/FIXED INCOME/15-credit-analysis-for-government-issuers.md",
+    "CFA Notes/FIXED INCOME/14-credit-risk.md",
+    "CFA Notes/FIXED INCOME/13-curve-based-and-empirical-fixed-income-risk-measures.md",
+    "CFA Notes/FIXED INCOME/12-yield-based-bond-convexity-and-portfolio-properties.md",
+    "CFA Notes/FIXED INCOME/11-yield-based-bond-duration-measures-and-properties.md",
+    "CFA Notes/FIXED INCOME/10-interest-rate-risk-and-return.md",
+    "CFA Notes/FIXED INCOME/09-the-term-structure-of-interest-rates-spot-par-and-forward-curves.md",
+    "CFA Notes/FIXED INCOME/08-yield-and-yield-spread-measures-for-floating-rate-instruments.md",
+    "CFA Notes/FIXED INCOME/07-yield-and-yield-spread-measures-for-fixed-rate-bonds.md",
+    "CFA Notes/FIXED INCOME/06-fixed-income-bond-valuation-prices-and-yields.md",
+    "CFA Notes/FIXED INCOME/05-fixed-income-markets-for-government-issuers.md",
+    "CFA Notes/FIXED INCOME",
     "CFA Notes/FIXED INCOME.md",
+    "CFA Notes/ECONOMICS.md",
+    "CFA Notes/FSA.md",
+    "CFA Notes/AGENT.md",
+    "CFA Notes/FSA/12-introduction-to-financial-statement-modeling.md",
+    "CFA Notes/FSA",
+    "CFA Notes/XXn9Kkpg",
+    "CFA Notes/XXW4dLHx",
+    "CFA Notes/module58_convexity_curve.svg",
+    "CFA Notes/module58_convexity_feature_map.svg",
     "CFA Notes/FSA.md.tmp.683950.1776453510078",
     "CFA Notes/FSA.md.tmp.683950.1776453503801",
     "CFA Notes/FSA.md.tmp.683950.1776453497493",
     "CFA Notes/FSA.md.tmp.683950.1776453348761",
     "CFA Notes/FSA.md.tmp.683950.1776453336506",
     "CFA Notes/FSA.md.tmp.683950.1776453325263",
-    "CFA Notes/FSA.md.tmp.683950.1776453144377",
-    "CFA Notes/FSA.md.tmp.683950.1776453121927",
-    "CFA Notes/FSA.md.tmp.683950.1776453100168",
-    "CFA Notes/FSA.md.tmp.683950.1776452929411",
-    "CFA Notes/AGENT.md",
-    "ANALYSIS OF VARIANCE.md",
-    "Affirmations.md",
-    "Dymanic Betas Using Kalman Filter.md",
-    "index.md",
     "Pasted image 20260221122433.png",
     "Pasted image 20251230214023.png",
-    "CFA Notes/QUANTITATIVE METHODS.md",
-    "DUMBPROOF_GUIDE_TO_WAYDEEPER.md",
-    "conflict-files-obsidian-git.md",
-    "CFA Notes/ALTERNATIVE INVESTMENTS.md",
-    "C++/Concepts.md",
-    "Diary/journal.md",
-    "Fixed Income/Bond Pricing.md",
-    "Excalidraw/Callable Bond.md",
-    "DataTable Library/Cheatsheet.md",
-    "CFA/Yeild to Maturity.md",
-    "CFA/Revision Notes for CFA.md",
-    "CFA/Numericals to Memorise.md",
     "Pasted image 20260131190442.png",
     "Excalidraw/Scripts/Downloaded/Split Ellipse.svg",
     "Excalidraw/Scripts/Downloaded/Slideshow.svg",
