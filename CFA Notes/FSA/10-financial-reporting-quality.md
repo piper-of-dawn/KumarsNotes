@@ -157,7 +157,7 @@
 58. **International Financial Reporting Standards management commentary also requires definition, explanation, and reconciliation for non-IFRS measures.**
 59. **The danger is attention management.** The company may not be changing the accounting number; it may be changing your focus.
 
-> [!info] NON-GAAP MEASURES (intuition first)
+> [!info] NON-GAAP MEASURES 
 > Imagine a student says, “My adjusted exam score is 92.” Then you learn the actual score was 61, but the student added back marks lost for silly mistakes, tough questions, and bad sleep. Some adjustments may help you understand ability, but if every bad thing is excluded, the adjusted score becomes a sales pitch.
 > 
 > Groupon once excluded online marketing costs from a performance measure even though marketing was a recurring part of the business. Without that exclusion, the picture looked much weaker.
