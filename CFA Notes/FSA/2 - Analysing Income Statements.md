@@ -149,6 +149,17 @@ $$
    - If DLF builds apartments for sale, capitalized interest becomes part of inventory and later appears in cost of sales when apartments are sold.
    - Analyst adjustment: For interest coverage, use total interest cost, not only interest expense shown on the income statement.
 
+> [!info] INTEREST CAPITALIZATION IN PLAIN ENGLISH
+> Suppose DLF borrows money to build apartments that will take two years to finish. During Year 1, it pays USD 10 million of interest on that construction loan.
+>
+> If the interest is **expensed immediately**, Year 1 profit falls by the full USD 10 million.
+>
+> If the interest is **capitalized**, Year 1 profit does not take the full hit today. The USD 10 million is added to the apartment inventory, like part of the construction cost. Later, when the apartments are sold, that USD 10 million flows through cost of sales.
+>
+> Same cash left the business in both cases. The trick is timing: expensing says "take the pain now"; capitalization says "attach the pain to the asset and recognize it later."
+>
+> For analysis, do not let the company look safer just because interest was tucked into an asset. When judging debt burden, include both regular interest expense and current-period capitalized interest.
+
 $$
 \text{Adjusted interest coverage}
 =
