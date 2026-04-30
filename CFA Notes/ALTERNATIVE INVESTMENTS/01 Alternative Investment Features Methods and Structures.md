@@ -42,6 +42,11 @@
 10. Sophisticated investors such as large pension funds, sovereign wealth funds, and endowments can hold more alternatives because their obligations are long term. They can wait.
 11. A small investor who might need money next month should be careful with alternatives. A private equity fund does not care that you suddenly need liquidity.
 
+> [!warning] REAL WORLD: WHEN ILLIQUID BECOMES A TRAP
+> In 2022, Blackstone's BREIT, a huge non-traded real estate investment trust, faced a rush of investors asking for their money back. The fund did not simply liquidate buildings overnight. It limited withdrawals under its redemption rules.
+>
+> That is the point. A listed stock can be sold in seconds. A private real estate fund may own office buildings, apartments, and warehouses that take months to sell properly. Illiquidity means the exit door can become narrow exactly when everyone wants to leave.
+
 > [!danger] DO NOT MAKE THIS MISTAKE
 > A hedge fund can invest in ordinary public stocks and still be an alternative investment.
 >
@@ -58,6 +63,12 @@
 20. Think of venture capital as backing a young startup with an idea, early product, or small customer base. Think of broader private equity as taking a mature but underperforming company and fixing it.
 21. Source example: Heartfield Digital is early-stage and needs money for market research and partnerships, so that is venture capital. Arguston is a mature manufacturer with declining profitability and needs restructuring, so that is broader private equity.
 22. Private debt can also follow life-cycle logic. Venture debt goes to early-stage firms with little or no cash flow; distressed debt goes to companies near bankruptcy where investors may use restructuring skill.
+
+> [!info] REAL WORLD: PRIVATE EQUITY IS CONTROL, NOT JUST MONEY
+> Dell went private in 2013 in a large buyout led by Michael Dell and Silver Lake. Away from the public market spotlight, the company could restructure and make larger strategic moves without explaining every quarter to public shareholders.
+>
+> That is the private equity idea in plain English: buy control, change the business, then exit later through a sale, merger, or public listing. The spicy part is that the same control can create value or create conflict. Cost cutting, layoffs, leverage, asset sales, and management changes all sit inside that "operational improvement" story.
+
 23. The second major category is **real assets**.
 24. Real assets are generally tangible physical assets such as real estate, infrastructure, and natural resources, but the source also includes some intangibles such as patents, intellectual property, and goodwill.
 25. What is tangible: you can physically point to the asset, like land, a building, a bridge, farmland, or timberland.
@@ -76,6 +87,12 @@
 38. Commodities can help diversification because their returns may have lower correlation with stocks and bonds, and they can sometimes act as inflation hedges.
 39. Source example: lithium demand rises with electric vehicles because lithium stores a lot of energy relative to its weight. If electric vehicle demand rises, lithium demand and mining investment can rise too.
 40. Other real alternative assets include collectibles such as fine art, wine, rare coins, watches, and rare assets.
+
+> [!info] REAL WORLD: COMMODITIES CAN FEEL LIKE A CASINO WITH A SUPPLY CHAIN
+> Oil briefly traded below zero in April 2020. Sellers were effectively paying buyers to take oil because storage was scarce and futures contracts were close to delivery.
+>
+> That is why commodities are different from stocks. Apple can generate cash flow. A barrel of oil sitting in storage creates storage costs and logistical headaches. Commodity investing is not just "price goes up or down"; delivery, storage, seasonality, and shocks can dominate the story.
+
 41. Digital assets are assets that can be created, stored, and transmitted electronically and have ownership or use rights.
 42. Digital assets include cryptocurrencies, tokens, and digital collectibles such as digital art.
 43. Cryptocurrencies have their own blockchains. Crypto tokens are built on an existing blockchain.
@@ -83,6 +100,12 @@
 45. Hedge funds are private investment vehicles that may invest across public equities, fixed income, private capital, and real assets.
 46. Hedge funds are distinguished by approach: leverage, derivatives, short selling, flexible mandates, and complex strategies.
 47. Investors can also invest in a fund of funds, which is a portfolio of hedge funds.
+
+> [!warning] GENIUS PLUS LEVERAGE CAN STILL BLOW UP
+> Long-Term Capital Management was a famous hedge fund packed with elite finance talent, including Nobel Prize winners. In 1998, its leveraged trades went badly wrong after market stress, and the fund nearly collapsed in a way that worried the broader financial system.
+>
+> This is the hedge fund lesson. The underlying securities may look ordinary, but leverage and strategy can make the risk profile explosive. A hedge fund is not alternative because every asset is exotic; it is alternative because the playbook can be exotic.
+
 
 > [!tip] CATEGORY MEMORY CHECK
 > Private capital asks: **Are we funding a private company through equity or debt?**
@@ -106,6 +129,11 @@
 60. Ranking by control: direct investing has the most control, co-investing is in the middle, and fund investing has the least control.
 61. Ranking by required skill: direct investing requires the most skill, co-investing requires meaningful skill, and fund investing requires the least internal skill.
 
+> [!tip] CO-INVESTING IS THE VIP SIDE DOOR
+> Imagine a top private equity fund finds a deal too large for its own concentration limits. It invites a large pension fund to invest directly beside it, often with lower fees or no carried interest on that extra slice.
+>
+> That is why big institutions like co-investing. They get closer to the actual deal, pay less fee drag, and learn how the manager thinks. The catch is that they must be able to evaluate the deal quickly; otherwise the VIP side door becomes a fast way to copy someone else's mistake.
+
 > [!tip] ACCESS METHOD MAP
 > Fund investing: low control, high manager reliance, higher fee load, easiest entry.
 >
@@ -127,6 +155,12 @@
 73. Real estate investment trusts, commodity funds, and exchange-traded funds can provide more liquid access to alternative assets. Trusts and limited liability companies can also be used as alternative investment structures.
 74. Joint ventures are common for direct real estate investments.
 75. Infrastructure projects often use a special purpose entity that raises debt and equity for a specific road, bridge, or other long-lived asset under a concession agreement.
+
+> [!info] REAL WORLD: INFRASTRUCTURE CAN BECOME POLITICAL VERY FAST
+> Toll roads, airports, power plants, and water systems are not just financial assets. They affect voters every day. If tolls rise too much or service gets bad, politicians can pressure the project even if the contract looked airtight.
+>
+> That is why infrastructure returns can look stable but still carry political and regulatory risk. You are not only underwriting concrete and cash flows; you are underwriting the relationship between private investors and the public.
+
 
 > [!danger] GP VS LP
 > General partner = runs the fund and controls operations.
@@ -174,6 +208,11 @@ $$
 98. Deal-by-deal waterfall is also called American waterfall. It is more favorable to the general partner because performance fees can be collected deal by deal before limited partners recover the entire fund investment and preferred return.
 99. Whole-of-fund waterfall is also called European waterfall. It is more favorable to limited partners because all distributions go to limited partners until they recover initial investment and meet the hurdle at the total fund level.
 100. Source waterfall example: if early deals generate profits but later deals lose money and the fund breaks even overall, a deal-by-deal structure may pay the general partner early and then need clawback; a whole-of-fund structure pays no performance fee because the fund did not profit overall.
+
+> [!danger] SCANDAL MEMORY HOOK: FEES CAN MAKE MANAGERS LOOK RICH BEFORE INVESTORS ARE SAFE
+> In a deal-by-deal waterfall, the manager can collect carried interest on early winning deals before the whole fund has proven itself. If later deals lose money, the clawback provision is supposed to pull some of that money back.
+>
+> This is why limited partners care so much about waterfall design. American waterfall can pay the general partner early. European waterfall makes the general partner wait until the fund-level investor return is protected. Same investments, very different incentive timing.
 
 > [!tip] FINAL QUICK CHECKS
 > Hedge fund holding public stocks can still be alternative because the **approach** is alternative.

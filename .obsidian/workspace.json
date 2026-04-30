@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
+                "file": "CFA Notes/ALTERNATIVE INVESTMENTS/02 Alternative Investment Performance and Returns.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "10 Interest Rate Risk and Return"
+              "title": "02 Alternative Investment Performance and Returns"
             }
           }
         ]
@@ -807,10 +807,12 @@
   },
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
+    "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
+    "CFA Notes/ALTERNATIVE INVESTMENTS/02 Alternative Investment Performance and Returns.md",
+    "CFA Notes/FIXED INCOME/11 Yield-Based Bond Duration Measures and Properties.md",
     "CFA Notes/ALTERNATIVE INVESTMENTS/01 Alternative Investment Features Methods and Structures.md",
     "CFA Notes/ALTERNATIVE INVESTMENTS",
     "CFA Notes/ALTERNATIVE INVESTMENTS.md",
-    "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
     "CFA Notes/FIXED INCOME/09-the-term-structure-of-interest-rates-spot-par-and-forward-curves.md",
     "CFA Notes/FIXED INCOME/08 - Yield and Yield Spread Measures for Floating-Rate Instruments.md",
     "CFA Notes/FIXED INCOME/05-fixed-income-markets-for-government-issuers.md",
@@ -833,8 +835,6 @@
     "CFA Notes/FIXED INCOME/03 - Fixed Income Issuance and Trading.md",
     "CFA Notes/FIXED INCOME/02 - Fixed-Income Cash Flows and Types.md",
     "CFA Notes/FIXED INCOME/01 - Fixed-Income Instrument Features.md",
-    "CFA Notes/FSA/01-introduction-to-financial-statement-analysis.md",
-    "CFA Notes/FIXED INCOME/19-mortgage-backed-security-mbs-instrument-and-market-features.md",
     "CFA Notes/FIXED INCOME",
     "CFA Notes/FSA",
     "CFA Notes/XXn9Kkpg",

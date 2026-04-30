@@ -1,8 +1,5 @@
-### MODULE 11: Yield-Based Bond Duration Measures and Properties
 
-> Source module: `/home/karma/CFAPractice/mcq/quiz/AI/PDF/FixedIncome/module_11_yield_based_bond_duration_measures_and_properties.txt`
-
-> [!abstract] MEMORISE
+> [!abstract] SEE THIS BEFORE EXAM
 > - Duration is the bond’s interest-rate sensitivity meter.
 > - Macaulay duration = weighted-average time to cash flows.
 > - Modified duration = percentage price sensitivity to a change in the bond’s own yield.

@@ -100,7 +100,7 @@ $$
 
 19. Interest income is the return from time passing: coupons, reinvestment income, and discount or premium amortization. Capital gain or loss is the return from the bond's market value changing because yield-to-maturity changed.
 20. Investment horizon is how long the investor expects to hold the bond. This is the key variable that decides whether reinvestment risk or price risk matters more.
-21. Macaulay duration is the holding period where price risk and reinvestment risk roughly offset for a one-time instantaneous parallel yield-curve shift.
+21. ==Macaulay duration is the holding period where price risk and reinvestment risk roughly offset for a one-time instantaneous parallel yield-curve shift.==
 22. What is Macaulay duration: the present-value-weighted average time to receive the bond's cash flows.
 23. Why Macaulay duration matters: if your horizon equals Macaulay duration, the bad effect of a rate move is roughly balanced by the good effect.
 24. Duration gap is:
@@ -118,8 +118,8 @@ $$
 \text{Duration gap} = 9.85 - 7.00 = 2.85
 $$
 
-30. Positive duration gap means price risk dominates; this investor is mainly worried about rates rising.
-31. Source example: BRWA's **10-year**, **6.2%** bond has Macaulay duration **7.7429** years. The **4-year** investor is short-horizon and price-risk-heavy; the **10-year** investor is long-horizon and reinvestment-risk-heavy; the **8-year** investor is close to balanced.
+30. Positive duration gap means price risk dominates; this investor is mainly worried about rates rising. **P for positive. P for price.**
+31. Example: BRWA's **10-year**, **6.2%** bond has Macaulay duration **7.7429** years. The **4-year** investor is short-horizon and price-risk-heavy; the **10-year** investor is long-horizon and reinvestment-risk-heavy; the **8-year** investor is close to balanced.
 32. Romanian **30-year**, **5.61%** eurobond example: Macaulay duration is **15.16** years. The **15-year** investor stays near **5.61%** whether rates move up or down by **50** basis points because horizon is close to duration.
 
 > [!tip] DURATION GAP MAP
