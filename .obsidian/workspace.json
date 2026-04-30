@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/FIXED INCOME/06-fixed-income-bond-valuation-prices-and-yields.md",
+                "file": "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "06-fixed-income-bond-valuation-prices-and-yields"
+              "title": "10 Interest Rate Risk and Return"
             }
           }
         ]
@@ -771,6 +771,16 @@
             "id": "93924bd52d5c31be",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "79247904a9610800",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -778,7 +788,7 @@
             }
           }
         ],
-        "currentTab": 66
+        "currentTab": 67
       }
     ],
     "direction": "horizontal",
@@ -797,10 +807,16 @@
   },
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
-    "CFA Notes/FIXED INCOME/Yield and Yield Spread Measures for Fixed-Rate Bonds.md",
-    "CFA Notes/FIXED INCOME/06-fixed-income-bond-valuation-prices-and-yields.md",
-    "CFA Notes/FIXED INCOME/08-yield-and-yield-spread-measures-for-floating-rate-instruments.md",
+    "CFA Notes/ALTERNATIVE INVESTMENTS/01 Alternative Investment Features Methods and Structures.md",
+    "CFA Notes/ALTERNATIVE INVESTMENTS",
+    "CFA Notes/ALTERNATIVE INVESTMENTS.md",
+    "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
+    "CFA Notes/FIXED INCOME/09-the-term-structure-of-interest-rates-spot-par-and-forward-curves.md",
+    "CFA Notes/FIXED INCOME/08 - Yield and Yield Spread Measures for Floating-Rate Instruments.md",
+    "CFA Notes/FIXED INCOME/05-fixed-income-markets-for-government-issuers.md",
     "CFA Notes/FIXED INCOME/04-fixed-income-markets-for-corporate-issuers.md",
+    "CFA Notes/FIXED INCOME/06-fixed-income-bond-valuation-prices-and-yields.md",
+    "CFA Notes/FIXED INCOME/Yield and Yield Spread Measures for Fixed-Rate Bonds.md",
     "CFA Notes/FSA/03-analyzing-balance-sheets.md",
     "CFA Notes/FSA/2 - Analysing Income Statements.md",
     "CFA Notes/EQUITY/01-market-organization-and-structure.md",
@@ -819,11 +835,6 @@
     "CFA Notes/FIXED INCOME/01 - Fixed-Income Instrument Features.md",
     "CFA Notes/FSA/01-introduction-to-financial-statement-analysis.md",
     "CFA Notes/FIXED INCOME/19-mortgage-backed-security-mbs-instrument-and-market-features.md",
-    "CFA Notes/FIXED INCOME/18-asset-backed-security-abs-instrument-and-market-features.md",
-    "CFA Notes/FIXED INCOME/17-fixed-income-securitization.md",
-    "CFA Notes/FIXED INCOME/16-credit-analysis-for-corporate-issuers.md",
-    "CFA Notes/FIXED INCOME/15-credit-analysis-for-government-issuers.md",
-    "CFA Notes/FIXED INCOME/14-credit-risk.md",
     "CFA Notes/FIXED INCOME",
     "CFA Notes/FSA",
     "CFA Notes/XXn9Kkpg",
@@ -834,7 +845,6 @@
     "CFA Notes/FSA.md.tmp.683950.1776453503801",
     "CFA Notes/FSA.md.tmp.683950.1776453497493",
     "CFA Notes/FSA.md.tmp.683950.1776453348761",
-    "CFA Notes/FSA.md.tmp.683950.1776453336506",
     "Pasted image 20260221122433.png",
     "Pasted image 20251230214023.png",
     "Pasted image 20260131190442.png",
