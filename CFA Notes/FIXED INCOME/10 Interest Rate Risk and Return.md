@@ -6,26 +6,29 @@
 > 3. Define, calculate, and interpret Macaulay duration.
 
 > [!tip] SEE THIS BEFORE EXAM
-> Realized horizon yield:
+> - Realized horizon yield:
 >
 > $$
 > r = \left(\frac{\text{Future value of reinvested coupons} + \text{Sale price or redemption value}}{\text{Purchase price}}\right)^{1/T} - 1
 > $$
 > See point (6)
 >
-> Duration gap:
+> - Duration gap:
 >
 > $$
 > \text{Duration gap} = \text{Macaulay duration} - \text{Investment horizon}
 > $$
 >
-> Macaulay duration:
+> - Macaulay duration:
 >
 > $$
 > \text{Macaulay duration} = \sum(\text{Time to cash flow} \times \text{Present-value weight})
 > $$
 >
 > ==Long horizon: reinvestment risk dominates, so falling rates hurt. Short horizon: price risk dominates, so rising rates hurt.==
+> - Duration is negatively related to the change in yield and the coupon rate.
+> - When yield rises, the fat chunk that is balloon payment of the present value of the bond is discounted more heavily, so the weights to later cash flows decline and duration decreases (gets pulled earlier). A better way to see this is that with an increased yield you reinvest your coupons at a better rate which means you get your money back faster hence lower duration.
+> - When the yields fall then your coupons are reinvested at an awful rate. So the duration increases because it will take time to get your money back.
 
 > [!tip] HAMMER THIS INTO YOUR HEAD
 > Yield-to-maturity becomes the realized return only if the bond pays as scheduled, coupons are reinvested at the original yield-to-maturity, and the sale price follows the constant-yield path or the bond is held to maturity.
