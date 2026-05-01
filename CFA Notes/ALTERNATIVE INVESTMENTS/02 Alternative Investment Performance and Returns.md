@@ -83,6 +83,8 @@
 >
 > A public stock investor sees a price every second. A private equity investor may stare at ugly early cash flows for years before the payoff appears. The pain arrives on schedule; the glory is optional.
 
+#### IRR and MOIC
+
 8. ==Internal rate of return, or IRR, is the preferred measure for many long-lived alternatives because it considers both the amount and timing of cash flows.==
 		- What is internal rate of return: the discount rate that makes the present value of all cash inflows and outflows equal to zero.
 		- Why IRR is used: the private equity or real estate manager controls when capital is called and when proceeds are distributed, so timing is part of performance.
@@ -133,6 +135,8 @@ $$
 > If two funds both show **2.0x MOIC**, ask: “How long did it take?”
 >
 > Fund A doubles money in **3 years**. Fund B doubles money in **10 years**. The money multiple is identical, but Fund A is better because the capital came back faster. That is why IRR exists.
+
+#### Leverage
 
 13. Leverage means using borrowed money or derivatives to take a larger market position than the investor’s own capital would allow.
 14. Leverage magnifies both gains and losses because the asset return is earned on the full position, while the investor’s own capital absorbs the residual result after borrowing cost.
@@ -194,19 +198,37 @@ $$
 > If the asset return flips to **-2%**, the same machine becomes brutal. The loan still charges interest, the margin account shrinks, and the broker can demand more collateral.
 
 17. A margin account represents the hedge fund’s net equity in its financed positions. A margin call happens when the equity or collateral falls below the required level and the lender demands more collateral.
+    - What is margin account: the running account that shows how much of the financed position is still truly yours after borrowing is considered.
+    - What is equity: your own leftover stake in the position after subtracting what you owe the lender.
+    - What is collateral: cash or securities you post as protection for the lender, so the lender has a buffer if the trade goes bad.
+    - Why is margin call used: the lender wants the cushion restored before losses become so large that the loan is no longer safely covered.
+    - Think of it like buying a apartment with borrowed money. The apartment value is the full position, the home loan is the borrowing, and your equity is the part of the apartment that is still really yours. If the apartment price falls too much, the bank wants more cushion.
 18. ==Margin calls can lock in losses because the fund may be forced to sell losing positions at bad prices, especially if the sale itself pushes the market price lower.==
+
+#### Valuation
+
 19. Valuation is difficult because many alternative assets are illiquid and do not have clean market prices.
 20. Fair value is the market-based price that market participants would use to exchange an asset or liability in an orderly transaction at the measurement date. The seller’s version is often called the exit price.
 21. Fair value Level 1 means quoted prices in active markets for identical assets, such as a listed public stock’s closing price.
 22. Fair value Level 2 means observable inputs other than Level 1 quoted prices, such as an over-the-counter interest rate derivative priced using observable market data.
 23. Fair value Level 3 means unobservable inputs, usually for assets with little or no market activity, such as private equity or real estate valued through cash-flow projection models.
-24. Mark-to-model valuation means the value comes from a model rather than a live market price. Models should be independently tested, benchmarked, and calibrated because the manager may have a conflict of interest.
-25. ==Exam trap: Level 3 values can smooth or overstate returns and understate volatility and risk.== The asset is not necessarily safer; it may simply be marked less directly.
 
-> [!example] LEVEL 3 MARKS CAN MAKE A BURNING ROOM LOOK CALM
-> A public real estate stock can fall **20%** in a week because the market price moves every second. A private office building might still sit near old carrying value because no sale has happened yet and the model changes slowly.
+> [!example] REAL WORLD: EASY PRICE, MODEL PRICE, AND "TRUST ME" PRICE
+> Level 1 is the clean, shamelessly public case. Think of Apple shares on the Nasdaq. At the close, the market prints a price and the whole world can see it. Nobody needs a poetic speech from management. The quoted price for the identical asset is already sitting there.
 >
-> That does not mean the building is stable. It may mean the thermometer is slow. Level 3 valuation can hide volatility until a financing round, impairment, sale, or forced liquidation reveals the real price.
+> Level 2 is what a big bank lived on for years before and after the 2008 crisis. Imagine a dealer book full of over-the-counter interest rate swaps. There is not one single exchange screen showing the exact price for your exact contract, but the value can still be built from observable market ingredients such as the yield curve, benchmark floating rates, and prices of comparable instruments. You are not blind, but you are definitely no longer in the sunlight.
+>
+> Level 3 is where finance starts asking for faith. Imagine a property fund in a weak office market after remote work punched demand in the face. Hardly any comparable towers have traded, tenants are wobbling, and the manager still has to put a number on the building. So the valuation comes from rent assumptions, vacancy assumptions, discount rates, and projected cash flows. That number may be intelligent, but it is still partly a story until a real buyer shows up with real money.
+
+24. Mark-to-model valuation means the value comes from a model rather than a live market price. Models should be independently tested, benchmarked, and calibrated because the manager may have a conflict of interest.
+25. ==Level 3 values can smooth or overstate returns and understate volatility and risk.== The asset is not necessarily safer; it may simply be marked less directly.
+
+> [!example] REAL WORLD: 2008 TAUGHT THIS THE HARD WAY
+> During the global financial crisis, traded securities screamed first. Bank stocks, mortgage-linked securities, and anything with a live market price started collapsing in public. That is the cruel honesty of market pricing: the humiliation happens immediately.
+>
+> But less frequently traded assets often looked calmer for longer because they were being marked with models and assumptions rather than a brutal last trade. The calm was partly cosmetic. Once forced sales, refinancing stress, or genuine market transactions arrived, the softer marks had to catch up. That is the Level 3 danger: the number can stay polite long after reality has turned violent.
+
+#### Fee Structures
 
 26. ==Gross return is what the fund earns before fees. Net return is what the investor keeps after fees.==
 27. A management fee is a fixed fee, often based on assets under management or end-of-period value. A performance fee is based on investment gains, often above a hurdle or high-water mark.
@@ -215,10 +237,12 @@ $$
 30. Either/or fees let the manager take either a management fee or an incentive fee, whichever is higher. A large institution may negotiate **1%** management fee or **30%** incentive fee above a hurdle, whichever is greater.
 31. Redemption fee discourages withdrawals and helps offset transaction costs. Notice period is advance warning before redemption, often **30 to 90 days**. Lockup period is the minimum holding period before withdrawal. A gate limits redemptions for a period.
 
-> [!danger] REAL WORLD: THE EXIT DOOR CAN BECOME A VIP ROPE LINE
+> [!example] THE EXIT DOOR CAN BECOME A VIP ROPE LINE
 > During stress, everyone wants liquidity at the same time. A fund holding private loans, real estate, or complex hedge fund positions cannot sell everything politely by Friday.
 >
 > Redemption fees, notice periods, lockups, and gates protect the strategy and remaining investors, but they also mean your “investment value” and your “cash in hand” are not the same thing.
+
+
 
 32. Basic general partner fee formula when management and performance fees are calculated independently:
 
@@ -226,13 +250,14 @@ $$
 R_{GP}=(P_1 \times r_m)+\max[0,(P_1-P_0)\times p]
 $$
 
-34. Investor return after fees:
+33. Investor return after fees:
 
 $$
 r_i=\frac{P_1-P_0-R_{GP}}{P_0}
 $$
 
-35. Notation in simple language: $R_{GP}$ is total manager fee, $P_0$ is beginning fund value, $P_1$ is ending fund value before fees, $r_m$ is management fee rate, $p$ is performance fee rate, and $r_i$ is investor net return.
+34. Notation in simple language: $R_{GP}$ is total manager fee, $P_0$ is beginning fund value, $P_1$ is ending fund value before fees, $r_m$ is management fee rate, $p$ is performance fee rate, and $r_i$ is investor net return.
+35. Kettleside Timberland is the running example fund here. It starts with **USD 100 million**, charges a **1%** management fee on year-end assets, and takes a **20%** performance fee.
 
 > [!question] FEES CALCULATED INDEPENDENTLY
 > Problem: Beginning value is **USD 100 million**, ending value is **USD 130 million**, management fee is **1%** of year-end assets, and performance fee is **20%**. If fees are independent, calculate manager fees and investor net return.
@@ -255,78 +280,125 @@ $$
 R_{GP,\ net}=(P_1 \times r_m)+\max[0,\{P_1(1-r_m)-P_0\}\times p]
 $$
 
-37. Using the same facts:
+> [!question] FEES CALCULATED NET OF MANAGEMENT FEE
+> Problem: Use the same fund facts, but now calculate performance fee after management fee has already been deducted.
+>
+> ---
+>
+> Solution:
+>
+> $$
+> R_{GP,\ net}=130 \times 1\%+\{130(0.99)-100\}\times 20\%=7.04
+> $$
+>
+> $$
+> r_i=\frac{130-100-7.04}{100}=22.96\%
+> $$
+>
+> Explanation: ==net-of-management-fee performance fee is slightly better for the investor because the performance-fee base is smaller.==
 
-$$
-R_{GP,\ net}=130 \times 1\%+\{130(0.99)-100\}\times 20\%=7.04
-$$
+> [!example] YOUR UNCLE THE FUND MANAGER
+> Do not memorise these formulas. They are common sense. Imagine you are rich, lazy, and slightly doomed, so you hand your money to your uncle because he swears he understands markets better than the rest of the family.
+> 
+> Your uncle says, “Son, I work hard, I meet management teams, I watch markets, I lose hair for you.” So he charges **2% management fee** every year for running the portfolio. That fee gets paid even if the portfolio performs terribly. If your money falls, your uncle still sends the invoice.
+> 
+> Then comes the **performance fee**, which is the incentive. This is the part where your uncle says, “If I make you extra money, I want a cut of the upside too.” So management fee is the fixed salary. Performance fee is the bonus.
+> 
+> Then you get wiser and say, “Fine, but you do not get bonus for breathing.” So you set a **hurdle rate**. That means your uncle earns performance fee only after the portfolio clears some minimum return. In plain English, hurdle rate means: “First make me enough money. Only then we talk bonus.”
+> 
+> Then you get even wiser because your uncle has a dangerous talent for losing money one year and calling a recovery “genius” the next. So you add a **high-water mark**. That means if your portfolio fell from **100** to **80**, and next year crawls back to **95**, your uncle does **not** get to call that victory and collect incentive fees. He gets performance fee only after he beats the old peak again.
+> 
+> That is the clean way to remember it:
+> ==Management fee = pay for running the money.==
+> ==Performance fee = pay for making extra money.==
+> ==Hurdle rate = minimum return before bonus starts.==
+> ==High-water mark = no bonus for merely recovering old losses.==
+> 
+> Once you see it that way, the formulas stop looking abstract. They are just bookkeeping for one question: how much does the investor keep after paying the manager for showing up and for winning?
 
-$$
-r_i=\frac{130-100-7.04}{100}=22.96\%
-$$
-
-38. Explanation: ==net-of-management-fee performance fee is slightly better for the investor because the performance-fee base is smaller.==
-39. ==A hard hurdle means the performance fee applies only to gains above the hurdle.== With a hard hurdle calculated net of management fee:
+37. ==A hard hurdle is the investor saying: “You do not earn bonus just because the fund made money. First clear my minimum required return.”== Only the return above that hurdle is exposed to performance fee. With a hard hurdle calculated net of management fee:
 
 $$
 R_{GP,\ hurdle}=(P_1 \times r_m)+\max[0,\{P_1(1-r_m)-P_0(1+r_h)\}\times p]
 $$
 
-40. Same Kettleside facts with a **6%** hard hurdle:
+> [!question] HARD HURDLE
+> Problem: Use the same fund facts, but now add a **6%** hard hurdle. Think of the investor as protecting the first **6%** return from incentive fees.
+>
+> ---
+>
+> Solution:
+>
+> $$
+> R_{GP,\ hurdle}=130 \times 1\%+\{130(0.99)-100(1.06)\}\times 20\%=5.84
+> $$
+>
+> $$
+> r_i=\frac{130-100-5.84}{100}=24.16\%
+> $$
 
-$$
-R_{GP,\ hurdle}=130 \times 1\%+\{130(0.99)-100(1.06)\}\times 20\%=5.84
-$$
-
-$$
-r_i=\frac{130-100-5.84}{100}=24.16\%
-$$
-
-41. A high-water mark is the previous peak value of the fund net of fees. ==It stops the manager from charging performance fees again until the fund exceeds the earlier peak.==
-42. High-water mark fee formula:
+38. A high-water mark is the previous best fund value after fees. ==It is the investor saying: “Do not charge me a victory bonus for merely recovering from your old mistakes.”==
+39. So the rule is simple: after a bad year, the manager can still collect management fee, but performance fee starts again only after the fund rises above the old peak. The formula is:
 
 $$
 R_{GP,\ HWM}=(P_t \times r_m)+\max[0,(P_t-P_{HWM})\times p]
 $$
 
-43. In Kettleside Year 2, fund value falls to **USD 110 million** after Year 1 investor capital had reached **USD 122.7 million** net of fees:
+> [!question] HIGH-WATER MARK AFTER A BAD YEAR
+> Problem: In Year 2, fund value falls to **USD 110 million** after Year 1 investor capital had already reached **USD 122.7 million** net of fees. What happens under a high-water mark?
+>
+> ---
+>
+> Solution:
+>
+> $$
+> R_{GP,\ HWM}=110 \times 1\%+\max[0,(110-122.7)\times 20\%]=1.1
+> $$
+>
+> $$
+> r_i=\frac{110-122.7-1.1}{122.7}=-11.25\%
+> $$
+>
+> Explanation: the fund is still below its old best level, so the manager has no right to incentive fee yet.
 
-$$
-R_{GP,\ HWM}=110 \times 1\%+\max[0,(110-122.7)\times 20\%]=1.1
-$$
+> [!question] HIGH-WATER MARK FOR THE OLD INVESTOR
+> Problem: In Year 3, fund value rises to **USD 128 million**. The old investor’s high-water mark is **USD 122.7 million**. Calculate the fee and investor return.
+>
+> ---
+>
+> Solution:
+>
+> $$
+> R_{GP,\ HWM}=128 \times 1\%+(128-122.7)\times 20\%=2.34
+> $$
+>
+> $$
+> r_i=\frac{128-108.9-2.34}{108.9}=15.39\%
+> $$
 
-$$
-r_i=\frac{110-122.7-1.1}{122.7}=-11.25\%
-$$
+> [!question] HIGH-WATER MARK FOR THE NEW INVESTOR
+> Problem: A new investor enters after Year 2 with a personal high-water mark of **USD 108.9 million**. The fund still rises to **USD 128 million** in Year 3. Calculate the fee and investor return.
+>
+> ---
+>
+> Solution:
+>
+> $$
+> R_{GP,\ HWM}=128 \times 1\%+(128-108.9)\times 20\%=5.10
+> $$
+>
+> $$
+> r_i=\frac{128-108.9-5.10}{108.9}=12.86\%
+> $$
 
-44. In Kettleside Year 3, fund value rises to **USD 128 million**. The old investor’s high-water mark is **USD 122.7 million**:
+40. ==Exam trap: the same fund and same gross Year 3 performance produced **15.39%** for the old investor and **12.86%** for the new investor because their high-water marks differed.==
 
-$$
-R_{GP,\ HWM}=128 \times 1\%+(128-122.7)\times 20\%=2.34
-$$
-
-$$
-r_i=\frac{128-108.9-2.34}{108.9}=15.39\%
-$$
-
-45. A new investor entering after Year 2 has a personal high-water mark of **USD 108.9 million**, so the Year 3 fee is higher:
-
-$$
-R_{GP,\ HWM}=128 \times 1\%+(128-108.9)\times 20\%=5.10
-$$
-
-$$
-r_i=\frac{128-108.9-5.10}{108.9}=12.86\%
-$$
-
-46. ==Exam trap: the same fund and same gross Year 3 performance produced **15.39%** for the old investor and **12.86%** for the new investor because their high-water marks differed.==
-
-> [!danger] SCANDAL MEMORY HOOK: THE NEW INVESTOR PAYS FOR THE COMEBACK PARTY
+> [!example] THE NEW INVESTOR PAYS FOR THE COMEBACK PARTY
 > Suppose a fund crashes from **USD 130 million** to **USD 110 million**. Old investors are still underwater, so the high-water mark protects them from paying performance fees on a mere recovery.
 >
 > A new investor who enters at **USD 110 million** does not have that old scar. If the fund rebounds to **USD 128 million**, the new investor may pay incentive fees while old investors pay less.
 
-47. ==A clawback provision gives limited partners the right to reclaim part of the general partner’s performance fee if later losses reduce aggregate profits.==
+41. ==A clawback provision gives limited partners the right to reclaim part of the general partner’s performance fee if later losses reduce aggregate profits.==
 
 > [!question] CLAWBACK
 > Problem: One investment gains **USD 12 million**, another later loses **USD 10 million**, and carry is **20%**. Calculate the final carry after clawback.
@@ -349,62 +421,75 @@ $$
 >
 > Explanation: ==**USD 2.0 million** of previously accrued performance fee must be returned to limited partner capital accounts== because final carry is only **USD 0.4 million**, not the initially accrued **USD 2.4 million**.
 
-48. ==Soft hurdle means once the hurdle is met, carried interest can apply to a larger base through a catch-up arrangement. Hard hurdle means carry applies only to the amount above the hurdle.==
-49. Source hurdle numerical: A property is bought for **USD 100 million** and sold after **2 years** for **USD 160 million**, with **8%** annual preferred return and **80/20** split.
-50. With a soft hurdle and catch-up, limited partners first receive **USD 100 million** capital back and **USD 16 million** preferred return. The general partner then receives **USD 4 million** catch-up, and the remaining **USD 40 million** is split **80/20**, giving **USD 32 million** to limited partners and **USD 8 million** to the general partner.
-51. Total soft-hurdle payout: limited partners receive **USD 148 million** and the general partner receives **USD 12 million**.
-52. With a hard hurdle and no catch-up, only the **USD 44 million** above capital plus preferred return is subject to **20%** carry:
+42. ==Soft hurdle means once the hurdle is met, carried interest can apply to a larger base through a catch-up arrangement. Hard hurdle means carry applies only to the amount above the hurdle.==
 
-$$
-44 \times 20\%=8.8
-$$
+> [!question] SOFT HURDLE WITH CATCH-UP
+> Problem: A property is bought for **USD 100 million** and sold after **2 years** for **USD 160 million**, with **8%** annual preferred return and **80/20** split. Calculate the soft-hurdle payout.
+>
+> ---
+>
+> Solution:
+>
+> Limited partners first receive **USD 100 million** capital back and **USD 16 million** preferred return. The general partner then receives **USD 4 million** catch-up, and the remaining **USD 40 million** is split **80/20**, giving **USD 32 million** to limited partners and **USD 8 million** to the general partner.
+>
+> Explanation: total soft-hurdle payout is **USD 148 million** to limited partners and **USD 12 million** to the general partner.
 
-53. Total hard-hurdle payout: limited partners receive **USD 151.2 million** and the general partner receives **USD 8.8 million**. ==Soft hurdle with catch-up gives the general partner more.==
-54. Fund-of-funds investing adds another fee layer. Direct hedge fund investment with **20%** gross return and **2 and 20** fees gives:
+> [!question] HARD HURDLE WITHOUT CATCH-UP
+> Problem: Use the same property facts, but now assume a hard hurdle with no catch-up. Calculate the payout.
+>
+> ---
+>
+> Solution:
+>
+> $$
+> 44 \times 20\%=8.8
+> $$
+>
+> Explanation: total hard-hurdle payout is **USD 151.2 million** to limited partners and **USD 8.8 million** to the general partner. ==Soft hurdle with catch-up gives the general partner more.==
 
-$$
-\text{Management fee}=100 \times 2\%=2
-$$
+> [!question] DIRECT HEDGE FUND VERSUS FUND OF FUNDS
+> Problem: Direct hedge fund investment earns **20%** gross return and charges **2 and 20** fees. Calculate the direct investor return.
+>
+> ---
+>
+> Solution:
+>
+> $$
+> \text{Management fee}=100 \times 2\%=2
+> $$
+>
+> $$
+> \text{Incentive fee}=20 \times 20\%=4
+> $$
+>
+> $$
+> \text{Investor return}=\frac{20-2-4}{100}=14\%
+> $$
 
-$$
-\text{Incentive fee}=20 \times 20\%=4
-$$
+> [!question] FUND OF FUNDS DOUBLE-FEE DRAG
+> Problem: The fund of funds earns **14%** after underlying hedge fund fees and then charges **1 and 10**. Calculate the investor return.
+>
+> ---
+>
+> Solution:
+>
+> $$
+> \frac{14-1-(14 \times 10\%)}{100}=11.6\%
+> $$
+>
+> Explanation: fund of funds may still provide due diligence, diversification, manager access, or access to a closed hedge fund, but ==the double-fee drag is real.==
 
-$$
-\text{Investor return}=\frac{20-2-4}{100}=14\%
-$$
+#### Relative Returns and Biases
 
-55. If the investor uses a fund of funds that earns **14%** after underlying hedge fund fees and then charges **1 and 10**, investor return becomes:
-
-$$
-\frac{14-1-(14 \times 10\%)}{100}=11.6\%
-$$
-
-56. Fund of funds may still make sense if it provides due diligence, diversification, manager access, or access to a closed hedge fund. ==But the double-fee drag is real.==
-57. Relative performance needs benchmarks, but alternative benchmarks are dangerous if the peer group is not comparable.
-58. ==Private equity and real estate comparisons are better when investments are from the same vintage year.== Vintage year means the year a fund starts its investment life, so funds are compared at similar life-cycle stages.
-59. A mature private equity fund harvesting exits should not be lazily compared with a new fund still paying fees and deploying capital.
-60. Hedge fund indexes have special bias problems because funds self-report, fail, close, or selectively join databases.
-61. Survivorship bias happens when failed funds are excluded from the index, making average reported returns look too good.
-62. Backfill bias happens when successful funds join an index later and add their good past returns to the database.
-63. ==Both survivorship bias and backfill bias create upward bias in hedge fund indexes.==
+43. Relative performance needs benchmarks, but alternative benchmarks are dangerous if the peer group is not comparable.
+44. ==Private equity and real estate comparisons are better when investments are from the same vintage year.== Vintage year means the year a fund starts its investment life, so funds are compared at similar life-cycle stages.
+45. A mature private equity fund harvesting exits should not be lazily compared with a new fund still paying fees and deploying capital.
+46. Hedge fund indexes have special bias problems because funds self-report, fail, close, or selectively join databases.
+47. Survivorship bias happens when failed funds are excluded from the index, making average reported returns look too good.
+48. Backfill bias happens when successful funds join an index later and add their good past returns to the database.
+49. ==Both survivorship bias and backfill bias create upward bias in hedge fund indexes.==
 
 > [!example] THE INDEX MAY BE A BEAUTY PAGEANT OF SURVIVORS
 > Imagine a coaching center advertises only the students who cracked the exam and quietly removes everyone who failed. Then it adds the past mock scores of its toppers after discovering they were toppers.
 >
 > That is survivorship bias plus backfill bias. Hedge fund indexes can look cleaner than the actual set of funds investors had to choose from in real time.
-
-> [!tip] FINAL QUICK CHECKS
-> ==IRR cares about timing. MOIC ignores timing.==
->
-> ==Leverage helps only when $r>r_b$. It hurts when $r<r_b$.==
->
-> ==Level 3 values can smooth returns and understate volatility.==
->
-> ==Management fee can still be charged in a bad year. Performance fee usually needs gains above the relevant hurdle or high-water mark.==
->
-> ==Hard hurdle pays carry only above the hurdle. Soft hurdle with catch-up can pay carry on a larger amount.==
->
-> ==Old and new investors in the same fund can have different high-water marks and therefore different net returns.==
->
-> ==Survivorship bias plus backfill bias usually makes hedge fund indexes look too good.==
