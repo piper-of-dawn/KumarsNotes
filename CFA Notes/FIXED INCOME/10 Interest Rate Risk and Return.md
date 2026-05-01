@@ -4,31 +4,24 @@
 > 1. Calculate and interpret the sources of return from investing in a fixed-rate bond.
 > 2. Describe the relationships among a bond's holding period return, its Macaulay duration, and the investment horizon.
 > 3. Define, calculate, and interpret Macaulay duration.
-
+10 Interest Rate Risk and Return
 > [!tip] SEE THIS BEFORE EXAM
-> - Realized horizon yield:
->
-> $$
-> r = \left(\frac{\text{Future value of reinvested coupons} + \text{Sale price or redemption value}}{\text{Purchase price}}\right)^{1/T} - 1
-> $$
-> See point (6)
->
-> - Duration gap:
->
-> $$
-> \text{Duration gap} = \text{Macaulay duration} - \text{Investment horizon}
-> $$
->
-> - Macaulay duration:
->
-> $$
-> \text{Macaulay duration} = \sum(\text{Time to cash flow} \times \text{Present-value weight})
-> $$
->
+> - Realized horizon yield = annualized return from reinvested coupons plus sale price or redemption value, divided by what you paid.
+> - Duration gap = Macaulay duration - investment horizon.
+> - Macaulay duration = sum of each cash-flow time multiplied by its present-value weight.
 > ==Long horizon: reinvestment risk dominates, so falling rates hurt. Short horizon: price risk dominates, so rising rates hurt.==
 > - Duration is negatively related to the change in yield and the coupon rate.
 > - When yield rises, the fat chunk that is balloon payment of the present value of the bond is discounted more heavily, so the weights to later cash flows decline and duration decreases (gets pulled earlier). A better way to see this is that with an increased yield you reinvest your coupons at a better rate which means you get your money back faster hence lower duration.
 > - When the yields fall then your coupons are reinvested at an awful rate. So the duration increases because it will take time to get your money back.
+> - **You paid 100, reinvested coupons grow to 21, and sale price is 110 after 3 years. Find realized horizon yield.** Put everything you finally have on top: 21 + 110 = 131. Compare that with what you paid: 131 / 100 = 1.331. Now take the 3-year root; since 1.10 cubed is 1.331, horizon yield is 10% per year.
+> - **A 5% annual coupon bond pays coupons for 3 years, and reinvestment rate is 10%. Find future value of coupons.** Do not just add 5 + 5 + 5 and stop. First coupon compounds for 2 years: 5 x 1.10 x 1.10 = 6.05. Second coupon compounds for 1 year: 5 x 1.10 = 5.50. Third coupon is already at the horizon: 5. Total future value of coupons = 16.55.
+> - **A bond has 2 years left, coupon is 5, face value is 100, and market yield is 5%. Find sale price.** Discount the cash flows at the new yield: 5 / 1.05 + 105 / 1.05^2. That is 4.76 + 95.24 = 100. When coupon rate equals market yield, price sits at par.
+> - **A discount bond was bought at 96, its constant-yield carrying value is now 98, and it is sold for 101. Split the return effect.** The pull from 96 to 98 is interest income through discount amortization. The extra 101 - 98 = 3 is capital gain because the bond sold above its constant-yield path. Do not throw both into the same bucket.
+> - **Macaulay duration is 9.85 years and investment horizon is 7 years. Find duration gap and the main risk.** Duration gap = 9.85 - 7 = 2.85. Positive gap means the bond's duration is longer than your horizon, so price risk dominates and rising rates are the bad move. If the gap were negative, reinvestment risk would dominate and falling rates would be the bad move.
+> - **A bond has two cash flows: 50 in year 1 and 50 in year 3. The full price is 100. Find Macaulay duration if both present-value weights are 50%.** Do the weighted average of time: 1 x 0.50 + 3 x 0.50 = 2 years. Macaulay duration is just the cash-flow center of gravity.
+> - **A semiannual bond has Macaulay duration of 3.6 periods. Convert it to years.** Semiannual means 2 periods per year, so 3.6 / 2 = 1.8 years. Do not leave period duration as annual duration.
+> - **A bond is 60 days into a 180-day coupon period. Find the first cash-flow time in periods.** Time left is 180 - 60 = 120 days. First cash-flow time = 120 / 180 = 0.667 periods. Every later cash flow is one full period after that.
+> - **A 5-year zero-coupon bond has one cash flow at maturity. Find Macaulay duration.** No table needed. All present-value weight sits in year 5, so Macaulay duration = 5 years, even if the yield is weird or negative.
 
 > [!tip] HAMMER THIS INTO YOUR HEAD
 > Yield-to-maturity becomes the realized return only if the bond pays as scheduled, coupons are reinvested at the original yield-to-maturity, and the sale price follows the constant-yield path or the bond is held to maturity.
