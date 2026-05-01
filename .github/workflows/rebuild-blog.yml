@@ -12,4 +12,4 @@ jobs:
       - name: Trigger blog Pages workflow
         env:
           GH_TOKEN: ${{ secrets.BLOG_REBUILD_TOKEN }}
-        run: gh api repos/piper-of-dawn/blog/dispatches -f event_type=notes-updated
+        run: gh api repos/piper-of-dawn/blog/actions/workflows/pages.yaml/dispatches -f ref=master
