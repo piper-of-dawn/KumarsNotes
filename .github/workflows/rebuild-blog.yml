@@ -4,13 +4,12 @@ on:
     branches:
       - clean
   workflow_dispatch:
-env:
-    GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
 jobs:
   dispatch:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger blog Pages workflow
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.BLOG_REBUILD_TOKEN }}
         run: gh api repos/piper-of-dawn/blog/dispatches -f event_type=notes-updated
