@@ -1,4 +1,3 @@
-### MODULE 2: Alternative Investment Performance and Returns
 
 > [!ABSTRACT] LOS
 > 1. Describe the performance appraisal of alternative investments.
@@ -188,41 +187,40 @@ $$
 >
 > Explanation: Lupulus loses **2%** on the asset and still pays **4%** on the borrowing, so the borrowed slice creates extra damage.
 
-17. ==If the underlying position earns **6%**, the breakeven borrowing rate is **6%** because leverage adds nothing when $r_b=r$.==
 
 > [!example] LEVERAGE LOOKS LIKE GENIUS UNTIL THE BILL ARRIVES
 > A hedge fund earning **8%** on assets while borrowing at **4%** looks clever. Add enough borrowed money, and the investor return looks juiced.
 >
 > If the asset return flips to **-2%**, the same machine becomes brutal. The loan still charges interest, the margin account shrinks, and the broker can demand more collateral.
 
-18. A margin account represents the hedge fund’s net equity in its financed positions. A margin call happens when the equity or collateral falls below the required level and the lender demands more collateral.
-19. ==Margin calls can lock in losses because the fund may be forced to sell losing positions at bad prices, especially if the sale itself pushes the market price lower.==
-20. Valuation is difficult because many alternative assets are illiquid and do not have clean market prices.
-21. Fair value is the market-based price that market participants would use to exchange an asset or liability in an orderly transaction at the measurement date. The seller’s version is often called the exit price.
-22. Fair value Level 1 means quoted prices in active markets for identical assets, such as a listed public stock’s closing price.
-23. Fair value Level 2 means observable inputs other than Level 1 quoted prices, such as an over-the-counter interest rate derivative priced using observable market data.
-24. Fair value Level 3 means unobservable inputs, usually for assets with little or no market activity, such as private equity or real estate valued through cash-flow projection models.
-25. Mark-to-model valuation means the value comes from a model rather than a live market price. Models should be independently tested, benchmarked, and calibrated because the manager may have a conflict of interest.
-26. ==Exam trap: Level 3 values can smooth or overstate returns and understate volatility and risk.== The asset is not necessarily safer; it may simply be marked less directly.
+17. A margin account represents the hedge fund’s net equity in its financed positions. A margin call happens when the equity or collateral falls below the required level and the lender demands more collateral.
+18. ==Margin calls can lock in losses because the fund may be forced to sell losing positions at bad prices, especially if the sale itself pushes the market price lower.==
+19. Valuation is difficult because many alternative assets are illiquid and do not have clean market prices.
+20. Fair value is the market-based price that market participants would use to exchange an asset or liability in an orderly transaction at the measurement date. The seller’s version is often called the exit price.
+21. Fair value Level 1 means quoted prices in active markets for identical assets, such as a listed public stock’s closing price.
+22. Fair value Level 2 means observable inputs other than Level 1 quoted prices, such as an over-the-counter interest rate derivative priced using observable market data.
+23. Fair value Level 3 means unobservable inputs, usually for assets with little or no market activity, such as private equity or real estate valued through cash-flow projection models.
+24. Mark-to-model valuation means the value comes from a model rather than a live market price. Models should be independently tested, benchmarked, and calibrated because the manager may have a conflict of interest.
+25. ==Exam trap: Level 3 values can smooth or overstate returns and understate volatility and risk.== The asset is not necessarily safer; it may simply be marked less directly.
 
 > [!example] LEVEL 3 MARKS CAN MAKE A BURNING ROOM LOOK CALM
 > A public real estate stock can fall **20%** in a week because the market price moves every second. A private office building might still sit near old carrying value because no sale has happened yet and the model changes slowly.
 >
 > That does not mean the building is stable. It may mean the thermometer is slow. Level 3 valuation can hide volatility until a financing round, impairment, sale, or forced liquidation reveals the real price.
 
-27. ==Gross return is what the fund earns before fees. Net return is what the investor keeps after fees.==
-28. A management fee is a fixed fee, often based on assets under management or end-of-period value. A performance fee is based on investment gains, often above a hurdle or high-water mark.
-29. ==Different investors in the same fund can face different net returns== because of larger commitments, earlier entry, founder share classes, side terms, high-water marks, or longer lockups.
-30. Founders shares are lower-fee shares offered to early investors in a new fund. Example: **1.5%** management fee and **10%** performance fee instead of **2%** and **20%**.
-31. Either/or fees let the manager take either a management fee or an incentive fee, whichever is higher. A large institution may negotiate **1%** management fee or **30%** incentive fee above a hurdle, whichever is greater.
-32. Redemption fee discourages withdrawals and helps offset transaction costs. Notice period is advance warning before redemption, often **30 to 90 days**. Lockup period is the minimum holding period before withdrawal. A gate limits redemptions for a period.
+26. ==Gross return is what the fund earns before fees. Net return is what the investor keeps after fees.==
+27. A management fee is a fixed fee, often based on assets under management or end-of-period value. A performance fee is based on investment gains, often above a hurdle or high-water mark.
+28. ==Different investors in the same fund can face different net returns== because of larger commitments, earlier entry, founder share classes, side terms, high-water marks, or longer lockups.
+29. Founders shares are lower-fee shares offered to early investors in a new fund. Example: **1.5%** management fee and **10%** performance fee instead of **2%** and **20%**.
+30. Either/or fees let the manager take either a management fee or an incentive fee, whichever is higher. A large institution may negotiate **1%** management fee or **30%** incentive fee above a hurdle, whichever is greater.
+31. Redemption fee discourages withdrawals and helps offset transaction costs. Notice period is advance warning before redemption, often **30 to 90 days**. Lockup period is the minimum holding period before withdrawal. A gate limits redemptions for a period.
 
 > [!danger] REAL WORLD: THE EXIT DOOR CAN BECOME A VIP ROPE LINE
 > During stress, everyone wants liquidity at the same time. A fund holding private loans, real estate, or complex hedge fund positions cannot sell everything politely by Friday.
 >
 > Redemption fees, notice periods, lockups, and gates protect the strategy and remaining investors, but they also mean your “investment value” and your “cash in hand” are not the same thing.
 
-33. Basic general partner fee formula when management and performance fees are calculated independently:
+32. Basic general partner fee formula when management and performance fees are calculated independently:
 
 $$
 R_{GP}=(P_1 \times r_m)+\max[0,(P_1-P_0)\times p]
