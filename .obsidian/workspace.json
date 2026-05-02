@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/ALTERNATIVE INVESTMENTS/02 Alternative Investment Performance and Returns.md",
+                "file": "CFA Notes/EQUITY/02 Security Market Indexes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "02 Alternative Investment Performance and Returns"
+              "title": "02 Security Market Indexes"
             }
           }
         ]
@@ -801,6 +801,26 @@
             "id": "0806be592fc07115",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "49351fc56139e5d8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "6faabfbe23099c42",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -808,7 +828,7 @@
             }
           }
         ],
-        "currentTab": 69
+        "currentTab": 71
       }
     ],
     "direction": "horizontal",
@@ -825,10 +845,23 @@
       "math-indicator-changer:Change math indicator": false
     }
   },
-  "active": "ab61447ddfebe320",
+  "active": "49ac21b4a48864af",
   "lastOpenFiles": [
-    "CFA Notes/ALTERNATIVE INVESTMENTS/01 Alternative Investment Features Methods and Structures.md",
+    "CFA Notes/CORPORATE ISSUERS/20-features-of-corporate-issuers.md",
+    "CFA Notes/EQUITY/02 Security Market Indexes.md",
+    "CFA Notes/FSA/05 ANALYZING STATEMENTS OF CASH FLOWS II.md",
+    "CFA Notes/FSA/04-analyzing-statements-of-cash-flows-i.md",
+    "CFA Notes/CORPORATE ISSUERS/25-2-capital-structure-theories.md",
+    "CFA Notes/CORPORATE ISSUERS/25-1-weighted-average-cost-of-capital.md",
+    "CFA Notes/CORPORATE ISSUERS/24-2-capital-allocation-principles-and-real-options.md",
+    "CFA Notes/CORPORATE ISSUERS/24-1-capital-investments-and-project-measures.md",
+    "CFA Notes/CORPORATE ISSUERS/23-liquidity-measures-and-management.md",
+    "CFA Notes/CORPORATE ISSUERS/22-corporate-governance.md",
+    "CFA Notes/CORPORATE ISSUERS/21-stakeholders-and-esg-factors.md",
+    "CFA Notes/CORPORATE ISSUERS",
     "CFA Notes/ALTERNATIVE INVESTMENTS/02 Alternative Investment Performance and Returns.md",
+    "CFA Notes/FSA/XXVbn5gv",
+    "CFA Notes/ALTERNATIVE INVESTMENTS/01 Alternative Investment Features Methods and Structures.md",
     "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
     "CFA Notes/FIXED INCOME/11 Yield-Based Bond Duration Measures and Properties.md",
     "CFA Notes/FIXED INCOME/08 - Yield and Yield Spread Measures for Floating-Rate Instruments.md",
@@ -843,18 +876,7 @@
     "CFA Notes/FSA/2 - Analysing Income Statements.md",
     "CFA Notes/EQUITY/01-market-organization-and-structure.md",
     "CFA Notes/EQUITY.md",
-    "CFA Notes/EQUITY/08-equity-valuation-concepts-and-basic-tools.md",
-    "CFA Notes/EQUITY/07-company-analysis-forecasting.md",
-    "CFA Notes/EQUITY/06-industry-and-competitive-analysis.md",
-    "CFA Notes/EQUITY/05-company-analysis-past-and-present.md",
-    "CFA Notes/EQUITY/04-overview-of-equity-securities.md",
-    "CFA Notes/EQUITY/03-market-efficiency.md",
-    "CFA Notes/EQUITY/02-security-market-indexes.md",
     "CFA Notes/EQUITY",
-    "CFA Notes/FSA/10 - Financial Reporting Quality.md",
-    "CFA Notes/FIXED INCOME/03 - Fixed Income Issuance and Trading.md",
-    "CFA Notes/FIXED INCOME/02 - Fixed-Income Cash Flows and Types.md",
-    "CFA Notes/FIXED INCOME/01 - Fixed-Income Instrument Features.md",
     "CFA Notes/FIXED INCOME",
     "CFA Notes/FSA",
     "CFA Notes/XXn9Kkpg",
@@ -863,8 +885,6 @@
     "CFA Notes/module58_convexity_feature_map.svg",
     "CFA Notes/FSA.md.tmp.683950.1776453510078",
     "CFA Notes/FSA.md.tmp.683950.1776453503801",
-    "CFA Notes/FSA.md.tmp.683950.1776453497493",
-    "CFA Notes/FSA.md.tmp.683950.1776453348761",
     "Pasted image 20260221122433.png",
     "Pasted image 20251230214023.png",
     "Pasted image 20260131190442.png",

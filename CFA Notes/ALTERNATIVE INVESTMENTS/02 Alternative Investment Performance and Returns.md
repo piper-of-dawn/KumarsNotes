@@ -16,21 +16,20 @@
 > $$
 >
 > - Total invested capital = paid-in capital minus management fees and fund expenses.
-> - **A fund has paid-in capital of 750, fees of 75, realized value of 1,000, and unrealized value of 500. Find multiple of invested capital.** Denominator is not 750. Total invested capital = 750 - 75 = 675. Multiple of invested capital = (1,000 + 500) / 675 = 2.22 times. This tells you magnitude, not speed.
+> - **Paid-in capital 750, fees 75, realized value 1,000, unrealized value 500. Find multiple of invested capital.** Denominator is 675, not 750. Multiple of invested capital = 1,500 / 675 = 2.22 times.
 > - Leveraged return:
 >
 > $$
 > r_L=r+\frac{V_b}{V_c}(r-r_b)
 > $$
 >
-> - Leverage helps only when the asset return is above the borrowing rate. If $r>r_b$, leverage boosts return. If $r<r_b$, leverage makes the loss worse.
-> - **A hedge fund has 100 of capital, borrows 50 at 4%, and earns 8% on the assets. Find leveraged return.** Use the spread: 8% - 4% = 4%. Borrowed money is half the cash capital, so extra return = 0.5 x 4% = 2%. Leveraged return = 8% + 2% = 10%.
-> - **Same fund loses 2% on assets while borrowing at 4%. Find leveraged return.** Spread = -2% - 4% = -6%. Extra damage = 0.5 x -6% = -3%. Leveraged return = -2% - 3% = -5%.
-> - **If the asset earns 6%, what borrowing rate makes leverage irrelevant?** Borrowing rate must also be 6%. When $r_b=r$, the leverage spread is zero.
-> - Level 1 fair value = quoted active-market price for the identical asset. Level 2 fair value = observable inputs other than quoted Level 1 price. Level 3 fair value = unobservable inputs, usually models for private equity or real estate.
+> ==Leverage helps only when $r>r_b$. If $r<r_b$, leverage makes the loss worse.==
+> - **Capital 100, borrow 50 at 4%, asset earns 8%.** Spread is 4%. Borrowed proportion is 0.5. Extra return = 2%. Leveraged return = 10%.
+> - **Same facts, but asset loses 2%.** Spread is -6%. Extra damage = -3%. Leveraged return = -5%.
+> - Level 1 = live quoted price. Level 2 = model built from observable inputs. Level 3 = model built from unobservable inputs.
 > ==Level 3 can smooth returns and understate volatility. A smooth mark is not the same as a safe asset.==
-> - Gross return is what the fund earns before fees. Net return is what the investor keeps after fees.
-> - Basic manager fee when management and performance fees are calculated independently:
+> - Gross return = what the fund earns before fees. Net return = what the investor keeps after fees.
+> - Basic manager fee:
 >
 > $$
 > R_{GP}=(P_1 \times r_m)+\max[0,(P_1-P_0)\times p]
@@ -42,18 +41,17 @@
 > r_i=\frac{P_1-P_0-R_{GP}}{P_0}
 > $$
 >
-> - **Beginning value is 100, ending value is 130, management fee is 1% on ending value, and performance fee is 20%. Find independent fees and investor return.** Management fee = 130 x 1% = 1.3. Performance fee = (130 - 100) x 20% = 6. Total fee = 7.3. Investor return = (130 - 100 - 7.3) / 100 = 22.7%.
-> - **Same facts, but performance fee is calculated after management fee.** Management fee is still 1.3. Performance fee = [130 x 0.99 - 100] x 20% = 5.74. Total fee = 7.04. Investor return = 22.96%. Net-of-management-fee calculation is better for the investor.
-> - Hard hurdle = manager earns performance fee only above the hurdle. Soft hurdle with catch-up = once the hurdle is crossed, the manager can catch up and earn carry on a larger base.
-> - **Property bought for 100 sells for 160 after 2 years. Preferred return is 8% per year and carry is 20%. Compare soft and hard hurdle.** Preferred return = 16. Soft hurdle with catch-up gives the general partner 12. Hard hurdle gives the general partner only 8.8. Soft hurdle is more manager-friendly.
-> - High-water mark = previous peak fund value net of fees. Manager does not earn performance fee again until the fund rises above that peak.
-> - **Old investor high-water mark is 122.7. Fund fell to 108.9 and then rose to 128. What happens?** Old investor pays performance fee only above 122.7, so return is 15.39%. New investor entering at 108.9 pays fee on more of the rebound, so return is 12.86%. Same fund, different entry point, different net return.
-> - Clawback = limited partners can reclaim part of the general partner's performance fee if later losses reduce aggregate profits.
-> - **One deal gains 12, later deal loses 10, carry is 20%. Find final carry.** Initial accrued carry = 12 x 20% = 2.4. Final aggregate profit = 2, so final carry = 2 x 20% = 0.4. General partner must give back 2.0.
-> - Redemption fee discourages withdrawals. Notice period gives advance warning, often 30 to 90 days. Lockup period blocks early withdrawals. Gate limits redemptions when too many investors run for the exit.
+> - **Beginning value 100, ending value 130, management fee 1%, performance fee 20%.** Independent-fee investor return = 22.7%. Net-of-management-fee investor return = 22.96%.
+> - Hard hurdle = bonus only above the hurdle. Soft hurdle with catch-up = manager catches up faster once hurdle is crossed.
+> - **Property bought for 100 sells for 160 after 2 years, preferred return 8%, carry 20%.** Soft hurdle gives the general partner 12. Hard hurdle gives only 8.8.
+> - High-water mark = no bonus for merely recovering old losses.
+> - **Old investor high-water mark 122.7, fund falls to 108.9, then rises to 128.** Old investor return = 15.39%. New investor return = 12.86%. Same fund, different entry point, different net return.
+> - Clawback = return of previously accrued carry when later losses reduce aggregate profit.
+> - **One deal gains 12, later deal loses 10, carry 20%.** Initial carry = 2.4. Final carry = 0.4. Manager gives back 2.0.
+> - Redemption fee, notice period, lockup period, and gate all exist because investors always want the exit at the same time.
 > - Fund of funds adds a second fee layer. Direct hedge fund return can be 14%, but after fund-of-funds fees the investor may keep only 11.6%.
-> - Use vintage year for private equity and real estate comparisons. A young fund still deploying capital should not be compared casually with a mature fund harvesting exits.
-> - Survivorship bias excludes dead funds. Backfill bias adds past returns of successful funds after they join the database. Both make hedge fund indexes look too good.
+> - Vintage-year comparison matters for private equity and real estate.
+> - Survivorship bias removes dead funds. Backfill bias adds good past returns later. Both make hedge fund indexes look too good.
 
 > [!tip] HAMMER THIS INTO YOUR HEAD
 > IRR answers: **When did the money come in and go out?**
