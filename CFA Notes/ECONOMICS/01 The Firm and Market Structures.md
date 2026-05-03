@@ -82,7 +82,7 @@
 52. A firm may enjoy economies of scale because larger scale can justify better technology and equipment.
 53. A firm may enjoy economies of scale because big purchasing volume can win input discounts.
 54. A firm may enjoy economies of scale because better information and quality control reduce waste.
-55. An electric utility is the source's classic scale story. As it spreads capacity across more customers, cost per unit can fall.
+55. An electric utility is a clean scale story. As it spreads capacity across more customers, cost per unit can fall.
 
 > [!example] Walmart's scale is not just "big"; it is weaponized
 > Walmart did not become powerful just by opening more stores. It used huge purchasing volume to pressure suppliers for discounts, and it used point-of-sale data to respond fast to customer demand. Bigger size became lower unit cost, not just bigger revenue.
@@ -104,88 +104,113 @@
 
 65. Economists group market structures into four broad types: perfect competition, monopolistic competition, oligopoly, and monopoly.
 66. What is a market: a group of buyers and sellers who are aware of each other and can agree on a price for exchange.
-67. The source says five factors determine market structure.
-68. The five are: number and relative size of firms, degree of product differentiation, pricing power, barriers to entry and exit, and non-price competition.
-69. Perfect competition has many sellers, standardized product, no pricing power, very low barriers, and basically no non-price competition.
-70. Monopolistic competition has many sellers, differentiated products, some pricing power, low barriers, and active advertising or branding.
-71. Oligopoly has few sellers, significant barriers, interdependence, and some or considerable pricing power.
-72. Monopoly has one seller, a unique product, very high barriers, and considerable pricing power.
-73. Consumers usually prefer more competition because prices are generally lower.
-74. Owners usually prefer more pricing power because margins can be higher.
-75. The source adds a useful trade-off: less-than-perfect competition may support innovation because firms can expect a return on research and development.
-76. So perfect competition is efficient on price and quantity, but not always the environment that best rewards experimentation.
+67. The CFA curriculum says five factors determine market structure. The five are: number and relative size of firms, degree of product differentiation, pricing power, barriers to entry and exit, and non-price competition.
+68. Perfect competition has many sellers, standardized product, no pricing power, very low barriers, and basically no non-price competition.
+69. Monopolistic competition has many sellers, differentiated products, some pricing power, low barriers, and active advertising or branding.
+70. Oligopoly has few sellers, significant barriers, interdependence, and some or considerable pricing power.
+71. Monopoly has one seller, a unique product, very high barriers, and considerable pricing power.
+72. Consumers usually prefer more competition because prices are generally lower. Owners usually prefer more pricing power because margins can be higher.
+73. Less-than-perfect competition may support innovation because firms can expect a return on research and development. So perfect competition is efficient on price and quantity, but not always the environment that best rewards experimentation.
 
 > [!example] Television broadcasting changed because market structure changed
-> First came government-run or limited free broadcast channels. Then cable arrived with more choice and a better picture. Then satellite squeezed pricing again. Then Netflix, Apple, and Amazon pushed content onto the internet and mobile devices. The message is simple: strategy changes when market structure changes.
+> First came government-run or limited free broadcast channels like Doordarshan in India. Then cable arrived with more choice and a better picture. Then satellite squeezed pricing again. Then Netflix, Apple, and Amazon pushed content onto the internet and mobile devices. The message is simple: strategy changes when market structure changes.
 
+rid: many firms, but each tries to make its product look different.
 ### Monopolistic Competition
 
-77. Monopolistic competition is a hybrid: many firms, but each tries to make its product look different.
-78. What is product differentiation: making buyers feel your product is distinct enough that they do not treat every rival as identical.
-79. Because the product is differentiated, the firm faces a downward-sloping demand curve.
-80. Lower price raises quantity demanded; higher price reduces quantity demanded.
-81. There is no well-defined supply function in monopolistic competition.
-82. Why is there no clean supply curve here: output comes from **MR = MC**, but price comes from the demand curve, not directly from marginal cost.
-83. In the short run, the firm maximizes profit where **MR = MC** and then charges the price buyers accept on the demand curve.
-84. Total revenue is price times quantity. Total cost is average cost times quantity. Their difference is economic profit.
-85. In the long run, low entry costs attract rivals if firms are earning economic profit.
-86. New firms steal customers, each firm's demand shifts down, and long-run economic profit falls to zero.
-87. So long-run monopolistic competition looks like perfect competition in one sense: zero economic profit.
-88. But it does not look like perfect competition in every sense, because output is lower than the quantity that minimizes average cost.
-89. The source also says product differentiation and advertising create costs that perfect competition does not carry.
+77. Monopolistic competition is a hybrid: many firms, but each tries to make its product look different. What is product differentiation: making buyers feel your product is distinct enough that they do not treat every rival as identical.
+78. Because the product is differentiated, the firm faces a downward-sloping demand curve.
+79. Lower price raises quantity demanded; higher price reduces quantity demanded. There is no well-defined supply function in monopolistic competition.
+80. Why is there no clean supply curve here: output comes from **MR = MC**, but price comes from the demand curve, not directly from marginal cost.
+81. In the short run, the firm maximizes profit where **MR = MC** and then charges the price buyers accept on the demand curve.
+82. Total revenue is price times quantity. Total cost is average cost times quantity. Their difference is economic profit.
+83. In the long run, low entry costs attract rivals if firms are earning economic profit.
+84. New firms steal customers, each firm's demand shifts down, and long-run economic profit falls to zero.
+85. So long-run monopolistic competition looks like perfect competition in one sense: zero economic profit.
+86. But it does not look like perfect competition in every sense, because output is lower than the quantity that minimizes average cost.
+87. Product differentiation and advertising also create costs that perfect competition does not carry.
 
 > [!example] Coca-Cola and Harley-Davidson are not selling "just the product"
 > Coca-Cola's buyers do not behave as if every soft drink is identical. Harley-Davidson riders do not talk as if one motorcycle is the same as every other motorcycle. That is the whole point of monopolistic competition: sameness is fought with identity.
 
-90. The source defends imperfect competition instead of treating it like a villain.
-91. Why is imperfect competition useful: differentiation can encourage innovation and can give consumers variety they genuinely value.
-92. The source uses candy and international car trade to make that point. People do not only want utility; they also want variety.
+88. Why is imperfect competition useful: differentiation can encourage innovation and can give consumers variety they genuinely value.
+89. People do not only want utility; they also want variety, which is why differentiated markets survive even when they look less efficient on paper.
 
 ### Oligopoly
 
-93. Oligopoly means only a few firms dominate the market.
-94. Because the number is small, each firm watches rivals before moving on price or output.
-95. What is interdependence: each firm's best move depends on how rivals react.
-96. Oligopoly products can be homogeneous, like petroleum or cement, or differentiated, like breakfast cereals or canned beverages.
-97. Entry is difficult, barriers are significant, and pricing power is usually substantial.
-98. The small number of firms makes collusion tempting.
-99. What is collusion: firms coordinating behavior to raise joint profits instead of competing hard.
-100. An explicit collusive group is called a **cartel**.
-101. The source's classic cartel example is OPEC.
+93. Oligopoly means only a few firms control most of the market, so each firm's move is big enough to disturb rivals instead of being ignored.
+94. What is interdependence: each firm's best price or output decision depends on how rival firms are likely to respond after seeing that move.
+95. Because rival reactions matter, oligopoly is not just cost-and-demand math; it is also a strategic game played under mutual fear and opportunity.
+96. Oligopoly products may be homogeneous, like cement, or differentiated, like branded soft drinks, but in both cases buyers can still switch across rivals.
+97. Entry is usually difficult, barriers are significant, and that protection is what lets the surviving firms keep some pricing power for long periods.
 
-> [!example] OPEC is the goosebump example because the stakes are global
-> A few oil producers coordinate and the ripple can hit transport costs, inflation, politics, and entire national budgets. That is why oligopoly is never just a classroom diagram. A pricing decision in a concentrated market can travel through the whole economy.
+> [!warning] DO NOT MAKE THIS MISTAKE 
+>  The oligopoly is slightly messy when a new entrant cuts the prices. The market share of incumbent might increase counter-intuitively. As prices decrease, smaller companies will leave the market rather than sell below cost. The market share of already price leaders, will increase. 
 
-102. One oligopoly pricing story is the kinked demand curve.
-103. The assumption is simple: rivals match your price cuts but ignore your price increases.
-104. Why does that matter: price hikes lose customers fast, but price cuts do not win as many because rivals copy them.
-105. So demand is more elastic for price increases and less elastic for price decreases.
-106. This creates a kinked demand curve and a discontinuous marginal revenue curve.
-107. The source says this helps explain sticky prices in oligopoly.
-108. But it cannot explain how the original prevailing price was set, so it is incomplete.
-109. The Cournot assumption gives another way to think.
-110. What is the Cournot assumption: each firm chooses its profit-maximizing output assuming the other firms will not change theirs.
-111. In the source's duopoly example, market demand is $Q_D = 450 - P$ and marginal cost is 30.
-112. Solving the two firms' reactions gives $q_1 = 140$ and $q_2 = 140$, so total output is 280 and price is 170.
-113. The source then compares that with perfect competition, where price would be 30 and output would be 420.
-114. It also compares it with monopoly, where output would be 210 and price would be 240.
-115. So the Cournot result sits between competition and monopoly: higher price and lower output than competition, but less extreme than monopoly.
-116. As the number of firms rises, the Cournot equilibrium moves toward the competitive outcome.
-117. Nash equilibrium adds explicit strategic thinking.
-118. What is Nash equilibrium: a situation in which no firm can improve profit by unilaterally changing strategy after considering rivals' rational responses.
-119. In plain language, everyone is doing the best they can given what the others are doing.
-120. The source's ArcCo and BatCo matrix shows why joint-profit heaven is often unstable.
-121. Both charging high prices gives the highest joint payoff, but one firm is tempted to undercut.
-122. That temptation is exactly why collusion is attractive and also fragile.
-123. The source lists six factors that make collusion more likely to succeed.
-124. Collusion works better when the number of firms is small or one firm is dominant.
-125. It works better when products are similar, cost structures are similar, and orders are frequent, regular, and small.
-126. It also works better when retaliation is severe and external competition is weak.
-127. The source's oil-cost example shows why outside competition can eventually break cartel power.
-128. If cartel pricing becomes too profitable, it invites outsiders to enter or expand.
-129. The Stackelberg model adds a sequential story instead of simultaneous moves.
-130. What is first-mover advantage: the leader chooses output first and can force the follower into a weaker response.
-131. The source calls this a "top dog" strategy when the leader overproduces aggressively to pressure the follower.
+98. Once a few firms hold pricing power, the next issue is whether they fight, quietly follow one another, or try to coordinate. What is collusion: firms coordinating actions to raise joint profit instead of competing aggressively against one another.
+99. An explicit collusive arrangement is called a **cartel**, which is why oligopoly always carries a quiet temptation to cooperate.
+100. A good real-world picture is the old Cola Wars: Coca-Cola and Pepsi did not behave like anonymous wheat farmers; each watched the other's next move constantly.
+101. The first oligopoly pricing story is the kinked-demand model, and it starts from one behavioral assumption about rival reactions. The assumption is this: rivals match your price cuts, but they do not follow your price increases.
+102. Why is that plausible: if you cut price alone, rivals fear losing customers and copy you, but if you raise price alone, they enjoy stealing customers from you. That makes demand more elastic for a price increase and less elastic for a price cut, because buyers run away faster than they come in.
+103. Two different demand responses around the current price create the kinked demand curve, which then creates a discontinuous marginal revenue curve.
+104. The practical takeaway is price stickiness: marginal cost can move within the marginal-revenue gap without forcing a new optimal price. The weakness comes next: this model explains why an existing price can stay stable, but it does not explain how that original price was chosen.
+105. If you want an actual solved price and output, the next framework is the Cournot model, which is much more numerical.
+106. What is the Cournot assumption: each firm chooses its own profit-maximizing output while assuming rival firms will keep their output unchanged.
+107. In a duopoly with market demand $Q_D = 450 - P$ and constant marginal cost 30, each firm solves output choice against the other's assumed fixed output.
+108. Solving the two reaction equations gives $q_1 = 140$ and $q_2 = 140$, so total output is $Q = 280$, which immediately implies price $P = 170$.
+109. That Cournot outcome sits between the two extreme benchmark worlds, so the next comparison becomes much easier to remember.
+110. Under perfect competition, price equals marginal cost, so $450 - Q = 30$, giving $Q = 420$ and price $P = 30$.
+111. Under monopoly, marginal revenue equals marginal cost, so $450 - 2Q = 30$, giving $Q = 210$ and price $P = 240$.
+112. So oligopoly under Cournot lands in the middle: price is higher and output is lower than competition, but less extreme than monopoly.
+
+> [!question] COURNOT NUMERICAL
+> Problem: In a duopoly, market demand is $Q_D = 450 - P$ and each firm's marginal cost is 30. Find each firm's output, total output, and market price under the Cournot assumption.
+>
+> ---
+> Use the two reaction equations: $450 - 2q_1 - q_2 = 30$ and $450 - q_1 - 2q_2 = 30$.
+> Because the firms are symmetric, set $q_1 = q_2$. Then $450 - 3q_1 = 30$, so $q_1 = 140$ and $q_2 = 140$.
+> Total output is $280$, and price is $450 - 280 = 170$.
+>
+> Quick intuition: each firm has power, but neither owns the whole market, so the result lands between competition and monopoly.
+
+> [!question] BENCHMARK COMPARISON
+> Problem: Using the same demand curve $Q_D = 450 - P$ and marginal cost 30, compare perfect competition, Cournot duopoly, and monopoly.
+>
+> ---
+> Perfect competition: $P = MC$, so $450 - Q = 30$. Output is $420$ and price is $30$.
+> Cournot duopoly: output is $280$ and price is $170$.
+> Monopoly: $MR = MC$, so $450 - 2Q = 30$. Output is $210$ and price is $240$.
+>
+> Quick intuition: weaker competition means less output and a higher price.
+
+113. As the number of firms rises from two to three to four and beyond, the Cournot outcome moves closer to the competitive benchmark.
+114. After output-choice logic, the next step is strategy-choice logic, and that is where Nash equilibrium becomes the clean mental model.
+115. What is Nash equilibrium: a situation in which no firm can improve its payoff by changing strategy alone after accounting for rivals' rational reactions.
+116. In plain language, every firm is already making its best available move given what the others are currently doing.
+117. This matters because the outcome with the highest joint profit is not always the outcome that is individually stable.
+118. Suppose both firms charge high prices and earn 500 and 300, but one firm can switch alone and raise its own payoff to 350.
+119. The moment one firm can gain by deviating alone, the old outcome stops being a Nash equilibrium, even if it looked beautiful for the group.
+120. That is why collusion is attractive in theory but fragile in reality: the group wants discipline, but each firm privately wants to cheat.
+121. A real historical echo is airline price wars, where one carrier cuts fares and rivals quickly respond because staying still means losing passengers now.
+122. Collusion is more likely to survive when the number of firms is small or one firm is dominant, because coordination becomes easier.
+123. Collusion is also more likely when products are similar and cost structures are similar, because cheating becomes easier to spot and punish.
+124. Frequent, regular, small orders also help collusion because firms get repeated chances to monitor behavior and retaliate quickly.
+125. Severe retaliation supports collusion, but strong outside competition weakens it because high cartel profits attract or empower new rivals.
+126. A good historical pattern is the De Beers diamond system: control lasts only while outside supply remains weak enough not to break pricing discipline.
+127. The last framework changes timing itself: Stackelberg assumes one firm moves first and the follower reacts after seeing that move.
+128. What is first-mover advantage: the leader can shape the follower's response and may earn more than it would under simultaneous Cournot-style decision making.
+129. In aggressive form, this becomes the "top dog" strategy, where the leader expands output early to pressure the follower into a weaker position.
+130. So the final oligopoly lesson is simple: price and output depend not only on cost and demand, but also on the exact strategic game being played.
+
+> [!question] NASH NUMERICAL
+> Problem: Two firms have four payoff outcomes. If both charge low prices, profits are 50 and 70. If Firm A charges low and Firm B charges high, profits are 80 and 0. If Firm A charges high and Firm B charges low, profits are 300 and 350. If both charge high, profits are 500 and 300. Which outcome is Nash-stable?
+>
+> ---
+> Start with Firm B. If Firm A charges low, Firm B prefers low price because 70 is better than 0. If Firm A charges high, Firm B still prefers low price because 350 is better than 300.
+> Now hold Firm B at low price. Firm A then prefers high price because 300 is better than 50.
+> So the Nash-stable outcome is: Firm A high price, Firm B low price.
+>
+> Quick intuition: Nash equilibrium is the cell where no one wants to move alone.
 
 > [!warning] OLIGOPOLY TRAPS
 > - Kinked demand helps explain price stability, not the original price.
@@ -195,43 +220,70 @@
 
 ### Determining Market Structure in Practice
 
-132. Real-world market power is harder to measure than textbook monopoly diagrams make it look.
-133. Governments care because firms with pricing power can restrict output, raise price, and reduce market efficiency.
-134. So competition law tries to stop excessive concentration and abusive dominance.
-135. The source gives famous cases: Archer Daniels Midland in lysine, the breakup of AT&T, European action in vitamins and Intel, and the blocked General Electric-Honeywell merger.
-136. For an analyst, the lesson is practical: if you hear "merger," immediately ask whether regulators may block it.
-137. The theoretical gold-standard measure of market power is elasticity of demand and supply.
-138. Why is elasticity useful: very elastic demand suggests a market close to perfect competition, while rigid demand hints at pricing power.
-139. But estimating elasticity is messy because observed price and quantity are equilibrium outcomes shaped by both supply and demand.
-140. What is endogeneity here: price and quantity are jointly determined, so you cannot treat one as cleanly causing the other.
-141. Time-series data may be stale because market structure can change over the sample period.
-142. Cross-sectional regression can help, but it needs heavy data gathering and can still depend on specification choices.
-143. That is why analysts often use simpler concentration measures instead.
-144. The concentration ratio is the sum of the market shares of the largest N firms.
-145. Its advantage is obvious: it is easy to compute.
-146. Its weakness is also obvious: a high ratio does not automatically prove monopoly power.
-147. Why not: even a sole incumbent may behave competitively if barriers to entry are low and a potential entrant is credible.
-148. The source's sugar wholesaler example makes that point beautifully. One current seller does not guarantee safe pricing power.
-149. Another weakness is that mergers among top firms may barely move the concentration ratio even when market power rises a lot.
-150. The Herfindahl-Hirschman index fixes part of that blindness by squaring shares before adding them.
-151. What is HHI: the sum of squared market shares, giving heavier weight to already-large firms.
-152. If one firm owns the whole market, HHI equals 1.
-153. If $M$ firms share the market equally, HHI equals $1/M$.
-154. So an HHI of 0.20 feels like five equal firms.
-155. In the source's example, the premerger top-three HHI is 0.225 and the postmerger HHI jumps to 0.410.
-156. That is why regulators like HHI more than a raw concentration ratio when thinking about mergers.
-157. But HHI still has limits.
-158. It does not capture low barriers to entry, and it does not directly capture elasticity of demand.
-159. So HHI is useful, but not holy.
+135. Real-world market power is harder to measure than textbook monopoly diagrams make it look, so regulators use practical shortcuts instead of pure theory alone.
+136. Governments care because firms with pricing power can restrict output, raise price, and reduce market efficiency, so competition law watches concentration closely.
+137. For an analyst, the lesson is practical: if you hear "merger," immediately ask whether regulators may block it before assuming the deal will close.
+138. The theoretical gold-standard measure of market power is elasticity of demand and supply, because highly elastic demand usually means weak pricing power.
+139. But estimating elasticity is messy because observed price and quantity are shaped jointly by supply and demand rather than by one side alone.
+140. What is endogeneity here: price and quantity are determined together, so you cannot cleanly treat one as the single driver of the other.
+141. Time-series estimates can go stale, and cross-sectional work needs heavy data plus careful modeling, so analysts often use simpler concentration measures.
+142. What is concentration ratio: the sum of the market shares of the largest $N$ firms in the market.
+143. Its main strength is speed. You add the biggest firms' shares and get a fast rough picture of how concentrated the market is.
+144. Its first weakness is interpretation: a high ratio does not automatically prove monopoly power if low entry barriers keep the incumbent scared.
+145. Its second weakness is merger blindness: big mergers can change real power a lot while barely nudging the concentration ratio.
+146. The Herfindahl-Hirschman index, or HHI, improves on that by squaring market shares before adding them.
+147. What is HHI: the sum of squared market shares, which gives extra weight to already-large firms and reacts more sharply to consolidation.
+148. If one firm owns the whole market, HHI equals 1. If $M$ equal firms share the market, HHI equals $1/M$.
+149. So an HHI of 0.20 feels like a market split equally among five firms, which gives you quick intuition before deeper analysis.
+150. Regulators like HHI because it punishes bigness more directly than a raw concentration ratio.
+151. But HHI still has limits: it does not capture low barriers to entry, and it does not directly capture elasticity of demand.
+152. So the exam takeaway is balanced: concentration ratio is simple, HHI is sharper, but neither one is perfect.
+
+> [!question] CONCENTRATION RATIO NUMERICAL
+> Problem: Eight producers have market shares of 35%, 25%, 20%, 10%, and four firms with 2.5% each. Find the top-three and top-four concentration ratios.
+>
+> ---
+> Top-three concentration ratio = 35 + 25 + 20 = 80%.
+> Top-four concentration ratio = 35 + 25 + 20 + 10 = 90%.
+>
+> Quick intuition: concentration ratio is just a market-share addition problem.
+
+> [!question] MERGER EFFECT ON CONCENTRATION RATIO
+> Problem: Using the same market shares, suppose the largest two firms merge. What are the new top-three and top-four concentration ratios?
+>
+> ---
+> The merged firm has 60%, then the next firms have 20% and 10%.
+> New top-three concentration ratio = 60 + 20 + 10 = 90%.
+> New top-four concentration ratio = 60 + 20 + 10 + 2.5 = 92.5%.
+>
+> Quick intuition: the ratio moves only a little even though one huge firm now controls 60% of the market.
+
+> [!question] HHI NUMERICAL
+> Problem: Five firms have market shares of 35%, 25%, 20%, 10%, and 10%. Find the three-firm HHI.
+>
+> ---
+> Use only the top three firms: $0.35^2 + 0.25^2 + 0.20^2$.
+> That is $0.1225 + 0.0625 + 0.04 = 0.225$.
+>
+> Quick intuition: square first, then add, so large firms get amplified.
+
+> [!question] EQUAL-SHARE HHI
+> Problem: Ten firms each hold 10% of the market. What are the top-four concentration ratio and the HHI of the top four firms?
+>
+> ---
+> Top-four concentration ratio = 10 + 10 + 10 + 10 = 40%.
+> HHI of the top four firms = $0.10^2 \times 4 = 0.01 \times 4 = 0.04$.
+>
+> Quick intuition: equal shares make HHI arithmetic very clean because every square is the same.
 
 > [!example] Concentration can look scary and still mislead you
-> Imagine one sugar wholesaler dominating a country. Your first instinct is "monopoly." The source tells you to slow down. If other food wholesalers can easily add imported sugar, the incumbent may still price as if competition is breathing down its neck. Entry threat matters.
+> AOL looked dominant in dial-up internet access in the late 1990s, but dominance inside one technology did not guarantee durable power. Broadband, cable, and changing consumer habits rewrote the market fast. That is the point: concentration today does not automatically mean protected power tomorrow.
 
 ### Final Wrap
 
-160. The cleanest way to survive this module is to ask three questions every time: **Who sets price, what happens in the long run, and how hard is entry?**
-161. If the firm is a price taker, think perfect competition.
-162. If many firms exist but branding matters, think monopolistic competition.
-163. If few firms keep staring at each other before moving, think oligopoly.
-164. If one seller dominates a unique product with very high barriers, think monopoly.
-165. Then finish with the cost logic: **MR = MC** for profit choice, **P = ATC** for breakeven, and **P < min AVC** for shutdown.
+153. The cleanest way to survive this module is to ask three questions every time: **Who sets price, what happens in the long run, and how hard is entry?**
+154. If the firm is a price taker, think perfect competition.
+155. If many firms exist but branding matters, think monopolistic competition.
+156. If few firms keep staring at each other before moving, think oligopoly.
+157. If one seller dominates a unique product with very high barriers, think monopoly.
+158. Then finish with the cost logic: **MR = MC** for profit choice, **P = ATC** for breakeven, and **P < min AVC** for shutdown.

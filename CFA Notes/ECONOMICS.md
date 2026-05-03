@@ -1,56 +1,20 @@
 ## ECONOMICS
 
 ### FISCAL POLICY
-1. Pay-as-you-go (PAYGO) = _no free lunch rule_: if the government wants to spend more or cut taxes, it must immediately pay for it by raising other taxes or cutting other spending so the deficit doesn’t rise.
-2. **ACTUAL DEFICIT/ SURPLUS = STRUCTURAL DEFICIT/ SURPLUS + CYCLICAL DEFICIT/ SURPLUS**
-	- Recession: Actual > Structural  
-	- Boom: Actual < Structural
-3. The primary deficit is defined as the deficit *excluding* interest payments. Including interest payments defines the total or headline deficit.
-4. Headline deficit is the **total gap** between government spending and revenue. Primary deficit is the **same gap but ignoring interest on existing debt**.
-5. The CFA curriculum emphasizes that the **headline (overall) deficit is a poor measure of fiscal stance** because it does not distinguish between:
-	- discretionary policy vs automatic stabilizers, and	    
-	- current decisions vs inherited debt-service costs
-6. The fiscal multiplier is defined as the ratio of the change in equilibrium output to the change in autonomous spending. Why autonomous? Because only autonomous spending changes shift the aggregate demand curve; induced spending changes just move us along the existing AD curve. 
-$$ \mathrm{Fiscal\ Multiplier} = \frac{\Delta Y}{\Delta G} = \frac{1}{1 - MPC} $$
-7. Government debt is a stock variable representing the accumulation of past deficits, whereas the budget deficit is a flow variable measured over a period of time.
-8. The Ricardian Equivalence hypothesis suggests that a debt-financed tax cut will significantly stimulate current private saving. Rational consumers anticipate that lower taxes today imply higher taxes in the future to service the debt, prompting them to save the tax cut.
-> [!note] DIFFERENCE BETWEEN AUTONOMOUS AND INDUCED SPENDING
-> Autonomous spending is independent of current income levels, e.g., government spending, investment spending, exports. This can be created artificially. Induced spending varies with income, e.g., consumption and imports. This is natural. More income implies more consumption and imports.
-
-
-> [!NOTE] BALANCED BUDGET MULTIPLIER
->  - Government raises spending by **+1** → aggregate demand **+1**  
->   - Taxes rise by **+1** → disposable income falls by 
->   - Consumption falls by only **c × 1**, not 1 
->   - Net initial impact on AD: 1 -c 
->   - This positive shock then multiplies through the economy
->     Final result: Balanced Budget Multiplier= 1     
-
-
-> [!question] BALANCED BUDGET MULTIPLIER
-> An economy has a marginal propensity to consume of 0.8 and a tax rate of 0.25. If the government increases spending by 100 while simultaneously increasing taxes by 100 to maintain a balanced budget, the immediate impact on aggregate output will be:
-> 
-> ---
-> 
-> Increase in AD = +100
-> Fall in consumption = - (MPC × (1 - tax rate) × increase in taxes = - (0.8 × (1 - 0.25) × 100) = -60
-> Net initial impact on AD = 100 - 60 = +40
-> 
-
-### MODULE 17.1: INTERNATIONAL TRADE
-1. **Tariff**: tax on imports; raises domestic price, cuts imports, raises domestic output; producers gain, consumers lose; government gets revenue; foreigners lose. Example: Donald Trump put tariffs on Chinese steel; US steel prices rose, US mills benefited, US buyers paid more, Treasury collected tariff cash, Chinese exporters absorbed losses.    
-2. **Quota**: hard cap on import quantity; raises domestic price and output; producers gain, consumers lose; no automatic government revenue; scarcity creates rents. Example: Trump-era steel quotas would limit tons entering the US; price jumps not from tax but from artificial shortage.    
-3. **Quota with auctioned licenses**: government sells import licenses; outcome ≈ tariff; same higher price and lower imports, but now government captures quota rents instead of tariff revenue. Example: if Trump had auctioned steel import permits, US government not the firms would pocket the scarcity value.  
-4. Quota makes the good scarce in the domestic market, the price there rises above the world price; foreign exporters who hold the free import licenses can sell the limited quantity at this higher domestic price, pay no tax or fee to the government, and keep the entire price gap as extra profit — that gap is the **quota rent**.
-5. In the case of a quota, if the domestic government collects the full value of the import licenses, the result is the same as for a tariff.
-6. Under VER, the importing country pressures exporters to limit supply (think drug dealing by Pablo Escobar); scarcity pushes prices up; consumers lose; domestic producers gain; foreign exporters keep the price markup as profit; government gains nothing.
-7. Because a VER raises domestic prices like a quota **but gives all the quota rents to foreign exporters**, while the importing country gets **no tariff revenue**, no license revenue, and still suffers consumer losses and efficiency distortions.
-8. **Marshall–Lerner condition**: a currency depreciation improves a country's trade balance **iff** the sum of the absolute price elasticities of demand for exports and imports is **greater than 1**. Why: depreciation makes exports cheaper to foreigners and imports costlier to locals; trade balance improves only if quantities respond strongly enough to offset the price effect.
-9. **Stolper–Samuelson theorem**: in a two-good, two-factor trade model, an increase in the relative price of a good raises the real return of the factor used intensively in producing that good and lowers the real return of the other factor. Why: higher output price raises demand for its intensive factor; factor prices adjust economy-wide, not just in that sector
-10. In a Free Trade Area (FTA), member countries remove trade barriers among themselves but maintain independent trade policies toward non-members.  
-11. A Customs Union extends an FTA by adopting a common external trade policy against non-members.
-12. Under the WTO's 'Most Favored Nation' (MFN) principle, a country must apply the same tariff rates to all WTO members.  
-13. Regional Trading Agreements (RTAs) like the EU or USMCA are permitted exceptions to the MFN principle.
+1. ### MODULE 17.1: INTERNATIONAL TRADE
+2. **Tariff**: tax on imports; raises domestic price, cuts imports, raises domestic output; producers gain, consumers lose; government gets revenue; foreigners lose. Example: Donald Trump put tariffs on Chinese steel; US steel prices rose, US mills benefited, US buyers paid more, Treasury collected tariff cash, Chinese exporters absorbed losses.    
+3. **Quota**: hard cap on import quantity; raises domestic price and output; producers gain, consumers lose; no automatic government revenue; scarcity creates rents. Example: Trump-era steel quotas would limit tons entering the US; price jumps not from tax but from artificial shortage.    
+4. **Quota with auctioned licenses**: government sells import licenses; outcome ≈ tariff; same higher price and lower imports, but now government captures quota rents instead of tariff revenue. Example: if Trump had auctioned steel import permits, US government not the firms would pocket the scarcity value.  
+5. Quota makes the good scarce in the domestic market, the price there rises above the world price; foreign exporters who hold the free import licenses can sell the limited quantity at this higher domestic price, pay no tax or fee to the government, and keep the entire price gap as extra profit — that gap is the **quota rent**.
+6. In the case of a quota, if the domestic government collects the full value of the import licenses, the result is the same as for a tariff.
+7. Under VER, the importing country pressures exporters to limit supply (think drug dealing by Pablo Escobar); scarcity pushes prices up; consumers lose; domestic producers gain; foreign exporters keep the price markup as profit; government gains nothing.
+8. Because a VER raises domestic prices like a quota **but gives all the quota rents to foreign exporters**, while the importing country gets **no tariff revenue**, no license revenue, and still suffers consumer losses and efficiency distortions.
+9. **Marshall–Lerner condition**: a currency depreciation improves a country's trade balance **iff** the sum of the absolute price elasticities of demand for exports and imports is **greater than 1**. Why: depreciation makes exports cheaper to foreigners and imports costlier to locals; trade balance improves only if quantities respond strongly enough to offset the price effect.
+10. **Stolper–Samuelson theorem**: in a two-good, two-factor trade model, an increase in the relative price of a good raises the real return of the factor used intensively in producing that good and lowers the real return of the other factor. Why: higher output price raises demand for its intensive factor; factor prices adjust economy-wide, not just in that sector
+11. In a Free Trade Area (FTA), member countries remove trade barriers among themselves but maintain independent trade policies toward non-members.  
+12. A Customs Union extends an FTA by adopting a common external trade policy against non-members.
+13. Under the WTO's 'Most Favored Nation' (MFN) principle, a country must apply the same tariff rates to all WTO members.  
+14. Regional Trading Agreements (RTAs) like the EU or USMCA are permitted exceptions to the MFN principle.
  
 ### MODULE 18.1: THE FOREIGN EXCHANGE MARKET
 1. When you buy a forward contract, you agree to BUY an underlying at a agreed price at a future date. If I buy a Euro / Rupee forward from you at 1 EUR = 100 INR, I am obliged to buy 1 EUR @ 100 INR, no matter whatever is the price. I have **hedged** my risk. 

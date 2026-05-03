@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/ECONOMICS/01 The Firm and Market Structures.md",
+                "file": "CFA Notes/ECONOMICS/02 Understanding Business Cycles.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "01 The Firm and Market Structures"
+              "title": "02 Understanding Business Cycles"
             }
           }
         ]
@@ -868,10 +868,14 @@
   },
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
+    "CFA Notes/ECONOMICS/04 MONETARY POLICY.md",
+    "CFA Notes/ECONOMICS/02 Understanding Business Cycles.md",
+    "CFA Notes/ECONOMICS/03 FISCAL POLICY.md",
+    "CFA Notes/ECONOMICS.md",
+    "CFA Notes/ECONOMICS/01 The Firm and Market Structures.md",
     "Pasted image 20260503191508 1.png",
     "Pasted image 20260503191508.png",
     "CFA Notes/ECONOMICS/lrtc.svg",
-    "CFA Notes/ECONOMICS/01 The Firm and Market Structures.md",
     "CFA Notes/ECONOMICS/lrtc_envelope_curve.excalidraw",
     "CFA Notes/FIXED INCOME/12 - Yield-Based Bond Convexity and Portfolio Properties.md",
     "CFA Notes/ECONOMICS",
@@ -897,10 +901,7 @@
     "CFA Notes/CORPORATE ISSUERS",
     "CFA Notes/ALTERNATIVE INVESTMENTS/02 Alternative Investment Performance and Returns.md",
     "CFA Notes/FSA/XXVbn5gv",
-    "CFA Notes/ALTERNATIVE INVESTMENTS/01 Alternative Investment Features Methods and Structures.md",
     "CFA Notes/ALTERNATIVE INVESTMENTS",
-    "CFA Notes/ALTERNATIVE INVESTMENTS.md",
-    "CFA Notes/FIXED INCOME/09-the-term-structure-of-interest-rates-spot-par-and-forward-curves.md",
     "CFA Notes/EQUITY",
     "CFA Notes/FIXED INCOME",
     "CFA Notes/FSA",
@@ -912,7 +913,6 @@
     "Pasted image 20251230214023.png",
     "Pasted image 20260131190442.png",
     "Excalidraw/Scripts/Downloaded/Split Ellipse.svg",
-    "Excalidraw/Scripts/Downloaded/Slideshow.svg",
-    "Excalidraw/Scripts/Downloaded/Set Grid.svg"
+    "Excalidraw/Scripts/Downloaded/Slideshow.svg"
   ]
 }
