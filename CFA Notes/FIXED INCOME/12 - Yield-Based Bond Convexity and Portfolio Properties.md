@@ -1,6 +1,5 @@
 ### MODULE 12: Yield-Based Bond Convexity and Portfolio Properties
 
-> Source module: `/home/karma/CFAPractice/mcq/quiz/AI/PDF/FixedIncome/module_12_yield_based_bond_convexity_and_portfolio_properties.txt`
 
 > [!abstract] Learning outcomes
 > - Calculate and interpret convexity and describe the convexity adjustment.
@@ -145,7 +144,7 @@ $$
 
 > [!question] Portfolio duration and convexity
 > Problem: Existing portfolio duration is 10.19004 and convexity is 195.21581. Proposed portfolio duration is 9.87415 and convexity is 161.62749. Yields are expected to fall in parallel. Should the Treasury be added?
-> ---
+> 
 > Solution: when your view is yields down, you want more duration and more convexity, not less.
 > Answer: do not add the Treasury position.
 
