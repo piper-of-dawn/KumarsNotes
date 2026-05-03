@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/ECONOMICS/02 Understanding Business Cycles.md",
+                "file": "CFA Notes/ALTERNATIVE INVESTMENTS/REAL ESTATE.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "02 Understanding Business Cycles"
+              "title": "REAL ESTATE"
             }
           }
         ]
@@ -841,6 +841,16 @@
             "id": "8435302df73af22b",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "83a570fabcf3b152",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -848,7 +858,7 @@
             }
           }
         ],
-        "currentTab": 73
+        "currentTab": 74
       }
     ],
     "direction": "horizontal",
@@ -868,8 +878,10 @@
   },
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
-    "CFA Notes/ECONOMICS/04 MONETARY POLICY.md",
+    "CFA Notes/ALTERNATIVE INVESTMENTS/PRIVATE EQUITY.md",
+    "CFA Notes/ALTERNATIVE INVESTMENTS/REAL ESTATE.md",
     "CFA Notes/ECONOMICS/02 Understanding Business Cycles.md",
+    "CFA Notes/ECONOMICS/04 MONETARY POLICY.md",
     "CFA Notes/ECONOMICS/03 FISCAL POLICY.md",
     "CFA Notes/ECONOMICS.md",
     "CFA Notes/ECONOMICS/01 The Firm and Market Structures.md",
@@ -897,9 +909,7 @@
     "CFA Notes/CORPORATE ISSUERS/24-1-capital-investments-and-project-measures.md",
     "CFA Notes/CORPORATE ISSUERS/23-liquidity-measures-and-management.md",
     "CFA Notes/CORPORATE ISSUERS/22-corporate-governance.md",
-    "CFA Notes/CORPORATE ISSUERS/21-stakeholders-and-esg-factors.md",
     "CFA Notes/CORPORATE ISSUERS",
-    "CFA Notes/ALTERNATIVE INVESTMENTS/02 Alternative Investment Performance and Returns.md",
     "CFA Notes/FSA/XXVbn5gv",
     "CFA Notes/ALTERNATIVE INVESTMENTS",
     "CFA Notes/EQUITY",
