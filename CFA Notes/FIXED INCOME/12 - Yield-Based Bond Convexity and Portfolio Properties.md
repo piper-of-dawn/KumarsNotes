@@ -60,7 +60,7 @@ $$
 
 > [!question] BRWA approximate convexity
 > Problem: $PV_- = 100.229641$, $PV_+ = 99.770965$, $PV_0 = 100.00$, and $\Delta y = 0.0005$. Find approximate convexity.
-> ---
+> 
 > Solution: add the two bumped prices, subtract $200$, then divide by $(0.0005)^2 \times 100$.
 > Answer: $\text{ApproxCon} = 24.23896$.
 

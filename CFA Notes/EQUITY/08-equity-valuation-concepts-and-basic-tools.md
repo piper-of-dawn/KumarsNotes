@@ -292,8 +292,7 @@ $$
     What is trailing multiple: uses past data.  
     What is forward multiple: uses forecast data.
 
-46. Industry-specific ratios also matter when they capture the business engine directly.  
-    Examples in the reading include revenue per subscriber for cable and proved reserves per share for oil.
+46. Industry-specific ratios also matter when they capture the business engine directly.  Suppose, you are comparing YouTube Music with Spotify. The right ratio is to measure revenue per subscriber. You are comparing Instagram with Tiktok, here the right ratio would be revenue per minute of screen time.
 
 47. The method of comparables applies the Law of One Price.  
     What is Law of One Price: similar assets should sell at similar prices after adjusting for differences.
