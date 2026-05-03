@@ -1,8 +1,4 @@
-### MODULE 20.1: FEATURES OF CORPORATE ISSUERS
-###### Expected number of questions: 1
-###### LOS 20.a: Compare the organizational forms of businesses.
-###### LOS 20.b: Describe key features of corporate issuers.
-###### LOS 20.c: Compare publicly and privately owned corporate issuers.
+.
 
 > [!tip] LOOK AT THESE BEFORE EXAM
 > **The examiner usually keeps coming back to the same four levers:** liability, taxation, control, and access to financing.

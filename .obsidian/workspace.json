@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/EQUITY/02 Security Market Indexes.md",
+                "file": "CFA Notes/FIXED INCOME/12 - Yield-Based Bond Convexity and Portfolio Properties.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "02 Security Market Indexes"
+              "title": "12 - Yield-Based Bond Convexity and Portfolio Properties"
             }
           }
         ]
@@ -845,8 +845,15 @@
       "math-indicator-changer:Change math indicator": false
     }
   },
-  "active": "49ac21b4a48864af",
+  "active": "ab61447ddfebe320",
   "lastOpenFiles": [
+    "CFA Notes/EQUITY/08-equity-valuation-concepts-and-basic-tools.md",
+    "CFA Notes/FIXED INCOME/12 - Yield-Based Bond Convexity and Portfolio Properties.md",
+    "CFA Notes/FIXED INCOME/11 Yield-Based Bond Duration Measures and Properties.md",
+    "CFA Notes/FIXED INCOME/08 - Yield and Yield Spread Measures for Floating-Rate Instruments.md",
+    "CFA Notes/FIXED INCOME/13-curve-based-and-empirical-fixed-income-risk-measures.md",
+    "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
+    "CFA Notes/FIXED INCOME/01 - Fixed-Income Instrument Features.md",
     "CFA Notes/CORPORATE ISSUERS/20-features-of-corporate-issuers.md",
     "CFA Notes/EQUITY/02 Security Market Indexes.md",
     "CFA Notes/FSA/05 ANALYZING STATEMENTS OF CASH FLOWS II.md",
@@ -862,9 +869,6 @@
     "CFA Notes/ALTERNATIVE INVESTMENTS/02 Alternative Investment Performance and Returns.md",
     "CFA Notes/FSA/XXVbn5gv",
     "CFA Notes/ALTERNATIVE INVESTMENTS/01 Alternative Investment Features Methods and Structures.md",
-    "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
-    "CFA Notes/FIXED INCOME/11 Yield-Based Bond Duration Measures and Properties.md",
-    "CFA Notes/FIXED INCOME/08 - Yield and Yield Spread Measures for Floating-Rate Instruments.md",
     "CFA Notes/ALTERNATIVE INVESTMENTS",
     "CFA Notes/ALTERNATIVE INVESTMENTS.md",
     "CFA Notes/FIXED INCOME/09-the-term-structure-of-interest-rates-spot-par-and-forward-curves.md",
@@ -872,10 +876,6 @@
     "CFA Notes/FIXED INCOME/04-fixed-income-markets-for-corporate-issuers.md",
     "CFA Notes/FIXED INCOME/06-fixed-income-bond-valuation-prices-and-yields.md",
     "CFA Notes/FIXED INCOME/Yield and Yield Spread Measures for Fixed-Rate Bonds.md",
-    "CFA Notes/FSA/03-analyzing-balance-sheets.md",
-    "CFA Notes/FSA/2 - Analysing Income Statements.md",
-    "CFA Notes/EQUITY/01-market-organization-and-structure.md",
-    "CFA Notes/EQUITY.md",
     "CFA Notes/EQUITY",
     "CFA Notes/FIXED INCOME",
     "CFA Notes/FSA",
