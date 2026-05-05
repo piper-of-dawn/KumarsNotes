@@ -3,13 +3,16 @@
 > 1. If the question says cycles repeat but do not follow fixed timing, pick **recurrent**, not periodic.
 > 2. If actual output is below potential but rising, it is **recovery**, not expansion.
 > 3. If output is above potential but growth is slowing, it is **slowdown**, not contraction.
-> 4. If employment improves late or worsens late, remember: **employment lags the cycle**.
-> 5. If risky assets rise before economic data improve, do not be surprised: **equities are leading indicators**.
-> 6. If credit is cheap and widely available, housing and construction usually run ahead; if credit tightens, they fall first.
-> 7. If two quarters of negative real gross domestic product are given, that is the common recession rule, but committees use broader data.
-> 8. If the question asks breadth of signal, think **diffusion index**, not the level of the indicator.
-> 9. If long-term rates minus short-term rates narrows or inverts, the signal is future weakness.
-> 10. Diffusion index one-liner: if 4 indicators get scores 1, 1, 0.5, and 0, compute $\frac{2.5}{4}\times 100 = 62.5$; higher means more components are moving in the index direction.
+> 4. Learn to distinguish, leading indicators from lagging indicators.
+> 5. If employment improves late or worsens late, remember: **employment lags the cycle**.
+> 6. If risky assets rise before economic data improve, do not be surprised: **equities are leading indicators**.
+> 7. Both inventory–sales and unit labor costs are lagging indicators that decline somewhat after a peak. Real personal income is a coincident indicator that, by its decline, shows a slowdown in business activity.
+> 8. Although no single indicator is definitive, a mix of them—which can be affected by various economic determinants—can offer the strongest signal of performance.
+> 9. If credit is cheap and widely available, housing and construction usually run ahead; if credit tightens, they fall first.
+> 10. If two quarters of negative real gross domestic product are given, that is the common recession rule, but committees use broader data.
+> 11. If the question asks breadth of signal, think **diffusion index**, not the level of the indicator.
+> 12. If long-term rates minus short-term rates narrows or inverts, the signal is future weakness.
+> 13. Diffusion index one-liner: if 4 indicators get scores 1, 1, 0.5, and 0, compute $\frac{2.5}{4}\times 100 = 62.5$; higher means more components are moving in the index direction.
 
 ## Core Story
 

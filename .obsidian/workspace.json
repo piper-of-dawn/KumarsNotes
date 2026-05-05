@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/ALTERNATIVE INVESTMENTS/REAL ESTATE.md",
+                "file": "CFA Notes/DERIVATIVES/02 Forward Commitment and Contingent Claim Features and Instruments.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "REAL ESTATE"
+              "title": "02 Forward Commitment and Contingent Claim Features and Instruments"
             }
           }
         ]
@@ -79,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 241.51103591918945
+    "width": 384.51103591918945
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -851,6 +851,26 @@
             "id": "83a570fabcf3b152",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "ecc49c633cbaf7f7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "1cd462a03f36013b",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -858,7 +878,7 @@
             }
           }
         ],
-        "currentTab": 74
+        "currentTab": 76
       }
     ],
     "direction": "horizontal",
@@ -878,9 +898,19 @@
   },
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
-    "CFA Notes/ALTERNATIVE INVESTMENTS/PRIVATE EQUITY.md",
-    "CFA Notes/ALTERNATIVE INVESTMENTS/REAL ESTATE.md",
+    "CFA Notes/CORPORATE ISSUERS/20-features-of-corporate-issuers.md",
+    "CFA Notes/DERIVATIVES/02 Forward Commitment and Contingent Claim Features and Instruments.md",
+    "CFA Notes/DERIVATIVES/09 Option Replication Using Put Call Parity.md",
+    "CFA Notes/DERIVATIVES",
+    "CFA Notes/CORPORATE ISSUERS/25-1-weighted-average-cost-of-capital.md",
+    "CFA Notes/CORPORATE ISSUERS/05 Capital Investments and Capital Allocation.md",
+    "CFA Notes/CORPORATE ISSUERS/25-2-capital-structure-theories.md",
+    "CFA Notes/FSA/Introduction to Financial Statement Analysis.md",
+    "CFA Notes/ALTERNATIVE INVESTMENTS/Introduction to Digital Assets.md",
     "CFA Notes/ECONOMICS/02 Understanding Business Cycles.md",
+    "CFA Notes/ECONOMICS/International Trade.md",
+    "CFA Notes/ALTERNATIVE INVESTMENTS/REAL ESTATE.md",
+    "CFA Notes/ALTERNATIVE INVESTMENTS/PRIVATE EQUITY.md",
     "CFA Notes/ECONOMICS/04 MONETARY POLICY.md",
     "CFA Notes/ECONOMICS/03 FISCAL POLICY.md",
     "CFA Notes/ECONOMICS.md",
@@ -899,16 +929,7 @@
     "CFA Notes/FIXED INCOME/13-curve-based-and-empirical-fixed-income-risk-measures.md",
     "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
     "CFA Notes/FIXED INCOME/01 - Fixed-Income Instrument Features.md",
-    "CFA Notes/CORPORATE ISSUERS/20-features-of-corporate-issuers.md",
     "CFA Notes/EQUITY/02 Security Market Indexes.md",
-    "CFA Notes/FSA/05 ANALYZING STATEMENTS OF CASH FLOWS II.md",
-    "CFA Notes/FSA/04-analyzing-statements-of-cash-flows-i.md",
-    "CFA Notes/CORPORATE ISSUERS/25-2-capital-structure-theories.md",
-    "CFA Notes/CORPORATE ISSUERS/25-1-weighted-average-cost-of-capital.md",
-    "CFA Notes/CORPORATE ISSUERS/24-2-capital-allocation-principles-and-real-options.md",
-    "CFA Notes/CORPORATE ISSUERS/24-1-capital-investments-and-project-measures.md",
-    "CFA Notes/CORPORATE ISSUERS/23-liquidity-measures-and-management.md",
-    "CFA Notes/CORPORATE ISSUERS/22-corporate-governance.md",
     "CFA Notes/CORPORATE ISSUERS",
     "CFA Notes/FSA/XXVbn5gv",
     "CFA Notes/ALTERNATIVE INVESTMENTS",
@@ -916,7 +937,6 @@
     "CFA Notes/FIXED INCOME",
     "CFA Notes/FSA",
     "CFA Notes/XXn9Kkpg",
-    "CFA Notes/XXW4dLHx",
     "CFA Notes/module58_convexity_curve.svg",
     "CFA Notes/module58_convexity_feature_map.svg",
     "Pasted image 20260221122433.png",
