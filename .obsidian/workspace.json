@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/DERIVATIVES/02 Forward Commitment and Contingent Claim Features and Instruments.md",
+                "file": "CFA Notes/DERIVATIVES/09 Option Replication Using Put Call Parity.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "02 Forward Commitment and Contingent Claim Features and Instruments"
+              "title": "09 Option Replication Using Put Call Parity"
             }
           }
         ]
@@ -898,8 +898,8 @@
   },
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
-    "CFA Notes/CORPORATE ISSUERS/20-features-of-corporate-issuers.md",
     "CFA Notes/DERIVATIVES/02 Forward Commitment and Contingent Claim Features and Instruments.md",
+    "CFA Notes/CORPORATE ISSUERS/20-features-of-corporate-issuers.md",
     "CFA Notes/DERIVATIVES/09 Option Replication Using Put Call Parity.md",
     "CFA Notes/DERIVATIVES",
     "CFA Notes/CORPORATE ISSUERS/25-1-weighted-average-cost-of-capital.md",

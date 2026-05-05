@@ -1,6 +1,3 @@
-### MODULE 9: OPTION REPLICATION USING PUT-CALL PARITY
-###### LOS 9.a: Explain put-call parity for European options.
-###### LOS 9.b: Explain put-call forward parity for European options.
 
 > [!tip] LOOK AT THESE BEFORE EXAM
 > - Put-call parity links a European call, a European put, the underlying asset, and a risk-free bond under no-arbitrage.
@@ -25,9 +22,9 @@
 > $$
 > p_0 - c_0 = [X - F_0(T)](1+r)^{-T}
 > $$
-> - **A share priced at INR 295, a call at INR 59, strike INR 265, risk-free rate 4%, and maturity 0.5 years. Find the put.** Quick algorithm: discount the strike to INR 259.85, then do $59 + 259.85 - 295 = 23.85$.
-> - **Same setup, but the put trades at INR 30 instead of INR 23.85. Find arbitrage profit.** Quick algorithm: compare the two equal portfolios and pocket $295 + 30 - 59 - 259.85 = 6.15$ today.
-> - **A share is INR 295, strike is INR 325, put is INR 56, risk-free rate is 4%, maturity is 0.5 years. Find the call.** Quick algorithm: do $295 - c_0 = 325(1.04)^{-0.5} - 56$, so $c_0 = 32.31$.
+> - **A share is 100, a one-year call is 12, strike is 95, and the risk-free rate is 5%. Find the put.** discount the strike to 90.48, then do $12 + 90.48 - 100 = 2.48$.
+> - **Same setup, but the market put is 5 instead of 2.48. Find arbitrage profit.** compare the two equal portfolios and pocket $100 + 5 - 12 - 90.48 = 2.52$ today.
+> - **A share is 210, strike is 220, a one-year put is 18, and the risk-free rate is 5%. Find the call.** do $210 - c_0 = 220(1.05)^{-1} - 18$, so $c_0 = 18.48$.
 > - Big gotcha: same strike and same expiration date are not decoration; parity needs those matching details.
 > - Big gotcha: this reading assumes European options on an underlying with no income or benefit.
 
@@ -81,7 +78,7 @@ $$
 
 11. What is $X(1+r)^{-T}$: the present value today of the exercise price paid at expiration. Why is it used: the bond must be sized so it grows to the strike exactly at maturity.
 12. Read the formula like a sentence: long underlying plus long put equals long call plus the present value of the strike. That is much easier to remember than staring at symbols.
-13. This is a no-arbitrage statement, not just a cute identity. If the left side and right side diverge in market prices, one side is overpriced and can be sold against the cheaper side.
+13. This is a no-arbitrage statement. If the left side and right side diverge in market prices, one side is overpriced and can be sold against the cheaper side.
 14. The relation only works cleanly when the call and put share the same underlying, the same exercise price, and the same expiration date. Miss any one of those, and you are matching the wrong cash flows.
 
 > [!info] WHY THIS WORKS
@@ -90,8 +87,6 @@ $$
 > If the asset crashes below the strike, both portfolios still leave you with the strike.
 >
 > If the asset flies above the strike, both portfolios leave you with the asset price.
->
-> Same ending movie in every scene means same ticket price today.
 
 15. The source's first rearrangement solves for the put premium. That gives a replicating recipe for a put using a call, a bond, and a short underlying position.
 
@@ -108,51 +103,50 @@ S_0 = c_0 - p_0 + X(1+r)^{-T}
 $$
 
 19. Read that one casually: long call minus long put plus a bond gives you the underlying. If you forget the algebra, remember that call and put asymmetry can be stitched into a linear asset payoff.
-20. Exhibit 6 in the source is worth memorizing as building blocks. Any one of the four positions can be rebuilt from the other three by flipping signs correctly.
+20. Hammer the picture, not just the formula: long put plus long underlying protects the downside, while long call plus present value of strike recreates the same ending wealth.
 
-> [!warning] HAMMER THIS INTO YOUR HEAD
-> Long underlying = long call, short put, and long risk-free bond.
-> Long put = long call, long risk-free bond, and short underlying.
-> These sign flips are where exam mistakes are born.
+> [!tip] HAMMER THIS INTO YOUR HEAD
+> Long Put plus Long Underlying equals Long Call plus Present Value of Strike   
 
-> [!question] BIOMIAN PUT PRICE
-> Problem: Biomian shares are INR 295. A six-month call with strike INR 265 is INR 59. The risk-free rate is 4%. Find the six-month put with the same strike and maturity.
+
+> [!question] PUT PRICE FROM PARITY
+> Problem: A non-dividend-paying share is priced at 100. A one-year call with strike 95 is priced at 12. The risk-free rate is 5%. Find the one-year put with the same strike and maturity.
 >
 > Solution:
 > $$
-> \text{PV}(X) = 265(1.04)^{-0.5} = 259.85
+> \text{PV}(X) = 95(1.05)^{-1} = 90.48
 > $$
 > $$
-> p_0 = 59 + 259.85 - 295 = 23.85
+> p_0 = 12 + 90.48 - 100 = 2.48
 > $$
 >
-> Explanation: The no-arbitrage put premium is **INR 23.85**.
+> Explanation: The no-arbitrage put premium is **2.48**.
 
 21. That example matters because it trains the simplest parity reflex. Discount the strike first, then move the terms across the equation with the correct signs.
 22. Arbitrage appears when one parity side is priced above the other. What is arbitrage here: locking an initial positive cash flow while the later net cash flow is zero in every state.
 23. If $S_0 + p_0$ is greater than $c_0 + X(1+r)^{-T}$, then the protective put side is overpriced. Sell the overpriced side and buy the cheap fiduciary call side.
-24. The source's Biomian arbitrage does exactly that. It sells the shares and the put, and buys the call and the risk-free asset.
+24. The arbitrage version does exactly that. It sells the expensive protective-put side and buys the cheaper fiduciary-call side through the share, put, call, and bond trades.
 25. Why those trades: because they create equal and opposite expiration cash flows, leaving only the initial mispricing cash pocketed today.
 
-> [!question] BIOMIAN ARBITRAGE
-> Problem: Biomian shares are INR 295. The correct put is INR 23.85, but the market put is INR 30. The call is INR 59, strike is INR 265, and the risk-free rate is 4%. Find the arbitrage profit.
+> [!question] PARITY ARBITRAGE
+> Problem: A share is priced at 100. The no-arbitrage put from parity is 2.48, but the market put is 5. The call is 12, the strike is 95, and the risk-free rate is 5%. Find the arbitrage profit.
 >
 > Solution:
 > $$
-> \text{PV}(X) = 265(1.04)^{-0.5} = 259.85
+> \text{PV}(X) = 95(1.05)^{-1} = 90.48
 > $$
 > $$
-> \text{Profit at } t=0 = 295 + 30 - 59 - 259.85 = 6.15
+> \text{Profit at } t=0 = 100 + 5 - 12 - 90.48 = 2.52
 > $$
 >
-> Explanation: The later combined payoff is zero in every state, so **INR 6.15** is a riskless arbitrage gain today.
+> Explanation: The later combined payoff is zero in every state, so **2.52** is a riskless arbitrage gain today.
 
 26. Do not over-romanticize arbitrage. It is just "sell the expensive copy, buy the cheap copy." The heavy lifting is done by proving those copies really end with the same payoff.
 
 ##### OPTION STRATEGIES BASED ON PUT-CALL PARITY
 
 27. Put-call parity is not only for pricing options. It also lets you rebuild strategy payoffs from other pieces.
-28. A covered call is long the underlying and short the call. Why is it used: the investor wants some income from the call premium while capping upside above the strike.
+28. ==A covered call is long the underlying and short the call.== Why is it used: the investor wants some income from the call premium while capping upside above the strike.
 29. The source rearranges parity to express the covered call. Start from $S_0 + p_0 = c_0 + X(1+r)^{-T}$ and solve for $S_0 - c_0$.
 
 $$
@@ -162,105 +156,112 @@ $$
 30. Read that verbally: a covered call equals a long risk-free bond and a short put. This is a beautiful exam identity because it converts an asset-plus-option strategy into a bond-plus-option strategy.
 31. What is a short put: an obligation to buy the asset at the strike if the holder exercises. Why does it fit: the covered call also gives limited upside and downside exposure below the strike.
 
-> [!example] VISWAN FAMILY OFFICE COVERED CALL
-> The Viswan Family Office liked Biomian for the long run but expected six sleepy months. So instead of just sitting on the shares, the office considered selling a call at a higher strike to squeeze income out of stillness.
+> [!example] APPLE DURING A QUIET PATCH
+> Imagine an investor who still likes Apple for the next five years but thinks the next few months may be boring after a big product cycle. The investor does not want to sell the stock, but also hates watching dead time pass for free.
 >
-> That is the emotional logic of a covered call: "I still want the asset, but if nothing dramatic happens soon, at least pay me for waiting."
+> So the investor sells a call against the shares and says: "I still want the stock, but if upside is capped for a while, at least pay me rent for waiting."
 
 > [!question] COVERED CALL REPLICATION
-> Problem: Biomian shares are INR 295. A six-month put with strike INR 325 costs INR 56. The risk-free rate is 4%. Find the no-arbitrage call premium for the covered call setup.
+> Problem: A share is priced at 210. A one-year put with strike 220 costs 18. The risk-free rate is 5%. Find the no-arbitrage call premium for the covered call setup.
 >
 > Solution:
 > $$
-> 295 - c_0 = 325(1.04)^{-0.5} - 56
+> 210 - c_0 = 220(1.05)^{-1} - 18
 > $$
 > $$
-> c_0 = 32.31
+> c_0 = 18.48
 > $$
 >
-> Explanation: The covered call is equivalent to a long bond and a short put, so the implied call premium is **INR 32.31**.
+> Explanation: The covered call is equivalent to a long bond and a short put, so the implied call premium is **18.48**.
 
 32. This section teaches a deeper habit: whenever you see an option strategy, ask whether parity can rewrite it into something simpler. Often the exam is really testing the rewrite, not the story.
 
 ##### PUT-CALL FORWARD PARITY
 
-33. Put-call forward parity starts from one earlier fact: a long underlying position can be replicated by a long forward contract plus a risk-free bond.
-34. What is a synthetic underlying position: a combination of a forward purchase and a risk-free bond that replicates a cash purchase of the underlying. Why is it used: to replace the cash asset with forward-based building blocks.
-35. Once you substitute that synthetic asset into ordinary put-call parity, you get put-call forward parity.
+33. Start with the story, not the formula. Imagine you want upside in the asset but you do not want to pay cash for the asset today. So you try to rebuild that asset exposure with a forward plus a bond.
+34. A long forward does **not** give you a right like a call option. It gives you an **obligation** to buy later at the forward price. Why is this important: mixing up "right" and "obligation" ruins the whole intuition.
+35. Now pair that long forward with a risk-free bond that will grow to the forward price at expiration. Together, those two pieces behave like owning the underlying asset from today.
+36. What is a synthetic underlying position: a forward purchase plus a risk-free bond sized to the forward price. Why is it used: it replicates a cash purchase of the underlying without buying the asset today.
+37. Once you replace the cash underlying in ordinary put-call parity with this synthetic underlying, you get put-call forward parity.
 
 $$
 F_0(T)(1+r)^{-T} + p_0 = c_0 + X(1+r)^{-T}
 $$
 
-36. This formula says a synthetic protective put has the same cost as a fiduciary call. The cash underlying has disappeared, but the expiration payoff logic is unchanged.
-37. A synthetic protective put is a long forward, a risk-free bond with face value equal to the forward price, and a long put. Why is it used: together they mimic a protective put.
-38. At expiration, the forward contributes $S_T - F_0(T)$, the bond contributes $F_0(T)$, and the put contributes either $X - S_T$ or zero. Add them and you again get either $X$ or $S_T$.
-39. That is the same expiration profile as the fiduciary call, so the no-arbitrage prices today must match.
-40. The cleanest rearrangement in this section is:
+38. Read the left-hand side slowly: long synthetic asset plus long put. That is just a synthetic protective put.
+39. A synthetic protective put is a long forward, a bond that matures to the forward price, and a long put. Why is it used: it creates the same downside floor and upside participation as a protective put.
+40. At expiration, the forward contributes $S_T - F_0(T)$ and the bond contributes $F_0(T)$. So those two together collapse into just $S_T$.
+41. Then the put does the same old job as before. If $S_T$ is below the strike, it adds $X - S_T$ and lifts you to $X$. If $S_T$ is above the strike, it expires worthless and leaves you at $S_T$.
+42. So the synthetic protective put finishes with exactly the same payoff as a fiduciary call. That is why the prices today must match.
+43. The most useful rearrangement is:
 
 $$
 p_0 - c_0 = [X - F_0(T)](1+r)^{-T}
 $$
 
-41. Read it slowly: long put and short call together are equivalent to a long risk-free bond and a short forward position. This is the forward-world cousin of the earlier parity identities.
-42. The source's forward example with Biomian produces almost the same put premium as the cash-underlying version. That is exactly what you should expect if the replication logic is sound.
+44. Read that one casually: long put and short call together equal a long risk-free bond and a short forward. Same parity logic, just with the underlying rewritten in forward language.
 
 > [!question] PUT-CALL FORWARD PARITY
-> Problem: Biomian shares are INR 295. The strike is INR 265. The six-month call is INR 59. The risk-free rate is 4%. Use put-call forward parity to find the put.
+> Problem: A non-dividend-paying share is priced at 100. The one-year strike is 95. The one-year call is 12. The risk-free rate is 5%. Use put-call forward parity to find the put.
 >
 > Solution:
 > $$
-> F_0(T) = 295(1.04)^{0.5} = 300.84
+> F_0(T) = 100(1.05) = 105
+> $$
+> First see the picture. A long forward plus a bond worth 100 today recreates the asset. So forward parity should give the same put price as ordinary parity.
+>
+> $$
+> p_0 - 12 = (95 - 105)(1.05)^{-1}
 > $$
 > $$
-> p_0 - 59 = (265 - 300.84)(1.04)^{-0.5}
-> $$
-> $$
-> p_0 = 23.86
+> p_0 = 2.48
 > $$
 >
-> Explanation: The no-arbitrage put premium is **INR 23.86**, essentially the same as the cash-underlying approach.
-
-43. If you get a tiny rounding difference between 23.85 and 23.86, do not panic. The source itself is showing the same economics through two equivalent routes.
+> Explanation: The no-arbitrage put premium is **2.48**. That match is the whole point: cash-underlying parity and forward parity are telling the same story through two different build-ups.
 
 ##### FIRM VALUE APPLICATIONS
 
-44. The reading then stretches parity beyond trading desks and into capital structure. This is where the topic gets unexpectedly beautiful.
-45. Suppose firm value today is $V_0$ and the firm has zero-coupon debt with face value $D$. Then firm value equals equity value plus the present value of debt.
-46. At debt maturity, two worlds exist. The firm is solvent if firm value at maturity exceeds debt face value. The firm is insolvent if firm value falls short of debt face value.
-47. If the firm is solvent, debtholders receive $D$ and shareholders receive the residual $V_T - D$. If the firm is insolvent, debtholders take the firm value and shareholders get zero.
-48. The shareholder payoff is therefore:
+45. The reading then stretches parity beyond trading desks and into capital structure. This is where the topic gets unexpectedly beautiful.
+46. Suppose firm value today is $V_0$ and the firm has zero-coupon debt with face value $D$. Then firm value equals equity value plus the present value of debt.
+47. At debt maturity, two worlds exist. The firm is solvent if firm value at maturity exceeds debt face value. The firm is insolvent if firm value falls short of debt face value.
+48. If the firm is solvent, debtholders receive $D$ and shareholders receive the residual $V_T - D$. If the firm is insolvent, debtholders take the firm value and shareholders get zero.
+49. The shareholder payoff is therefore:
 
 $$
 \max(0, V_T - D)
 $$
 
-49. What is a residual claim: the amount left after higher-priority claims are paid. Why is equity called residual: shareholders get paid only after debt has been satisfied.
-50. That shareholder payoff is exactly the payoff of a call option on firm value with exercise price equal to debt face value. Unlimited upside, zero below the strike: same picture.
-51. The debtholder payoff is:
+50. What is a residual claim: the amount left after higher-priority claims are paid. Why is equity called residual: shareholders get paid only after debt has been satisfied.
+51. That shareholder payoff is exactly the payoff of a call option on firm value with exercise price equal to debt face value. Unlimited upside, zero below the strike: same picture.
+52. The debtholder payoff is:
 
 $$
 \min(V_T, D)
 $$
 
-52. That can also be written as debt face value minus a put option on firm value. So debtholders are like holders of risk-free debt who have sold a put to shareholders.
-53. Why is that sold put intuition useful: as insolvency risk rises, the put becomes more valuable, which means the debtholder's position becomes worse.
-54. The source interprets that put value as the credit spread intuition. More insolvency risk means a more valuable put written by debtholders, so debt should demand more compensation.
-55. Put-call parity then becomes a firm-value identity:
+53. That can also be written as debt face value minus a put option on firm value. So debtholders are like holders of risk-free debt who have sold a put to shareholders.
+54. Why is that sold put intuition useful: as insolvency risk rises, the put becomes more valuable, which means the debtholder's position becomes worse.
+55. The source interprets that put value as the credit spread intuition. More insolvency risk means a more valuable put written by debtholders, so debt should demand more compensation.
+56. Put-call parity then becomes a firm-value identity:
 
 $$
 V_0 = c_0 + PV(D) - p_0
 $$
 
-56. Read that in plain English: firm value equals the shareholders' call-like claim plus the debtholders' risky debt claim, where risky debt is risk-free debt minus a short put.
-57. This is one of those rare derivatives readings that explains corporate finance without leaving derivatives logic. Equity is not "sort of like" a call. In this setup, it really is a call-like payoff.
+57. Read that in plain English: firm value equals the shareholders' call-like claim plus the debtholders' risky debt claim, where risky debt is risk-free debt minus a short put.
+58. This is one of those rare derivatives readings that explains corporate finance without leaving derivatives logic. Equity is not "sort of like" a call. In this setup, it really is a call-like payoff.
+
+> [!example] LEHMAN IN 2008 MAKES THIS FEEL REAL
+> In calm years, equity holders of a leveraged firm feel like owners of a growing machine. But once panic arrives, the picture changes brutally fast. In 2008, as firm values collapsed and debt sat there like a hard strike price, equity in fragile firms could get wiped out while debtholders fought over salvage.
+>
+> That is why the call-option analogy sticks: shareholders keep the upside if firm value outruns debt, but if asset value falls through the debt strike, equity can go to zero very quickly.
 
 > [!warning] EXAM TRAP
 > Shareholders are the long call side.
 > Debtholders are the short put side layered onto risk-free debt.
 > If leverage rises and insolvency risk rises, the put on firm value becomes more valuable, which hurts debtholders.
 
-58. The source's practice problem says exactly that: when leverage rises, the debtholder position deteriorates because debtholders are effectively short a put on firm value that has appreciated.
+59. The source's practice problem says exactly that: when leverage rises, the debtholder position deteriorates because debtholders are effectively short a put on firm value that has appreciated.
 
 > [!tip] QUICK CHECKS
 > - Same underlying, same strike, same expiration date.
