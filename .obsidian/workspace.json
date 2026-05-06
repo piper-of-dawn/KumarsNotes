@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/ETHICS/STANDARD 3 - DUTIES TO CLIENTS.md",
+                "file": "CFA Notes/ETHICS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "STANDARD 3 - DUTIES TO CLIENTS"
+              "title": "ETHICS"
             }
           }
         ]
@@ -909,8 +909,8 @@
   },
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
-    "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
     "CFA Notes/ETHICS/STANDARD 3 - DUTIES TO CLIENTS.md",
+    "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
     "CFA Notes/ETHICS.md",
     "CFA Notes/DERIVATIVES/09 Option Replication Using Put Call Parity.md",
     "CFA Notes/ETHICS",
