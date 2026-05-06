@@ -10,55 +10,75 @@
 > $$
 > Y_i = b_0 + b_1 X_i + \varepsilon_i
 > $$
+> 
 > $$
 > \hat{Y}_i = \hat{b}_0 + \hat{b}_1 X_i
 > $$
+> 
 > $$
 > e_i = Y_i - \hat{Y}_i
 > $$
+> 
 > **Slope and intercept**
+> 
 > $$
 > \hat{b}_1 = \frac{\sum (Y_i-\bar{Y})(X_i-\bar{X})}{\sum (X_i-\bar{X})^2}
 > $$
+> 
 > $$
 > \hat{b}_0 = \bar{Y} - \hat{b}_1 \bar{X}
 > $$
+> 
 > **Variation breakdown**
+> 
 > $$
 > SST = SSR + SSE
 > $$
+> 
 > $$
 > R^2 = \frac{SSR}{SST} = r^2
 > $$
+> 
 > $$
 > F = \frac{MSR}{MSE}, \qquad MSE = \frac{SSE}{n-2}, \qquad s_e = \sqrt{MSE}
 > $$
+> 
 > **Coefficient tests**
+> 
 > $$
 > t_{\text{slope}} = \frac{\hat{b}_1 - B_1}{s_{\hat{b}_1}}
 > $$
+> 
 > $$
 > s_{\hat{b}_1} = \frac{s_e}{\sqrt{\sum (X_i-\bar{X})^2}}
 > $$
+> 
 > $$
 > t_{\text{corr}} = \frac{r\sqrt{n-2}}{\sqrt{1-r^2}}
 > $$
+> 
 > $$
 > t_{\text{intercept}} = \frac{\hat{b}_0-B_0}{s_{\hat{b}_0}}
 > $$
+> 
 > $$
 > s_{\hat{b}_0} = s_e \sqrt{\frac{1}{n} + \frac{\bar{X}^2}{\sum (X_i-\bar{X})^2}}
 > $$
+> 
 > **Forecast and interval**
+> 
 > $$
 > \hat{Y}_f = \hat{b}_0 + \hat{b}_1 X_f
 > $$
+> 
 > $$
 > s_f = s_e \sqrt{1 + \frac{1}{n} + \frac{(X_f-\bar{X})^2}{\sum (X_i-\bar{X})^2}}
 > $$
+> 
 > $$
 > \text{Prediction interval} = \hat{Y}_f \pm t_{\alpha/2} s_f
 > $$
+> 
 > **Notation in simple language**
 > - $Y$: dependent variable, the thing you want to explain.
 > - $X$: independent variable, the thing you use to explain $Y$.

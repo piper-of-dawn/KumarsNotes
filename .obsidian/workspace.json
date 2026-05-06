@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/PORTFOLIO MANAGEMENT.md",
+                "file": "CFA Notes/QUANTITATIVE METHODS/Simple Linear Regression.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "PORTFOLIO MANAGEMENT"
+              "title": "Simple Linear Regression"
             }
           }
         ]
@@ -891,6 +891,16 @@
             "id": "c2242ba6d0cb1ed5",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "8756875191247613",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -898,7 +908,7 @@
             }
           }
         ],
-        "currentTab": 78
+        "currentTab": 79
       }
     ],
     "direction": "horizontal",
@@ -918,6 +928,7 @@
   },
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
+    "CFA Notes/PORTFOLIO MANAGEMENT.md",
     "CFA Notes/PORTFOLIO MANAGEMENT/Introduction to Risk Management.md",
     "CFA Notes/PORTFOLIO MANAGEMENT",
     "CFA Notes/FSA/08-topics-in-long-term-liabilities-and-equity.md",
@@ -951,7 +962,6 @@
     "Spells/Dymanic Betas Using Kalman Filter.md",
     "Spells/DUMBPROOF_GUIDE_TO_WAYDEEPER.md",
     "CFA Notes/EQUITY/08-equity-valuation-concepts-and-basic-tools.md",
-    "CFA Notes/FIXED INCOME/11 Yield-Based Bond Duration Measures and Properties.md",
     "CFA Notes/CORPORATE ISSUERS",
     "CFA Notes/FSA/XXVbn5gv",
     "CFA Notes/ALTERNATIVE INVESTMENTS",
