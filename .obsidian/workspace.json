@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/DERIVATIVES/09 Option Replication Using Put Call Parity.md",
+                "file": "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "09 Option Replication Using Put Call Parity"
+              "title": "STANDARD 1 - PROFESSIONALISM"
             }
           }
         ]
@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 384.51103591918945
+    "width": 384.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -871,6 +872,16 @@
             "id": "1cd462a03f36013b",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "c322919b1466fbb1",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -878,7 +889,7 @@
             }
           }
         ],
-        "currentTab": 76
+        "currentTab": 77
       }
     ],
     "direction": "horizontal",
@@ -898,9 +909,12 @@
   },
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
+    "CFA Notes/ETHICS.md",
+    "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
+    "CFA Notes/DERIVATIVES/09 Option Replication Using Put Call Parity.md",
+    "CFA Notes/ETHICS",
     "CFA Notes/DERIVATIVES/02 Forward Commitment and Contingent Claim Features and Instruments.md",
     "CFA Notes/CORPORATE ISSUERS/20-features-of-corporate-issuers.md",
-    "CFA Notes/DERIVATIVES/09 Option Replication Using Put Call Parity.md",
     "CFA Notes/DERIVATIVES",
     "CFA Notes/CORPORATE ISSUERS/25-1-weighted-average-cost-of-capital.md",
     "CFA Notes/CORPORATE ISSUERS/05 Capital Investments and Capital Allocation.md",
@@ -928,15 +942,12 @@
     "CFA Notes/FIXED INCOME/08 - Yield and Yield Spread Measures for Floating-Rate Instruments.md",
     "CFA Notes/FIXED INCOME/13-curve-based-and-empirical-fixed-income-risk-measures.md",
     "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
-    "CFA Notes/FIXED INCOME/01 - Fixed-Income Instrument Features.md",
-    "CFA Notes/EQUITY/02 Security Market Indexes.md",
     "CFA Notes/CORPORATE ISSUERS",
     "CFA Notes/FSA/XXVbn5gv",
     "CFA Notes/ALTERNATIVE INVESTMENTS",
     "CFA Notes/EQUITY",
     "CFA Notes/FIXED INCOME",
     "CFA Notes/FSA",
-    "CFA Notes/XXn9Kkpg",
     "CFA Notes/module58_convexity_curve.svg",
     "CFA Notes/module58_convexity_feature_map.svg",
     "Pasted image 20260221122433.png",

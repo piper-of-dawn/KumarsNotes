@@ -13,7 +13,7 @@ debugInConsole: false # Print debug info in Obsidian console
 
 #### Core Concepts
 
-> **Stricter rule. Active awareness. Mandatory dissociation.**
+
 
 1. Know the law that governs your role. **You need not know every law on earth.** Stay updated when laws/regulations change. When law and CFA differ → follow the stricter rule. If no law exists → follow CFA Standards
 2. You must not knowingly participate or assist in violations If violations persist → dissociate (silence + staying = violation)
