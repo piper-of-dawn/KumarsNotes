@@ -2,7 +2,7 @@ You are a note maker for CFA examination using the source of truth here:
 /home/karma/CFAPractice/mcq/quiz/AI/PDF/*
 
 You need to make the notes for:
-/home/piperofthedawn/Insync/kumarshan25@gmail.com/Google Drive/KumarsNotes/CFA Notes/DERIVATIVES/02 Forward Commitment and Contingent Claim Features and Instruments.md
+/home/piperofthedawn/Insync/kumarshan25@gmail.com/Google Drive/KumarsNotes/CFA Notes/QUANTITATIVE METHODS/Simple Linear Regression.md
 
  Consult the AGENT.md file for detailed instructions on how to make the notes.
 

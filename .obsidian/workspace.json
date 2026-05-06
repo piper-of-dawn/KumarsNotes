@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/FSA/08-topics-in-long-term-liabilities-and-equity.md",
+                "file": "CFA Notes/PORTFOLIO MANAGEMENT.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "08-topics-in-long-term-liabilities-and-equity"
+              "title": "PORTFOLIO MANAGEMENT"
             }
           }
         ]
@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 384.51103591918945,
-    "collapsed": true
+    "width": 384.51103591918945
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -882,6 +881,16 @@
             "id": "c322919b1466fbb1",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "c2242ba6d0cb1ed5",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -889,7 +898,7 @@
             }
           }
         ],
-        "currentTab": 77
+        "currentTab": 78
       }
     ],
     "direction": "horizontal",
@@ -909,6 +918,9 @@
   },
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
+    "CFA Notes/PORTFOLIO MANAGEMENT/Introduction to Risk Management.md",
+    "CFA Notes/PORTFOLIO MANAGEMENT",
+    "CFA Notes/FSA/08-topics-in-long-term-liabilities-and-equity.md",
     "CFA Notes/ETHICS.md",
     "CFA Notes/ETHICS/STANDARD 3 - DUTIES TO CLIENTS.md",
     "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
@@ -940,14 +952,11 @@
     "Spells/DUMBPROOF_GUIDE_TO_WAYDEEPER.md",
     "CFA Notes/EQUITY/08-equity-valuation-concepts-and-basic-tools.md",
     "CFA Notes/FIXED INCOME/11 Yield-Based Bond Duration Measures and Properties.md",
-    "CFA Notes/FIXED INCOME/08 - Yield and Yield Spread Measures for Floating-Rate Instruments.md",
-    "CFA Notes/FIXED INCOME/13-curve-based-and-empirical-fixed-income-risk-measures.md",
     "CFA Notes/CORPORATE ISSUERS",
     "CFA Notes/FSA/XXVbn5gv",
     "CFA Notes/ALTERNATIVE INVESTMENTS",
     "CFA Notes/EQUITY",
     "CFA Notes/FIXED INCOME",
-    "CFA Notes/FSA",
     "CFA Notes/module58_convexity_curve.svg",
     "CFA Notes/module58_convexity_feature_map.svg",
     "Pasted image 20260221122433.png",

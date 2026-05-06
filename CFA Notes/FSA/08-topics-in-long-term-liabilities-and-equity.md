@@ -4,67 +4,102 @@
 ```
 
 > [!info] HOW TO READ THIS MODULE
-> This module is about long-term promises that do not always look like a plain bond or bank loan.
-> The learning outcomes are: explain lease accounting from the lessee and lessor sides, explain defined contribution plans, defined benefit plans, and share-based compensation, and read the presentation and disclosure of these items.
-> The exam trick is simple: keep asking who bears the risk, where the item sits on the statements, and whether the effect hits profit and loss or other comprehensive income.
+> This module is really about long promises.
+> Sometimes the promise is: "Use my asset now, pay me later." That is a lease.
+> Sometimes the promise is: "Work for me now, I will take care of you after retirement." That is a pension.
+> Sometimes the promise is: "Work for me now, and I will pay part of your salary in shares later." That is share-based compensation.
+> Do not get hypnotized by the jargon. In every section, just ask: who is getting the benefit now, who is taking the risk, and where does the promise show up in the statements?
+
+> [!tip] LOOK AT THESE BEFORE EXAM
+> 1. Lease from lessee side = often "I am basically buying the use of an asset with borrowed money."
+> 2. Lease from lessor side = often "I either rented out my asset or I financed a sale."
+> 3. Defined contribution plan = company promises how much it will put in.
+> 4. Defined benefit plan = company promises how much it will ultimately pay out.
+> 5. Share-based compensation = salary expense still exists even if cash does not move today.
+> 6. The exam keeps testing one thing again and again: which side bears the risk.
 
 > [!abstract] MEMORISE
-> - A lease is a contract that gives the customer the right to use a specific asset for a period of time in exchange for payment.
-> - A finance lease behaves like buying the asset with borrowed money. An operating lease behaves more like renting.
-> - Under International Financial Reporting Standards (IFRS), the lessee uses one model for almost all long leases: right-of-use asset plus lease liability.
-> - Under United States generally accepted accounting principles (US GAAP), the lessee still records right-of-use asset plus lease liability for long leases, but the income statement and cash flow presentation differ between finance leases and operating leases.
-> - Lessor accounting is broadly the same under IFRS and US GAAP.
-> - Defined contribution plan: employer promises the contribution amount. Defined benefit plan: employer promises the pension benefit.
-> - Defined benefit plans create a net pension asset or net pension liability equal to plan assets minus pension obligation.
-> - Under IFRS, service cost and net interest go to profit and loss, while remeasurements go to other comprehensive income.
-> - Share-based compensation is measured at fair value on the grant date and expensed over the vesting period.
-> - Stock options can push managers toward excessive risk because the upside is large but the downside is limited.
+> - Lease = right to use a specific asset for a period of time in exchange for payment.
+> - Finance lease = looks like buying the asset over time.
+> - Operating lease = looks more like renting.
+> - Under International Financial Reporting Standards (IFRS), a lessee records a right-of-use asset and a lease liability for almost all long leases.
+> - Under United States generally accepted accounting principles (US GAAP), a lessee also records a right-of-use asset and lease liability, but an operating lease has a different income statement shape.
+> - Defined contribution plan = employer defines the contribution.
+> - Defined benefit plan = employer defines the pension benefit.
+> - Under IFRS defined benefit accounting, service cost and net interest go to profit and loss, while remeasurements go to other comprehensive income.
+> - Stock grants and stock options are measured using fair value at the grant date and then expensed over the vesting period.
 
 #### Leases
 
-1. **A lease is a contract that gives one party the right to use an asset for a period of time in exchange for payment.**  
-   What is right to use: The customer can control how the asset is used.  
-   What is asset: A specific underlying item such as a machine, building, aircraft, or data center space.  
-   What is payment: Cash or other consideration paid over time.  
-   Think of it as "I do not legally own the machine today, but for this period I control it and I must pay for that control."
+1. **A lease is a contract that gives someone the right to use an asset for a period of time in exchange for payment.**  
+   What is right to use: You get control over how the asset is used.  
+   What is asset: A specific thing like a machine, shop, aircraft, truck, or office floor.  
+   What is payment: Cash you agree to pay for that use.  
+   In very normal language, a lease is just: "I do not own it, but for some time it is basically under my control, and I have to pay for that privilege."
 
-2. From the lessee side, a lease often feels like buying an asset with borrowed money. From the lessor side, it feels like either financing a sale or renting out an asset.
+2. Imagine you run a small factory and need a machine worth a lot of money. You do not want to pay the full amount today. So you take the machine now and agree to pay year by year. That is why lease accounting often starts to look like debt accounting.
 
-3. For a contract to count as a lease, three things must be true:
+3. From the user side, called the lessee, a lease often feels like financing. From the owner side, called the lessor, a lease often feels like investment income or a slow-motion sale.
+
+4. For a contract to be a lease, three things must be true:
    - A specific asset must be identified.
-   - The customer must receive largely all the economic benefits from using that asset.
-   - The customer must be able to direct how and why that asset is used.
+   - You must get most of the economic benefits from that asset during the period.
+   - You must be able to decide how that asset will be used.
 
-4. If Reliance hires a trucking company to move goods and the trucking company can send any truck it wants, that is usually a service contract, not a lease. If Reliance gets exclusive use of one named truck and decides how that truck is used, that is much closer to a lease.
+> [!info] IMAGINE YOU HAVE TAKEN AN ASSET
+> Imagine you have taken one specific truck from a logistics company for two years.
+> Only you can use that truck.
+> You decide where it goes, what it carries, and when it moves.
+> That smells like a lease.
+> But if you only paid a logistics company to deliver your goods and they can send any truck they want, that is not really a lease. That is just a service.
 
-5. Leasing is popular because it usually needs less cash up front, can be cheaper than unsecured borrowing, and shifts some ownership headaches such as obsolescence away from the user.
+5. Leasing is popular because it needs less cash up front, often has lower financing cost than unsecured borrowing, and reduces some ownership headache.
 
-6. **A finance lease is a lease that economically looks like a purchase financed over time.**  
-   What is economically looks like a purchase: Most of the asset's value or useful life is effectively being transferred to the lessee.  
-   What is financed over time: The lessee pays in installments rather than paying full price on day one.  
-   If that purchase-like feeling is not there, the lease is an operating lease.
+6. Think of an airline. Buying every aircraft outright would require crazy upfront cash. Leasing lets the airline fly now and pay over time. That is the real-world reason this topic matters.
 
-7. A lease is a finance lease if any one of these five tests is met:
-   - Ownership transfers to the lessee by the end.
-   - The lessee has a purchase option and is reasonably certain to use it.
+7. **A finance lease is a lease that, in substance, looks like a purchase paid over time.**  
+   What is in substance: Not just the legal label, but the real economic reality.  
+   What is purchase paid over time: You are effectively taking most of the asset's value or life and paying in installments.  
+   If that purchase-like feel is missing, it is an operating lease.
+
+8. A lease is a finance lease if any one of the following is true:
+   - Ownership transfers to the lessee.
+   - The lessee has an option to buy and is reasonably sure to use it.
    - The lease term covers a major part of the asset's useful life.
    - The present value of lease payments is substantially all of the asset's fair value.
-   - The asset has no alternative use to the lessor.
+   - The asset has no real alternative use to the lessor.
 
-8. This is the easiest exam lens: finance lease means "this is basically a financed purchase"; operating lease means "this is basically a rental."
+> [!warning] DO NOT MEMORIZE THIS IN A DRY WAY
+> The easiest memory trick is this:
+> if the lessee is taking most of the asset's life, value, or ownership-like benefit, call it a finance lease.
+> If the lessee is just temporarily using it and then walking away, call it closer to a rental.
 
-> [!warning] LEASE CLASSIFICATION TRAP
-> Do not memorize only one finance-lease signal like "purchase option." Any one of the five tests can be enough.
-> A lease can still be a finance lease even if the asset is returned at the end.
+9. Imagine you take a car for ten years and the car itself only has a useful life of ten years. Be honest: that is not normal renting. That is basically buying the car in slow motion. That is why it becomes a finance lease.
 
-9. Under both IFRS and US GAAP, lessees usually record a right-of-use (ROU) asset and a lease liability for long leases. Short-term leases can be exempt, and IFRS also allows a low-value asset exemption.
+10. Now imagine you take a machine for one year when the machine can last twenty years and then hand it back. That feels much more like renting. That is the operating lease idea.
 
-10. **Lease liability is the present value of future lease payments.**  
-    What is present value: Today's value of future payments after discounting.  
-    What is future lease payments: The contractual cash payments the lessee expects to make.  
-    The discount rate is usually the rate implicit in the lease or the lessee's secured borrowing rate.
+11. Under both IFRS and US GAAP, long leases usually go on the balance sheet for the lessee as:
+   - a right-of-use asset, and
+   - a lease liability.
 
-11. After recognition, the lease liability follows the effective interest method:
+12. **The right-of-use asset means the economic benefit you now control. The lease liability means the payment promise you now owe.**  
+   What is economic benefit: The useful service you can get from the asset.  
+   What is payment promise: The cash you are committed to paying later.  
+   The balance sheet is just showing both sides of the story.
+
+> [!info] WHY THE BALANCE SHEET SHOWS BOTH
+> Imagine you have leased a shop for your business.
+> The moment you sign a serious long lease, you got something valuable: the right to use that shop.
+> But you also tied a rope around your own neck a little: you now owe future payments.
+> That is why the balance sheet shows both an asset and a liability.
+
+13. The lease liability is measured using the present value of future lease payments.
+
+$$
+\text{Lease liability today} = \text{Present value of future lease payments}
+$$
+
+14. After that, the liability is unwound using the effective interest method:
 
 $$
 \text{Interest expense} = \text{Opening lease liability} \times \text{Discount rate}
@@ -75,251 +110,335 @@ $$
 $$
 
 $$
-\text{Closing lease liability} = \text{Opening liability} + \text{Interest expense} - \text{Lease payment}
+\text{Closing lease liability} = \text{Opening lease liability} + \text{Interest expense} - \text{Lease payment}
 $$
 
-12. The right-of-use asset is then amortized, often on a straight-line basis over the lease term.
+15. Do not panic at the formula. It is the same old loan logic. Early on, more of your payment behaves like interest because the liability is still big. Later, more of the payment kills principal.
 
-13. Under IFRS, the lessee uses one model for both finance and operating leases. The balance sheet shows the right-of-use asset and the lease liability. The income statement shows amortization expense and interest expense separately.
+16. The right-of-use asset is then amortized, usually on a straight-line basis over the lease term.
 
-14. That separation creates a front-loaded total expense pattern. Early in the lease, interest is high because the liability is still large. Later, interest falls as the liability is paid down.
+17. Under IFRS, the lessee uses one model for both finance leases and operating leases. The income statement usually shows:
+   - amortization expense on the right-of-use asset, and
+   - interest expense on the lease liability.
 
-15. Under IFRS cash flow presentation, the principal repayment is shown in financing activities. Interest paid can appear in operating activities or financing activities depending on policy.
+18. That makes total expense front-loaded. Early years look more expensive because interest is higher when the liability is still large.
 
-16. Under US GAAP, lessee accounting splits into two models:
-   - Finance lease: very similar to IFRS.
-   - Operating lease: still records right-of-use asset and lease liability, but reports one straight-line lease expense on the income statement.
+> [!info] WHY EARLY YEARS LOOK HEAVIER
+> Imagine you leased a machine and owe a large amount at the start.
+> When the outstanding amount is large, the interest part is also large.
+> So in early years you get hit by both normal amortization and a big interest charge.
+> Later the liability shrinks, interest shrinks, and the total expense cools down.
 
-17. Under a US GAAP operating lease, the lease liability still unwinds with the effective interest method, but the amortization of the right-of-use asset is set as a plug so that:
+19. Under IFRS cash flow presentation, the principal repayment usually goes to financing activities. Interest paid can go to operating activities or financing activities depending on accounting policy.
+
+20. Under US GAAP, lessee accounting splits into two shapes:
+   - finance lease shape, which looks very similar to IFRS, and
+   - operating lease shape, which keeps the balance sheet recognition but changes the income statement look.
+
+21. Under a US GAAP operating lease, the company still has a right-of-use asset and a lease liability, but the income statement shows one straight-line lease expense.
+
+22. In the background, the liability still follows interest logic. But the amortization of the right-of-use asset is adjusted so that total lease expense stays flat.
 
 $$
-\text{Lease expense} = \text{Interest expense} + \text{ROU asset amortization}
+\text{Lease expense} = \text{Interest expense} + \text{Amortization plug}
 $$
 
-18. That is why, under a US GAAP operating lease, total expense is flat across years even though the hidden interest piece is falling.
+> [!info] WHY US GAAP OPERATING LEASE FEELS WEIRD
+> You are still paying down a liability in the background.
+> So economically, interest is definitely there.
+> But US GAAP says, "For an operating lease, make the income statement look like rent."
+> So the accounting quietly adjusts the asset amortization to keep one smooth lease expense line.
 
-19. On the statement of cash flows, US GAAP operating lease payments are shown entirely in operating activities. That is a common comparison trap versus finance leases.
+23. Under US GAAP, the full cash payment for an operating lease is shown in operating activities.
 
-> [!info] WHY OPERATING LEASE UNDER US GAAP LOOKS STRANGE
-> The economics of the liability still follow interest plus principal.
-> But US GAAP wants the income statement to look like rent expense for an operating lease.
-> So the accountant quietly adjusts the asset amortization so that the total expense stays level.
-> Same balance-sheet idea, different income-statement shape.
+24. This creates exam traps in ratios:
+   - operating lease under US GAAP usually gives lower earnings before interest, taxes, depreciation, and amortization (EBITDA),
+   - operating cash flow is lower, and
+   - total assets can stay a bit higher in early years because the right-of-use asset declines more slowly.
 
-20. Ratio effect trap:
-   - Using an operating lease instead of a finance lease under US GAAP usually lowers earnings before interest, taxes, depreciation, and amortization (EBITDA) because lease expense stays inside operating expense.
-   - Total assets stay a bit higher in early years under an operating lease because the right-of-use asset declines more slowly.
-   - Operating cash flow is lower under an operating lease because the full payment stays in operating activities.
+25. **From the lessor side, the question is different: "Am I still basically renting out my asset, or have I effectively turned this into a receivable?"**  
+   What is receivable: Money to be collected in the future.  
+   Why is this the question: Because lessor accounting depends on whether the deal is still mainly about a physical asset or now mainly about finance income.
 
-21. **From the lessor side, a finance lease means the lessor has effectively turned the asset into a receivable.**  
-    What is receivable: A financial asset representing money to be collected.  
-    What is turned the asset into a receivable: The lessor stops treating the arrangement mainly as renting out a physical asset and starts treating it mainly as financing.  
-    In a finance lease, the lessor de-recognizes the leased asset and recognizes a lease receivable.
+> [!info] IMAGINE YOU HAVE GIVEN AN ASSET
+> Imagine you own a machine and give it to someone for most of its useful life.
+> They will squeeze almost all the benefit out of it, and you mainly sit and collect payments.
+> In substance, you did not just "rent out a machine."
+> You almost converted that machine into a money claim.
+> That is why a lessor finance lease starts to look like a receivable.
 
-22. For a lessor finance lease:
-   - Balance sheet: recognize lease receivable, remove the physical asset.
-   - Income statement: recognize interest income over time, and possibly a gain or loss at inception if carrying value differs from the present value of the receivable.
-   - Statement of cash flows: the entire lease cash receipt goes to operating activities.
+26. In a lessor finance lease:
+   - the lessor removes the physical asset from the balance sheet,
+   - recognizes a lease receivable,
+   - recognizes interest income over time,
+   - and may record a gain or loss at inception if carrying value and receivable value differ.
 
-23. For a lessor operating lease:
-   - Balance sheet: keep the leased asset on the books.
-   - Income statement: recognize lease revenue on a straight-line basis and keep recording depreciation expense.
-   - Statement of cash flows: the entire lease cash receipt goes to operating activities.
+27. In a lessor operating lease:
+   - the lessor keeps the physical asset on the balance sheet,
+   - continues to depreciate it,
+   - and recognizes lease revenue over time.
 
-24. The clean memory rule is this: lessee finance lease looks like "borrow and buy"; lessor finance lease looks like "sell and finance."
+28. Cash flow from lease receipt is operating cash flow for the lessor under both types.
 
-> [!question] LESSEE LEASE LOGIC
-> Problem: A company leases a machine for five years, pays at each year-end, and recognizes a right-of-use asset and lease liability at inception. Under IFRS, what happens after that?
+> [!tip] HAMMER THIS INTO YOUR HEAD
+> Lessee asks: "What did I gain control over, and what do I now owe?"
+> Lessor asks: "Did I keep renting my asset, or did I basically swap it for a receivable?"
+
+> [!question] LEASE CLASSIFICATION FEEL
+> Problem: You take a machine for two years. The machine is specifically identified, only you can use it, and the present value of what you will pay is almost equal to the machine's fair value. Is this closer to an operating lease or a finance lease?
 >
 > ---
 >
 > Solution:
-> - The lease liability is reduced using interest expense and principal repayment.
-> - The right-of-use asset is amortized separately.
-> - Interest expense and amortization expense both hit the income statement.
-> - Principal repayment goes to financing activities on the statement of cash flows.
+> This is closer to a finance lease.
 >
-> Explanation: Under IFRS, the lessee accounting shape is a financed-asset shape, not a simple rent-expense shape.
+> Explanation:
+> You are not just casually renting it. You are taking almost all of the value of the machine through the lease payments. That is the "slow purchase" feeling that defines a finance lease.
 
 #### Deferred Compensation and Postemployment Plans
 
-25. Deferred compensation means the employee works now but receives some part of the compensation later. That is why accounting becomes harder: service happens today, cash may move much later, and the value may depend on uncertain future events.
+29. Deferred compensation just means this: the employee works now, but some compensation comes later.
 
-26. Pensions are the classic example of deferred compensation.
+30. Salary paid at month-end is easy. Pension promises are not easy. That is why this section exists.
 
-27. **A defined contribution plan is a pension plan in which the employer promises how much it will contribute, not how much the employee will finally receive.**  
-    What is contribution: The amount paid into the pension plan by the employer.  
-    What is finally receive: The pension benefit the employee will end up with after investment performance.  
-    So the employer's promise stops at the contribution.
+31. **A defined contribution plan is a pension plan in which the employer promises the contribution amount, not the final pension amount.**  
+   What is contribution amount: The amount the company will put into the plan.  
+   What is final pension amount: The amount the employee will actually end up enjoying after the money is invested.  
+   In plain language: the company is saying, "I will put money in. After that, market fate is mostly your problem."
 
-28. Under a defined contribution plan, the employee bears the investment risk and actuarial risk. If the plan assets perform badly or retirement lasts longer than expected, the employee feels that pain.
+32. Imagine your employer says, "Every year I will put 10 into your retirement bucket." If markets do well, your retirement bucket grows nicely. If markets collapse, the bucket suffers. The employer did not promise your retirement lifestyle. The employer only promised the deposit.
 
-29. Accounting for a defined contribution plan is simple:
-   - The employer contribution is pension expense.
-   - The cash payment is an operating cash outflow.
-   - If the contribution has been promised but not yet paid by year-end, an accrued compensation liability is recognized.
+33. That is why in a defined contribution plan, the employee bears:
+   - investment risk, and
+   - actuarial risk.
 
-30. **A defined benefit plan is a pension plan in which the employer promises the future benefit, usually according to a formula.**  
-    What is future benefit: The pension amount the employee is supposed to receive after retirement.  
-    What is formula: A rule often linked to salary, years of service, or both.  
-    This is why defined benefit accounting is much harder: the company is promising an outcome, not just a deposit.
+34. Investment risk means the plan assets may grow less than hoped. Actuarial risk means real life may not behave as expected, such as retirement timing or lifespan.
 
-31. In a defined benefit plan, the employer bears both investment risk and actuarial risk. If plan assets underperform, if retirees live longer, or if salary assumptions move up, the employer must absorb that pain.
+35. Accounting for a defined contribution plan is simple:
+   - employer contribution = pension expense,
+   - cash paid = operating cash outflow,
+   - unpaid promised contribution at year-end = accrued liability.
 
-32. The defined benefit obligation is the present value of promised future pension payments.
+> [!info] WHY DEFINED CONTRIBUTION IS EASY
+> The company promised an input, not an outcome.
+> Inputs are easy to account for.
+> "We paid 100 into the plan" is clean.
+> "We promise to take care of your retirement no matter what happens" is messy.
+> That mess is the defined benefit world.
 
-33. Most defined benefit plans also hold plan assets in a separate pension fund or trust. Those assets are meant to help pay the future benefits.
+36. **A defined benefit plan is a pension plan in which the employer promises the benefit that the employee will receive later.**  
+   What is benefit: The pension payout the employee gets after retirement.  
+   What is promise: The employer is taking responsibility for delivering that outcome, not merely making a deposit.  
+   In casual language: the company is saying, "Do not worry only about the bucket. I am promising what will come out of the bucket."
 
-34. The net funded status is:
+37. Imagine a company promises, "After retirement, we will pay you 70 percent of your final salary every year until death." That is not a small promise. To account for it, the company must guess salary growth, discount rates, lifespan, retirement age, and future asset returns.
+
+38. That is why defined benefit plans are harder and riskier. The employer bears:
+   - investment risk, and
+   - actuarial risk.
+
+39. The company estimates the pension obligation by discounting promised future payments back to today.
+
+40. Many defined benefit plans also have plan assets sitting in a separate fund. Those assets are there to help pay the promised benefits.
+
+41. The net position is:
 
 $$
 \text{Net pension asset or liability} = \text{Fair value of plan assets} - \text{Defined benefit obligation}
 $$
 
-35. If plan assets are greater than the obligation, the plan is overfunded and may create a net pension asset. If plan assets are less than the obligation, the plan is underfunded and creates a net pension liability.
+42. If plan assets are bigger than the obligation, the plan is overfunded. If the obligation is bigger, the plan is underfunded.
 
-36. **Under IFRS, the period-to-period change in the net pension position is split into service cost, net interest, and remeasurements.**  
-    What is service cost: The extra pension obligation earned because employees worked one more year.  
-    What is net interest: The time-value effect on the opening net pension position.  
-    What is remeasurements: Changes caused by assumption revisions or actual asset returns differing from the amount built into net interest.  
-    This three-bucket split is the core of the IFRS pension question.
+> [!info] THINK OF TWO BUCKETS
+> Bucket 1 says: "What the company owes retirees."
+> Bucket 2 says: "What the company has already set aside."
+> If bucket 2 is smaller, the company still has a hole to fill.
+> That hole is the net pension liability.
 
-37. Under IFRS:
-   - Service cost goes to profit and loss.
-   - Past service cost also goes to profit and loss.
-   - Net interest on the opening net pension asset or liability goes to profit and loss.
-   - Remeasurements go to other comprehensive income (OCI) and are not amortized later through profit and loss.
+43. Under IFRS, the change in the net pension position is broken into three broad parts:
+   - service cost,
+   - net interest,
+   - and remeasurements.
 
-38. Remeasurements include:
-   - Actuarial gains and losses from assumption changes such as mortality, turnover, retirement age, or salary growth.
-   - Actual return on plan assets minus the return already embedded in the net interest calculation.
+44. Service cost means employees worked one more year, so they earned one more slice of future pension.
 
-39. Under US GAAP, pension accounting uses more buckets and more smoothing.
+45. Net interest means time passed, so the value of the pension promise moved simply because the payment date is one year closer.
 
-40. Under US GAAP, the period components usually look like this:
-   - Service cost goes to profit and loss.
-   - Interest expense on the pension obligation goes to profit and loss.
-   - Expected return on plan assets reduces pension expense in profit and loss.
-   - Past service cost goes first to OCI and is amortized later into profit and loss.
-   - Actuarial gains and losses usually go first to OCI and are amortized later, although immediate recognition can be allowed in some cases.
+46. Remeasurements are the surprises:
+   - maybe people live longer,
+   - maybe salary assumptions changed,
+   - maybe plan assets performed differently from what the accounting expected.
 
-41. This is the quick memory contrast:
-   - IFRS is cleaner and faster: service cost plus net interest in profit and loss, remeasurements in OCI.
-   - US GAAP is smoother and messier: more items begin in OCI and then get amortized.
+47. Under IFRS:
+   - service cost goes to profit and loss,
+   - past service cost goes to profit and loss,
+   - net interest goes to profit and loss,
+   - remeasurements go to other comprehensive income.
+
+48. Under IFRS, those remeasurements are not later amortized through profit and loss. They stay out there in other comprehensive income.
+
+49. Under US GAAP, the same economic story is chopped into more pieces and smoothed more.
+
+50. Under US GAAP:
+   - service cost goes to profit and loss,
+   - interest expense goes to profit and loss,
+   - expected return on plan assets reduces pension expense,
+   - past service cost usually starts in other comprehensive income and is amortized later,
+   - actuarial gains and losses usually also start in other comprehensive income and get amortized over time.
+
+> [!warning] BIG PENSION FEEL
+> IFRS says: "Show today's service and time-cost in profit and loss. Dump the measurement shocks in other comprehensive income."
+> US GAAP says: "Spread more of the pain over time."
+
+51. Pension expense is usually hidden inside normal operating lines. Factory worker pension cost can flow into inventory and then cost of goods sold. Office worker pension cost can sit inside selling, general, and administrative expense. That is why the notes matter so much.
 
 > [!tip] HAMMER THIS INTO YOUR HEAD
-> Defined contribution plan asks, "How much will the company put in?"
-> Defined benefit plan asks, "How much pension has the company effectively promised?"
-> If the plan is underfunded, the balance sheet problem belongs to the employer, not the employee.
+> Defined contribution plan = company promises the deposit.
+> Defined benefit plan = company promises the retirement outcome.
+> If the plan is underfunded, the employer has the problem.
 
-42. Pension expense is usually not shown as one clean line on the income statement. For production workers it can sit inside inventory and then cost of goods sold. For office staff it can sit inside selling, general, and administrative expense. That is why the notes matter so much.
-
-#### Share-Based Compensation
-
-43. Share-based compensation is another form of deferred compensation. Instead of paying only cash, the company ties compensation to shares or share value.
-
-44. Companies use share-based pay to retain people, align employees with shareholders, and reduce immediate cash outflow.
-
-45. The downside is not small. Share-based compensation still reduces earnings even if cash does not move today, and it can dilute existing shareholders.
-
-46. **Share-based compensation is measured at fair value on the grant date and recognized as compensation expense over the vesting period.**  
-    What is fair value on the grant date: The value of the award when it is promised to the employee.  
-    What is vesting period: The period the employee must serve or the conditions that must be met before the award is earned.  
-    The exam point is brutal but simple: later stock price changes usually do not change the original measured expense for equity-settled awards.
-
-47. If vesting is immediate, the whole expense is recognized right away. If vesting requires future service, the expense is spread over that service period.
-
-48. **Restricted stock units (RSUs) are share awards that usually vest only after service or performance conditions are met.**  
-    What is restricted: The employee cannot fully keep the award unless the conditions are met.  
-    What is unit: A promise to deliver shares or the value of shares later.  
-    In plain English, the company is saying, "Stay here and hit the conditions, then these shares become yours."
-
-49. For stock grants and restricted stock units:
-   - Expense is based on share price at the grant date.
-   - Expense is recognized over the service period.
-   - The offsetting entry usually increases additional paid-in capital (APIC).
-
-50. The total equity effect confuses people. Expense reduces retained earnings through lower net income, but the offsetting credit raises additional paid-in capital. So the composition of equity changes even if total equity does not fall from that journal entry alone.
-
-51. Performance shares are similar, except vesting depends on performance conditions such as earnings, margins, or return on assets. They align compensation with business targets, but they can also tempt managers to manipulate accounting numbers.
-
-52. **Stock options give the employee the right to buy shares later at a fixed exercise price.**  
-    What is exercise price: The price the employee pays to buy the share later.  
-    What is right: The employee can choose whether to use the option.  
-    This asymmetry is the reason options can encourage excessive risk-taking.
-
-53. Stock options are also measured at fair value on the grant date, but that fair value must usually be estimated with an option pricing model such as Black-Scholes or a binomial model.
-
-54. Important inputs include exercise price, expected volatility, expected life, dividend yield, risk-free rate, and expected forfeitures. Higher volatility and longer expected life usually increase option value. Higher dividend yield usually lowers option value.
-
-55. Once the option's grant-date fair value is set, that value is expensed over the vesting period. The later market price at exercise does not change the original compensation expense.
-
-56. When employees exercise the option, the company receives cash equal to the exercise price and issues shares. Common stock and additional paid-in capital increase.
-
-57. Stock options do not have to end well for the employee. If the market price never rises above the exercise price, the option can expire worthless.
-
-58. That is why companies increasingly use restricted stock units instead of relying only on options. A restricted stock unit still has value as long as the share price stays above zero, while an out-of-the-money option can become useless.
-
-59. Other share-based compensation can be cash-settled rather than equity-settled. Stock appreciation rights and phantom stock pay employees based on share value changes without necessarily giving them real shares.
-
-60. Cash-settled plans matter because they can create a liability instead of only an equity entry.
-
-> [!warning] STOCK-COMPENSATION TRAPS
-> Do not remeasure equity-settled awards every time the stock price moves after grant.
-> Do not forget dilution risk just because no cash left the company at grant.
-> Options can encourage risk-seeking; stock ownership can encourage risk aversion. The direction is not the same.
-
-> [!question] STOCK GRANT VS STOCK OPTION
-> Problem: A company grants stock worth 100 on the grant date with a two-year vesting period. What is the basic accounting pattern?
+> [!question] DEFINED CONTRIBUTION VS DEFINED BENEFIT
+> Problem: Your employer says, "We will put 8 percent of your salary into your retirement account every year." Is that defined contribution or defined benefit?
 >
 > ---
 >
 > Solution:
-> - Compensation expense = 50 in Year 1 and 50 in Year 2.
-> - Additional paid-in capital rises by 50 in Year 1 and 50 in Year 2.
+> It is a defined contribution plan.
 >
-> Explanation: The grant-date fair value is fixed first, then spread across the service period. The company is recording compensation as it receives employee service, not when cash moves.
+> Explanation:
+> The employer promised only the input, which is the 8 percent contribution. The employer did not promise the final retirement payout.
+
+#### Share-Based Compensation
+
+52. Share-based compensation means the company is paying employees using shares, share-linked promises, or share-value-linked promises instead of only cash salary.
+
+53. The idea sounds fancy, but the human story is simple: "Work for us, stay with us, help increase the company's value, and part of your reward will move with the stock."
+
+54. Companies like this because it can retain employees and reduce current cash pressure. Shareholders like the idea because it tries to align managers with owners.
+
+55. But there is no free lunch. Share-based compensation is still compensation expense. If the company pays you with stock instead of cash, your work was still not free.
+
+56. **Share-based compensation is generally measured at fair value on the grant date and recognized as compensation expense over the vesting period.**  
+   What is grant date: The date the company gives you the award promise.  
+   What is vesting period: The period you must serve, or the conditions you must meet, before the award truly becomes yours.  
+   In plain language: the company values the gift on the day it promises it, then spreads that salary expense over the years you are earning it.
+
+57. If vesting is immediate, expense is recognized immediately. If vesting takes time, expense is spread across that time.
+
+58. **Restricted stock units are promises to give you shares later if you stay long enough or meet conditions.**  
+   What is restricted: You cannot fully keep the award yet.  
+   What is unit: A share promise, not necessarily the actual share in your hand today.  
+   Imagine your boss says, "Stay with us three more years and these shares become yours." That is the flavor.
+
+59. For stock grants and restricted stock units:
+   - the expense is based on the share price at the grant date,
+   - the expense is recognized over the vesting period,
+   - and the offsetting entry usually increases additional paid-in capital.
+
+60. This confuses many people, so say it slowly. Compensation expense reduces profit. Lower profit reduces retained earnings. But at the same time the accounting credit raises additional paid-in capital. So one part of equity goes down and another part goes up.
+
+> [!info] IMAGINE YOUR SALARY IS PAID IN SHARES
+> Imagine your company tells you, "We cannot pay your full bonus in cash, so we will give you stock worth 100 after you stay for two years."
+> Economically, that is still salary.
+> The company consumed your work this year and next year.
+> So the company must gradually record salary expense even before you actually receive the shares.
+
+61. Performance shares are similar, except the final award depends on targets like earnings, return on assets, or margins.
+
+62. That sounds smart, but it has a dark side. If pay depends on accounting numbers, managers can feel tempted to massage accounting numbers.
+
+63. **Stock options give the employee the right to buy shares later at a fixed exercise price.**  
+   What is right: The employee can choose whether to exercise.  
+   What is exercise price: The fixed amount the employee must pay to buy the shares later.  
+   In plain language: "If the stock later becomes more expensive than this fixed price, you win."
+
+64. Stock options are measured at fair value on the grant date, but unlike a normal stock grant, that fair value usually has to be estimated using an option pricing model.
+
+65. Important inputs include:
+   - exercise price,
+   - expected volatility,
+   - expected life,
+   - dividend yield,
+   - risk-free rate,
+   - and expected forfeitures.
+
+66. Higher volatility usually makes an option more valuable. Longer life usually makes it more valuable. Higher dividend yield usually makes it less valuable.
+
+67. Once the grant-date fair value is measured, that amount is expensed over the vesting period. Later stock price changes do not keep resetting the expense for equity-settled awards.
+
+68. When employees exercise the option, the company receives cash equal to the exercise price and issues shares.
+
+69. Options can expire worthless if the stock price never rises above the exercise price. That is why restricted stock units have become more popular in many companies.
+
+> [!info] WHY OPTIONS CAN MAKE MANAGERS RISKY
+> Imagine you got only stock.
+> If the stock crashes, your wealth crashes too, so you may become cautious.
+> But imagine you got stock options.
+> If the stock flies upward, you gain a lot.
+> If it stays below the exercise price, your option just dies.
+> That one-sided payoff can push managers toward excessive risk-taking.
+
+70. Other share-based compensation can be cash-settled. Stock appreciation rights and phantom stock reward employees based on stock value movement without always giving actual shares.
+
+71. Cash-settled share-based compensation can create a liability instead of only an equity entry.
+
+> [!warning] DO NOT MISS THESE TRAPS
+> Stock-based pay is still a real expense.
+> No-cash-today does not mean no-cost.
+> Options and stock ownership do not create the same incentives.
+
+> [!question] STOCK GRANT FEEL
+> Problem: A company gives you shares worth 100 today, but you only earn them if you stay two years. What is the basic accounting idea?
+>
+> ---
+>
+> Solution:
+> The company recognizes compensation expense over the two-year vesting period.
+>
+> Explanation:
+> The company is not paying for nothing. It is paying for your service over those two years. So the expense is spread across the service period, even if the shares come later.
 
 #### Presentation and Disclosure
 
-61. This last learning outcome is less about journal entries and more about reading notes intelligently.
+72. This section is really about reading notes like an analyst instead of reading them like decoration.
 
-62. Lease disclosures are meant to help the analyst judge the amount, timing, and uncertainty of lease cash flows.
+73. Lease disclosures are there to help you judge the amount, timing, and uncertainty of lease cash flows.
 
-63. On the balance sheet, the non-current section often shows the right-of-use asset and lease liability, but not always as separate neat lines. Sometimes they are buried inside "other assets" or "other liabilities."
-
-64. Lessee lease disclosures should help you find:
-   - carrying amount of right-of-use assets by class,
-   - total cash outflow for leases,
+74. For lessee lease disclosures, look for:
+   - carrying amount of right-of-use assets,
+   - total lease cash outflow,
    - interest expense on lease liabilities,
    - depreciation of right-of-use assets,
    - additions to right-of-use assets,
    - maturity analysis of lease liabilities,
-   - restrictions, covenants, and possible future lease cash outflows not yet captured in the liability.
+   - restrictions, covenants, and future exposures not fully captured in the liability.
 
-65. Lessor lease disclosures should help you separate finance-lease income from operating-lease income and understand the maturity pattern of lease payments receivable or lease income to be received.
+75. For lessor lease disclosures, look for the split between finance-lease information and operating-lease information, plus maturity patterns of expected receipts.
 
-66. Defined contribution plan disclosure is usually light. The main item is the contribution expense recognized for the period.
+76. Defined contribution plan disclosure is usually light because the accounting is simple.
 
-67. Defined benefit plan disclosure is much heavier because the estimate is more subjective and riskier. A good note should explain the plan structure, the funded status, the assumptions, the sensitivity to key assumptions, and the reconciliation of opening and closing balances.
+77. Defined benefit plan disclosure is much heavier because the estimate is more judgment-heavy and more dangerous.
 
-68. For defined benefit plans, always look for:
-   - present value of the obligation,
-   - fair value of plan assets,
-   - net funded status,
-   - discount rate assumptions,
-   - major actuarial assumptions,
-   - breakdown of what hit profit and loss and what hit other comprehensive income.
+78. In a defined benefit note, always hunt for:
+   - the pension obligation,
+   - the fair value of plan assets,
+   - the net funded status,
+   - key assumptions like discount rate,
+   - and what hit profit and loss versus what hit other comprehensive income.
 
-69. Share-based compensation disclosures should tell you the type of awards, the valuation method, the assumptions used, current period compensation expense, and unrecognized compensation cost that will be recognized in future periods.
+79. Share-based compensation disclosures should tell you:
+   - what kind of awards exist,
+   - how they were valued,
+   - what assumptions were used,
+   - current-period compensation expense,
+   - and how much unrecognized compensation cost still remains for future periods.
 
-70. If you see a company disclose large unrecognized compensation cost for nonvested awards, that is a clue that future compensation expense is already baked in even if the grant happened earlier.
+80. If a company says it has a huge amount of unrecognized compensation cost related to nonvested awards, that means future salary expense is already waiting in the pipeline.
 
 > [!tip] QUICK CHECKS BEFORE EXAM
+> - Lease: always ask who controls the asset and who bears the risk.
 > - Lessee under IFRS: separate amortization and interest.
-> - Lessee under US GAAP operating lease: one lease expense, full cash payment in operating activities.
-> - Lessor finance lease: receivable replaces the physical asset.
-> - Defined contribution plan: expense is basically the contribution.
-> - Defined benefit plan: focus on net pension asset or liability and where each component goes.
-> - IFRS pension accounting sends remeasurements to other comprehensive income.
-> - Grant-date fair value is the anchor for stock grants and stock options.
+> - Lessor finance lease: asset leaves, receivable comes in.
+> - Defined contribution plan: easy because only the contribution is promised.
+> - Defined benefit plan: hard because the outcome is promised.
+> - Share-based compensation: still a salary expense even without current cash payment.
