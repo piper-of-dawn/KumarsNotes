@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
+                "file": "CFA Notes/ETHICS/STANDARD 3 - DUTIES TO CLIENTS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "STANDARD 1 - PROFESSIONALISM"
+              "title": "STANDARD 3 - DUTIES TO CLIENTS"
             }
           }
         ]
@@ -909,8 +909,9 @@
   },
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
-    "CFA Notes/ETHICS.md",
     "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
+    "CFA Notes/ETHICS/STANDARD 3 - DUTIES TO CLIENTS.md",
+    "CFA Notes/ETHICS.md",
     "CFA Notes/DERIVATIVES/09 Option Replication Using Put Call Parity.md",
     "CFA Notes/ETHICS",
     "CFA Notes/DERIVATIVES/02 Forward Commitment and Contingent Claim Features and Instruments.md",
@@ -941,7 +942,6 @@
     "CFA Notes/FIXED INCOME/11 Yield-Based Bond Duration Measures and Properties.md",
     "CFA Notes/FIXED INCOME/08 - Yield and Yield Spread Measures for Floating-Rate Instruments.md",
     "CFA Notes/FIXED INCOME/13-curve-based-and-empirical-fixed-income-risk-measures.md",
-    "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
     "CFA Notes/CORPORATE ISSUERS",
     "CFA Notes/FSA/XXVbn5gv",
     "CFA Notes/ALTERNATIVE INVESTMENTS",
