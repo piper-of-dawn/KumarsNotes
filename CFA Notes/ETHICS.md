@@ -370,7 +370,7 @@ debugInConsole: false # Print debug info in Obsidian console
 7. **“Data was encrypted and secured.”** Safeguards in place; correct logic: duty to protect satisfied.
 8. **“Client requested a reference.”** Client initiated and consented; correct logic: allowed.
 9. **“Information was outdated and irrelevant.”** No identification possible; correct logic: not confidential.
-10. **“Disclosure followed firm and law.”** Policies aligned with legal requirements; correct logic: compliant handling.
+10. **“Disclosure followed firm and law.”** Policies aligned with legal requirements; correct logic: compliant handling.34
 ---
 ### STANDARD IV(A) – DUTIES TO EMPLOYERS – LOYALTY
 
