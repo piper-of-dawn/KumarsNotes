@@ -1,240 +1,267 @@
 # Probability Trees and Conditional Expectations
 
-**Learning outcomes**
-- Calculate expected values, variances, and standard deviations and apply them to investment problems.
-- Formulate an investment problem as a probability tree and explain conditional expectations in investment use.
-- Calculate and interpret updated probabilities using Bayes' formula.
+> [!ABSTRACT] LOS
+> 1. Calculate expected values, variances, and standard deviations and apply them to investment problems.
+> 2. Formulate an investment problem as a probability tree and explain conditional expectations in investment use.
+> 3. Calculate and interpret updated probabilities using Bayes' formula.
 
 > [!tip] SEE THIS BEFORE EXAM
-> **Expected value**
+> - Expected value just means probability-weighted average. If returns are **-5%**, **10%**, and **25%** with probabilities **0.20**, **0.50**, and **0.30**, then expected return is:
 > $$
-> E(X) = \sum P(X_i)X_i
+> E(X) = (0.20)(-5) + (0.50)(10) + (0.30)(25) = -1 + 5 + 7.5 = 11.5\%
 > $$
-> **Variance and standard deviation**
+> - Variance is not "square everything and pray." First find expected value, then subtract it from each outcome, square those gaps, weight them, and add. Using the same returns and **\(E(X) = 11.5\%\)**:
 > $$
-> \sigma^2(X) = \sum P(X_i)[X_i - E(X)]^2
+> \sigma^2(X) = (0.20)(-16.5)^2 + (0.50)(-1.5)^2 + (0.30)(13.5)^2 = 54.45 + 1.125 + 54.675 = 110.25
 > $$
 > $$
-> \sigma(X) = \sqrt{\sigma^2(X)}
+> \sigma(X) = \sqrt{110.25} = 10.5\%
 > $$
-> **Conditional probability**
+> - In a probability tree, multiply as you move down one path. If recession probability is **0.40** and default probability given recession is **0.08**, that branch probability is:
 > $$
-> P(A|B) = \frac{P(AB)}{P(B)}, \qquad P(B)\neq 0
+> (0.40)(0.08) = 0.032
 > $$
-> **Conditional expected value**
+> - Add only when you are combining different ending branches. If default in recession is **0.032** and default in expansion is **0.012**, total default probability is:
 > $$
-> E(X|S) = \sum P(X_i|S)X_i
+> 0.032 + 0.012 = 0.044
 > $$
-> **Total probability rule**
+> - Conditional expectation means the scenario is already known, so old unconditional weights are dead. If profit is **2** with probability **0.70** and **6** with probability **0.30** in a weak economy, then:
 > $$
-> P(A) = \sum P(A|S_i)P(S_i)
+> E(X|\text{weak}) = (0.70)(2) + (0.30)(6) = 1.4 + 1.8 = 3.2
 > $$
-> **Total probability rule for expected value**
+> - Unconditional expected value from scenario averages is just another weighted average. If **\(E(X|\text{weak}) = 3.2\)** with probability **0.40** and **\(E(X|\text{strong}) = 8.5\)** with probability **0.60**, then:
 > $$
-> E(X) = \sum E(X|S_i)P(S_i)
+> E(X) = (0.40)(3.2) + (0.60)(8.5) = 1.28 + 5.10 = 6.38
 > $$
-> **Bayes' formula**
+> - Bayes is prior times likelihood divided by total probability of the signal. If bankruptcy prior is **0.10**, weak-signal probability given bankruptcy is **0.60**, and weak-signal probability given survival is **0.20**, first get signal probability:
 > $$
-> P(\text{Event}|\text{Info}) = \frac{P(\text{Info}|\text{Event})}{P(\text{Info})}P(\text{Event})
+> P(\text{weak signal}) = (0.60)(0.10) + (0.20)(0.90) = 0.06 + 0.18 = 0.24
 > $$
-> **Notation in simple language**
-> - $E(X)$: expected value, probability-weighted average outcome.
-> - $\sigma^2(X)$: variance, weighted squared distance from expected value.
-> - $\sigma(X)$: standard deviation, square root of variance.
-> - $S$: scenario or event used for conditioning.
-> - Prior probability: your probability before new information arrives.
-> - Posterior probability: your updated probability after new information arrives.
-> - **You are given three outcomes and their probabilities. What is the first move?** Multiply each outcome by its probability and add. That always gives expected value first.
-> - **You are asked for variance. What order should you follow?** Expected value first, then deviations, then squared deviations, then probability weights, then sum.
-> - **A tree has scenario probability on the first branch and conditional probability on the second branch. How do you get terminal probability?** Multiply along the path.
-> - **You already know the scenario happened. Which expectation matters now?** Use conditional expected value, not the old unconditional expectation.
-> - **New information arrives. What is the Bayes move?** Find unconditional probability of the information first, then scale the prior by likelihood divided by that unconditional probability.
+> Then update:
+> $$
+> P(\text{bankruptcy}|\text{weak signal}) = \frac{(0.60)(0.10)}{0.24} = 0.25
+> $$
+> - Expected value is **not** the most likely outcome. It is the weighted average outcome.
+> - Variance requires expected value first.
+> - Multiplying down a path and adding across ending branches are not interchangeable.
+> - Once a scenario is known, unconditional probabilities are outdated for that conditional calculation.
+> - In Bayes, the denominator is the **total probability of the information**, not the prior probability of the event.
+> - If probabilities in a full mutually exclusive and exhaustive event set do not add to **1**, stop and fix the setup before moving on.
+> - ==Expected value first. Multiply down a tree. Add across ending branches. In Bayes, never forget the denominator.==
 
-> [!abstract] MEMORISE
-> - Expected value is a weighted average, not a guaranteed realized value.
-> - Variance is in squared units; standard deviation is in the original units.
-> - Probability trees help turn messy scenario stories into clean multiplication and addition.
-> - Bayes updates priors into posteriors using new information.
-> - When events are mutually exclusive and exhaustive, their probabilities must sum to 1.
+#### Core Flow
 
-## Core Idea
-
-1. This module is about making decisions when the future can break in different directions and each direction carries its own probability.
-2. Expected value is the center of that game. What is expected value: the probability-weighted average of all possible outcomes.
-3. In investing, expected value is a forecast, not a promise. One realized outcome can miss it badly, but over many similar situations it is the rational anchor.
-4. Do not confuse expected value with sample mean. Expected value is forward-looking or population-based; sample mean is historical and equally weighted across observed data.
-5. Variance and standard deviation tell you how much reality may wander away from that forecast.
-
-## Expected Value, Variance, and Standard Deviation
-
-6. For a discrete random variable, expected value is:
+1. Expected value is the starting point. What is expected value: the probability-weighted average outcome across all possible cases.
+2. Why expected value is used: it gives you the rational center of an uncertain situation before one actual outcome shows up.
+3. In investing, expected value is a forecast, not a promise. One realized outcome can be much better or much worse.
+4. If a distressed bond can return **-10%**, **5%**, or **30%**, the right first move is not "which one feels likely." The right move is probability-weighting all three.
+5. The formula is:
 
 $$
 E(X) = \sum P(X_i)X_i
 $$
 
-7. Why is expected value used: it compresses many uncertain outcomes into one rational forecast before you commit money, capital, or a view.
-8. The probability weights must sum to 1, otherwise the expected value calculation is not built on a complete set of possibilities.
-9. Variance is the expected value of squared deviations from expected value:
+7. Here, $X_i$ means one possible outcome and $P(X_i)$ means the probability of that outcome.
+8. The probabilities must add to **1**. If they do not, the setup is incomplete or wrong.
+9. A quick market analogy helps. Think of a biotech stock before a drug decision. Approval, delay, and rejection are different branches. Expected value is the weighted average across those branches, not your favorite narrative.
+10. Variance is the next step. What is variance: the probability-weighted measure of how spread out the outcomes are around the expected value.
+11. Why variance is used: two investments can have the same expected value but very different uncertainty.
+12. The formula is:
 
 $$
-\sigma^2(X) = E\{[X-E(X)]^2\}
+\sigma^2(X) = \sum P(X_i)[X_i - E(X)]^2
 $$
 
-10. In expanded form:
+13. That square is doing important work. It makes negative and positive misses both count as risk and punishes bigger misses more heavily.
+14. Standard deviation is the square root of variance:
 
 $$
-\sigma^2(X) = \sum P(X_i)[X_i-E(X)]^2
+\sigma(X) = \sqrt{\sigma^2(X)}
 $$
 
-11. What is variance: the probability-weighted measure of how spread out the outcomes are around the forecast.
-12. Variance cannot be negative because squared deviations cannot be negative.
-13. If variance is zero, there is no uncertainty left. That means the outcome is certain and the variable is not random anymore.
-14. Standard deviation is the positive square root of variance:
+15. Why standard deviation is used: it puts the dispersion back into the original units, so if return is in percent, standard deviation is also in percent.
+16. The exam order never changes: expected value first, variance second, standard deviation last.
+17. If variance is zero, there is no uncertainty. That means all probability mass sits on one outcome.
 
-$$
-\sigma(X)=\sqrt{\sigma^2(X)}
-$$
-
-15. Why is standard deviation used: it measures dispersion like variance but stays in the same units as the original variable, so your brain can actually read it.
-16. If return is measured in percent, variance is in percent squared but standard deviation is back in percent.
-17. The mechanical order never changes: expected value first, variance second, standard deviation last.
-
-> [!question] EPS DISPERSION DRILL
-> Problem: You are given outcome-probability pairs for earnings per share. What sequence gets you to standard deviation fastest without messing up?
+> [!question] EXPECTED VALUE AND STANDARD DEVIATION
+> Problem: A stock's one-year return can be **-8%** with probability **0.25**, **12%** with probability **0.50**, or **20%** with probability **0.25**. Find expected return and standard deviation.
+>
 > ---
-> First compute $E(X)$. Then compute each deviation from $E(X)$, square it, weight by probability, and sum for variance. Then take the square root.
-> 
-> **Takeaway:** if you skip expected value and jump into variance, the whole calculation collapses.
+>
+> Solution:
+>
+> $$
+> E(X) = (0.25 x -8) + (0.50 x 12) + (0.25 x 20) = -2 + 6 + 5 = 9\%
+> $$
+>
+> $$
+> \sigma^2(X) = 0.25(-8-9)^2 + 0.50(12-9)^2 + 0.25(20-9)^2
+> $$
+>
+> $$
+> = 0.25(289) + 0.50(9) + 0.25(121) = 72.25 + 4.5 + 30.25 = 107
+> $$
+>
+> $$
+> \sigma(X) = \sqrt{107} \approx 10.34\%
+> $$
+>
+> Explanation: the expected return is **9%**, but the spread around it is large. That is exactly why expected value alone is not enough.
 
-18. A higher expected value is not automatically better if standard deviation explodes beside it. Forecast and risk must be read together.
+18. Probability trees enter when uncertainty happens in stages.
+19. What is a probability tree: a branching map where early branches show scenarios and later branches show what can happen inside each scenario.
+20. Why a tree is used: it forces you to separate scenario probabilities from conditional probabilities instead of mixing them by instinct.
+21. The first layer usually shows broad states like recession versus expansion, approval versus rejection, or default versus survival.
+22. Later layers show outcomes inside each state.
+23. Terminal branch probability is always path multiplication.
+24. If recession probability is **0.30** and sales-drop probability given recession is **0.60**, then the joint probability of both is **0.18**.
+25. Do not add while going down a path. That is the classic tree mistake.
+26. You add only when you combine different ending branches that produce the same final event.
+27. If an event can happen through two different states, compute each path separately, then add them.
 
-## Probability Trees
+> [!example] RATING DOWNGRADE MORNING
+> Imagine a bond desk tracking whether a company will be downgraded. One branch is "economy weak," another is "economy strong." Inside each branch, the downgrade odds change. The tree matters because "weak economy" and "downgrade given weak economy" are not the same probability, and traders get burned when they blur the two.
 
-19. A probability tree is a visual machine for problems with stages, branches, and conditional outcomes.
-20. What is a probability tree: a branching diagram that shows scenarios first, then outcomes within each scenario, with probabilities attached at each step.
-21. Trees are especially useful when new information or a scenario changes the probabilities of later outcomes.
-22. Start with mutually exclusive and exhaustive scenarios. What is mutually exclusive: only one can happen. What is exhaustive: together they cover all possible states.
-23. Put scenario probabilities on the first branches, then conditional probabilities on the later branches.
-24. Terminal probabilities come from multiplication along a path. Scenario probability times conditional probability gives the unconditional probability of that final outcome.
-25. Once terminal probabilities are built, you can compute unconditional expected value directly from them if you want.
-26. Or you can compute conditional expected value inside each scenario first and then work backward using scenario probabilities.
-
-> [!example] THE CREDIT DESK ON A PANIC MORNING
-> Picture a distressed-debt desk before the open. One branch says the economy stabilizes. Another says it buckles harder. Under each branch, recovery values split again. The tree is not decoration here. It is the only way to stop the desk from mixing scenario odds with recovery odds and accidentally hallucinating precision.
-
-## Conditional Probability and Conditional Expectation
-
-27. Conditional probability means the probability of one event after you already know another event happened.
-28. The formula is:
+28. Conditional probability is the probability of one event after another event is already known.
+29. The formula is:
 
 $$
-P(A|B) = \frac{P(AB)}{P(B)}
+P(A|B) = \frac{P(A \cap B)}{P(B)}
 $$
 
-29. Why is conditional probability used: once some event is known, the sample space shrinks and the old unconditional probability is no longer the right one.
-30. Conditional expected value does the same thing for forecasts. It updates the forecast of a random variable after a scenario is known.
-31. The formula is:
+30. What is conditional probability: a resized probability after the sample space has shrunk.
+31. Why conditional probability is used: once you know something happened, the old unconditional probability is no longer the right weight.
+32. If you already know the economy is weak, you do not keep weighting outcomes by strong-economy probabilities. That world is gone for this question.
+33. Conditional expected value does the same thing for forecasts.
+34. The formula is:
 
 $$
 E(X|S) = \sum P(X_i|S)X_i
 $$
 
-32. What is conditional expected value: the probability-weighted average outcome after locking yourself inside one scenario.
-33. If rates are known to be stable, you do not use the old unconditional expected earnings number anymore. You use the expected earnings conditional on stable rates.
-34. Conditional variance also exists. It measures dispersion given a specific scenario, not across all scenarios mixed together.
-35. The source's practical message is simple: use conditional variance to assess risk once a particular scenario becomes the relevant one.
+35. What is conditional expected value: the expected value after locking yourself inside one scenario.
+36. Why conditional expected value is used: because once the scenario is known, the relevant probabilities change.
+37. In plain words, unconditional expected value is the all-weather forecast; conditional expected value is today's forecast after you already know which weather state you are in.
 
-## Total Probability Rule
+> [!question] CONDITIONAL EXPECTATION FROM A TREE
+> Problem: A company faces a **0.35** probability of recession and a **0.65** probability of expansion. In recession, earnings are **2** with probability **0.60** and **5** with probability **0.40**. In expansion, earnings are **7** with probability **0.50** and **11** with probability **0.50**. Find expected earnings in recession and unconditional expected earnings.
+>
+> ---
+>
+> Solution:
+>
+> Conditional expected earnings in recession:
+>
+> $$
+> E(X|recession) = (0.60 x 2) + (0.40 x 5) = 1.2 + 2.0 = 3.2
+> $$
+>
+> Conditional expected earnings in expansion:
+>
+> $$
+> E(X|expansion) = (0.50 x 7) + (0.50 x 11) = 3.5 + 5.5 = 9.0
+> $$
+>
+> Unconditional expected earnings:
+>
+> $$
+> E(X) = (0.35 x 3.2) + (0.65 x 9.0) = 1.12 + 5.85 = 6.97
+> $$
+>
+> Explanation: first work inside each scenario, then step back out and weight those scenario averages by scenario probability.
 
-36. The total probability rule rebuilds an unconditional probability from conditional pieces.
-37. If scenarios $S_1, S_2, ..., S_n$ are mutually exclusive and exhaustive, then:
+38. The total probability rule is just the tree logic written as a formula.
+39. If scenarios $S_1, S_2, ..., S_n$ are mutually exclusive and exhaustive, then:
 
 $$
 P(A) = \sum P(A|S_i)P(S_i)
 $$
 
-38. This is just weighted averaging again, but now the thing being averaged is a probability.
-39. The same logic carries over to expected value:
+40. What is mutually exclusive: only one scenario can happen at a time.
+41. What is exhaustive: together the scenarios cover the full set of possibilities.
+42. Why the total probability rule is used: it rebuilds an unconditional probability from conditional pieces.
+43. The same logic works for expected value:
 
 $$
 E(X) = \sum E(X|S_i)P(S_i)
 $$
 
-40. This is the total probability rule for expected value. You compute the forecast inside each scenario, then weight those scenario-specific forecasts by the scenario probabilities.
-41. If your conditional probabilities are internally consistent, the unconditional expected value from the tree must match the direct expected value from terminal probabilities.
-42. If they do not match, your setup is broken somewhere. Either branch probabilities do not add correctly or you mixed up a conditional with an unconditional number.
+44. This is not a different idea. It is the same weighted-average idea wearing a different jacket.
+45. If your tree is built correctly, the unconditional expected value from terminal branches and the unconditional expected value from scenario averages must match.
+46. If they do not match, you mixed a conditional with an unconditional number, or your branch probabilities are broken.
 
-> [!warning] TREE CONSISTENCY TRAP
-> Do not add probabilities along a path. Multiply along a path, add across terminal branches. That one mistake wrecks almost every probability tree question.
+> [!tip] TREE SANITY CHECK
+> If you are moving down one branch, multiply.
+>
+> If you are combining separate ending branches, add.
+>
+> If the tree answer and the scenario-average answer do not match, something upstream is wrong.
 
-## Scenario-Based Forecasting
+47. Bayes' formula flips the conditioning direction.
+48. What is Bayes' formula: a rule for updating the probability of an event after seeing new information.
+49. Why Bayes is used: because markets, lenders, and analysts constantly receive noisy signals and need to revise prior beliefs.
+50. The formula is:
 
-43. In the BankCorp style setup from the source, interest-rate environments drive different earnings possibilities.
-44. Once the declining-rate scenario is known, expected earnings become the weighted average inside only that branch.
-45. Once the stable-rate scenario is known, expected earnings shift to the weighted average inside the stable branch instead.
-46. The old unconditional forecast is a blend of scenario-specific forecasts, not a rival to them.
-47. This is the deeper point: information does not change arithmetic; it changes which probabilities are relevant.
-48. The exact same logic works for operating costs, recoveries on defaulted bonds, sales, or any other discrete random variable.
+$$
+P(\text{Event}|\text{Info}) = \frac{P(\text{Info}|\text{Event})P(\text{Event})}{P(\text{Info})}
+$$
 
-> [!question] CONDITIONAL EXPECTATION DRILL
-> Problem: A scenario is already revealed. Should you multiply terminal outcomes by unconditional probabilities or by conditional probabilities inside that scenario?
+51. Prior probability means your belief before the new information arrives.
+52. Posterior probability means your belief after updating with the new information.
+53. Likelihood means the probability of seeing the information if the event is actually true.
+54. The denominator is the unconditional probability of the information itself.
+55. That denominator usually comes from the total probability rule.
+56. In plain English, Bayes says: start with your old belief, reward it if the signal is especially likely under that event, and scale by how common the signal is overall.
+57. If the signal is common even when the event is false, the update should be weaker.
+58. If the signal is rare unless the event is true, the update should be stronger.
+
+> [!example] CREDIT SCREENING
+> A lender sees a "weak cash flow" signal on a borrower. Bayes is the grown-up way to ask the question. Not "Does weak cash flow feel scary?" but "How often do bankrupt borrowers show this signal, and how often do healthy borrowers also show it?" That difference is the whole game.
+
+59. The Bayes workflow is mechanical and should stay mechanical.
+60. Step 1: write the mutually exclusive events.
+61. Step 2: write the prior probabilities.
+62. Step 3: write the likelihoods for the new information under each event.
+63. Step 4: calculate the unconditional probability of the information.
+64. Step 5: update using Bayes.
+65. Step 6: if you updated a full set of events, make sure the posterior probabilities sum to **1**.
+66. That last check catches a shocking number of silly mistakes.
+
+> [!question] BAYES UPDATE
+> Problem: A borrower has a **0.15** probability of default. A weak operating-cash-flow signal appears with probability **0.70** if the borrower will default and with probability **0.25** if the borrower will not default. Find the probability of default after observing the weak-cash-flow signal.
+>
 > ---
-> Use the conditional probabilities inside that scenario only. Then add the weighted outcomes to get $E(X|S)$.
-> 
-> **Takeaway:** once the scenario is known, unconditional weights are old news.
+>
+> Solution:
+>
+> First compute the unconditional probability of the weak signal:
+>
+> $$
+> P(weak) = (0.70 x 0.15) + (0.25 x 0.85) = 0.105 + 0.2125 = 0.3175
+> $$
+>
+> Now apply Bayes:
+>
+> $$
+> P(default|weak) = \frac{0.70 x 0.15}{0.3175} = \frac{0.105}{0.3175} \approx 0.3307
+> $$
+>
+> Explanation: default probability rises from **15%** to about **33.07%**. The signal matters, but it is not perfect because healthy borrowers can also trigger it.
 
-## Bayes' Formula
+67. Some source examples use diffuse priors, which just means equal prior probabilities across the candidate events.
+68. If priors are equal, the signal does more of the ranking work because you did not start with a favorite.
+69. That does not change the formula. It just makes the arithmetic cleaner.
+70. Bayes shows up naturally in bankruptcy prediction, credit scoring, fraud flags, medical screening, and any situation where signals are noisy rather than perfect.
+71. A good signal does not make survival certain. A bad signal does not make failure certain. Bayes lives in that gray zone.
+72. That is why this topic matters in finance. Real decisions are almost never made with certainty; they are made with updated probabilities.
 
-49. Bayes' formula flips the direction of conditioning. It uses observed information to update the probability of the underlying event or scenario.
-50. What is Bayes' formula: a rational rule for turning prior beliefs into updated beliefs after new information arrives.
-51. The compact formula is:
-
-$$
-P(\text{Event}|\text{Info})=\frac{P(\text{Info}|\text{Event})}{P(\text{Info})}P(\text{Event})
-$$
-
-52. Prior probability means your belief before the new information. Posterior probability means your belief after absorbing that information.
-53. The likelihood is $P(\text{Info}|\text{Event})$. What is likelihood here: the probability of seeing the information if that event were truly the cause.
-54. Before you can update, you need the unconditional probability of the information itself.
-55. That unconditional probability is found using the total probability rule across all mutually exclusive and exhaustive events that could have generated the information.
-56. If the likelihood is larger than the unconditional probability of the information, the posterior rises above the prior.
-57. If the likelihood is smaller than the unconditional probability of the information, the posterior falls below the prior.
-58. So Bayes is basically a rescaling device: prior times a ratio that measures how strongly the new information points toward that event.
-
-## Bayes Workflow
-
-59. Step 1: write the mutually exclusive and exhaustive events or scenarios.
-60. Step 2: write prior probabilities for those events.
-61. Step 3: write likelihoods, meaning probabilities of the new information given each event.
-62. Step 4: calculate the unconditional probability of the information using the total probability rule.
-63. Step 5: apply Bayes' formula to each event if needed.
-64. Step 6: check that updated probabilities across the full event set sum to 1.
-65. That last step is not optional. It is your fastest error detector on exam day.
-
-> [!example] THE FACTORY ANNOUNCEMENT THAT CHANGED EVERYTHING
-> Imagine a company suddenly announcing capacity expansion in Singapore and Ireland. The market hears steel, concrete, and optimism. But the Bayesian move is colder: ask how likely that announcement would be if earnings had beaten, met, or missed consensus. The poster-child excitement is not the answer. The likelihood structure is.
-
-## Diffuse Priors
-
-66. Sometimes the decision maker begins with equal prior probabilities across events. The source calls these diffuse priors.
-67. When priors are equal, the information does most of the heavy lifting in the update.
-68. In that special case, probability of information given event equals probability of event given information after the Bayes mechanics simplify in the source's example.
-69. Intuition: if you started with no favorite among the causes, the observed information gets to dominate the ranking.
-
-## Credit and Bankruptcy Applications
-
-70. Bayes appears naturally in credit work because you keep observing signals like good credit reports, pass-fail tests, ratings, or screening models.
-71. A good signal does not make repayment certain. It changes the conditional probability of repayment.
-72. A bad test result does not prove bankruptcy. It updates the probability of non-survival upward.
-73. This is why Bayes is useful in underwriting, distress analysis, bankruptcy screens, and any filter that emits noisy signals.
-74. The test is useful if passing meaningfully raises survival probability and failing meaningfully raises non-survival probability.
-
-## Final Exam Traps
-
-75. Expected value is not the most likely outcome. It is the weighted average outcome.
-76. Variance uses squared deviations, so always compute expected value first.
-77. In tree questions, multiply down branches and add across terminal boxes.
-78. Conditional expected value uses conditional probabilities, not unconditional terminal probabilities from the full tree.
-79. Bayes needs the unconditional probability of the information in the denominator. Forgetting that step is the classic trap.
-80. Updated probabilities for a full mutually exclusive and exhaustive event set must sum to 1. If they do not, your update is wrong.
+> [!tip] FINAL QUICK CHECKS
+> Expected value question: did you multiply each outcome by its probability before adding?
+>
+> Variance question: did you subtract the expected value before squaring?
+>
+> Tree question: did you multiply along paths and add across ending branches only?
+>
+> Conditional expectation question: did you use probabilities inside the known scenario only?
+>
+> Bayes question: did you calculate the overall probability of the signal before updating?

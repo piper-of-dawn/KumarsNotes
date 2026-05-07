@@ -6,95 +6,80 @@
 - Calculate and interpret fit measures, coefficient tests, ANOVA output, forecasts, prediction intervals, and functional forms.
 
 > [!tip] SEE THIS BEFORE EXAM
-> **Core model**
+> - The whole model is:
 > $$
 > Y_i = b_0 + b_1 X_i + \varepsilon_i
 > $$
-> 
+> and the fitted line is:
 > $$
 > \hat{Y}_i = \hat{b}_0 + \hat{b}_1 X_i
 > $$
-> 
+> Residual means actual minus fitted:
 > $$
 > e_i = Y_i - \hat{Y}_i
 > $$
-> 
-> **Slope and intercept**
-> 
+> - Slope is the money line. If $\hat{b}_1 = 1.25$, say it out loud: a one-unit rise in $X$ increases predicted $Y$ by **1.25** units.
+> - If they make you build slope from scratch, use:
 > $$
 > \hat{b}_1 = \frac{\sum (Y_i-\bar{Y})(X_i-\bar{X})}{\sum (X_i-\bar{X})^2}
 > $$
-> 
+> Then get intercept from:
 > $$
 > \hat{b}_0 = \bar{Y} - \hat{b}_1 \bar{X}
 > $$
-> 
-> **Variation breakdown**
-> 
-> $$
-> SST = SSR + SSE
-> $$
-> 
-> $$
-> R^2 = \frac{SSR}{SST} = r^2
-> $$
-> 
-> $$
-> F = \frac{MSR}{MSE}, \qquad MSE = \frac{SSE}{n-2}, \qquad s_e = \sqrt{MSE}
-> $$
-> 
-> **Coefficient tests**
-> 
-> $$
-> t_{\text{slope}} = \frac{\hat{b}_1 - B_1}{s_{\hat{b}_1}}
-> $$
-> 
-> $$
-> s_{\hat{b}_1} = \frac{s_e}{\sqrt{\sum (X_i-\bar{X})^2}}
-> $$
-> 
-> $$
-> t_{\text{corr}} = \frac{r\sqrt{n-2}}{\sqrt{1-r^2}}
-> $$
-> 
-> $$
-> t_{\text{intercept}} = \frac{\hat{b}_0-B_0}{s_{\hat{b}_0}}
-> $$
-> 
-> $$
-> s_{\hat{b}_0} = s_e \sqrt{\frac{1}{n} + \frac{\bar{X}^2}{\sum (X_i-\bar{X})^2}}
-> $$
-> 
-> **Forecast and interval**
-> 
+> - If they ask for fitted value at some point $X_f$, just plug it into the line:
 > $$
 > \hat{Y}_f = \hat{b}_0 + \hat{b}_1 X_f
 > $$
-> 
+> If $\hat{b}_0 = 2$, $\hat{b}_1 = 0.8$, and $X_f = 10$, then:
 > $$
-> s_f = s_e \sqrt{1 + \frac{1}{n} + \frac{(X_f-\bar{X})^2}{\sum (X_i-\bar{X})^2}}
+> \hat{Y}_f = 2 + (0.8)(10) = 10
 > $$
-> 
+> - The variation split is:
 > $$
-> \text{Prediction interval} = \hat{Y}_f \pm t_{\alpha/2} s_f
+> SST = SSR + SSE
 > $$
-> 
-> **Notation in simple language**
-> - $Y$: dependent variable, the thing you want to explain.
-> - $X$: independent variable, the thing you use to explain $Y$.
-> - $b_0$: intercept, predicted $Y$ when $X=0$.
-> - $b_1$: slope, change in $Y$ for a one-unit change in $X$.
-> - $e_i$: residual, observed minus predicted.
-> - $SST$: total variation in $Y$.
-> - $SSR$: explained variation.
-> - $SSE$: unexplained variation.
-> - $s_e$: standard error of estimate, average distance from the line.
-> - **ROA is regressed on CAPEX and $\hat{b}_1 = 1.25$. What does that mean?** Say it aloud: if CAPEX rises by one unit, predicted ROA rises by 1.25 units.
-> - **You are given $SSR = 60$ and $SST = 150$. Find $R^2$.** Use the lazy shortcut: explained over total, so $60/150 = 0.40$.
-> - **You are given $SSE = 48$ and $n = 10$. Find $MSE$.** Subtract two degrees of freedom first, then divide: $48/8 = 6$.
-> - **You are given $\hat{Y}_f = 12$, $t = 2$, and $s_f = 1.5$. Find the prediction interval.** Just do center plus-minus spread: $12 \pm 3$, so 9 to 15.
-> - **Residual plot bends like a curve. What should you suspect?** Suspect the linearity assumption broke first, so the straight line is forcing the wrong shape.
-> - **Residuals split into quiet years and wild years. What should you suspect?** Think regime change and heteroskedasticity; the variance is not staying constant.
+> and the exam shortcut is:
+> $$
+> R^2 = \frac{SSR}{SST} = r^2
+> $$
+> If $SSR = 60$ and $SST = 150$, then:
+> $$
+> R^2 = \frac{60}{150} = 0.40
+> $$
+> So the model explains **40%** of the variation in $Y$.
+> - If they give you $SSE$ and sample size, do not panic. First get:
+> $$
+> MSE = \frac{SSE}{n-2}
+> $$
+> If $SSE = 48$ and $n = 10$, then:
+> $$
+> MSE = \frac{48}{8} = 6
+> $$
+> Then:
+> $$
+> s_e = \sqrt{MSE} = \sqrt{6}
+> $$
+> - For testing slope, the core move is:
+> $$
+> t_{\text{slope}} = \frac{\hat{b}_1 - B_1}{s_{\hat{b}_1}}
+> $$
+> In simple regression, remember the shortcut relationship: slope test and overall model test are tied together by **$t^2 = F$** when testing whether slope is zero.
+> - If they ask for a prediction interval, do center plus-minus spread:
+> $$
+> \text{Prediction interval} = \hat{Y}_f \pm t_{\alpha/2}s_f
+> $$
+> If $\hat{Y}_f = 12$, $t = 2$, and $s_f = 1.5$, then:
+> $$
+> 12 \pm (2)(1.5) = 12 \pm 3
+> $$
+> so the interval is **9 to 15**.
+> - Residual plot bends like a curve? Think **linearity is broken**.
+> - Residuals get wider as $X$ rises? Think **heteroskedasticity**.
+> - Residuals move in patterns across time? Think **independence is broken**.
+> - Residuals look badly non-bell-shaped? Think **normality is weak**, which matters for inference.
+> - Do not oversell $R^2$. A high $R^2$ does not prove the relationship is economically meaningful, causal, or correctly specified.
+> - ==Slope tells direction and size. $R^2$ tells fit. Residual plots tell you what went wrong.==
 
 > [!abstract] MEMORISE
 > - Simple linear regression uses one independent variable.
@@ -267,7 +252,47 @@ $$
 $$
 t = \frac{r\sqrt{n-2}}{\sqrt{1-r^2}}
 $$
-
+> [!tip] Why the Correlation Test Uses t-distribution
+> 
+> $$  
+> t = \frac{r\sqrt{n-2}}{\sqrt{1-r^2}}  
+> $$
+> 
+> This is basically:
+> 
+> $$  
+> t = \frac{\text{relationship signal}}{\text{estimated noise}}  
+> $$
+> 
+> Why t-distribution?
+> 
+> Because the noise is **not known**.  
+> We estimate it from the same sample.
+> 
+> Squared normal errors create a chi-square:
+> 
+> $$  
+> Z_1^2 + Z_2^2 + \cdots + Z_k^2 \sim \chi^2(k)  
+> $$
+> 
+> A t-stat is:
+> 
+> $$  
+> t = \frac{Z}{\sqrt{\chi^2(k)/k}}  
+> $$
+> 
+> So here:
+> 
+> - $r\sqrt{n-2}$ = relationship signal
+>     
+> - $\sqrt{1-r^2}$ = leftover noise estimate
+>     
+> - $n-2$ = degrees of freedom after estimating intercept and slope
+>     
+> 
+> Plain English:
+> 
+> **t-distribution appears because we divide a normal-looking signal by noise estimated from squared sample errors.**
 58. In simple regression, the slope-zero test and the correlation-zero test give the same t-statistic. Also, for slope-zero tests, $t^2 = F$.
 59. The intercept can also be tested. Be careful, though: intercept interpretation can be useless when $X=0$ is economically impossible.
 60. The p-value is the smallest significance level at which you reject the null. Smaller p-value means stronger evidence against the null, not bigger economic importance.
@@ -294,6 +319,37 @@ $$
 $$
 s_f = s_e \sqrt{1 + \frac{1}{n} + \frac{(X_f-\bar{X})^2}{\sum (X_i-\bar{X})^2}}
 $$
+
+> [!tip] Forecast Standard Error Intuition
+> Start with the original formula:
+>
+> $$
+> s_f=s_e\sqrt{1+\frac{1}{n}+\frac{(X_f-\bar X)^2}{\sum(X_i-\bar X)^2}}
+>$$
+>
+> Think in variance by removing the square root:
+>
+> $$
+> s_f^2=s_e^2\left[1+\frac{1}{n}+\frac{(X_f-\bar X)^2}{\sum(X_i-\bar X)^2}\right]
+>$$
+>
+> Expand it:
+>
+> $$
+> s_f^2
+> =
+> s_e^2
+> +
+> s_e^2\frac{1}{n}
+> +
+> s_e^2\frac{(X_f-\bar X)^2}{\sum(X_i-\bar X)^2}
+>$$
+>
+> **Prediction error = normal data noise + shaky estimated line + extra shakiness when predicting far from the center.**
+>
+> 1. $s_e^2$: the new actual $Y$ may naturally miss the line.
+> 2. $s_e^2/n$: the regression line is based on limited data, so the line itself is uncertain.
+> 3. Last term: prediction becomes shakier when $X_f$ is far from average $X$.
 
 69. Forecast uncertainty rises when $s_e$ is high, sample size is small, or the forecasted $X_f$ sits far from the sample mean $\bar{X}$.
 70. The prediction interval is:

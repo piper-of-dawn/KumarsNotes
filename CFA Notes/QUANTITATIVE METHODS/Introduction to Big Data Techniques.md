@@ -1,235 +1,151 @@
-# Introduction to Big Data Techniques
+r# Introduction to Big Data Techniques
 
-**Learning outcomes**
-- Describe the parts of fintech that matter for gathering and analyzing financial data.
-- Describe Big Data, artificial intelligence, and machine learning.
-- Describe applications of Big Data and data science to investment management.
+> [!ABSTRACT] LOS
+> 1. Describe the parts of fintech that matter for gathering and analyzing financial data.
+> 2. Describe Big Data, artificial intelligence, and machine learning.
+> 3. Describe applications of Big Data and data science to investment management.
 
 > [!tip] SEE THIS BEFORE EXAM
-> **Big Data = 3 Vs + 1 warning V**
-> - **Volume**: a huge amount of data.
-> - **Velocity**: data arrive fast, often in real time or near real time.
-> - **Variety**: data come in many formats and from many sources.
-> - **Veracity**: when using Big Data for inference or prediction, always ask whether the data are credible and reliable.
-> **Data types**
-> - Structured data: fits into tables.
-> - Semistructured data: partly organized, partly messy.
-> - Unstructured data: cannot be stored cleanly in rows and columns.
-> **Main alternative data sources**
-> - Individuals
-> - Business processes
-> - Sensors
-> **Main ML classes**
-> - Supervised learning: labeled inputs and outputs.
-> - Unsupervised learning: unlabeled data, search for structure.
-> - Deep learning: neural networks with many hidden layers.
-> **Key processing steps**
-> - Capture
-> - Curation
-> - Storage
-> - Search
-> - Transfer
-> **Text tools**
-> - Text analytics: computer analysis of large text or voice datasets.
-> - NLP: programs that analyze and interpret human language.
-> **Big Data looks exciting. What is the exam trap?** Big volume is useless if veracity is weak, data are biased, or the dataset is wrong for the analysis.
-> **A model predicts beautifully on training data but fails on new data. What happened?** Think overfitting first: it learned noise as if it were truth.
-> **You are given labels and targets. Which ML bucket?** Supervised learning.
-> **You are grouping firms without labels. Which ML bucket?** Unsupervised learning.
-> **You need trading decisions from real-time prices. What system feature matters?** Low latency, because delays can break the application.
+> - Fintech here is not "all finance apps on Earth." For this reading, care about two things: **huge data** and **tools that can process those data faster and better than old workflows**.
+> - Big Data = **volume + velocity + variety**, and when the question is about prediction or inference, add **veracity**. If a dataset is massive, arrives every second, and includes text, images, and transaction feeds, that is Big Data. If the source is sketchy, the fourth V is the real trap.
+> - Structured data fit rows and columns. Semistructured data have some organization but not fully clean tables. Unstructured data are messy things like voice, video, email, and social posts. If the question says "earnings call audio" or "tweets," think **unstructured**.
+> - Alternative data are non-traditional data used for investment insight. If the data come from **people**, think clicks, reviews, browsing, posts. If they come from **business processes**, think card swipes, scanner sales, shipping records. If they come from **sensors**, think satellites, GPS, traffic, geolocation.
+> - If a model gets training data almost perfectly right and then looks stupid on new data, that is **overfitting**.
+> - If the algorithm gets inputs plus known answers during training, it is **supervised learning**. If it gets data with no labels and is told to discover groupings or structure, it is **unsupervised learning**.
+> - Deep learning is just machine learning using neural networks with many hidden layers. Do not over-romanticize it. On the exam, it is still a pattern-learning tool.
+> - Text analytics is the big bucket. Natural language processing sits inside it. If the task is reading filings, transcripts, central-bank speeches, or employee emails, think **text analytics / natural language processing**, not generic machine learning in the abstract.
+> - Low latency means low delay. If the question involves real-time trading, market-making, or reacting instantly to market data, low latency is the system feature that matters.
+> - ==Huge data are useless if they are biased, dirty, illegally obtained, or irrelevant. Big Data does not cancel bad judgment.==
 
-> [!abstract] MEMORISE
-> - Fintech is finance plus technology-driven innovation.
-> - Big Data is not just big files; it is volume, velocity, variety, and often a veracity problem.
-> - AI performs tasks that traditionally required human intelligence.
-> - ML tries to find the pattern and apply the pattern.
-> - NLP is the text-and-language weapon inside the larger text analytics world.
+1. This module is basically about finance getting flooded with data and needing new tools to survive that flood.
+2. It starts with fintech. What is fintech: technology-driven innovation in financial services and financial products. In normal conversation, fintech can also mean the firms building those tools, but for the exam the useful angle is what the technology is doing.
+3. At first, technology in finance mostly automated routine tasks. Then systems started following explicit rule books. Now some systems learn patterns from data and support or automate more complex decisions.
+4. That matters in investment management because analysts now face far more information than older human-only workflows were designed to handle. The curriculum cares especially about two things: access to large datasets and analytical tools that can handle those datasets.
+5. Traditional data include prices, volumes, financial statements, economic releases, annual reports, regulatory filings, and earnings calls.
+6. Alternative data mean non-traditional data that can still help an investment decision. Examples include web traffic, social media, geolocation, emails, satellite imagery, scanner data, and company exhaust.
 
-## Core Idea
+7. What is company exhaust: data created as a by-product of normal business activity. Why this matters: sometimes the useful signal appears in the exhaust before it appears in the official report.
 
-1. This module is about what happens when finance collides with massive data, fast computing, and machines that can learn patterns humans would miss.
-2. The source frames this through fintech. What is fintech: technology-driven innovation in the design and delivery of financial services and products.
-3. In common usage, fintech can also refer to the companies building these tools and the business sector around them.
-4. Early fintech automated routine tasks. Later systems executed decisions through explicit rules. Now some systems learn and make decisions using far more complex logic.
-5. These tools matter not only for quant managers but also for fundamental managers using hybrid decision-making processes.
+> [!example] THE MACHINE READS BEFORE THE ANALYST DOES
+> Earnings season is a perfect stress test. Humans can read some filings and hear some calls. A machine can scan every filing, every transcript, every wording shift, and flag where management tone changed before a tired analyst has even finished the second coffee.
 
-## Fintech in Investment Analysis
+8. Big Data means more than size. What is Big Data: extremely large, fast-moving, and varied datasets that usually need special methods to capture, store, search, and analyze.
+9. The classic three Vs are volume, velocity, and variety. Volume means a huge amount of data. Velocity means the data arrive or move very quickly, sometimes in real time or near real time. Variety means the data come in many forms rather than one clean spreadsheet structure.
+10. For prediction and inference,add a fourth V: veracity. What is veracity: whether the data are credible, reliable, and truthfully reflecting the thing you think they reflect.
+11. This is the exam maturity point. Big Data can magnify bad data just as efficiently as good data.
+12. Data can be structured, semistructured, or unstructured. Structured data fit neatly into tables where each field has a consistent meaning. Semistructured data have some organization but do not sit cleanly in a standard table. Unstructured data are messy things like emails, voice, images, video, and free text.
+13. Why this classification matters: structured data are easier to store and analyze with old-school database tools, while unstructured data usually need extra processing before they become useful.
 
-6. The source highlights two areas that matter most for quantitative investment analysis: analysis of large datasets and analytical tools.
-7. The first area is straightforward. There is far more traditional data and far more alternative data than older workflows were built to handle.
-8. Traditional data include prices, volumes, corporate financial statements, economic indicators, annual reports, regulatory filings, earnings figures, and conference calls.
-9. Alternative data come from non-traditional sources like social media, sensor networks, web traffic, emails, texts, satellites, and company exhaust.
-10. What is company exhaust: information generated in the normal course of doing business.
-11. The second area is the toolset itself. AI-based techniques may spot complex, non-linear relationships that older statistical methods can miss or process too slowly.
-12. Analysts can use these tools to sort through gigantic filing sets, annual reports, and earnings calls to identify what matters most.
+> [!TIP] HAMMER THIS INTO YOUR HEAD
+> - If a question mentions rows and columns, think structured.
+> - If it mentions tags or markup-like organization but not clean tables, think semistructured.
+> - If it mentions human language, audio, pictures, or video, think unstructured.
+> 
 
-> [!example] WHEN THE MACHINE READS BEFORE THE ANALYST FINISHES COFFEE
-> Imagine earnings season opening like floodgates. Filings pile up, conference-call transcripts start landing, and commentary keeps pouring in. A human team can sample. A machine can sweep the whole field, rank the language shifts, and flag where sentiment cracked before the headline numbers did.
+8. The curriculum groups Big Data origins into financial markets, businesses, governments, individuals, and sensors.
+	- Financial-market data include equity, fixed income, futures, options, and derivative activity.
+	- Business data include transactions, supply-chain records, point-of-sale data, and internal operating information.
+	- Government data include employment, trade, payroll, and macroeconomic releases.
+9. Individual-generated data include search histories, reviews, clicks, and social posts.
+10. Sensor-generated data include satellites, shipping trackers, traffic flows, and geolocation. The Internet of Things belongs inside this sensor world. What is the Internet of Things: connected physical devices with sensors and software that collect and transmit data.
 
-## Big Data
+> [!example] 
+>  Suppose you are using the satellite imagery of McDonald's parking lots to forecast revenue for McDonald's. That is how alternative data is used.
 
-13. Big Data refers to the vast amount of information generated by industry, governments, individuals, and electronic devices.
-14. What is Big Data: extremely large and diverse datasets that often arrive quickly and require new ways to store, process, and analyze them.
-15. The source says Big Data is characterized by three Vs: volume, velocity, and variety.
-16. Volume means the dataset is huge, often millions or billions of data points.
-17. Velocity means the data are recorded and transmitted much faster than before, often in real time or near real time.
-18. Variety means the data come from many sources and in many formats rather than one clean tabular structure.
-19. When Big Data is used for inference or prediction, the source adds a fourth V: veracity.
-20. What is veracity: the credibility and reliability of the data source and the truthfulness of the data content.
-21. This is the grown-up warning in the whole section. Big Data does not solve the old quality problem; it amplifies it.
+11. Alternative data are a narrower investment-use idea inside the wider Big Data story. What are alternative data: non-traditional data used to support investment analysis or investment decisions.
+12. The curriculum sorts them into data generated by **individuals, business processes, and sensors**. Data from individuals are often unstructured.
+13. Data from business processes are often structured and can act like leading or real-time indicators. What is a leading indicator here: information that hints at performance before the normal accounting reports arrive. Sensor data can be enormous in scale and update frequency.
+14. Investors use alternative data to improve research, improve trade execution, identify factors affecting prices, and spot trends earlier.
 
-## Structured, Semistructured, and Unstructured Data
+> [!question] IDENTIFY THE DATA TYPE
+> Problem: Classify each item as structured, semistructured, or unstructured.
+>
+> 9. A database of daily bond yields in rows and columns.
+> 10. Earnings call audio files.
+> 11. Web pages with tags and some internal structure but inconsistent formatting.
+>
+> ---
+>
+> Solution:
+>
+> 12. Daily bond-yield database = **structured**.
+> 13. Earnings call audio = **unstructured**.
+> 14. Tagged but inconsistently formatted web pages = **semistructured**.
+>
+> Explanation: the whole distinction is about how naturally the data fit a stable table structure.
 
-22. Big Data can be structured, semistructured, or unstructured.
-23. Structured data fit naturally into tables and databases, where each field represents the same type of information.
-24. Semistructured data have some organizational features but do not fit neatly into traditional rows-and-columns storage.
-25. Unstructured data are disparate and unorganized and cannot be represented cleanly in tabular form.
-26. Social media posts, emails, texts, voice recordings, pictures, blogs, scanners, and sensors often create unstructured data.
-27. Why does this matter: unstructured data usually need specialized applications or customized code before analysts can use them meaningfully.
+15. The sexy part of alternative data gets attention, but the legal and ethical warnings matter just as much. Web scraping can collect personal information, regulated information, or data used without clear consent.
+16. Rules and best practices can differ across jurisdictions. **The exam takeaway is simple: "machine collected it" does not mean "safe to use."**
+17. Before analysis even starts, Big Data creates practical problems.
+18. The curriculum asks whether the dataset has selection bias, missing data, outliers, enough observations, and actual fitness for purpose. What is selection bias: distortion caused by how the observations were selected rather than by the real phenomenon. What are outliers: observations far away from the rest that can distort results.
+19. Why this matters: a huge bad dataset is still a bad dataset.
+20. Analysts usually have to source, clean, organize, and validate data before any clever model earns the right to exist.
 
-## Sources of Big Data
+21. Artificial intelligence sits above machine learning in the family tree. What is artificial intelligence: computer systems performing tasks that traditionally required human intelligence.
+22. Why artificial intelligence is used: to recognize patterns, support decisions, and automate complex tasks at scale. Early artificial intelligence in finance often looked like expert systems using rule-based logic.
+23. Later systems used stronger computing power and better networks to attack fraud detection, logistics, data mining, and financial analysis.
+24. Machine learning is a more specific idea. What is machine learning: computer-based methods that learn patterns from data and then use those learned patterns on new cases.
+25. The exam summary is wonderfully blunt: find the pattern, apply the pattern. Machine learning usually uses training data, validation data, and test data.
+26. Training data teach the model. Validation data help tune it and check whether it is behaving sensibly.
+27. Test data check whether the model actually generalizes to unseen cases.
+28. Human judgment still matters because people choose the data, clean the data, define the question, and decide whether the output is nonsense.
 
-28. The source names five broad origins of Big Data: financial markets, businesses, governments, individuals, and sensors.
-29. Financial-market data include equity, fixed income, futures, options, and other derivatives data.
-30. Business data include corporate financials, commercial transactions, credit card purchases, supply-chain data, and point-of-sale scanner data.
-31. Government data include trade, economic, employment, and payroll data.
-32. Individual-generated data include product reviews, search logs, personal data trails, and social media posts.
-33. Sensor-generated data include satellite imagery, geolocation, shipping information, traffic patterns, and other machine-generated streams.
-34. The Internet of Things sits inside this sensor story. What is the Internet of Things: a network of physical devices embedded with electronics, sensors, software, and connections so they can interact and share information.
-
-## Alternative Data
-
-35. Alternative data are non-traditional data used to support investment decisions and models.
-36. The source classifies the three main alternative-data sources as data generated by individuals, business processes, and sensors.
-37. Data generated by individuals are often unstructured and can appear as text, video, photos, audio, website clicks, and browsing behavior.
-38. Data generated by business processes are often structured and can act as leading or real-time indicators of performance.
-39. What is a leading indicator here: information that may signal performance before traditional quarterly or annual reports arrive.
-40. Sensor data often have the greatest scale, sometimes orders of magnitude larger than the other streams.
-41. Investors use alternative data to search for factors affecting prices, improve asset selection, improve trade execution, and uncover trends.
-
-> [!example] SEEING A BUSINESS BEFORE THE QUARTER CLOSES
-> A retail chain may not have reported quarterly sales yet, but scanner data, card transactions, parking-lot imagery, and web traffic already whisper the story. The point is not magic. The point is timing. Alternative data can act before the official report catches up.
-
-## Legal and Ethical Caution
-
-42. The source explicitly warns that alternative data can create legal and ethical issues.
-43. Web scraping may capture personal information protected by regulation or shared without explicit knowledge and consent.
-44. Best practices are still evolving, and guidance can differ across jurisdictions.
-45. Exam-wise, remember this as a compliance smell test: non-public-looking data are not automatically safe just because a machine collected them.
-
-## Big Data Challenges
-
-46. Big Data creates practical problems before analysis even begins.
-47. The source asks whether the dataset has selection bias, missing data, outliers, enough volume, and fitness for the intended analysis.
-48. What is selection bias: a dataset distortion caused by how observations were chosen rather than by the true underlying phenomenon.
-49. What are outliers: observations far away from the rest that can distort models or summaries.
-50. Most datasets must be sourced, cleansed, and organized before analysis.
-51. Alternative data make this harder because they are often unstructured and more qualitative than quantitative.
-
-## Artificial Intelligence
-
-52. Artificial intelligence refers to computer systems capable of performing tasks that traditionally required human intelligence.
-53. What is AI used for here: to perform or assist with complex analysis, pattern recognition, and decision-support tasks at human-comparable or superior levels.
-54. An early AI example is the expert system, which tried to simulate human expertise using rule-based logic like if-then rules.
-55. Since the 1980s, finance has used AI tools such as neural networks in fraud detection for abnormal charges and claims.
-56. The broader story is that stronger processors and better networks allowed AI to move from toy problems into logistics, data mining, finance, and diagnosis.
-
-## Machine Learning
-
-57. Machine learning is a subset of this evolution. What is machine learning: computer-based techniques that extract knowledge from large datasets by learning patterns from examples.
-58. The source gives a very exam-friendly summary: find the pattern, apply the pattern.
-59. ML does not require assumptions about the data's underlying probability distribution in the way many traditional methods do.
-60. In ML, the algorithm is given inputs and may also be given outputs, depending on the learning setup.
-61. Training occurs as the algorithm identifies relationships in the data and refines its learning process.
-62. The source says ML usually splits data into training, validation, and test datasets.
-63. Training data help the model learn historical relationships between inputs and outputs.
-64. Validation data help tune the model and check whether the learned relationships hold up.
-65. Test data evaluate whether the model predicts well on new data.
-66. Human judgment still matters. Why is human judgment used: people must understand the data, clean the data, and choose appropriate analytical techniques.
-
-## Overfitting and Underfitting
-
-67. Overfitting is one of the biggest exam traps in this reading.
-68. What is overfitting: the model learns the training data too precisely and treats noise as if it were true signal.
-69. An overfitted model can look brilliant on the training set and fail embarrassingly on a different dataset.
-70. Underfitting is the opposite mistake. What is underfitting: the model is too simple and treats true structure as if it were noise.
-71. Underfitted models fail to discover important patterns that actually exist in the data.
-72. Some ML methods also look like black boxes. What is black box here: a model whose path from input to output is hard to explain clearly.
+29. Overfitting and underfitting are the classic model failures.
+30. What is overfitting: the model learns the training data too closely and mistakes noise for signal.
+31. What is underfitting: the model is too simple and misses real structure that is actually there.
+32. Overfitting looks smart in the practice room and dumb in the real match.
+33. Underfitting looks dumb in both places.
+34. Some machine-learning models are also called black boxes.
+35. What is a black box: a model where the path from input to output is hard to explain clearly.
 
 > [!warning] MODEL TRAP
-> If a model looks perfect on the data it studied, do not clap yet. The source's warning is brutal: perfect fit can mean overtraining, false relationships, and prediction failure on new data.
+> Perfect performance on training data is not a victory parade.
+>
+> First ask whether the model learned the real pattern or just memorized noise.
 
-## Types of Machine Learning
+36. Supervised learning means the model is trained with inputs and known outputs.
+37. That makes it useful for prediction tasks like forecasting returns or classifying whether a borrower is likely to default.
+38. Unsupervised learning means the model is not given labels and has to find structure by itself.
+39. That makes it useful for clustering, grouping, and pattern discovery.
+40. If a question says the algorithm is grouping firms into peer sets without preassigned labels, think unsupervised.
+41. If it says the algorithm is trained on past inputs with known outcomes, think supervised.
+42. Deep learning uses neural networks with many hidden layers and can be used in supervised or unsupervised settings.
+43. Why hidden layers matter: they allow the model to build more complex representations from simpler patterns in stages.
 
-73. Supervised learning uses labeled training data, meaning the algorithm is given both inputs and known outputs.
-74. Supervised learning is useful when you want prediction, such as forecasting returns or predicting whether a market will be up, down, or flat.
-75. Unsupervised learning uses data without labels and tries to uncover structure, groupings, or relationships.
-76. Grouping companies into peer clusters based on characteristics instead of sector labels is a clean unsupervised example from the source.
-77. Deep learning uses neural networks, often with many hidden layers, to perform multistage, non-linear processing.
-78. Deep learning can operate in supervised or unsupervised settings.
-79. Why are hidden layers used: they let the model build from simple patterns toward more complex representations in stages.
+> [!question] IDENTIFY THE MACHINE-LEARNING TYPE
+> Problem: Identify the learning type in each case.
+>
+> 15. A model is trained on past borrower characteristics and known default outcomes.
+> 16. A model groups listed companies into clusters without being told the sectors.
+> 17. A neural-network system processes huge image and text datasets through many hidden layers.
+>
+> ---
+>
+> Solution:
+>
+> 18. Borrower characteristics plus known default outcomes = **supervised learning**.
+> 19. Grouping unlabeled companies into clusters = **unsupervised learning**.
+> 20. Neural network with many hidden layers = **deep learning**.
+>
+> Explanation: labels point to supervised learning, no labels point to unsupervised learning, and hidden-layer neural networks point to deep learning.
 
-> [!example] WHEN THE NETWORK STARTS SEEING WHAT HUMANS ONLY GLIMPSE
-> Watson winning Jeopardy, DeepMind beating Go masters, and recommendation engines quietly steering product choices all come from the same deeper shift: the machine is no longer just obeying fixed instructions. It is building layered pattern recognition from enormous data exposure.
+44. Data science is the broader craft that pulls these tools together. What is data science: the interdisciplinary use of computing, statistics, and related methods to extract useful information from data.
+45. Data scientists try to convert raw data into actionable insight. In finance, that can mean prediction, monitoring, visualization, or decision support.
+46. The source highlights five key data-processing methods: **capture, curation, storage, search, and transfer.**
+47. Capture means collecting the data and converting them into usable form. Curation means cleaning the data and checking quality. Storage means how the data are recorded, archived, and organized.
+48. Search means how the system retrieves specific information from huge datasets.
+49. Transfer means moving the data from source or storage into the analytical tool.
+50. Low latency matters most when the use case depends on fast reaction, like algorithmic trading. What is low latency: minimal delay in communication and processing.
+51. Visualization is not decoration. It is a way of thinking. Traditional structured data often work fine with tables, line charts, and bar charts. Unstructured or highly multidimensional data may need heat maps, network graphs, tree diagrams, tag clouds, or mind maps.
+52. What is a tag cloud: a word display where more frequent terms appear larger. What is a mind map: a visual layout showing how concepts connect rather than just how often they appear.
 
-## Data Science
+53. Text analytics and natural language processing matter a lot in investment work because finance produces endless language. Text analytics means using computer programs to analyze large text or voice datasets.
+54. Natural language processing sits inside that world. What is natural language processing: the use of computing, artificial intelligence, and linguistics to analyze and interpret human language.
+55. In practice, this means machines reading filings, transcripts, news, surveys, social posts, and policy speeches. It can support sentiment analysis, topic analysis, translation, speech recognition, compliance monitoring, and fraud detection.
+56. In investment management, natural language processing can flag tone shifts in earnings calls, analyst reports, or central-bank communication before a human team fully processes them.
 
-80. Data science is the interdisciplinary field that combines computer science, statistics, and related disciplines to extract information from data.
-81. Data scientists are the people trying to convert raw data into usable insight for business and investment decisions.
-82. The structure of the data matters because unstructured alternative data often need special treatment before analysis begins.
+> [!example] WHEN THE CENTRAL BANK CHANGES ITS TONE BEFORE IT CHANGES THE RATE
+> Markets do not always move because the policy rate changed. Sometimes they move because the language around inflation, growth, or "data dependence" shifted first. Natural language processing helps machines catch the whisper before the headline shout.
 
-## Data Processing Methods
-
-83. The source highlights five key processing methods: capture, curation, storage, search, and transfer.
-84. Capture refers to how data are collected and transformed into a format the analytical process can use.
-85. Low-latency systems matter when automated trading depends on real-time prices and market events.
-86. What is low latency: minimal delay in communication and processing.
-87. Curation refers to cleaning the data and ensuring quality and accuracy.
-88. Storage refers to how data are recorded, archived, accessed, and designed at the database level.
-89. Search refers to how the system queries and retrieves the requested content from very large datasets.
-90. Transfer refers to how data move from the source or storage location into the analytical tool.
-
-## Data Visualization
-
-91. Visualization is not cosmetic. It is a thinking tool for understanding large and complex datasets.
-92. Traditional structured data can be shown with tables, charts, and trends.
-93. Unstructured or multidimensional data often need richer visual forms like interactive 3D graphics, heat maps, tree diagrams, network graphs, tag clouds, and mind maps.
-94. What is a tag cloud: a visual display where words appear larger when they occur more frequently in the source text.
-95. What is a mind map: a visualization showing how concepts relate to one another rather than just how often words appear.
-
-## Text Analytics and NLP
-
-96. Text analytics uses computer programs to analyze and derive meaning from large text- or voice-based datasets.
-97. This includes filings, reports, earnings calls, social media, emails, postings, and surveys.
-98. More advanced text analytics can include lexical analysis, meaning frequency analysis of words and recognition of patterns in words and phrases.
-99. Natural language processing is an important application inside this area.
-100. What is NLP: a field combining computer science, AI, and linguistics to analyze and interpret human language.
-101. NLP can handle translation, speech recognition, text mining, sentiment analysis, and topic analysis.
-102. NLP can also support compliance monitoring, fraud detection, and confidentiality controls in employee communications.
-103. In investing, NLP can analyze analyst commentary, annual reports, call transcripts, news articles, and policy-maker communications at a scale no human team can match.
-104. It can tag sentiment changes before an analyst formally changes a buy, hold, or sell recommendation.
-105. It can also detect subtle topic shifts in central-bank or policy communications around inflation, output, or rate policy.
-
-> [!example] WHEN A CENTRAL BANK WHISPERS INSTEAD OF SHOUTS
-> Policymakers do not always move markets by changing the rate. Sometimes they move markets by changing the language around the rate. NLP matters because it can catch when a topic grows louder, softer, or more anxious before the headline action arrives.
-
-## Programming Languages and Databases
-
-106. The source names several common programming languages used in data science.
-107. Python is open-source and approachable and underlies many fintech applications.
-108. R is open-source and historically strong in statistics, ML, optimization, econometrics, and financial analysis.
-109. Java runs across different machines and operating systems and supports many internet applications.
-110. C and C++ are specialized for speed and processing performance and are used in algorithmic and high-frequency trading.
-111. Excel VBA helps automate workflows, update data, run macros, gather web data, and build customized reports.
-112. On the database side, SQL works for structured data stored in rows and columns on servers.
-113. SQLite is a structured-data database embedded into programs and is common in mobile applications.
-114. NoSQL is used for unstructured data that cannot be summarized in traditional tables.
-
-## Final Exam Traps
-
-115. Big Data is not defined by size alone. The full exam frame is volume, velocity, variety, and often veracity.
-116. Alternative data are not the same as traditional corporate or market data.
-117. ML still needs human judgment, clean data, and enough data.
-118. Overfitting means learning noise as signal; underfitting means missing real structure.
-119. Supervised learning uses labels; unsupervised learning does not.
-120. NLP sits inside text analytics and is directly useful for sentiment, topic, and language interpretation in finance.
+57. The curriculum also names common programming languages and database types used around data science. Python is widely used and approachable. R is especially strong in statistics and econometrics. Java is useful across operating systems and many internet applications. C and C++ matter when speed is critical, especially in algorithmic and high-frequency trading settings.
+58. Excel VBA still shows up in automation-heavy workflows. On the database side, SQL fits structured rows-and-columns data. SQLite is a lightweight structured database often embedded in software. NoSQL is useful when data do not fit traditional structured tables.
