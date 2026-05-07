@@ -118,52 +118,64 @@
 
 60. The three primary financial risks are market risk, credit risk, and liquidity risk.
 61. Market risk is the risk arising from movements in interest rates, stock prices, exchange rates, and commodity prices.
-62. Credit risk is the risk that a counterparty fails to pay what is owed on a bond, loan, swap, forward, or other obligation.
-63. Liquidity risk here means the risk of having to sell an asset at a big valuation concession because market conditions are stressed or buyers are scarce.
-64. The key thing with liquidity risk is uncertainty. A normal bid-ask spread is a cost. A sudden collapse in the price you can actually sell at is a risk.
-65. Non-financial risks include settlement risk, legal risk, regulatory risk, accounting risk, tax risk, model risk, tail risk, operational risk, and solvency risk.
-66. Settlement risk is the risk that one side pays or delivers but the other side fails to complete the transaction on time. The Herstatt story sits behind this idea.
-67. Legal risk includes being sued and also the risk that a contract is not upheld the way you expected.
-68. Model risk is the risk of a valuation or decision error from using the wrong model or using the right model wrongly.
-69. Tail risk means extreme outcomes occur more often than simple models, especially normal-distribution models, would suggest. The source absolutely hammers this.
-70. Operational risk comes from failed people, systems, internal processes, and damaging external events affecting operations.
+62. Interest-rate risk deserves special attention even inside market risk because it can hurt you through bond-price changes, prepayments, or simply a higher opportunity cost of capital.
+63. Credit risk is the risk that a counterparty fails to pay what is owed on a bond, loan, swap, forward, or other obligation.
+64. Liquidity risk here means the risk of having to sell an asset at a big valuation concession because market conditions are stressed or buyers are scarce.
+65. The key thing with liquidity risk is uncertainty. A normal bid-ask spread is a cost. A sudden collapse in the price you can actually sell at is a risk.
+66. Non-financial risks include settlement risk, legal risk, regulatory risk, accounting risk, tax risk, model risk, tail risk, operational risk, and solvency risk.
+67. Settlement risk is the risk that one side pays or delivers but the other side fails to complete the transaction on time. The Herstatt story sits behind this idea.
+68. Legal risk includes being sued and also the risk that a contract is not upheld the way you expected.
+69. Regulatory risk means rule changes damage the business model or force costly adjustments. Tax or political risk means government action outside normal business forecasting suddenly hits after-tax value or cash flow.
+70. Accounting risk means the reported numbers later turn out to be wrong, misleading, or aggressively presented. That can rewrite the whole story investors thought they were buying.
+71. Model risk is the risk of a valuation or decision error from using the wrong model or using the right model wrongly.
+72. Tail risk means extreme outcomes occur more often than simple models, especially normal-distribution models, would suggest. The source absolutely hammers this.
+73. Operational risk comes from failed people, systems, internal processes, and damaging external events affecting operations.
 
 > [!example] BARINGS, HOME DEPOT, AND WHY "INTERNAL" RISK CAN BE SAVAGE
 > Nick Leeson did not destroy Barings Bank with a random weather report. He destroyed it through uncontrolled trading and failed controls. Home Depot's data breach was not "just bad luck" either. Cyber threats are external, but vulnerability is still an internal operational problem.
 >
 > That is why operational risk deserves respect. It can kill very old institutions in embarrassingly human ways.
 
-71. Cyber risk is now a major operational risk. Data breaches can trigger reputational damage, legal consequences, regulatory penalties, and pure business disruption all at once.
-72. Solvency risk is the risk the organization fails because it runs out of cash, even if it may look solvent on paper. This was one of the major lessons of 2008.
-73. The source is blunt here: Lehman Brothers was not only a leverage story. It was also a solvency story because funding disappeared.
-74. Individuals also face non-financial risks around health, mortality, longevity, identity theft, and property and casualty losses.
-75. Mortality risk is the risk of dying too young. Longevity risk is the risk of living so long that your money runs out before you do.
+74. Cyber risk is now a major operational risk. Data breaches can trigger reputational damage, legal consequences, regulatory penalties, and pure business disruption all at once.
+75. Solvency risk is the risk the organization fails because it runs out of cash, even if it may look solvent on paper. This was one of the major lessons of 2008.
+76. The source is blunt here: Lehman Brothers was not only a leverage story. It was also a solvency story because funding disappeared.
+77. Individuals also face non-financial risks around health, mortality, longevity, identity theft, and property and casualty losses.
+78. Mortality risk is the risk of dying too young. Longevity risk is the risk of living so long that your money runs out before you do.
 
 ##### RISK INTERACTIONS
 
-76. Risks do not live alone. Market risk can create credit risk, which can create settlement and operational strain. This is one of the nastiest ideas in the reading.
-77. Counterparty risk gives a clean example. A market move can make your derivative counterparty owe you more exactly when that counterparty is becoming less able to pay.
-78. Wrong-way interactions are ugly because the same shock hits you twice. The exposure grows while the counterparty quality gets worse.
-79. Leverage mixed with liquidity and solvency risk is especially toxic. The reading points to Long-Term Capital Management in 1998 and many firms in 2008 for this reason.
-80. For individuals, Enron is the unforgettable example. Employees kept salary risk, human-capital risk, and retirement-savings risk all tied to one company and got hit from multiple directions at once.
+79. Risks do not live alone. Market risk can create credit risk, which can create settlement and operational strain. This is one of the nastiest ideas in the reading.
+80. Counterparty risk gives a clean example. A market move can make your derivative counterparty owe you more exactly when that counterparty is becoming less able to pay.
+81. Wrong-way interactions are ugly because the same shock hits you twice. The exposure grows while the counterparty quality gets worse.
+82. Leverage mixed with liquidity and solvency risk is especially toxic. The reading points to Long-Term Capital Management in 1998 and many firms in 2008 for this reason.
+83. For individuals, Enron is the unforgettable example. Employees kept salary risk, human-capital risk, and retirement-savings risk all tied to one company and got hit from multiple directions at once.
 
 ##### RISK DRIVERS AND METRICS
 
-81. Risk drivers are the fundamental global, domestic, industry, and company-level factors that create risk. They are deeper than the headline market prices you see on a screen.
-82. Governments, central banks, industries, and company-specific events all feed the risk environment. Risk management cannot control those drivers, but it can position exposures relative to them.
-83. Probability is the most basic metric, but probability alone is not enough. Knowing that something has a 25% chance of happening does not tell you how much money is at stake.
-84. Standard deviation measures dispersion in outcomes. In normal distributions, about 68% of outcomes lie within one standard deviation and about 95% within two.
-85. Standard deviation has limitations, especially with fat tails and non-normal distributions. That is why using it blindly can create a false sense of precision.
-86. Beta measures how sensitive a security's return is to the market portfolio. What is beta: a relative-risk measure for diversified equity portfolios.
-87. Derivatives use special risk metrics called the Greeks. Delta measures first-order sensitivity to the underlying. Gamma measures how delta itself changes. Vega measures sensitivity to volatility. Rho measures sensitivity to interest rates.
-88. Fixed-income instruments use duration to measure interest-rate sensitivity. Different asset classes often need their own native risk language.
-89. Value at risk (VaR) is a tail-loss measure with three ingredients: a currency amount, a time horizon, and a probability.
-90. A one-day VaR of GBP 3 million at 5% means the organization expects to lose **at least** GBP 3 million one day out of 20, on average. That "at least" matters a lot.
-91. VaR is a minimum tail loss, not a maximum loss. Many people miss that and then trust VaR too much.
-92. Conditional value at risk (CVaR) looks at the average of losses beyond the VaR point. Expected loss given default plays a similar tail role in credit risk.
-93. Scenario analysis and stress testing ask what happens under ugly but plausible or deliberately severe conditions. These are the grown-up version of asking, "If this gets bad, how bad is bad?"
-94. Credit risk uses ratings, but serious analysis also looks at liquidity, cash flow coverage, profitability, leverage, default probability, and macro and industry pressures.
-95. Operational and regulatory risks are harder to measure than market risk because the events are rare, messy, and often not captured by clean time-series data.
+84. Risk drivers are the fundamental global, domestic, industry, and company-level factors that create risk. They are deeper than the headline market prices you see on a screen.
+85. Governments, central banks, industries, and company-specific events all feed the risk environment. Risk management cannot control those drivers, but it can position exposures relative to them.
+86. Probability is the most basic metric, but probability alone is not enough. Knowing that something has a 25% chance of happening does not tell you how much money is at stake.
+87. Standard deviation measures dispersion in outcomes. In normal distributions, about 68% of outcomes lie within one standard deviation and about 95% within two.
+88. Standard deviation has limitations, especially with fat tails and non-normal distributions. That is why using it blindly can create a false sense of precision.
+89. Beta measures how sensitive a security's return is to the market portfolio. What is beta: a relative-risk measure for diversified equity portfolios.
+90. A very risky asset does **not** automatically have a high beta. An initial public offering can be wildly volatile on its own, but if that volatility is not tightly linked to market moves, beta may still stay modest.
+91. The market-model way to think about beta is:
+
+$$
+R_i = \alpha_i + \beta_i R_m + e_i
+$$
+
+92. Here, alpha is the intercept, beta is the slope against the market return, and the error term is the company-specific surprise. In plain English, beta is the part explained by the market and the error term is the stock doing its own weird thing.
+93. Exam hammer: do not confuse total risk with priced risk. Investors should diversify away nonsystematic risk and demand compensation mainly for systematic risk, which beta is trying to measure.
+94. Derivatives use special risk metrics called the Greeks. Delta measures first-order sensitivity to the underlying. Gamma measures how delta itself changes. Vega measures sensitivity to volatility. Rho measures sensitivity to interest rates.
+95. Fixed-income instruments use duration to measure interest-rate sensitivity. Different asset classes often need their own native risk language.
+96. Value at risk (VaR) is a tail-loss measure with three ingredients: a currency amount, a time horizon, and a probability.
+97. A one-day VaR of GBP 3 million at 5% means the organization expects to lose **at least** GBP 3 million one day out of 20, on average. That "at least" matters a lot.
+98. VaR is a minimum tail loss, not a maximum loss. Many people miss that and then trust VaR too much.
+99. Conditional value at risk (CVaR) looks at the average of losses beyond the VaR point. Expected loss given default plays a similar tail role in credit risk.
+100. Scenario analysis and stress testing ask what happens under ugly but plausible or deliberately severe conditions. These are the grown-up version of asking, "If this gets bad, how bad is bad?"
+101. Credit risk uses ratings, but serious analysis also looks at liquidity, cash flow coverage, profitability, leverage, default probability, and macro and industry pressures.
+102. Operational and regulatory risks are harder to measure than market risk because the events are rare, messy, and often not captured by clean time-series data.
 
 > [!question] FX HEDGE AND RISK REDUCTION
 > Problem: A UK investor holds a portfolio that is 60% in the FTSE 100 and 40% in US Treasuries. Unhedged portfolio risk is 8.4%. If the investor fully hedges the currency risk on the US Treasury position with a one-year forward, what happens to risk?
@@ -176,25 +188,26 @@
 
 ##### MODIFYING RISK
 
-96. Risk modification means aligning actual risk with acceptable risk. Sometimes that means reducing risk. Sometimes it means increasing risk back toward target, like rebalancing a portfolio that became too conservative.
-97. The four broad families are prevention and avoidance, acceptance and self-insurance, transfer, and shifting.
-98. Prevention and avoidance means taking steps so the risk never gets on the table or becomes less likely. Seatbelts, due diligence, controls, and avoiding weak contracts all fit here.
-99. But full avoidance is not always best because avoiding risk can also mean avoiding opportunity. The real trade-off is costs versus benefits, not fear versus courage.
-100. Acceptance means bearing the risk yourself. Self-insurance means keeping some losses internally because paying someone else to bear every risk would be too expensive or too restrictive.
-101. Transfer usually means insurance. Insurance works best when risks can be pooled or diversified by the insurer across many low-correlation exposures.
-102. Deductibles are clever because they split risk between the insured and the insurer. They reduce nuisance claims and keep the insured interested in not behaving recklessly.
-103. Reinsurance is insurers buying insurance from other insurers. That line is easy to forget but very testable.
-104. Risk shifting usually means derivatives. Forwards, futures, swaps, and options can reshape the payoff distribution instead of simply pooling risk like an insurer does.
-105. Forward commitments lock in future prices or rates without an up-front premium. Options give flexibility but require a premium because one side gets a right without an obligation.
-106. For risk shifting, you must understand the trade-off. A forward locks the outcome. An option costs cash but preserves flexibility.
-107. No method is automatically best. Good choice depends on cost, benefit, remaining risk profile, and consistency with risk tolerance and governance.
+103. Risk modification means aligning actual risk with acceptable risk. Sometimes that means reducing risk. Sometimes it means increasing risk back toward target, like rebalancing a portfolio that became too conservative.
+104. The four broad families are prevention and avoidance, acceptance and self-insurance, transfer, and shifting.
+105. Prevention and avoidance means taking steps so the risk never gets on the table or becomes less likely. Seatbelts, due diligence, controls, and avoiding weak contracts all fit here.
+106. But full avoidance is not always best because avoiding risk can also mean avoiding opportunity. The real trade-off is costs versus benefits, not fear versus courage.
+107. Acceptance means bearing the risk yourself. Self-insurance means keeping some losses internally because paying someone else to bear every risk would be too expensive or too restrictive.
+108. Transfer usually means insurance. Insurance works best when risks can be pooled or diversified by the insurer across many low-correlation exposures.
+109. Deductibles are clever because they split risk between the insured and the insurer. They reduce nuisance claims and keep the insured interested in not behaving recklessly.
+110. Reinsurance is insurers buying insurance from other insurers. That line is easy to forget but very testable.
+111. A surety bond means an insurer agrees to pay if a third party fails to perform under a contract. A fidelity bond pays for losses caused by employee theft or misconduct.
+112. Risk shifting usually means derivatives. Forwards, futures, swaps, and options can reshape the payoff distribution instead of simply pooling risk like an insurer does.
+113. Forward commitments lock in future prices or rates without an up-front premium. Options give flexibility but require a premium because one side gets a right without an obligation.
+114. For risk shifting, you must understand the trade-off. A forward locks the outcome. An option costs cash but preserves flexibility.
+115. No method is automatically best. Good choice depends on cost, benefit, remaining risk profile, and consistency with risk tolerance and governance.
 
 > [!example] THE OLYMPICS, LLOYD'S, AND WEIRD RISKS
 > NBC once insured itself against an Olympic boycott. That sounds bizarre until you remember what insurance really is: paying someone else to absorb a damaging outcome you cannot comfortably bear yourself.
 >
 > Lloyd's of London became famous precisely because it would gather capital willing to shoulder unusual risks that ordinary markets did not want to touch.
 
-108. The final practical rule is simple: avoid stupid risks, self-insure where sensible, transfer what can be pooled efficiently, and shift financial risks when derivatives do the job more cleanly.
+116. The final practical rule is simple: avoid stupid risks, self-insure where sensible, transfer what can be pooled efficiently, and shift financial risks when derivatives do the job more cleanly.
 
 > [!tip] QUICK CHECKS
 > - Risk management is about alignment, not elimination.
