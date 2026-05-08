@@ -1,4 +1,3 @@
-### MODULE 23.1: LIQUIDITY MEASURES AND MANAGEMENT
 ###### LOS 23.a: Explain the cash conversion cycle and compare issuers' cash conversion cycles.
 ###### LOS 23.b: Explain liquidity and compare issuers' liquidity levels.
 ###### LOS 23.c: Describe issuers' objectives and compare methods for managing working capital and liquidity.

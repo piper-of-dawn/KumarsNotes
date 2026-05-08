@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/CORPORATE ISSUERS/25-2-capital-structure-theories.md",
+                "file": "CFA Notes/EQUITY/02 Security Market Indexes.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "25-2-capital-structure-theories"
+              "title": "02 Security Market Indexes"
             }
           }
         ],
@@ -977,6 +977,36 @@
             "id": "a92c230ebc875ead",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "eba787d01579201c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "0b46f13f4ccec46a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "4272bde60b62ce6a",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -984,7 +1014,7 @@
             }
           }
         ],
-        "currentTab": 85
+        "currentTab": 88
       }
     ],
     "direction": "horizontal",
@@ -1004,9 +1034,11 @@
   },
   "active": "853149fbd9981ade",
   "lastOpenFiles": [
+    "CFA Notes/EQUITY/08 EQUITY VALUATION CONCEPT AND BASIC TOOLS.md",
+    "CFA Notes/CORPORATE ISSUERS/23 LIQUIDITY MEASURES AND MANAGEMENT.md",
+    "CFA Notes/CORPORATE ISSUERS/25-2-capital-structure-theories.md",
     "CFA Notes/CORPORATE ISSUERS/24-2-capital-allocation-principles-and-real-options.md",
     "CFA Notes/CORPORATE ISSUERS/05 Capital Investments and Capital Allocation.md",
-    "CFA Notes/CORPORATE ISSUERS/23-liquidity-measures-and-management.md",
     "CFA Notes/CORPORATE ISSUERS/26-business-models.md",
     "CFA Notes/CORPORATE ISSUERS/22-corporate-governance.md",
     "CFA Notes/CORPORATE ISSUERS/20-features-of-corporate-issuers.md",
@@ -1028,8 +1060,6 @@
     "CFA Notes/ETHICS/STANDARD 4 - DUTIES TO EMPLOYERS.md",
     "CFA Notes/EQUITY/04-overview-of-equity-securities.md",
     "CFA Notes/QUANTITATIVE METHODS/Introduction to Big Data Techniques.md",
-    "CFA Notes/PORTFOLIO MANAGEMENT/Behavioral Biases of Individuals.md",
-    "CFA Notes/QUANTITATIVE METHODS/Probability Trees and Conditional Expectations.md",
     "CFA Notes/PORTFOLIO MANAGEMENT",
     "CFA Notes/ETHICS",
     "CFA Notes/DERIVATIVES",
