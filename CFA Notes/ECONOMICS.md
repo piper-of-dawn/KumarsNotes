@@ -18,8 +18,8 @@
  
 ### MODULE 18.1: THE FOREIGN EXCHANGE MARKET
 1. When you buy a forward contract, you agree to BUY an underlying at a agreed price at a future date. If I buy a Euro / Rupee forward from you at 1 EUR = 100 INR, I am obliged to buy 1 EUR @ 100 INR, no matter whatever is the price. I have **hedged** my risk. 
-2. ==Real P/B Exchange Rate = Nominal P/B � (CPI Base / CPI Price)== You multiply nominal by how pricier base is with respect to price currency.
-3. At a base period, the CPIs of the United States and United Kingdom are both 100, and the exchange rate is $1.70/�. Three years later, the exchange rate is $1.60/�, and the CPI has risen to 110 in the United States and 112 in the United Kingdom. What is the real exchange rate at the end of the three-year period. Here Nominal P/B = $1.6/�, CPI Base = 112, CPI Price = 110. Real P/B = 1.6 � (112/110) = 1.632
+2. ==Real P/B Exchange Rate = Nominal P/B $\times$ (CPI Base / CPI Price)== You multiply nominal by how pricier base is with respect to price currency.
+3. At a base period, the CPIs of the United States and United Kingdom are both 100, and the exchange rate is $1.70/EUR. Three years later, the exchange rate is $1.60/EUR, and the CPI has risen to 110 in the United States and 112 in the United Kingdom. -What is the real exchange rate at the end of the three-year period. Here Nominal P/B = $1.6/EUR, CPI Base = 112, CPI Price = 110. Real P/B = 1.6 EUR (112/110) = 1.632
 4. Suppose in January 1 EUR =  100 INR. In December 1 EUR = 120 INR. INR depreciated by 20%. To calculate EUR appreciation: 1 INR = 0.01 EUR in Jan and 1 INR = 0.0083 EUR in Dec. So EUR appreciated by (0.01-0.0083) / 0.01 = 16.99%
 
 ### MODULE 19.1: FOREIGN EXCHANGE RATES

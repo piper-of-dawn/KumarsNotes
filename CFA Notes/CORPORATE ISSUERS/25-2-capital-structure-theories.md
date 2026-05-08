@@ -3,37 +3,91 @@
 ###### LOS 25.c: Explain the Modigliani-Miller propositions regarding capital structure.
 ###### LOS 25.d: Describe optimal and target capital structures.
 
-1. Asymmetric information exists because managers have superior knowledge about future prospects vs shareholders/creditors. 
-2. Higher when business is complex or financial reporting is opaque ⟶ investors face more uncertainty. Investors price this uncertainty as higher required returns on both debt and equity.    
-3. Investors infer management's private information from financing choices (**signaling**). Issuing debt signals confidence: fixed interest obligations imply expected stable cash flows. Issuing equity signals pessimism: markets infer management thinks stock is overvalued. **Therefore, equity financing is penalized more heavily than debt under asymmetric information.**    
-4. Agency costs of equity arise from conflicts between managers and shareholders. Managers without ownership stake don't fully bear costs of overpaying themselves or mismanaging risk (too safe or too reckless). Shareholders anticipate this conflict and impose controls (monitoring, incentives, governance). Even after controls, some conflict remains ⟶ net agency cost of equity.
-5. Agency costs of equity are related to conflicts of interest between managers and owners. Managers who do not have a stake in the company do not bear the costs associated with excessive compensation or taking on too much (or too little) risk. **Because shareholders are aware of this conflict, they take steps to reduce these costs. The result is called the net agency cost of equity.**
-6. **Free cash flow hypothesis: excess cash invites wasteful spending or self-serving projects by managers.**
-7. **Use of Debt forces managers to be disciplined**, because commits cash to interest and principal payments, reducing free cash flow available for misuse.
-8. Pecking order theory is built on asymmetric information between managers and investors. Financing choices act as signals about management's private view of firm value. - Internal funds are preferred: no external scrutiny, no signal.
+> [!tip] LOOK AT THESE BEFORE EXAM
+> - MM without taxes says financing mix does not change firm value. Cash flows drive value, not the slicing of claims.
+> - More leverage makes equity riskier, so cost of equity rises as debt-to-equity rises.
+> - With corporate taxes, debt creates a tax shield and can increase value.
+> - In real life, distress costs, agency costs, and flexibility limits stop firms from running to 100% debt.
+> - Static trade-off theory balances debt tax benefit against expected distress cost.
+> - Pecking order theory says use internal funds first, then debt, and equity last.
+> - **Unlevered firm value is 500, tax rate is 30%, and debt is 100. Ignore distress costs. Find levered firm value.** Quick algorithm: 500 + 0.30 x 100 = **530**.
+> - **Unlevered firm value is 500, tax shield is 30, and expected distress costs are 12. Find levered firm value.** Quick algorithm: 500 + 30 - 12 = **518**.
+> - **Asset cost of capital is 10%, debt cost is 6%, and D/E = 1. Find cost of equity under MM II without taxes.** Quick algorithm: 10% + 1 x (10% - 6%) = **14%**.
+> - **A firm has internal cash available. Under pecking order theory, what financing source comes before new equity?** Answer: **internal funds first, then debt, then equity**.
+> - **If management issues equity when it knows the shares are richly priced, what signal do investors often infer?** Answer: management may think the stock is **overvalued**.
 
-> [!ABSTRACT]- MM core results (quick recall)
-> - MM I (no taxes): Capital structure is irrelevant to firm value under idealized assumptions (no taxes/transaction/bankruptcy costs; homogeneous expectations; risk‑free borrowing/lending; no agency costs; investment policy independent of financing).
-> - MM II (no taxes): As D/E rises, cost of equity increases linearly; WACC stays constant.
-> - With taxes: Interest tax shield lowers WACC as leverage increases; without distress costs, value is maximized at very high (theoretical 100%) debt.
+> [!abstract] MEMORISE
+> $$
+> r_e = r_0 + \frac{D}{E}(r_0-r_d)
+> $$
+>
+> $$
+> V_L = V_U + tD
+> $$
+>
+> $$
+> V_L = V_U + tD - \text{PV(expected distress costs)}
+> $$
+>
+> - MM I, no taxes: capital structure does not affect firm value.
+> - MM II, no taxes: leverage raises cost of equity, but WACC stays constant.
+> - With taxes: debt tax shield adds value.
+> - In practice: optimal leverage is interior, not extreme.
 
-15. MM Proposition I — No Taxes (Capital structure irrelevance)
-   - “Pie” intuition: operating earnings determine total pie; slicing between debt and equity does not change the total value when assumptions hold.
+1. Capital structure theory tries to answer one question: how much debt versus equity should the firm use over time?
+2. The first big idea from Modigliani and Miller is brutally simple. Under restrictive assumptions, the firm's value comes from its assets and cash flows, not from whether those cash flows are divided between debt and equity in one mix or another.
+3. This is MM Proposition I without taxes. Think of the firm as a pie. Financing changes who gets which slice, but not the size of the pie.
+4. The assumption set is unrealistic in the real world, but the lesson is powerful because it tells you not to worship financing structure more than operating cash flow.
+5. If a company does not change its assets, projects, or cash-generation ability, financing alone cannot magically create huge value under the no-tax MM world.
 
-    - Equity gets riskier as leverage increases; the cheaper cost of debt is exactly offset by a higher cost of equity, keeping WACC unchanged.
-    - Relationship (no taxes): $r_e = r_0 + (D/E) × (r_0 − r_d)$.
+6. MM Proposition II without taxes explains what leverage does to equity risk.
+7. Debt is cheaper than equity, but once debt is added, the equity becomes riskier because the fixed debt claim stands ahead of shareholders.
+8. That extra risk forces the cost of equity up as debt-to-equity rises.
+9. In the no-tax MM setting, the cheaper debt is exactly offset by the higher cost of equity, so WACC stays flat.
+10. This is the exam trap: higher leverage does not lower WACC in the pure no-tax MM world.
 
-    - Interest is tax‑deductible while dividends are not, so debt creates a tax shield and reduces WACC. In the simple taxed world (ignoring distress and personal taxes), firm value is maximized at very high leverage.
-    - Note on personal taxes (Miller view): differing investor tax rates on interest vs dividends can reduce the net advantage of debt.
+11. Once corporate taxes are introduced, the picture changes. Interest expense is usually tax deductible, so debt creates a tax shield.
+12. The simple taxed MM result says the value of the levered firm equals the value of the unlevered firm plus the value of the tax shield.
+13. In that stripped-down world, more debt keeps helping because taxes make debt valuable and there are still no distress costs to punish leverage.
+14. But that is still not the real world. Real firms can suffer from distress long before formal bankruptcy.
 
-    - Expected costs rise with leverage and include: direct bankruptcy costs (legal/admin) and indirect costs (lost customers/suppliers/employees, foregone investment, distraction), plus agency costs of debt (conflicts with debtholders during distress).
-    - Probability of distress increases with operating leverage, financial leverage, and weak governance/management.
+15. Financial distress costs include direct costs such as legal and administrative expenses and indirect costs such as lost customers, nervous suppliers, distracted management, weaker employees, and forgone investment opportunities.
+16. Distress costs are lower when assets are easy to sell and business risk is stable. They are higher when the business is cyclical, fragile, reputation-heavy, or built on assets with poor resale value.
+17. This leads to static trade-off theory. What is static trade-off theory: the firm balances the tax advantage of debt against the expected cost of financial distress.
+18. At low debt levels, the tax shield usually dominates and firm value rises. Beyond some point, expected distress costs grow faster and start to destroy value.
+19. The optimal capital structure is where that balance is best, meaning firm value is maximized and WACC is minimized.
 
-    - Firm value initially increases (WACC decreases) with more debt due to the tax shield, but beyond a point higher expected distress costs dominate.
-    - Optimal/target leverage is where WACC is minimized and firm value maximized; depends on business risk, tax rate, asset collateral, governance, and industry norms.
+> [!info] WHY FIRMS DO NOT LEVER TO THE MOON
+> In the classroom tax-only world, debt looks amazing.
+> In the real world, customers leave distressed firms, lenders tighten terms, management becomes defensive, suppliers demand protection, and employees stop trusting the future.
+> That hidden damage is why "debt is tax deductible" is not the end of the conversation.
 
-    - Definition: the long‑run mix of debt, preferred, and equity the firm aims to maintain; use market‑value weights when estimating WACC.
-    - If not disclosed, estimate using: (i) current market weights, (ii) trend‑adjusted weights if leverage is moving, or (iii) industry averages. Managers often track book‑based constraints for ratings/covenants.
+20. Management usually cannot calculate the exact optimal capital structure with precision. The world moves too much, market values fluctuate, and distress costs are not directly observable.
+21. So firms often work with a target capital structure instead. What is target capital structure: the long-run financing mix the firm aims to maintain.
+22. In practice, targets are often expressed through book-value leverage ranges, net debt to earnings before interest, taxes, depreciation, and amortization, or desired credit-rating levels.
+23. Analysts, however, usually estimate WACC using market-value weights because market values better reflect current investor opportunity costs.
+24. If management does not disclose a target, a reasonable estimate can come from current market weights, trend-adjusted weights, or industry norms.
 
-> [!warning] Exam tip
-> “With taxes” does NOT automatically imply “use 100% debt” in practice — once expected financial distress and agency costs are considered, there is a value‑maximizing interior optimum (static trade‑off). Also, under MM II (no taxes), WACC stays flat even as r_e increases with leverage.
+25. Pecking order theory comes from asymmetric information. Managers usually know more about the firm's true prospects than outside investors.
+26. Because financing choices send signals, firms prefer the least information-sensitive funding source first.
+27. Internal funds come first because they avoid flotation costs and avoid sending a financing signal.
+28. If external funding is needed, debt is usually preferred before equity.
+29. Equity is the last resort because markets may interpret an equity issue as a signal that management thinks the stock is overvalued.
+
+30. That signaling logic matters even if management never says a word. Investors infer information from actions.
+31. Issuing debt can signal confidence because management is accepting fixed obligations that require future cash flow strength.
+32. Issuing equity can signal caution or overvaluation because management may be happy to sell shares when it thinks the price is generous.
+33. This does not mean every debt issue is bullish or every equity issue is bearish. It means financing choices can affect price because outsiders infer what insiders may know.
+
+34. Free cash flow hypothesis adds another governance angle.
+35. What is free cash flow hypothesis: excess cash can tempt managers to waste money on empire building, weak projects, or self-serving choices.
+36. Debt can impose discipline because interest and principal payments reduce the cash available for misuse.
+37. But too much debt flips the benefit into a problem because the firm loses flexibility and raises distress risk.
+
+38. The clean summary is this. MM gives the benchmark. Taxes explain why debt can help. Distress explains why too much debt hurts. Pecking order and signaling explain actual financing behavior. Target structure is management's practical compromise.
+
+> [!warning] EXAM TIP
+> - No taxes: WACC stays constant even though cost of equity rises with leverage.
+> - With taxes only: debt adds value.
+> - With taxes plus distress: interior optimum, not 100% debt.
+> - Pecking order is about asymmetric information and financing hierarchy, not about a mathematically exact optimal debt ratio.

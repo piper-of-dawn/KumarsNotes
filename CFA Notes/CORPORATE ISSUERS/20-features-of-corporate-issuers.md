@@ -1,4 +1,7 @@
-.
+### MODULE 20.1: FEATURES OF CORPORATE ISSUERS
+###### LOS 20.a: Compare the organizational forms of businesses.
+###### LOS 20.b: Describe key features of corporate issuers.
+###### LOS 20.c: Compare publicly and privately owned corporate issuers.
 
 > [!tip] LOOK AT THESE BEFORE EXAM
 > **The examiner usually keeps coming back to the same four levers:** liability, taxation, control, and access to financing.
@@ -18,6 +21,10 @@
 > **Public versus private in one line:**
 > - Public means exchange listed, easier trading, more disclosure.
 > - Private means negotiated ownership transfer, less disclosure, less liquidity.
+> - **A corporation earns 100, pays 30 corporate tax, and distributes the remaining 70. If shareholders then pay 10 of tax, what total tax has hit the original 100?** Answer: **40**. This is the clean double-tax picture.
+> - **A sole proprietor earns 100 and there is only one 30 tax at the owner level. What cash is left after tax?** Answer: **70**. That is the pass-through contrast in one line.
+> - **A public company has 1,000,000 shares and only 250,000 trade freely because the rest is tightly held. What is free float?** Answer: **25%**. Public does not automatically mean widely tradeable.
+> - **You invest 20 in a corporation and the firm later fails with debts far above assets. Under limited liability, what is your maximum loss?** Answer: **20**. Your downside is capped at what you invested.
 
 > [!ABSTRACT]- MEMORISE THESE FOR EFFICIENCY
 > - The corporate form wins when capital needs become large because many investors can fund the business without having to run it themselves.

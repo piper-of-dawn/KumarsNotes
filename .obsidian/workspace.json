@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/ETHICS/STANDARD 3 - DUTIES TO CLIENTS.md",
+                "file": "CFA Notes/CORPORATE ISSUERS/25-2-capital-structure-theories.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "STANDARD 3 - DUTIES TO CLIENTS"
+              "title": "25-2-capital-structure-theories"
             }
           }
         ],
@@ -967,6 +967,16 @@
             "id": "40f25eb6f3debe68",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "a92c230ebc875ead",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -974,7 +984,7 @@
             }
           }
         ],
-        "currentTab": 84
+        "currentTab": 85
       }
     ],
     "direction": "horizontal",
@@ -994,9 +1004,18 @@
   },
   "active": "853149fbd9981ade",
   "lastOpenFiles": [
+    "CFA Notes/CORPORATE ISSUERS/24-2-capital-allocation-principles-and-real-options.md",
+    "CFA Notes/CORPORATE ISSUERS/05 Capital Investments and Capital Allocation.md",
+    "CFA Notes/CORPORATE ISSUERS/23-liquidity-measures-and-management.md",
+    "CFA Notes/CORPORATE ISSUERS/26-business-models.md",
+    "CFA Notes/CORPORATE ISSUERS/22-corporate-governance.md",
+    "CFA Notes/CORPORATE ISSUERS/20-features-of-corporate-issuers.md",
+    "CFA Notes/ECONOMICS/04 MONETARY POLICY.md",
+    "CFA Notes/ECONOMICS.md",
+    "CFA Notes/FSA/08 TOPICS IN LONG TERM LIABILITY AND EQUITY.md",
+    "CFA Notes/ETHICS/STANDARD 3 - DUTIES TO CLIENTS.md",
     "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
     "CFA Notes/ETHICS/STANDARD 6 - CONFLICTS OF INTEREST.md",
-    "CFA Notes/FSA/08 TOPICS IN LONG TERM LIABILITY AND EQUITY.md",
     "CFA Notes/ETHICS/STANDARD 7 - RESPONSIBILITIES AS A CFA INSTITUTE MEMBER OR CFA CANDIDATE.md",
     "CFA Notes/ETHICS/STANDARD 5 - INVESTMENT ANALYSIS RECOMMENDATIONS AND ACTIONS.md",
     "CFA Notes/ETHICS/STANDARD 2 - INTEGRITY OF CAPITAL MARKETS.md",
@@ -1011,16 +1030,7 @@
     "CFA Notes/QUANTITATIVE METHODS/Introduction to Big Data Techniques.md",
     "CFA Notes/PORTFOLIO MANAGEMENT/Behavioral Biases of Individuals.md",
     "CFA Notes/QUANTITATIVE METHODS/Probability Trees and Conditional Expectations.md",
-    "CFA Notes/QUANTITATIVE METHODS/Simple Linear Regression.md",
-    "CFA Notes/EQUITY.md",
-    "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
-    "CFA Notes/FSA/07 Analysis of Long Term Assets.md",
-    "CFA Notes/FSA/2 - Analysing Income Statements.md",
-    "CFA Notes/PORTFOLIO MANAGEMENT.md",
-    "CFA Notes/PORTFOLIO MANAGEMENT/Introduction to Risk Management.md",
     "CFA Notes/PORTFOLIO MANAGEMENT",
-    "CFA Notes/ETHICS.md",
-    "CFA Notes/ETHICS/STANDARD 3 - DUTIES TO CLIENTS.md",
     "CFA Notes/ETHICS",
     "CFA Notes/DERIVATIVES",
     "Pasted image 20260503191508 1.png",
