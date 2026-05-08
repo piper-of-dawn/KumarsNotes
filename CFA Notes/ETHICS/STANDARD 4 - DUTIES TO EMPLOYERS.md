@@ -40,6 +40,10 @@
 
 7. **I thought** once clients find me on their own after I leave, I must refuse them. **Wrong logic:** any former client relationship is permanently off limits. **Correct logic:** after the employment relationship ends, clients may choose to follow me as long as I did not improperly solicit them or misuse employer information beforehand. **Tested angle:** the exam often hides the answer in the timing of the client contact.
 
+8. **I thought** updating LinkedIn to show my new employer is the same as soliciting old clients. **Wrong logic:** if the platform notifies my network and former clients see it, I must have breached loyalty. **Correct logic:** a factual status update is generally different from targeted solicitation, especially when clients initiate the follow-up contact. **Tested angle:** CFA separates public professional announcement from active client poaching.
+
+9. **I thought** a model my new firm used becomes theirs forever even if I built it before joining. **Wrong logic:** once a prior employer used my preexisting tool, I can never take my original version elsewhere. **Correct logic:** if I created the model on my own before employment and do not take the firm's records or copies, the original intellectual property may still be mine. **Tested angle:** CFA tests the difference between prior-created property and work product created for the employer.
+
 ## Exam Traps: IV(B) Additional Compensation Arrangements
 
 ## Core Concepts
@@ -107,6 +111,8 @@
 6. **I thought** delegation removes my supervisory duty. **Wrong logic:** once I appoint sub-supervisors, any future violation becomes their problem only. **Correct logic:** I can delegate tasks, but I still retain responsibility to ensure the supervisory system is reasonable. **Tested angle:** delegation changes structure, not ultimate accountability.
 
 7. **I thought** if misconduct occurs despite the procedures, I automatically violated IV(C). **Wrong logic:** any employee violation proves the supervisor failed. **Correct logic:** a supervisor may avoid violation only if the procedures were reasonable and actually enforced; if I knew or should have known they were ignored, I can still violate. **Tested angle:** the exam often turns on whether the procedures merely existed or were genuinely followed.
+
+8. **I thought** I can safely accept a supervisory role first and fix the broken system later. **Wrong logic:** once I join, I can just notify senior management and start cleaning things up. **Correct logic:** if the compliance setup is clearly too weak for me to exercise reasonable supervision from day one, accepting the role itself can create the violation. **Tested angle:** merely informing management after accepting the responsibility is often not enough.
 
 ### Not-a-Violation Traps
 

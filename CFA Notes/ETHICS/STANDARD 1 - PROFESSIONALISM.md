@@ -83,6 +83,10 @@
     
 7. **I thought** fear of losing company access means I must be positive. **Wrong logic:** if management may stop taking my calls, I should soften the report. **Correct logic:** no violation if I publish my true view and support it with evidence. **Tested angle:** ==outside pressure alone is not the breach; giving in to it is.==
 
+8. **I thought** any mention of a charity I support in a client newsletter compromises objectivity. **Wrong logic:** if I sit on a nonprofit board and tell clients about the fundraiser, I must have crossed the line. **Correct logic:** a general, non-coercive charitable mention may be acceptable when it is transparent and not tied to business favors. **Tested angle:** CFA distinguishes ordinary charitable communication from pay-to-play pressure or quid pro quo behavior.
+
+9. **I thought** friendship plus later hiring proves a kickback. **Wrong logic:** if I introduce a manager and later get a job there, the standards must have been violated. **Correct logic:** coincidence is not enough; CFA looks for evidence that the selection or hiring was a reward that compromised judgment. **Tested angle:** the exam often gives suspicious timing but no actual quid pro quo.
+
 ## I(C) Misrepresentation
 
 #### Core Concepts
@@ -125,6 +129,8 @@
 6. **I thought** social media changes the standard. **Wrong logic:** casual posts are less serious than reports. **Correct logic:** not a violation merely because it is social media; it violates only if professional content is false, misleading, or non-compliant. **Tested angle:** the communication channel does not lower the honesty and accuracy standard.
     
 7. **I thought** true success stories need counterbalancinzg. **Wrong logic:** if I mention winning readers, I must include losing readers too. **Correct logic:** ==no automatic duty to add counterbalancing facts if the success claims are true and not misleading.== **Tested angle:** omission becomes a violation only when it makes the overall message misleading.
+
+8. **I thought** saying "up to 12% per year" on a risky bond strategy is harmless marketing. **Wrong logic:** because the number is framed as aspiration rather than guarantee, it cannot mislead. **Correct logic:** promising or strongly implying a dependable return on a volatile investment misrepresents the nature of the product. **Tested angle:** CFA often hides the violation in optimistic wording that still sounds like certainty to a client.
 
 ## I(D) Misconduct
 

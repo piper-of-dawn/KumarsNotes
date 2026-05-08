@@ -1,5 +1,5 @@
 {
-  "textFontFamily": "Berkeley Mono,Inter,Georgia Pro,Adwaita Sans,B&H LucidaBright,Courier",
+  "textFontFamily": "Berkeley Mono,Helvetica,Georgia Pro,Inter,Adwaita Sans,B&H LucidaBright,Courier",
   "cssTheme": "Cupertino",
   "accentColor": "#000000",
   "baseFontSize": 15,
