@@ -34,7 +34,8 @@
 ### LEARNING OUTCOMES
 
 - Describe how swap contracts are similar to but different from a series of forward contracts.
-- Contrast the value and price of swaps.
+- Contrast the valuins when future floating rates rise above fixed rate. Example and price of swaps.
+- Contrast the valuins when future floating rates rise above fixed rate. *Example* and price of swaps.
 
 ### SWAPS VS. FORWARDS
 

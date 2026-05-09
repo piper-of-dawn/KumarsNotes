@@ -1,4 +1,6 @@
 ### THE BEHAVIORAL BIASES OF INDIVIDUALS
+> Source module: `/home/karma/CFAPractice/mcq/quiz/AI/PDF/portfolio management/module_05_the_behavioral_biases_of_individuals.txt`
+
 ###### LOS 5.a: Compare and contrast cognitive errors and emotional biases.
 ###### LOS 5.b: Discuss commonly recognized behavioral biases and their implications for financial decision making.
 ###### LOS 5.c: Describe how behavioral biases of investors can lead to market characteristics that may not be explained by traditional finance.
@@ -26,6 +28,21 @@
 > 20. Value and growth mispricing can be linked to **representativeness**, **halo effect**, and **overconfidence**.
 > 21. Home bias is the tendency to prefer familiar domestic or nearby investments even when a broader portfolio would be better diversified.
 > 22. The first exam move is always: identify the bias. The second move is: ask whether the right response is to **moderate** it or **adapt** to it.
+> 23. **A client reads only bullish reports on a stock she already owns. What is the bias?** Confirmation bias. The give-away line is that she is not researching broadly; she is shopping for agreement.
+> 24. **An investor says, "I will sell once it gets back to my purchase price." What is the bias?** Loss aversion, often showing up through the disposition effect. The key clue is pain around realizing the loss.
+> 25. **A portfolio manager keeps using last year's earnings as the starting point even though the industry environment changed badly. What is the bias?** Anchoring and adjustment. The old number is doing too much work.
+> 26. **An investor says, "I work at the company, so I know the stock will be fine." What is the bias?** Usually illusion of control. The clue is fake control over uncertain outcomes.
+> 27. **A person will not sell inherited shares because they feel special, even though he would never buy them today. What is the bias?** Endowment bias. Ownership is inflating value.
+> 28. **A person avoids changing the portfolio mostly because change feels like effort. What is the bias?** Status quo bias. This is inertia, not deep analysis.
+> 29. **A person avoids making a risky but appropriate choice because they do not want to feel stupid later. What is the bias?** Regret aversion. The future emotional pain is steering the decision.
+> 30. **A person says, "That crash was obvious. Anyone could have seen it." What is the bias?** Hindsight bias. Knowing the outcome is creating fake clarity.
+> 31. **A person projects one vivid recent success story onto the whole future. What is the bias?** Representativeness or availability. If the clue is resemblance, think representativeness. If the clue is easy recall or recency, think availability.
+> 32. **A person treats salary money, bonus money, and stock-market gains like different species of wealth. What is the bias?** Mental accounting. Money is fungible, but the mind is creating fake boxes.
+> 33. Big gotcha: **cognitive** usually means bad reasoning, so think **moderate**.
+> 34. Big gotcha: **emotional** usually means fear, pride, comfort, attachment, or inertia, so think **adapt**.
+> 35. Big gotcha: loss aversion, status quo, endowment, and regret aversion can all create "do nothing" behavior. The exam separates them by the **inner reason**, not the outer behavior.
+> 36. Big gotcha: overconfidence is classified here as **emotional**, even though it has cognitive aspects.
+> 37. Big gotcha: not every weird return pattern is a true anomaly. Sometimes it is bad data, model error, survivorship bias, or a temporary imbalance.
 
 > [!abstract] MEMORISE
 > - Behavioral biases help explain why real investors often make suboptimal choices.
@@ -35,6 +52,17 @@
 > - Information-processing errors mean handling information badly even when the information is available.
 > - Emotional biases often show up as fear, pride, inertia, or impulsive comfort-seeking.
 > - Market anomalies can be seen as crowd-level expressions of individual biases.
+
+> [!tip] HOW TO ANSWER BIAS QUESTIONS FAST
+> 1. Ask: is this mainly bad reasoning or mainly feeling?
+> 2. If it is bad reasoning, think **cognitive**.
+> 3. If it is fear, pride, comfort, ego, attachment, or inertia, think **emotional**.
+> 4. Then ask: what exact sentence in the case reveals the bias?
+> 5. If the sentence shows clinging to an old belief, think **belief perseverance**.
+> 6. If the sentence shows mishandling of current information, think **information-processing**.
+> 7. Then ask: should I **moderate** it or **adapt** to it?
+>
+> This module becomes much easier once you stop trying to memorize a list and start hunting for the revealing sentence.
 
 #### 1) Why Behavioral Finance Exists
 
@@ -55,6 +83,15 @@
 15. The people of interest in this module are **financial market participants (FMPs)**.
 16. What is a financial market participant: any person involved in financial decision making, including individual investors and financial professionals.
 
+> [!info] WHY THIS MODULE EXISTS
+> Traditional finance says people should calmly use all available information and move toward the best risk-return choice.
+>
+> Real life is uglier. People get attached. They get stubborn. They get scared. They get excited. They get lazy.
+>
+> Behavioral finance matters because a portfolio is not only exposed to market risk. It is also exposed to the investor's own mind.
+>
+> That is why this module is not trivia. It is a map of how people sabotage otherwise sensible investment plans.
+
 #### 2) The Two Big Bias Buckets
 
 17. The first big split is **cognitive errors** versus **emotional biases**.
@@ -74,6 +111,23 @@
 31. Belief perseverance means the person clings to an old belief even when new information should push the belief to change.
 32. What is cognitive dissonance: the mental discomfort you feel when new facts fight with what you already believed.
 33. Why is cognitive dissonance important here: many belief-perseverance biases are really attempts to avoid that discomfort.
+
+> [!question] MODERATE OR ADAPT
+> Problem: The exam describes a bias that comes from faulty information processing rather than fear or impulse. Should your first instinct be to moderate it or adapt to it?
+>
+> ---
+>
+> Solution:
+>
+> Start with the big split.
+>
+> If it is faulty reasoning, it is usually a **cognitive error**.
+>
+> Cognitive errors are usually more responsive to better information, analysis, and process.
+>
+> So your first instinct should be to **moderate** it.
+>
+> Explanation: the curriculum’s big contrast is not just naming the bias. It is knowing whether the realistic response is correction or accommodation.
 
 #### 3) Cognitive Errors: Belief Perseverance Biases
 
@@ -106,6 +160,19 @@
 55. The clean fix is to deliberately seek disconfirming evidence.
 56. Ask, "What would make me wrong?" and then actually search for that.
 57. One good practical rule is to require a contrary view before a big investment decision is approved.
+
+> [!question] CONFIRMATION BIAS IN ONE LINE
+> Problem: A client owns a stock, talks only to bullish analysts, and ignores the one analyst who has a sell rating. What is the bias, and what is the cleanest fix?
+>
+> ---
+>
+> Solution:
+>
+> Bias: **confirmation bias**.
+>
+> Cleanest fix: deliberately seek the disconfirming case and force a contrary view into the process.
+>
+> Explanation: the clue is not "the client did research." The clue is that the research was a search for agreement.
 
 ##### Representativeness Bias
 
@@ -150,6 +217,13 @@
 90. The best defense is to write down your reasoning at the time of the decision.
 91. When memory and written evidence disagree, trust the written evidence.
 
+> [!tip] HINDSIGHT DEFENSE
+> Write the investment thesis down at the time of the decision.
+>
+> Later, compare outcome with the original reasoning.
+>
+> If you skip the written record, memory will quietly flatter you.
+
 #### 4) Cognitive Errors: Information-Processing Biases
 
 ##### Anchoring and Adjustment Bias
@@ -179,6 +253,17 @@
 111. The clean fix is to put all assets on one sheet and view the portfolio as one whole machine.
 112. If the total risk or total cash exposure looks surprising, the mental boxes were probably hiding something.
 
+> [!question] MENTAL ACCOUNTING CLUE
+> Problem: An investor says, "This was bonus money, so I can gamble with it. My salary savings are the serious money." What is the bias?
+>
+> ---
+>
+> Solution:
+>
+> Bias: **mental accounting**.
+>
+> Explanation: money is fungible. The investor is creating fake personality differences between units of wealth based only on where they came from.
+
 ##### Framing Bias
 
 113. Framing bias means answering the same underlying question differently depending on how it is presented.
@@ -192,6 +277,17 @@
 121. Guidance: framing bias is something to **moderate**.
 122. Ask, "If I reword this in a neutral way, do I still want the same answer?"
 123. Also remove attachment to past gains and losses and focus on future prospects.
+
+> [!question] FRAMING CLUE
+> Problem: The same portfolio is presented once as a range of possible losses and once as average return plus standard deviation, and the client chooses differently each time. What is the bias?
+>
+> ---
+>
+> Solution:
+>
+> Bias: **framing bias**.
+>
+> Explanation: the economics did not change. The packaging changed.
 
 ##### Availability Bias
 
@@ -207,6 +303,17 @@
 133. Guidance: availability bias is something to **moderate**.
 134. The fix is to create a broader investment process, use long-term data, and ask why the opportunity set was defined so narrowly.
 135. If the real answer is "because I know this area best," the bias may already be active.
+
+> [!question] AVAILABILITY CLUE
+> Problem: An analyst screens only software companies because that sector is familiar from prior work, even though the investment brief never said the idea had to come from technology. What is the bias?
+>
+> ---
+>
+> Solution:
+>
+> Bias: **availability bias**.
+>
+> Explanation: familiarity narrowed the opportunity set before the real analysis even began.
 
 #### 5) Emotional Biases
 
@@ -247,6 +354,12 @@
 164. The best discipline is brutal performance review over a multi-year period, including losers, trading volume, and decision patterns.
 165. The old Wall Street idea fits perfectly here: do not confuse brains with a bull market.
 
+Self-attribution bias deserves its own clean line because the curriculum keeps pairing it with overconfidence.
+
+What is self-attribution bias: taking too much credit for successes and blaming outside forces for failures.
+
+Why is self-attribution bias important: it feeds overconfidence by making wins look like pure skill and losses look like bad luck.
+
 ##### Self-Control Bias
 
 166. Self-control bias means sacrificing the long-term goal for short-term comfort.
@@ -257,6 +370,11 @@
 171. Detection clue: the person says all the right long-term things but repeatedly spends, delays, or avoids the actual steps.
 172. Guidance: self-control bias is something to **adapt to** with written plans, budgets, and automatic structure.
 173. This is one of the places where boring systems beat motivation.
+
+> [!tip] SELF-CONTROL FIX
+> The cure here is rarely inspiration.
+>
+> The cure is structure: automatic savings, written budgets, and a portfolio plan that does not need willpower every day.
 
 ##### Status Quo Bias
 
@@ -269,6 +387,17 @@
 180. Detection clue: the person stays with default settings, old holdings, or old allocation simply because they are already there.
 181. Guidance: status quo bias is something to **adapt to** with education, forced review, and explicit demonstration of diversification benefits.
 182. Automatic enrollment in pension plans is a classic example of how powerful default inertia can be.
+
+> [!question] STATUS QUO OR REGRET?
+> Problem: A client keeps the current portfolio mostly because changing it feels like hassle and effort. Which bias is more likely?
+>
+> ---
+>
+> Solution:
+>
+> Bias: **status quo bias**.
+>
+> Explanation: if the main clue is inertia, think status quo. If the main clue is fear of later embarrassment, think regret aversion.
 
 ##### Endowment Bias
 
@@ -295,6 +424,14 @@
 200. Guidance: regret aversion is something to **adapt to** with diversification, written policy, and long-run framing.
 201. The person needs help remembering that everyone experiences losses and that avoiding all regret is not a realistic portfolio objective.
 
+> [!tip] THE FOUR LOOK-ALIKE BIASES
+> - **Loss aversion**: "I cannot bear locking in the loss."
+> - **Status quo bias**: "I would rather not change anything."
+> - **Endowment bias**: "I value this more because it is mine."
+> - **Regret aversion**: "I do not want to feel stupid later."
+>
+> Same frozen behavior. Different inner engine.
+
 #### 6) The Most Confused Emotional Cluster
 
 202. Loss aversion, status quo bias, endowment bias, and regret aversion often produce similar visible behavior: the investor keeps holding or keeps doing nothing.
@@ -320,6 +457,8 @@
 219. Sometimes the pattern is model error, bad statistics, data mining, survivorship issues, or temporary disequilibrium.
 220. So the right attitude is not "behavior explains everything." The right attitude is "behavior may explain some durable patterns."
 
+Why this warning matters: the exam does not want a cartoon answer where every price move becomes psychology. Sometimes the correct answer is still model error, bad statistics, survivorship issues, or temporary disequilibrium.
+
 ##### Momentum
 
 221. Momentum means recent winners tend to keep outperforming for a while and recent losers tend to keep underperforming for a while.
@@ -329,6 +468,21 @@
 225. Hindsight makes the earlier trend feel obvious after the fact.
 226. Regret also matters because people hate feeling they missed a winner, so they chase what already ran.
 227. The result is short-run trending and often overtrading.
+
+> [!question] MOMENTUM BIAS MAP
+> Problem: The exam asks which biases can help explain momentum. What should come to mind first?
+>
+> ---
+>
+> Solution:
+>
+> First think **availability or recency**.
+>
+> Then think **hindsight**.
+>
+> Then think **loss aversion or regret-driven chasing**.
+>
+> Explanation: momentum happens partly because investors overweight what just happened and then emotionally chase what already worked.
 
 ##### Bubbles and Crashes
 
@@ -344,6 +498,8 @@
 237. Investors cling to old valuation anchors and rationalize the losses.
 238. Eventually many capitulate together, which accelerates the fall.
 
+The curriculum also makes one subtle but important point here. Some bubbles may have partially rational explanations. A manager may think a crash is coming but not know when. On top of that, not joining the bubble can create career or commercial risk. So the reading is not claiming bubbles are pure madness from top to bottom. It is saying behavioral patterns clearly matter inside them.
+
 ##### Value, Growth, and Halo Thinking
 
 239. The reading also discusses the long-run outperformance often associated with value stocks relative to growth stocks.
@@ -356,6 +512,12 @@
 246. **Overconfidence** can also inflate growth expectations and push growth stocks too high.
 247. The emotional attraction can make investors feel the stock is less risky than it really is.
 
+That is also where the **halo effect** fits.
+
+What is the halo effect: a favorable impression in one area spills into other judgments that do not deserve the same praise.
+
+Why is the halo effect important here: a great company, admired brand, or exciting product can make the stock itself feel better than the valuation or risk truly justifies.
+
 ##### Home Bias
 
 248. The reading also mentions **home bias**.
@@ -363,6 +525,25 @@
 250. Investors may feel they understand local companies better, trust nearby management more, or simply feel more comfortable owning what is close.
 251. Comfort is not the same thing as diversification quality.
 252. That is why home bias belongs naturally inside behavioral finance.
+
+Home bias is a great example of comfort pretending to be analysis.
+
+What is home bias: preferring domestic or nearby investments because they feel more familiar.
+
+Why is home bias important: familiarity can trick investors into feeling diversified when they are really just concentrated in what feels comfortable.
+
+> [!question] VALUE, GROWTH, AND HOME BIAS
+> Problem: The exam asks for behavioral explanations of value-growth mispricing and of domestic-investment preference. Which ideas should come to mind?
+>
+> ---
+>
+> Solution:
+>
+> For value-growth mispricing, think **representativeness**, **halo effect**, and **overconfidence**.
+>
+> For domestic-investment preference, think **home bias**.
+>
+> Explanation: glamorous growth stories and admired companies pull people emotionally, while local familiarity makes domestic investments feel safer than they really are.
 
 #### 8) How to Answer Bias Questions Fast
 
@@ -382,6 +563,16 @@
 266. Fourth ask: should the response be moderation or adaptation?
 267. Cognitive usually means moderation.
 268. Emotional usually means adaptation.
+
+> [!tip] QUICK CHECKS
+> - If the clue is **stubborn old belief**, think belief perseverance.
+> - If the clue is **bad handling of current information**, think information-processing.
+> - If the clue is **pain, pride, comfort, attachment, temptation, or inertia**, think emotional.
+> - If the clue is **what happened was obvious**, think hindsight.
+> - If the clue is **I only looked for agreement**, think confirmation.
+> - If the clue is **this resembles that**, think representativeness.
+> - If the clue is **this came to mind fast or felt familiar**, think availability.
+> - If the clue is **I own it, so it is special**, think endowment.
 
 #### 9) Final Exam Map
 
