@@ -1,9 +1,3 @@
-### THE BEHAVIORAL BIASES OF INDIVIDUALS
-> Source module: `/home/karma/CFAPractice/mcq/quiz/AI/PDF/portfolio management/module_05_the_behavioral_biases_of_individuals.txt`
-
-###### LOS 5.a: Compare and contrast cognitive errors and emotional biases.
-###### LOS 5.b: Discuss commonly recognized behavioral biases and their implications for financial decision making.
-###### LOS 5.c: Describe how behavioral biases of investors can lead to market characteristics that may not be explained by traditional finance.
 
 > [!tip] SEE THIS BEFORE EXAM
 > - Behavioral finance starts from one brutal fact: people do not invest like calm computers.
