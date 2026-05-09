@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/FIXED INCOME/09 The Term Structure of Interest Rates Spot Par and Forward Curves.md",
+                "file": "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "09 The Term Structure of Interest Rates Spot Par and Forward Curves"
+              "title": "10 Interest Rate Risk and Return"
             }
           }
         ],
@@ -1045,6 +1045,10 @@
   },
   "active": "853149fbd9981ade",
   "lastOpenFiles": [
+    "CFA Notes/FIXED INCOME/09 The Term Structure of Interest Rates Spot Par and Forward Curves.md",
+    "CFA Notes/PORTFOLIO MANAGEMENT/Introduction to Risk Management.md",
+    "CFA Notes/PORTFOLIO MANAGEMENT/Behavioral Biases of Individuals.md",
+    "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
     "CFA Notes/FIXED INCOME/08 - Yield and Yield Spread Measures for Floating-Rate Instruments.md",
     "CFA Notes/FIXED INCOME/06-fixed-income-bond-valuation-prices-and-yields.md",
     "CFA Notes/DERIVATIVES/07 Pricing and Valuation of Interest Rates and Other Swaps.md",
@@ -1055,7 +1059,6 @@
     "CFA Notes/FIXED INCOME/11 Yield-Based Bond Duration Measures and Properties.md",
     "CFA Notes/FIXED INCOME/12 - Yield-Based Bond Convexity and Portfolio Properties.md",
     "CFA Notes/EQUITY/02 Security Market Indexes.md",
-    "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
     "CFA Notes/EQUITY/08 EQUITY VALUATION CONCEPT AND BASIC TOOLS.md",
     "CFA Notes/CORPORATE ISSUERS/23 LIQUIDITY MEASURES AND MANAGEMENT.md",
     "CFA Notes/CORPORATE ISSUERS/25-2-capital-structure-theories.md",
@@ -1068,9 +1071,6 @@
     "CFA Notes/ECONOMICS.md",
     "CFA Notes/FSA/08 TOPICS IN LONG TERM LIABILITY AND EQUITY.md",
     "CFA Notes/ETHICS/STANDARD 3 - DUTIES TO CLIENTS.md",
-    "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
-    "CFA Notes/ETHICS/STANDARD 6 - CONFLICTS OF INTEREST.md",
-    "CFA Notes/ETHICS/STANDARD 7 - RESPONSIBILITIES AS A CFA INSTITUTE MEMBER OR CFA CANDIDATE.md",
     "CFA Notes/PORTFOLIO MANAGEMENT",
     "CFA Notes/ETHICS",
     "CFA Notes/DERIVATIVES",

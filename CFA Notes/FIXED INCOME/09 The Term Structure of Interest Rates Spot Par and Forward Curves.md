@@ -1,4 +1,6 @@
+### MODULE 9: The Term Structure of Interest Rates: Spot, Par, and Forward Curves
 
+> Source module: `/home/karma/CFAPractice/mcq/quiz/AI/PDF/FixedIncome/module_09_the_term_structure_of_interest_rates_spot_par_and_forward_curves.txt`
 
 > [!ABSTRACT] LOS
 > 1. Define spot rates and the spot curve, and calculate the price of a bond using spot rates.
@@ -18,625 +20,75 @@
 > $$
 > (1 + Z_A)^A \times (1 + IFR_{A,B-A})^{B-A} = (1 + Z_B)^B
 > $$
-> - Spot rate from one-year forward rates:
+> - Spot from one-year forwards:
 > $$
 > (1 + Z_N)^N = (1 + 0y1y)(1 + 1y1y)\cdots(1 + (N-1)y1y)
 > $$
-> - **A 3-year 5% bond has spot rates 2%, 3%, and 4%. How do you price it fast?** Match each cash flow to its own spot rate: $5/1.02 + 5/1.03^2 + 105/1.04^3 = 102.960$. First reflex: list cash flows by year, then discount one by one.
-> - **A bond priced from spot rates comes out at 102.960. Coupon is 5. What should you expect about yield-to-maturity?** Above par means yield-to-maturity must sit below coupon. Here the yield-to-maturity is **3.935%**, which is below **5%**.
-> - **Spot rates are 5.263% and 5.616%. Find the 2-year par rate.** Set price equal to 100, solve for coupon payment, get **PMT = 5.606**, then divide by 100. Par rate = **5.606%**.
-> - **Spot rates are 3.65% for 3 years and 4.18% for 4 years. Find 3y1y.** Do not start with the label panic. Start year is 3, end year is 4, so use the 3-year and 4-year spot rates. Answer: **5.79%**.
-> - **Forward rates are 0y1y = 1.88%, 1y1y = 2.77%, 2y1y = 3.54%, and 3y1y = 4.12%. Find the 4-year spot rate.** Multiply the whole path, then take the fourth root. Answer: **3.0741%**.
-> - **Price a 4-year 3.75% bond from those forward rates. What is the trap?** Discount each cash flow by the full path to that year, not by only the last forward rate. Answer: **102.637**.
-> - **The spot curve is upward sloping and positive. Where do par and forward sit?** Par sits **below** spot. Forward sits **above** spot.
-> - **The spot curve is flat at 2.5%. What happens?** Spot, par, and forward all collapse to **2.5%**.
-> - **The spot curve is inverted. Where does forward sit?** Below spot. That is the exam reflex.
-> - **The spot curve is negative but upward sloping, like Switzerland moving from very negative to less negative. Can forward rates still be positive?** Yes. Negative and upward sloping are separate ideas.
-> - Big gotcha: if you price with spot rates, **every cash flow gets its own spot rate**.
-> - Big gotcha: if the label is **2y3y**, the forward starts in year 2 and ends in year 5, so you need the **2-year and 5-year spot rates**.
-> - Big gotcha: par rate questions force **price = 100**. Between coupon dates, use **flat price = 100**.
-> - Big gotcha: if short-term government bills are quoted on a discount-rate basis, convert them to **bond-equivalent yields** before mixing them into the same curve.
-> - Big gotcha: all yields on the curve must use the **same periodicity / compounding convention** before you compare them.
-
-#### Big Picture
-
-1. Earlier bond math used one discount rate, usually yield-to-maturity. This module says: that is a shortcut. In the real market, **a one-year cash flow, a five-year cash flow, and a thirty-year cash flow do not deserve the same discount rate**.
-2. The term structure of interest rates is the relationship between interest rates and time-to-maturity.
-3. The cleanest term structure comes from default-risk-free zero-coupon government bonds. Those rates are called **spot rates**, **zero rates**, or the **spot curve**.
-4. From the spot curve, you can build two other curves:
-   - **Par curve:** coupon rates for hypothetical bonds that would trade exactly at par.
-   - **Forward curve:** rates implied today for borrowing or investing during future periods.
-5. The three curves are not separate worlds. The spot curve is the base engine. Par rates and forward rates are derived from spot rates.
-
-> [!tip] HAMMER THIS INTO YOUR HEAD
-> A spot rate prices **one cash flow paid on one date**.
->
-> A par rate prices **a whole coupon bond so that its price equals 100**.
->
-> A forward rate prices **a future time period hidden between two spot rates**.
->
-> If you confuse these three, the formulas look random. If you keep the cash-flow story straight, the math becomes mechanical.
-
-#### 1. Spot Rates and the Spot Curve
-
-Spot rates are market discount rates on default-risk-free zero-coupon bonds.
-
-What is default-risk-free: the bond is treated as having no meaningful default risk, usually because the issuer is a developed-market sovereign borrowing in its own currency.
-
-What is zero-coupon: the bond pays no coupons before maturity; it has one final cash flow.
-
-Why is this used: if there is only one cash flow, the yield is a clean discount rate for that exact maturity. There is no reinvestment mess from coupons.
-
-The spot curve is the collection of spot rates across maturities. A government bond spot curve is also called the **zero curve** or **strip curve**, because coupon payments can be stripped from coupon bonds to create separate zero-coupon cash flows.
-
-> [!info] WHY ZERO-COUPON RATES ARE THE CLEAN SOURCE
-> Suppose you compare a 2-year coupon bond with a 10-year coupon bond. Their yields can differ because of maturity, but also because of coupon size, reinvestment risk, liquidity, tax treatment, and whether the bond is old or newly issued.
->
-> A zero-coupon government bond removes most of that noise. It says: "Here is one government-backed cash flow on one date. What discount rate prices it today?"
->
-> That is why spot rates are the source of truth for no-arbitrage pricing.
-
-#### What Can Make Bond Yields Different?
-
-Do not assume every yield difference is a maturity difference. Yields can differ because of:
-
-1. **Credit risk:** Romania's 30-year euro-denominated bonds were issued at a 4.657% yield-to-maturity, with a 411 basis point spread over German government bonds. That spread was not just "30-year maturity"; it reflected credit and market-risk differences versus Germany.
-2. **Currency:** a U.S. dollar bond and a euro bond do not sit on the same curve.
-3. **Liquidity:** a bond that trades constantly usually yields less than a dusty old bond that is hard to sell.
-4. **Tax treatment:** discount, premium, capital gains, and interest income may be taxed differently.
-5. **Periodicity assumption:** yields must be put on the same compounding/payment convention before comparison.
-6. **Maturity:** once the other differences are controlled, remaining yield differences across time are the term structure.
-
-#### Practical Curve Construction
-
-In theory, we want a full set of default-risk-free zero-coupon government rates. In practice, the market usually gives us actively traded coupon government bonds.
-
-So analysts commonly use:
-
-1. **Recently issued government bonds**, also called on-the-run bonds, because they are more liquid.
-2. **Avoid stale seasoned bonds when possible**, because older bonds can become less liquid once they get absorbed by buy-and-hold investors.
-3. **Bonds close to par**, because discount or premium bonds can introduce tax distortions.
-4. **Interpolation**, because governments issue at standard maturities such as 2-year, 3-year, 5-year, 7-year, 10-year, and 30-year, but analysts need rates between those points.
-5. **Consistent periodicity**, because short-term government securities may quote on a discount-rate basis and must be converted to bond-equivalent yields before being compared with coupon bonds.
-
-What is bond-equivalent yield: an add-on yield measure that puts short-term discount instruments onto a bond-style basis so they can be compared more cleanly with coupon bonds.
-
-Why is bond-equivalent yield used: if one part of the curve is quoted as a discount rate and another part is quoted as a bond yield, comparing them directly is a mess.
-
-> [!warning] EXAM WARNING
-> The ideal spot curve uses default-risk-free zero-coupon bonds. The practical curve often starts from recently issued coupon government bonds and fills gaps with interpolation.
->
-> If the question asks for the clean theory, say zero-coupon default-risk-free bonds. If it asks what is done in practice, say recently issued, liquid government bonds plus interpolation.
-
-> [!info] REAL-WORLD SCANDAL: LIBOR MADE "CLEAN CURVES" MATTER
-> The London Interbank Offered Rate, commonly called LIBOR, was supposed to reflect what major banks would pay to borrow from each other. During the LIBOR manipulation scandal, traders at several banks were found to have influenced submitted rates, which affected loans, swaps, and other contracts tied to that benchmark.
->
-> This is not part of the spot-rate formula, but it is a useful memory hook. Fixed-income valuation lives or dies on the benchmark curve. If the curve is dirty, every price built on top of it can become dirty too.
-
-#### Pricing a Bond Using Spot Rates
-
-Because each cash flow arrives on a different date, each cash flow is discounted using the spot rate for that date.
-
-> [!tip] HOW TO SOLVE SPOT-RATE PRICING
-> 1. Write the cash flows by year first.
-> 2. Match each cash flow to the spot rate for that year.
-> 3. Discount each cash flow separately.
-> 4. Add the present values.
->
-> Do not jump straight into one giant formula and hope your eyes survive. The problem becomes easy once you line up **cash flow -> date -> spot rate**.
-
-For an annual-pay bond:
-
-$$
-PV = \frac{PMT}{(1 + Z_1)^1} + \frac{PMT}{(1 + Z_2)^2} + \cdots + \frac{PMT + FV}{(1 + Z_N)^N}
-$$
-
-Notation in simple language:
-
-- \(PV\): bond price today.
-- \(PMT\): coupon payment each period.
-- \(FV\): face value repaid at maturity.
-- \(Z_1\): spot rate for period 1.
-- \(Z_2\): spot rate for period 2.
-- \(Z_N\): spot rate for period N.
-
-If the bond has more credit risk than the government spot curve, add a spread to the spot rates. The government spot curve gives default-risk-free discount rates; a risky corporate bond needs compensation for credit risk.
-
-This is also why spot-rate pricing is called **no-arbitrage pricing**. Each dated cash flow is discounted at the market rate for that exact date. If the bond traded far away from that value, the market would be handing out a mispricing gift.
-
-> [!question] SPOT-RATE PRICING
-> Problem: A 3-year annual-pay bond has a 5% coupon and par value of 100. The 1-year spot rate is 2%, the 2-year spot rate is 3%, and the 3-year spot rate is 4%. Price the bond.
->
-> ---
->
-> Solution:
->
-> $$
-> PV = \frac{5}{1.02} + \frac{5}{(1.03)^2} + \frac{105}{(1.04)^3}
-> $$
->
-> $$
-> PV = 4.902 + 4.713 + 93.345 = 102.960
-> $$
->
-> Explanation: the bond trades above par because the 5% coupon is high relative to the spot rates used to discount the cash flows.
-
-> [!question] SPOT PRICE THEN YIELD-TO-MATURITY
-> Problem: A 5-year annual-pay bond has a 2.5% coupon. The annual spot rates are 3.0%, 2.8%, 2.6%, 2.4%, and 2.2%. Price the bond, then say what must be true about its yield-to-maturity relative to the coupon.
->
-> ---
->
-> Solution:
->
-> First discount each cash flow using its own spot rate:
->
-> $$
-> PV = \frac{2.5}{1.03} + \frac{2.5}{1.028^2} + \frac{2.5}{1.026^3} + \frac{2.5}{1.024^4} + \frac{102.5}{1.022^5}
-> $$
->
-> $$
-> PV \approx 101.34
-> $$
->
-> Because the bond is above par, yield-to-maturity must sit below the coupon rate. The curriculum result is about **2.22%**, which is below **2.5%**.
->
-> Explanation: do not solve yield-to-maturity before you read the price. Price above par already tells you the yield-to-maturity must be below the coupon.
-
-#### Spot Rates Versus Yield-to-Maturity
-
-Yield-to-maturity is one single internal rate of return that equates the bond price with all future cash flows.
-
-What is internal rate of return: the one discount rate that makes the present value of cash flows equal the current price.
-
-Why is yield-to-maturity used: it summarizes the bond into one number, which is convenient for quoting and comparison.
-
-But spot-rate pricing is more precise. In the 5% coupon example above, the same price of **102.960** can be summarized by a yield-to-maturity of **3.935%**, but the individual cash flows are not actually discounted at 3.935% in no-arbitrage pricing. The first coupon is discounted at 2%, the second at 3%, and the final cash flow at 4%.
-
-> [!tip] HAMMER THIS INTO YOUR HEAD
-> Yield-to-maturity is a summary number.
->
-> Spot rates are the actual discount rates by date.
->
-> The same bond price can be produced by both approaches, but only spot-rate pricing shows the true no-arbitrage value of each dated cash flow.
-
-#### Why Different Spot Curves Can Give the Same Bond Price
-
-A bond price is especially sensitive to the spot rates attached to its largest cash flows. For a plain fixed-rate bond, the biggest cash flow is usually the final coupon plus principal.
-
-That is why two very different curve shapes can produce the same price if the maturity-date spot rate is very similar. The source gives a Canadian example where an upward-sloping curve and a downward-sloping curve both price a 3-year 0.50% coupon bond at **99.126**, because the 3-year spot rates are almost the same: **0.7977%** in one case and **0.7951%** in the other.
-
-#### 2. Par Rates
-
-A par rate is the yield-to-maturity and coupon rate that would make a bond trade exactly at par value.
-
-What is par value: the face value of the bond, usually 100 in these examples.
-
-What is coupon rate: the annual coupon as a percentage of face value.
-
-Why is par used: par removes the distortion from actual bonds trading at a premium or discount, so the curve is cleaner for comparison.
-
-Par rates are derived from spot rates up to and including the bond's maturity.
-
-> [!tip] HOW TO SOLVE A PAR-RATE QUESTION
-> 1. Set the bond price equal to **100**.
-> 2. Treat the coupon payment **PMT** as the unknown.
-> 3. Discount each coupon using the spot rates up to maturity.
-> 4. Solve for **PMT**.
-> 5. Divide by **100** to convert the coupon payment into the par rate.
->
-> The whole question is really asking: **what coupon makes this hypothetical bond trade exactly at par?**
-
-The par-rate equation sets price equal to 100 and solves for the coupon payment:
-
-$$
-100 = \frac{PMT}{(1 + Z_1)^1} + \frac{PMT}{(1 + Z_2)^2} + \cdots + \frac{PMT + 100}{(1 + Z_N)^N}
-$$
-
-The coupon payment divided by 100 is the par rate per period.
-
-Between coupon dates, use the flat price equal to 100, not the full price.
-
-Why flat price and not full price: the curriculum is forcing the clean bond price to equal par. Accrued interest is not the point of the exercise here.
-
-> [!info] WHY THE U.S. TREASURY CURVE IS A PAR CURVE
-> The widely quoted U.S. Treasury yield curve published by the U.S. Department of the Treasury is made of par rates, not raw yields from one random old bond at each maturity.
->
-> That matters because actual bonds can be messy. One 10-year Treasury might be newly issued and very liquid. Another might be old, less liquid, and priced far from par. A par curve creates a cleaner benchmark by asking: "What coupon would make a hypothetical government bond trade at exactly 100?"
-
-> [!question] PAR RATE FROM SPOT RATES
-> Problem: Spot rates are 5.263% for 1 year and 5.616% for 2 years. Calculate the 2-year annual par rate.
->
-> ---
->
-> Solution:
->
-> $$
-> 100 = \frac{PMT}{1.05263} + \frac{PMT + 100}{(1.05616)^2}
-> $$
->
-> $$
-> PMT = 5.606
-> $$
->
-> Explanation: because the face value is 100, a coupon payment of **5.606** means a par rate of **5.606%**.
-
-> [!question] 3-YEAR PAR RATE MECHANICS
-> Problem: Spot rates are 3.0000%, 2.8000%, and 2.6000%. Calculate the 3-year annual par rate.
->
-> ---
->
-> Solution:
->
-> Set price equal to 100 and solve for coupon payment:
->
-> $$
-> 100 = \frac{PMT}{1.03} + \frac{PMT}{1.028^2} + \frac{PMT + 100}{1.026^3}
-> $$
->
-> $$
-> PMT = 2.607
-> $$
->
-> Since face value is 100, the par rate is **2.607%**.
->
-> Explanation: keep repeating the reflex to yourself: solve for the coupon payment first, then translate that payment into the par rate.
-
-#### Par Rate Versus Yield-to-Maturity
-
-1. A bond's yield-to-maturity is the internal rate of return based on its actual market price.
-2. A par rate is the yield-to-maturity that a hypothetical bond would have if its price were exactly 100.
-3. For a bond priced at par, coupon rate = yield-to-maturity = par rate.
-4. For an actual premium or discount bond, yield-to-maturity is not necessarily a par rate.
-
-#### 3. Forward Rates
-
-An implied forward rate is a future-period rate inferred from today's spot rates.
-
-What is implied: the rate is not directly observed as a spot rate today; it is backed out from today's curve.
-
-What is future-period rate: it applies to a loan or investment period that starts later, not today.
-
-Why is it important: it is the breakeven reinvestment rate that makes two maturity strategies equally attractive under no-arbitrage.
-
-The naming convention is **AyBy**:
-
-- **3y1y** means a 1-year rate beginning 3 years from today.
-- **2y3y** means a 3-year rate beginning 2 years from today.
-- The first number tells you when the forward period starts.
-- The second number tells you how long that forward period lasts.
-
-> [!tip] HAMMER THIS INTO YOUR HEAD
-> For **2y3y**, the forward starts after 2 years and ends after 5 years.
->
-> So you need the **2-year spot rate** and the **5-year spot rate**.
->
-> The ending maturity is always: start date + forward tenor.
-
-> [!tip] HOW TO SOLVE A FORWARD-RATE LABEL
-> 1. Decode the label first.
-> 2. The first number tells you **when it starts**.
-> 3. The second number tells you **how long it lasts**.
-> 4. End year = start year + tenor.
-> 5. Pull the start-maturity spot rate and the end-maturity spot rate.
-> 6. Then use the no-arbitrage equation.
->
-> If you skip the label-decoding step, the algebra looks harder than it is.
-
-#### Forward Rates from Spot Rates
-
-The no-arbitrage relationship is:
-
-$$
-(1 + Z_A)^A \times (1 + IFR_{A,B-A})^{B-A} = (1 + Z_B)^B
-$$
-
-Notation in simple language:
-
-- \(Z_A\): spot rate to the start of the forward period.
-- \(Z_B\): spot rate to the end of the forward period.
-- \(IFR_{A,B-A}\): implied forward rate starting at time A and lasting B minus A periods.
-- \(A\): number of years from today to the start of the forward period.
-- \(B\): number of years from today to the end of the forward period.
-
-> [!question] FORWARD RATE FROM SPOT RATES
-> Problem: The 3-year spot rate is 3.65% and the 4-year spot rate is 4.18%. Calculate the 3y1y implied forward rate.
->
-> ---
->
-> Solution:
->
-> $$
-> (1 + 0.0365)^3 \times (1 + IFR_{3,1})^1 = (1 + 0.0418)^4
-> $$
->
-> $$
-> IFR_{3,1} = 5.79\%
-> $$
->
-> Explanation: the extra fourth year must earn **5.79%** for an investor to be indifferent between locking in the 4-year zero-coupon bond and buying the 3-year zero-coupon bond then reinvesting for one more year.
-
-> [!question] LABEL FIRST, ALGEBRA SECOND
-> Problem: Spot rates are 2.0% for 2 years and 2.4% for 5 years. Find the implied forward rate **2y3y**.
->
-> ---
->
-> Solution:
->
-> First decode the label. **2y3y** means a 3-year rate starting in year 2, so the end date is year **5**.
->
-> That means use the 2-year and 5-year spot rates:
->
-> $$
-> (1 + 0.02)^2 \times (1 + IFR_{2,3})^3 = (1 + 0.024)^5
-> $$
->
-> Solving gives:
->
-> $$
-> IFR_{2,3} \approx 2.667\%
-> $$
->
-> Explanation: the hardest part was not the algebra. It was reading the label correctly.
-
-#### The Economic Meaning of a Forward Rate
-
-A forward rate is the breakeven reinvestment rate.
-
-Suppose an investor has a 5-year horizon:
-
-1. Buy a 3-year government bond now, then reinvest for 2 years later.
-2. Buy a 5-year government bond now.
-
-If the 3-year spot rate is **3%** and the 5-year spot rate is **4%**, the implied 3y2y forward rate is:
-
-$$
-(1 + 0.03)^3 \times (1 + IFR_{3,2})^2 = (1 + 0.04)^5
-$$
-
-$$
-IFR_{3,2} = 5.52\%
-$$
-
-If the investor expects the actual 2-year rate in 3 years to be above **5.52%**, the 3-year bond plus reinvestment is better. If she expects it to be below **5.52%**, the 5-year bond is better.
-
-> [!info] REAL-WORLD EVENT: 2006-2007 YIELD CURVE INVERSION
-> Before the 2008 global financial crisis, the U.S. yield curve inverted. Short-term yields rose above long-term yields because the Federal Reserve had tightened policy while the market increasingly doubted long-run growth and inflation.
->
-> This is exactly the kind of world where forward rates can fall below spot rates. The curve is quietly saying: "The market thinks future short rates may be lower than today's short rates."
->
-> The spicy part is that many people ignored it because credit markets still looked calm. The curve was not a crystal ball, but it was an early warning signal that the market's future-rate story had turned dark.
-
-#### Spot Rates from Forward Rates
-
-Forward rates can also be multiplied together to recover spot rates. The spot rate is the geometric average of the forward rates up to that maturity.
-
-Read that slowly. A multi-year spot rate is just one clean annual rate that reproduces the same compound growth you would get by walking year by year through the forward curve.
-
-So do not memorize “geometric average” like a dead phrase. Think: **one single annual rate that matches the whole chained path**.
-
-For one-year forward rates:
-
-$$
-(1 + Z_N)^N = (1 + 0y1y)(1 + 1y1y)(1 + 2y1y)\cdots(1 + (N-1)y1y)
-$$
-
-Then solve for \(Z_N\).
-
-> [!question] SPOT RATE FROM FORWARD RATES
-> Problem: The forward rates are 0y1y = 1.88%, 1y1y = 2.77%, 2y1y = 3.54%, and 3y1y = 4.12%. Calculate the 4-year spot rate.
->
-> ---
->
-> Solution:
->
-> $$
-> (1 + Z_4)^4 = 1.0188 \times 1.0277 \times 1.0354 \times 1.0412
-> $$
->
-> $$
-> Z_4 = 3.0741\%
-> $$
->
-> Explanation: the 4-year spot rate is the single annual rate that gives the same compound growth as walking through all four one-year forward rates.
-
-> [!tip] HOW TO SOLVE SPOT FROM FORWARDS
-> 1. Multiply the full chain from today to the target maturity.
-> 2. That gives you total growth over the whole horizon.
-> 3. Then take the Nth root to convert that total growth into one constant annual spot rate.
->
-> You are compressing a path into one number.
-
-#### Pricing a Bond Using Forward Rates
-
-You can price a bond directly from forward rates because forward rates compound into spot discount factors.
-
-> [!tip] HOW TO SOLVE FORWARD-RATE BOND PRICING
-> 1. Write each cash flow by year.
-> 2. For each cash flow, multiply the full forward path from today to that year.
-> 3. Use that full compounded path as the denominator.
-> 4. Add the discounted cash flows.
->
-> The trap is using only the last forward rate for a distant cash flow. That is wrong because the cash flow has to travel all the way back to today.
-
-If a 4-year bond pays a 3.75% annual coupon and the forward curve is:
-
-- 0y1y = 1.88%
-- 1y1y = 2.77%
-- 2y1y = 3.54%
-- 3y1y = 4.12%
-
-Then:
-
-$$
-PV = \frac{3.75}{1.0188} + \frac{3.75}{1.0188 \times 1.0277} + \frac{3.75}{1.0188 \times 1.0277 \times 1.0354} + \frac{103.75}{1.0188 \times 1.0277 \times 1.0354 \times 1.0412}
-$$
-
-$$
-PV = 102.637
-$$
-
-The same price comes from first converting those forward rates into spot rates and then discounting by spot rates. Spot and forward pricing must agree, because they are two ways of writing the same no-arbitrage discount factors.
-
-That is an exam-quality line: **spot pricing and forward pricing must agree**. If they do not, you made an arithmetic mistake or a label-reading mistake.
-
-> [!question] BOND PRICING WITH FORWARD RATES
-> Problem: Forward rates are 0y1y = 1.88%, 1y1y = 2.77%, 2y1y = 3.54%, and 3y1y = 4.12%. Price a 4-year bond with a 3.75% annual coupon and par value 100.
->
-> ---
->
-> Solution:
->
-> Discount each cash flow by the full path to that date:
->
-> $$
-> PV = \frac{3.75}{1.0188} + \frac{3.75}{1.0188 \times 1.0277} + \frac{3.75}{1.0188 \times 1.0277 \times 1.0354} + \frac{103.75}{1.0188 \times 1.0277 \times 1.0354 \times 1.0412}
-> $$
->
-> $$
-> PV = 102.637
-> $$
->
-> Explanation: the year-4 cash flow is not discounted by only **3y1y**. It is discounted by the whole path from today to year 4.
-
-> [!warning] COMMON FORWARD-RATE MISTAKE
-> Do not use only the forward rate for the cash-flow date.
->
-> The year-3 cash flow is discounted by the whole path from today to year 3:
->
-> $$
-> 0y1y \times 1y1y \times 2y1y
-> $$
->
-> You are not teleporting to year 3. You are discounting all the way from year 3 back to today.
-
-#### 4. Comparing Spot, Par, and Forward Curves
-
-Because par and forward rates are derived from spot rates, their shapes are connected.
-
-| Spot curve shape | Par curve | Forward curve |
-|---|---|---|
-| Upward sloping and positive | Below the spot curve | Above the spot curve |
-| Upward sloping and negative | Can sit above the spot curve | Above the spot curve as the curve moves toward zero |
-| Flat | Equal to the spot curve | Equal to the spot curve |
-| Downward sloping or inverted | Above the spot curve | Below the spot curve |
-
-> [!tip] EXAM MAP FOR CURVE SHAPES
-> - Positive upward-sloping spot curve: **par below spot, forward above spot**.
-> - Flat spot curve: **all three curves are equal**.
-> - Inverted spot curve: **par above spot, forward below spot**.
-> - Negative but upward-sloping spot curve: do not blindly reuse the positive-rate rule. Forward can still sit above spot, and par can sit above spot.
-
-#### Upward-Sloping Spot Curve
-
-If spot rates are positive and upward sloping:
-
-1. The par curve is close to the spot curve but usually slightly below it.
-2. The gap between par and spot rates tends to be larger at longer maturities.
-3. The forward curve is above the spot curve.
-
-Why par is below spot: the bond's earlier coupons are discounted at lower short-term spot rates, which increases their present value. To make the whole bond price exactly 100, the coupon rate does not need to be as high as the final long-term spot rate.
-
-Why forward is above spot: if the average rate from today to a longer maturity is rising, the marginal future rates must be higher than the current average.
-
-#### Flat Spot Curve
-
-If the spot curve is flat:
-
-1. Spot rates are the same at all maturities.
-2. Par rates equal spot rates.
-3. Forward rates equal spot rates.
-
-If every maturity has a 2.50% spot rate, a government bond with a 2.50% coupon trades at par, and the implied future rates are also 2.50%.
-
-#### Downward-Sloping or Inverted Spot Curve
-
-If the spot curve slopes downward:
-
-1. Short-term spot rates are higher than long-term spot rates.
-2. The par curve is close to the spot curve but generally above it.
-3. The forward curve is below the spot curve.
-
-Why forward is below spot: if the average rate falls as maturity extends, the marginal future rates must be lower than today's short rates.
-
-> [!info] REAL-WORLD EVENT: THE "BOND MARKET IS SCREAMING" MOMENTS
-> Yield-curve inversions are watched because they have often appeared before recessions. The famous cases are not because the curve magically predicts the future. The logic is simpler: when investors believe central banks will cut rates later, long-term yields can fall below short-term yields.
->
-> In 2019, parts of the U.S. Treasury curve inverted while markets debated slowing growth and trade-war pressure. In 2022, the curve inverted again as the Federal Reserve raised short rates aggressively to fight inflation while investors priced in the possibility that future growth would weaken.
->
-> For this module, the exam point is not the recession forecast. The exam point is mechanical: inverted spot curve means forward curve below spot curve.
-
-#### Negative Spot Rates
-
-Negative rates do not break the math. The same formulas work.
-
-A bond can have a negative spot rate when investors are willing to accept a small guaranteed loss in exchange for safety, liquidity, regulation-friendly collateral, or currency exposure. Germany and Switzerland both had negative sovereign spot rates after the global financial crisis era as central banks pushed policy rates extremely low.
-
-The source gives Switzerland spot rates from **-0.7882%** at 1 year to **-0.1216%** at 10 years. That curve is upward sloping because rates become less negative as maturity increases. The 9y1y forward rate is positive:
-
-$$
-(1 - 0.001945)^9 \times (1 + IFR_{9,1})^1 = (1 - 0.001216)^{10}
-$$
-
-$$
-IFR_{9,1} = 0.537\%
-$$
-
-> [!tip] HAMMER THIS INTO YOUR HEAD
-> "Negative" and "upward sloping" are separate ideas.
->
-> A curve can be below zero and still slope upward if rates move from very negative to less negative.
->
-> In that case, forward rates can be positive even though spot rates are still negative.
-
-There is one par-curve wrinkle here: if spot rates are negative and upward sloping, the par curve can sit **above** the spot curve. The practice problem tests this using Germany and Switzerland. Do not blindly memorize "upward sloping means par below spot" without checking whether the spot rates are positive or negative.
-
-> [!info] REAL-WORLD EVENT: SWISS NEGATIVE RATES
-> Switzerland became a textbook example of negative yields because global investors treated Swiss government debt and the Swiss franc as safe-haven assets. At times, investors effectively paid Switzerland for the privilege of storing money there.
->
-> This feels insane until you compare it with a crisis. If a fund manager fears bank stress, currency instability, or a violent market selloff, losing a small known amount on Swiss government paper may look better than taking a large unknown loss somewhere else.
->
-> That is the real-world intuition behind negative rates: safety and liquidity can become so valuable that yield goes below zero.
-
-#### Quick Formula Sheet
+> - **Price a 3-year 5% bond with 2%, 3%, 4% spot rates.** Match each cash flow to its own date: $5/1.02 + 5/1.03^2 + 105/1.04^3 = 102.960$.
+> - **If price is 102.960 and coupon is 5%, what must be true about yield-to-maturity?** Above par means yield-to-maturity is below coupon.
+> - **Spot rates 5.263% and 5.616%: 2-year par rate?** Set price to 100, solve for $PMT = 5.606$, so par rate is **5.606%**.
+> - **3-year spot 3.65%, 4-year spot 4.18%: 3y1y?** Use the 3-year and 4-year spot rates. Answer: **5.79%**.
+> - **If the label is 2y3y, what maturities do you use?** Start in year 2, end in year 5, so use the **2-year and 5-year spot rates**.
+> - **Forward rates 0y1y 1.88%, 1y1y 2.77%, 2y1y 3.54%, 3y1y 4.12%: 4-year spot rate?** Multiply the path, then take the fourth root. Answer: **3.0741%**.
+> - **Price a 4-year 3.75% bond from those forward rates. What is the trap?** Discount by the whole path to each date, not only the last forward rate. Answer: **102.637**.
+> - Big gotcha: each cash flow gets its own spot rate.
+> - Big gotcha: par pricing uses **price = 100**. Between coupon dates, use **flat price = 100**.
+> - Big gotcha: short-term discount-rate quotes must be converted to bond-equivalent yields before you mix them into the curve.
+> - Big gotcha: positive upward spot curve means **par below spot, forward above spot**.
+> - Big gotcha: negative and upward sloping can coexist, and forward rates can still be positive.
 
 > [!ABSTRACT] MEMORISE
-> Spot-rate bond price:
->
-> $$
-> PV = \frac{PMT}{(1 + Z_1)^1} + \frac{PMT}{(1 + Z_2)^2} + \cdots + \frac{PMT + FV}{(1 + Z_N)^N}
-> $$
->
-> Par-rate equation:
->
-> $$
-> 100 = \frac{PMT}{(1 + Z_1)^1} + \frac{PMT}{(1 + Z_2)^2} + \cdots + \frac{PMT + 100}{(1 + Z_N)^N}
-> $$
->
-> Forward-rate no-arbitrage equation:
->
-> $$
-> (1 + Z_A)^A \times (1 + IFR_{A,B-A})^{B-A} = (1 + Z_B)^B
-> $$
->
-> Spot rate from one-year forward rates:
->
-> $$
-> (1 + Z_N)^N = (1 + 0y1y)(1 + 1y1y)(1 + 2y1y)\cdots(1 + (N-1)y1y)
-> $$
+> - Spot rates are the no-arbitrage discounting truth by date.
+> - Par rates and forward rates are derived from spot rates.
+> - Spot pricing and forward pricing must agree.
+> - If you decode the cash-flow story first, the formulas become mechanical.
 
-#### Quick Checks Before the Exam
-
-> [!tip] QUICK CHECKS
-> 1. If you are pricing with spot rates, each cash flow gets its own spot rate.
-> 2. If you are solving a par rate, set price equal to 100 and solve for the coupon payment.
-> 3. If the forward rate is 2y3y, use the 2-year and 5-year spot rates.
-> 4. If the spot curve is upward sloping and positive, forward is above spot and par is below spot.
-> 5. If the spot curve is flat, all three curves collapse into the same line.
-> 6. If the spot curve is inverted, forward is below spot and par is above spot.
-> 7. If rates are negative, do not panic. Use the same formulas. A negative upward-sloping curve can still produce positive forward rates, and the par curve can sit above the spot curve.
-
-#### Final Mental Model
-
-Spot rates are the discounting truth. Par rates are the coupon rates that would make clean hypothetical bonds trade at 100. Forward rates are the future reinvestment rates implied by today's spot curve.
-
-Once you know the spot curve, the other two curves are not guesses. They are consequences.
+1. Earlier bond math often used one discount rate, like yield-to-maturity, but this module says that is only a shortcut.
+2. The term structure of interest rates is the relationship between interest rates and time-to-maturity.
+3. The cleanest version of the term structure comes from default-risk-free zero-coupon government bonds.
+4. What is a spot rate: the discount rate for one cash flow on one maturity date. Why is it used: one cash flow gives the cleanest no-arbitrage discount rate for that date.
+5. The spot curve is the collection of spot rates across maturities, and it is also called the zero curve or strip curve.
+6. Spot rates matter because they let you price each cash flow with the rate appropriate to its own date instead of forcing one summary rate on every cash flow.
+7. Not every yield difference comes from maturity alone; credit, currency, liquidity, tax treatment, periodicity, and maturity can all move yields.
+8. In theory, the ideal curve uses default-risk-free zero-coupon government bonds.
+9. In practice, analysts usually use recently issued, liquid government coupon bonds, avoid stale seasoned bonds where possible, and fill missing maturities with interpolation.
+10. Short-term government instruments may be quoted on a discount-rate basis, so they must be converted to bond-equivalent yields before being compared with coupon bonds.
+11. All yields on the curve must use a consistent periodicity or compounding convention before you compare them.
+12. Spot-rate pricing is no-arbitrage pricing because each cash flow is discounted at the market rate for its own date.
+13. For an annual-pay bond, write each cash flow by year, match it to the spot rate for that year, discount separately, and add the present values.
+14. If a bond is riskier than the government curve, a spread must be added to the spot rates.
+15. Yield-to-maturity is still useful, but it is only one internal-rate-of-return summary number that reproduces the total bond price.
+16. Spot-rate pricing is more precise because the first coupon, second coupon, and principal repayment usually deserve different discount rates.
+17. Two very different curve shapes can still give the same bond price if the spot rates attached to the largest cash flows, especially the final one, are similar enough.
+18. A par rate is the yield-to-maturity and coupon rate that would make a hypothetical bond trade exactly at par value.
+19. What is par used for: it strips away the noise from actual premium and discount bonds and creates a cleaner benchmark curve.
+20. To solve a par-rate question, set price equal to 100, treat the coupon payment as the unknown, discount all coupon dates with the spot rates up to maturity, solve for the coupon payment, and divide by 100.
+21. Between coupon dates, the curriculum uses flat price equal to 100, not full price, for the par-rate setup.
+22. For a bond priced at par, coupon rate equals yield-to-maturity equals par rate; for a premium or discount bond, that identity does not hold.
+23. An implied forward rate is a future-period rate backed out from today’s spot rates.
+24. What is the economic meaning of a forward rate: it is the breakeven reinvestment rate that makes two maturity strategies equally attractive under no arbitrage.
+25. The label format is mechanical: in 2y3y, the forward starts after 2 years and lasts 3 years, so the end date is year 5.
+26. To solve a forward-rate label, decode start year, add tenor to get end year, pull the start-maturity and end-maturity spot rates, and then use the forward-rate equation.
+27. Forward rates from spot rates come from the no-arbitrage relation between shorter and longer zero-coupon investment paths.
+28. A spot rate can also be recovered from one-year forward rates by multiplying the whole forward path and then taking the geometric-average root.
+29. Do not memorize "geometric average" like dead jargon; think "one constant annual rate that matches the whole chained path."
+30. You can price a bond directly from forward rates because the forward path compounds into the same spot discount factor path.
+31. To price with forward rates, discount each cash flow by the full chain from today to that cash-flow date, not just by the last forward rate in the chain.
+32. Spot pricing and forward pricing must give the same bond value if your arithmetic and label decoding are correct.
+33. The curriculum compares spot, par, and forward curves because their shapes are mechanically connected.
+34. If the spot curve is positive and upward sloping, the par curve will usually sit below the spot curve and the forward curve will sit above it.
+35. Why par is below spot in that case: earlier coupons are discounted at lower short-term rates, so the bond does not need as high a coupon as the final long spot rate to trade at par.
+36. Why forward is above spot in that case: if the average rate rises with maturity, the marginal future rates must be higher than the current average.
+37. If the spot curve is flat, spot, par, and forward all collapse into the same line.
+38. If the spot curve is downward sloping or inverted, the par curve will usually sit above the spot curve and the forward curve below it.
+39. Forward curves below spot in an inverted structure simply mean the market-implied future short rates are lower than today’s shorter rates.
+40. Negative spot rates do not break the math; the same formulas still work.
+41. A curve can be negative and still upward sloping if rates move from very negative to less negative as maturity extends.
+42. In that case, forward rates can even become positive, and the par curve can sit above the spot curve, so you cannot blindly reuse the positive-rate rule.
+43. The practical exam map is: spot rates discount one dated cash flow, par rates make a whole bond trade at 100, and forward rates price a future period hidden between two spot rates.
+44. The first solving reflex should be "what cash flow story am I being asked to price?" not "which formula do I panic-memorize?"
+45. If the question is spot-rate pricing, match each cash flow to its own date.
+46. If the question is par-rate calculation, force price to 100 and solve for the coupon.
+47. If the question is forward-rate calculation, decode the forward label before touching the algebra.
+48. If the question is spot from forward rates, multiply the path and compress it into one annual rate.
+49. The final exam reflex is simple: start with the cash-flow story, then the date structure, then the formula, because in this module the formulas are only shorthand for the cash-flow logic.
