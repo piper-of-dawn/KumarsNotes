@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/EQUITY/02 Security Market Indexes.md",
+                "file": "CFA Notes/DERIVATIVES/07 Pricing and Valuation of Interest Rates and Other Swaps.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "02 Security Market Indexes"
+              "title": "07 Pricing and Valuation of Interest Rates and Other Swaps"
             }
           }
         ],
@@ -1007,6 +1007,16 @@
             "id": "4272bde60b62ce6a",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "4153f2c687b35fd5",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1014,7 +1024,7 @@
             }
           }
         ],
-        "currentTab": 88
+        "currentTab": 89
       }
     ],
     "direction": "horizontal",
@@ -1034,6 +1044,15 @@
   },
   "active": "853149fbd9981ade",
   "lastOpenFiles": [
+    "CFA Notes/DERIVATIVES/09 Option Replication Using Put Call Parity.md",
+    "CFA Notes/DERIVATIVES/02 Forward Commitment and Contingent Claim Features and Instruments.md",
+    "CFA Notes/DERIVATIVES/07 Pricing and Valuation of Interest Rates and Other Swaps.md",
+    "CFA Notes/ALTERNATIVE INVESTMENTS/PRIVATE EQUITY.md",
+    "CFA Notes/ALTERNATIVE INVESTMENTS.md",
+    "CFA Notes/FIXED INCOME/11 Yield-Based Bond Duration Measures and Properties.md",
+    "CFA Notes/FIXED INCOME/12 - Yield-Based Bond Convexity and Portfolio Properties.md",
+    "CFA Notes/EQUITY/02 Security Market Indexes.md",
+    "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
     "CFA Notes/EQUITY/08 EQUITY VALUATION CONCEPT AND BASIC TOOLS.md",
     "CFA Notes/CORPORATE ISSUERS/23 LIQUIDITY MEASURES AND MANAGEMENT.md",
     "CFA Notes/CORPORATE ISSUERS/25-2-capital-structure-theories.md",
@@ -1051,15 +1070,6 @@
     "CFA Notes/ETHICS/STANDARD 7 - RESPONSIBILITIES AS A CFA INSTITUTE MEMBER OR CFA CANDIDATE.md",
     "CFA Notes/ETHICS/STANDARD 5 - INVESTMENT ANALYSIS RECOMMENDATIONS AND ACTIONS.md",
     "CFA Notes/ETHICS/STANDARD 2 - INTEGRITY OF CAPITAL MARKETS.md",
-    "CFA Notes/FSA/11-financial-analysis-techniques.md",
-    "CFA Notes/FSA/03-analyzing-balance-sheets.md",
-    "CFA Notes/EQUITY/05-company-analysis-past-and-present.md",
-    "CFA Notes/EQUITY/07-company-analysis-forecasting.md",
-    "CFA Notes/ALTERNATIVE INVESTMENTS/HEDGE FUNDS.md",
-    "CFA Notes/ALTERNATIVE INVESTMENTS/INTRODUCTION TO DIGITAL ASSETS.md",
-    "CFA Notes/ETHICS/STANDARD 4 - DUTIES TO EMPLOYERS.md",
-    "CFA Notes/EQUITY/04-overview-of-equity-securities.md",
-    "CFA Notes/QUANTITATIVE METHODS/Introduction to Big Data Techniques.md",
     "CFA Notes/PORTFOLIO MANAGEMENT",
     "CFA Notes/ETHICS",
     "CFA Notes/DERIVATIVES",
