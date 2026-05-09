@@ -1,13 +1,3 @@
-### INTRODUCTION TO RISK MANAGEMENT
-> Source module: `/home/karma/CFAPractice/mcq/quiz/AI/PDF/portfolio management/module_06_introduction_to_risk_management.txt`
-
-###### LOS 6.a: Define risk management.
-###### LOS 6.b: Describe features of a risk management framework.
-###### LOS 6.c: Define risk governance and describe elements of effective risk governance.
-###### LOS 6.d: Explain how risk tolerance affects risk management.
-###### LOS 6.e: Describe risk budgeting and its role in risk governance.
-###### LOS 6.f: Identify financial and non-financial sources of risk and describe how they may interact.
-###### LOS 6.g: Describe methods for measuring and modifying risk exposures and factors to consider in choosing among the methods.
 
 > [!tip] LOOK AT THESE BEFORE EXAM
 > - Risk is exposure to uncertainty.
