@@ -11,6 +11,8 @@
 > - Conditional value at risk is the average loss beyond the value-at-risk point.
 > - Scenario analysis and stress testing exist because models can miss ugly reality.
 > - Risk can be modified by avoidance, acceptance or self-insurance, transfer, and shifting.
+> - Both endowment bias and regret-aversion bias often result in indecision or inertia—a typical outcome of status quo bias, in which people prefer to not make changes even when changes are warranted.
+> - The most common consequence of mental accounting is neglecting opportunities to reduce risk by combining assets with low correlations, because each account’s asset allocation is examined discretely. Offsetting positions across accounts, or an overall inefficient allocation with respect to risk, can lead to suboptimal aggregate performance.
 
 > [!abstract] MEMORISE
 > - Risk management = define desired risk, measure actual risk, and adjust actual risk toward desired risk.
