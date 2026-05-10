@@ -1,6 +1,3 @@
-### MODULE 15: Credit Analysis for Government Issuers
-
-> Source module: `/home/karma/CFAPractice/mcq/quiz/AI/PDF/FixedIncome/module_15_credit_analysis_for_government_issuers.txt`
 
 > [!abstract] MEMORISE
 > - Government credit = ability to tax + willingness to pay.
