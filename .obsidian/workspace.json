@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
+                "file": "CFA Notes/ECONOMICS/Introduction to Geopolitics.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "10 Interest Rate Risk and Return"
+              "title": "Introduction to Geopolitics"
             }
           },
           {
@@ -28,17 +28,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/FIXED INCOME/17 Fixed Income Securitization.md",
+                "file": "CFA Notes/ECONOMICS/International Trade.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "17 Fixed Income Securitization"
+              "title": "International Trade"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -1037,6 +1036,46 @@
             "id": "3f92a6f42b086e87",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "87b5365dfff2570c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "72f50805325c1008",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "b72f4d03fcd9b309",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "0a6c0663f62ac65a",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1044,7 +1083,7 @@
             }
           }
         ],
-        "currentTab": 91
+        "currentTab": 95
       }
     ],
     "direction": "horizontal",
@@ -1062,12 +1101,17 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "853149fbd9981ade",
+  "active": "ab61447ddfebe320",
   "lastOpenFiles": [
-    "CFA Notes/FIXED INCOME/18-asset-backed-security-abs-instrument-and-market-features.md",
-    "CFA Notes/FIXED INCOME/17 Fixed Income Securitization.md",
-    "CFA Notes/EQUITY/07-company-analysis-forecasting.md",
     "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
+    "CFA Notes/ECONOMICS/Introduction to Geopolitics.md",
+    "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
+    "CFA Notes/ECONOMICS/International Trade.md",
+    "CFA Notes/FSA/11-financial-analysis-techniques.md",
+    "CFA Notes/ETHICS/GIPS.md",
+    "CFA Notes/FIXED INCOME/17 Fixed Income Securitization.md",
+    "CFA Notes/FIXED INCOME/18-asset-backed-security-abs-instrument-and-market-features.md",
+    "CFA Notes/EQUITY/07-company-analysis-forecasting.md",
     "CFA Notes/ETHICS/STANDARD 2 - INTEGRITY OF CAPITAL MARKETS.md",
     "CFA Notes/ETHICS/STANDARD 3 - DUTIES TO CLIENTS.md",
     "CFA Notes/ETHICS/STANDARD 4 - DUTIES TO EMPLOYERS.md",
@@ -1085,11 +1129,6 @@
     "CFA Notes/FSA/06 Analysis of Inventories.md",
     "CFA Notes/FSA/03-analyzing-balance-sheets.md",
     "CFA Notes/FSA/2 - Analysing Income Statements.md",
-    "CFA Notes/FSA/01 - Introduction to Financial Statement Analysis.md",
-    "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
-    "CFA Notes/PORTFOLIO MANAGEMENT/Behavioral Biases of Individuals.md",
-    "CFA Notes/FSA/10 - Financial Reporting Quality.md",
-    "CFA Notes/AGENT.md",
     "CFA Notes/PORTFOLIO MANAGEMENT",
     "CFA Notes/ETHICS",
     "CFA Notes/DERIVATIVES",
