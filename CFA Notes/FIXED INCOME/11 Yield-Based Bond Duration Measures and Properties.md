@@ -2,7 +2,7 @@
 > - Duration is the bond's interest-rate sensitivity meter. It tells you how hard price gets hit when yield moves.
 > - Macaulay duration = present-value-weighted average time to promised cash flows.
 > - Modified duration = approximate percentage price sensitivity to a change in the bond's own yield-to-maturity.
-> - Money duration and price value of a basis point translate that sensitivity into currency moves. ==**IT IS ALWAYS CALCULATED ON FULL PRICE AND NEVER ON FLAT PRICE**==
+> - Money duration and price value of a basis point translate that sensitivity into currency moves.
 > - ==Long maturity, low coupon, low yield = higher duration and higher interest-rate risk.==
 > - **Macaulay duration is 10.2 semiannual periods and annual yield is 4%. Find modified duration and annualized modified duration.** First slow down: semiannual means split the 4% annual yield into 2% per period. Modified duration is Macaulay duration divided by 1 plus the periodic yield, so 10.2 / 1.02 = 10 periods. Annualized modified duration is then 10 / 2 = 5 years.
 > - **Annualized modified duration is 6 and yield rises by 50 basis points. Estimate the percentage price change.** Convert basis points before touching the formula: 50 basis points = 0.005. Price change is -6 x 0.005 = -0.03, so the bond falls about 3%. The minus sign is the whole story: yield up, price down.

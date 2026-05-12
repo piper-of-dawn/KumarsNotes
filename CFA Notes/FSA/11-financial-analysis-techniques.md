@@ -65,12 +65,12 @@
 
 #### Solvency and Profitability Ratios
 
-1. Debt to Equity ratio = Total Debt / Total Shareholder Equity. All interest bearing instruments **except leases** are part of total debt. If question is silent, treat Preference shares as Total Shareholder Equity.
-2. Debt to Capital Ratio = Total Debt / (Total Debt + Total Shareholder Equity)
-3. Debt to Asset Ratio = Total Debt / Total Assets
-4. Debt to EBITDA Ratio = Total Debt / EBITDA
-5. Financial Leverage = Avg Total Assets / Avg Total Equity. *How much of shareholder equity has been used to finance the assets*
-6. Interest Coverage = EBIT / Interest Payments **(Always EBIT, not EBITDA,  not PBT, and not PAT)**. Suppose I earn (EBIT) 100 and I have to pay 10 as interest, I can cover interest 10 times. 
+8. Debt to Equity ratio = Total Debt / Total Shareholder Equity. All interest bearing instruments **except leases** are part of total debt. If question is silent, treat Preference shares as Total Shareholder Equity.
+9. Debt to Capital Ratio = Total Debt / (Total Debt + Total Shareholder Equity)
+10. Debt to Asset Ratio = Total Debt / Total Assets
+11. Debt to EBITDA Ratio = Total Debt / EBITDA
+12. Financial Leverage = Avg Total Assets / Avg Total Equity. *How much of shareholder equity has been used to finance the assets*
+13. Interest Coverage = EBIT / Interest Payments **(Always EBIT, not EBITDA,  not PBT, and not PAT)**. Suppose I earn (EBIT) 100 and I have to pay 10 as interest, I can cover interest 10 times. 
 
 > [!danger] DEBT ALWAYS MEANS TOTAL DEBT
 > 
@@ -92,7 +92,20 @@
 
 > [!WARNING] Remember
 > Any kind of margin is always calculated on Revenue
-
+14. Margins are basically common-size income statement items.  
+    CFA can ask this conceptually: return-on-sales ratios express income statement subtotals as a percentage of revenue. So gross margin, operating margin, pretax margin, and net margin are not random ratios; they are common-size income statement lines.  
+15. Operating margin: be careful with EBIT.  
+    Some analysts use EBIT as a shortcut for operating income, but strictly EBIT may include non-operating items such as dividends received or gains/losses on investments. So consistency matters.  
+16. Gross margin is competition-sensitive.  
+    Higher gross margin can mean pricing power, brand strength, quality, technology, or cost advantage. But competition limits pricing power, so gross margins are usually inversely related to competition.  
+17. Pretax margin is where leverage enters profitability.  
+    Pretax margin reflects interest expense, so it captures the effect of financial leverage. A fall in pretax margin with stable operating margin may mean debt cost increased, not that operations worsened.  
+18. Non-operating income can fake margin improvement.  
+    If pretax margin rises mainly because of non-operating income, ask whether the company deliberately changed its business focus and whether that income will continue.  
+19. Net margin should often be adjusted.  
+    Net income includes recurring and non-recurring components. For future profitability, CFA expects adjusted net income, not blindly reported net income.
+20. 6. ROE includes all equity unless specified.  
+    CFA says ROE measures return on equity capital including minority equity, preferred equity, and common equity. If they ask return on common equity, then subtract preferred dividends and divide by average common equity.
 ##### DUPONT ANALYSIS
 
 7. Dupont Analysis breaks ROE into its drivers.

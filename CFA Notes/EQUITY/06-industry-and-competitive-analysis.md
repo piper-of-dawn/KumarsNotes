@@ -19,7 +19,7 @@
 > 2. Identify investment opportunities, because sometimes the best insight is not “this company is great” but “this whole industry is getting structurally better or worse.”
 > 3. Estimate the industry **base rate**. In plain English, competition keeps pulling firms back toward the normal profitability of the industry unless they have a real edge.
 >
-3. Think of it like airlines versus luxury software. Even a brilliantly run airline still faces brutal fuel costs, fixed costs, and price wars. Meanwhile a decent software company with sticky customers can often earn much better returns. The ceiling is different before the management team even shows up.
+3. Think of it like airlines versus  software. Even a brilliantly run airline still faces brutal fuel costs, fixed costs, and price wars. Meanwhile a decent software company with sticky customers can often earn much better returns. The ceiling is different before the management team even shows up.
 4. During the dot-com bubble, many investors behaved as if “internet” itself was a business model and an industry analysis. It was neither. Companies with no moat were valued like kings simply because they were in a fashionable narrative. Right now it is happening for AI.
 5. The step-by-step flow is simple.
 

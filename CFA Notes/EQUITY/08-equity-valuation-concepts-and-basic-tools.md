@@ -2,20 +2,19 @@
 > [!tip] LOOK AT THESE BEFORE EXAM
 > Callout: These are the formulas, traps, and quick numericals that decide most fast exam questions.
 > 
-> 1. When you are comparing companies with different capital structures use EV / EBITDA instead of PE ratio.
-> 2. DDM forever. Intuition: stock value = all future dividends brought back to today. Remember it like: dividend by discount factor, then add forever. Formula: $$V_0 = \sum_{t=1}^{\infty}\frac{D_t}{(1+r)^t}$$ Example: dividend = 10 next year and discount rate = 0.01, so PV of that one dividend = 10 / 1.01 = 9.90.
+> $$V_0 = \sum_{t=1}^{\infty}\frac{D_t}{(1+r)^t}$$
 > 
-> 2. Finite holding period. Intuition: value today = dividends you collect + selling price later, both discounted. Remember it like: PV of each dividend plus PV of terminal price. Formula: $$V_0 = \sum_{t=1}^{n}\frac{D_t}{(1+r)^t} + \frac{P_n}{(1+r)^n}$$ Example: if dividend in Year 1 = 10, sale price in Year 1 = 100, and discount rate = 0.01, value = (10 + 100) / 1.01 = 108.91.
+> $$V_0 = \sum_{t=1}^{n}\frac{D_t}{(1+r)^t} + \frac{P_n}{(1+r)^n}$$
 > 
-> 3. Gordon growth. Intuition: next dividend grows forever at constant rate. Remember it like: next dividend divided by required return minus growth. Formula: $$V_0 = \frac{D_1}{r-g} = \frac{D_0(1+g)}{r-g}$$ Example: if next dividend = 10, required return = 0.10, and growth = 0.02, value = 10 / 0.08 = 125.
-> 4. A stock's most recent annual dividend is 3.70. Dividends are expected to grow at 5.4% indefinitely. If the required rate of return is 7.5%, the estimated intrinsic value is closest to: ==Here, first calculate the first dividend: 3.70 (1.054) = 3.89. Then discount an infinite GP - 3.89 / (0.075 - 0.054) = 185.7==. ==**DO NOT TAKE THE MOST RECENT DIVIDEND AND DISCOUNT IT UPFRONT**==
-> 5. Sustainable growth. Intuition: growth comes from how much you keep and how well you reinvest it. Remember it like: retention rate times ROE. What is ROE? NI / Average Equity Formula: $$g = b \times ROE$$ Example: if retention = 0.60 and ROE = 0.10, growth = 0.60 x 0.10 = 0.06.
+> $$V_0 = \frac{D_1}{r-g} = \frac{D_0(1+g)}{r-g}$$
 > 
-> 6. FCFE. Intuition: cash left for equity after running and investing in the business, plus debt help. cash from operations minus fixed capital investment plus net borrowing. Formula: $$FCFE = CFO - FCInv + \text{Net borrowing}$$ Example: if CFO = 100, FCInv = 30, and net borrowing = 5, FCFE = 100 - 30 + 5 = 75.
+> $$g = b \times ROE$$
 > 
-> 7. Justified forward P/E. Intuition: higher payout helps P/E, higher return demand hurts it. payout ratio divided by required return minus growth. Formula: $$\frac{P_0}{E_1} = \frac{p}{r-g}$$ Example: if payout = 0.40, required return = 0.10, and growth = 0.02, justified P/E = 0.40 / 0.08 = 5.
+> $$FCFE = CFO - FCInv + \text{Net borrowing}$$
 > 
-> 8. Enterprise value. Intuition: whole-firm takeover cost. equity value plus preferred plus debt minus cash. Formula: $$EV = \text{Market cap} + \text{Preferred stock} + \text{Debt} - \text{Cash and short-term investments}$$ Example: if market cap = 100, preferred = 10, debt = 30, and cash = 20, EV = 100 + 10 + 30 - 20 = 120.
+> $$\frac{P_0}{E_1} = \frac{p}{r-g}$$
+> 
+> $$EV = \text{Market cap} + \text{Preferred stock} + \text{Debt} - \text{Cash and short-term investments}$$
 > 
 > - Gordon uses **next dividend**, not the dividend just paid.
 > - Gordon works only when **$r > g$**.
@@ -275,13 +274,6 @@ $$
 > $$
 >
 > Explanation: Discount the high-growth dividends directly, then attach the Gordon block at the end of Year 3 and discount that block back.
-
-
-> [!DANGER] DO NOT MAKE THIS MISTAKE
-> Note in two stage DDM, to calculate terminal value at the end of the high growth period, ==you use value at the end i.e t+1==. In the above example, we used $D_4$ to calculate the $V_3$ and then discounted $V_3$. Look at the above example again, the propensity of making mistakes here is high.
-
-
-
 
 > [!example] APPLE AFTER THE IPHONE EXPLOSION
 > Callout: A two-stage model makes sense when a company tears through a hot growth phase and then cools into something more normal.

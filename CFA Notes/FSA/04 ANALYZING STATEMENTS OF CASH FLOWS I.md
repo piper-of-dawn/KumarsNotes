@@ -1,9 +1,4 @@
-### MODULE 4: ANALYZING STATEMENTS OF CASH FLOWS I
-
-> [!info] HOW TO READ THIS MODULE
-> This module is about turning accounting stories into cash stories.
-> Profit can be full of timing, estimates, accruals, depreciation, payables, receivables, and management choices. Cash flow asks the rude question: did money actually move?
-> The learning outcomes are: link the cash flow statement to the income statement and balance sheet; prepare direct and indirect cash flow statements; convert indirect operating cash flow to direct operating cash flow; and compare International Financial Reporting Standards (IFRS) with United States Generally Accepted Accounting Principles (U.S. GAAP).
+ 
 
 > [!tip] SEE THIS BEFORE EXAM
 > - Cash flow statement is the bridge from beginning cash to ending cash.
@@ -12,6 +7,24 @@
 > - Investing and financing sections are the same whether operating cash flow is direct or indirect.
 > - Asset increase usually means cash got stuck. Liability increase usually means cash was saved for now.
 > - U.S. GAAP is stricter. International Financial Reporting Standards gives more classification choices for interest and dividends.
+> - US GAAP does not classify dividends paid as operating. Dividends paid are financing under US GAAP.
+> - **Everything is operating in US GAAP except dividend payments which are financing.**
+> - Interest and dividend received operating or investing under IFRS, but under US GAAP operating.
+> - Under IFRS, taxes are usually operating, unless specifically tied to investing/financing. Under US GAAP, taxes are ALWAYS operating.
+> - 1. Sales revenue is 4,800. Accounts receivable increased from 420 to 510. Deferred revenue increased from 80 to 110. Calculate cash received from customers.  
+    Solution: AR increased by 90, so subtract 90 because sales were booked but cash not collected. Deferred revenue increased by 30, so add 30 because cash was collected before revenue recognition. Cash received = 4,800 − 90 + 30 = 4,740.
+2. COGS is 2,900. Inventory increased from 600 to 760. Accounts payable increased from 390 to 470. Calculate cash paid to suppliers.  
+    Solution: Inventory increased by 160, so purchases were more than COGS: 2,900 + 160 = 3,060. AP increased by 80, so not all purchases were paid in cash. Cash paid = 3,060 − 80 = 2,980.
+3. Net income is 720. Depreciation is 180. Gain on sale of equipment is 40. AR increased by 90. Inventory decreased by 60. AP decreased by 30. Calculate CFO using indirect method.  
+    Solution: Add non-cash depreciation, remove investing gain, subtract AR increase, add inventory decrease, subtract AP decrease. CFO = 720 + 180 − 40 − 90 + 60 − 30 = 800.
+4. Sales revenue is 5,000 and accounts receivable increased by 120. Calculate cash received from customers.  
+    Solution: AR increase means part of sales was not collected. Cash received = 5,000 − 120 = 4,880.
+5. Opening equipment cost is 1,000, ending equipment cost is 1,250, purchases are 400, opening accumulated depreciation is 420, depreciation expense is 100, ending accumulated depreciation is 470, and loss on sale is 30. Calculate cash received from sale of equipment.  
+    Solution: Cost sold = 1,000 + 400 − 1,250 = 150. Accumulated depreciation removed = 420 + 100 − 470 = 50. Book value sold = 150 − 50 = 100. Loss is 30, so cash received = 100 − 30 = 70.
+6. Common stock increased from 200 to 260, APIC increased from 500 to 620, retained earnings increased from 900 to 1,050, and net income is 310. Calculate cash raised from shares and dividends paid.  
+    Solution: Share issue cash = common stock increase 60 plus APIC increase 120 = 180. Retained earnings rose by 150, but net income was 310, so dividends paid = 310 − 150 = 160.
+7. IFRS CFO is 900 after classifying interest paid of 120 as financing and dividends received of 40 as investing. Convert CFO to US GAAP, ignoring tax.  
+    Solution: Under US GAAP, interest paid is operating, so subtract 120. Dividends received are operating, so add 40. US GAAP CFO = 900 − 120 + 40 = 820.
 
 #### Core Map
 

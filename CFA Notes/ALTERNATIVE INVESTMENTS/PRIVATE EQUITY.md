@@ -2,11 +2,9 @@
 > [!abstract] SEE THIS BEFORE EXAM
 > 
 > - Private equity = ownership capital outside public markets.
-> - Strategic investors typically join in at early-stage to later-stage financing.
-> - Angel investors are typically involved in the beginning stages, either pre-seed or seed.
 >     
 > - Leveraged buyout = buy company using heavy debt, then improve cash flows, then exit.
-> - Research on the correlations between portfolios holding these public assets shows that venture capital has the lowest correlations across all major market indexes. This relationship implies a higher diversification benefit for venture capital.>     
+>     
 > - Venture capital = early-stage private equity where business risk is highest and valuation is most subjective.
 >     
 > - Growth capital = minority equity in a more mature company that needs expansion or restructuring money.

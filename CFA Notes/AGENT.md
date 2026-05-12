@@ -178,7 +178,6 @@ Communication Style
 - Progress updates: short, momentum-building; use `update_plan` for multi-step work.
 - Final messages: concise bullets; note files changed and offer next steps (e.g., run tests, add examples, commit?)
 - Jargon rule: If you introduce jargon or an abbreviation, define it the first time in plain language, with a brief example when helpful.
-- When referring to the instructional text or reading material in notes, call it the `curriculum`, not the `source`.
 
 Do / Don’t Summary
 

@@ -45,6 +45,32 @@
 > - Abandonment resembles a put option with exercise price equal to salvage or liquidation proceeds.  
 > - Use decision trees for discrete, managerial flexibility; do not over‑engineer with Black–Scholes unless assumptions fit.
 
+> [!Question] NUMERICAL — Abandonment option adds value
+> Problem: A two‑year project costs 100 today and yields a single cash flow in two years that is either 140 (good) with probability 60% or 80 (bad) with probability 40%. Discount rate = 10% per year. Without flexibility, should the firm invest? If the firm can abandon at the end of Year 1 for a guaranteed salvage of 60, how does that change the decision?  
+> Solution:  
+> - Without flexibility (single payoff at Year 2):
+> $$
+> \text{Expected payoff at Year 2} = 0.6\cdot 140 + 0.4\cdot 80 = 112 \;\text{(currency units)}
+> $$
+> $$
+> \mathrm{NPV}_{\text{base}} = \frac{112}{(1.10)^2} - 100 = \frac{112}{1.21} - 100 \approx -7.4
+> $$
+> Explanation: Negative expected NPV, so reject without flexibility.
+>
+> - With abandonment after Year 1: If prospects look bad at Year 1, abandon and take 60 instead of continuing to the low outcome. Model with a simple decision tree; assume the “bad” branch is revealed at Year 1 and leads to the low outcome if continued.
+> $$
+> \text{Value if good branch} = \frac{140}{(1.10)^2} \approx 115.7
+> $$
+> $$
+> \text{Value if bad branch with abandon} = \frac{60}{1.10} \approx 54.5
+> $$
+> $$
+> \text{Expected present value} = 0.6\cdot 115.7 + 0.4\cdot 54.5 \approx 91.7
+> $$
+> $$
+> \mathrm{NPV}_{\text{with option}} = 91.7 - 100 \approx -8.3
+> $$
+> Explanation: In this setup the salvage is too small to offset the weak bad state; the option does not rescue the project. If the salvage were higher (e.g., 80), the option value would be larger and could turn NPV positive. Key idea: abandonment limits downside and can add material value depending on salvage and timing.
 
 > [!Question] NUMERICAL — Timing option (wait vs invest now)
 > Problem: Invest 100 today for an immediate project with present value 108 (using the correct hurdle rate). Alternatively, wait one year: with probability 50% the present value next year will be 132 (good), and with probability 50% it will be 88 (bad). Discount rate = 10% per year. Ignore competitive erosion while waiting. Should you invest now or wait?  

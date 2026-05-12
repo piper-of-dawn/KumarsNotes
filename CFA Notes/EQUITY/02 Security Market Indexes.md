@@ -1,20 +1,15 @@
 
 > [!tip] LOOK AT THESE BEFORE EXAM
 > 1. Price return and total return start equal at inception. After that, total return wins only because it reinvests income.
-> 2. **An index goes from 100 to 108 and pays income of 3 during the period. What are price return and total return?** Price return ignores the income, so it is (108 - 100) / 100 = 8%. Total return adds the income back in, so it is (108 - 100 + 3) / 100 = 11%.
-> 3. The divisor is a bookkeeping tool. If a split or constituent change would fake a move, the divisor gets adjusted.
-> 4. **Two stocks in a price-weighted index trade at 20 and 80. What are the weights?** Just use price over total price. Total price is 100, so the weights are 20% and 80%. That is why the expensive stock gets the loudest voice even if it is the smaller company.
-> 5. Price-weighted means the high-priced stock gets the loudest voice. That is why splits matter so much.
-> 6. **Two stocks are equally weighted. One returns 10% and the other returns -4%. What is the index return?** Equal-weighted means average the returns: (10% - 4%) / 2 = 3%.
-> 7. Equal-weighted usually beats market-cap-weighted when the smaller names do better.
-> 8. **A market-cap-weighted index has Company A at market cap 200 and Company B at market cap 800. What are the weights?** Total market cap is 1,000, so the weights are 20% and 80%.
-> 9. Market-cap-weighted leans toward the winners. Fundamental-weighted leans toward value.
-> 10. **An index has starting value 250 and earns 12%. What is the new value?** Do not overthink it. New value = 250 x 1.12 = 280.
-> 11. Rebalancing fixes weights. Reconstitution fixes membership.
-> 12. Indexes are used for systematic risk, not systemic risk.
-> 13. Commodity indexes use futures, not spot commodities.
-> 14. Fixed-income indexes are hard to replicate because the bond universe is huge and illiquid.
-> 15. Hedge fund indexes can have survivorship bias because reporting is voluntary.
+> 2. The divisor is a bookkeeping tool. If a split or constituent change would fake a move, the divisor gets adjusted.
+> 3. Price-weighted means the high-priced stock gets the loudest voice. That is why splits matter so much.
+> 4. Equal-weighted usually beats market-cap-weighted when the smaller names do better.
+> 5. Market-cap-weighted leans toward the winners. Fundamental-weighted leans toward value.
+> 6. Rebalancing fixes weights. Reconstitution fixes membership.
+> 7. Indexes are used for systematic risk, not systemic risk.
+> 8. Commodity indexes use futures, not spot commodities.
+> 9. Fixed-income indexes are hard to replicate because the bond universe is huge and illiquid.
+> 10. Hedge fund indexes can have survivorship bias because reporting is voluntary.
 
 > [!ABSTRACT] LOS
 > 1. Describe a security market index.
@@ -352,3 +347,5 @@ $$
 ##### Hedge fund indexes
 
 71. Hedge funds usually report performance voluntarily. Different databases include different funds. Poor performers may stop reporting. That creates survivorship bias and usually pushes the index return upward.
+
+
