@@ -24,6 +24,10 @@
 
 7. **I thought** asset segregation and reporting are operational details, not ethics. **Wrong logic:** if returns are fine, sloppy custody controls are a back-office problem only. **Correct logic:** weak handling of client assets can itself show lack of care and prudence. **Tested angle:** custody and documentation failures can be tested under loyalty and care, not just operations.
 
+8. **I thought** client commissions can pay for any useful research my firm likes. **Wrong logic:** if a database or conference helps the firm generally, using soft dollars is fine. **Correct logic:** ==client brokerage belongs to the client and must be used only for services that directly benefit that client's investment process.== **Tested angle:** paying for unrelated tools or asset-class research with client commissions is a clean III(A) violation.
+
+9. **I thought** corporate confidentiality lets me hurt beneficiaries quietly. **Wrong logic:** if I wear two hats and know bad nonpublic news about the company, I can keep beneficiary money exposed to protect the company. **Correct logic:** I cannot use confidentiality as a shield for knowingly harming the real client or beneficiary. **Tested angle:** retirement-plan and trust fact patterns often test whether you protect the beneficiary instead of the sponsor or employer.
+
 ### Not-a-Violation Traps
 
 1. **I thought** every CFA member is automatically a legal fiduciary in every client interaction. **Wrong logic:** if the standard says "client first," then the legal label must always be fiduciary. **Correct logic:** the ethical duty is broad, but the legal fiduciary label still depends on law and facts. **Tested angle:** CFA may test ethical duty versus formal legal classification.
@@ -150,6 +154,8 @@
 
 7. **I thought** a disclaimer can cure a misleading headline number. **Wrong logic:** I can lead with an impressive return and bury the limitations in small print. **Correct logic:** the overall presentation must not create a false first impression. **Tested angle:** CFA judges the whole communication, not just whether a footnote exists somewhere.
 
+8. **I thought** written permission lets me present a team record as my own success. **Wrong logic:** if my old firm allows me to use the numbers, I can imply the whole track record belongs to me personally. **Correct logic:** permission to use the data does not let me erase the fact that the performance was produced by a group or under a prior entity. **Tested angle:** attribution is the trap, not theft of the record.
+
 ### Not-a-Violation Traps
 
 1. **I thought** not claiming Global Investment Performance Standards compliance is itself a violation. **Wrong logic:** if the firm does not claim Global Investment Performance Standards compliance, the presentation must be unethical. **Correct logic:** ==the Global Investment Performance Standards are best practice, not the only path to III(D) compliance.== **Tested angle:** CFA loves "best practice" versus "minimum required" distinctions.
@@ -165,6 +171,8 @@
 6. **I thought** omitting some detail is fine if the omitted information is available somewhere else. **Wrong logic:** as long as a prospect could ask for more, the main presentation can lean aggressively. **Correct logic:** availability of detail on request does not justify a misleading main summary. **Tested angle:** "available on request" helps only when the summary itself is fair.
 
 7. **I thought** all real account histories can be used interchangeably in marketing. **Wrong logic:** if every number is factual, I am safe. **Correct logic:** even truthful figures can mislead when context, account selection, or labeling is incomplete. **Tested angle:** truth of the raw number is not the same as fairness of the presentation.
+
+8. **I thought** unaudited returns or non-GIPS presentations automatically violate III(D). **Wrong logic:** unless the performance is audited and Global Investment Performance Standards compliant, it is unethical to show it. **Correct logic:** ==audits and Global Investment Performance Standards compliance are best practice, not automatic prerequisites to compliance, as long as the presentation is still fair, accurate, and complete.== **Tested angle:** CFA likes the difference between encouraged practice and minimum required conduct.
 
 ## Exam Traps: III(E) Preservation of Confidentiality
 

@@ -13,13 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Notes/FSA/01 - Introduction to Financial Statement Analysis.md",
+                "file": "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "01 - Introduction to Financial Statement Analysis"
+              "title": "STANDARD 1 - PROFESSIONALISM"
+            }
+          },
+          {
+            "id": "a740f3c4b993f90b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GIPS.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "GIPS"
             }
           },
           {
@@ -37,7 +52,8 @@
               "title": "International Trade"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -1086,6 +1102,16 @@
             "id": "c0acd4986637f417",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "d6ecbd9738e86a11",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1093,7 +1119,7 @@
             }
           }
         ],
-        "currentTab": 96
+        "currentTab": 97
       }
     ],
     "direction": "horizontal",
@@ -1111,25 +1137,27 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ab61447ddfebe320",
+  "active": "a740f3c4b993f90b",
   "lastOpenFiles": [
+    "CFA Notes/ETHICS/STANDARD 7 - RESPONSIBILITIES AS A CFA INSTITUTE MEMBER OR CFA CANDIDATE.md",
+    "CFA Notes/ETHICS/STANDARD 6 - CONFLICTS OF INTEREST.md",
+    "CFA Notes/ETHICS/STANDARD 5 - INVESTMENT ANALYSIS RECOMMENDATIONS AND ACTIONS.md",
+    "CFA Notes/ETHICS/STANDARD 4 - DUTIES TO EMPLOYERS.md",
+    "CFA Notes/ETHICS/STANDARD 2 - INTEGRITY OF CAPITAL MARKETS.md",
+    "CFA Notes/ETHICS/GIPS.md",
+    "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
+    "GIPS.md",
     "CFA Notes/FSA/12-introduction-to-financial-statement-modeling.md",
     "CFA Notes/CORPORATE ISSUERS/25-1-weighted-average-cost-of-capital.md",
     "CFA Notes/CORPORATE ISSUERS/25-2-capital-structure-theories.md",
     "CFA Notes/ECONOMICS/Introduction to Geopolitics.md",
-    "CFA Notes/ETHICS/STANDARD 4 - DUTIES TO EMPLOYERS.md",
-    "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
     "CFA Notes/FIXED INCOME/10 Interest Rate Risk and Return.md",
     "CFA Notes/ECONOMICS/International Trade.md",
     "CFA Notes/FSA/11-financial-analysis-techniques.md",
-    "CFA Notes/ETHICS/GIPS.md",
     "CFA Notes/FIXED INCOME/17 Fixed Income Securitization.md",
     "CFA Notes/FIXED INCOME/18-asset-backed-security-abs-instrument-and-market-features.md",
     "CFA Notes/EQUITY/07-company-analysis-forecasting.md",
-    "CFA Notes/ETHICS/STANDARD 2 - INTEGRITY OF CAPITAL MARKETS.md",
     "CFA Notes/ETHICS/STANDARD 3 - DUTIES TO CLIENTS.md",
-    "CFA Notes/ETHICS/STANDARD 5 - INVESTMENT ANALYSIS RECOMMENDATIONS AND ACTIONS.md",
-    "CFA Notes/ETHICS/STANDARD 7 - RESPONSIBILITIES AS A CFA INSTITUTE MEMBER OR CFA CANDIDATE.md",
     "CFA Notes/FIXED INCOME/Yield and Yield Spread Measures for Fixed-Rate Bonds.md",
     "CFA Notes/FIXED INCOME/19-mortgage-backed-security-mbs-instrument-and-market-features.md",
     "CFA Notes/FIXED INCOME/16 Credit Analysis for Government Issuers.md",
@@ -1137,40 +1165,14 @@
     "CFA Notes/FIXED INCOME/14 Credit Risk.md",
     "CFA Notes/QUANTITATIVE METHODS/08 Hypothesis Testing.md",
     "CFA Notes/QUANTITATIVE METHODS/07 Estimation and Inference.md",
-    "CFA Notes/CORPORATE ISSUERS/05 Capital Investments and Capital Allocation.md",
-    "CFA Notes/CORPORATE ISSUERS/24-2-capital-allocation-principles-and-real-options.md",
     "CFA Notes/PORTFOLIO MANAGEMENT",
-    "CFA Notes/FSA/08-topics-in-long-term-liabilities-and-equity.md",
-    "CFA Notes/ETHICS.md",
-    "CFA Notes/ETHICS/STANDARD 3 - DUTIES TO CLIENTS.md",
-    "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
-    "CFA Notes/DERIVATIVES/09 Option Replication Using Put Call Parity.md",
     "CFA Notes/ETHICS",
-    "CFA Notes/DERIVATIVES/02 Forward Commitment and Contingent Claim Features and Instruments.md",
-    "CFA Notes/CORPORATE ISSUERS/20-features-of-corporate-issuers.md",
     "CFA Notes/DERIVATIVES",
-    "CFA Notes/CORPORATE ISSUERS/25-1-weighted-average-cost-of-capital.md",
-    "CFA Notes/CORPORATE ISSUERS/05 Capital Investments and Capital Allocation.md",
-    "CFA Notes/CORPORATE ISSUERS/25-2-capital-structure-theories.md",
-    "CFA Notes/FSA/Introduction to Financial Statement Analysis.md",
-    "CFA Notes/ALTERNATIVE INVESTMENTS/Introduction to Digital Assets.md",
-    "CFA Notes/ECONOMICS/02 Understanding Business Cycles.md",
-    "CFA Notes/ECONOMICS/International Trade.md",
-    "CFA Notes/ALTERNATIVE INVESTMENTS/REAL ESTATE.md",
-    "CFA Notes/ALTERNATIVE INVESTMENTS/PRIVATE EQUITY.md",
-    "CFA Notes/ECONOMICS/04 MONETARY POLICY.md",
-    "CFA Notes/ECONOMICS/03 FISCAL POLICY.md",
-    "CFA Notes/ECONOMICS.md",
-    "CFA Notes/ECONOMICS/01 The Firm and Market Structures.md",
     "Pasted image 20260503191508 1.png",
     "Pasted image 20260503191508.png",
     "CFA Notes/ECONOMICS/lrtc.svg",
     "CFA Notes/ECONOMICS/lrtc_envelope_curve.excalidraw",
-    "CFA Notes/FIXED INCOME/12 - Yield-Based Bond Convexity and Portfolio Properties.md",
     "CFA Notes/ECONOMICS",
-    "Spells/Dymanic Betas Using Kalman Filter.md",
-    "Spells/DUMBPROOF_GUIDE_TO_WAYDEEPER.md",
-    "CFA Notes/EQUITY/08-equity-valuation-concepts-and-basic-tools.md",
     "CFA Notes/CORPORATE ISSUERS",
     "CFA Notes/FSA/XXVbn5gv",
     "CFA Notes/ALTERNATIVE INVESTMENTS",
