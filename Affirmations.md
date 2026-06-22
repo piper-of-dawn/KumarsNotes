@@ -51,6 +51,7 @@ A list of timeless reminders about how l aim to be or just how life seems to wor
 
 ### IT IS BETTER TO TRAVEL WELL THAN TO ARRIVE
 - **Life is happening, right now.** There is no past. There is no future.
+- The price of anything is the amount of life you exchange for it. - Henry David Thoreau
 - Don't forget that you have **limitless capability to respond.**
 - Think about happiness in 10-20 years from now - **hedonic** (here and now) and **eudaimonic** (long term meaning & satisfaction); it's hard to have both - **one has to be strategic, lucky, energetic and self-aware to be in a spot where you can have both.**
   
