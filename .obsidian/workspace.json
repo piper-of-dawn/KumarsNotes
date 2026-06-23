@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ATS/industry-barra-factor-analysis.md",
+                "file": "Quant Finance/ANALYSIS OF VARIANCE.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "industry-barra-factor-analysis"
+              "title": "ANALYSIS OF VARIANCE"
             }
           }
         ]
@@ -1121,6 +1121,16 @@
             "id": "c92ea4c2f00e04af",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "71fa789246404cb5",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1128,7 +1138,7 @@
             }
           }
         ],
-        "currentTab": 101
+        "currentTab": 102
       }
     ],
     "direction": "horizontal",
@@ -1146,25 +1156,28 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ab61447ddfebe320",
+  "active": "49ac21b4a48864af",
   "lastOpenFiles": [
-    "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
+    "Quant Finance/Mean Variance Portfolio Optimization.md",
+    "Spells/DUMBPROOF_GUIDE_TO_WAYDEEPER.md",
+    "DSA/Trie.md",
+    "DSA/Graphs.md",
     "ATS/industry-barra-factor-analysis.md",
+    "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
     "Machine Learning/XGBoost.md",
     "Machine Learning/Principal Component Analysis.md",
     "Mathematics for Machine Learning/Linear Algebra.md",
     "Mathematics for Machine Learning/EigenVectorsAndEigenValues.md",
-    "Portfolio Management/Mean Variance Portfolio Optimization.md",
     "Quotes.md",
     "# Analyst Trend Signal Methodology.md",
     "GIPS.md",
     "Affirmations.md",
     "RATES AND RETURNS.md",
     "WIP/Dymanic Betas Using Kalman Filter.md",
-    "Stats/ANALYSIS OF VARIANCE.md",
+    "Quant Finance/ANALYSIS OF VARIANCE.md",
     "DUMBPROOF_GUIDE_TO_WAYDEEPER.md",
     "Stats",
-    "Writings/Data Engineering.md",
+    "Arts/Data Engineering.md",
     "Pasted image 20251230214023.png",
     "Pasted image 20260503191508.png",
     "Writings",
@@ -1177,9 +1190,6 @@
     "CFA Notes/ETHICS/STANDARD 5 - INVESTMENT ANALYSIS RECOMMENDATIONS AND ACTIONS.md",
     "CFA Notes/ETHICS/STANDARD 4 - DUTIES TO EMPLOYERS.md",
     "CFA Notes/ETHICS/STANDARD 2 - INTEGRITY OF CAPITAL MARKETS.md",
-    "CFA Notes/ETHICS/GIPS.md",
-    "CFA Notes/FSA/12-introduction-to-financial-statement-modeling.md",
-    "CFA Notes/CORPORATE ISSUERS/25-1-weighted-average-cost-of-capital.md",
     "CFA Notes/PORTFOLIO MANAGEMENT",
     "CFA Notes/ETHICS",
     "CFA Notes/DERIVATIVES",
