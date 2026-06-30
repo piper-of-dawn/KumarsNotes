@@ -2,7 +2,7 @@ name: Rebuild Blog
 on:
   push:
     branches:
-      - clean
+      - master
   workflow_dispatch:
 
 jobs:
