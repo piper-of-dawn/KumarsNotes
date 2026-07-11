@@ -38,6 +38,7 @@ A list of timeless reminders about how l aim to be or just how life seems to wor
 - There are people who are way more smarter and hardworking than you are, but are not sitting on the privileges that you have. And vice verca.
 - At the age of 25, it’s very tempting to conflate agency and determinism in scripts. You have a default state  “I’m a smart guy, I have these resources at hand. The future looks full of possibilities." And then life will hit you hard on face. 
 - Efficient Market Hypothesis is a flawed heuristic.
+- Fortune favours the flexible.
 
 ## WE ARE MONKEYS. WE COPY.
 - You will always feel an overpowering urge to fit in and follow the herd. It's natural! It is the evolutionary make-up of your brain that you inherited from your primordial ancestors.  

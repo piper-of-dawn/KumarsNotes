@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Quant Finance/Gold, Inflation Expectations, and the Rate Bluff.md",
+                "file": "CFA Level II Notes/PORTFOLIO MANAGEMENT/LM2 - Analysis of Active Portfolio Management.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Gold, Inflation Expectations, and the Rate Bluff"
+              "title": "LM2 - Analysis of Active Portfolio Management"
             }
           }
         ]
@@ -1152,6 +1152,36 @@
             "id": "e1ceab73687681ad",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "7a76ddef1137bbff",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "3f94555122ba8fa6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "197115c5d7dc6ebd",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1159,7 +1189,7 @@
             }
           }
         ],
-        "currentTab": 104
+        "currentTab": 107
       }
     ],
     "direction": "horizontal",
@@ -1180,7 +1210,13 @@
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
     "Affirmations.md",
+    "CFA Level II Notes/PORTFOLIO MANAGEMENT/LM2 - Analysis of Active Portfolio Management.md",
+    "CFA Level II Notes/PORTFOLIO MANAGEMENT/Untitled.md",
+    "CFA Level II Notes/PORTFOLIO MANAGEMENT",
+    "CFA Level II Notes",
+    "Python/Function Augmentation Decorators in Python.md",
     "Quant Finance/Gold, Inflation Expectations, and the Rate Bluff.md",
+    "Python",
     "Dark Arts/The Intramonth Momentum Cycle.md",
     "Quant Finance/ANALYSIS OF VARIANCE.md",
     "Pasted image 20260628123854.png",
@@ -1209,17 +1245,11 @@
     "CFA Notes/ECONOMICS/International Trade.md",
     "ATS",
     "CFA Notes/DERIVATIVES/CHEATSHEET",
-    "CFA Notes/ALTERNATIVE INVESTMENTS/CHEATSHEET.md",
-    "CFA Notes/ETHICS/STANDARD 7 - RESPONSIBILITIES AS A CFA INSTITUTE MEMBER OR CFA CANDIDATE.md",
-    "CFA Notes/ETHICS/STANDARD 6 - CONFLICTS OF INTEREST.md",
     "CFA Notes/PORTFOLIO MANAGEMENT",
     "CFA Notes/ETHICS",
     "CFA Notes/DERIVATIVES",
     "Pasted image 20260503191508 1.png",
     "CFA Notes/ECONOMICS/lrtc.svg",
-    "CFA Notes/ECONOMICS/lrtc_envelope_curve.excalidraw",
-    "CFA Notes/ECONOMICS",
-    "CFA Notes/CORPORATE ISSUERS",
     "CFA Notes/module58_convexity_curve.svg",
     "CFA Notes/module58_convexity_feature_map.svg",
     "Pasted image 20260221122433.png",
