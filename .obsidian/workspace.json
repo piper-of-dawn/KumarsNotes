@@ -1182,6 +1182,16 @@
             "id": "197115c5d7dc6ebd",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "91134d7601ce66f3",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1189,7 +1199,7 @@
             }
           }
         ],
-        "currentTab": 107
+        "currentTab": 108
       }
     ],
     "direction": "horizontal",
@@ -1207,7 +1217,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ab61447ddfebe320",
+  "active": "91134d7601ce66f3",
   "lastOpenFiles": [
     "Affirmations.md",
     "CFA Level II Notes/PORTFOLIO MANAGEMENT/LM2 - Analysis of Active Portfolio Management.md",
