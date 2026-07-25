@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WRITINGS/The Government Blinked. That Matters..md",
+                "file": "WRITINGS/Why is Gold valuable at all.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "The Government Blinked. That Matters."
+              "title": "Why is Gold valuable at all"
             }
           }
         ]
@@ -1248,10 +1248,15 @@
   },
   "active": "ab61447ddfebe320",
   "lastOpenFiles": [
+    "Pasted image 20260725202647.png",
+    "WRITINGS/The Great Reset of Gaming.md",
+    "WRITINGS/Why is Gold valuable at all.md",
+    "Pasted image 20260725202542.png",
+    "Books/Siddhartha.md",
+    "Artificial Intelligence/Untitled.md",
+    "WRITINGS/The Government Blinked. That Matters..md",
     "Pasted image 20260725201034.png",
     "CFA Level II Notes/FIXED INCOME/Untitled.md",
-    "WRITINGS/The Government Blinked. That Matters..md",
-    "Artificial Intelligence/Untitled.md",
     "CFA Level II Notes/FIXED INCOME",
     "CFA Level II Notes/PORTFOLIO MANAGEMENT/LM2 - Analysis of Active Portfolio Management.md",
     "Artificial Intelligence",
@@ -1277,9 +1282,6 @@
     "Machine Learning/Principal Component Analysis.md",
     "Mathematics for Machine Learning/Linear Algebra.md",
     "Mathematics for Machine Learning/EigenVectorsAndEigenValues.md",
-    "Quotes.md",
-    "# Analyst Trend Signal Methodology.md",
-    "GIPS.md",
     "Stats",
     "Pasted image 20251230214023.png",
     "Pasted image 20260503191508.png",
@@ -1291,8 +1293,6 @@
     "CFA Notes/ECONOMICS/lrtc.svg",
     "CFA Notes/module58_convexity_curve.svg",
     "CFA Notes/module58_convexity_feature_map.svg",
-    "Pasted image 20260221122433.png",
-    "Pasted image 20260131190442.png",
-    "Excalidraw/Scripts/Downloaded/Split Ellipse.svg"
+    "Pasted image 20260221122433.png"
   ]
 }
