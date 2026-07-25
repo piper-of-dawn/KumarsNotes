@@ -1,72 +1,29 @@
-# Learning Module 2: Analysis of Active Portfolio Management
-
-> **Curriculum boundary:** CFA Level II Portfolio Management, curriculum pp. 91–154 (PDF pp. 99–162). Core reading: pp. 91–136; references: p. 137; practice problems: pp. 138–147; solutions: pp. 148–154.
-
-## Table of contents
-
-- [Learning Outcomes](#learning-outcomes)
-- [1. Introduction](#1-introduction-source-pp-9192)
-- [2. Active Management and Value Added](#2-active-management-and-value-added-source-pp-9297)
-- [3. The Sharpe Ratio and the Information Ratio](#3-the-sharpe-ratio-and-the-information-ratio-source-pp-97103)
-- [4. Constructing Optimal Portfolios](#4-constructing-optimal-portfolios-source-pp-103108)
-- [5. Active Security Returns and the Fundamental Law](#5-active-security-returns-and-the-fundamental-law-of-active-management-source-pp-108114)
-- [6. The Full Fundamental Law](#6-the-full-fundamental-law-source-pp-114119)
-- [7. Applications and Global Equity Strategy](#7-applications-of-the-fundamental-law-and-global-equity-strategy-source-pp-119126)
-- [8. Fixed-Income Strategies](#8-fixed-income-strategies-source-pp-126132)
-- [9. Practical Limitations](#9-practical-limitations-source-pp-132135)
-- [Curriculum Summary](#curriculum-summary-source-pp-135136)
-- [References](#references-source-p-137)
-- [End-of-Module Practice Problem Map](#end-of-module-practice-problem-map-source-pp-138154)
-- [Formula Sheet](#formula-sheet)
-- [Exam-Priority Ranking](#exam-priority-ranking)
-- [Common Mistakes](#common-mistakes)
-- [Relationship Map](#relationship-map)
-- [Ten Difficult Revision Questions](#ten-difficult-revision-questions)
-
-## Learning Outcomes
-
-The candidate should be able to: *(source p. 91)*
-
-1. Describe how value added by active management is measured.
-2. Calculate and interpret the information ratio, ex post and ex ante, and contrast it with the Sharpe ratio.
-3. Describe and interpret the fundamental law of active portfolio management, including the transfer coefficient, information coefficient, breadth, and active risk or aggressiveness.
-4. Explain how the information ratio may be used in manager selection and in choosing active portfolio risk.
-5. Compare active strategies, including market timing and security selection, and evaluate strategy changes through the fundamental law.
-6. Describe the practical strengths and limitations of the fundamental law.
-
----
 
 1. Active management starts with a claim: the manager can predict some returns better than the market has already priced them. Mean–variance theory then asks the less glamorous question - how should those forecasts become weights when risk, a benchmark, and constraints exist?
 
-2. The sequence matters:
-```
-Benchmark → active weights and active return → risk-adjusted value added → optimal aggressiveness → IC and breadth → constraints and TC → realised performance → applications → limitations
-```
+2. An active manager does not create value merely by earning a positive return. If the benchmark earns more, the manager destroyed relative value. The relevant counterfactual is the passive portfolio the client could have held cheaply.
 
+3. Positive active return means outperformance. Negative active return means the benchmark would have been the better choice over the measurement period, especially after fees and costs.
 
-3. An active manager does not create value merely by earning a positive return. If the benchmark earns more, the manager destroyed relative value. The relevant counterfactual is the passive portfolio the client could have held cheaply.
-
-4. Positive active return means outperformance. Negative active return means the benchmark would have been the better choice over the measurement period, especially after fees and costs.
-
-5. A useful benchmark must satisfy three conditions:
+4. A useful benchmark must satisfy three conditions:
 	1. **Representative:** it contains the opportunity set from which the manager is supposed to select.
 	2. **Replicable at low cost:** passive ownership must be a real alternative, not a theoretical ghost portfolio.
 	3. **Observable:** weights are verifiable ex ante and returns arrive promptly ex post.
 
-6. Capitalisation-weighted indexes are common because they are largely self-rebalancing and can be held simultaneously by investors. Float adjustment improves investability by excluding shares unavailable to the public.
+5. Capitalisation-weighted indexes are common because they are largely self-rebalancing and can be held simultaneously by investors. Float adjustment improves investability by excluding shares unavailable to the public.
 
-7. If a float-adjusted capitalisation-weighted benchmark covers the whole relevant market, active management ==is a **zero-sum game before costs**: all investors together own the market, so one investor's positive active return is another's negative active return.== With a narrower benchmark, managers may hold assets outside it, so the same zero-sum statement need not hold relative to that narrower index.
+6. If a float-adjusted capitalisation-weighted benchmark covers the whole relevant market, active management ==is a **zero-sum game before costs**: all investors together own the market, so one investor's positive active return is another's negative active return.== With a narrower benchmark, managers may hold assets outside it, so the same zero-sum statement need not hold relative to that narrower index.
 
-8. Before value added can be measured, both portfolios must be built from the same primitive: security weights multiplied by security returns.
+7. Before value added can be measured, both portfolios must be built from the same primitive: security weights multiplied by security returns.
 
 $$
 \underbrace{R_B}_{\text{benchmark return}}
-
+=
 \underbrace{\sum_{i=1}^{N}}_{\text{sum across all }N\text{ assets}}  
 \left(  
-\underbrace{w_{B,i}}_{\substack{\text{benchmark weight}\text{of asset }i}}  
-;  
-\underbrace{R_i}_{\substack{\text{return}\text{of asset }i}}  
+\underbrace{w_{B,i}}_{\substack{\text{benchmark weight}\text{ of asset }i}}  
+\quad
+\underbrace{R_i}_{\substack{\text{return}\text{ of asset }i}}  
 \right)  
 \tag{1}  
 $$
@@ -89,38 +46,56 @@ Each asset’s return is multiplied by its portfolio weight, and these weighted 
 
 9. Each security contributes weight times return. Summing contributions gives the portfolio return. A 5% position earning 12% contributes $0.05(12\%)=0.60\%$. If every $w_{P,i}=w_{B,i}$, Equations 1 and 2 are identical. No active decision exists, so no active return can exist.
 
-#### Numerical example
 
-For two assets with returns of 14% and 2%, benchmark weights of 60% and 40%, and managed weights of 70% and 30%:
 
-$$R_B=0.60(14\%)+0.40(2\%)=9.2\%$$
+> [!question] NUMERICAL
+> For two assets with returns of 14% and 2%, benchmark weights of 60% and 40%, and managed weights of 70% and 30%:
+> 
+> $$R_B=0.60(14\%)+0.40(2\%)=9.2\%$$
+> 
+> $$R_P=0.70(14\%)+0.30(2\%)=10.4\%$$
+> 
+> The managed portfolio earns 1.2 percentage points more. That number becomes meaningful only because the benchmark is specified.
+> 
 
-$$R_P=0.70(14\%)+0.30(2\%)=10.4\%$$
 
-The managed portfolio earns 1.2 percentage points more. That number becomes meaningful only because the benchmark is specified.
+### ACTIVE RETURN, ALPHA, AND ACTIVE WEIGHTS
 
-### Active return, alpha, and active weights *(source pp. 93–94)*
 
-#### TL;DR
-
-Active return measures the distance between outcomes. Active weights explain where that distance came from. Alpha is not automatically the same thing because alpha adjusts for benchmark sensitivity.
-
-#### Equations
-
-$$
-R_A=R_P-R_B
-$$
+10. Active return measures the distance between outcomes. Active weights explain where that distance came from. Alpha is not automatically the same thing because alpha adjusts for benchmark sensitivity.
 
 $$
-\alpha_P=R_P-\beta_PR_B
-$$
-
-$$
-\Delta w_i=w_{P,i}-w_{B,i}
+\underbrace{R_A}_{\text{active return}}
+=
+\underbrace{R_P}_{\text{portfolio return}}
+-
+\underbrace{R_B}_{\text{benchmark return}}
 $$
 
 $$
-R_A=\sum_{i=1}^{N}\Delta w_iR_i
+\underbrace{\alpha_P}_{\substack{\text{portfolio alpha}\\\text{risk-adjusted excess return}}}
+=
+\underbrace{R_P}_{\text{portfolio return}}
+-
+\underbrace{\beta_P}_{\substack{\text{portfolio sensitivity}\\\text{to the benchmark}}} \quad
+\underbrace{R_B}_{\text{benchmark return}}
+$$
+
+$$
+\underbrace{\Delta w_i}_{\substack{\text{active weight}\\\text{in asset }i}}
+=
+\underbrace{w_{P,i}}_{\substack{\text{portfolio weight}\\\text{of asset }i}}
+-
+\underbrace{w_{B,i}}_{\substack{\text{benchmark weight}\\\text{of asset }i}}
+$$
+$$
+\underbrace{R_A}_{\text{active return}}
+=
+\underbrace{\sum_{i=1}^{N}}_{\text{sum across all }N\text{ assets}}
+\left(
+\underbrace{\Delta w_i}_{\substack{\text{active weight}\\\text{of asset }i}}
+\underbrace{R_i}_{\substack{\text{return}\\\text{of asset }i}}
+\right)
 $$
 
 Because fully invested portfolio and benchmark weights each sum to one, $\sum_i\Delta w_i=0$. Therefore subtracting $R_B$ inside every term changes nothing:
@@ -129,42 +104,140 @@ $$
 R_A=\sum_{i=1}^{N}\Delta w_iR_{A,i},\qquad R_{A,i}=R_i-R_B. \tag{3}
 $$
 
-#### Symbols and units
 
-- $R_A$: portfolio active return or value added; percentage return; expected or realised.
-- $\alpha_P$: beta-adjusted portfolio return; percentage return; expected or realised.
-- $\beta_P$: sensitivity of portfolio return to benchmark return; regression coefficient, dimensionless; estimated or forecast.
-- $\Delta w_i$: active weight; dimensionless proportion fixed at portfolio construction. Positive is overweight, negative is underweight.
-- $R_{A,i}$: security $i$'s benchmark-relative return; percentage return; forecast or realised.
+> [!abstract] DERIVATION
+> 
+> Start with active return:
+> 
+> $$
+> \underbrace{R_A}_{\text{active return}}
+> =
+> \underbrace{R_P}_{\text{portfolio return}}
+> -
+> \underbrace{R_B}_{\text{benchmark return}}
+> $$
+> 
+> Substitute the portfolio-return and benchmark-return equations:
+> 
+> $$
+> R_A
+> =
+> \underbrace{\sum_{i=1}^{N} w_{P,i}R_i}_{\text{portfolio's weighted returns}}
+> -
+> \underbrace{\sum_{i=1}^{N} w_{B,i}R_i}_{\text{benchmark's weighted returns}}
+> $$
+> 
+> Both summations run over the same assets and contain the same asset return, $R_i$. Therefore, combine them:
+> 
+> $$
+> R_A
+> =
+> \sum_{i=1}^{N} \quad
+> \underbrace{\left(w_{P,i}-w_{B,i}\right)}_{\text{active weight }  \Delta w_i} \quad
+> \underbrace{R_i}_{\text{return of asset } i}
+> $$
+> 
+> Because
+> 
+> $$
+> \underbrace{\Delta w_i}_{\text{active weight of asset }i}
+> =
+> \underbrace{w_{P,i}}_{\text{portfolio weight}}
+> -
+> \underbrace{w_{B,i}}_{\text{benchmark weight}},
+> $$
+> 
+> we obtain:
+> 
+> $$
+> \underbrace{R_A}_{\text{portfolio active return}}
+> =
+> \underbrace{\sum_{i=1}^{N}}_{\text{sum across all assets}}
+> \underbrace{\Delta w_i}_{\text{active weight}} \quad
+> \underbrace{R_i}_{\text{asset return}}
+> $$
+> 
+> Now notice that both the portfolio and the benchmark are fully invested:
+> 
+> $$
+> \underbrace{\sum_{i=1}^{N}w_{P,i}}_{\text{total portfolio weight}}=1 \qquad \underbrace{\sum_{i=1}^{N}w_{B,i}}_{\text{total benchmark weight}}=1
+> $$
+> 
+> Therefore, the active weights must sum to zero:
+> 
+> $$
+> \underbrace{\sum_{i=1}^{N}\Delta w_i}_{\text{total active weight}}
+> =
+> \underbrace{\sum_{i=1}^{N}w_{P,i}}_{1} 
+> -
+> \underbrace{\sum_{i=1}^{N}w_{B,i}}_{1}
+> =
+> 0
+> $$
+> 
+> Return to the active-return equation:
+> 
+> $$
+> R_A
+> =
+> \sum_{i=1}^{N}\Delta w_iR_i
+> $$
+> 
+> Because the active weights sum to zero, we can subtract the benchmark return multiplied by zero without changing anything:
+> 
+> $$
+> R_A
+> =
+> \underbrace{\sum_{i=1}^{N}\Delta w_iR_i}_{\text{original active return}}
+> -
+> \underbrace{R_B\sum_{i=1}^{N}\Delta w_i}_{R_B\times 0=0}
+> $$
+> 
+> Write both terms inside the same summation:
+> 
+> $$
+> R_A
+> =
+> \sum_{i=1}^{N}
+> \left(
+> \Delta w_iR_i-\Delta w_iR_B
+> \right)
+> $$
+> 
+> Factor out the common active weight, \(\Delta w_i\):
+> 
+> $$
+> R_A
+> =
+> \sum_{i=1}^{N}
+> \underbrace{\Delta w_i}_{\text{active weight}}
+> \underbrace{\left(R_i-R_B\right)}_{\text{asset return relative to benchmark}}
+> $$
+> 
+> Define the active return of asset \(i\) as:
+> 
+> $$
+> \underbrace{R_{A,i}}_{\text{active return of asset }i}
+> =
+> \underbrace{R_i}_{\text{asset return}}
+> -
+> \underbrace{R_B}_{\text{benchmark return}}
+> $$
+> 
+> The final expression is therefore:
+> 
+> $$
+> \underbrace{R_A}_{\text{portfolio active return}}
+> =
+> \underbrace{\sum_{i=1}^{N}}_{\text{sum across all assets}}
+> \underbrace{\Delta w_i}_{\text{active weight}} \quad
+> \underbrace{R_{A,i}}_{\text{asset active return}}
+> $$
 
-#### Construction
-
-Start with $R_P-R_B$ and substitute Equations 1 and 2:
-
-$$
-R_A=\sum_iw_{P,i}R_i-\sum_iw_{B,i}R_i
-=\sum_i(w_{P,i}-w_{B,i})R_i
-=\sum_i\Delta w_iR_i.
-$$
-
-Then use $\sum_i\Delta w_i=0$:
-
-$$
-\sum_i\Delta w_iR_i- R_B\sum_i\Delta w_i
-=\sum_i\Delta w_i(R_i-R_B)
-=\sum_i\Delta w_iR_{A,i}.
-$$
-
-Nothing mystical happened. The benchmark return was multiplied by zero.
-
-#### Financial intuition
-
-Positive value added requires alignment:
-
-- overweight securities that beat the benchmark; and/or
-- underweight securities that trail it.
-
-An underweight loser adds value because a negative weight times a negative relative return is positive. The manager need not own the winner; avoiding the loser can do the same accounting work.
+11. Positive value added requires alignment:
+	- overweight securities that beat the benchmark; and/or
+	- underweight securities that trail it.
+12. An underweight loser adds value because a negative weight times a negative relative return is positive. The manager need not own the winner; avoiding the loser can do the same accounting work.
 
 If a forecast changes sign, the optimal active weight should change sign in an unconstrained portfolio. If $\Delta w_i=0$, that security contributes no active return regardless of what it does.
 
@@ -272,103 +345,101 @@ Total value added is about −1.2%. Direct verification gives portfolio return $
 
 ---
 
-## 3. The Sharpe Ratio and the Information Ratio *(source pp. 97–103)*
+## THE SHARPE RATIO AND THE INFORMATION RATIO 
 
-### Why two ratios exist
+13. The Sharpe ratio asks how efficiently the portfolio bears **total risk** to earn return above cash. Raw return rewards risk-taking without asking how much risk was required. The Sharpe ratio divides excess return by total volatility: $$ SR_P=\frac{R_P-R_F}{\sigma_P}. \tag{5}$$
 
-The Sharpe ratio asks how efficiently the portfolio bears **total risk** to earn return above cash. The information ratio asks how efficiently the manager bears **active risk** to earn return above the benchmark. They answer different questions because owning the market and deviating from it are different jobs.
+14. **==A higher numerator raises Sharpe linearly. A higher volatility lowers it nonlinearly through division.==** If excess return is zero, $SR=0$; if excess return is negative, $SR<0$.
 
-### The Sharpe ratio—Equation 5 *(source pp. 97–100)*
+15. The information ratio asks how efficiently the manager bears **active risk** to earn return above the benchmark. They answer different questions because owning the market and deviating from it are different jobs.
 
-#### Equation and purpose
 
-Raw return rewards risk-taking without asking how much risk was required. The Sharpe ratio divides excess return by total volatility:
+#### Cash, leverage, and two-fund separation 
 
-$$
-SR_P=\frac{R_P-R_F}{\sigma_P}. \tag{5}
-$$
+16. It is called **two-fund separation** because every investor needs only two building blocks: the optimal risky portfolio, and the risk-free asset.
+17. If the optimal portfolio has 20% volatility but you only want 10%, you invest (10/20) 50% in the risky portfolio and keep 50% in cash. You do not change what is inside the risky portfolio; you only change how much of it you hold. The risky fund decides **which risks to take**, while the risk-free fund decides **how much total risk to take**.
 
-#### Symbols and units
-
-- $SR_P$: Sharpe ratio; dimensionless reward-to-risk ratio; ex ante or ex post.
-- $R_P$: portfolio return; percentage return; expected for ex ante, average realised for ex post.
-- $R_F$: risk-free return for the same horizon; percentage return; forecast or average realised.
-- $\sigma_P$: standard deviation of total portfolio returns; percentage volatility; forecast ex ante or sample standard deviation ex post.
-
-Numerator and denominator must use the same horizon. The result is a ratio, not a percentage.
-
-#### Construction, behaviour, and annualisation
-
-Subtract the return available without portfolio risk, then divide by the volatility endured. A higher numerator raises $SR$ linearly. A higher volatility lowers it nonlinearly through division. If excess return is zero, $SR=0$; if excess return is negative, $SR<0$.
-
-For monthly arithmetic data, the curriculum convention annualises average return by 12 and volatility by $\sqrt{12}$. This is exact only under restrictive conditions such as independent continuously compounded returns. Comparisons must at least use the same method and period.
-
-#### Numerical example
-
-Portfolio return 10.3%, risk-free return 2.3%, volatility 19.2%:
-
-$$SR=\frac{10.3-2.3}{19.2}=0.4167\approx0.42.$$
-
-The portfolio offers about 0.42 units of expected excess return per unit of total volatility.
-
-#### Cash, leverage, and two-fund separation *(source p. 99)*
-
-Combine risky portfolio $P$ at weight $w_P$ with cash at $1-w_P$:
-
+18. Combine risky portfolio $P$ at weight $w_P$ with cash at $1-w_P$:
 $$R_C=w_PR_P+(1-w_P)R_F,\qquad \sigma_C=w_P\sigma_P.$$
-
 Then:
-
 $$
-SR_C=\frac{R_C-R_F}{\sigma_C}
-=\frac{w_P(R_P-R_F)}{w_P\sigma_P}=SR_P.
+\underbrace{SR_C}_{\substack{\text{Sharpe ratio of}\\\text{complete portfolio}}}
+=
+\frac{
+\underbrace{R_C-R_F}_{\text{complete portfolio excess return}}
+}{
+\underbrace{\sigma_C}_{\text{complete portfolio risk}}
+}
+=
+\frac{
+\underbrace{w_P(R_P-R_F)}_{\substack{\text{risky portfolio excess return}\\\text{scaled by }w_P}}
+}{
+\underbrace{w_P\sigma_P}_{\substack{\text{risky portfolio risk}\\\text{scaled by }w_P}}
+}
+=
+\underbrace{\frac{R_P-R_F}{\sigma_P}}_{SR_P}
+=
+\underbrace{SR_P}_{\substack{\text{Sharpe ratio of}\\\text{risky portfolio}}}
 $$
+19. **Why it works?** Cash reduces excess return and risk in the same proportion. Leverage increases both in the same proportion. Therefore investors first identify the risky portfolio with the highest Sharpe ratio, then choose their desired total risk by mixing it with cash or borrowing. That is **two-fund separation**.
 
-Cash reduces excess return and risk in the same proportion. Leverage increases both in the same proportion. Therefore investors first identify the risky portfolio with the highest Sharpe ratio, then choose their desired total risk by mixing it with cash or borrowing. That is **two-fund separation**.
+> [!example] Matching Risk Before Comparing Returns
+> 
+> The large-cap portfolio offers an expected return of 8.2% with 14.6% volatility. The small-cap portfolio offers a higher expected return of 10.3%, but it also carries more risk, with volatility of 19.2%. Since the two portfolios do not have the same risk, comparing 10.3% directly with 8.2% would be misleading.
+> 
+> To make the comparison fair, reduce the small-cap portfolio’s risk from 19.2% to 14.6% by combining it with cash:
+> 
+> $$  
+> w_{SC} =
+> \frac{14.6%}{19.2%}
+> =\times=
+> 0.7604  
+> $$
+> 
+> So, invest about 76% in the small-cap portfolio and the remaining 24% in the risk-free asset:
+> 
+> $$  
+> w_{\text{cash}}
+> =
+> 1-0.7604
+> =
+> 23.96%  
+> \approx 24%  
+> $$
+> 
+> The expected return of this adjusted portfolio is:
+> 
+> $$  
+> R_C
+> =
+> 0.76(10.3\%)  
+> +  
+> 0.24(2.3\%)
+> =
+> 8.38%  
+> \approx 8.4\%  
+> $$
+> 
+> Its volatility is now:
+> 
+> $$  
+> \sigma_C
+> =
+> 0.76(19.2\%)
+> =
+> 14.6\%  
+> $$
+> 
+> The adjusted small-cap portfolio therefore has the same 14.6% risk as the large-cap portfolio, but earns about 8.4% instead of 8.2%. At the same level of risk, small cap provides roughly 0.20%, or 20 basis points, more expected return.
+> 
 
-> **Qualification:** This scaling result relies on risk-free borrowing/lending at the assumed rate and proportional scaling. Real borrowing costs and constraints can break the neat result.
 
-### Exhibits 1 and 2: Benchmark and active-fund Sharpe ratios *(source pp. 98–99)*
 
-Exhibit 1 compares 1994–2018 annualised arithmetic returns, total volatility, and Sharpe ratios for MSCI World, S&P 500, Russell 2000, MSCI EAFE, and Bloomberg Barclays US Aggregate using a 2.3% risk-free rate. The reported Sharpe ratios are 0.38, 0.53, 0.41, 0.25, and 0.77.
+20. The information ratio asks how efficiently the manager bears **active risk** to earn return above the benchmark. They answer different questions because owning the market and deviating from it are different jobs.
 
-Exhibit 2 applies the same construction and period to Fidelity Magellan, Growth Fund of America, Templeton World, T. Rowe Price Small Cap, and JPMorgan Bond. Sharpe ratios are 0.38, 0.56, 0.37, 0.56, and 0.80.
+21. Two managers can earn the same active return while taking very different benchmark-relative risks. The information ratio separates repeatable efficiency from a lucky, oversized deviation.
 
-These are tables, not curves. Their lesson is comparability: the same horizon, risk-free rate, return convention, and currency matter. A ratio from one era should not be casually ranked against another.
-
-### Worked Example 2: Adjusting Risk and Return *(source pp. 99–100)*
-
-**Given:** large cap expected return/risk/SR = 8.2%/14.6%/0.40; small cap = 10.3%/19.2%/0.42; $R_F=2.3\%$.
-
-**Required:** scale small cap with cash to 14.6% risk and compare.
-
-$$w_{SC}=14.6/19.2=0.7604,\qquad w_{cash}=23.96\%\approx24\%.$$
-
-Expected return:
-
-$$0.76(10.3\%)+0.24(2.3\%)=8.38\%\approx8.4\%.$$
-
-Volatility is $0.76(19.2\%)=14.6\%$ and the Sharpe ratio remains 0.42. The adjusted small-cap portfolio earns about 20 bps more than large cap at the same expected risk.
-
-**Likely wrong approach:** compare 10.3% with 8.2% directly. That rewards the portfolio for carrying more risk, exactly what the ratio was invented to prevent.
-
-### The information ratio—Equation 6 *(source pp. 100–103)*
-
-#### TL;DR
-
-Two managers can earn the same active return while taking very different benchmark-relative risks. The information ratio separates repeatable efficiency from a lucky, oversized deviation.
-
-#### Equation and purpose
-
-$$
-IR=\frac{R_P-R_B}{\sigma(R_P-R_B)}=\frac{R_A}{\sigma_A}. \tag{6}
-$$
-
-#### Symbols and units
-
-- $IR$: information ratio; dimensionless; ex ante or ex post.
-- $R_P-R_B=R_A$: active return; percentage return; expected ex ante or average realised ex post.
-- $\sigma(R_P-R_B)=\sigma_A$: active risk, benchmark tracking risk, or tracking error; percentage volatility; forecast ex ante or realised sample standard deviation ex post.
+$$ \underbrace{IR}_{\substack{\text{information ratio}\\\text{return per unit of active risk}}} = \frac{ \underbrace{R_P-R_B}_{\substack{\text{active return}\\R_A}} }{ \underbrace{\sigma(R_P-R_B)}_{\substack{\text{active risk}\\\sigma_A}} } = \frac{ \underbrace{R_A}_{\text{active return}} }{ \underbrace{\sigma_A}_{\substack{\text{active risk}\\\text{or tracking error}}} } $$
 
 #### Mechanism and direction
 

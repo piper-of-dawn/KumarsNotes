@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Level II Notes/PORTFOLIO MANAGEMENT/LM2 - Analysis of Active Portfolio Management.md",
+                "file": "WRITINGS/The Government Blinked. That Matters..md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "LM2 - Analysis of Active Portfolio Management"
+              "title": "The Government Blinked. That Matters."
             }
           }
         ]
@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 384.51103591918945,
-    "collapsed": true
+    "width": 384.51103591918945
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -1192,6 +1191,36 @@
             "id": "91134d7601ce66f3",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "886fe4b4f9fab6ed",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "fb0dd7ffb98f6730",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "2c6249e69a3c5694",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1199,7 +1228,7 @@
             }
           }
         ],
-        "currentTab": 108
+        "currentTab": 111
       }
     ],
     "direction": "horizontal",
@@ -1217,10 +1246,17 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "91134d7601ce66f3",
+  "active": "ab61447ddfebe320",
   "lastOpenFiles": [
-    "Affirmations.md",
+    "Pasted image 20260725201034.png",
+    "CFA Level II Notes/FIXED INCOME/Untitled.md",
+    "WRITINGS/The Government Blinked. That Matters..md",
+    "Artificial Intelligence/Untitled.md",
+    "CFA Level II Notes/FIXED INCOME",
     "CFA Level II Notes/PORTFOLIO MANAGEMENT/LM2 - Analysis of Active Portfolio Management.md",
+    "Artificial Intelligence",
+    "Arts/Data Engineering.md",
+    "Affirmations.md",
     "CFA Level II Notes/PORTFOLIO MANAGEMENT/Untitled.md",
     "CFA Level II Notes/PORTFOLIO MANAGEMENT",
     "CFA Level II Notes",
@@ -1244,20 +1280,13 @@
     "Quotes.md",
     "# Analyst Trend Signal Methodology.md",
     "GIPS.md",
-    "RATES AND RETURNS.md",
-    "WIP/Dymanic Betas Using Kalman Filter.md",
-    "DUMBPROOF_GUIDE_TO_WAYDEEPER.md",
     "Stats",
-    "Arts/Data Engineering.md",
     "Pasted image 20251230214023.png",
     "Pasted image 20260503191508.png",
     "Writings",
-    "CFA Notes/ECONOMICS/International Trade.md",
     "ATS",
     "CFA Notes/DERIVATIVES/CHEATSHEET",
     "CFA Notes/PORTFOLIO MANAGEMENT",
-    "CFA Notes/ETHICS",
-    "CFA Notes/DERIVATIVES",
     "Pasted image 20260503191508 1.png",
     "CFA Notes/ECONOMICS/lrtc.svg",
     "CFA Notes/module58_convexity_curve.svg",
