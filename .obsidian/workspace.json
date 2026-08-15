@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d9d4c7517b8bd021",
+        "id": "2f9a3a980a734f89",
         "type": "tabs",
         "children": [
           {
-            "id": "ab61447ddfebe320",
+            "id": "5c559d2c305fff37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WRITINGS/Why is Gold valuable at all.md",
+                "file": "CFA Level II Notes/Derivatives/Hedge Ratio.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Why is Gold valuable at all"
+              "title": "Hedge Ratio"
             }
           }
         ]
@@ -42,7 +42,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -1221,6 +1223,46 @@
             "id": "2c6249e69a3c5694",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "7e4a7f552c2c74bd",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "c28cb9c09f9eedc5",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "d7d68858d6ccdaec",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "35cf0024aba72e7e",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1228,7 +1270,7 @@
             }
           }
         ],
-        "currentTab": 111
+        "currentTab": 115
       }
     ],
     "direction": "horizontal",
@@ -1243,18 +1285,31 @@
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
       "math-indicator-changer:Change math indicator": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "transfer-latex-from-gpt-fix:Convert formulas from chatgpt": false
     }
   },
-  "active": "ab61447ddfebe320",
+  "active": "5c559d2c305fff37",
   "lastOpenFiles": [
+    "CFA Level II Notes/Derivatives/Valuation of Contingent Claims.md",
+    "CFA Level II Notes/Derivatives/Hedge Ratio.md",
+    "Pasted image 20260815130549.png",
+    "Pasted image 20260815130518.png",
+    "Pasted image 20260815130243.png",
+    "Pasted image 20260815130136.png",
+    "aas.md",
+    "WRITINGS/Doing Back Propagation by Hand.md",
+    "WRITINGS/backprop-update-step.svg",
+    "WRITINGS/backprop-chain-rule.svg",
+    "WRITINGS/backprop-network.svg",
+    "WRITINGS/The Government Blinked. That Matters..md",
+    "WRITINGS/backprop-tiny-network.excalidraw",
+    "WRITINGS/Why is Gold valuable at all.md",
     "Pasted image 20260725202647.png",
     "WRITINGS/The Great Reset of Gaming.md",
-    "WRITINGS/Why is Gold valuable at all.md",
     "Pasted image 20260725202542.png",
     "Books/Siddhartha.md",
     "Artificial Intelligence/Untitled.md",
-    "WRITINGS/The Government Blinked. That Matters..md",
     "Pasted image 20260725201034.png",
     "CFA Level II Notes/FIXED INCOME/Untitled.md",
     "CFA Level II Notes/FIXED INCOME",
@@ -1270,7 +1325,6 @@
     "Python",
     "Dark Arts/The Intramonth Momentum Cycle.md",
     "Quant Finance/ANALYSIS OF VARIANCE.md",
-    "Pasted image 20260628123854.png",
     "index.md",
     "Quant Finance/Mean Variance Portfolio Optimization.md",
     "Spells/DUMBPROOF_GUIDE_TO_WAYDEEPER.md",
@@ -1279,20 +1333,9 @@
     "ATS/industry-barra-factor-analysis.md",
     "CFA Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
     "Machine Learning/XGBoost.md",
-    "Machine Learning/Principal Component Analysis.md",
-    "Mathematics for Machine Learning/Linear Algebra.md",
-    "Mathematics for Machine Learning/EigenVectorsAndEigenValues.md",
     "Stats",
-    "Pasted image 20251230214023.png",
-    "Pasted image 20260503191508.png",
     "Writings",
     "ATS",
-    "CFA Notes/DERIVATIVES/CHEATSHEET",
-    "CFA Notes/PORTFOLIO MANAGEMENT",
-    "Pasted image 20260503191508 1.png",
-    "CFA Notes/ECONOMICS/lrtc.svg",
-    "CFA Notes/module58_convexity_curve.svg",
-    "CFA Notes/module58_convexity_feature_map.svg",
-    "Pasted image 20260221122433.png"
+    "CFA Notes/DERIVATIVES/CHEATSHEET"
   ]
 }

@@ -1,10 +1,111 @@
 1. Forward pricing rests on one rule: identical future cash flows must have the same price today. If they do not, arbitrage exists.
 2. For a forward starting at time A and ending at time B:
 $$ \begin{aligned} DF_B &= DF_A × F_{A,B-A} \\  F_{A,B-A} &= DF_B / DF_A \end{aligned}$$
-3. So the forward **price** (B,A) is the ratio of two discount factors that is B over A.
-4. Consider two routes to the same payoff after two years. Route one: buy a two-year zero-coupon bond for 0.93. Route two: buy a one-year zero-coupon bond for 0.95, then enter a one-year forward contract.
+ 3. So the forward **price** $B,A$ is the ratio of two discount factors that is B over A.
+ 4. Consider two routes to the same payoff after two years. Route one: buy a two-year zero-coupon bond for 0.93. Route two: buy a one-year zero-coupon bond for 0.95, then enter a one-year forward contract.
 
-5. Both routes produce the same payoff. Their initial costs must therefore match:
+> [!NOTE] What is the forward rate? 
+> The forward discount factor tells us that:
+> $$
+> F_{2,4}
+> $$
+> invested at Year 2 becomes €1 at Year 6.
+> Since this is a 4-year period:
+> $$
+> F_{2,4}=\frac{1}{(1+f_{2,4})^4}
+> $$
+> Therefore:
+> $$
+> \boxed{  
+> f_{2,4}
+> 
+> \left(\frac{DF_2}{DF_6}\right)^{1/4}-1  
+> }
+> $$
+> With:
+> $$
+> DF_2=0.943,\qquad DF_6=0.772
+> $$
+> we get:
+>  $$
+> f_{2,4}\approx5.13%
+> $$
+
+> [!note] Why is Forward rate, a ratio of discount factors?
+> A **forward rate** is the interest rate agreed today for borrowing or investing over a period that starts in the future.
+> Example: 
+> $$
+> f_{2,4}
+> $$
+> 
+> means the **4-year interest rate starting at Year 2 and ending at Year 6**.
+> 
+> ***Build it from discount factors***
+> 
+> **What are discount factors?**  
+> A discount factor tells us **how much €1 received in the future is worth today**.
+> 
+> For example:
+> 
+> $$
+> DF_2=0.943
+> $$
+> 
+> means:
+> 
+> > €1 received at Year 2 is worth €0.943 today.
+> 
+> And:
+> 
+> $$
+> DF_6=0.772
+> $$
+> 
+> means:
+> 
+> > €1 received at Year 6 is worth €0.772 today.
+> 
+> ### What is the ratio of discount factors?
+> 
+> We want to know:
+> 
+> > How much money must I have at Year 2 so that it grows to €1 at Year 6?
+> 
+> Call that amount $F_{2,4}$.
+> 
+> There are two ways to guarantee €1 at Year 6:
+> 
+> 4. **Direct route:** pay $DF_6$ today and receive €1 at Year 6.
+>     
+> 5. **Year-2 route:** arrange today to have $F_{2,4}$ at Year 2, then invest it until Year 6.
+>     
+> 
+> Getting $F_{2,4}$ at Year 2 costs today:
+> 
+> $$
+> DF_2 \times F_{2,4}
+> $$
+> 
+> Both strategies produce exactly €1 at Year 6, so by no-arbitrage:
+> 
+> $$
+> DF_6=DF_2F_{2,4}
+> $$
+> 
+> Therefore:
+> 
+> $$
+> \boxed{  
+> F_{2,4}=\frac{DF_6}{DF_2}  
+> }
+> $$
+> 
+> So the **ratio of discount factors gives the discount factor for only the future period from Year 2 to Year 6**.
+> 
+> So the **forward rate is the annual interest rate implied today for investing from Year 2 to Year 6**.
+
+
+4. Both routes produce the same payoff. Their initial costs must therefore match:
 $$
 \begin{aligned}
 0.93 &= 0.95 × F_{1,1} \\
