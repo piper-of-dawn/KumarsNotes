@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WRITINGS/The Nishad Boy.md",
+                "file": "CFA Level II Notes/FSA/Joint Ventures.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "The Nishad Boy"
+              "title": "Joint Ventures"
             }
           }
         ]
@@ -81,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 384.51103591918945
+    "width": 231.43162155151367
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -1263,6 +1263,26 @@
             "id": "35cf0024aba72e7e",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "998716e49e46db4e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "c8f1828513bb1715",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1270,7 +1290,7 @@
             }
           }
         ],
-        "currentTab": 115
+        "currentTab": 117
       }
     ],
     "direction": "horizontal",
@@ -1289,13 +1309,17 @@
       "transfer-latex-from-gpt-fix:Convert formulas from chatgpt": false
     }
   },
-  "active": "5c559d2c305fff37",
+  "active": "c8f1828513bb1715",
   "lastOpenFiles": [
-    "Pasted image 20260628123854.png",
-    "Pasted image 20260725201034.png",
+    "CFA Level II Notes/PORTFOLIO MANAGEMENT/LM2 - Analysis of Active Portfolio Management.md",
+    "CFA Level II Notes/FSA/Joint Ventures.md",
+    "CFA Level II Notes/FSA",
     "CFA Level II Notes/Derivatives/Replication.md",
     "CFA Level II Notes/Derivatives/Hedge Ratio.md",
     "CFA Level II Notes/Derivatives/Valuation of Contingent Claims.md",
+    "WRITINGS/The Nishad Boy.md",
+    "Pasted image 20260628123854.png",
+    "Pasted image 20260725201034.png",
     "Pasted image 20260815130549.png",
     "Pasted image 20260815130518.png",
     "Pasted image 20260815130243.png",
@@ -1310,12 +1334,10 @@
     "WRITINGS/Why is Gold valuable at all.md",
     "Pasted image 20260725202647.png",
     "WRITINGS/The Great Reset of Gaming.md",
-    "Pasted image 20260725202542.png",
     "Books/Siddhartha.md",
     "Artificial Intelligence/Untitled.md",
     "CFA Level II Notes/FIXED INCOME/Untitled.md",
     "CFA Level II Notes/FIXED INCOME",
-    "CFA Level II Notes/PORTFOLIO MANAGEMENT/LM2 - Analysis of Active Portfolio Management.md",
     "Artificial Intelligence",
     "Arts/Data Engineering.md",
     "Affirmations.md",
@@ -1332,10 +1354,8 @@
     "Spells/DUMBPROOF_GUIDE_TO_WAYDEEPER.md",
     "DSA/Trie.md",
     "DSA/Graphs.md",
-    "ATS/industry-barra-factor-analysis.md",
     "Stats",
     "Writings",
-    "ATS",
-    "CFA Notes/DERIVATIVES/CHEATSHEET"
+    "ATS"
   ]
 }
