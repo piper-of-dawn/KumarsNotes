@@ -720,7 +720,7 @@ $$
 > [!note] KEY CONCEPTS
 > - A carry trade earns the foreign interest rate but pays the domestic borrowing rate.
 > - The investor also gains or loses from the currency movement. For **USD/GBP**, a fall means GBP depreciates against USD.
-> - Exact return: $$(1+r_{GBP})\left(\frac{S_1}{S_0}\right)-(1+r_{USD})$$
+> - Exact return: $(1+r_{GBP})\left(\frac{S_1}{S_0}\right)-(1+r_{USD})$.
 > - Approximate return: **interest-rate advantage + percentage change in the investment currency**.
 > - Always calculate the final payoff in the currency in which the loan must be repaid.
 
