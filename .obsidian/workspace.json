@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Level II Notes/FSA/Joint Ventures.md",
+                "file": "CFA Level II Notes/ECONOMICS/Exchange Rate.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Joint Ventures"
+              "title": "Exchange Rate"
             }
           }
         ]
@@ -81,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 231.43162155151367
+    "width": 337.5546684265137
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -1283,6 +1283,66 @@
             "id": "c8f1828513bb1715",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "bb3d1b857d85747c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "db121d60f1b515d3",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "c331ecf22e227391",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "7a76aecb93ed83dc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "4c2d475096a1f125",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "491c874d1458ab2d",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1290,7 +1350,7 @@
             }
           }
         ],
-        "currentTab": 117
+        "currentTab": 123
       }
     ],
     "direction": "horizontal",
@@ -1304,15 +1364,19 @@
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
-      "math-indicator-changer:Change math indicator": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
       "transfer-latex-from-gpt-fix:Convert formulas from chatgpt": false
     }
   },
-  "active": "c8f1828513bb1715",
+  "active": "5c559d2c305fff37",
   "lastOpenFiles": [
-    "CFA Level II Notes/PORTFOLIO MANAGEMENT/LM2 - Analysis of Active Portfolio Management.md",
+    "CFA Level II Notes/FSA/Treasury Stock Method.md",
+    "CFA Level II Notes/ECONOMICS/Exchange Rate.md",
+    "CFA Level II Notes/ECONOMICS",
+    "CFA Level II Notes/FSA/FSA Techniques.md",
+    "CFA L1 Notes/FSA/11-financial-analysis-techniques.md",
+    "CFA L1 Notes/FSA/Introduction to Financial Statement Analysis.md",
     "CFA Level II Notes/FSA/Joint Ventures.md",
+    "CFA Level II Notes/PORTFOLIO MANAGEMENT/LM2 - Analysis of Active Portfolio Management.md",
     "CFA Level II Notes/FSA",
     "CFA Level II Notes/Derivatives/Replication.md",
     "CFA Level II Notes/Derivatives/Hedge Ratio.md",
@@ -1349,13 +1413,7 @@
     "Python",
     "Dark Arts/The Intramonth Momentum Cycle.md",
     "Quant Finance/ANALYSIS OF VARIANCE.md",
-    "index.md",
-    "Quant Finance/Mean Variance Portfolio Optimization.md",
-    "Spells/DUMBPROOF_GUIDE_TO_WAYDEEPER.md",
-    "DSA/Trie.md",
-    "DSA/Graphs.md",
     "Stats",
-    "Writings",
-    "ATS"
+    "Writings"
   ]
 }
