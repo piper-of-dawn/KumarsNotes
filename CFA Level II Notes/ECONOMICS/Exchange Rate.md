@@ -86,7 +86,8 @@ The EUR cancels and GBP remains.
 
 > Interbank quotes: **USD/AUD = 0.6000 - 0.6015**, **USD/MXN = 0.0933 - 0.0935**. **(1)** Find the implied **MXN/AUD** cross rate. **(2)** A dealer quotes **MXN/AUD = 6.3000 - 6.3025**. Is arbitrage possible? Start with **USD 1,000,000**.
 
-*Triangular arbitrage* means moving through **three currencies and returning to the starting currency**. If you return with more money than you started with, the difference is risk-free arbitrage profit.
+> [!NOTE]
+> *Triangular arbitrage* means moving through **three currencies and returning to the starting currency**. If you return with more money than you started with, the difference is risk-free arbitrage profit.
 
 ```text
                          USD
@@ -709,3 +710,72 @@ $$
 **The real risk in a carry trade is the exchange rate.** The 2% interest-rate advantage is profitable only because GBP did **not depreciate** against USD. If GBP weakened enough (USD becomes expensive), the currency loss could erase the entire interest-rate gain.
 
 **Foolproof intuition:** **borrow the low-yield currency -> convert -> invest in the high-yield currency -> convert back -> repay the loan.** If the exchange rate does not move, your approximate return is simply the **interest-rate difference: $3%-1%=2%$**.
+
+---
+
+## Variant: Carry Trade with an Exchange-Rate Change
+
+> U.K. interest rate = **3%**, U.S. interest rate = **1%**, and **USD/GBP moves from 1.50 today to 1.44 one year later**. Compute the return to an investor who **borrows in the United States and invests in the United Kingdom**.
+
+> [!note] KEY CONCEPTS
+> - A carry trade earns the foreign interest rate but pays the domestic borrowing rate.
+> - The investor also gains or loses from the currency movement. For **USD/GBP**, a fall means GBP depreciates against USD.
+> - Exact return: $$(1+r_{GBP})\left(\frac{S_1}{S_0}\right)-(1+r_{USD})$$
+> - Approximate return: **interest-rate advantage + percentage change in the investment currency**.
+> - Always calculate the final payoff in the currency in which the loan must be repaid.
+
+The investor borrows **USD 1,500**. At today's rate of **1.50 USD/GBP**, this buys:
+
+$$
+\frac{1,500}{1.50}=1,000\text{ GBP}
+$$
+
+Invest GBP 1,000 in the United Kingdom at 3%:
+
+$$
+1,000(1.03)=1,030\text{ GBP}
+$$
+
+After one year, GBP has weakened to **1.44 USD/GBP**. Convert the investment back into USD:
+
+$$
+1,030\times1.44=1,483.20\text{ USD}
+$$
+
+The USD loan grows at 1%, so the repayment is:
+
+$$
+1,500(1.01)=1,515\text{ USD}
+$$
+
+The investor therefore loses:
+
+$$
+1,483.20-1,515=-31.80\text{ USD}
+$$
+
+Relative to the USD 1,500 borrowed, the exact return is:
+
+$$
+\frac{-31.80}{1,500}=\boxed{-2.12\%}
+$$
+
+The same result follows directly from the exact return formula:
+
+$$
+(1.03)\left(\frac{1.44}{1.50}\right)-1.01
+=0.9888-1.01
+=\boxed{-2.12\%}
+$$
+
+The quick approximation is:
+
+$$
+3\%-1\%+\left(\frac{1.44}{1.50}-1\right)
+=2\%-4\%
+=\boxed{-2\%}
+$$
+
+The **2% interest-rate advantage** is more than erased by the **4% depreciation of GBP**. The exact loss is slightly larger because the exchange-rate movement also affects the interest earned on the GBP investment.
+
+**Foolproof intuition:** a high foreign interest rate does not guarantee a profitable carry trade. Compare the interest-rate advantage with the movement in the currency you invested in; if that currency depreciates by more than the interest advantage, the trade loses money.

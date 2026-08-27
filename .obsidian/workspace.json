@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM Engineering/Transformers 101.md",
+                "file": "CFA Level II Notes/ECONOMICS/Exchange Rate.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Transformers 101"
+              "title": "Exchange Rate"
             }
           }
         ]
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337.5546684265137
+    "width": 337.5546684265137,
+    "collapsed": true
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -1353,6 +1354,16 @@
             "id": "56e8ae6acd1dff8c",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "1bf465e5ef500e5f",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1360,7 +1371,7 @@
             }
           }
         ],
-        "currentTab": 124
+        "currentTab": 125
       }
     ],
     "direction": "horizontal",
@@ -1379,8 +1390,11 @@
   },
   "active": "5c559d2c305fff37",
   "lastOpenFiles": [
-    "CFA Level II Notes/ECONOMICS/Exchange Rate.md",
+    "Quant Finance/Stylized Facts for Return Distribution.md",
     "LLM Engineering/Transformers 101.md",
+    "Quant Finance/Factor Mimicking Portfolio.md",
+    "Quant Finance/GARCH (1,1).md",
+    "CFA Level II Notes/ECONOMICS/Exchange Rate.md",
     "LLM Engineering",
     "CFA Level II Notes/FSA/Treasury Stock Method.md",
     "CFA Level II Notes/ECONOMICS",
@@ -1420,10 +1434,7 @@
     "CFA Level II Notes/PORTFOLIO MANAGEMENT/Untitled.md",
     "CFA Level II Notes/PORTFOLIO MANAGEMENT",
     "CFA Level II Notes",
-    "Python/Function Augmentation Decorators in Python.md",
-    "Quant Finance/Gold, Inflation Expectations, and the Rate Bluff.md",
     "Python",
-    "Dark Arts/The Intramonth Momentum Cycle.md",
     "Stats"
   ]
 }
