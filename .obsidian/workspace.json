@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Level II Notes/ECONOMICS/Exchange Rate.md",
+                "file": "LLM Engineering/Transformers 101.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Exchange Rate"
+              "title": "Transformers 101"
             }
           }
         ]
@@ -1343,6 +1343,16 @@
             "id": "491c874d1458ab2d",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "56e8ae6acd1dff8c",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1350,7 +1360,7 @@
             }
           }
         ],
-        "currentTab": 123
+        "currentTab": 124
       }
     ],
     "direction": "horizontal",
@@ -1369,8 +1379,10 @@
   },
   "active": "5c559d2c305fff37",
   "lastOpenFiles": [
-    "CFA Level II Notes/FSA/Treasury Stock Method.md",
     "CFA Level II Notes/ECONOMICS/Exchange Rate.md",
+    "LLM Engineering/Transformers 101.md",
+    "LLM Engineering",
+    "CFA Level II Notes/FSA/Treasury Stock Method.md",
     "CFA Level II Notes/ECONOMICS",
     "CFA Level II Notes/FSA/FSA Techniques.md",
     "CFA L1 Notes/FSA/11-financial-analysis-techniques.md",
@@ -1412,8 +1424,6 @@
     "Quant Finance/Gold, Inflation Expectations, and the Rate Bluff.md",
     "Python",
     "Dark Arts/The Intramonth Momentum Cycle.md",
-    "Quant Finance/ANALYSIS OF VARIANCE.md",
-    "Stats",
-    "Writings"
+    "Stats"
   ]
 }
