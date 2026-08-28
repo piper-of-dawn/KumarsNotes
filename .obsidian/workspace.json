@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Level II Notes/FIXED INCOME/Credit Default Swaps.md",
+                "file": "CFA Level II Notes/FIXED INCOME/Term Structure and Interest Rate Dynamics.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Credit Default Swaps"
+              "title": "Term Structure and Interest Rate Dynamics"
             }
           }
         ]
@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337.5546684265137,
-    "collapsed": true
+    "width": 337.5546684265137
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -1374,6 +1373,16 @@
             "id": "380bf6d2581f8625",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "d0269b654def96c0",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1381,7 +1390,7 @@
             }
           }
         ],
-        "currentTab": 126
+        "currentTab": 127
       }
     ],
     "direction": "horizontal",
@@ -1400,6 +1409,8 @@
   },
   "active": "623336744a825907",
   "lastOpenFiles": [
+    "CFA Level II Notes/Corporate Issuers/Cost of Capital.md",
+    "CFA Level II Notes/FIXED INCOME/Term Structure and Interest Rate Dynamics.md",
     "CFA Level II Notes/FIXED INCOME/Credit Default Swaps.md",
     "CFA Level II Notes/ECONOMICS/Exchange Rate.md",
     "Quant Finance/Stylized Facts for Return Distribution.md",
@@ -1440,8 +1451,6 @@
     "CFA Level II Notes/FIXED INCOME/Untitled.md",
     "CFA Level II Notes/FIXED INCOME",
     "Artificial Intelligence",
-    "Arts/Data Engineering.md",
-    "Affirmations.md",
     "CFA Level II Notes/PORTFOLIO MANAGEMENT",
     "CFA Level II Notes",
     "Python",
