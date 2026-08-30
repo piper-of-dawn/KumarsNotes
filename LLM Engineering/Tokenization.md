@@ -40,9 +40,14 @@ Which is a slightly annoying answer, because now we have to ask: who decides whe
 The **tokenizer** is the system that applies the cutting rules. Roughly, it does this:
 
 ```text
-The car is running.
-        ↓
-["The", " car", " is", " run", "ning", "."]
+┌─────────────────────┐
+│ The car is running. │
+└──────────┬──────────┘
+           │ tokenizer
+           ▼
+┌─────────────────────────────────────────────────┐
+│ ["The", " car", " is", " run", "ning", "."]     │
+└─────────────────────────────────────────────────┘
 ```
 
 That still leaves us with text. The model needs numbers, so each piece is assigned a stored number:
@@ -71,7 +76,9 @@ Fine—but **what is a token ID actually telling the model?**
 A **token ID** is the numerical label assigned to a token. The number itself usually has no semantic meaning. `1097` is not more car-like than `278`, just as locker 1097 is not more athletic than locker 278. It is an address. That is all. The model uses that address to look up a learned list of numbers called an **embedding**. That embedding—not the bare ID—is what enters the neural network. So the path is already longer than it first appeared:
 
 ```text
-text → tokens → token IDs → embeddings
+┌──────┐   ┌────────┐   ┌───────────┐   ┌────────────┐
+│ text │ → │ tokens │ → │ token IDs │ → │ embeddings │
+└──────┘   └────────┘   └───────────┘   └────────────┘
 ```
 
 This is where a seemingly fussy question turns out not to be fussy at all. Our example ends with a full stop, but punctuation is not the same thing as an instruction to stop. **What token follows the sentence?**
