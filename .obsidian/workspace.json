@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM Engineering/Untitled.md",
+                "file": "LLM Engineering/Byte Pair Encoding.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Byte Pair Encoding"
             }
           }
         ]
@@ -1419,10 +1419,10 @@
   },
   "active": "623336744a825907",
   "lastOpenFiles": [
-    "LLM Engineering/Tokenization.md",
-    "LLM Engineering/Untitled.md",
-    "LLM Engineering/Transformers 101.md",
     "LLM Engineering/Byte Pair Encoding.md",
+    "LLM Engineering/Byte Pair Encoding.md",
+    "LLM Engineering/Tokenization.md",
+    "LLM Engineering/Transformers 101.md",
     "Arts/Art of Git.md",
     "Arts/Art of Shell.md",
     "Arts/Async Programming.md",
