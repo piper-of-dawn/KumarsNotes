@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Level II Notes/FIXED INCOME/Term Structure and Interest Rate Dynamics.md",
+                "file": "LLM Engineering/Untitled.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Term Structure and Interest Rate Dynamics"
+              "title": "Untitled"
             }
           }
         ]
@@ -1383,6 +1383,16 @@
             "id": "d0269b654def96c0",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "284699d0057ab68c",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1390,7 +1400,7 @@
             }
           }
         ],
-        "currentTab": 127
+        "currentTab": 128
       }
     ],
     "direction": "horizontal",
@@ -1409,12 +1419,18 @@
   },
   "active": "623336744a825907",
   "lastOpenFiles": [
-    "CFA Level II Notes/Corporate Issuers/Cost of Capital.md",
+    "LLM Engineering/Tokenization.md",
+    "LLM Engineering/Untitled.md",
+    "LLM Engineering/Transformers 101.md",
+    "LLM Engineering/Byte Pair Encoding.md",
+    "Arts/Art of Git.md",
+    "Arts/Art of Shell.md",
+    "Arts/Async Programming.md",
     "CFA Level II Notes/FIXED INCOME/Term Structure and Interest Rate Dynamics.md",
+    "CFA Level II Notes/Corporate Issuers/Cost of Capital.md",
     "CFA Level II Notes/FIXED INCOME/Credit Default Swaps.md",
     "CFA Level II Notes/ECONOMICS/Exchange Rate.md",
     "Quant Finance/Stylized Facts for Return Distribution.md",
-    "LLM Engineering/Transformers 101.md",
     "Quant Finance/Factor Mimicking Portfolio.md",
     "Quant Finance/GARCH (1,1).md",
     "LLM Engineering",
@@ -1441,14 +1457,8 @@
     "WRITINGS/backprop-update-step.svg",
     "WRITINGS/backprop-chain-rule.svg",
     "WRITINGS/backprop-network.svg",
-    "WRITINGS/The Government Blinked. That Matters..md",
     "WRITINGS/backprop-tiny-network.excalidraw",
-    "WRITINGS/Why is Gold valuable at all.md",
     "Pasted image 20260725202647.png",
-    "WRITINGS/The Great Reset of Gaming.md",
-    "Books/Siddhartha.md",
-    "Artificial Intelligence/Untitled.md",
-    "CFA Level II Notes/FIXED INCOME/Untitled.md",
     "CFA Level II Notes/FIXED INCOME",
     "Artificial Intelligence",
     "CFA Level II Notes/PORTFOLIO MANAGEMENT",

@@ -72,7 +72,7 @@ $$
 *Intuition:* The yield curve from 4 to 7 years slopes gently upward (5.33% → 5.39%). Six years is two-thirds of the way from 4 to 7, so we take the 4-year yield and add two-thirds of the 0.06% spread.
 
 > [!NOTE]
-> Linear interpolation: \$\text{Yield}_{target} = \text{Yield}_{short} + \frac{\Delta \text{Yield}}{\Delta \text{Mat}} \times (\text{target} - \text{short})\$.
+> Linear interpolation: $\text{Yield}_{target} = \text{Yield}_{short} + \frac{\Delta \text{Yield}}{\Delta \text{Mat}} \times (\text{target} - \text{short})$.
 
 ---
 
@@ -119,7 +119,7 @@ $$
 *Why?* The lessor lends \$125m, receives \$10m/year plus \$30m at the end. The rate that balances those flows is 4.28% — that is the cost of debt implied by the lease.
 
 > [!NOTE]
-> RIIL uses the lessor's perspective: \$PV = -(\text{fair value} + \text{direct cost})$, $PMT = \text{lease payment}$, $FV = \text{residual}\$.
+> RIIL uses the lessor's perspective: $PV = -(\text{fair value} + \text{direct cost})$, $PMT = \text{lease payment}$, $FV = \text{residual}$.
 
 ---
 
@@ -185,7 +185,7 @@ i = \frac{1.024}{1.0025} - 1 = 0.02144 \approx \boxed{2.1\%}
 $$
 
 > [!NOTE]
-> **Do not simply subtract** $2.4\% - 0.25\% = 2.15\%$. Use the Fisher equation: \$i = \frac{1+Y_{\text{nominal}}}{1+Y_{\text{TIPS}}} - 1\$.
+> **Do not simply subtract** $2.4\% - 0.25\% = 2.15\%$. Use the Fisher equation: $i = \frac{1+Y_{\text{nominal}}}{1+Y_{\text{TIPS}}} - 1$.
 
 *Intuition:* TIPS already include inflation protection, so the real yield is 0.25%. The nominal yield is 2.4%. The inflation rate that connects the two is not their difference but their ratio (minus one), because real and nominal rates compound multiplicatively.
 
@@ -214,7 +214,7 @@ $$
 > Calculate the **cost of equity** for two companies:
 >
 > * **Cogenics, Inc.:** Expected dividend **\$4** at end of Year 1, dividends grow at a constant rate of **4%** per year, current stock price **\$100**.
-> * **Betagenics, Inc.:** Expected dividends of **$1.50, $2.00, $2.50, and $3.00** at the end of each of the next four years. Current stock price **\$50**, expected stock price at end of Year 4 is **\$60**.
+> * **Betagenics, Inc.:** Expected dividends of **\$1.50, \$2.00, \$2.50, and \$3.00** at the end of each of the next four years. Current stock price **\$50**, expected stock price at end of Year 4 is **\$60**.
 
 **What is the question really asking?**
 
@@ -246,7 +246,7 @@ The cash flows are:
 *Why $63$ at Year 4?* The last cash flow bundles the **final dividend (\$3.00)** with the **terminal stock price (\$60)**: $3 + 60 = 63$.
 
 > [!NOTE]
-> The terminal stock price enters at the same time as the final dividend — bundle them: \$CF_{last} = D_{last} + P_{terminal}\$.
+> The terminal stock price enters at the same time as the final dividend — bundle them: $CF_{last} = D_{last} + P_{terminal}$.
 
 On the TI BA II Plus:
 
@@ -294,7 +294,7 @@ $$
 *Intuition:* Bondholders get 8.0%. Equity holders take all the residual risk, so they demand 3.8% more. Total: 11.8%.
 
 > [!NOTE]
-> BYRPM: \$r_e = YTM_{\text{debt}} + \text{equity risk premium over debt}\$. Use YTM, **not** the coupon rate.
+> BYRPM: $r_e = YTM_{\text{debt}} + \text{equity risk premium over debt}$. Use YTM, **not** the coupon rate.
 
 ---
 
