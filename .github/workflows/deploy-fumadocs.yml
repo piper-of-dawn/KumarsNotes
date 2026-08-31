@@ -1,0 +1,48 @@
+name: Deploy Fumadocs
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fumadocs-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out notes
+        uses: actions/checkout@v4
+
+      - name: Check out Fumadocs host
+        uses: actions/checkout@v4
+        with:
+          repository: piper-of-dawn/blog
+          path: blog
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.9.0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: blog/fumadocs/pnpm-lock.yaml
+
+      - name: Install dependencies
+        working-directory: blog/fumadocs
+        run: pnpm install --frozen-lockfile
+
+      - name: Deploy production site
+        working-directory: blog/fumadocs
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: pnpm dlx vercel deploy --prod --yes --project fumadocs --token "$VERCEL_TOKEN"
