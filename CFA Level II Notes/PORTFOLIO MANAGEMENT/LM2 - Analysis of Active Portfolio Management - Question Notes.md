@@ -4,6 +4,8 @@
 
 > A global small-cap manager is judged against a private index of 40 large-cap domestic stocks. Its weights are disclosed only after year-end, and no passive fund can replicate it. Is this a valid benchmark? Explain each failure and whether the zero-sum argument for active management applies cleanly.
 
+**Benchmark. What is a benchmark?** It is the comparison portfolio—the plain, low-cost alternative the manager is supposed to beat. **Small-cap and large-cap. What do those mean?** Small-cap companies have relatively small stock-market values; large-cap companies have relatively large ones. **Replicate. What does replicate mean?** It means an investor can actually copy the index by buying the same holdings in the same weights. **Zero-sum. What does zero-sum mean here?** Before fees, one manager's win against the whole market must be another manager's loss.
+
 **1. Run the three-part benchmark check**
 
 - **Representative?** No. Large-cap domestic stocks are not the manager's global small-cap opportunity set.
@@ -28,6 +30,8 @@ Active management is zero-sum before costs when the benchmark is a float-adjuste
 **Abstract:** *Build both portfolios from weight times return, then subtract benchmark return from managed return. A positive portfolio return alone proves nothing about active skill.*
 
 > Stocks return 14% and bonds return 2%. The benchmark is 60% stocks and 40% bonds; the manager holds 70% and 30%. Calculate both returns and value added.
+
+**Portfolio return. What is portfolio return?** It is the weighted return on the mix the manager actually owns: $R_P=\sum_i w_{P,i}R_i$. **Benchmark return. What is benchmark return?** It is the weighted return on the comparison mix: $R_B=\sum_i w_{B,i}R_i$. **Active return—or value added. What is that?** It is the extra return created, or lost, by moving away from the benchmark: $R_A=R_P-R_B$.
 
 **1. Price the passive alternative**
 
@@ -60,6 +64,8 @@ The manager added 1.20 percentage points relative to the passive portfolio.
 
 > A country portfolio has benchmark/managed weights of UK 17%/16%, Japan 25%/14%, France 11%/8%, Germany 9%/24%, and Other 38%/38%. Returns are −7.6%, −9.0%, −3.5%, −15.8%, and −0.1%. Find the largest bets and total value added.
 
+**Weight. What is a weight?** It is the percentage of the whole portfolio placed in one investment. **Active weight. What is an active weight?** It is the manager's weight minus the benchmark's weight: $\Delta w_i=w_{P,i}-w_{B,i}$. Positive means an overweight; negative means an underweight. **Security contribution. What is that?** It is the piece of value added caused by one bet: $\Delta w_iR_i$. Add every contribution to get $R_A=\sum_i\Delta w_iR_i$.
+
 **1. Subtract benchmark weights from managed weights**
 
 $$
@@ -91,6 +97,8 @@ The Japan underweight helped, but the much larger German overweight got crushed.
 
 > A portfolio returns 8.6%, its benchmark returns 7.4%, and portfolio beta is 1.10. Calculate active return and the module's simplified beta-adjusted alpha.
 
+**Beta. What is beta?** It tells you how strongly the portfolio tends to move when the benchmark moves; beta 1.10 means roughly 1.10% of movement for each 1% benchmark move. **Alpha. What is alpha?** It is return left after charging for that benchmark exposure: $\alpha_P=R_P-\beta_PR_B$. **Beta-adjusted. What does that mean?** It means we compare the portfolio with $\beta_PR_B$, not blindly with one copy of $R_B$.
+
 **1. Calculate the plain benchmark gap**
 
 $$
@@ -119,6 +127,8 @@ The portfolio beat the benchmark by 1.20%, but 0.74 percentage point of that gap
 **Abstract:** *Allocation asks whether the manager put extra weight in the right asset classes. Selection asks whether the chosen funds beat each class benchmark.*
 
 > Actual weights are 68% equities and 32% bonds versus policy weights of 60% and 40%. Equity fund/benchmark returns are −5.6%/−4.5%; bond fund/benchmark returns are −0.3%/0.0%. Decompose value added using the curriculum convention.
+
+**Policy weight. What is a policy weight?** It is the client's planned long-run percentage for an asset class—the neutral starting point. **Asset allocation. What is asset allocation?** It is the decision to put more or less money in broad buckets such as equities and bonds; its contribution is $R_{allocation}=\sum_i(w_{P,i}-w_{B,i})R_{B,i}$. **Security selection. What is security selection?** It is the decision about what to own inside each bucket; its contribution is $R_{selection}=\sum_iw_{P,i}(R_{P,i}-R_{B,i})$. **Attribution. What is attribution?** It is the split $R_A=R_{allocation}+R_{selection}$.
 
 **1. Find active class weights and within-class active returns**
 
@@ -157,6 +167,8 @@ $$
 
 > A portfolio added 1.40% in total. Asset allocation contributed 0.60%. Find security-selection contribution and verify the total.
 
+**Attribution component. What is an attribution component?** It is one labelled piece of value added, such as allocation or selection. The pieces obey $R_A=R_{allocation}+R_{selection}$. **Solve backward. What does that mean?** Rearrange that same identity: $R_{selection}=R_A-R_{allocation}$.
+
 **1. Use the attribution identity**
 
 $$
@@ -185,6 +197,8 @@ This is not a new performance source. It is just Equation 4 run backward.
 **Abstract:** *Active share measures how different the holdings are, not whether the differences are intelligent. Tiny active share plus tiny tracking risk is the closet-indexing smell test.*
 
 > Benchmark weights are 40%, 30%, 20%, and 10%; portfolio weights are 42%, 28%, 21%, and 9%. Calculate active share and interpret it.
+
+**Active share. What is active share?** It is the percentage of holdings that differ from the benchmark after we avoid double-counting overweights and underweights: $\text{Active share}=\frac12\sum_i|w_{P,i}-w_{B,i}|$. **Closet indexing. What is closet indexing?** It is charging for active management while quietly holding almost the same portfolio as the index.
 
 **1. Find absolute active weights**
 
@@ -216,6 +230,8 @@ $$
 
 > A portfolio has average monthly return 0.60%, monthly risk-free return 0.10%, and monthly return standard deviation 2.00%. Calculate its annualized ex post Sharpe ratio using the curriculum convention.
 
+**Risk-free return. What is the risk-free return?** It is the return $R_f$ on the cash-like alternative used as the starting line. **Standard deviation. What is standard deviation?** Written $\sigma_P$, it measures how widely portfolio returns bounce around—the chapter's measure of total risk. **Sharpe ratio. What is the Sharpe ratio?** It is return above cash per unit of total risk: $SR=(R_P-R_f)/\sigma_P$. **Ex post and annualized. What do those mean?** Ex post means measured after the returns happened; annualized means converted to one year, using $\bar R_{annual}=12\bar R_{monthly}$ and $\sigma_{annual}=\sqrt{12}\sigma_{monthly}$ here.
+
 **1. Annualize average excess return arithmetically**
 
 $$
@@ -245,6 +261,8 @@ $$
 
 > A manager averages 0.15% active return per month, and the monthly standard deviation of active returns is 0.90%. Calculate the annualized information ratio.
 
+**Active risk. What is active risk?** It is the standard deviation of active returns, $\sigma_A=\sigma(R_P-R_B)$—how much the manager's result bounces around relative to the benchmark. It is also called **tracking risk**. **Information ratio. What is the information ratio?** It is active return per unit of active risk: $IR=E(R_A)/\sigma_A$.
+
 **1. Annualize both active ingredients**
 
 $$
@@ -273,6 +291,8 @@ This says the manager generated about 0.58 unit of average active return per uni
 **Abstract:** *Cash shrinks a risky portfolio's return above cash and its volatility by the same proportion, so its Sharpe ratio survives the resize.*
 
 > Small caps have expected return 10.3%, volatility 19.2%, and Sharpe ratio 0.42 when the risk-free rate is 2.3%. Large caps have volatility 14.6% and expected return 8.2%. Mix small caps with cash to match 14.6% risk and calculate the combined return and Sharpe ratio.
+
+**Expected return. What is expected return?** Written $E(R)$, it is the return we forecast, not a promise. **Volatility. What is volatility?** Written $\sigma$, it is return standard deviation—the amount returns are expected to jump around. **Cash. What does cash mean here?** It is the risk-free investment: return $R_f$ and zero volatility. **Cash scaling. What is cash scaling?** Mix risky portfolio weight $w$ with cash, so $E(R_C)=wE(R_P)+(1-w)R_f$ and $\sigma_C=w\sigma_P$.
 
 **1. Find how much risky portfolio fits inside the risk budget**
 
@@ -307,6 +327,8 @@ At equal risk, small caps plus cash still beat the 8.2% large-cap forecast.
 
 > An active fund has expected active return 2.0% and active risk 5.0%. Invest 60% in the fund and 40% in its benchmark. Find the blend's active return, active risk, and information ratio.
 
+**Active fund. What is an active fund?** It deliberately holds different weights from the benchmark to try to beat it. **Blend. What is a blend?** It is one portfolio made by mixing active-fund weight $w$ with benchmark weight $1-w$. **Benchmark scaling. What is benchmark scaling?** It turns down the active piece: $E(R_{A,blend})=wE(R_{A,fund})$ and $\sigma_{A,blend}=w\sigma_{A,fund}$, so $IR$ stays unchanged.
+
 **1. Calculate the original information ratio**
 
 $$
@@ -337,6 +359,8 @@ $$
 **Abstract:** *Cash is the anchor for Sharpe; the benchmark is the anchor for information ratio. Scaling with the wrong anchor changes the ratio you care about.*
 
 > A fund returns 10%, its benchmark returns 8%, cash earns 2%, total volatility is 16%, and active risk is 5%. What happens to Sharpe and information ratio if half the fund is replaced by cash rather than by the benchmark?
+
+**Total volatility. What is total volatility?** It is $\sigma_P$, how much the fund itself moves around without subtracting a benchmark. **Cash scaling. What is cash scaling?** It gives $R_C=wR_P+(1-w)R_f$ and $\sigma_C=w\sigma_P$, preserving $SR$. **Benchmark scaling. What is benchmark scaling?** It gives $R_{A,C}=wR_A$ and $\sigma_{A,C}=w\sigma_A$, preserving $IR$. The two operations protect different ratios.
 
 **1. Original ratios**
 
@@ -370,6 +394,8 @@ $$
 **Abstract:** *A closet index can mimic benchmark Sharpe while producing almost no active efficiency. A market-neutral fund using cash as benchmark makes IR and Sharpe the same calculation.*
 
 > Fund C earns −0.10% active return with 0.50% active risk and otherwise hugs its benchmark. Fund M is market neutral, earns 4% above cash, and has 8% total risk. Calculate the useful ratios and interpret both funds.
+
+**Closet index fund. What is a closet index fund?** It is a supposedly active fund that barely moves away from its benchmark. **Market-neutral fund. What is a market-neutral fund?** It builds offsetting long and short positions so broad market movements are designed to cancel; the goal is to earn from security choices, not from the whole market rising. **Long and short. What do those mean?** Long benefits when an investment rises; short benefits when it falls. With cash as the benchmark, $R_A=R_P-R_f$ and $\sigma_A=\sigma_P$, so $IR=SR$.
 
 **1. Closet-index information ratio**
 
