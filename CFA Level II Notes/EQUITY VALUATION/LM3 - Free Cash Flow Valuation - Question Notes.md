@@ -4,7 +4,7 @@
 
 > An analyst has forecasts of both FCFF and FCFE. Which cash flow and discount rate should be used to estimate firm value and equity value?
 
-**FCFF. What is FCFF?** Free cash flow to the firm is cash available to debt and equity investors after operations and reinvestment. **FCFE. What is FCFE?** Free cash flow to equity is cash left for common shareholders after reinvestment and net debt financing. **WACC. What is WACC?** The weighted average cost of capital is the required return demanded by all capital providers.
+<span class="jargon-unlock">**FCFF. What is FCFF?** Free cash flow to the firm is cash available to debt and equity investors after operations and reinvestment. **FCFE. What is FCFE?** Free cash flow to equity is cash left for common shareholders after reinvestment and net debt financing. **WACC. What is WACC?** The weighted average cost of capital is the required return demanded by all capital providers.</span>
 
 **1. Match each cash stream to its owner**
 
@@ -31,7 +31,7 @@ Here, $r$ is the required return on common equity. The discount rate must belong
 
 > A firm will produce FCFF of $100 million, $110 million, and $120 million over the next three years. WACC is 10%, debt is worth $50 million, and 10 million shares are outstanding. Ignore cash flows after Year 3. Find value per share.
 
-**Present value. What is present value?** It is future cash translated into today’s money: $PV=CF_t/(1+k)^t$, where $CF_t$ is the Year-$t$ cash flow, $k$ is the discount rate, and $t$ is years away.
+<span class="jargon-unlock">**Present value. What is present value?** It is future cash translated into today’s money: $PV=CF_t/(1+k)^t$, where $CF_t$ is the Year-$t$ cash flow, $k$ is the discount rate, and $t$ is years away.</span>
 
 **1. Discount the operating cash flows**
 
@@ -56,7 +56,7 @@ $$
 
 > Forecast FCFE is $50 million, $55 million, and $60 million in Years 1–3. The required return on equity is 12%, 10 million shares exist, and there is no terminal value. Find value per share.
 
-**Required return on equity. What is it?** It is the return common shareholders demand for bearing the stock’s risk. **FCFE valuation. What is it?** $V_{equity}=\sum FCFE_t/(1+r)^t$, where $r$ is that required equity return.
+<span class="jargon-unlock">**Required return on equity. What is it?** It is the return common shareholders demand for bearing the stock’s risk. **FCFE valuation. What is it?** $V_{equity}=\sum FCFE_t/(1+r)^t$, where $r$ is that required equity return.</span>
 
 **1. Bring each FCFE home to today**
 
@@ -83,7 +83,7 @@ Debt is already reflected through interest and net borrowing inside FCFE.
 
 > A company is financed with 40% debt and 60% equity. Its before-tax cost of debt is 6%, required equity return is 10%, and tax rate is 25%. Calculate WACC.
 
-**Market-value weight. What is it?** It is each funding source’s current market-value share. **Tax shield. What is it?** Interest reduces taxable income, so after-tax debt cost is $r_d(1-T)$, where $r_d$ is debt cost and $T$ is the tax rate. **WACC. What is WACC?** $WACC=w_dr_d(1-T)+w_er_e$.
+<span class="jargon-unlock">**Market-value weight. What is it?** It is each funding source’s current market-value share. **Tax shield. What is it?** Interest reduces taxable income, so after-tax debt cost is $r_d(1-T)$, where $r_d$ is debt cost and $T$ is the tax rate. **WACC. What is WACC?** $WACC=w_dr_d(1-T)+w_er_e$.</span>
 
 **1. Tax-adjust debt, then weight both sources**
 
@@ -104,7 +104,7 @@ The weights add to 100%, which is our quick debugger.
 
 > FCFF just ended at $100 million. It will grow forever at 4%. WACC is 9%, debt is $500 million, and 100 million shares exist. Estimate value per share.
 
-**Constant growth. What does it mean?** Cash flow grows forever at one sustainable rate $g$. **FCFF model. What is the formula?** $V_{firm}=FCFF_1/(WACC-g)=FCFF_0(1+g)/(WACC-g)$.
+<span class="jargon-unlock">**Constant growth. What does it mean?** Cash flow grows forever at one sustainable rate $g$. **FCFF model. What is the formula?** $V_{firm}=FCFF_1/(WACC-g)=FCFF_0(1+g)/(WACC-g)$.</span>
 
 **1. Value the operating firm**
 
@@ -129,7 +129,7 @@ $$
 
 > FCFE per share just ended at $3.20. It should grow forever at 5%, and shareholders require 11%. Estimate intrinsic value per share.
 
-**Intrinsic value. What is it?** It is the model’s estimate of what the share is worth. **Constant-growth FCFE model. What is it?** $V_0=FCFE_1/(r-g)=FCFE_0(1+g)/(r-g)$, where $r$ is the equity return and $g$ is growth.
+<span class="jargon-unlock">**Intrinsic value. What is it?** It is the model’s estimate of what the share is worth. **Constant-growth FCFE model. What is it?** $V_0=FCFE_1/(r-g)=FCFE_0(1+g)/(r-g)$, where $r$ is the equity return and $g$ is growth.</span>
 
 **1. Grow once and capitalize forever**
 
@@ -150,7 +150,7 @@ The model says the entire future stream is worth $56 today.
 
 > A stock sells for $50. FCFE per share just ended at $3, and the required return is 10%. What perpetual FCFE growth rate does the price imply?
 
-**Implied growth. What is it?** It is the growth assumption hidden inside the market price. Starting from $V_0=FCFE_0(1+g)/(r-g)$, solve for $g$ rather than value.
+<span class="jargon-unlock">**Implied growth. What is it?** It is the growth assumption hidden inside the market price. Starting from $V_0=FCFE_0(1+g)/(r-g)$, solve for $g$ rather than value.</span>
 
 **1. Rearrange without guessing**
 
@@ -177,7 +177,7 @@ The answer is below 10%, so the denominator stays positive.
 
 > An analyst uses $FCFE_1=5$, required return $r=9\%$, and perpetual growth $g=10\%$. Calculate value and assess the model.
 
-**Perpetuity. What is it?** A cash-flow stream assumed to continue forever. **No-growth boundary. What is the rule?** The constant-growth formula $V_0=FCFE_1/(r-g)$ requires $r>g$.
+<span class="jargon-unlock">**Perpetuity. What is it?** A cash-flow stream assumed to continue forever. **No-growth boundary. What is the rule?** The constant-growth formula $V_0=FCFE_1/(r-g)$ requires $r>g$.</span>
 
 **1. Check the denominator before touching the calculator**
 
@@ -202,7 +202,7 @@ $$
 
 > Net income is $120 million, noncash charges are $20 million, interest is $30 million, tax is 25%, fixed-capital investment is $80 million, and working-capital investment is $10 million. Calculate FCFF.
 
-**Noncash charges, or NCC. What are they?** Expenses that lowered profit without using cash. **FCInv and WCInv. What are they?** Investment in long-lived operating assets and net operating working capital. **FCFF formula. What is it?** $FCFF=NI+NCC+Int(1-T)-FCInv-WCInv$.
+<span class="jargon-unlock">**Noncash charges, or NCC. What are they?** Expenses that lowered profit without using cash. **FCInv and WCInv. What are they?** Investment in long-lived operating assets and net operating working capital. **FCFF formula. What is it?** $FCFF=NI+NCC+Int(1-T)-FCInv-WCInv$.</span>
 
 **1. Rebuild cash available to every investor**
 
@@ -221,7 +221,7 @@ $$
 
 > Net income includes $20 million depreciation, an $8 million gain on an asset sale, and a $5 million noncash impairment loss. Calculate net noncash charges.
 
-**Depreciation. What is it?** A noncash expense spreading an asset’s cost across years. **Gain. What is it?** Income already included in net income but not an operating cash inflow. **Impairment. What is it?** A write-down that reduces profit without current cash leaving.
+<span class="jargon-unlock">**Depreciation. What is it?** A noncash expense spreading an asset’s cost across years. **Gain. What is it?** Income already included in net income but not an operating cash inflow. **Impairment. What is it?** A write-down that reduces profit without current cash leaving.</span>
 
 **1. Reverse the accounting effects**
 
@@ -242,7 +242,7 @@ Depreciation and the loss reduced profit, so add them back. The gain raised prof
 
 > CFO is $150 million, interest expense is $30 million, tax is 25%, and fixed-capital investment is $70 million. Interest was classified inside CFO. Calculate FCFF.
 
-**CFO. What is CFO?** Cash flow from operations is operating cash reported on the cash-flow statement. **FCFF from CFO. What is the formula?** $FCFF=CFO+Int(1-T)-FCInv$ when CFO already deducts interest paid.
+<span class="jargon-unlock">**CFO. What is CFO?** Cash flow from operations is operating cash reported on the cash-flow statement. **FCFF from CFO. What is the formula?** $FCFF=CFO+Int(1-T)-FCInv$ when CFO already deducts interest paid.</span>
 
 **1. Restore lender cash, then pay for fixed assets**
 
@@ -263,7 +263,7 @@ There is no separate $WCInv$ subtraction because CFO already captured it.
 
 > An IFRS company reports CFO of $120 million, classifies $20 million interest paid as financing, and invests $50 million in fixed capital. Calculate FCFF.
 
-**IFRS classification. What does it mean?** IFRS may place interest paid in operating or financing cash flow. **Classification check. Why does it matter?** $FCFF=CFO+Int(1-T)-FCInv$ adds interest back only when CFO first deducted it.
+<span class="jargon-unlock">**IFRS classification. What does it mean?** IFRS may place interest paid in operating or financing cash flow. **Classification check. Why does it matter?** $FCFF=CFO+Int(1-T)-FCInv$ adds interest back only when CFO first deducted it.</span>
 
 **1. Follow what is already inside CFO**
 
@@ -284,7 +284,7 @@ $$
 
 > Net property, plant, and equipment rose from $550 million to $620 million. Depreciation was $50 million, and there were no disposals or acquisitions. Calculate fixed-capital investment.
 
-**Net PPE. What is it?** Long-lived operating assets after accumulated depreciation. **FCInv. What is it?** Cash invested in those fixed operating assets. With no disposals, $FCInv=Ending\ net\ PPE-Beginning\ net\ PPE+Depreciation$.
+<span class="jargon-unlock">**Net PPE. What is it?** Long-lived operating assets after accumulated depreciation. **FCInv. What is it?** Cash invested in those fixed operating assets. With no disposals, $FCInv=Ending\ net\ PPE-Beginning\ net\ PPE+Depreciation$.</span>
 
 **1. Reconstruct the asset roll-forward**
 
@@ -305,7 +305,7 @@ The company needed $50 million just to replace the accounting wear plus $70 mill
 
 > Noncash operating current assets rise from $180 million to $220 million. Operating current liabilities rise from $110 million to $130 million. Calculate working-capital investment.
 
-**Operating working capital. What is it?** Short-term operating assets financed after short-term operating liabilities: $OWC=Operating\ CA-Operating\ CL$. **WCInv. What is it?** The period’s increase, $WCInv=\Delta OWC$.
+<span class="jargon-unlock">**Operating working capital. What is it?** Short-term operating assets financed after short-term operating liabilities: $OWC=Operating\ CA-Operating\ CL$. **WCInv. What is it?** The period’s increase, $WCInv=\Delta OWC$.</span>
 
 **1. Find how much extra cash got tied up**
 
@@ -326,7 +326,7 @@ An increase uses cash, so it will be subtracted in FCFF and FCFE.
 
 > FCFF is $150 million, interest is $30 million, tax is 25%, and net borrowing is $10 million. Calculate FCFE.
 
-**Net borrowing. What is it?** New debt issued minus debt repaid. **FCFF-to-FCFE bridge. What is it?** $FCFE=FCFF-Int(1-T)+Net\ borrowing$.
+<span class="jargon-unlock">**Net borrowing. What is it?** New debt issued minus debt repaid. **FCFF-to-FCFE bridge. What is it?** $FCFE=FCFF-Int(1-T)+Net\ borrowing$.</span>
 
 **1. Remove the lender’s after-tax slice**
 
@@ -347,7 +347,7 @@ Interest belongs to lenders, not common shareholders; new debt supplies fresh ca
 
 > Net income is $100 million, noncash charges are $20 million, fixed-capital investment is $70 million, working-capital investment is $15 million, and net borrowing is $25 million. Calculate FCFE.
 
-**FCFE from net income. What is the formula?** $FCFE=NI+NCC-FCInv-WCInv+Net\ borrowing$. Each symbol is a cash adjustment needed to move from accounting profit to shareholder cash.
+<span class="jargon-unlock">**FCFE from net income. What is the formula?** $FCFE=NI+NCC-FCInv-WCInv+Net\ borrowing$. Each symbol is a cash adjustment needed to move from accounting profit to shareholder cash.</span>
 
 **1. Run the cash pipeline**
 
@@ -368,7 +368,7 @@ The $25 million borrowing funds part of the $85 million investment burden.
 
 > CFO is $130 million, fixed-capital investment is $60 million, and net borrowing is $15 million. Calculate FCFE.
 
-**FCFE from CFO. What is the formula?** $FCFE=CFO-FCInv+Net\ borrowing$. **Why no interest adjustment?** CFO begins after the interest treatment relevant to common-equity cash, while FCFE keeps debt financing through net borrowing.
+<span class="jargon-unlock">**FCFE from CFO. What is the formula?** $FCFE=CFO-FCInv+Net\ borrowing$. **Why no interest adjustment?** CFO begins after the interest treatment relevant to common-equity cash, while FCFE keeps debt financing through net borrowing.</span>
 
 **1. Pay for long-lived assets and add fresh debt cash**
 
@@ -389,7 +389,7 @@ The units remain millions of currency per year.
 
 > EBIT is $200 million, tax is 25%, depreciation is $40 million, fixed-capital investment is $90 million, and working-capital investment is $15 million. Calculate FCFF.
 
-**EBIT. What is EBIT?** Earnings before interest and taxes is operating profit before lender financing. **FCFF from EBIT. What is the formula?** $FCFF=EBIT(1-T)+Dep-FCInv-WCInv$.
+<span class="jargon-unlock">**EBIT. What is EBIT?** Earnings before interest and taxes is operating profit before lender financing. **FCFF from EBIT. What is the formula?** $FCFF=EBIT(1-T)+Dep-FCInv-WCInv$.</span>
 
 **1. Convert operating profit into operating cash**
 
@@ -410,7 +410,7 @@ Depreciation reduced EBIT but did not spend current cash, so it comes back.
 
 > EBITDA is $250 million, depreciation is $40 million, tax is 25%, fixed-capital investment is $90 million, and working-capital investment is $15 million. Calculate FCFF.
 
-**EBITDA. What is EBITDA?** Earnings before interest, taxes, depreciation, and amortization. **Depreciation tax shield. What is it?** Depreciation saves taxes even though it uses no cash: $Dep\times T$. **FCFF formula. What is it?** $FCFF=EBITDA(1-T)+Dep(T)-FCInv-WCInv$.
+<span class="jargon-unlock">**EBITDA. What is EBITDA?** Earnings before interest, taxes, depreciation, and amortization. **Depreciation tax shield. What is it?** Depreciation saves taxes even though it uses no cash: $Dep\times T$. **FCFF formula. What is it?** $FCFF=EBITDA(1-T)+Dep(T)-FCInv-WCInv$.</span>
 
 **1. Build after-tax operating cash**
 
@@ -429,7 +429,7 @@ $$
 
 > Net income is $100 million, depreciation is $20 million, interest is $20 million, tax is 25%, fixed investment is $50 million, working-capital investment is $10 million, and net borrowing is $5 million. Calculate FCFF and FCFE, then verify the bridge.
 
-**Reconciliation. What is it?** An independent route used to check the same answer. **Bridge. What is it?** $FCFE=FCFF-Int(1-T)+Net\ borrowing$.
+<span class="jargon-unlock">**Reconciliation. What is it?** An independent route used to check the same answer. **Bridge. What is it?** $FCFE=FCFF-Int(1-T)+Net\ borrowing$.</span>
 
 **1. Calculate both cash flows**
 
@@ -460,7 +460,7 @@ $$
 
 > Net income is $120 million. Net fixed-capital investment plus working-capital investment is $50 million, and debt finances 40% of that investment. Calculate FCFE.
 
-**Debt ratio, or DR. What is it?** The fraction of new operating investment financed with debt. **Net investment. What is it?** $FCInv-Dep+WCInv$. **Shortcut. What is it?** $FCFE=NI-(1-DR)(FCInv-Dep)-(1-DR)WCInv$.
+<span class="jargon-unlock">**Debt ratio, or DR. What is it?** The fraction of new operating investment financed with debt. **Net investment. What is it?** $FCInv-Dep+WCInv$. **Shortcut. What is it?** $FCFE=NI-(1-DR)(FCInv-Dep)-(1-DR)WCInv$.</span>
 
 **1. Charge equity only for its 60% share**
 
@@ -481,7 +481,7 @@ Debt supplies $20 million and equity absorbs $30 million.
 
 > FCFE is $95 million, net income is $110 million, noncash charges are $10 million, fixed investment is $40 million, and working-capital investment is $5 million. Find net borrowing.
 
-**Net borrowing. What is it?** Debt issued minus debt repaid. From $FCFE=NI+NCC-FCInv-WCInv+Net\ borrowing$, isolate the unknown.
+<span class="jargon-unlock">**Net borrowing. What is it?** Debt issued minus debt repaid. From $FCFE=NI+NCC-FCInv-WCInv+Net\ borrowing$, isolate the unknown.</span>
 
 **1. See what cash exists before financing**
 
@@ -506,7 +506,7 @@ $$
 
 > Sales rise from $1,000 million to $1,100 million. Net margin is 8%. Net fixed investment equals 30% of the sales increase, working-capital investment equals 10%, and debt finances 40% of total investment. Forecast FCFE.
 
-**Net margin. What is it?** Net income divided by sales: $NI=Sales\times margin$. **Incremental investment. What is it?** New investment tied to the change in sales, not total sales.
+<span class="jargon-unlock">**Net margin. What is it?** Net income divided by sales: $NI=Sales\times margin$. **Incremental investment. What is it?** New investment tied to the change in sales, not total sales.</span>
 
 **1. Forecast income and reinvestment**
 
@@ -537,7 +537,7 @@ $$
 
 > Next-year sales are $1,080 million, EBIT margin is 15%, depreciation is 4% of sales, fixed investment is 6% of sales, working-capital investment is 10% of the $80 million sales increase, and tax is 25%. Forecast FCFF.
 
-**Component forecast. What is it?** Each FCFF input is forecast separately from its economic driver. **EBIT margin. What is it?** $EBIT/Sales$.
+<span class="jargon-unlock">**Component forecast. What is it?** Each FCFF input is forecast separately from its economic driver. **EBIT margin. What is it?** $EBIT/Sales$.</span>
 
 **1. Build the pieces**
 
@@ -562,7 +562,7 @@ $$
 
 > A company generates FCFE of $100 million, pays $40 million of dividends, and repurchases $30 million of shares. What happens to FCFE, and how much remains undistributed?
 
-**Dividend. What is it?** Cash paid directly to shareholders. **Share repurchase. What is it?** Company cash used to buy back its own shares. **Distribution. What is it?** A use of FCFE, not an ingredient in the FCFE formula.
+<span class="jargon-unlock">**Dividend. What is it?** Cash paid directly to shareholders. **Share repurchase. What is it?** Company cash used to buy back its own shares. **Distribution. What is it?** A use of FCFE, not an ingredient in the FCFE formula.</span>
 
 **1. Keep generation separate from payout**
 
@@ -587,7 +587,7 @@ $$
 
 > A $100 million operating investment was going to be financed with 30% debt. Management changes the plan to 60% debt. Holding everything else fixed, how does current FCFE change?
 
-**Leverage. What is leverage?** The use of debt financing. **Net borrowing. What is it?** New debt minus repayments, and it enters FCFE with a plus sign.
+<span class="jargon-unlock">**Leverage. What is leverage?** The use of debt financing. **Net borrowing. What is it?** New debt minus repayments, and it enters FCFE with a plus sign.</span>
 
 **1. Compare the debt cash supplied**
 
@@ -618,7 +618,7 @@ $$
 
 > Net income is $80 million, depreciation is $50 million, fixed investment is $70 million, working-capital investment is $10 million, and net borrowing is $30 million. Calculate FCFE and assess net income as a proxy.
 
-**Proxy. What is a proxy?** A shortcut used in place of the actual measure. **FCFE formula. What is it?** $FCFE=NI+Dep-FCInv-WCInv+Net\ borrowing$ here.
+<span class="jargon-unlock">**Proxy. What is a proxy?** A shortcut used in place of the actual measure. **FCFE formula. What is it?** $FCFE=NI+Dep-FCInv-WCInv+Net\ borrowing$ here.</span>
 
 **1. Test the shortcut instead of assuming it**
 
@@ -639,7 +639,7 @@ Net investment is $70-50+10=30$, exactly matched by net borrowing.
 
 > EBITDA is $200 million, depreciation is $30 million, tax is 25%, fixed investment is $60 million, and working-capital investment is $10 million. Calculate FCFF and EBITDA’s overstatement.
 
-**EBITDA proxy. What does that mean?** Treating EBITDA as if it were distributable firm cash. **Correct conversion. What is it?** $FCFF=EBITDA(1-T)+Dep(T)-FCInv-WCInv$.
+<span class="jargon-unlock">**EBITDA proxy. What does that mean?** Treating EBITDA as if it were distributable firm cash. **Correct conversion. What is it?** $FCFF=EBITDA(1-T)+Dep(T)-FCInv-WCInv$.</span>
 
 **1. Calculate actual firm cash**
 
@@ -664,7 +664,7 @@ $$
 
 > Debt, preferred stock, and common equity have market values of $400 million, $100 million, and $500 million. Their required returns are 8%, 8%, and 12%; tax is 30%. Common net income is $110 million, interest $32 million, preferred dividends $8 million, depreciation $40 million, fixed investment $70 million, and working-capital investment $20 million. Find WACC and FCFF.
 
-**Preferred stock. What is it?** Equity with a stated dividend paid before common shareholders. **Preferred cost. What is it?** Its required return, not tax-deductible.
+<span class="jargon-unlock">**Preferred stock. What is it?** Equity with a stated dividend paid before common shareholders. **Preferred cost. What is it?** Its required return, not tax-deductible.</span>
 
 $$
 WACC=0.40(0.08)(0.70)+0.10(0.08)+0.50(0.12)=\boxed{9.04\%}
@@ -687,7 +687,7 @@ $$
 
 > Common net income is $60 million, depreciation is $10 million, fixed investment is $20 million, working-capital investment is $5 million, net debt borrowing is zero, and net preferred issuance is $15 million. Calculate FCFE to common shareholders.
 
-**Net preferred issuance. What is it?** Preferred shares issued minus preferred shares redeemed. Like new debt, positive issuance supplies financing cash.
+<span class="jargon-unlock">**Net preferred issuance. What is it?** Preferred shares issued minus preferred shares redeemed. Like new debt, positive issuance supplies financing cash.</span>
 
 **1. Start from income already after preferred dividends**
 
@@ -708,7 +708,7 @@ Without the preferred issuance, FCFE would have been $45 million.
 
 > FCFF just ended at £28 million and grows forever at 4%. WACC is 8.435%. Debt is £145 million, preferred stock is £65 million, 8 million common shares exist, and market price is £32.50. Estimate value per share and classify the stock.
 
-**Senior claims. What are they?** Debt and preferred stock claims paid before common equity. **Classification. What is it?** Compare intrinsic value with market price.
+<span class="jargon-unlock">**Senior claims. What are they?** Debt and preferred stock claims paid before common equity. **Classification. What is it?** Compare intrinsic value with market price.</span>
 
 $$
 V_{firm}=\frac{28(1.04)}{0.08435-0.04}=\boxed{£656.60\text{m}}
@@ -733,7 +733,7 @@ Because £55.82 exceeds £32.50, the shares are undervalued by the model.
 
 > FCFE per share is $2.00 now, grows 15% for three years, then 5% forever. The required equity return is 11%. Estimate value per share.
 
-**Two-stage model. What is it?** A high-growth period followed by perpetual stable growth. **Terminal value. What is it?** All cash flows after Year 3 compressed into $TV_3=FCFE_4/(r-g)$.
+<span class="jargon-unlock">**Two-stage model. What is it?** A high-growth period followed by perpetual stable growth. **Terminal value. What is it?** All cash flows after Year 3 compressed into $TV_3=FCFE_4/(r-g)$.</span>
 
 $$
 FCFE_1=2.30,\quad FCFE_2=2.645,\quad FCFE_3=3.04175
@@ -762,7 +762,7 @@ $$
 
 > FCFF is $100 million now, grows 12% for two years, then 4% forever. WACC is 9%, debt is $400 million, and 50 million shares exist. Find value per share.
 
-**Terminal firm value. What is it?** $TV_2=FCFF_3/(WACC-g)$. **Equity bridge. What is it?** $V_{equity}=V_{firm}-Debt$.
+<span class="jargon-unlock">**Terminal firm value. What is it?** $TV_2=FCFF_3/(WACC-g)$. **Equity bridge. What is it?** $V_{equity}=V_{firm}-Debt$.</span>
 
 $$
 FCFF_1=112,\quad FCFF_2=125.44,\quad FCFF_3=130.4576
@@ -791,7 +791,7 @@ $$
 
 > FCFE per share is $1.50 now. Growth declines through 20%, 15%, 10%, and 5% over Years 1–4, then remains 5%. The required return is 12%. Estimate value.
 
-**Declining growth. What is it?** A transition in which each year has a different growth rate. **Stable stage. What is it?** The perpetual phase beginning after Year 4.
+<span class="jargon-unlock">**Declining growth. What is it?** A transition in which each year has a different growth rate. **Stable stage. What is it?** The perpetual phase beginning after Year 4.</span>
 
 $$
 FCFE_1=1.80,\ FCFE_2=2.07,\ FCFE_3=2.277,\ FCFE_4=2.39085
@@ -820,7 +820,7 @@ $$
 
 > FCFE per share is $0.75 now. It grows 10% in Year 1, 26% in Years 2–4, and 6% from Year 5 onward. Beta is 2.0, the risk-free rate is 4.5%, and the equity risk premium is 5%. Estimate value per share.
 
-**CAPM. What is CAPM?** It estimates the equity return as $r=R_f+\beta ERP$, where $R_f$ is the risk-free rate, $\beta$ is market sensitivity, and $ERP$ is the equity risk premium. **Three-stage model. What is it?** Three distinct growth phases before the last phase continues forever.
+<span class="jargon-unlock">**CAPM. What is CAPM?** It estimates the equity return as $r=R_f+\beta ERP$, where $R_f$ is the risk-free rate, $\beta$ is market sensitivity, and $ERP$ is the equity risk premium. **Three-stage model. What is it?** Three distinct growth phases before the last phase continues forever.</span>
 
 $$
 r=4.5\%+2.0(5\%)=14.5\%
@@ -855,7 +855,7 @@ $$
 
 > A company is expected to earn $4.00 per share in Year 5. A justified terminal P/E is 18, and the required return is 12%. Ignoring interim FCFE, find the present value of the terminal stock price.
 
-**P/E. What is P/E?** Price divided by earnings per share. **Terminal multiple. What is it?** A valuation multiple applied to a forecast fundamental at the horizon: $P_5=(P/E)_5\times EPS_5$.
+<span class="jargon-unlock">**P/E. What is P/E?** Price divided by earnings per share. **Terminal multiple. What is it?** A valuation multiple applied to a forecast fundamental at the horizon: $P_5=(P/E)_5\times EPS_5$.</span>
 
 $$
 P_5=18(4.00)=\boxed{\$72.00}
@@ -878,7 +878,7 @@ $$
 
 > FCFE per share is $4.00 in Year 5. Stable growth from Year 6 onward is 5%, and the required return is 10%. Find terminal value at Year 5 and its present value.
 
-**Gordon terminal value. What is it?** $TV_n=FCFE_{n+1}/(r-g)$, where $n$ is the last explicit forecast year.
+<span class="jargon-unlock">**Gordon terminal value. What is it?** $TV_n=FCFE_{n+1}/(r-g)$, where $n$ is the last explicit forecast year.</span>
 
 $$
 TV_5=\frac{4.00(1.05)}{0.10-0.05}=\boxed{\$84.00}
@@ -901,7 +901,7 @@ $$
 
 > A model gives present value of explicit FCFE of $18 million and present value of terminal value of $72 million. What percentage of equity value comes from terminal value?
 
-**Terminal-value weight. What is it?** The fraction of total estimated value coming from cash flows beyond the explicit forecast: $Weight=PV(TV)/(PV(Explicit)+PV(TV))$.
+<span class="jargon-unlock">**Terminal-value weight. What is it?** The fraction of total estimated value coming from cash flows beyond the explicit forecast: $Weight=PV(TV)/(PV(Explicit)+PV(TV))$.</span>
 
 **1. Divide the long-tail value by total value**
 
@@ -922,7 +922,7 @@ Only 20% comes from individually forecast years.
 
 > FCFE per share is $2.00, required return is 10%, and perpetual growth is 4%. Find base value, then change growth alone to 5%.
 
-**Sensitivity analysis. What is it?** Recalculating value after changing one assumption. **Base case. What is it?** The central set of assumptions used for comparison.
+<span class="jargon-unlock">**Sensitivity analysis. What is it?** Recalculating value after changing one assumption. **Base case. What is it?** The central set of assumptions used for comparison.</span>
 
 $$
 V_{base}=\frac{2(1.04)}{0.10-0.04}=\boxed{\$34.67}
@@ -951,7 +951,7 @@ $$
 
 > A one-variable sensitivity table gives price ranges of £18.50 for FCFE, £2.89 for the risk-free rate, £22.18 for the equity risk premium, £16.89 for beta, and £30.23 for growth. Rank the inputs from most to least sensitive.
 
-**Sensitivity range. What is it?** $Range=Highest\ value-Lowest\ value$ while other inputs remain at base case.
+<span class="jargon-unlock">**Sensitivity range. What is it?** $Range=Highest\ value-Lowest\ value$ while other inputs remain at base case.</span>
 
 **1. Sort the ranges, biggest first**
 
@@ -976,7 +976,7 @@ $$
 
 > Normalized real FCFE per share is KRW1,300. The real country return is 6.50%, with industry +0.60%, size −0.10%, and leverage +0.25% adjustments. Real growth is 3.50%. Estimate value.
 
-**Real rate. What is it?** A rate with inflation stripped out. **Build-up return. What is it?** $r_{real}=Country+Industry+Size+Leverage$.
+<span class="jargon-unlock">**Real rate. What is it?** A rate with inflation stripped out. **Build-up return. What is it?** $r_{real}=Country+Industry+Size+Leverage$.</span>
 
 $$
 r_{real}=6.50\%+0.60\%-0.10\%+0.25\%=\boxed{7.25\%}
@@ -999,7 +999,7 @@ $$
 
 > The nominal required return is 12% and expected inflation is 5%. Calculate the exact real required return.
 
-**Nominal return. What is it?** A return including inflation. **Real return. What is it?** Growth in purchasing power. **Fisher relation. What is it?** $1+r_{nominal}=(1+r_{real})(1+\pi)$, where $\pi$ is inflation.
+<span class="jargon-unlock">**Nominal return. What is it?** A return including inflation. **Real return. What is it?** Growth in purchasing power. **Fisher relation. What is it?** $1+r_{nominal}=(1+r_{real})(1+\pi)$, where $\pi$ is inflation.</span>
 
 $$
 r_{real}=\frac{1.12}{1.05}-1=\boxed{6.67\%}
@@ -1018,7 +1018,7 @@ The quick subtraction $12\%-5\%=7\%$ is only an approximation.
 
 > A free-cash-flow model estimates value at $45 per share while the stock trades at $52. Classify it and calculate the percentage overvaluation relative to intrinsic value.
 
-**Overvalued. What does it mean?** Market price is above model value. **Percentage gap. What is it?** $(Market-Intrinsic)/Intrinsic$.
+<span class="jargon-unlock">**Overvalued. What does it mean?** Market price is above model value. **Percentage gap. What is it?** $(Market-Intrinsic)/Intrinsic$.</span>
 
 $$
 Gap=52-45=\boxed{\$7}
@@ -1041,7 +1041,7 @@ $$
 
 > Operating assets are worth SEK720 million. Excess cash is SEK60 million, noncurrent investments have market value SEK45 million, a pension surplus is SEK40 million, debt is SEK215 million, and 100 million shares exist. Find value per share.
 
-**Non-operating asset. What is it?** An asset not required to produce forecast operating FCFF. **Pension surplus. What is it?** Plan assets above pension liabilities.
+<span class="jargon-unlock">**Non-operating asset. What is it?** An asset not required to produce forecast operating FCFF. **Pension surplus. What is it?** Plan assets above pension liabilities.</span>
 
 $$
 Total\ firm\ value=720+60+45+40=\boxed{SEK865\text{m}}
@@ -1070,7 +1070,7 @@ $$
 
 > A levered company has FCFF of $40 million, after-tax interest of $18 million, and net debt repayment of $30 million. Calculate FCFE and choose the cleaner valuation approach.
 
-**Levered company. What is it?** A company using debt. **Negative FCFE. What is it?** Shareholder cash is below zero after investment and debt financing effects.
+<span class="jargon-unlock">**Levered company. What is it?** A company using debt. **Negative FCFE. What is it?** Shareholder cash is below zero after investment and debt financing effects.</span>
 
 $$
 FCFE=FCFF-After\!\!-tax\ interest+Net\ borrowing
@@ -1095,7 +1095,7 @@ FCFF is the cleaner starting point because it separates operations from the larg
 
 > A firm’s debt ratio will fall from 70% to 30% over five years. Operating forecasts are reliable, but annual net borrowing and equity risk will swing. Which model is more defensible?
 
-**Capital structure. What is it?** The mix of debt and equity financing. **Changing leverage. What does it mean?** That mix is moving, altering net borrowing and common-equity risk.
+<span class="jargon-unlock">**Capital structure. What is it?** The mix of debt and equity financing. **Changing leverage. What does it mean?** That mix is moving, altering net borrowing and common-equity risk.</span>
 
 **1. Identify which cash stream is less contaminated by financing changes**
 
@@ -1116,7 +1116,7 @@ FCFE would require forecasting volatile net borrowing and a changing required eq
 
 > Dividends per share are $2 and FCFE per share is $5. Both grow at 4%, and the required return is 10%. Compare the two stable-growth values and choose the relevant measure for an acquirer.
 
-**Control investor. What is it?** An owner able to influence payout and operating decisions. **Dividend capacity. What is it?** FCFE available for distribution, whether paid or retained.
+<span class="jargon-unlock">**Control investor. What is it?** An owner able to influence payout and operating decisions. **Dividend capacity. What is it?** FCFE available for distribution, whether paid or retained.</span>
 
 $$
 V_{DDM}=\frac{2(1.04)}{0.10-0.04}=\boxed{\$34.67}
@@ -1141,7 +1141,7 @@ The control investor focuses on FCFE because payout policy can be changed.
 
 > A forecast assumes a $30 million cash inflow from reducing inventory, but only $10 million of inventory exists. What is the maximum inventory-related reduction in working-capital investment?
 
-**Working-capital release. What is it?** A decrease in operating working capital, recorded as negative $WCInv$, which increases free cash flow. **Economic floor. What is it?** Inventory cannot fall below zero.
+<span class="jargon-unlock">**Working-capital release. What is it?** A decrease in operating working capital, recorded as negative $WCInv$, which increases free cash flow. **Economic floor. What is it?** Inventory cannot fall below zero.</span>
 
 $$
 Minimum\ inventory\ WCInv=-\$10\text{m}
@@ -1166,7 +1166,7 @@ The extra $20 million assumed release is impossible unless another working-capit
 
 > Inventory rises by $30 million during the year, but $12 million arrived with an acquired subsidiary rather than through ordinary purchases. Holding other working-capital accounts constant, estimate operating WCInv.
 
-**Non-articulation. What is it?** Balance-sheet changes do not match cash-flow-statement changes because acquisitions, disposals, or currency translation moved the accounts. **Operating WCInv. What is it?** The cash tied up through normal operations.
+<span class="jargon-unlock">**Non-articulation. What is it?** Balance-sheet changes do not match cash-flow-statement changes because acquisitions, disposals, or currency translation moved the accounts. **Operating WCInv. What is it?** The cash tied up through normal operations.</span>
 
 $$
 Operating\ WCInv=30-12=\boxed{\$18\text{m}}
@@ -1185,7 +1185,7 @@ The acquisition amount belongs to the investing transaction, not ordinary operat
 
 > At Year 5, FCFE per share is $4.00 and EPS is $5.00. Required return is 10%, stable growth is 5%, and a justified terminal P/E is 18. Calculate both terminal values.
 
-**Fundamental terminal value. What is it?** $TV_5=FCFE_6/(r-g)$. **Multiple terminal value. What is it?** $P_5=(P/E)_5EPS_5$.
+<span class="jargon-unlock">**Fundamental terminal value. What is it?** $TV_5=FCFE_6/(r-g)$. **Multiple terminal value. What is it?** $P_5=(P/E)_5EPS_5$.</span>
 
 $$
 TV_{Gordon}=\frac{4(1.05)}{0.10-0.05}=\boxed{\$84}
@@ -1210,7 +1210,7 @@ The $6 difference comes from the multiple’s embedded profitability and growth 
 
 > FCFE per share just ended at $3.00, perpetual growth is 4%, and market price is $39.00. What required return is implied?
 
-**Implied required return. What is it?** The discount rate consistent with price. From $V_0=FCFE_0(1+g)/(r-g)$, rearrange to $r=FCFE_1/V_0+g$.
+<span class="jargon-unlock">**Implied required return. What is it?** The discount rate consistent with price. From $V_0=FCFE_0(1+g)/(r-g)$, rearrange to $r=FCFE_1/V_0+g$.</span>
 
 $$
 r=\frac{3(1.04)}{39}+0.04=0.08+0.04=\boxed{12.00\%}
@@ -1229,7 +1229,7 @@ The 8% cash-flow yield plus 4% growth produces the 12% required return.
 
 > A data vendor defines FCF as $NI+Dep-Dividends-FCInv$. Given net income $100 million, depreciation $20 million, dividends $30 million, fixed investment $50 million, working-capital investment $10 million, interest $12 million, tax 25%, and no net borrowing, calculate the vendor FCF, FCFF, and FCFE.
 
-**Vendor FCF. What is it?** A provider-specific label that may omit required items. **Reconciliation. What is it?** Comparing the definition line by line.
+<span class="jargon-unlock">**Vendor FCF. What is it?** A provider-specific label that may omit required items. **Reconciliation. What is it?** Comparing the definition line by line.</span>
 
 $$
 FCF_{vendor}=100+20-30-50=\boxed{40}
@@ -1258,7 +1258,7 @@ $$
 
 > A mine’s next-year FCFF is $120 million before a recurring $15 million environmental-compliance cost. WACC is 9% and stable growth is 3%. Calculate firm value before and after the cost.
 
-**ESG scenario. What is it?** A forecast translating environmental, social, or governance effects into financial inputs. **Recurring cost. What is it?** A cost expected every year and therefore embedded in sustainable FCFF.
+<span class="jargon-unlock">**ESG scenario. What is it?** A forecast translating environmental, social, or governance effects into financial inputs. **Recurring cost. What is it?** A cost expected every year and therefore embedded in sustainable FCFF.</span>
 
 $$
 V_{before}=\frac{120}{0.09-0.03}=\boxed{\$2{,}000\text{m}}
@@ -1287,7 +1287,7 @@ $$
 
 > With a 40% tax rate, show the isolated change in FCFF and FCFE caused by a $100 increase in each listed item.
 
-**Isolated change. What is it?** One input moves while every other input is frozen. **After-tax effect. What is it?** A deductible $100 expense changes after-tax income by $100(1-0.40)=\$60$.
+<span class="jargon-unlock">**Isolated change. What is it?** One input moves while every other input is frozen. **After-tax effect. What is it?** A deductible $100 expense changes after-tax income by $100(1-0.40)=\$60$.</span>
 
 **1. Trace each shock**
 
@@ -1321,7 +1321,7 @@ $$
 
 > EPS is $3.00 now and grows 20%, 15%, and 10% in Years 1–3. Net capital expenditure per share is $4, $3, and $2; working-capital investment is 25% of net capex; debt finances 40% of both. In Year 4, EPS grows 5%, net capex is $1.50, and all components then grow 5% forever. Required return is 12%. Estimate value per share.
 
-**Net capex. What is it?** Capital expenditure minus depreciation. **Reinvestment charge to equity. What is it?** Equity funds $1-DR=60\%$ of net capex plus working-capital investment. Thus $FCFE=EPS-(1-DR)(Net\ capex+WCInv)$.
+<span class="jargon-unlock">**Net capex. What is it?** Capital expenditure minus depreciation. **Reinvestment charge to equity. What is it?** Equity funds $1-DR=60\%$ of net capex plus working-capital investment. Thus $FCFE=EPS-(1-DR)(Net\ capex+WCInv)$.</span>
 
 $$
 FCFE_1=3.60-0.60(4+1)=0.60
@@ -1356,7 +1356,7 @@ $$
 
 > FCFF just ended at €100 million, grows 2% for three years, then 1% forever. WACC is 8%. Non-operating land is worth €50 million, debt is €400 million, preferred stock is €50 million, and 50 million common shares exist. The market price is €18. Estimate intrinsic value and classify the shares.
 
-**Scenario valuation. What is it?** A complete valuation under one coherent set of assumptions. **Operating value. What is it?** Present value of FCFF generated by operations; separately valued assets are added later.
+<span class="jargon-unlock">**Scenario valuation. What is it?** A complete valuation under one coherent set of assumptions. **Operating value. What is it?** Present value of FCFF generated by operations; separately valued assets are added later.</span>
 
 $$
 FCFF_1=102,\quad FCFF_2=104.04,\quad FCFF_3=106.1208,\quad FCFF_4=107.1820
