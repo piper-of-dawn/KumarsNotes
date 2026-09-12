@@ -1402,6 +1402,436 @@ $$
 > [!NOTE]
 > The 5% is applied to original principal, not whatever happens to remain outstanding later.
 
+---
+
+## Variant: Appendix — The Invariants behind the Formulas
+
+**Abstract:** *An invariant is a rule that stays true while the numbers change. These six invariants are the load-bearing walls behind nearly every formula in this module.*
+
+> Build a compact map of the invariants used to derive and debug the embedded-option formulas.
+
+<span class="jargon-unlock">**Invariant. What is an invariant?** A relationship that must remain true even when rates, prices, or tree nodes change. It is your formula debugger: if an answer breaks an invariant, the setup is wrong.</span>
+
+**Invariant 1 — Ownership fixes the sign.** An option owned by the investor adds value; an option owned by the issuer removes value from the investor.
+
+**Invariant 2 — The chooser takes the better deal.** At an exercise node, the investor chooses the larger value and the issuer forces the smaller value.
+
+$$
+Investor:\ \max(Keep,Exercise),\qquad Issuer:\ \min(Keep,Exercise)
+$$
+
+**Invariant 3 — Every tree node is just one-period present value.** Expected next value plus the next coupon is divided by one plus the node discount rate.
+
+**Invariant 4 — Price and discount rate move in opposite directions.** A larger denominator means a smaller present value.
+
+**Invariant 5 — A matching-index floater resets toward par.** If coupon rate and discount rate match at reset, numerator and denominator cancel back to 100.
+
+**Invariant 6 — A convertible keeps the better exit.** The holder can stay in the bond or convert into stock, so neither route can push the minimum below the better one.
+
+$$
+Minimum\ convertible\ value=\boxed{\max(Straight\ value,Conversion\ value)}
+$$
+
+> [!NOTE]
+> When a derivation feels slippery, return here: ownership gives the sign, control gives min or max, and discounting brings future money home.
+
+---
+
+## Variant: Appendix — Derive the Embedded-Option Value Identities
+
+**Abstract:** *Start with the same straight bond, then add investor-owned rights and subtract issuer-owned rights. The signs come from ownership, not memorization.*
+
+> Derive the value identities for callable, putable, and callable–putable convertible bonds.
+
+<span class="jargon-unlock">**Value identity. What is a value identity?** Two economically identical packages must have the same price. Here $V$ means value, $V_S$ is straight-bond value, $C_I$ is an issuer-owned call, $P_H$ is a holder-owned put, and $C_E$ is the holder’s call on the issuer’s equity.</span>
+
+A callable investor owns the straight bond but has handed the call right to the issuer. By Appendix Invariant 1:
+
+$$
+\boxed{V_{callable}=V_S-C_I}
+$$
+
+Move terms across the equals sign when the question asks for the option itself:
+
+$$
+\boxed{C_I=V_S-V_{callable}}
+$$
+
+A put belongs to the holder, so it adds:
+
+$$
+\boxed{V_{putable}=V_S+P_H},\qquad \boxed{P_H=V_{putable}-V_S}
+$$
+
+A convertible may stack several rights. Keep the ownership signs visible:
+
+$$
+\boxed{V_{convertible}=V_S+C_E-C_I+P_H}
+$$
+
+> [!NOTE]
+> Investor owns it: plus. Issuer owns it: minus. That one invariant derives every sign on this page.
+
+---
+
+## Variant: Appendix — Derive Tree Rollback and Exercise Rules
+
+**Abstract:** *A tree is repeated one-period discounting. First price continuation, then let whoever controls the option choose at that node.*
+
+> Derive the generic rollback formula and the callable and putable node rules.
+
+<span class="jargon-unlock">**Node. What is a node?** One possible rate and bond value at one date. **Continuation value. What is it?** The value of keeping the bond alive. In $CV_t=[Coupon_{t+1}+qV_{t+1,u}+(1-q)V_{t+1,d}]/(1+r_t+s)$, $q$ is the pricing weight, $u$ and $d$ mean next-period up and down states, $r_t$ is the node benchmark rate, and $s$ is OAS.</span>
+
+Future value has two possible branches. Weight them, add the coupon received over the step, and discount once:
+
+$$
+\boxed{CV_t=\frac{Coupon_{t+1}+qV_{t+1,u}+(1-q)V_{t+1,d}}{1+r_t+s}}
+$$
+
+For the curriculum’s equal-weight trees, set $q=0.5$. Now apply Appendix Invariant 2. The issuer controls a call and pays the cheaper route:
+
+$$
+\boxed{V_{t,callable}=\min(CV_t,Call\ price_t)}
+$$
+
+The investor controls a put and takes the richer route:
+
+$$
+\boxed{V_{t,putable}=\max(CV_t,Put\ price_t)}
+$$
+
+Roll those exercise-adjusted node values into the previous step. Never exercise once on an average value; the decision happens separately at every eligible node.
+
+> [!NOTE]
+> Tree speedrun: value the future, roll back one step, apply min or max at that node, then repeat until today.
+
+---
+
+## Variant: Appendix — Derive OAS and Its Direction Rules
+
+**Abstract:** *OAS is the extra discount spread that forces model value onto market price. Higher spread means heavier discounting and therefore lower value.*
+
+> Derive one-period OAS and explain how to solve it in a multi-period option tree.
+
+<span class="jargon-unlock">**OAS. What is OAS?** Option-adjusted spread is one constant spread $s$ added to every benchmark node so $V_{model}(s)=P_{market}$. $V_{model}$ is tree value and $P_{market}$ is the observed full price.</span>
+
+For one cash flow $CF_1$ discounted at benchmark rate $r_0$ plus spread $s$:
+
+$$
+P_0=\frac{CF_1}{1+r_0+s}
+$$
+
+Multiply through, divide by price, and isolate the spread:
+
+$$
+\boxed{s=\frac{CF_1}{P_0}-1-r_0}
+$$
+
+For several periods, there is no honest one-line isolation because $s$ enters every rollback denominator and may change exercise. Guess $s$, rebuild the entire tree, and adjust until:
+
+$$
+\boxed{V_{model}(s)-P_{market}=0}
+$$
+
+Appendix Invariant 4 supplies the search direction: if model value is too high, raise OAS; if model value is too low, cut OAS.
+
+At an unchanged market price, more volatility makes a callable bond’s model value fall and a putable bond’s model value rise. OAS must undo those moves:
+
+$$
+\boxed{Volatility\uparrow:\quad OAS_{callable}\downarrow,\qquad OAS_{putable}\uparrow}
+$$
+
+> [!NOTE]
+> OAS moves discount rates, not coupons or exercise prices. Re-run every node after changing it.
+
+---
+
+## Variant: Appendix — Derive Effective and One-Sided Duration
+
+**Abstract:** *Duration measures slope: shock rates both ways, observe the price gap, and divide by the total rate distance and today’s price.*
+
+> Derive effective duration from one-sided price changes and show the small-shock price approximation.
+
+<span class="jargon-unlock">**Effective duration. What is it?** Revalued price sensitivity: $D_{eff}=(PV_- -PV_+)/(2\Delta c\,PV_0)$. $PV_0$ is today’s price, $PV_-$ is price after rates fall, $PV_+$ is price after rates rise, and $\Delta c$ is the positive decimal curve-shift size.</span>
+
+Measure each side separately. Up-duration measures the loss when rates rise; down-duration measures the gain when rates fall:
+
+$$
+D_{up}=\frac{PV_0-PV_+}{\Delta c\,PV_0},\qquad D_{down}=\frac{PV_- -PV_0}{\Delta c\,PV_0}
+$$
+
+Average them. The two $PV_0$ terms cancel in the numerator:
+
+$$
+\frac{D_{up}+D_{down}}{2}
+=\frac{PV_0-PV_++PV_--PV_0}{2\Delta c\,PV_0}
+$$
+
+So:
+
+$$
+\boxed{D_{eff}=\frac{PV_- -PV_+}{2\Delta c\,PV_0}=\frac{D_{up}+D_{down}}{2}}
+$$
+
+Appendix Invariant 4 gives the minus sign in the price approximation:
+
+$$
+\boxed{\frac{\Delta P}{P}\approx-D_{eff}\Delta c}
+$$
+
+The embedded option can shorten effective duration but cannot make it longer than the matching straight bond:
+
+$$
+\boxed{D_{callable}\le D_{straight},\qquad D_{putable}\le D_{straight}}
+$$
+
+Exercise likelihood explains the direction changes:
+
+$$
+Rates\downarrow\Rightarrow D_{callable}\downarrow,\qquad Rates\uparrow\Rightarrow D_{putable}\downarrow
+$$
+
+> [!NOTE]
+> For an asymmetric callable or putable bond, keep both one-sided durations; their average hides which direction carries the real pain.
+
+---
+
+## Variant: Appendix — Derive Key-Rate Duration
+
+**Abstract:** *Effective duration moves the whole curve; key-rate duration moves one maturity point and exposes where the bond is actually sensitive.*
+
+> Derive key-rate duration and show why key-rate durations approximately add to effective duration for a parallel shift.
+
+<span class="jargon-unlock">**Key-rate duration, or KRD. What is it?** Sensitivity to one selected curve maturity $k$: $KRD_k=(PV_{k,-}-PV_{k,+})/(2\Delta z_kPV_0)$. $PV_{k,-}$ and $PV_{k,+}$ are prices after moving only key rate $k$ down and up, and $\Delta z_k$ is that decimal shock.</span>
+
+The formula is the same centered slope as effective duration; only the shock changes:
+
+$$
+\boxed{KRD_k=\frac{PV_{k,-}-PV_{k,+}}{2\Delta z_kPV_0}}
+$$
+
+For small curve reshaping, add the contribution from each key point:
+
+$$
+\boxed{\frac{\Delta P}{P}\approx-\sum_k KRD_k\Delta z_k}
+$$
+
+If every key rate moves by the same parallel amount $\Delta c$, factor it out:
+
+$$
+\frac{\Delta P}{P}\approx-\left(\sum_k KRD_k\right)\Delta c
+$$
+
+Compare that with $\Delta P/P\approx-D_{eff}\Delta c$ and the coefficients must approximately match:
+
+$$
+\boxed{D_{eff}\approx\sum_k KRD_k}
+$$
+
+> [!NOTE]
+> The sum is an approximation because interpolation, option exercise, and larger curve moves can make the price response nonlinear.
+
+---
+
+## Variant: Appendix — Derive Effective Convexity
+
+**Abstract:** *Duration captures slope; convexity captures bend. Adding both shocked prices cancels the slope and leaves the curvature behind.*
+
+> Derive effective convexity and combine it with duration for a price-change estimate.
+
+<span class="jargon-unlock">**Effective convexity. What is it?** Revalued curvature: $C_{eff}=(PV_-+PV_+-2PV_0)/[(\Delta c)^2PV_0]$. The three $PV$ terms are down-shift, up-shift, and current prices; $\Delta c$ is the decimal curve shock.</span>
+
+For equal shocks, the first-order gain on one side and loss on the other cancel when prices are added. What remains is the bend around today’s price:
+
+$$
+\boxed{C_{eff}=\frac{PV_-+PV_+-2PV_0}{(\Delta c)^2PV_0}}
+$$
+
+The squared shock appears because curvature is a second-order effect. Put slope and bend together:
+
+$$
+\boxed{\frac{\Delta P}{P}\approx-D_{eff}\Delta c+\frac12C_{eff}(\Delta c)^2}
+$$
+
+Positive convexity makes both directions kinder than the straight-line estimate. Negative convexity—common when a call is near the money—means the falling-rate upside is capped harder than rising-rate downside.
+
+That gives the module’s usual local ranking when the options are near the money:
+
+$$
+\boxed{C_{callable}\text{ may be negative};\quad C_{straight}>0;\quad C_{putable}>0}
+$$
+
+Some systems report scaled convexity:
+
+$$
+\boxed{C_{scaled}=\frac{C_{raw}}{100}}
+$$
+
+> [!NOTE]
+> Never mix raw and scaled convexity in the price formula. Check the reporting convention before plugging in.
+
+---
+
+## Variant: Appendix — Derive Capped, Floored, and Collared Floater Formulas
+
+**Abstract:** *A cap clips coupons for the issuer; a floor lifts coupons for the investor. Value signs follow ownership, while coupon formulas follow min and max.*
+
+> Derive the coupon and value formulas for capped, floored, and collared floating-rate bonds.
+
+<span class="jargon-unlock">**Floater. What is a floater?** A bond whose coupon resets from a reference rate $R$ plus quoted margin $m$. A cap is maximum coupon $K_c$; a floor is minimum coupon $K_f$.</span>
+
+The contractual coupon rates are simply ceiling and floor operations:
+
+$$
+Coupon_{capped}=\min(R+m,K_c),\qquad Coupon_{floored}=\max(R+m,K_f)
+$$
+
+The issuer owns the cap, so Appendix Invariant 1 makes it subtract from the straight floater $V_F$:
+
+$$
+\boxed{V_{capped}=V_F-V_{cap}}
+$$
+
+The investor owns the floor, so it adds:
+
+$$
+\boxed{V_{floored}=V_F+V_{floor}}
+$$
+
+A collar contains both:
+
+$$
+\boxed{V_{collared}=V_F-V_{cap}+V_{floor}}
+$$
+
+By Appendix Invariant 5, a matching-index floater is about par at reset and its duration is about the time to the next reset:
+
+$$
+\boxed{V_F\approx100,\qquad D_{floater}\approx Time\ to\ next\ reset\ in\ years}
+$$
+
+> [!NOTE]
+> Coupon rule and value sign are different questions: min/max sets cash; issuer/investor ownership sets subtraction/addition.
+
+---
+
+## Variant: Appendix — Derive Convertible-Bond Metrics
+
+**Abstract:** *Translate one bond into shares, compare the stock exit with the bond exit, and keep every measure on the same per-bond or per-share basis.*
+
+> Derive conversion price, conversion value, minimum value, market conversion price, and conversion premium.
+
+<span class="jargon-unlock">**Conversion ratio, or $CR$. What is it?** Shares received per bond. **Par, or $F$. What is it?** Contractual face value. **Share price, or $S$. What is it?** Current stock price. **Convertible price, or $P_{CB}$. What is it?** Current market price of the bond.</span>
+
+If face value $F$ is exchanged for $CR$ shares, the contractual price paid per share is:
+
+$$
+\boxed{Conversion\ price=\frac{F}{CR}},\qquad \boxed{CR=\frac{F}{Conversion\ price}}
+$$
+
+Selling the received shares at market price $S$ gives conversion value:
+
+$$
+\boxed{Conversion\ value=CR\times S}
+$$
+
+Appendix Invariant 6 says the holder keeps the better exit:
+
+$$
+\boxed{Minimum\ value=\max(V_{straight},CR\times S)}
+$$
+
+Buying the bond and converting effectively pays this much per share:
+
+$$
+Market\ conversion\ price=\frac{P_{CB}}{CR}
+$$
+
+Compare that effective price tag with direct stock purchase:
+
+$$
+\boxed{Premium_{share}=\frac{P_{CB}}{CR}-S},\qquad \boxed{Premium\%=\frac{Premium_{share}}{S}}
+$$
+
+> [!NOTE]
+> Units are the debugger: divide bond dollars by shares before comparing with a dollars-per-share stock price.
+
+---
+
+## Variant: Appendix — Derive Anti-Dilution and Sinking-Fund Mechanics
+
+**Abstract:** *Anti-dilution preserves the same conversion claim through a stock split; sinking-fund acceleration multiplies the scheduled retirement amount.*
+
+> Derive the stock-split conversion adjustment and the sinking-fund triple-up calculation.
+
+<span class="jargon-unlock">**Anti-dilution. What is it?** A reset that preserves the convertible holder’s economic claim after specified corporate actions. **Split factor, or $n$. What is it?** New shares received for each old share. **Sinking-fund acceleration. What is it?** Permission to retire more than the mandatory scheduled principal.</span>
+
+The conversion claim before a split is $CR_{old}\times CP_{old}=F$. To preserve that face-value claim after an $n$-for-one split, multiply shares and divide price by the same factor:
+
+$$
+\boxed{CR_{new}=nCR_{old},\qquad CP_{new}=\frac{CP_{old}}{n}}
+$$
+
+The invariant check proves nothing changed:
+
+$$
+CR_{new}CP_{new}=(nCR_{old})\left(\frac{CP_{old}}{n}\right)=\boxed{CR_{old}CP_{old}=F}
+$$
+
+For original issue principal $F_0$, mandatory retirement fraction $a$, and acceleration multiple $m$:
+
+$$
+Mandatory=aF_0
+$$
+
+Apply the allowed multiple. If this is the first retirement, the amount left from the original issue is:
+
+$$
+\boxed{Accelerated\ retirement=maF_0},\qquad \boxed{First\!\!-date\ remaining=F_0-maF_0}
+$$
+
+> [!NOTE]
+> Stock-split ratio and conversion price move inversely; the sinking-fund percentage normally applies to original principal.
+
+---
+
+## Variant: Appendix — Derive the Directional Relationships
+
+**Abstract:** *Rates move the straight bond first; the embedded option then either fights or amplifies that move. Volatility enriches both options, regardless of who owns them.*
+
+> Derive the main direction rules for rates, curve shape, volatility, and callable or putable bond value.
+
+<span class="jargon-unlock">**Directional relationship. What is it?** A reliable up-or-down link rather than an exact amount. **Moneyness. What is it?** Whether exercising beats continuation: an in-the-money option is worth using now.</span>
+
+Appendix Invariant 4 starts the chain. When rates fall, straight-bond value rises. Refinancing becomes attractive, so the issuer call also rises and steals some of that gain:
+
+$$
+Rates\downarrow:\quad V_S\uparrow,\ C_I\uparrow,\ V_{callable}=V_S-C_I\uparrow\text{ less}
+$$
+
+The investor put becomes less useful, while the putable bond keeps the straight bond’s uncapped upside:
+
+$$
+Rates\downarrow:\quad P_H\downarrow,\ V_{putable}=V_S+P_H\uparrow
+$$
+
+Reverse the logic when rates rise: the call fades, while the put becomes valuable and cushions the putable bond’s loss.
+
+More rate volatility creates more extreme states where either option pays. Therefore both option values rise, then Appendix Invariant 1 fixes the bond effects:
+
+$$
+\boxed{Volatility\uparrow:\quad C_I\uparrow,\ P_H\uparrow,\ V_{callable}\downarrow,\ V_{putable}\uparrow}
+$$
+
+A flatter or inverted curve generally places lower forward rates in more future nodes. That creates more issuer-call opportunities and fewer investor-put opportunities:
+
+$$
+\boxed{Curve\ flattens/inverts:\quad C_I\uparrow,\qquad P_H\downarrow}
+$$
+
+> [!NOTE]
+> Separate option value from bond value. More volatility helps the option owner; whether the bond investor wins depends on who owns that option.
+
 <!--
 SOURCE COVERAGE AUDIT — Official CFA Level II Fixed Income, Learning Module 3, printed pp. 119–198.
 LOS a–c: Variants 1–9, 53–55, and 62. LOS d–f: Variants 10–11 and 53–55. LOS g–h: Variants 12–15. LOS i–l: Variants 16–36 and 58. LOS m: Variants 37–43, 56–57, and 60. LOS n–q: Variants 44–52, 59, and 61.
@@ -1409,4 +1839,5 @@ Numbered equations: Eq. 1 in Variants 2–3; Eq. 2 in Variants 2 and 4; Eq. 3 in
 Official Examples 1–9: covered by Variants 1 and 62; 2 and 5; 8 and 10; 9 and 10; 12–15; 32–36; 16, 23–24, and 34; 37–43 and 60; 44–52, 59, and 61.
 Official Practice Questions 1–36: Q1–10 in Variants 1, 9–11, 44–48, and 53–55; Q11–18 in Variants 2, 8, and 10–15; Q19–27 in Variants 14, 19–22, 37–43, 46, and 56–57; Q28–36 in Variants 23–36, 39–40, 49–52, and 58–59.
 Secondary cross-check only: Schweser Fixed Income Reading 25. No Schweser-only rule or formula was introduced.
+Formula appendix: Variants 63–73. The appendix derives the module’s value identities, rollback and exercise rules, OAS, duration, KRD, convexity, floater, convertible, anti-dilution, sinking-fund, and directional relationships from six named invariants.
 -->
