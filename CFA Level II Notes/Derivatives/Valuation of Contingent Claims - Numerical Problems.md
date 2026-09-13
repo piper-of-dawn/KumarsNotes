@@ -2,7 +2,7 @@
 
 **Abstract:** *A binomial tree is just two possible prices one step from now; build those prices first, then apply the option payoff rule.*
 
-> A stock is $80 today. Over one period it can rise by a factor of $1.25$ or fall by a factor of $0.75$. A European call and put both have an exercise price of $85. Find the two future stock prices and every terminal option payoff.
+> A stock is \$80 today. Over one period it can rise by a factor of $1.25$ or fall by a factor of $0.75$. A European call and put both have an exercise price of \$85. Find the two future stock prices and every terminal option payoff.
 
 **1. Turn the factors into prices**
 

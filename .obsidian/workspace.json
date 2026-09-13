@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Level II Notes/FIXED INCOME/Term Structure and Interest Rate Dynamics.md",
+                "file": "LLM Engineering/Reasoning Prompts.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Term Structure and Interest Rate Dynamics"
+              "title": "Reasoning Prompts"
             }
           }
         ]
@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337.5546684265137,
-    "collapsed": true
+    "width": 337.5546684265137
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -1414,6 +1413,16 @@
             "id": "246696c490f995fe",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "3588911b601e4142",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1421,7 +1430,7 @@
             }
           }
         ],
-        "currentTab": 130
+        "currentTab": 131
       }
     ],
     "direction": "horizontal",
@@ -1438,8 +1447,12 @@
       "transfer-latex-from-gpt-fix:Convert formulas from chatgpt": false
     }
   },
-  "active": "246696c490f995fe",
+  "active": "623336744a825907",
   "lastOpenFiles": [
+    "CFA Level II Notes/Derivatives/Valuation of Contingent Claims - Numerical Problems.md",
+    "LLM Engineering/Reasoning Prompts.md",
+    "CFA Level II Notes/Derivatives/Valuation of Contingent Claims.md",
+    "CFA Level II Notes/FIXED INCOME/Term Structure and Interest Rate Dynamics.md",
     "LLM Engineering/Byte Pair Encoding.md",
     "LLM Engineering/Byte Pair Encoding.md",
     "LLM Engineering/Tokenization.md",
@@ -1447,7 +1460,6 @@
     "Arts/Art of Git.md",
     "Arts/Art of Shell.md",
     "Arts/Async Programming.md",
-    "CFA Level II Notes/FIXED INCOME/Term Structure and Interest Rate Dynamics.md",
     "CFA Level II Notes/Corporate Issuers/Cost of Capital.md",
     "CFA Level II Notes/FIXED INCOME/Credit Default Swaps.md",
     "CFA Level II Notes/ECONOMICS/Exchange Rate.md",
@@ -1465,7 +1477,6 @@
     "CFA Level II Notes/FSA",
     "CFA Level II Notes/Derivatives/Replication.md",
     "CFA Level II Notes/Derivatives/Hedge Ratio.md",
-    "CFA Level II Notes/Derivatives/Valuation of Contingent Claims.md",
     "WRITINGS/The Nishad Boy.md",
     "Pasted image 20260628123854.png",
     "Pasted image 20260725201034.png",
@@ -1473,8 +1484,6 @@
     "Pasted image 20260815130518.png",
     "Pasted image 20260815130243.png",
     "Pasted image 20260815130136.png",
-    "aas.md",
-    "WRITINGS/Doing Back Propagation by Hand.md",
     "WRITINGS/backprop-update-step.svg",
     "WRITINGS/backprop-chain-rule.svg",
     "WRITINGS/backprop-network.svg",
