@@ -18,7 +18,7 @@ $$
 
 **2. Apply the call payoff rule**
 
-A call lets us buy for $85. We use it only when the stock is worth more than $85.
+A call lets us buy for USD 85. We use it only when the stock is worth more than USD 85.
 
 $$
 c^+=\max(0,S^+-X)=\max(0,100-85)=\boxed{15}
@@ -30,7 +30,7 @@ $$
 
 **3. Apply the put payoff rule**
 
-A put lets us sell for $85. We use it only when the stock is worth less than $85.
+A put lets us sell for USD 85. We use it only when the stock is worth less than USD 85.
 
 $$
 p^+=\max(0,X-S^+)=\max(0,85-100)=\boxed{0}
@@ -110,7 +110,7 @@ $$
 
 **Abstract:** *The expected-payoff route and the replication route must land on the same call value because they manufacture the same future cash flows.*
 
-> A stock is $100. In one period, $u=1.35$, $d=0.74$, the exercise price is $100, and the per-period risk-free rate is 5.15%. Value the European call using both risk-neutral expectation and replication.
+> A stock is USD 100. In one period, $u=1.35$, $d=0.74$, the exercise price is USD 100, and the per-period risk-free rate is 5.15%. Value the European call using both risk-neutral expectation and replication.
 
 **1. Build the end values**
 
@@ -149,7 +149,7 @@ h_c=\frac{c^+-c^-}{S^+-S^-}
 =\boxed{0.573770}
 $$
 
-At expiration, $0.573770$ shares are worth $77.459$ in the up state. The call pays only $35$, so the remaining $42.459$ must be a loan repayment.
+At expiration, $0.573770$ shares are worth USD 77.459 in the up state. The call pays only USD 35, so the remaining USD 42.459 must be a loan repayment.
 
 $$
 \text{Borrow today}=\frac{42.459}{1.0515}=40.380
@@ -195,7 +195,7 @@ $$
 
 The negative sign means short stock. The lending leg supplies the rest of the payoff.
 
-At expiration, lending $57.541$ offsets the short-stock loss in the up state and leaves the $26 put payoff in the down state. Its cost today is:
+At expiration, lending USD 57.541 offsets the short-stock loss in the up state and leaves a USD 26 put payoff in the down state. Its cost today is:
 
 $$
 \frac{57.541}{1.0515}=54.723
@@ -240,21 +240,21 @@ $$
 
 **Abstract:** *If the market option and its replicating portfolio have different prices, buy the cheap copy and sell the expensive copy.*
 
-> The fair one-period call value is $16.998. First suppose the market call trades at $20. Then suppose it trades at $15. State the arbitrage and today’s locked-in profit in each case.
+> The fair one-period call value is USD 16.998. First suppose the market call trades at USD 20. Then suppose it trades at USD 15. State the arbitrage and today’s locked-in profit in each case.
 
-**1. Market call at $20: the option is expensive**
+**1. Market call at USD 20: the option is expensive**
 
-Sell the call for $20 and buy its exact replication for $16.998.
+Sell the call for USD 20 and buy its exact replication for USD 16.998.
 
 $$
 \text{Cash today}=20-16.998=\boxed{3.002}
 $$
 
-At expiration, the replication pays whatever the short call owes. Future net payoff is zero in both states, so the $3.002 is genuinely locked in today.
+At expiration, the replication pays whatever the short call owes. Future net payoff is zero in both states, so the USD 3.002 is genuinely locked in today.
 
-**2. Market call at $15: the option is cheap**
+**2. Market call at USD 15: the option is cheap**
 
-Buy the call for $15 and short the replicating portfolio worth $16.998.
+Buy the call for USD 15 and short the replicating portfolio worth USD 16.998.
 
 $$
 \text{Cash today}=16.998-15=\boxed{1.998}
@@ -271,7 +271,7 @@ Again, the long call and short replication cancel in every future state.
 
 **Abstract:** *A two-period tree is just three one-period problems: value the two Time-1 nodes, then value today.*
 
-> A stock is $7.35, with $u=1.445$, $d=0.715$, $X=8$, and a 4.35% risk-free rate per period. Value a two-period European call.
+> A stock is $7.35$, with $u=1.445$, $d=0.715$, $X=8$, and a 4.35% risk-free rate per period. Value a two-period European call.
 
 **1. Find the risk-neutral weight**
 
@@ -416,7 +416,7 @@ The hedge is not “set it and forget it.” The option’s exposure changes aft
 
 **Abstract:** *At every American-option node, compare the value of waiting with the cash from exercising right now and keep the larger number.*
 
-> A stock is $26, with $X=25$, $u=1.466$, $d=0.656$, $r=2.05\%$ per period, and two periods remaining. Value the European and American puts.
+> A stock is $26$, with $X=25$, $u=1.466$, $d=0.656$, $r=2.05\%$ per period, and two periods remaining. Value the European and American puts.
 
 **1. The pricing weight and terminal payoffs**
 
@@ -514,7 +514,7 @@ $$
 
 **Abstract:** *A non-dividend-paying call is not exercised early, but a known dividend can make grabbing the shares before ex-dividend worthwhile.*
 
-> A stock is $100, a two-period American call has $X=95$, the per-period risk-free rate is 1%, and $u=1.224$, $d=0.796$. A $3 dividend is paid at Time 1. At the Time-1 up node, compare exercise with continuation. The official tree gives the European value today as $12.3438$.
+> A stock is USD 100, a two-period American call has $X=95$, the per-period risk-free rate is 1%, and $u=1.224$, $d=0.796$. A USD 3 dividend is paid at Time 1. At the Time-1 up node, compare exercise with continuation. The official tree gives the European value today as $12.3438$.
 
 **1. Remove the dividend before growing the stock**
 
@@ -530,7 +530,7 @@ $$
 (100-2.9703)(1.224)=\boxed{118.7644}
 $$
 
-Immediately before the stock goes ex-dividend, add the $3 dividend back:
+Immediately before the stock goes ex-dividend, add the USD 3 dividend back:
 
 $$
 118.7644+3=121.7644
@@ -567,7 +567,7 @@ $$
 
 **Abstract:** *A bond coupon is carry just like a stock dividend, so an American call on a coupon bond can rationally be exercised early.*
 
-> A two-year call on a 7% annual-coupon bond has exercise price $100 and can be exercised after Year 1. At the Year-1 up node, the bond is $100.57 and the European continuation value is $0.29. At the Year-1 down node, the bond is $103.80 and continuation value is $1.35. The one-year rate is 3%, and the risk-neutral branch weights are 50/50. Find the American call value today.
+> A two-year call on a 7% annual-coupon bond has exercise price USD 100 and can be exercised after Year 1. At the Year-1 up node, the bond is USD 100.57 and the European continuation value is USD 0.29. At the Year-1 down node, the bond is USD 103.80 and continuation value is USD 1.35. The one-year rate is 3%, and the risk-neutral branch weights are 50/50. Find the American call value today.
 
 **1. Compare at the up node**
 
@@ -575,7 +575,7 @@ $$
 \text{Exercise value}=100.57-100=\boxed{0.57}
 $$
 
-Because $0.57>0.29$, exercise replaces continuation.
+Because USD 0.57 > USD 0.29, exercise replaces continuation.
 
 **2. Compare at the down node**
 
@@ -583,7 +583,7 @@ $$
 \text{Exercise value}=103.80-100=\boxed{3.80}
 $$
 
-Because $3.80>1.35$, exercise replaces continuation here too.
+Because USD 3.80 > USD 1.35, exercise replaces continuation here too.
 
 **3. Roll the chosen values back**
 
@@ -603,9 +603,9 @@ The comparable European call was worth only $0.80$, so the early-exercise featur
 
 **Abstract:** *The rollback logic is unchanged, but each rate-tree node has its own discount factor because the interest rate itself is moving.*
 
-> A two-year European call and put are written on the one-year spot rate, with a $1,000,000 notional and 3.25% exercise rate. The risk-neutral up probability is 50%. Terminal rates are 3.9706%, 3.2542%, and 2.2593%. Time-1 discount factors are 0.962386 and 0.974627, and today’s factor is 0.970446. Value both options.
+> A two-year European call and put are written on the one-year spot rate, with a USD 1,000,000 notional and 3.25% exercise rate. The risk-neutral up probability is 50%. Terminal rates are 3.9706%, 3.2542%, and 2.2593%. Time-1 discount factors are 0.962386 and 0.974627, and today’s factor is 0.970446. Value both options.
 
-**1. Terminal payoffs per $1 of notional**
+**1. Terminal payoffs per USD 1 of notional**
 
 $$
 c^{++}=0.039706-0.0325=0.007206
@@ -1005,7 +1005,7 @@ $$
 
 **Abstract:** *A payer swaption is call-like on the forward fixed swap rate; a receiver swaption is put-like, and the annuity factor carries the discounting.*
 
-> A three-month option enters a five-year swap. The forward five-year swap rate is 2.65%, exercise rate is 2.50%, volatility is 20%, accrual period is 0.5, present value of the unit-payment annuity is 8.9, and notional is $10,000,000. Value payer and receiver swaptions.
+> A three-month option enters a five-year swap. The forward five-year swap rate is 2.65%, exercise rate is 2.50%, volatility is 20%, accrual period is 0.5, present value of the unit-payment annuity is 8.9, and notional is USD 10,000,000. Value payer and receiver swaptions.
 
 **1. Use option expiry, not swap tenor, in $d_1$**
 
@@ -1060,7 +1060,7 @@ $$
 
 **Abstract:** *Delta is the option’s local speed: multiply it by a small underlying move to estimate the option’s value change.*
 
-> A call is worth $7.80 and has delta $0.42. A matching put has no dividend yield. Estimate both new option values if the stock falls by $1.50 and the put is currently worth $5.20.
+> A call is worth $7.80$ and has delta $0.42$. A matching put has no dividend yield. Estimate both new option values if the stock falls by $1.50$ and the put is currently worth $5.20$.
 
 **1. Call change**
 
@@ -1144,7 +1144,7 @@ $$
 
 **Abstract:** *Delta draws a straight tangent line; the gamma term adds the missing bend in the option-price curve.*
 
-> A call is worth $8.00, delta is $0.55$, gamma is $0.018$, and the stock rises by $6. Estimate the new call value using delta only and then delta plus gamma.
+> A call is worth $8.00$, delta is $0.55$, gamma is $0.018$, and the stock rises by $6$. Estimate the new call value using delta only and then delta plus gamma.
 
 **1. Delta-only estimate**
 
@@ -1252,11 +1252,11 @@ $$
 
 **Abstract:** *Implied volatility is the volatility input that makes the model equal the market price; a higher option price means a higher implied volatility, all else equal.*
 
-> With every BSM input except volatility fixed, a put is worth $6.40 at 20% volatility and $7.49 at 24%. The market put price is $7.20. Bracket its implied volatility with a linear interpolation. Then decide what to do if your own fair-volatility forecast is 19% for an option quoted at 24% implied volatility.
+> With every BSM input except volatility fixed, a put is worth USD 6.40 at 20% volatility and USD 7.49 at 24%. The market put price is USD 7.20. Bracket its implied volatility with a linear interpolation. Then decide what to do if your own fair-volatility forecast is 19% for an option quoted at 24% implied volatility.
 
 **1. Bracket the answer**
 
-$7.20 lies between $6.40 and $7.49, so implied volatility lies between 20% and 24%.
+USD 7.20 lies between USD 6.40 and USD 7.49, so implied volatility lies between 20% and 24%.
 
 **2. Interpolate**
 
