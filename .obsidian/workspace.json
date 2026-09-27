@@ -11,12 +11,15 @@
             "id": "623336744a825907",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20260725201034.png"
+                "file": "CFA Level II Notes/EQUITY VALUATION/Untitled.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260725201034"
+              "icon": "lucide-file",
+              "title": "Untitled"
             }
           }
         ]
@@ -1456,10 +1459,13 @@
   },
   "active": "623336744a825907",
   "lastOpenFiles": [
+    "CFA Level II Notes/EQUITY VALUATION/LM6 - Private Company Valuation - Question Notes.md",
+    "Pasted image 20260725201034.png",
+    "CFA Level II Notes/EQUITY VALUATION/Untitled.md",
+    "Polish/memorise.md",
     "Pasted image 20260725202542.png",
     "Pasted image 20260725202647.png",
     "Pasted image 20260815130136.png",
-    "Pasted image 20260725201034.png",
     "Pasted image 20260815130549.png",
     "Pasted image 20260815130243.png",
     "Pasted image 20260815130518.png",
@@ -1489,12 +1495,9 @@
     "CFA Level II Notes/FSA/Joint Ventures.md",
     "CFA Level II Notes/PORTFOLIO MANAGEMENT/LM2 - Analysis of Active Portfolio Management.md",
     "CFA Level II Notes/FSA",
-    "CFA Level II Notes/Derivatives/Replication.md",
-    "CFA Level II Notes/Derivatives/Hedge Ratio.md",
     "Pasted image 20260628123854.png",
     "WRITINGS/backprop-update-step.svg",
     "WRITINGS/backprop-chain-rule.svg",
-    "WRITINGS/backprop-network.svg",
     "WRITINGS/backprop-tiny-network.excalidraw",
     "CFA Level II Notes/FIXED INCOME",
     "Artificial Intelligence",
