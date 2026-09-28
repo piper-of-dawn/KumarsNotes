@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="610" viewBox="0 0 1040 610" role="img" aria-label="Two-period European call (X = 8)">
+<style>svg{color:#202124;font-family:DejaVu Sans,Arial,sans-serif}@media(prefers-color-scheme:dark){svg{color:#ececec}}.box{fill:none;stroke:currentColor;stroke-width:2.2}.link{fill:none;stroke:currentColor;stroke-width:2;stroke-dasharray:6 5}.heading{font-size:22px;font-weight:700}.label{font-size:20px}.small{font-size:17px}.value{font-size:20px;font-weight:600}</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
+<text x="520" y="35" class="heading" text-anchor="middle" fill="currentColor">Two-period European call (X = 8)</text>
+<text x="140" y="62" class="small" text-anchor="middle" fill="currentColor">Time 0</text>
+<text x="500" y="62" class="small" text-anchor="middle" fill="currentColor">Time 1</text>
+<text x="865" y="62" class="small" text-anchor="middle" fill="currentColor">Time 2</text>
+<path d="M265 285 L405 185" class="link" marker-end="url(#arrow)"/>
+<text x="320" y="215" class="small" text-anchor="middle" fill="currentColor">u = 1.445</text>
+<path d="M265 315 L405 405" class="link" marker-end="url(#arrow)"/>
+<text x="320" y="395" class="small" text-anchor="middle" fill="currentColor">d = 0.715</text>
+<path d="M635 168 L745 122" class="link" marker-end="url(#arrow)"/>
+<text x="690" y="125" class="small" text-anchor="middle" fill="currentColor">u</text>
+<path d="M635 195 L745 295" class="link" marker-end="url(#arrow)"/>
+<text x="685" y="260" class="small" text-anchor="middle" fill="currentColor">d</text>
+<path d="M635 385 L745 305" class="link" marker-end="url(#arrow)"/>
+<text x="685" y="335" class="small" text-anchor="middle" fill="currentColor">u</text>
+<path d="M635 420 L745 495" class="link" marker-end="url(#arrow)"/>
+<text x="685" y="465" class="small" text-anchor="middle" fill="currentColor">d</text>
+<rect x="45" y="250" width="220" height="100" rx="14" class="box"/>
+<text x="155.0" y="292" class="value" text-anchor="middle" fill="currentColor">S₀ = 7.35</text>
+<text x="155.0" y="322" class="label" text-anchor="middle" fill="currentColor">Call = 1.366</text>
+<rect x="405" y="125" width="230" height="110" rx="14" class="box"/>
+<text x="520.0" y="172" class="value" text-anchor="middle" fill="currentColor">Sᵤ = 10.621</text>
+<text x="520.0" y="202" class="label" text-anchor="middle" fill="currentColor">Call = 3.168</text>
+<rect x="405" y="355" width="230" height="110" rx="14" class="box"/>
+<text x="520.0" y="402" class="value" text-anchor="middle" fill="currentColor">Sᵈ = 5.255</text>
+<text x="520.0" y="432" class="label" text-anchor="middle" fill="currentColor">Call = 0</text>
+<rect x="745" y="75" width="250" height="100" rx="14" class="box"/>
+<text x="870.0" y="117" class="value" text-anchor="middle" fill="currentColor">Sᵤᵤ = 15.347</text>
+<text x="870.0" y="147" class="label" text-anchor="middle" fill="currentColor">Call = 7.347</text>
+<rect x="745" y="250" width="250" height="100" rx="14" class="box"/>
+<text x="870.0" y="292" class="value" text-anchor="middle" fill="currentColor">Sᵤᵈ = Sᵈᵤ = 7.594</text>
+<text x="870.0" y="322" class="label" text-anchor="middle" fill="currentColor">Call = 0</text>
+<rect x="745" y="450" width="250" height="100" rx="14" class="box"/>
+<text x="870.0" y="492" class="value" text-anchor="middle" fill="currentColor">Sᵈᵈ = 3.758</text>
+<text x="870.0" y="522" class="label" text-anchor="middle" fill="currentColor">Call = 0</text>
+<text x="520" y="570" class="small" text-anchor="middle" fill="currentColor">Risk-neutral up weight = 0.45; discount each step by 1.0435</text>
+</svg>

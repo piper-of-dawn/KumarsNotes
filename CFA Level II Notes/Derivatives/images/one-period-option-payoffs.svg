@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="410" viewBox="0 0 900 410" role="img" aria-label="One-period stock and option payoff tree">
+<style>svg{color:#202124;font-family:DejaVu Sans,Arial,sans-serif}@media(prefers-color-scheme:dark){svg{color:#ececec}}.box{fill:none;stroke:currentColor;stroke-width:2.2}.link{fill:none;stroke:currentColor;stroke-width:2;stroke-dasharray:6 5}.heading{font-size:22px;font-weight:700}.label{font-size:20px}.small{font-size:17px}.value{font-size:20px;font-weight:600}</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
+<text x="450" y="37" class="heading" text-anchor="middle" fill="currentColor">One-period payoff tree: S₀ = 80, X = 85</text>
+<path d="M255 205 L540 115" class="link" marker-end="url(#arrow)"/>
+<text x="400" y="145" class="small" text-anchor="middle" fill="currentColor">u = 1.25</text>
+<path d="M255 205 L540 305" class="link" marker-end="url(#arrow)"/>
+<text x="400" y="275" class="small" text-anchor="middle" fill="currentColor">d = 0.75</text>
+<rect x="45" y="155" width="210" height="100" rx="14" class="box"/>
+<text x="150.0" y="197" class="value" text-anchor="middle" fill="currentColor">S₀ = 80</text>
+<text x="150.0" y="227" class="label" text-anchor="middle" fill="currentColor">X = 85</text>
+<rect x="540" y="55" width="310" height="120" rx="14" class="box"/>
+<text x="695.0" y="92" class="value" text-anchor="middle" fill="currentColor">Sᵤ = 100</text>
+<text x="695.0" y="122" class="label" text-anchor="middle" fill="currentColor">Call = 15</text>
+<text x="695.0" y="152" class="label" text-anchor="middle" fill="currentColor">Put = 0</text>
+<rect x="540" y="245" width="310" height="120" rx="14" class="box"/>
+<text x="695.0" y="282" class="value" text-anchor="middle" fill="currentColor">Sᵈ = 60</text>
+<text x="695.0" y="312" class="label" text-anchor="middle" fill="currentColor">Call = 0</text>
+<text x="695.0" y="342" class="label" text-anchor="middle" fill="currentColor">Put = 25</text>
+</svg>

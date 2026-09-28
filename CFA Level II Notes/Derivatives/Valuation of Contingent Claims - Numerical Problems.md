@@ -43,6 +43,8 @@ $$
 > [!NOTE]
 > First build the stock tree. Only then put $\max(0,S-X)$ on a call and $\max(0,X-S)$ on a put.
 
+![[images/one-period-option-payoffs.svg]]
+
 ---
 
 ## Variant: Calculate Risk-Neutral Probability and Catch an Impossible Tree
@@ -313,6 +315,8 @@ $$
 > [!NOTE]
 > Discount one step at a time. Do not discount a Time-1 option value by two periods again.
 
+![[images/two-period-european-call.svg]]
+
 ---
 
 ## Variant: Value a Two-Period European Put and Cross-Check with Parity
@@ -360,6 +364,8 @@ $$
 
 > [!NOTE]
 > If backward induction and parity disagree beyond rounding, a payoff, probability, or discounting step is wrong.
+
+![[images/two-period-european-put.svg]]
 
 ---
 
@@ -464,6 +470,8 @@ $$
 
 > [!NOTE]
 > For an American option, every non-terminal node is $\max(\text{continuation value},\text{exercise value})$.
+
+![[images/two-period-american-put.svg]]
 
 ---
 
@@ -657,6 +665,8 @@ $$
 
 > [!NOTE]
 > This simplified tree cash-settles at Time 2. The later Black-model problem handles the real-world deferred-settlement adjustment.
+
+![[images/two-period-rate-option.svg]]
 
 ---
 
