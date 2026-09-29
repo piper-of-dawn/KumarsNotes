@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CFA Level II Notes/EQUITY VALUATION/Untitled.md",
+                "file": "Competitive Probability/BasketBall Practice.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "BasketBall Practice"
             }
           }
         ]
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337.5546684265137
+    "width": 337.5546684265137,
+    "collapsed": true
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -1433,6 +1434,26 @@
             "id": "007d7c77ac0ffb2b",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "885b0e72087aa1e7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "d74e8185165c6820",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1440,7 +1461,7 @@
             }
           }
         ],
-        "currentTab": 132
+        "currentTab": 134
       }
     ],
     "direction": "horizontal",
@@ -1453,15 +1474,14 @@
       "templates:Insert template": false,
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false,
       "transfer-latex-from-gpt-fix:Convert formulas from chatgpt": false
     }
   },
   "active": "623336744a825907",
   "lastOpenFiles": [
+    "CFA Level II Notes/EQUITY VALUATION/Untitled.md",
     "CFA Level II Notes/EQUITY VALUATION/LM6 - Private Company Valuation - Question Notes.md",
     "Pasted image 20260725201034.png",
-    "CFA Level II Notes/EQUITY VALUATION/Untitled.md",
     "Polish/memorise.md",
     "Pasted image 20260725202542.png",
     "Pasted image 20260725202647.png",

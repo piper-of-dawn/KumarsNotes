@@ -13,3 +13,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.BLOG_REBUILD_TOKEN }}
         run: gh api repos/piper-of-dawn/blog/actions/workflows/pages.yaml/dispatches -f ref=master
+
+      - name: Trigger Fumadocs notes sync
+        env:
+          GH_TOKEN: ${{ secrets.BLOG_REBUILD_TOKEN }}
+        run: gh api repos/piper-of-dawn/blog/actions/workflows/sync-fumadocs.yml/dispatches -f ref=master
