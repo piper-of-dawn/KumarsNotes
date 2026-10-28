@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Probability/BasketBall Practice.md",
+                "file": "CFA L1 Notes/ETHICS/STANDARD 4 - DUTIES TO EMPLOYERS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "BasketBall Practice"
+              "title": "STANDARD 4 - DUTIES TO EMPLOYERS"
             }
           }
         ]
@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337.5546684265137,
-    "collapsed": true
+    "width": 337.5546684265137
   },
   "right": {
     "id": "b63ce4cf9dc6a249",
@@ -1454,6 +1453,26 @@
             "id": "d74e8185165c6820",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "eba8f44e7442b814",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "a97a5da6ab31e723",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1461,7 +1480,7 @@
             }
           }
         ],
-        "currentTab": 134
+        "currentTab": 136
       }
     ],
     "direction": "horizontal",
@@ -1479,6 +1498,13 @@
   },
   "active": "623336744a825907",
   "lastOpenFiles": [
+    "CFA L1 Notes/ETHICS/STANDARD 7 - RESPONSIBILITIES AS A CFA INSTITUTE MEMBER OR CFA CANDIDATE.md",
+    "CFA L1 Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",
+    "CFA L1 Notes/ETHICS/STANDARD 2 - INTEGRITY OF CAPITAL MARKETS.md",
+    "CFA L1 Notes/ETHICS/STANDARD 4 - DUTIES TO EMPLOYERS.md",
+    "CFA Level II Notes/FSA/LM4 - Analysis of Financial Institutions - Question Notes.md",
+    "CFA Level II Notes/FSA/LM1 - Intercorporate Investments - Question Notes.md",
+    "Competitive Probability/BasketBall Practice.md",
     "CFA Level II Notes/EQUITY VALUATION/Untitled.md",
     "CFA Level II Notes/EQUITY VALUATION/LM6 - Private Company Valuation - Question Notes.md",
     "Pasted image 20260725201034.png",
@@ -1505,15 +1531,8 @@
     "CFA Level II Notes/ECONOMICS/Exchange Rate.md",
     "Quant Finance/Stylized Facts for Return Distribution.md",
     "Quant Finance/Factor Mimicking Portfolio.md",
-    "Quant Finance/GARCH (1,1).md",
     "LLM Engineering",
-    "CFA Level II Notes/FSA/Treasury Stock Method.md",
     "CFA Level II Notes/ECONOMICS",
-    "CFA Level II Notes/FSA/FSA Techniques.md",
-    "CFA L1 Notes/FSA/11-financial-analysis-techniques.md",
-    "CFA L1 Notes/FSA/Introduction to Financial Statement Analysis.md",
-    "CFA Level II Notes/FSA/Joint Ventures.md",
-    "CFA Level II Notes/PORTFOLIO MANAGEMENT/LM2 - Analysis of Active Portfolio Management.md",
     "CFA Level II Notes/FSA",
     "Pasted image 20260628123854.png",
     "WRITINGS/backprop-update-step.svg",

@@ -5,7 +5,7 @@
 1. ==In employment matters, I must act for the benefit of my employer and not harm the employer through disloyal conduct.==
 2. This standard is narrower than many candidates think. It applies to **employment-related conduct**, not to every personal choice in my life.
 3. Firm policies matter, but ==firm policy does not override law or the Code and Standards.==
-4. Preparation to leave a firm is often allowed; active competition while still employed is where CFA likes to test the line.
+4. Preparation to leave a firm is often allowed; active competition while still employed is where CFA likes to test the line. ==Only inform clients AFTER you resign not BEFORE.==
 5. Confidential information, client lists, records, models, and work product often sit right on the boundary between what I may build myself and what still belongs to the employer.
 
 ### Violation Traps

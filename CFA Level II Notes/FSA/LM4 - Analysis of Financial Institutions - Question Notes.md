@@ -376,6 +376,9 @@ $$
 
 Net decline is 2% of cost, but gross losses are $22/500=4.40\%$. Municipal gross losses are $11/100=\boxed{11.00\%}$ of municipal cost, indicating a concentration worth investigating.
 
+> [!NOTE] What is Ageing?
+> A loss that appeared last month may just be market noise. A loss that has persisted for **12+ months** is more concerning because it may reflect a lasting impairment. CFA explicitly uses ageing this way.
+
 **2. Use the loss pool for aging**
 
 $$
