@@ -634,7 +634,7 @@ $$
 At the up node, exercise buys the share while it still includes the dividend:
 
 $$
-E_1^+=\max(121.764356-95,0)=26.764356>24.934442
+E_1^+=\max(121.764356-95,0)=\boxed{26.764356}>24.934442
 $$
 
 Thus $c_{A,1}^+=26.764356$. At the down node, $E_1^-=\max(80.235644-95,0)=0=C_1^-$, so $c_{A,1}^-=0$.
@@ -841,8 +841,11 @@ Here $\delta=0.02$ is a continuous annual dividend yield, and $T=0.5$ years. The
 **1. Put the dividend yield inside $d_1$**
 
 $$
-d_1=\frac{\ln(S/X)+(r-\delta+\sigma^2/2)T}{\sigma\sqrt{T}}
-=\frac{\ln(60/60)+(0.02-0.02+0.45^2/2)(0.5)}{0.45\sqrt{0.5}}=\boxed{0.15910}
+\begin{aligned}
+d_1&=\frac{\ln(S/X)+(r-\delta+\sigma^2/2)T}{\sigma\sqrt{T}}\\
+&=\frac{\ln(60/60)+(0.02-0.02+0.45^2/2)(0.5)}{0.45\sqrt{0.5}}\\
+&=\boxed{0.15910}
+\end{aligned}
 $$
 
 $$
@@ -898,8 +901,11 @@ $$
 The domestic rate discounts yen. The foreign rate acts like carry on the underlying euro.
 
 $$
-d_1=\frac{\ln(S/X)+(r_d-r_f+\sigma^2/2)T}{\sigma\sqrt{T}}
-=\frac{\ln(135/135)+(0.0025-0.0100+0.12^2/2)(0.5)}{0.12\sqrt{0.5}}=\boxed{-0.001768}
+\begin{aligned}
+d_1&=\frac{\ln(S/X)+(r_d-r_f+\sigma^2/2)T}{\sigma\sqrt{T}}\\
+&=\frac{\ln(135/135)+(0.0025-0.0100+0.12^2/2)(0.5)}{0.12\sqrt{0.5}}\\
+&=\boxed{-0.001768}
+\end{aligned}
 $$
 
 $$
@@ -913,8 +919,12 @@ $$
 **2. Value the EUR call**
 
 $$
-c=Se^{-r_fT}N(d_1)-Xe^{-r_dT}N(d_2)
-=135e^{-0.0100(0.5)}(0.499294763)-135e^{-0.0025(0.5)}(0.465486553)=\boxed{\text{JPY }4.3064\text{ per EUR}}
+\begin{aligned}
+c&=Se^{-r_fT}N(d_1)-Xe^{-r_dT}N(d_2)\\
+&=135e^{-0.0100(0.5)}(0.499294763)\\
+&\quad-135e^{-0.0025(0.5)}(0.465486553)\\
+&=\boxed{\text{JPY }4.3064\text{ per EUR}}
+\end{aligned}
 $$
 
 For the put, normal symmetry gives $N(-d_2)=1-0.465486553=0.534513447$ and $N(-d_1)=1-0.499294763=0.500705237$. Values below use unrounded normal probabilities.
@@ -922,8 +932,12 @@ For the put, normal symmetry gives $N(-d_2)=1-0.465486553=0.534513447$ and $N(-d
 **3. Value the EUR put**
 
 $$
-p=Xe^{-r_dT}N(-d_2)-Se^{-r_fT}N(-d_1)
-=135e^{-0.0025(0.5)}(0.534513447)-135e^{-0.0100(0.5)}(0.500705237)=\boxed{\text{JPY }4.8111\text{ per EUR}}
+\begin{aligned}
+p&=Xe^{-r_dT}N(-d_2)-Se^{-r_fT}N(-d_1)\\
+&=135e^{-0.0025(0.5)}(0.534513447)\\
+&\quad-135e^{-0.0100(0.5)}(0.500705237)\\
+&=\boxed{\text{JPY }4.8111\text{ per EUR}}
+\end{aligned}
 $$
 
 > [!NOTE]
@@ -987,8 +1001,11 @@ $$
 **1. Use the futures price in $d_1$**
 
 $$
-d_1=\frac{\ln[F_0(T)/X]+(\sigma^2/2)T}{\sigma\sqrt{T}}
-=\frac{\ln(1851.65/1860)+(0.15^2/2)(0.25)}{0.15\sqrt{0.25}}=\boxed{-0.02249}
+\begin{aligned}
+d_1&=\frac{\ln[F_0(T)/X]+(\sigma^2/2)T}{\sigma\sqrt{T}}\\
+&=\frac{\ln(1851.65/1860)+(0.15^2/2)(0.25)}{0.15\sqrt{0.25}}\\
+&=\boxed{-0.02249}
+\end{aligned}
 $$
 
 $$
@@ -1004,13 +1021,19 @@ The discount factor is $e^{-0.002(0.25)}=0.9995001$. Normal symmetry gives $N(-d
 **2. Price each option in index points**
 
 $$
-c=e^{-rT}[F_0(T)N(d_1)-XN(d_2)]
-=e^{-0.002(0.25)}[1851.65(0.491027990)-1860(0.461168086)]\approx\boxed{51.413625}
+\begin{aligned}
+c&=e^{-rT}[F_0(T)N(d_1)-XN(d_2)]\\
+&=e^{-0.002(0.25)}[1851.65(0.491027990)-1860(0.461168086)]\\
+&\approx\boxed{51.413625}
+\end{aligned}
 $$
 
 $$
-p=e^{-rT}[XN(-d_2)-F_0(T)N(-d_1)]
-=e^{-0.002(0.25)}[1860(0.538831914)-1851.65(0.508972010)]\approx\boxed{59.759451}
+\begin{aligned}
+p&=e^{-rT}[XN(-d_2)-F_0(T)N(-d_1)]\\
+&=e^{-0.002(0.25)}[1860(0.538831914)-1851.65(0.508972010)]\\
+&\approx\boxed{59.759451}
+\end{aligned}
 $$
 
 **3. Apply the multiplier last**
@@ -1064,9 +1087,12 @@ c=N_0(AP)(DF)[FRA\,N(d_1)-R_XN(d_2)]
 $$
 
 $$
-c=10{,}000{,}000(0.25)(0.998160)
-[0.0068(0.960314313)-0.0060(0.953665886)]
-=\boxed{\text{SGD }2{,}016.64}
+\begin{aligned}
+c&=10{,}000{,}000(0.25)(0.998159572)\\
+&\quad\times\bigl[0.0068(0.960314313)\\
+&\qquad-0.0060(0.953665886)\bigr]\\
+&\approx\boxed{\text{SGD }2{,}016.64}
+\end{aligned}
 $$
 
 **4. Value the put**
@@ -1075,11 +1101,22 @@ $$
 p=N_0(AP)(DF)[R_XN(-d_2)-FRA\,N(-d_1)]
 $$
 
-With $N(-d_2)=1-0.953665886=0.046334114$ and $N(-d_1)=1-0.960314313=0.039685687$:
+Use normal symmetry to get the put’s probability inputs:
 
 $$
-p=10{,}000{,}000(0.25)(0.998159572)
-[0.0060(0.046334114)-0.0068(0.039685687)]\approx\boxed{\text{SGD }20.32}
+\begin{aligned}
+N(-d_2)&=1-0.953665886=\boxed{0.046334114}\\
+N(-d_1)&=1-0.960314313=\boxed{0.039685687}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+p&=10{,}000{,}000(0.25)(0.998159572)\\
+&\quad\times\bigl[0.0060(0.046334114)\\
+&\qquad-0.0068(0.039685687)\bigr]\\
+&\approx\boxed{\text{SGD }20.32}
+\end{aligned}
 $$
 
 Normal probabilities are displayed rounded; carry their full precision and $DF=0.998159572$ to obtain the cent amounts. This matters especially for the small put, which subtracts two similar numbers.
@@ -1127,8 +1164,8 @@ Using notional SGD10,000,000, $AP=0.25$, and $DF=0.998160$:
 $$
 \begin{aligned}
 \text{Caplet}&=N_0AP\,DF[F N(d_1)-K N(d_2)]\\
-&=10{,}000{,}000(0.25)(0.998159572)(0.0068)
-[0.514529760-0.485470240]\\
+&=10{,}000{,}000(0.25)(0.998159572)\\
+&\quad\times0.0068[0.514529760-0.485470240]\\
 &=\boxed{\text{SGD }493.10}
 \end{aligned}
 $$
@@ -1136,8 +1173,8 @@ $$
 $$
 \begin{aligned}
 \text{Floorlet}&=N_0AP\,DF[K N(-d_2)-F N(-d_1)]\\
-&=10{,}000{,}000(0.25)(0.998159572)(0.0068)
-[0.514529760-0.485470240]\\
+&=10{,}000{,}000(0.25)(0.998159572)\\
+&\quad\times0.0068[0.514529760-0.485470240]\\
 &=\boxed{\text{SGD }493.10}
 \end{aligned}
 $$
@@ -1185,9 +1222,12 @@ PAYSWN=N_0(AP)(PVA)[R_{FIX}N(d_1)-R_XN(d_2)]
 $$
 
 $$
-PAYSWN=10{,}000{,}000(0.5)(8.9)
-[0.0265(0.736531649)-0.0250(0.702875587)]
-=\boxed{\$86{,}605.86}
+\begin{aligned}
+PAYSWN&=10{,}000{,}000(0.5)(8.9)\\
+&\quad\times\bigl[0.0265(0.736531649)\\
+&\qquad-0.0250(0.702875587)\bigr]\\
+&\approx\boxed{\$86{,}605.86}
+\end{aligned}
 $$
 
 Normal symmetry gives $N(-d_2)=1-0.702875587=0.297124413$ and $N(-d_1)=1-0.736531649=0.263468351$. Both premiums use full-precision CDF values before rounding to cents.
@@ -1197,8 +1237,9 @@ Normal symmetry gives $N(-d_2)=1-0.702875587=0.297124413$ and $N(-d_1)=1-0.73653
 $$
 \begin{aligned}
 RECSWN&=N_0(AP)(PVA)[R_XN(-d_2)-R_{FIX}N(-d_1)]\\
-&=10{,}000{,}000(0.5)(8.9)
-[0.0250(0.297124413)-0.0265(0.263468351)]\\
+&=10{,}000{,}000(0.5)(8.9)\\
+&\quad\times\bigl[0.0250(0.297124413)\\
+&\qquad-0.0265(0.263468351)\bigr]\\
 &\approx\boxed{\$19{,}855.86}
 \end{aligned}
 $$
