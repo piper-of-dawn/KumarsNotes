@@ -350,6 +350,20 @@ c_0=\frac{0.45(3.168)+0.55(0)}{1.0435}
 =\boxed{1.366}
 $$
 
+**5. Check with a single terminal expectation**
+
+A European option can also be valued directly from its expiry payoffs. The terminal weights are $\pi^2$, $2\pi(1-\pi)$, and $(1-\pi)^2$; the factor of 2 counts the two paths reaching the middle node.
+
+$$
+\begin{aligned}
+c_0&=\frac{\pi^2c^{++}+2\pi(1-\pi)c^{+-}+(1-\pi)^2c^{--}}{(1+r)^2}\\
+&=\frac{0.45^2(7.34698375)+2(0.45)(0.55)(0)+0.55^2(0)}{1.0435^2}\\
+&=\boxed{1.3663}
+\end{aligned}
+$$
+
+This reproduces rollback. For an American option with possible early exercise, use node-by-node exercise decisions instead.
+
 > [!NOTE]
 > Discount one step at a time. Do not discount a Time-1 option value by two periods again.
 
@@ -466,6 +480,66 @@ The hedge is not “set it and forget it.” The option’s exposure changes aft
 
 ---
 
+## Variant: Finance a Binomial Replication and Rebalance Without Adding Cash
+
+**Abstract:** *Match the next-node option values with shares plus a loan. After a move, let the old loan accrue and finance the change in shares through the new loan.*
+
+> Use official CFA Example 7: $S_0=7.35$, $X=8$, $u=1.445$, $d=0.715$, per-period $r=4.35\%$, two periods, and risk-neutral up weight $\pi=0.45$. The European call values are $c_1^+=3.168320736$, $c_1^-=0$, and $c_0=1.366309852$. Find today’s shares and borrowing, then the trades after an up move. Show that no extra cash is needed.
+
+<span class="jargon-unlock">**Self-financing. What does it mean?** Rebalancing uses the portfolio’s own cash and borrowing, with no new money injected. **Hedge ratio. What is it?** Shares per option, $h=(V_u-V_d)/(S_u-S_d)$, where $V$ denotes next-node option value and $S$ next-node stock price. A positive loan amount $L$ is a liability, so portfolio value is $hS-L$.</span>
+
+**1. Build today’s share and loan positions**
+
+The Time-1 stock prices are $S_1^+=7.35(1.445)=10.62075$ and $S_1^-=7.35(0.715)=5.25525$.
+
+$$
+\begin{aligned}
+h_0&=\frac{3.168320736-0}{10.62075-5.25525}\\
+&=\boxed{0.590498693\text{ shares}}\\
+L_0&=h_0S_0-c_0\\
+&=0.590498693(7.35)-1.366309852\\
+&=\boxed{2.973855539}
+\end{aligned}
+$$
+
+Borrowing reduces the net purchase cost to $\boxed{1.366309852}$, matching the call value.
+
+**2. Recalculate after the up move**
+
+The two next stock prices are $10.62075(1.445)=15.34698375$ and $10.62075(0.715)=7.59383625$. Their call payoffs are $7.34698375$ and zero.
+
+$$
+\begin{aligned}
+h_1^+&=\frac{7.34698375-0}{15.34698375-7.59383625}\\
+&=\boxed{0.947613050\text{ shares}}\\
+L_1^+&=h_1^+(10.62075)-3.168320736\\
+&=\boxed{6.896040566}
+\end{aligned}
+$$
+
+**3. Pay for the added shares using additional borrowing**
+
+The old loan has grown to $L_0(1.0435)=3.103218255$. Buy the difference between the new and old share counts:
+
+$$
+\begin{aligned}
+\text{Extra share cost}&=(h_1^+-h_0)(10.62075)\\
+&=\boxed{3.792822311}\\
+\text{Additional borrowing}&=L_1^+-L_0(1.0435)\\
+&=6.896040566-3.103218255\\
+&=\boxed{3.792822311}
+\end{aligned}
+$$
+
+The cash required and cash raised match. At the middle expiry node, $0.947613050(7.59383625)-6.896040566(1.0435)\approx\boxed{0}$, matching the call’s zero payoff there.
+
+> [!NOTE]
+> Rebalancing changes both the shares and the financing. Comparing the new loan with the old principal ignores accrued interest and breaks the self-financing check.
+
+<!-- Official source: LM2 printed pp.93–95, self-financing discussion, and Example 7 pp.103–105, stock-plus-financing interpretation. -->
+
+---
+
 ## Variant: Compare European and American Put Values
 
 **Abstract:** *At every American-option node, compare the value of waiting with the cash from exercising right now and keep the larger number.*
@@ -534,6 +608,61 @@ $$
 > For an American option, every non-terminal node is $\max(\text{continuation value},\text{exercise value})$.
 
 ![[images/two-period-american-put.svg]]
+
+---
+
+## Variant: Recalculate the Hedge Ratio After American Early Exercise
+
+**Abstract:** *An American exercise decision changes the next-node option values. Use those chosen values to calculate today’s hedge ratio; the European hedge is no longer the right input.*
+
+> In official CFA Example 7, $S_0=7.35$, $X=8$, $u=1.445$, $d=0.715$, per-period $r=4.35\%$, and $\pi=0.45$. At Time 1, $S^+=10.62075$ and $S^-=5.25525$. European put continuation values are $p^+=0.214077683$ and $p^-=2.411256948$. Find the American put value and today’s American and European hedge ratios.
+
+<span class="jargon-unlock">**Continuation value. What is it?** The value of waiting rather than exercising now. **American option. What is it?** An option permitting exercise before expiry, so each node uses the larger of continuation and exercise. **Hedge ratio. What is it?** Shares per option: the difference between the next-node option values divided by the difference between their stock prices.</span>
+
+**1. Choose the Time-1 American values**
+
+At the up node, immediate exercise pays $\max(8-10.62075,0)=0$, so retain continuation $0.214077683$. At the down node:
+
+$$
+\begin{aligned}
+E^-&=\max(8-5.25525,0)=2.74475\\
+p_A^-&=\max(2.411256948,2.74475)\\
+&=\boxed{2.74475}
+\end{aligned}
+$$
+
+**2. Recalculate today’s hedge from the chosen values**
+
+The stock-price denominator stays the same; the put-value numerator changes:
+
+$$
+\begin{aligned}
+h_{E,0}&=\frac{0.214077683-2.411256948}{10.62075-5.25525}\\
+&=\boxed{-0.409501307}\\
+h_{A,0}&=\frac{0.214077683-2.74475}{10.62075-5.25525}\\
+&=\boxed{-0.471656382}
+\end{aligned}
+$$
+
+The American put requires a larger short-stock position: about 0.471656 shares per option rather than 0.409501.
+
+**3. Roll back and test exercise today**
+
+$$
+\begin{aligned}
+C_{A,0}&=\frac{0.45(0.214077683)+0.55(2.74475)}{1.0435}\\
+&=1.539000918\\
+p_{A,0}&=\max(8-7.35,C_{A,0})\\
+&=\boxed{1.5390}
+\end{aligned}
+$$
+
+Today’s exercise value is only $0.65$, so holding is optimal. The European value is $[0.45(0.214077683)+0.55(2.411256948)]/1.0435=1.363225950$, giving an early-exercise premium of $\boxed{0.175775}$ per option.
+
+> [!NOTE]
+> Decide exercise first, then calculate earlier hedge ratios. At a node where exercise is chosen, the option terminates; a hedge for continued holding is no longer needed there.
+
+<!-- Official source: LM2 Example 7(3), printed pp.105–106. Full precision resolves the source's rounded 1.54 and -0.4717. -->
 
 ---
 
@@ -821,12 +950,194 @@ Call: buy $N(d_1)=0.624252$ shares and short $N(d_2)=0.506649$ zero-coupon bonds
 
 Put: short $N(-d_1)=0.375748$ shares and buy $N(-d_2)=0.493351$ of those bonds.
 
-The call’s initial share cost is $100(0.624252)=62.4252$; the borrowing leg is $100e^{-0.05}(0.506649)\approx48.1939$. Their difference is USD 14.23. The put’s lending leg is $100e^{-0.05}(0.493351)\approx46.9291$ and its short-share proceeds are $100(0.375748)=37.5748$, leaving a net cost of USD 9.35.
+The call’s initial share cost is $100(0.624252)=62.4252$; the borrowing leg is $100e^{-0.05}(0.506649)\approx48.1939$. Their difference is USD 14.23. The put’s lending leg is $100e^{-0.05}(0.493351)\approx46.9290$ and its short-share proceeds are $100(0.375748)=37.5748$, leaving a net cost of USD 9.35.
 
 Each zero-coupon bond here pays **USD 100 at expiry**. These positions describe the initial replication; share and financing quantities must be rebalanced as inputs change.
 
 > [!NOTE]
 > BSM uses continuous compounding. If given a discrete annual rate $r_d$, convert with $r=\ln(1+r_d)$.
+
+---
+
+## Variant: Count the Shares and Bonds That Replicate a BSM Call
+
+**Abstract:** *Read BSM as quantity times price: $N(d_1)$ shares minus $N(d_2)$ strike-paying bonds. Distinguish the number of bonds from the dollars borrowed.*
+
+> Use the official CFA Example 10 inputs: a non-dividend-paying stock has $S=100$, strike $X=100$, continuous annual risk-free rate $r=5\%$, expiry $T=1$ year, and volatility $\sigma=30\%$. The full-precision model gives $N(d_1)=0.624251728$ and $N(d_2)=0.506648730$. Find the initial shares and bonds for one long call and for 20 contracts covering 100 shares each. Each bond pays USD 100 at option expiry. What if each bond instead pays USD 1,000?
+
+<span class="jargon-unlock">**Replicating portfolio. What is it?** A stock-and-financing strategy that reproduces an option when continually rebalanced. **Zero-coupon bond. What is it?** A risk-free security paying one stated face amount at expiry, with no interim interest payments. Its price is $B=Xe^{-rT}$ when its face equals strike $X$; $S$ is the price per share and $n_S,n_B$ are signed share and bond counts.</span>
+
+**1. Make the quantities visible in Black–Scholes**
+
+Compare the general portfolio cost with the call formula:
+
+$$
+\begin{aligned}
+c&=n_SS+n_BB\\
+c&=N(d_1)S-N(d_2)B\\
+n_S&=\boxed{+0.624251728\text{ shares}}\\
+n_B&=\boxed{-0.506648730\text{ bonds}}
+\end{aligned}
+$$
+
+Positive means buy; negative means short. Buying stock provides the upward exposure. Shorting bonds raises cash now and creates a future repayment, so it is borrowing.
+
+**2. Price the financing and check the net cost**
+
+One bond costs $B=100e^{-0.05}=95.122942$. Therefore:
+
+$$
+\begin{aligned}
+\text{Share cost}&=0.624251728(100)=62.425173\\
+\text{Cash borrowed}&=0.506648730(95.122942)\\
+&=\boxed{48.193918}\\
+c&=62.425173-48.193918\\
+&\approx\boxed{\text{USD }14.23}
+\end{aligned}
+$$
+
+**3. Scale quantities before rounding**
+
+There are $20(100)=2{,}000$ one-share option units:
+
+$$
+\begin{aligned}
+n_S^{total}&=2{,}000(0.624251728)\\
+&=\boxed{+1{,}248.503456\text{ shares}}\\
+n_B^{total}&=-2{,}000(0.506648730)\\
+&=\boxed{-1{,}013.297460\text{ bonds}}
+\end{aligned}
+$$
+
+Borrow USD $96{,}387.84$ against the stock purchase; the net portfolio costs USD $28{,}462.51$, using unrounded inputs. With USD 1,000-face bonds, each bond is ten times larger, so short $1{,}013.297460/10=\boxed{101.329746}$ bonds. The financing dollars stay the same.
+
+> [!NOTE]
+> $N(d_1)$ gives share quantity; $N(d_2)$ gives bond quantity only when each bond pays $X$. These are initial holdings, not a portfolio to leave untouched until expiry.
+
+<!-- Official source: LM2 printed pp.114–116, Exhibit 14 and Example 10(1); contract scaling and alternate face instantiate the same portfolio identity. -->
+
+---
+
+## Variant: Count the Shares and Bonds That Replicate a BSM Put
+
+**Abstract:** *A long put is short stock plus lending. Take the complementary normal probabilities, apply the signs, and verify that the bond purchase exceeds the short-sale proceeds.*
+
+> A non-dividend-paying stock has $S=100$, $X=100$, continuous annual $r=5\%$, $T=1$ year, and $\sigma=30\%$. As in official CFA Example 10, use $N(d_1)=0.624251728$ and $N(d_2)=0.506648730$. Each zero-coupon bond pays USD 100 at expiry. Find the initial replication for one long put and for 15 contracts covering 100 shares each. State the portfolio replicating a short put.
+
+<span class="jargon-unlock">**Short stock. What does that mean?** Sell borrowed shares now and later buy shares to return them. **Lending. What is it here?** Buy a risk-free zero-coupon bond that pays a fixed face amount at expiry. $B=Xe^{-rT}$ is its price today; $n_S,n_B$ are signed share and bond counts, and $N(z)$ is a standard normal cumulative probability with $N(-z)=1-N(z)$.</span>
+
+**1. Find the two complementary probabilities**
+
+The put uses the opposite side of the normal distribution:
+
+$$
+\begin{aligned}
+N(-d_1)&=1-0.624251728=0.375748272\\
+N(-d_2)&=1-0.506648730=0.493351270
+\end{aligned}
+$$
+
+**2. Read the share and bond counts from BSM**
+
+Reorder the put formula into the same stock-plus-bond form:
+
+$$
+\begin{aligned}
+p&=N(-d_2)B-N(-d_1)S\\
+&=n_SS+n_BB\\
+n_S&=\boxed{-0.375748272\text{ shares}}\\
+n_B&=\boxed{+0.493351270\text{ bonds}}
+\end{aligned}
+$$
+
+The short share position gains when stock falls; the bonds fund the cash needed to reproduce the put.
+
+**3. Reconcile the money, not just the counts**
+
+With $B=100e^{-0.05}=95.122942$:
+
+$$
+\begin{aligned}
+\text{Short-sale proceeds}&=0.375748272(100)\\
+&=37.574827\\
+\text{Bond purchase}&=0.493351270(95.122942)\\
+&=46.929024\\
+p&=46.929024-37.574827\\
+&\approx\boxed{\text{USD }9.35}
+\end{aligned}
+$$
+
+**4. Scale and reverse positions**
+
+For $15(100)=1{,}500$ option units, short $\boxed{563.622408}$ shares and buy $\boxed{740.026905}$ bonds. The net initial cost is $\boxed{\text{USD }14{,}031.30}$ using full precision. To replicate a **short** put, reverse both positions: buy those shares and short those bonds, receiving the same net amount initially.
+
+> [!NOTE]
+> Long put: $n_S=-N(-d_1)$ and $n_B=+N(-d_2)$. The official solution on p.155 has a bond-sign typo; p.114 and its actual numerical substitution use the positive complementary probability.
+
+<!-- Official source: LM2 printed pp.114–116, Example 10(2); practice 11, solution p.155. The solution's n_B=-N(d_2)>0 is a typo, not a usable identity. -->
+
+---
+
+## Variant: Separate BSM Exercise Probability from Expected Payoff
+
+**Abstract:** *$N(d_2)$ answers whether a call finishes in the money under risk-neutral pricing; expected payoff also needs the size of the gain. Discount that expected payoff to obtain today’s price.*
+
+> For official CFA Example 10, take $S=X=100$, continuous annual $r=5\%$, $T=1$, $\sigma=30\%$, $N(d_1)=0.624251728$, and $N(d_2)=0.506648730$. Find the risk-neutral probabilities that the call and put finish in the money, their expected expiry payoffs, and their values today.
+
+<span class="jargon-unlock">**In the money. What does that mean?** The call has a positive expiry payoff when $S_T>X$; the put does when $S_T<X$. **Risk-neutral expectation. What is it?** A pricing average, written $E^Q$, using the no-arbitrage probability measure $Q$ rather than a real-world forecast. $S_T$ is the stock price at expiry; $e^{-rT}$ discounts expiry cash to today.</span>
+
+**1. Read the exercise probabilities**
+
+The official BSM interpretation is:
+
+$$
+\begin{aligned}
+Q(S_T>X)&=N(d_2)=\boxed{50.664873\%}\\
+Q(S_T<X)&=1-N(d_2)=\boxed{49.335127\%}
+\end{aligned}
+$$
+
+These sum to 100%. With positive volatility the continuous price distribution gives zero probability to exactly $S_T=X$.
+
+**2. Calculate expected payoff, including payoff size**
+
+BSM can be written as discounted expected payoff. Moving the discount factor outside gives the following expiry cash averages:
+
+$$
+\begin{aligned}
+E^Q[c_T]&=Se^{rT}N(d_1)-XN(d_2)\\
+&=100e^{0.05}(0.624251728)\\
+&\quad-100(0.506648730)\\
+&=\boxed{\text{USD }14.960907}
+\end{aligned}
+$$
+
+For the put, use both complementary probabilities:
+
+$$
+\begin{aligned}
+E^Q[p_T]&=XN(-d_2)-Se^{rT}N(-d_1)\\
+&=100(0.493351270)\\
+&\quad-100e^{0.05}(0.375748272)\\
+&=\boxed{\text{USD }9.833797}
+\end{aligned}
+$$
+
+**3. Discount once to today**
+
+$$
+\begin{aligned}
+c&=e^{-0.05}(14.960907)\approx\boxed{14.23}\\
+p&=e^{-0.05}(9.833797)\approx\boxed{9.35}
+\end{aligned}
+$$
+
+Both are USD per one-share option. The probability is dimensionless; payoff and price are dollars at different dates.
+
+> [!NOTE]
+> $N(d_1)$ is the base-model share coefficient; $N(d_2)$ is the risk-neutral call exercise probability. Neither is a forecast of the actual stock return or the option payoff amount.
+
+<!-- Official source: LM2 printed pp.113–116, expected-payoff interpretation, Example 10 and risk-neutral exercise-probability discussion. -->
 
 ---
 
@@ -887,6 +1198,62 @@ $$
 
 > [!NOTE]
 > Do not subtract a continuous dividend yield from $S$. Use $Se^{-\delta T}$ and replace $r$ with $r-\delta$ inside $d_1$.
+
+---
+
+## Variant: Replicate Dividend-Paying Options with Shares and Bonds
+
+**Abstract:** *A dividend yield changes the share coefficient to $e^{-\delta T}N(d_1)$ for calls and $-e^{-\delta T}N(-d_1)$ for puts. The bond coefficients keep their usual form.*
+
+> Use official CFA Example 11: $S=X=60$, continuous annual $r=\delta=2\%$, $T=0.5$ year, and $\sigma=45\%$. The model gives $N(d_1)=0.563204572$ and $N(d_2)=0.436795428$. Find the initial stock and bond positions for one long call and one long put, then scale each to 1,000 one-share option units. Each bond pays USD 60 at expiry.
+
+<span class="jargon-unlock">**Dividend yield. What is it?** The annual dividend income relative to stock value, modeled continuously as $\delta$. **Share coefficient. What is it?** The number of actual shares initially held per option, $n_S$. **Bond coefficient. What is it?** The signed count $n_B$ of bonds priced at $B=Xe^{-rT}$; negative means borrowing by shorting bonds.</span>
+
+**1. Include the dividend factor in the stock quantity**
+
+The common yield adjustment is $e^{-\delta T}=e^{-0.02(0.5)}=0.990049834$. A shareholder receives dividends; a call holder does not. The replicating share holding must reflect that difference.
+
+$$
+\begin{aligned}
+n_{S,c}&=e^{-\delta T}N(d_1)\\
+&=0.990049834(0.563204572)\\
+&=\boxed{+0.557600593}\\
+n_{B,c}&=-N(d_2)=\boxed{-0.436795428}
+\end{aligned}
+$$
+
+For the put, use the complementary probabilities and reverse the stock sign:
+
+$$
+\begin{aligned}
+n_{S,p}&=-e^{-\delta T}[1-N(d_1)]\\
+&=-0.990049834(0.436795428)\\
+&=\boxed{-0.432449241}\\
+n_{B,p}&=1-N(d_2)=\boxed{+0.563204572}
+\end{aligned}
+$$
+
+**2. Check both portfolio costs**
+
+Each bond costs $B=60e^{-0.02(0.5)}=59.402990$. Use unrounded holdings:
+
+$$
+\begin{aligned}
+c&=0.557600593(60)\\
+&\quad-0.436795428(59.402990)\\
+&=33.456036-25.946954=\boxed{7.5091}\\
+p&=-0.432449241(60)\\
+&\quad+0.563204572(59.402990)\\
+&=-25.946954+33.456036=\boxed{7.5091}
+\end{aligned}
+$$
+
+For 1,000 calls, buy $\boxed{557.600593}$ shares and short $\boxed{436.795428}$ bonds. For 1,000 puts, short $\boxed{432.449241}$ shares and buy $\boxed{563.204572}$ bonds. Each portfolio initially costs USD $\boxed{7{,}509.08}$.
+
+> [!NOTE]
+> $N(d_1)$ alone is not the share count when dividends are present. Include $e^{-\delta T}$ and account for dividend receipts or payments as the strategy is rebalanced.
+
+<!-- Official source: LM2 printed pp.116–118, eqs.12–14, replication discussion p.117 and Example 11. -->
 
 ---
 
@@ -1046,6 +1413,17 @@ $$
 \text{Put contract}=59.7595(250)=\boxed{\$14{,}939.86}
 $$
 
+The discounted futures parity check is $c-p=e^{-rT}(F_0-X)$. At contract scale:
+
+$$
+\begin{aligned}
+250(c-p)&=250e^{-0.002(0.25)}(1851.65-1860)\\
+&=\boxed{-\text{USD }2{,}086.46}
+\end{aligned}
+$$
+
+The put exceeds the call by this amount, matching the two unrounded contract premiums.
+
 > [!NOTE]
 > Spot 1,860 and dividend yield are distractions once the futures price is supplied. Scale by the contract multiplier only after finding points.
 
@@ -1190,6 +1568,62 @@ $$
 
 ---
 
+## Variant: Add Caplets into a Cap and Reconcile the Matching Floor with a Swap
+
+**Abstract:** *A cap is the sum of its caplets; a floor is the sum of its floorlets. Apply call-minus-put parity to each payment, then sum to get the equivalent swap value.*
+
+> A two-payment rate contract has notional USD 10 million, accrual fraction $AP=0.25$ per payment, and common strike $K=3.5\%$. Forward rates are $F_1=3\%$ and $F_2=4\%$; today’s discount factors to their payment dates are $DF_1=0.98$ and $DF_2=0.96$. The matching caplets cost USD 5,000 and USD 17,000. Find both floorlet prices, total cap and floor prices, long-cap/short-floor value, and the common strike that would make cap and floor values equal.
+
+<span class="jargon-unlock">**Caplet and floorlet. What are they?** A call and put on one future interest payment. A cap or floor is a strip covering several payments. **Parity. What is it?** Matching call-minus-put payoffs equal the underlying rate difference: $c_i-p_i=N_0AP\,DF_i(F_i-K)$, where $N_0$ is notional and $i$ identifies the payment.</span>
+
+**1. Find each floorlet from its caplet**
+
+At payment, $\max(L_i-K,0)-\max(K-L_i,0)=L_i-K$ for the observed rate $L_i$. Discounted forward-rate differences therefore give:
+
+$$
+\begin{aligned}
+c_1-p_1&=10{,}000{,}000(0.25)(0.98)(0.03-0.035)\\
+&=\boxed{-12{,}250}\\
+p_1&=5{,}000-(-12{,}250)=\boxed{17{,}250}\\
+c_2-p_2&=10{,}000{,}000(0.25)(0.96)(0.04-0.035)\\
+&=\boxed{12{,}000}\\
+p_2&=17{,}000-12{,}000=\boxed{5{,}000}
+\end{aligned}
+$$
+
+**2. Sum the strips and interpret the sign**
+
+$$
+\begin{aligned}
+\text{Cap}&=5{,}000+17{,}000=\boxed{22{,}000}\\
+\text{Floor}&=17{,}250+5{,}000=\boxed{22{,}250}\\
+\text{Cap}-\text{Floor}&=\boxed{-250}
+\end{aligned}
+$$
+
+All amounts are USD today. Long cap plus short floor receives floating and pays fixed at 3.5% on these two payments; that swap exposure is worth negative USD 250.
+
+**3. Solve for the strike giving zero swap value**
+
+Set the sum of discounted rate differences to zero. With equal notional and accrual fractions, they cancel:
+
+$$
+\begin{aligned}
+0&=DF_1(F_1-K^*)+DF_2(F_2-K^*)\\
+K^*&=\frac{0.98(0.03)+0.96(0.04)}{0.98+0.96}\\
+&=\boxed{3.494845\%}
+\end{aligned}
+$$
+
+At this at-market swap strike, the **repriced** cap and floor have equal values. Their individual premiums must be recalculated; the original 22,000 and 22,250 do not carry over to a new strike.
+
+> [!NOTE]
+> Equal cap and floor strikes alone do not guarantee equal prices. Equality requires the common strike to equal the matching swap rate, with identical payment dates and other terms.
+
+<!-- Official source: LM2 printed pp.124–125, cap/floor strips and FRA/swap equivalences; original inputs instantiate the official relationship. -->
+
+---
+
 ## Variant: Value Payer and Receiver Swaptions
 
 **Abstract:** *A payer swaption is call-like on the forward fixed swap rate; a receiver swaption is put-like, and the annuity factor carries the discounting.*
@@ -1256,6 +1690,46 @@ $$
 
 > [!NOTE]
 > Do not add another discount factor: $PVA$ already contains the payment-date discounting. Use the forward swap rate, not today’s spot swap rate.
+
+---
+
+## Variant: Value a Callable Bond Using the Receiver-Swaption Equivalence
+
+**Abstract:** *A callable bond investor owns the straight bond and has sold the issuer an exercise right. Subtract the matched receiver-swaption value; reversing the calculation adds it back.*
+
+> A straight fixed-rate bond position is worth USD 10,200,000. A matched receiver swaption representing its issuer’s call right is worth USD 19,855.86. Under the callable-bond decomposition in the official CFA reading, value the callable bond position. How much must the investor pay to buy the matched receiver swaption and recover straight-bond exposure?
+
+<span class="jargon-unlock">**Callable bond. What is it?** A bond its issuer can redeem early under the contract’s terms. **Straight bond. What is it?** The same promised debt cash flows without the call right. **Receiver swaption. What is it?** The right to enter a swap receiving fixed and paying floating; it benefits from lower rates, like the issuer’s call right. Here the exercise dates, cash flows, and other terms are assumed matched for the stated decomposition.</span>
+
+**1. Identify who owns the valuable right**
+
+The issuer can call when falling rates make refinancing attractive. The investor has given away that right, so its value reduces the price the investor receives for the bond.
+
+$$
+\begin{aligned}
+V_{callable}&=V_{straight}-V_{receiver}\\
+&=10{,}200{,}000-19{,}855.86\\
+&=\boxed{\text{USD }10{,}180{,}144.14}
+\end{aligned}
+$$
+
+**2. Buy back the exercise exposure**
+
+Buying the matched receiver swaption offsets the embedded short option:
+
+$$
+\begin{aligned}
+V_{callable}+V_{receiver}&=V_{straight}\\
+10{,}180{,}144.14+19{,}855.86&=\boxed{10{,}200{,}000}
+\end{aligned}
+$$
+
+The investor pays $\boxed{\text{USD }19{,}855.86}$ for that offsetting option. The callable bond is cheaper than the straight bond by exactly the value of the call right in this matched setup.
+
+> [!NOTE]
+> Use the receiver direction for this decomposition. A generic swaption with different exercise rights or cash flows is not automatically an exact hedge for a callable bond.
+
+<!-- Official source: LM2 printed p.127, callable fixed-rate bond/receiver-swaption equivalence; original price inputs illustrate the stated decomposition. -->
 
 ---
 
@@ -1344,6 +1818,51 @@ Check the exposure after hedging: stock hedge gives $4{,}190-4{,}190=0$. Selling
 > [!NOTE]
 > Position sign comes first. Shorting a negative-delta put creates positive delta; the hedge must carry negative delta.
 > If one listed contract covers several underlying units, multiply option delta by that contract multiplier before sizing the hedge.
+
+---
+
+## Variant: Hedge an Existing Stock Holding with Calls or Puts and Compare Gamma
+
+**Abstract:** *A long stock holding has positive delta. Short calls or long puts can cancel it, but the first adds negative gamma and the second positive gamma.*
+
+> Use the official practice vignette’s 10,000-share ETF holding. Each share has delta 1 and gamma 0. Matching options have call delta $+0.6232$, put delta $-0.3689$, and gamma $+0.0139$ per one-share option unit. Find alternative delta-neutral hedges using calls and puts, then calculate the gamma of each combined portfolio. Assume fractional option units for exact sizing; report whole-unit trades too.
+
+<span class="jargon-unlock">**Delta. What is it?** The local value change for a USD 1 underlying-price move. **Gamma. What is it?** How much delta changes for that move. **ETF. What is it?** An exchange-traded fund; here its shares are the underlying. A negative option count means sell, and reverses both that option’s delta and gamma.</span>
+
+**1. Cancel the original stock delta**
+
+The holding has $\Delta_P=10{,}000(1)=+10{,}000$. If $n_H$ is the number of hedge options, neutrality requires $\Delta_P+n_H\Delta_H=0$:
+
+$$
+\begin{aligned}
+n_C&=-\frac{10{,}000}{0.6232}\\
+&=\boxed{-16{,}046.213094\text{ calls}}\\
+n_P&=-\frac{10{,}000}{-0.3689}\\
+&=\boxed{+27{,}107.617240\text{ puts}}
+\end{aligned}
+$$
+
+Thus sell approximately $\boxed{16{,}046}$ calls **or** buy approximately $\boxed{27{,}108}$ puts. These are alternative hedges, and whole-unit rounding leaves a small residual delta.
+
+**2. Compare the resulting gamma**
+
+Stock contributes no gamma. Using the exact fractional option counts:
+
+$$
+\begin{aligned}
+\Gamma_{stock+short\ calls}&=0-16{,}046.213094(0.0139)\\
+&=\boxed{-223.042362}\\
+\Gamma_{stock+long\ puts}&=0+27{,}107.617240(0.0139)\\
+&=\boxed{+376.795880}
+\end{aligned}
+$$
+
+Both portfolios have zero current delta. For a small stock move, their second-order value changes are approximately $\tfrac12\Gamma(\Delta S)^2$: the call hedge has negative curvature; the put hedge has positive curvature. Option premiums and subsequent hedge changes still matter.
+
+> [!NOTE]
+> Delta-neutral does not mean gamma-neutral. These counts are one-share option units; for contracts covering 100 shares, divide the counts by 100 before contract rounding.
+
+<!-- Official source: LM2 practice Exhibit 2 and problems 16–17, printed pp.149–151; solutions p.155. Quantifies the source's gamma comparison without adding a new hedge rule. -->
 
 ---
 
@@ -1513,4 +2032,94 @@ The opposite rule also holds: if your fair volatility is above quoted implied vo
 > [!NOTE]
 > Historical volatility looks backward. Implied volatility is backed out from today’s option price and is the market’s common comparison unit across strikes and maturities.
 
-<!-- Revision audit (2026-11-03): All 27 variants reviewed for missing inputs, substitutions, rollback steps, signs, units, timing, and rounding. Dividend-tree reconstruction checked against official Exhibit 10, printed p. 101; coupon-bond waiting values remain explicitly supplied inputs. BSM CDF and rate-tree precision corrected. Source audit: Primary source is CFA Level II Derivatives, Learning Module 2, printed pages 81-155, including Examples 1-21 and end-of-module practice and solutions. Schweser Reading 29, Modules 29.1-29.7, was used only as a secondary exam-shape and edge-case cross-check. All published answers used here were independently recomputed; newly parameterized problems instantiate the official equations without adding new doctrine. -->
+---
+
+## Variant: Estimate Implied Volatility from a Price Gap and Vega
+
+**Abstract:** *Vega translates a small price gap into a volatility change: divide price difference by vega, then add that change to the volatility used by the model.*
+
+> In the official CFA practice vignette, a put’s model price is 7.4890 using 24% volatility, its market price is 7.20, and vega is 0.4231 per one volatility percentage point. Estimate implied volatility with one local vega step. Explain whether the exact implied volatility must be above or below 24%.
+
+<span class="jargon-unlock">**Implied volatility. What is it?** The volatility input that makes the model price equal the observed market price. **Vega. What is it?** The local option-price change per volatility change; here one vega unit means a full percentage point, such as 24% to 25%. Other model inputs stay fixed.</span>
+
+**1. Find the price correction needed**
+
+The model needs to fall to the market price:
+
+$$
+\Delta V=V_{market}-V_{model}=7.20-7.4890=\boxed{-0.2890}
+$$
+
+**2. Invert the local vega relationship**
+
+The approximation is $\Delta V\approx Vega\times\Delta\sigma_{pp}$, where $\Delta\sigma_{pp}$ is measured in percentage points:
+
+$$
+\begin{aligned}
+\Delta\sigma_{pp}&\approx\frac{-0.2890}{0.4231}\\
+&=\boxed{-0.683054\text{ percentage points}}\\
+\sigma_{imp}&\approx24\%-0.683054\%\\
+&=\boxed{23.316946\%}
+\end{aligned}
+$$
+
+The option’s exact implied volatility is below 24% because a lower model price requires lower volatility. Its precise value requires solving the pricing equation; one vega step estimates it because vega changes as volatility changes.
+
+> [!NOTE]
+> Divide by vega quoted in matching units. The result is a percentage-point change, not a decimal change to add directly to 0.24.
+
+<!-- Official source: LM2 vega pp.136–137 and implied volatility pp.138–144; practice Exhibit 2 p.149 and problem 14, solution p.155. The numerical inversion is explicitly a local approximation to the source's sensitivity relation. -->
+
+<!-- Official-source extension audit (2026-11-04): 10 focused variants added. Scope inventoried: 14 LOS, equations 1–23, Examples 1–21, and practice problems 1–17 in LM2 printed pp.81–155. New coverage: explicit BSM call/put counts, contract/face scaling, dividend replication, RN probabilities/expected payoff, binomial self-financing, American hedge adjustment, stock-holding option hedges and gamma, cap/floor strips and swap-strike inversion, callable-bond decomposition, and local vega inversion. Existing coupon-bond comparison is a supplied-input supplementary question, not an official-source coverage item. Official p.155 put bond-sign typo resolved using p.114. Revision audit (2026-11-03): All 27 variants reviewed for missing inputs, substitutions, rollback steps, signs, units, timing, and rounding. Dividend-tree reconstruction checked against official Exhibit 10, printed p. 101; coupon-bond waiting values remain explicitly supplied inputs. BSM CDF and rate-tree precision corrected. Source audit: Primary source is CFA Level II Derivatives, Learning Module 2, printed pages 81-155, including Examples 1-21 and end-of-module practice and solutions. Schweser Reading 29, Modules 29.1-29.7, was used only as a secondary exam-shape and edge-case cross-check. All published answers used here were independently recomputed; newly parameterized problems instantiate the official equations without adding new doctrine. -->
+
+<!--
+Official-source coverage audit — 2026-11-04
+
+Authority: CFA L2 B7 DERIVATIVES.pdf, LM2, printed pp. 81–155 (PDF pp. 87–161). All 14 learning outcomes, numbered equations (1)–(23), 21 worked examples, and 17 practice problems inventoried. Existing secondary-source coupon-bond question is retained as a supplied-node comparison, not counted as official-source coverage. New inputs instantiate official formulas; none imply additional syllabus rules. Full coverage here means distinct numerical methods, not every possible parameter rearrangement.
+
+| Source | Numerical skill / direct or inverse form | Coverage and action | Trap |
+|---|---|---|---|
+| LOS 1–4; pp. 83–106; eqs. 1–9 | Payoffs, hedge ratios, financing, risk-neutral weights, arbitrage, European/American rollback | Existing variants 1–12; add self-financing rebalance and American hedge ratio; add terminal-expectation cross-check to European tree | Next-date values, borrowing signs, two paths to middle node, American exercise before hedge calculation |
+| LOS 5; pp. 107–109; Example 8 | Node-specific discounting and notional scaling for rate options | Existing rate-tree variant | Rate percentage vs decimal; factor multiplication; stated cash-settlement timing |
+| LOS 6; pp. 109–112; Example 9 | BSM assumptions | Conceptual; no separate numerical question needed | Continuous rebalancing, no dividends for base model, constant rates/volatility |
+| LOS 7; pp. 112–116; eqs. 10–11; Exhibit 14; Example 10 | BSM prices, explicit share/bond counts, expected payoff and risk-neutral exercise probability | Existing combined valuation; add separate call and put counts plus probability/expected payoff variant | d versus N(d); counts versus USD financing; bond face; dynamic replication |
+| LOS 8; pp. 116–120; eqs. 12–14; Examples 11–13 | Carry-adjusted equity/FX prices, parity, replication | Existing carry and FX pricing; add dividend-adjusted counts and position scaling | exp(-yield*T) in share count; foreign rate is carry; quote units |
+| LOS 9; pp. 120–122; eqs. 15–17; Example 14 | Black futures valuation and parity | Existing futures pricing; add explicit discounted parity check | Futures price versus spot; discount whole payoff; multiplier |
+| LOS 10; pp. 122–128; eqs. 18–21; Examples 15–16 | Deferred rate options, cap/floor strips and swaps, swaptions, callable-bond equivalence | Existing rate, caplet parity and swaption variants; add cap/floor strip and callable bond numerical | Expiry vs payment; accrual once; full payment-date annuity; equal cap/floor only at swap strike |
+| LOS 11–13; pp. 129–138; eqs. 22–23; Examples 17–19 | Greeks, delta/gamma approximations, hedge sizing and rebalancing | Existing six Greeks variants; add stock holding hedged by calls or puts with gamma comparison | Short signs; one-share units vs contracts; stock gamma zero; delta neutrality local |
+| LOS 14; pp. 138–144; Examples 20–21 | Implied-volatility comparisons and inference | Existing interpolation/relative value; add local vega inversion using practice Exhibit 2 | IV inferred, not historical; percentage-point units; inversion approximate |
+
+| Worked examples | Distinct method | Coverage |
+|---|---|---|
+| 1–2, pp. 88–89 | Long-call and long-put replication in binomial model | Existing one-period call and put |
+| 3–4, pp. 91–92 | Hedge ratio, price, one-period parity | Existing one-period call/put and parity |
+| 5, p. 96 | Two-period risk-neutral valuation | Existing European call and put; terminal-expectation check added |
+| 6, p. 99 | American put | Existing exercise comparison |
+| 7, pp. 101–106 | European/American tree, hedge ratios, node financing | Existing tree/node hedges; new rebalance and American hedge variants |
+| 8, pp. 107–109 | Rate-option tree | Existing rate tree |
+| 9, p. 112 | Model assumptions | Conceptual exclusion |
+| 10, pp. 115–116 | BSM long-call and long-put share/bond counts | New separate count questions plus existing valuation |
+| 11–12, pp. 117–119 | Dividend equity valuation | Existing dividend value; new dividend replication |
+| 13, pp. 119–120 | Currency mapping | Existing currency variant |
+| 14, pp. 121–122 | Black futures | Existing futures variant and added parity |
+| 15, p. 125 | FRA underlying and timing | Existing deferred rate option |
+| 16, p. 128 | Payer swaption mapping | Existing swaption variant |
+| 17–18, pp. 130–132 | Delta hedge | Existing short-put hedge; new stock-holding hedge |
+| 19, p. 134 | Gamma sign in delta-hedged portfolio | Existing gamma hedge; new stock hedge with gamma comparison |
+| 20–21, p. 141 | Relative value via IV | Existing implied-volatility variant |
+
+| Practice problems | Coverage |
+|---|---|
+| 1–4, pp. 147–148 | Existing one-period hedge, probability, price, and arbitrage |
+| 5–6, p. 148 | Existing European/American rollback |
+| 7, p. 148 | New explicit terminal expectation check (European only) |
+| 8–9, p. 148 | Existing rate tree; unchanged risk-neutral weights when strike changes |
+| 10–11, p. 150; solutions pp. 154–155 | New explicit BSM share/bond counts; put sign typo checked against p.114 |
+| 12, p. 150 | Existing Black futures input mapping |
+| 13, p. 150 | Existing theta calculation |
+| 14, p. 151 | Existing model/market-IV comparison; new vega inversion |
+| 15, p. 151 | Existing FRA vs current spot rate and expiry/payment timing |
+| 16–17, p. 151 | New existing-stock delta hedges and gamma comparison |
+
+Source discrepancy: solution 11, printed p.155, writes n_B=-N(d2)>0 for a long put. This is a sign/complement typo: p.114 gives n_B=N(-d2)>0, and solution 11 itself uses +0.4404. Use the p.114 formula. No separate errata file was supplied; do not claim publisher errata verification.
+-->
