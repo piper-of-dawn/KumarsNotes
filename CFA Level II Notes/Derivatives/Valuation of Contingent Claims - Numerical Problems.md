@@ -4,6 +4,8 @@
 
 > A stock is \$80 today. Over one period it can rise by a factor of $1.25$ or fall by a factor of $0.75$. A European call and put both have an exercise price of \$85. Find the two future stock prices and every terminal option payoff.
 
+All prices and payoffs below are USD per share. $S$ is today’s stock price; $u$ and $d$ are the up/down multipliers; $X$ is the exercise price. A terminal payoff is cash at expiry, before subtracting any premium paid today.
+
 **1. Turn the factors into prices**
 
 The up factor is not a 1.25% return. It means the stock becomes **1.25 times** its current price.
@@ -61,7 +63,15 @@ $$
 \pi u+(1-\pi)d=1+r
 $$
 
-Rearranging gives:
+Subtract $d$ from both sides, then divide by the difference between the up and down factors:
+
+$$
+\pi u+d-\pi d=1+r
+\quad\Rightarrow\quad
+\pi(u-d)=1+r-d
+$$
+
+Therefore:
 
 $$
 \pi=\frac{(1+r)-d}{u-d}
@@ -98,6 +108,8 @@ $$
 $$
 
 A probability above 1 is the calculator screaming that the tree is broken. Risk-free growth of $1.30$ beats even the stock's up branch of $1.25$.
+
+For example, short one share for $S$ and invest the proceeds at 30%. At expiry the investment is $1.30S$, while buying back the share costs at most $1.25S$. The trade starts with zero net cash and leaves at least $0.05S$.
 
 $$
 \boxed{\text{The second tree violates no-arbitrage.}}
@@ -151,14 +163,24 @@ h_c=\frac{c^+-c^-}{S^+-S^-}
 =\boxed{0.573770}
 $$
 
-At expiration, $0.573770$ shares are worth USD 77.459 in the up state. The call pays only USD 35, so the remaining USD 42.459 must be a loan repayment.
+Let $L$ be the loan repayment at expiry. Stock minus that repayment must match the call in **both** states:
 
 $$
-\text{Borrow today}=\frac{42.459}{1.0515}=40.380
+L=h_cS^+-c^+=\frac{35}{61}(135)-35=42.459016
 $$
 
 $$
-\text{Replication cost}=0.573770(100)-40.380=\boxed{16.998}
+L=h_cS^--c^-=\frac{35}{61}(74)-0=42.459016
+$$
+
+The same repayment works in either state. Discount it to find how much we can borrow today.
+
+$$
+\text{Borrow today}=\frac{42.459016}{1.0515}=40.379474
+$$
+
+$$
+\text{Replication cost}=\frac{35}{61}(100)-40.379474=\boxed{16.998}
 $$
 
 > [!NOTE]
@@ -197,7 +219,13 @@ $$
 
 The negative sign means short stock. The lending leg supplies the rest of the payoff.
 
-At expiration, lending USD 57.541 offsets the short-stock loss in the up state and leaves a USD 26 put payoff in the down state. Its cost today is:
+Let $B_T$ be the cash available from lending at expiry. The stock-plus-cash payoff must equal the put:
+
+$$
+B_T=p^+-h_pS^+=0-\left(-\frac{26}{61}\right)(135)=57.540984
+$$
+
+In the down state, the same cash leaves $57.540984-(26/61)(74)=26$, exactly the put payoff. Discount the maturity cash to find the amount lent today:
 
 $$
 \frac{57.541}{1.0515}=54.723
@@ -264,6 +292,12 @@ $$
 
 Again, the long call and short replication cancel in every future state.
 
+**3. Spell out the replicating trades**
+
+From the earlier tree, one call is replicated by **buying $35/61=0.573770$ shares and borrowing USD 40.379474**. For the USD 20 call, sell the call, buy those shares, and borrow that amount. For the USD 15 call, reverse every trade: buy the call, short those shares, and lend USD 40.379474.
+
+At expiry the stock-and-loan replica pays $(35,0)$ in the up/down states. Thus expensive-call arbitrage has net payoffs $(-35,-0)+(35,0)=(0,0)$; cheap-call arbitrage reverses both signs.
+
 > [!NOTE]
 > Arbitrage needs no forecast: opposite future cash flows cancel, while the price gap is collected immediately.
 
@@ -281,6 +315,8 @@ $$
 \pi=\frac{1.0435-0.715}{1.445-0.715}=\boxed{0.45}
 $$
 
+At Time 1, $S^+=7.35(1.445)=10.62075$ and $S^-=7.35(0.715)=5.25525$. Two moves give $S^{++}=Su^2$, $S^{+-}=Sud$, and $S^{--}=Sd^2$. Up-then-down and down-then-up meet because $ud=du$.
+
 **2. Build terminal stock prices and call payoffs**
 
 $$
@@ -294,6 +330,8 @@ $$
 $$
 S^{--}=7.35(0.715)^2=3.758,\quad c^{--}=0
 $$
+
+Each terminal call pays $\max(S_2-8,0)$. Only the top stock price exceeds 8, so only that branch pays. **Continuation value** means the value of keeping the option alive: take its two next-step values, weight by $\pi$ and $1-\pi$, then discount one period. Rounded tree values are displayed; carry full precision through the calculation.
 
 **3. Roll back to Time 1**
 
@@ -324,6 +362,8 @@ $$
 **Abstract:** *Work backward exactly as for the call, then use put-call parity as an independent checksum.*
 
 > Keep $S=7.35$, $u=1.445$, $d=0.715$, $X=8$, $r=4.35\%$, and $\pi=0.45$. Value the matching two-period European put.
+
+Rebuild the stock endpoints from the question: $S^{++}=7.35(1.445)^2=15.346984$, $S^{+-}=7.35(1.445)(0.715)=7.593836$, and $S^{--}=7.35(0.715)^2=3.757504$. Apply $\max(8-S_2,0)$ at each endpoint; a negative payoff is replaced by zero.
 
 **1. Find terminal put payoffs**
 
@@ -374,6 +414,14 @@ $$
 **Abstract:** *The hedge ratio changes as the tree moves, so a multiperiod replication must be rebalanced at every node.*
 
 > Use the preceding two-period tree. Find the call and put hedge ratios at each Time-1 node and at Time 0.
+
+A hedge ratio is **shares per option**. At any node, holding $h$ shares changes the stock position’s value by $h(S_{next}^{up}-S_{next}^{down})$. Match this to the option-value difference and solve:
+
+$$
+h=\frac{V_{next}^{up}-V_{next}^{down}}{S_{next}^{up}-S_{next}^{down}}
+$$
+
+Today’s denominator uses **Time-1** stock prices: $7.35(1.445)=10.62075$ and $7.35(0.715)=5.25525$. At a Time-1 node, use its two **Time-2** children instead. This keeps numerator and denominator at the same date.
 
 **1. Call hedge ratios at Time 1**
 
@@ -430,12 +478,22 @@ $$
 \pi=\frac{1.0205-0.656}{1.466-0.656}=0.45
 $$
 
-Terminal stock prices are $55.878$, $25.004$, and $11.189$, so terminal put payoffs are $0$, $0$, and $13.811$.
+Build the endpoints, then apply $\max(25-S_2,0)$:
+
+$$
+\begin{aligned}
+S^{++}&=26(1.466)^2=55.878056,&p^{++}&=0\\
+S^{+-}&=26(1.466)(0.656)=25.004096,&p^{+-}&=0\\
+S^{--}&=26(0.656)^2=11.189056,&p^{--}&=13.810944
+\end{aligned}
+$$
+
+These are expiry payoffs, so there is no continuation decision at Time 2.
 
 **2. European continuation values at Time 1**
 
 $$
-p^+=0
+p^+=\frac{0.45(0)+0.55(0)}{1.0205}=0
 $$
 
 $$
@@ -448,6 +506,8 @@ $$
 p_{E,0}=\frac{0.45(0)+0.55(7.4436)}{1.0205}
 =\boxed{4.0117}
 $$
+
+At the Time-1 up node, $S^+=26(1.466)=38.116$, so immediate exercise pays $\max(25-38.116,0)=0$. Waiting also gives zero; the American up-node value stays zero.
 
 **3. Check immediate exercise at the down node**
 
@@ -464,6 +524,8 @@ p_{A,0}=\frac{0.45(0)+0.55(7.9440)}{1.0205}
 =\boxed{4.2814}
 $$
 
+The root is an exercise node too: $\max(25-26,0)=0$, below the rolled-back value $4.2814$. Therefore keeping the option is optimal today.
+
 $$
 \text{Early-exercise premium}=4.2814-4.0117=\boxed{0.2697}
 $$
@@ -479,7 +541,9 @@ $$
 
 **Abstract:** *An American call’s extra exercise freedom is worthless when the stock pays no dividend because exercising early throws away time value and pays the strike too soon.*
 
-> In the earlier $S=7.35$, $X=8$, two-period tree, the Time-1 stock values are $10.621$ after an up move and $5.255$ after a down move. The corresponding call continuation values are $3.168$ and $0$. Should an American call be exercised at either node, and what is its value today?
+> In the earlier $S=7.35$, $X=8$, two-period tree, the Time-1 stock values are $10.621$ after an up move and $5.255$ after a down move. Use $u=1.445$, $d=0.715$, $r=4.35\%$ per period, and $\pi=0.45$ to calculate the continuation values. Should an American call be exercised at either node, and what is its value today?
+
+The terminal stock prices are $7.35(1.445)^2=15.346984$, $7.35(1.445)(0.715)=7.593836$, and $7.35(0.715)^2=3.757504$. Applying $\max(S_2-8,0)$ gives call payoffs $7.346984$, $0$, and $0$. Weight the two children of each node and discount one period to calculate continuation.
 
 **1. Test the up node**
 
@@ -488,7 +552,7 @@ $$
 $$
 
 $$
-\text{Continuation value}=\boxed{3.168}
+C_1^+=\frac{0.45(7.346984)+0.55(0)}{1.0435}=\boxed{3.168}
 $$
 
 Waiting wins because $3.168>2.621$.
@@ -500,7 +564,7 @@ $$
 $$
 
 $$
-\text{Continuation value}=\boxed{0}
+C_1^-=\frac{0.45(0)+0.55(0)}{1.0435}=\boxed{0}
 $$
 
 There is nothing to gain from exercising there either.
@@ -510,8 +574,10 @@ There is nothing to gain from exercising there either.
 Because no node is replaced, the American call and European call have the same value:
 
 $$
-c_A=c_E=\boxed{1.366}
+c_A=c_E=\frac{0.45(3.168)+0.55(0)}{1.0435}=\boxed{1.366}
 $$
+
+Today’s exercise value is $\max(7.35-8,0)=0$, also below continuation. At the down node, a zero/zero tie means exercise provides no benefit.
 
 > [!NOTE]
 > “American” does not automatically mean “more valuable.” The right to do something useless has zero value.
@@ -520,54 +586,73 @@ $$
 
 ## Variant: Exercise an American Call Before a Known Dividend
 
-**Abstract:** *A non-dividend-paying call is not exercised early, but a known dividend can make grabbing the shares before ex-dividend worthwhile.*
+**Abstract:** *Separate the known dividend from the stock’s risky value, build the ex-dividend tree, and calculate waiting value before comparing it with exercise just before the dividend.*
 
-> A stock is USD 100, a two-period American call has $X=95$, the per-period risk-free rate is 1%, and $u=1.224$, $d=0.796$. A USD 3 dividend is paid at Time 1. At the Time-1 up node, compare exercise with continuation. The official tree gives the European value today as $12.3438$.
+> A stock is USD 100, a two-period American call has $X=95$, the per-period risk-free rate is 1%, and $u=1.224$, $d=0.796$. A USD 3 dividend is paid at Time 1. Calculate the continuation value at the Time-1 up node, decide whether to exercise, and find the European and American values today. Use the escrowed-dividend tree below.
 
-**1. Remove the dividend before growing the stock**
+**1. Separate the dividend from the growing stock component**
 
-The escrow method subtracts the dividend's present value from today's stock price:
-
-$$
-PV(D)=\frac{3}{1.01}=\boxed{2.9703}
-$$
-
-The ex-dividend stock value at the up node is:
+The USD 3 payment is known, so discount it one period and remove it from today’s stock price. The remaining component, $S_0^*$, follows the up/down factors:
 
 $$
-(100-2.9703)(1.224)=\boxed{118.7644}
-$$
-
-Immediately before the stock goes ex-dividend, add the USD 3 dividend back:
-
-$$
-118.7644+3=121.7644
-$$
-
-**2. Compare exercise with waiting**
-
-$$
-\text{Exercise value}=121.7644-95=\boxed{26.7644}
-$$
-
-The tree's continuation value is $24.9344$.
-
-$$
-26.7644>24.9344
-$$
-
-Exercise wins at this node. After inserting that larger node value and rolling back, the American call is:
-
-$$
-c_A=\boxed{13.2497}
+PV(D)=\frac{3}{1.01}=2.970297,\qquad S_0^*=100-2.970297=97.029703
 $$
 
 $$
-\text{Early-exercise premium}=13.2497-12.3438=\boxed{0.9059}
+S_1^{*,+}=97.029703(1.224)=118.764356,\qquad
+S_1^{*,-}=97.029703(0.796)=77.235644
 $$
+
+These are **after-dividend** prices. Just before payment, the share still includes the USD 3: $S_1^+=121.764356$ and $S_1^-=80.235644$.
+
+**2. Build the terminal prices and option payoffs**
+
+No dividends remain after Time 1. Grow the ex-dividend prices for one more period, then apply $\max(S_2-95,0)$:
+
+$$
+\begin{aligned}
+S_2^{++}&=118.764356(1.224)=145.367572,&c_2^{++}&=50.367572\\
+S_2^{+-}&=118.764356(0.796)=94.536356,&c_2^{+-}&=0\\
+S_2^{--}&=77.235644(0.796)=61.479572,&c_2^{--}&=0
+\end{aligned}
+$$
+
+**3. Calculate continuation: what is waiting worth at Time 1?**
+
+The pricing weight is $\pi=(1.01-0.796)/(1.224-0.796)=0.5$. A call holder who waits receives no dividend, so use the **after-dividend** tree’s future option payoffs:
+
+$$
+C_1^+=\frac{0.5(50.367572)+0.5(0)}{1.01}=\boxed{24.9344}
+$$
+
+$$
+C_1^-=\frac{0.5(0)+0.5(0)}{1.01}=\boxed{0}
+$$
+
+**4. Compare with exercise immediately before payment**
+
+At the up node, exercise buys the share while it still includes the dividend:
+
+$$
+E_1^+=\max(121.764356-95,0)=26.764356>24.934442
+$$
+
+Thus $c_{A,1}^+=26.764356$. At the down node, $E_1^-=\max(80.235644-95,0)=0=C_1^-$, so $c_{A,1}^-=0$.
+
+**5. Roll back the chosen values and check today’s exercise**
+
+$$
+c_{E,0}=\frac{0.5(24.934442)+0.5(0)}{1.01}=\boxed{12.3438}
+$$
+
+$$
+c_{A,0}=\max\left(100-95,\frac{0.5(26.764356)+0.5(0)}{1.01}\right)=\boxed{13.2497}
+$$
+
+The American right adds $13.2497-12.3438=\boxed{0.9059}$ USD per share today.
 
 > [!NOTE]
-> No dividend generally means no early call exercise. A known dividend creates the important exception: test the node just before ex-dividend.
+> Continuation uses future option payoffs; pre-dividend exercise uses the share price including the dividend. Do not add USD 3 again to either option value.
 
 ---
 
@@ -576,6 +661,10 @@ $$
 **Abstract:** *A bond coupon is carry just like a stock dividend, so an American call on a coupon bond can rationally be exercised early.*
 
 > A two-year call on a 7% annual-coupon bond has exercise price USD 100 and can be exercised after Year 1. At the Year-1 up node, the bond is USD 100.57 and the European continuation value is USD 0.29. At the Year-1 down node, the bond is USD 103.80 and continuation value is USD 1.35. The one-year rate is 3%, and the risk-neutral branch weights are 50/50. Find the American call value today.
+
+Here the Year-1 bond prices and continuation values are **supplied inputs**. The question does not supply the Year-2 bond prices or Year-1 node rates needed to rebuild them. For a full tree, continuation would be $C_1^j=[0.5c_2^{j,u}+0.5c_2^{j,d}]/(1+r_1^j)$, with $c_2=\max(B_2-100,0)$. Do not use today’s 3% rate as a substitute for missing future node rates.
+
+Compare the supplied waiting values with exercise at the same Year-1 valuation instant. The quoted bond prices are the exercise deliverable prices; do not add the 7% coupon again.
 
 **1. Compare at the up node**
 
@@ -600,7 +689,13 @@ c_A=\frac{0.5(0.57)+0.5(3.80)}{1.03}
 =\boxed{2.12}
 $$
 
-The comparable European call was worth only $0.80$, so the early-exercise feature adds about $1.32$.
+Using the supplied continuation values, the comparable European call is:
+
+$$
+c_{E,0}=\frac{0.5(0.29)+0.5(1.35)}{1.03}=0.796117\approx\boxed{0.80}
+$$
+
+The early-exercise feature adds $2.121359-0.796117=\boxed{1.33}$ USD per bond price unit, using unrounded values. The supplied data specify the Year-1 decision; today’s bond price is not given, so a separate Time-0 exercise test cannot be calculated.
 
 > [!NOTE]
 > For any carry-paying underlying—dividend stock or coupon bond—test exercise before the carry leaves the asset.
@@ -612,6 +707,8 @@ The comparable European call was worth only $0.80$, so the early-exercise featur
 **Abstract:** *The rollback logic is unchanged, but each rate-tree node has its own discount factor because the interest rate itself is moving.*
 
 > A two-year European call and put are written on the one-year spot rate, with a USD 1,000,000 notional and 3.25% exercise rate. The risk-neutral up probability is 50%. Terminal rates are 3.9706%, 3.2542%, and 2.2593%. Time-1 discount factors are 0.962386 and 0.974627, and today’s factor is 0.970446. Value both options.
+
+Let $K=0.0325$. This simplified contract pays $N_0\max(R_2-K,0)$ for the call or $N_0\max(K-R_2,0)$ for the put **at Time 2**, with a one-year accrual factor of 1. The supplied discount factors move cash back one step; multiply by them rather than dividing again.
 
 **1. Terminal payoffs per USD 1 of notional**
 
@@ -627,14 +724,16 @@ $$
 p^{++}=0,\qquad p^{+-}=0,\qquad p^{--}=0.0325-0.022593=0.009907
 $$
 
+At each Time-1 node, average its two child payoffs, then multiply by **that node’s** factor: 0.962386 after up, 0.974627 after down. Only the final rollback uses today’s 0.970446. Retain the unrounded node values until after notional scaling.
+
 **2. Roll back using the discount factor at each node**
 
 $$
-c^+=0.962386[0.5(0.007206)+0.5(0.000042)]=0.003488
+c^+=0.962386[0.5(0.007206)+0.5(0.000042)]=0.003487686864
 $$
 
 $$
-c^-=0.974627[0.5(0.000042)+0.5(0)]=0.000020
+c^-=0.974627[0.5(0.000042)+0.5(0)]=0.000020467167
 $$
 
 $$
@@ -642,25 +741,25 @@ p^+=0
 $$
 
 $$
-p^-=0.974627[0.5(0)+0.5(0.009907)]=0.004828
+p^-=0.974627[0.5(0)+0.5(0.009907)]=0.0048278148445
 $$
 
 **3. Roll back to today and scale the notional**
 
 $$
-c_0=0.970446[0.5(0.003488)+0.5(0.000020)]=0.00170216
+c_0=0.970446[0.5(0.003487686864)+0.5(0.000020467167)]=0.001702237023
 $$
 
 $$
-p_0=0.970446[0.5(0)+0.5(0.004828)]=0.00234266
+p_0=0.970446[0.5(0)+0.5(0.0048278148445)]=0.002342566802
 $$
 
 $$
-\text{Call value}=1{,}000{,}000(0.00170216)=\boxed{\$1{,}702.16}
+\text{Call value}=1{,}000{,}000(0.001702237023)=\boxed{\$1{,}702.24}
 $$
 
 $$
-\text{Put value}=1{,}000{,}000(0.00234266)=\boxed{\$2{,}342.66}
+\text{Put value}=1{,}000{,}000(0.002342566802)=\boxed{\$2{,}342.57}
 $$
 
 > [!NOTE]
@@ -676,6 +775,8 @@ $$
 
 > A European stock option has $S=100$, $X=100$, continuously compounded $r=5\%$, $T=1$, and $\sigma=30\%$. Calculate $d_1$, $d_2$, the call, the put, and both initial replicating positions.
 
+$S$ is the share price, $X$ the strike, $T$ years to expiry, $r$ the continuous annual risk-free rate, and $\sigma$ annual volatility. $d_1$ and $d_2$ are standardized model inputs; $N(z)$ is the standard normal cumulative probability up to $z$, obtained from a normal table or CDF function. It is a **lookup**, not multiplication by $N$.
+
 **1. Calculate the two standardized inputs**
 
 $$
@@ -688,10 +789,10 @@ $$
 d_2=d_1-\sigma\sqrt{T}=0.3167-0.30=\boxed{0.0167}
 $$
 
-Using the normal distribution:
+Using unrounded $d_1,d_2$, the table/CDF gives the values below. Normal symmetry gives $N(-d_1)=1-0.624252=0.375748$ and $N(-d_2)=1-0.506649=0.493351$:
 
 $$
-N(d_1)=0.6241,\qquad N(d_2)=0.5066
+N(d_1)=0.624252,\qquad N(d_2)=0.506649
 $$
 
 **2. Value the call**
@@ -701,7 +802,7 @@ c=SN(d_1)-Xe^{-rT}N(d_2)
 $$
 
 $$
-c=100(0.6241)-100e^{-0.05}(0.5066)=\boxed{14.23}
+c=100(0.624252)-100e^{-0.05}(0.506649)=\boxed{14.23}
 $$
 
 **3. Value the put**
@@ -711,14 +812,18 @@ p=Xe^{-rT}N(-d_2)-SN(-d_1)
 $$
 
 $$
-p=100e^{-0.05}(0.4934)-100(0.3759)=\boxed{9.35}
+p=100e^{-0.05}(0.493351)-100(0.375748)=\boxed{9.35}
 $$
 
 **4. Read the replication directly from BSM**
 
-Call: buy $N(d_1)=0.6241$ shares and short $N(d_2)=0.5066$ zero-coupon bonds whose price is $Xe^{-rT}=95.123$.
+Call: buy $N(d_1)=0.624252$ shares and short $N(d_2)=0.506649$ zero-coupon bonds whose price is $Xe^{-rT}=95.123$.
 
-Put: short $N(-d_1)=0.3759$ shares and buy $N(-d_2)=0.4934$ of those bonds.
+Put: short $N(-d_1)=0.375748$ shares and buy $N(-d_2)=0.493351$ of those bonds.
+
+The call’s initial share cost is $100(0.624252)=62.4252$; the borrowing leg is $100e^{-0.05}(0.506649)\approx48.1939$. Their difference is USD 14.23. The put’s lending leg is $100e^{-0.05}(0.493351)\approx46.9291$ and its short-share proceeds are $100(0.375748)=37.5748$, leaving a net cost of USD 9.35.
+
+Each zero-coupon bond here pays **USD 100 at expiry**. These positions describe the initial replication; share and financing quantities must be rebalanced as inputs change.
 
 > [!NOTE]
 > BSM uses continuous compounding. If given a discrete annual rate $r_d$, convert with $r=\ln(1+r_d)$.
@@ -731,19 +836,21 @@ Put: short $N(-d_1)=0.3759$ shares and buy $N(-d_2)=0.4934$ of those bonds.
 
 > A European option has $S=60$, $X=60$, $r=2\%$, $T=0.5$, continuous dividend yield $\delta=2\%$, and $\sigma=45\%$. Value the call and put.
 
+Here $\delta=0.02$ is a continuous annual dividend yield, and $T=0.5$ years. The call holder misses dividends earned by a shareholder, so the stock component is adjusted to $Se^{-\delta T}$. Both $r$ and $\delta$ use continuous compounding.
+
 **1. Put the dividend yield inside $d_1$**
 
 $$
 d_1=\frac{\ln(S/X)+(r-\delta+\sigma^2/2)T}{\sigma\sqrt{T}}
-=\boxed{0.15910}
+=\frac{\ln(60/60)+(0.02-0.02+0.45^2/2)(0.5)}{0.45\sqrt{0.5}}=\boxed{0.15910}
 $$
 
 $$
-d_2=d_1-\sigma\sqrt{T}=\boxed{-0.15910}
+d_2=0.159099-0.45\sqrt{0.5}=\boxed{-0.15910}
 $$
 
 $$
-N(d_1)=0.56320,\qquad N(d_2)=0.43680
+N(d_1)=0.563204572,\qquad N(d_2)=0.436795428
 $$
 
 **2. Value the call**
@@ -753,7 +860,7 @@ c=Se^{-\delta T}N(d_1)-Xe^{-rT}N(d_2)
 $$
 
 $$
-c=60e^{-0.02(0.5)}(0.56320)-60e^{-0.02(0.5)}(0.43680)
+c=60e^{-0.02(0.5)}(0.563204572)-60e^{-0.02(0.5)}(0.436795428)
 =\boxed{7.5091}
 $$
 
@@ -761,7 +868,12 @@ $$
 
 $$
 p=Xe^{-rT}N(-d_2)-Se^{-\delta T}N(-d_1)
-=\boxed{7.5091}
+$$
+
+Since $N(-z)=1-N(z)$, $N(-d_2)=0.563204572$ and $N(-d_1)=0.436795428$:
+
+$$
+p=60e^{-0.02(0.5)}(0.563204572)-60e^{-0.02(0.5)}(0.436795428)=\boxed{7.5091}
 $$
 
 They are equal here because $S=X$ and $r=\delta$, so carry-adjusted parity has a zero right-hand side:
@@ -787,29 +899,31 @@ The domestic rate discounts yen. The foreign rate acts like carry on the underly
 
 $$
 d_1=\frac{\ln(S/X)+(r_d-r_f+\sigma^2/2)T}{\sigma\sqrt{T}}
-=\boxed{-0.001768}
+=\frac{\ln(135/135)+(0.0025-0.0100+0.12^2/2)(0.5)}{0.12\sqrt{0.5}}=\boxed{-0.001768}
 $$
 
 $$
-d_2=d_1-\sigma\sqrt{T}=\boxed{-0.086621}
+d_2=-0.001768-0.12\sqrt{0.5}=\boxed{-0.086621}
 $$
 
 $$
-N(d_1)=0.499295,\qquad N(d_2)=0.465487
+N(d_1)=0.499294763,\qquad N(d_2)=0.465486553
 $$
 
 **2. Value the EUR call**
 
 $$
 c=Se^{-r_fT}N(d_1)-Xe^{-r_dT}N(d_2)
-=\boxed{\text{JPY }4.3064\text{ per EUR}}
+=135e^{-0.0100(0.5)}(0.499294763)-135e^{-0.0025(0.5)}(0.465486553)=\boxed{\text{JPY }4.3064\text{ per EUR}}
 $$
+
+For the put, normal symmetry gives $N(-d_2)=1-0.465486553=0.534513447$ and $N(-d_1)=1-0.499294763=0.500705237$. Values below use unrounded normal probabilities.
 
 **3. Value the EUR put**
 
 $$
 p=Xe^{-r_dT}N(-d_2)-Se^{-r_fT}N(-d_1)
-=\boxed{\text{JPY }4.8111\text{ per EUR}}
+=135e^{-0.0025(0.5)}(0.534513447)-135e^{-0.0100(0.5)}(0.500705237)=\boxed{\text{JPY }4.8111\text{ per EUR}}
 $$
 
 > [!NOTE]
@@ -829,6 +943,8 @@ $$
 PV(X)=95e^{-0.04}=\boxed{91.2750}
 $$
 
+A European call can wait until expiry to pay USD 95, so compare the stock with **today’s cost of funding that future strike**, $PV(X)$, rather than with 95 today. The put reverses the comparison. The maximum with zero reflects the right to let an option expire.
+
 **2. Find the lower bounds**
 
 $$
@@ -846,6 +962,8 @@ $$
 With zero volatility, the future is effectively deterministic under the model, so these are also the limiting model values.
 
 **3. Check the upper bounds**
+
+A call payoff never exceeds the stock itself, so its price cannot exceed the cost of buying the stock. A put payoff never exceeds the strike paid at expiry, so its price cannot exceed the cost of funding that strike today.
 
 $$
 c\leq S=\boxed{100}
@@ -870,27 +988,29 @@ $$
 
 $$
 d_1=\frac{\ln[F_0(T)/X]+(\sigma^2/2)T}{\sigma\sqrt{T}}
-=\boxed{-0.02249}
+=\frac{\ln(1851.65/1860)+(0.15^2/2)(0.25)}{0.15\sqrt{0.25}}=\boxed{-0.02249}
 $$
 
 $$
-d_2=d_1-\sigma\sqrt{T}=\boxed{-0.09749}
+d_2=-0.0224914-0.15\sqrt{0.25}=\boxed{-0.09749}
 $$
 
 $$
-N(d_1)=0.491028,\qquad N(d_2)=0.461168
+N(d_1)=0.491027990,\qquad N(d_2)=0.461168086
 $$
+
+The discount factor is $e^{-0.002(0.25)}=0.9995001$. Normal symmetry gives $N(-d_2)=0.538831914$ and $N(-d_1)=0.508972010$. Use unrounded CDF values and premiums before multiplying by 250 USD per index point.
 
 **2. Price each option in index points**
 
 $$
 c=e^{-rT}[F_0(T)N(d_1)-XN(d_2)]
-=\boxed{51.41}
+=e^{-0.002(0.25)}[1851.65(0.491027990)-1860(0.461168086)]\approx\boxed{51.413625}
 $$
 
 $$
 p=e^{-rT}[XN(-d_2)-F_0(T)N(-d_1)]
-=\boxed{59.76}
+=e^{-0.002(0.25)}[1860(0.538831914)-1851.65(0.508972010)]\approx\boxed{59.759451}
 $$
 
 **3. Apply the multiplier last**
@@ -914,6 +1034,8 @@ $$
 
 > On 15 May, a three-month loan beginning 15 June has FRA rate 0.68%. A call and put expire on 15 June with exercise rate 0.60%, notional SGD10,000,000, accrual period 0.25, volatility 25%, and continuously compounded discount rate 0.55%. Use $T=31/365$ and pay on 15 September, $T+0.25$ years from valuation.
 
+The **FRA** is today’s forward rate for the future loan, $F=0.0068$; $K=R_X=0.0060$ is the strike. The rate is observed at expiry $T=31/365$, but the cash is paid at $T+AP$, where $AP=0.25$ is the loan accrual fraction. The call payoff at payment is $N_0AP\max(L_T-K,0)$; the put reverses the rate difference. Multiplying an annual rate difference by $AP$ converts it into a quarterly interest amount.
+
 **1. Use decimal rates inside the logarithm**
 
 $$
@@ -926,7 +1048,7 @@ d_2=d_1-0.25\sqrt{31/365}=\boxed{1.68149}
 $$
 
 $$
-N(d_1)=0.960314,\qquad N(d_2)=0.953666
+N(d_1)=0.960314313,\qquad N(d_2)=0.953665886
 $$
 
 **2. Discount to the payment date**
@@ -943,7 +1065,7 @@ $$
 
 $$
 c=10{,}000{,}000(0.25)(0.998160)
-[0.0068(0.960314)-0.0060(0.953666)]
+[0.0068(0.960314313)-0.0060(0.953665886)]
 =\boxed{\text{SGD }2{,}016.64}
 $$
 
@@ -951,13 +1073,21 @@ $$
 
 $$
 p=N_0(AP)(DF)[R_XN(-d_2)-FRA\,N(-d_1)]
-=\boxed{\text{SGD }20.32}
 $$
+
+With $N(-d_2)=1-0.953665886=0.046334114$ and $N(-d_1)=1-0.960314313=0.039685687$:
+
+$$
+p=10{,}000{,}000(0.25)(0.998159572)
+[0.0060(0.046334114)-0.0068(0.039685687)]\approx\boxed{\text{SGD }20.32}
+$$
+
+Normal probabilities are displayed rounded; carry their full precision and $DF=0.998159572$ to obtain the cent amounts. This matters especially for the small put, which subtracts two similar numbers.
 
 The parity difference is a useful checksum:
 
 $$
-c-p=N_0(AP)(DF)(FRA-R_X)=\boxed{\text{SGD }1{,}996.32}
+c-p=10{,}000{,}000(0.25)(0.998159572)(0.0068-0.0060)=\boxed{\text{SGD }1{,}996.32}
 $$
 
 > [!NOTE]
@@ -988,16 +1118,28 @@ $$
 d_2=-0.036429
 $$
 
+Here $F=K=0.0068$. The normal lookups are $N(d_1)=0.514529760$ and $N(d_2)=0.485470240$. Because $d_2=-d_1$, the put’s complementary probabilities are $N(-d_2)=0.514529760$ and $N(-d_1)=0.485470240$.
+
 **2. Calculate both values**
 
 Using notional SGD10,000,000, $AP=0.25$, and $DF=0.998160$:
 
 $$
-\text{Caplet}=\boxed{\text{SGD }493.10}
+\begin{aligned}
+\text{Caplet}&=N_0AP\,DF[F N(d_1)-K N(d_2)]\\
+&=10{,}000{,}000(0.25)(0.998159572)(0.0068)
+[0.514529760-0.485470240]\\
+&=\boxed{\text{SGD }493.10}
+\end{aligned}
 $$
 
 $$
-\text{Floorlet}=\boxed{\text{SGD }493.10}
+\begin{aligned}
+\text{Floorlet}&=N_0AP\,DF[K N(-d_2)-F N(-d_1)]\\
+&=10{,}000{,}000(0.25)(0.998159572)(0.0068)
+[0.514529760-0.485470240]\\
+&=\boxed{\text{SGD }493.10}
+\end{aligned}
 $$
 
 Parity explains the equality:
@@ -1015,7 +1157,11 @@ $$
 
 **Abstract:** *A payer swaption is call-like on the forward fixed swap rate; a receiver swaption is put-like, and the annuity factor carries the discounting.*
 
-> A three-month option enters a five-year swap. The forward five-year swap rate is 2.65%, exercise rate is 2.50%, volatility is 20%, accrual period is 0.5, present value of the unit-payment annuity is 8.9, and notional is USD 10,000,000. Value payer and receiver swaptions.
+> A three-month option enters a five-year swap. The forward five-year swap rate is 2.65%, exercise rate is 2.50%, volatility is 20%, accrual period is 0.5, sum of today’s discount factors to the ten semiannual swap payment dates is $PVA=8.9$ (before multiplying by accrual), and notional is USD 10,000,000. Value payer and receiver swaptions.
+
+A **payer** chooses to pay fixed at $K=2.50\%$ and receive floating; this is valuable when the market swap rate is higher. A **receiver** chooses the opposite direction. Use the forward swap rate $F=2.65\%$ for the swap beginning at option expiry. The uncertain waiting period is $T=0.25$ years; the five-year swap length affects its payment annuity.
+
+Here $PVA=\sum_i DF(0,t_i)$, so $A=AP\times PVA=0.5(8.9)=4.45$. Multiplying $N_0A$ by an annual rate difference converts it into the present value of all fixed-leg payment differences.
 
 **1. Use option expiry, not swap tenor, in $d_1$**
 
@@ -1029,7 +1175,7 @@ d_2=0.632689-0.20\sqrt{0.25}=\boxed{0.532689}
 $$
 
 $$
-N(d_1)=0.736532,\qquad N(d_2)=0.702876
+N(d_1)=0.736531649,\qquad N(d_2)=0.702875587
 $$
 
 **2. Value the payer swaption**
@@ -1040,15 +1186,21 @@ $$
 
 $$
 PAYSWN=10{,}000{,}000(0.5)(8.9)
-[0.0265(0.736532)-0.0250(0.702876)]
+[0.0265(0.736531649)-0.0250(0.702875587)]
 =\boxed{\$86{,}605.86}
 $$
+
+Normal symmetry gives $N(-d_2)=1-0.702875587=0.297124413$ and $N(-d_1)=1-0.736531649=0.263468351$. Both premiums use full-precision CDF values before rounding to cents.
 
 **3. Value the receiver swaption**
 
 $$
-RECSWN=N_0(AP)(PVA)[R_XN(-d_2)-R_{FIX}N(-d_1)]
-=\boxed{\$19{,}855.86}
+\begin{aligned}
+RECSWN&=N_0(AP)(PVA)[R_XN(-d_2)-R_{FIX}N(-d_1)]\\
+&=10{,}000{,}000(0.5)(8.9)
+[0.0250(0.297124413)-0.0265(0.263468351)]\\
+&\approx\boxed{\$19{,}855.86}
+\end{aligned}
 $$
 
 **4. Check swaption parity**
@@ -1070,7 +1222,9 @@ $$
 
 **Abstract:** *Delta is the option’s local speed: multiply it by a small underlying move to estimate the option’s value change.*
 
-> A call is worth $7.80$ and has delta $0.42$. A matching put has no dividend yield. Estimate both new option values if the stock falls by $1.50$ and the put is currently worth $5.20$.
+> A call is worth $7.80$ and has delta $0.42$. The matching European call and put are on a stock with no dividends. Estimate both new option values if the stock falls by $1.50$ and the put is currently worth $5.20$.
+
+Delta is the change in option value for a USD 1 stock-price rise, holding other inputs fixed. Here $\Delta S=-1.50$ USD. The symbol $\Delta_c$ means call delta; $\Delta c$ means the call’s **price change**.
 
 **1. Call change**
 
@@ -1084,7 +1238,7 @@ $$
 
 **2. Get put delta from call delta**
 
-With no dividends:
+For matching European options with no dividends, parity is $c-p=S-PV(X)$. A USD 1 stock rise changes the right side by USD 1, while the strike funding is unchanged. Therefore call delta minus put delta equals 1:
 
 $$
 \Delta_p=\Delta_c-1=0.42-1=\boxed{-0.58}
@@ -1144,6 +1298,8 @@ $$
 \boxed{\text{Sell }7{,}876\text{ calls}}
 $$
 
+Check the exposure after hedging: stock hedge gives $4{,}190-4{,}190=0$. Selling 7,876 one-share calls gives $4{,}190-7{,}876(0.532)=-0.032$ share-equivalent delta, a tiny rounding residual. These are **alternative** hedges; do not apply both.
+
 > [!NOTE]
 > Position sign comes first. Shorting a negative-delta put creates positive delta; the hedge must carry negative delta.
 > If one listed contract covers several underlying units, multiply option delta by that contract multiplier before sizing the hedge.
@@ -1155,6 +1311,8 @@ $$
 **Abstract:** *Delta draws a straight tangent line; the gamma term adds the missing bend in the option-price curve.*
 
 > A call is worth $8.00$, delta is $0.55$, gamma is $0.018$, and the stock rises by $6$. Estimate the new call value using delta only and then delta plus gamma.
+
+Gamma is how much delta changes per USD 1 stock move. The second-order Taylor approximation adds $\tfrac12\Gamma(\Delta S)^2$ to the first-order delta estimate, holding time, volatility, and rates fixed. Both answers are estimates of today’s USD 8 call after the stock move.
 
 **1. Delta-only estimate**
 
@@ -1193,6 +1351,14 @@ The gamma correction is positive because a long option has positive gamma and th
 
 > A portfolio has delta $+2,400$ and gamma $-600$. A traded call has delta $0.40$ and gamma $0.15$ per option. Make the portfolio gamma neutral and then delta neutral.
 
+Let $N_C$ be calls bought (negative means sold) and $N_S$ shares bought. The two neutrality conditions are:
+
+$$
+-600+0.15N_C=0,\qquad 2{,}400+0.40N_C+N_S=0
+$$
+
+Stock gamma is zero, so solve the first equation for the option trade, then use that answer in the delta equation.
+
 **1. Fix gamma with the call**
 
 $$
@@ -1217,6 +1383,8 @@ $$
 
 Shorting stock removes delta but adds no gamma, so both targets remain satisfied.
 
+Check both targets: $\Gamma_{final}=-600+4{,}000(0.15)=0$ and $\Delta_{final}=2{,}400+4{,}000(0.40)-4{,}000=0$. Positions are in single-option units; divide by a listed contract’s multiplier if sizing contracts.
+
 > [!NOTE]
 > Order matters: option first for gamma, stock second for delta. Stock cannot alter gamma because its delta is always 1.
 
@@ -1228,19 +1396,21 @@ Shorting stock removes delta but adds no gamma, so both targets remain satisfied
 
 > One long option has daily theta $-0.0327$, vega $0.4231$ per one percentage-point volatility change, and rho $0.3705$ per one percentage-point rate change. Estimate the separate effects of five calendar days, volatility rising from 24% to 27%, and the risk-free rate rising from 4.0% to 4.5%.
 
+Each requested effect holds the other inputs fixed and is quoted per one long option unit. Theta measures the change as calendar time passes, vega the change per volatility percentage point, and rho the change per interest-rate percentage point. A short position reverses every sign; multiply by units and any contract multiplier for a total position.
+
 **1. Theta: five days pass**
 
 $$
 \Delta V_{theta}\approx5(-0.0327)=\boxed{-0.1635}
 $$
 
-**2. Vega: volatility rises by 3 percentage points**
+**2. Vega: volatility rises by $27-24=3$ percentage points**
 
 $$
 \Delta V_{vega}\approx3(0.4231)=\boxed{+1.2693}
 $$
 
-**3. Rho: the rate rises by 0.5 percentage point**
+**3. Rho: the rate rises by $4.5-4.0=0.5$ percentage point**
 
 $$
 \Delta V_{rho}\approx0.5(0.3705)=\boxed{+0.1853}
@@ -1264,6 +1434,8 @@ $$
 
 > With every BSM input except volatility fixed, a put is worth USD 6.40 at 20% volatility and USD 7.49 at 24%. The market put price is USD 7.20. Bracket its implied volatility with a linear interpolation. Then decide what to do if your own fair-volatility forecast is 19% for an option quoted at 24% implied volatility.
 
+The model price increases with volatility when the other inputs stay fixed. We therefore locate the market price between two known model prices, then use its fraction of that **price interval** as an approximate fraction of the volatility interval.
+
 **1. Bracket the answer**
 
 USD 7.20 lies between USD 6.40 and USD 7.49, so implied volatility lies between 20% and 24%.
@@ -1278,7 +1450,7 @@ $$
 =0.7339
 $$
 
-Apply that fraction to the four-point volatility interval:
+The volatility interval is $24\%-20\%=4$ percentage points. Apply the same fraction to that interval:
 
 $$
 \sigma_{imp}\approx20\%+0.7339(4\%)
@@ -1300,4 +1472,4 @@ The opposite rule also holds: if your fair volatility is above quoted implied vo
 > [!NOTE]
 > Historical volatility looks backward. Implied volatility is backed out from today’s option price and is the market’s common comparison unit across strikes and maturities.
 
-<!-- Source audit: Primary source is CFA Level II Derivatives, Learning Module 2, printed pages 81-155, including Examples 1-21 and end-of-module practice and solutions. Schweser Reading 29, Modules 29.1-29.7, was used only as a secondary exam-shape and edge-case cross-check. All published answers used here were independently recomputed; newly parameterized problems instantiate the official equations without adding new doctrine. -->
+<!-- Revision audit (2026-11-03): All 27 variants reviewed for missing inputs, substitutions, rollback steps, signs, units, timing, and rounding. Dividend-tree reconstruction checked against official Exhibit 10, printed p. 101; coupon-bond waiting values remain explicitly supplied inputs. BSM CDF and rate-tree precision corrected. Source audit: Primary source is CFA Level II Derivatives, Learning Module 2, printed pages 81-155, including Examples 1-21 and end-of-module practice and solutions. Schweser Reading 29, Modules 29.1-29.7, was used only as a secondary exam-shape and edge-case cross-check. All published answers used here were independently recomputed; newly parameterized problems instantiate the official equations without adding new doctrine. -->

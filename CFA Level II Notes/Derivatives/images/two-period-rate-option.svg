@@ -19,8 +19,8 @@
 <text x="715" y="480" class="small" text-anchor="middle" fill="currentColor">down</text>
 <rect x="25" y="245" width="235" height="130" rx="14" class="box"/>
 <text x="142.5" y="287" class="value" text-anchor="middle" fill="currentColor">DF₀ = 0.970446</text>
-<text x="142.5" y="317" class="label" text-anchor="middle" fill="currentColor">Call = $1,702.16</text>
-<text x="142.5" y="347" class="label" text-anchor="middle" fill="currentColor">Put = $2,342.66</text>
+<text x="142.5" y="317" class="label" text-anchor="middle" fill="currentColor">Call = $1,702.24</text>
+<text x="142.5" y="347" class="label" text-anchor="middle" fill="currentColor">Put = $2,342.57</text>
 <rect x="395" y="115" width="265" height="120" rx="14" class="box"/>
 <text x="527.5" y="152" class="value" text-anchor="middle" fill="currentColor">DFᵤ = 0.962386</text>
 <text x="527.5" y="182" class="label" text-anchor="middle" fill="currentColor">Call = 0.003488</text>
