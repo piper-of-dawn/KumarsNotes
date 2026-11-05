@@ -21,8 +21,21 @@
               "icon": "lucide-file",
               "title": "STANDARD 4 - DUTIES TO EMPLOYERS"
             }
+          },
+          {
+            "id": "59655f475625a53d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.14.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.14.5"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -1473,6 +1486,16 @@
             "id": "a97a5da6ab31e723",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "225b14df818509ed",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -1480,7 +1503,7 @@
             }
           }
         ],
-        "currentTab": 136
+        "currentTab": 137
       }
     ],
     "direction": "horizontal",
@@ -1496,7 +1519,7 @@
       "transfer-latex-from-gpt-fix:Convert formulas from chatgpt": false
     }
   },
-  "active": "623336744a825907",
+  "active": "225b14df818509ed",
   "lastOpenFiles": [
     "CFA L1 Notes/ETHICS/STANDARD 7 - RESPONSIBILITIES AS A CFA INSTITUTE MEMBER OR CFA CANDIDATE.md",
     "CFA L1 Notes/ETHICS/STANDARD 1 - PROFESSIONALISM.md",

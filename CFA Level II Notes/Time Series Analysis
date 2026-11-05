@@ -1,0 +1,132 @@
+# CFA Level II - Quantitative Methods - Time-Series Analysis 
+
+## Trend Models
+
+| Model      | Formula                     | Use when                   |
+| ---------- | --------------------------- | -------------------------- |
+| Linear     | \(\hat x_t=b_0+b_1t\)     | Constant absolute change   |
+| Log-linear | \(\hat x_t=e^{b_0+b_1t}\) | Constant percentage growth |
+
+- Linear slope \(b_1\): units per period; log-linear growth: \(e^{b_1}-1\approx b_1\).
+- Forecast \(h\) periods ahead: substitute \(t=T+h\).
+- Trend-model residuals may be serially correlated → investigate AR models.
+
+==Do not constant dollar growth with constant percentage growth; forgetting to exponentiate log-linear forecasts; do not use \(h\) instead of \(T+h\).==
+
+## Covariance Stationarity & AR Models
+
+Stationarity requires: Constant finite mean \(E(x_t)=\mu\), constant finite variance \(\sigma^2\), and covariance depending only on lag: \(\operatorname{Cov}(x_t,x_{t-k})=\gamma_k\).
+
+\[ \boxed{AR(p):\quad x_t=b_0+\sum_{i=1}^{p}b_ix_{t-i}+\varepsilon_t} \]
+
+| Concept              | Formula / rule                           |
+| -------------------- | ---------------------------------------- |
+| Stationary AR(1)     | \(\lvert b_1\rvert<1\)                 |
+| Mean-reverting level | \(\displaystyle\mu=\frac{b_0}{1-b_1}\) |
+| One-step forecast    | \(\hat x_{t+1}=b_0+b_1x_t\)           |
+| Two-step forecast    | \(\hat x_{t+2}=b_0+b_1\hat x_{t+1}\) |
+| \(h\)-step AR(1)   | \(\hat x_{t+h}=\mu+b_1^h(x_t-\mu)\)   |
+
+$0<b_1<1$: gradual mean reversion; $-1<b_1<0$: oscillating mean reversion. Forecast uncertainty increases with horizon.
+
+AR(2) forecasts require two lags; multiperiod forecasts recursively substitute predicted values. ==Do not confuse the intercept with the long-run mean or assume a negative AR coefficient rules out stationarity.==
+
+## Serial Correlation Diagnostics
+
+| Test                     | Formula                                                                                                   | Null hypothesis                   |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| Durbin–Watson            | \(\displaystyle DW=\frac{\sum_{t=2}^{T}(e_t-e_{t-1})^2}{\sum_{t=1}^{T}e_t^2}\approx2(1-\hat\rho_1)\) | No first-order serial correlation |
+| Residual autocorrelation | \(\displaystyle t_k=\hat\rho_k\sqrt T\)                                                                 | \(\rho_k=0\)                    |
+
+|DW decision            |Positive correlation|Negative correlation|
+|-----------------------|--------------------|--------------------|
+|Reject \(H_0\)|\(DW<d_L\)    |\(DW>4-d_L\)    |
+|Inconclusive           |\(d_L\le DW\le d_U\)    |\(4-d_U\le DW\le4-d_L\)    |
+|Fail to reject         |\(DW>d_U\)    |\(DW<4-d_U\)    |
+
+==Remember the closer the DW statistic is to zero, the stronger the positive autocorrelation. Negative autocorrelation follows the mirror rule: replace DL with 4 - DL and reverse the inequality from < to >. == ==Standard DW testing is invalid for AR models containing lagged dependent variables; use residual autocorrelation diagnostics.==
+
+
+## Forecast Accuracy & Coefficient Instability
+
+\[ \boxed{RMSE=\sqrt{\frac{\sum_{t=1}^{n}(x_t-\hat x_t)^2}{n}}} \]
+
+- In-sample: Historical fitted errors; regression standard error typically divides squared errors by \(n-p\).
+- Out-of-sample: Forecasts on unseen observations; lower RMSE indicates better accuracy on comparable evaluation periods.
+- High \(R^2\) or significant coefficients do not guarantee accurate future forecasts.
+- Coefficient instability: Different samples/economic regimes → different coefficients, model orders, and forecasts.
+
+==Do not confuse RMSE's denominator \(n\) with regression standard error's \(n-p\); reversing the percentage-improvement denominator; assuming the longer sample or higher \(R^2\) must forecast better.==
+
+## Random Walks, Drift & Unit Roots
+
+| Process     | Equation                           | \(h\)-period forecast |
+| ----------- | ---------------------------------- | ----------------------- |
+| Random walk | \(x_t=x_{t-1}+\varepsilon_t\)   | \(x_t\)               |
+| With drift  | \(x_t=c+x_{t-1}+\varepsilon_t\) | \(x_t+hc\)            |
+
+- Both have \(b_1=1\), undefined mean reversion, and nonstationary levels.
+- Forecast-error variance: \(h\sigma_\varepsilon^2\); standard deviation: \(\sqrt h\\,\sigma_\varepsilon\).
+- First difference: \(\Delta x_t=x_t-x_{t-1}\); random walk → \(\varepsilon_t\); with drift → \(c+\varepsilon_t\).
+- Exponential trend transformation: \(\Delta\ln x_t=\ln(x_t/x_{t-1})\).
+- Back-transform forecasted log growth \(g\): \(\hat x_{t+1}=x_te^{\hat g}\).
+
+Dickey–Fuller:
+
+\[ \boxed{\Delta x_t=b_0+\gamma x_{t-1}+\varepsilon_t,\quad\gamma=b_1-1} \]
+
+\(H_0:\gamma=0\) (unit root) versus \(H_a:\gamma<0\). Reject when the statistic is more negative than the appropriate DF critical value, not an ordinary t critical value.
+
+==The DF null is nonstationarity, unlike residual-correlation tests. Distinguish lagged level \(x_{t-1}\) in the DF regression from lagged difference \(\Delta x_{t-1}\) in a forecasting AR model; remember to exponentiate log-growth forecasts.==
+
+## Moving Averages, ARMA & Seasonality
+
+| Concept               | Formula / distinction                                                                           |
+| --------------------- | ----------------------------------------------------------------------------------------------- |
+| Simple moving average | \(\displaystyle \frac{x_t+\cdots+x_{t-n+1}}n\); smooths observations but lags turning points |
+| MA(q)                 | \(x_t=\mu+\varepsilon_t+\sum_{j=1}^{q}\theta_j\varepsilon_{t-j}\); uses lagged shocks       |
+| ARMA(p,q)             | Combines AR lags and MA error lags; parameters/model order can be unstable                      |
+| MA(0)                 | \(x_t=\mu+\varepsilon_t\); unpredictable deviations from the mean                             |
+
+Autocorrelation pattern: AR → gradual decay; MA(q) → cuts off after lag \(q\).
+
+Seasonality: Significant residual autocorrelation at lag 4 (quarterly) or 12 (monthly) → include a seasonal lag:
+
+\[ \boxed{x_t=b_0+b_1x_{t-1}+b_2x_{t-4}+\varepsilon_t} \]
+
+Exam time sink: Confusing a smoothing moving average with an MA(q) error process; mistaking gradual ACF decay for abrupt cutoff; and using lag 3 rather than lag 4 for quarterly seasonality. Forecasts from a quarterly seasonal model use \(x_t\) and \(x_{t-3}\) when predicting \(x_{t+1}\).
+
+## ARCH & Volatility Forecasting
+
+\[ \boxed{\hat\varepsilon_t^2=a_0+a_1\hat\varepsilon_{t-1}^2+u_t} \]
+
+- \(H_0:a_1=0\): No ARCH(1). Significant \(a_1\) → predictable conditional variance and unreliable uncorrected standard errors.
+- Next-period variance:
+
+\[ \boxed{\hat\sigma_{t+1}^2=\hat a_0+\hat a_1\hat\varepsilon_t^2} \]
+
+- ARCH(p): several lagged squared shocks; GARCH: also uses lagged conditional variances.
+- Correct heteroskedasticity using appropriate estimation or standard-error methods.
+
+GARCH(p,q): GARCH uses past shocks: the squared errors and the volatility of those squared errors.
+
+\[ \boxed{\hat\varepsilon_t^2=a_0+\alpha\hat\varepsilon_{t-1}^2+\beta\hat{\sigma}_{t-1}^2+u_t} \]
+
+
+## Multiple Time Series & Cointegration
+
+| Unit-root status                  | Regression implication                     |
+| --------------------------------- | ------------------------------------------ |
+| Both stationary                   | Levels regression generally appropriate    |
+| One stationary, one unit root     | Levels regression potentially spurious     |
+| Both unit roots, not cointegrated | Levels regression spurious                 |
+| Both unit roots, cointegrated     | Meaningful long-run relationship may exist |
+
+Co-integration means two series can be non-stationary, yet some linear combination of them stays stationary. For a co-integration to exist regress one on the other, and the residuals should have no unit root: the two wandering series still leave a stationary trail.
+
+**Engle–Granger procedure: Test both series for unit roots → estimate \(y_t=b_0+b_1x_t+e_t\) → test residuals \(e_t\) for a unit root using Engle–Granger critical values.**
+- Reject residual unit root → evidence of cointegration.
+- Fail to reject → insufficient evidence of cointegration; levels regression may be spurious.
+- Cointegration supports long-run relationships, not necessarily short-run forecasts.
+
+==**==**==Remember, the test statistic in the Engle-Granger procedure follows its own rulebook; standard Dickey-Fuller critical values don't apply.==**==**==
