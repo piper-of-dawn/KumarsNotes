@@ -1,10 +1,13 @@
 ## Variant: Protecting the right client without inventing extra prohibitions
 
-**Abstract:** *Identify the person or mandate you serve, then test prudent process, fair treatment, suitability, honest performance, and confidentiality separately. Consent to one thing does not waive every other duty.*
+Identify exactly who or what mandate you actually answer to. Then put each duty under its own microscope: Was the process even halfway sensible? Did you treat the other party fairly? Was the thing suitable for them in the first place? Did the performance stay honest instead of sliding into theater? And did you keep the private details private?
+
+Consent to one of those doesn’t quietly cancel the rest. You’re still on the hook for every single one.
 
 > A pension sponsor wants one decision, a beneficiary needs another, a client insists on a trade, and a charity could benefit from a disclosure. Who gets to authorize what?
 
-The hardest client-duty questions let someone do something decent for the wrong person. The sponsor pays the invoice. The charity does good work. The client is enthusiastic. All useful background. None answers the question until you identify the duty.
+Put the client’s interests first - actually first, no exceptions - using reasonable care and something resembling adult judgment. That means ahead of your employer’s quarterly numbers and ahead of whatever would make your own life easier.
+In pension work, the people you’re protecting are the participants and beneficiaries. Not the sponsor’s management team. Not the people signing your checks. The ones whose future depends on you not treating their money like a side quest.
 
 **III(A) Loyalty, Prudence, and Care — who actually owns the benefit?**
 
