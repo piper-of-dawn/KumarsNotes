@@ -69,3 +69,39 @@ Private companies typically face higher discount rates. **The four factors affec
 How much control can you exert, and how easily can you sell it?
 
 ## Discount for lack of control (DLOC)
+
+
+## Discount for lack of marketeability (DLOM)
+
+CFA is making three points: **volatility affects DLOM, put options are imperfect proxies for illiquidity, and discounts must be multiplied not added.**
+
+### **Why use put options to estimate DLOM?**
+
+A private-company stock is an ownership stake that is difficult to sell. The CFA curriculum uses a put option to estimate the cost of that difficulty ==because being unable to sell exposes you to the risk of prices falling while you're stuck holding the  stock.==
+
+The price of insuring yourself against falling prices is illiquidity.
+
+Imagine you own private shares worth €100 but cannot easily sell them. A put option protects you against falling prices.
+
+- Higher volatility → More downside risk → More expensive put → Higher estimated DLOM.
+- Lower volatility → Cheaper put → Lower estimated DLOM.
+
+**Advantage:** Unlike restricted-stock or IPO comparisons, the option model explicitly incorporates volatility.
+
+A put gives price protection, not liquidity. It also allows unlimited upside participation. ==Therefore, its premium is only an imperfect estimate of DLOM.==
+
+### **2. Other valuation discounts**
+
+| Discount          | Reason                                     |
+| ----------------- | ------------------------------------------ |
+| Key person        | Business depends heavily on one individual |
+| Portfolio         | Assets are heterogeneous or poorly matched |
+| Non-voting shares | Shareholders lack voting rights            |
+
+### **3. Combining DLOC and DLOM**
+
+\[ \boxed{D_{\text{total}}=1-(1-DLOC)(1-DLOM)} \]
+
+Suppose DLOC = 20% and DLOM = 25%.
+$$ D_{\text{total}}=1-(0.80)(0.75)=\boxed{40\%} $$
+**Not 45%.** The second discount applies to the value remaining after the first.
