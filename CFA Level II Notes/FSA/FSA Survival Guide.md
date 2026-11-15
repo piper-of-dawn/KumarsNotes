@@ -1,4 +1,4 @@
-## Variant: Defined Benefit Pensions — IFRS vs US GAAP
+## Variant: Defined Benefit Pensions — Exam Survival Guide
 
 **Abstract:** *Start with the pension obligation and plan assets, then separate pension expense in profit or loss from remeasurements in OCI. The main trap is using the expected asset return for IFRS or treating employer contributions as pension expense.*
 
@@ -19,17 +19,17 @@ A negative amount is an underfunded position; a positive amount is an overfunded
 
 **The comparison to memorize**
 
-| Component | IFRS | US GAAP |
+| Item | IFRS | US GAAP |
 | --- | --- | --- |
 | Current service cost | Operating profit or loss | Operating profit or loss |
-| Past service cost | Profit or loss immediately, generally within operating expense | Initially OCI; subsequently amortized into non-operating profit or loss |
-| Interest on obligation | Included in net interest in profit or loss | Non-operating profit or loss |
-| Return on assets in profit or loss | Discount-rate-based interest income | Expected return |
-| Actuarial gains and losses | OCI; never recycled to profit or loss | OCI with subsequent amortization, or immediate recognition in profit or loss under an accounting policy |
-| Asset return surprises | OCI; never recycled to profit or loss | OCI with possible subsequent amortization, or immediate recognition in profit or loss under an accounting policy |
+| Past service cost | Profit or loss immediately | OCI first; later amortized into non-operating profit or loss |
+| Interest on obligation | Part of net interest in profit or loss | Non-operating profit or loss |
+| Asset return in profit or loss | Uses the **discount rate** | Uses the **expected return** |
+| Actuarial gains and losses | OCI; never recycled to profit or loss | OCI and possible later amortization, or immediate profit or loss under an accounting policy |
+| Asset return surprises | OCI; never recycled to profit or loss | OCI and possible later amortization, or immediate profit or loss under an accounting policy |
 
 > [!NOTE]
-> **Memory hook:** IFRS recognizes service costs promptly and keeps remeasurements out of earnings. US GAAP uses expected returns and may smooth gains and losses through amortization.
+> **Memory hook:** IFRS puts service costs into earnings promptly and keeps remeasurements in OCI. US GAAP uses expected returns and may spread gains and losses over time.
 
 **The formulas**
 
@@ -72,7 +72,7 @@ $$
 
 Assume no amortization of previously deferred amounts, no settlement effects, no asset-ceiling adjustment, and no timing adjustments for contributions or benefit payments. For US GAAP, assume the gains and losses are initially recognized in OCI.
 
-**1. IFRS: expense and OCI**
+**1. IFRS: expense = 530; OCI loss = 490**
 
 Interest on the obligation is $42{,}000\times7\%=2{,}940$. Interest income on plan assets uses the **discount rate**: $39{,}000\times7\%=2{,}730$.
 
@@ -89,7 +89,7 @@ $$
 (2{,}730-2{,}700)+460=\boxed{490\text{ OCI loss}}
 $$
 
-**2. US GAAP: expense and OCI**
+**2. US GAAP: expense = 20; OCI loss = 1,000**
 
 Expected asset return is $39{,}000\times8\%=3{,}120$. With no amortization of earlier amounts, the new past service cost does not yet enter pension expense.
 
@@ -109,7 +109,7 @@ $$
 > [!NOTE]
 > The $120 past service cost enters profit or loss immediately under IFRS, but initially enters OCI under the US GAAP treatment assumed here.
 
-**Five CFA exam traps**
+**Five exam traps — check these before choosing an answer**
 
 1. **Interest cost:** use beginning PBO $\times$ discount rate under both standards in this simplified setup; adjust for relevant changes during the period when required.
 2. **Asset returns:** IFRS uses the discount rate for net interest; US GAAP uses the expected return in pension expense.
